@@ -1,13 +1,13 @@
 import fitz
 
 def clean_text(text):
-    edited_text = text.replace('\n', '').replace('', '').replace(';', '').rstrip()
+    edited_text = text.replace('\n', ' ').replace('', ' ').replace(';', ' ').rstrip()
     return edited_text
 
 def get_multi_idx(page_num, line_idx):
     return f'{page_num}_{line_idx}'
 
-def get_norm_bbox(bbox, max_height, max_width):
+def get_norm_bbox(bbox, max_height, max_width): # adjust to (x, y, width, height)?
     norm_bbox = (round(100*bbox[0]/max_height, 2),
                  round(100*bbox[1]/max_width, 2),
                  round(100*bbox[2]/max_height, 2),
@@ -23,7 +23,8 @@ def get_page_text(pdf_page, page_num):
         edited_text = clean_text(line_text) #
         norm_bbox = get_norm_bbox((y_0, x_0, y_1, x_1), 792, 612)
         output_list.append((get_multi_idx(page_num, line_num), edited_text, norm_bbox))
-    final_output_list = sorted(output_list, key=lambda x: x[2][0])
+    temp_output_list = sorted(output_list, key=lambda x: x[2][0])
+    final_output_list = [(get_multi_idx(page_num, new_line_num), text, bbox) for new_line_num, (multi_idx, text, bbox) in enumerate(temp_output_list)]
     return final_output_list
 
 def extract_text_with_multi_idx(pdf_path):

@@ -1,4 +1,6 @@
 from ..general import get_page_num_and_line_num_from_multi_idx
+from ..mol_pic import export_mol_pic
+from ..test_text_sequence import export_test_sequence_as_pic
 
 class MoleculeSegment:
     def __init__(self, segment_lines): # segement lines = [(multi_idx, text, bbox = (y0, x0, y1, x1))]
@@ -42,3 +44,15 @@ class MoleculeSegment:
         except:
             text_1, text_2, text_3 = 'molescule segment print failed', '', ''
         return text_1+text_2+text_3
+    
+def get_relavent_pages(molecule_segment):
+    return list(range(molecule_segment.start_page, molecule_segment.end_page+1))
+
+def export_molecule_segment_results_as_pics(molecule_segment, output_dir):
+    molecule_name = molecule_segment.molecule_name
+    # segment_text = ' '.join([line [1] for line in molecule_segment.segment_lines])
+    saved_filenames, db_entries = export_test_sequence_as_pic(molecule_segment.test_text_sequence, output_dir, molecule_name, font_size=30)
+    if molecule_segment.mol_pics:
+        mol_pic_path = export_mol_pic(molecule_segment.mol_pics[0], output_dir, molecule_name)
+        saved_filenames.append(mol_pic_path) 
+    return saved_filenames, db_entries

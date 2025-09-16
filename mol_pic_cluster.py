@@ -2,7 +2,7 @@ class MolPicCluster:
     def __init__(self, mol_pics):
         self.page_num = mol_pics[0].page_num
         self.mol_pics = mol_pics
-        self.bbox_list = [mol_pic.bbox for mol_pic in mol_pics] # (y0, x0, y1, x1)
+        self.bbox_list = [mol_pic.bbox for mol_pic in mol_pics]
         self.cluster_size = len(mol_pics)
         self.get_leading_pic()
         
@@ -21,7 +21,7 @@ class MolPicCluster:
                 current_x = mol_pic.bbox[1]
 
 def check_matching_of_mol_pics(mol_pic_1, mol_pic_2):
-    ATOL = 100
+    ATOL = 10
     if mol_pic_1.page_num==mol_pic_2.page_num:
         if abs(mol_pic_1.y0 - mol_pic_2.y0)<=ATOL:
             return True

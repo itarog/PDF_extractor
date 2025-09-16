@@ -55,6 +55,12 @@ def optimize_text_grab_by_pic_matching(pdf_path, mol_pic_clusters, optimize_opti
             best_result = current_result
             best_condition = opt_option
     molecule_segments = process_text_doc(pdf_path, tokens_mark=best_condition.get('tokens'), spaces_mark=best_condition.get('spaces'))
+    # print('last test')
+    # for ms in molecule_segments:
+    #     if ms.has_test_text_sequence:
+    #         len1 = len(ms.test_text_sequence.test_text_lines)
+    #         len2 = len(ms.test_text_sequence.test_type_list)
+    #         print(len1==len2)
     match_mol_pic_clusters_to_molecule_segments(molecule_segments, mol_pic_clusters, False)
     return molecule_segments
 

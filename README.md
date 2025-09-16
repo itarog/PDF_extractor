@@ -37,23 +37,23 @@ While the reader can use any aproriate pdf document, some example data can be fo
 
 ### Example data 1
 
-10 total files., thesis work from Columbia. \\
+10 total files., thesis work from Columbia. <br>
 File path: main/database_files/features_1_df.ftr
 
 ### Example data 2
 
-10 total files, SI from chemical science. \\
+10 total files, SI from chemical science. <br>
 File path: main/database_files/features_2_df.ftr
 
 ### Example data 3
 
-10 total files, SI from ... \\
+10 total files, SI from ... <br>
 File path: main/database_files/features_3_df.ftr
 
 ---
 
 # PDF image extractor
-Image extraction is excuted using the python package DECIMER-Segmentation (https://github.com/Kohulan/DECIMER-Image-Segmentation). \\
+Image extraction is excuted using the python package DECIMER-Segmentation (https://github.com/Kohulan/DECIMER-Image-Segmentation). <br>
 Code is duplicated from their repository to ensure robust and independent work. The code duplicated can be found at main\decimer_functions.py
 
 ## Code
@@ -89,7 +89,7 @@ mol_pic_cluster = TestTextSequence(list_of_mol_pic)
 ---
 
 # PDF text extractor
-Text extraction is excuted using the python package PyMuPDF (https://pymupdf.readthedocs.io/en/latest/index.html). \\
+Text extraction is excuted using the python package PyMuPDF (https://pymupdf.readthedocs.io/en/latest/index.html). <br>
 
 ```
 pip install pymupdf
@@ -111,9 +111,9 @@ for multi_idx, line, bbox in pdf_text_with_idx:
 ```
 
 ## Locating molecule segments
-The extracted text is divided into *MoleculeSegement* objects, where the each segment is aimed at describing one molecule. \\
-Molecule segments can initiallized manually but for text extraction, molecule segments will be created automatically. \\
-The decision of on whice text line each molecule segment begins and ends depends on locating molecule names that serve as a title. \\
+The extracted text is divided into *MoleculeSegement* objects, where the each segment is aimed at describing one molecule. <br>
+Molecule segments can initiallized manually but for text extraction, molecule segments will be created automatically. <br>
+The decision of on whice text line each molecule segment begins and ends depends on locating molecule names that serve as a title. <br>
 To that end, there are two free parameter that needs to be determined:
 - tokens_mark - The mininum percentile of molecule-name-tokens that the text line has compared to all other text lines in the document. In order for a line to be considered the beginning of a molecule segment, the line needs to have tokens percentile above this number. (default: 40)
 - spaces_mark - The maximum percentile of spaces that the text line has compared to all other text lines in the document. In order for a line to be considered the beginning of a molecule segment, the line needs to have spaces percentile below this number. (default: 20)
@@ -161,8 +161,8 @@ processed_molecule_segments = process_molecule_segment_text(molecule_segments)
 ```
 
 ## Molecule segments final adjustment
-After all molecule segments have been processed, the molecule segments will be adjusted according to the most common test sequence. \\
-The main target of this part is to combine molecule segments that have been wrongly seperated, deduced by the most common test sequence. \\
+After all molecule segments have been processed, the molecule segments will be adjusted according to the most common test sequence. <br>
+The main target of this part is to combine molecule segments that have been wrongly seperated, deduced by the most common test sequence. <br>
 i.e, if the most common test sequence is ['Rf, 'IR', '1H NMR', '13C NMR'], and there are two adjacent molecule segments (and in physical proximity) that togather complete to the most common test sequence (like ['Rf'] and ['IR', '1H NMR', '13C NMR']), those segments will be united to one.
 
 ```

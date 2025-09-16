@@ -16,10 +16,11 @@ def get_all_test_list(molecule_segment):
     return molecule_segment.nmr_text_line_list + molecule_segment.ir_text_line_list + molecule_segment.rf_text_line_list + molecule_segment.ms_text_line_list
 
 def search_molecule_segment_for_text_lines(molecule_segment):
-    molecule_segment.nmr_text_line_list = extract_test_text_lines(molecule_segment.segment_lines, test_names=['NMR'])
-    molecule_segment.ir_text_line_list = extract_test_text_lines(molecule_segment.segment_lines, test_names=['IR'])
-    molecule_segment.rf_text_line_list = extract_test_text_lines(molecule_segment.segment_lines, test_names=['Rf'])
-    molecule_segment.ms_text_line_list = extract_test_text_lines(molecule_segment.segment_lines, test_names=['HRMS', 'LCMS', 'LRMS'])
+    molecule_segment.nmr_text_line_list = extract_test_text_lines(molecule_segment.segment_lines, test_names=[r'NMR']) #r'NMR'
+    molecule_segment.ir_text_line_list = extract_test_text_lines(molecule_segment.segment_lines, test_names=[r'IR'])
+    molecule_segment.rf_text_line_list = extract_test_text_lines(molecule_segment.segment_lines, test_names=[r'Rf'])
+    molecule_segment.ms_text_line_list = extract_test_text_lines(molecule_segment.segment_lines, test_names=[r'HRMS'])
+    #+ extract_test_text_lines(molecule_segment.segment_lines, test_names=[r'LCMS']) + extract_test_text_lines(molecule_segment.segment_lines, test_names=[r'LRMS']) 
 
 def get_molecule_segments_statsitics(molecule_segments):
     num_of_tests_list = []
@@ -80,7 +81,6 @@ def spilt_molecule_segment_by_test_sequences(molecule_segment, test_text_sequenc
             search_molecule_segment_for_text_lines(new_molecule_segment)
             new_molecule_segment.has_test_text_sequence = True
             new_molecule_segment.test_text_sequence = test_text_sequence
-            
             new_molecule_segments.append(new_molecule_segment)
     # process_molecule_segment_text(new_molecule_segments)
     return new_molecule_segments
@@ -125,6 +125,51 @@ def cut_init_molecule_segments(molecule_segments):
     new_molecule_segments = [molecule_segment for molecule_segment in molecule_segments if molecule_segment.start_page>=start_page]
     return new_molecule_segments
 
+def smooth_bbox_bbox(page_num_1, bbox_1, page_num_2, bbox_2):
+    if page_num_1!=page_num_2:
+        return bbox_1, bbox_2
+    x_1, y_1, width_1, height_1 = bbox_1
+    x_2, y_2, width_2, height_2 = bbox_2
+    if y_1 + height_1<y_2:
+        return bbox_1, bbox_2
+    avg_y = round((y_1 + height_1 + y_2)/2, 2)
+    new_height_1 = avg_y - y_1
+    new_y_2 = avg_y
+    return (x_1, y_1, width_1, new_height_1), (x_2, new_y_2, width_2, height_2)
+
+def smooth_bbox_text_test_line(line_1, line_2):
+    if line_1.bbox_list and line_2.bbox_list:
+        page_num_1, bbox_1 = line_1.bbox_list[-1]
+        page_num_2, bbox_2 = line_2.bbox_list[0] # (page_num, (x, y, width, height))
+        new_bbox_1, new_bbox_2 = smooth_bbox_bbox(page_num_1, bbox_1, page_num_2, bbox_2)
+        new_bbox_list_1 = line_1.bbox_list[:-1]
+        new_bbox_list_1.append((page_num_1, new_bbox_1))
+        new_bbox_list_2 = line_2.bbox_list[1:]
+        new_bbox_list_2.append((page_num_2, new_bbox_2))
+        line_1.bbox_list = new_bbox_list_1
+        line_2.bbox_list = new_bbox_list_2
+    return line_1, line_2
+
+def smooth_bbox_molecule_segments(molecule_segments):
+    # bugged!!
+    for molecule_segment in molecule_segments:
+        test_text_lines = molecule_segment.test_text_sequence.test_text_lines
+        new_test_text_lines = []
+        new_test_line = None
+        for line_idx, test_line in enumerate(test_text_lines):
+            if line_idx==0:
+                continue
+            elif line_idx<len(test_text_lines):
+                prev_test_line = new_test_line if new_test_line else test_text_lines[line_idx-1]
+                new_prev_line, new_test_line = smooth_bbox_text_test_line(prev_test_line, test_line)
+                new_test_text_lines.append(new_prev_line)
+            else:
+                new_test_text_lines.append(new_test_line)
+        # print(len(test_text_lines)==len(new_test_text_lines))
+        molecule_segment.test_text_sequence.test_text_lines = new_test_text_lines
+
+# from copy import deepcopy
+
 def process_molecule_segment_text(molecule_segments, cut_init_segments=False):
     edited_molecule_segments = molecule_segments
     test_text_sequence_list = [process_all_test_list(molecule_segment) for molecule_segment in edited_molecule_segments]
@@ -140,7 +185,7 @@ def process_molecule_segment_text(molecule_segments, cut_init_segments=False):
         else:
             final_molecule_segments.append(molecule_segment)
     final_molecule_segments = [molecule_segment for molecule_segment in final_molecule_segments if molecule_segment.has_test_text_sequence]
-    # final_molecule_segments = cut_init_molecule_segments(final_molecule_segments)
+    # smooth_bbox_molecule_segments(final_molecule_segments)
     if final_molecule_segments:
         if cut_init_segments:
             final_molecule_segments = cut_init_molecule_segments(final_molecule_segments)

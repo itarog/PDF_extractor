@@ -1,5 +1,6 @@
 import os
 import pickle
+import copy
 from collections import defaultdict
 
 class ProccessedPdf:

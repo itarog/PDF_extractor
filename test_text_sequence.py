@@ -1,5 +1,6 @@
+import os
 from .general import get_actual_idx_from_multi_idx
-
+from .label_studio_wrappers.image_transformers import save_text_to_image
 class TestTextSequence:
     def __init__(self, test_text_lines):
         self.test_text_lines = test_text_lines
@@ -35,3 +36,21 @@ def sort_test_lines_to_sequences(test_lines, multi_idx_list, allowed_diff=4):
                 current_sequence = [line]
     sequences.append(TestTextSequence(current_sequence))
     return sequences
+
+def export_test_sequence_as_pic(test_text_sequence, export_dir, molecule_name=None, **pic_kwargs):
+    saved_filenames = []
+    db_entries = []
+    for test_idx, test_text_line in enumerate(test_text_sequence.test_text_lines):
+        test_text = test_text_line.text
+        if molecule_name:
+            export_path = os.path.join(export_dir, f'{molecule_name}_test_{test_idx}.png')
+        else:
+            export_path = os.path.join(export_dir, f'test_{test_idx}.png')
+        save_text_to_image(test_text, export_path, **pic_kwargs)
+        saved_filenames.append(export_path)
+        db_entry = {'Molecule name': molecule_name, 'Test type': test_text_line.test_type, 'Text': test_text,
+                    'Start page': test_text_line.start_page, 'End page': test_text_line.end_page,
+                    # 'Full text': segment_text, # 'Origin': filename,
+                    }
+        db_entries.append(db_entry)
+    return saved_filenames, db_entries

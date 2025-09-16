@@ -1,4 +1,5 @@
 import numpy as np
+import re
 from .molecule_segment_obj import MoleculeSegment
 from ..tokenizer.molecule_name import get_molecule_name_probability
 
@@ -52,9 +53,16 @@ def create_molecule_segments(page_lines_with_multi_idx, selected_lines):
 #         molecule_name = None
 #     return molecule_name
 
+def clean_molecule_name(molecule_name, replacement=' '):
+    invalid_chars = r'[<>:"/\\|?*\x00-\x1F]'
+    cleaned_molecule_name = re.sub(invalid_chars, replacement, molecule_name)
+    cleaned_molecule_name = cleaned_molecule_name.strip(" .")
+    return cleaned_molecule_name
+
 def get_molecule_segment_name(molecule_segment):
-    molecule_name = molecule_segment.segment_lines[0]
-    return molecule_name
+    molecule_name = molecule_segment.segment_lines[0][1]
+    cleaned_molecule_name = clean_molecule_name(molecule_name)
+    return cleaned_molecule_name
 
 def assign_molecule_segment_name(molecule_segments):
     for molecule_segment in molecule_segments:

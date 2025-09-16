@@ -14,9 +14,10 @@ def get_filled_matched_molecule_segments(molecule_segments):
     filled_segments, matched_segments = [], []
     for molecule_segment in molecule_segments:
         if molecule_segment.has_test_text_sequence:
-            filled_segments.append(molecule_segment)
-            if molecule_segment.mol_pics:
-                matched_segments.append(molecule_segment)
+            if len(molecule_segment.test_text_sequence.test_text_lines)>0:
+                filled_segments.append(molecule_segment)
+                if molecule_segment.mol_pics:
+                    matched_segments.append(molecule_segment)
     return filled_segments, matched_segments
 
 def analyze_molecule_segments_dict(molecule_segments_dict):

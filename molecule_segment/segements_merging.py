@@ -67,7 +67,7 @@ def merge_segments(molecule_segments, idx_tuple):
         new_segment_lines += molecule_segments[inner_idx].segment_lines
     new_molecule_segment = MoleculeSegment(new_segment_lines)
     search_molecule_segment_for_text_lines(new_molecule_segment)
-    process_all_test_list(new_molecule_segment)
+    process_all_test_list(new_molecule_segment)   
     return new_molecule_segment
 
 def sort_molecule_segments(molecule_segments):

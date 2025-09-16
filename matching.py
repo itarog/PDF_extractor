@@ -4,7 +4,7 @@
 
 def check_mol_pic_proximity(molecule_segment, mol_pic):
     mol_page = mol_pic.page_num
-    mol_mean_y = (mol_pic.bbox[0] + mol_pic.bbox[2]) / 2
+    mol_mean_y = mol_pic.bbox[0] + (mol_pic.bbox[2] / 2)
     if mol_page == molecule_segment.start_page:
         return abs(mol_mean_y-molecule_segment.upper_y)
     # elif mol_page == molecule_segment.end_page:
@@ -44,6 +44,7 @@ def inner_match_mol_pics_to_molecule_segments(molecule_segments, mol_pic_cluster
         else:
             cap_limit = 0
         if molecule_count<cap_limit and pic_idx not in used_mol_pics_indices:
+            # molecule_segment.mol_pics.append(mol_pic_clusters[pic_idx]) # .leading_pic
             molecule_segment.mol_pics.append(mol_pic_clusters[pic_idx].leading_pic)
             used_mol_pics_indices.append(pic_idx)
     return used_mol_pics_indices
