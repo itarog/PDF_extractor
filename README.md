@@ -115,12 +115,12 @@ pdf_text_with_idx = extract_text_with_multi_idx(pdf_path)
 The output is a list where every item is of the form: (multi_idx, text, bbox)
 
 ## Full text grab
-The full extraction process is wrapped by the function **process_text_doc** takes the path to pdf file and return the data processed as **MoleculeSegement** objects
-
+The full extraction process is wrapped by the function **process_text_doc** takes the path to pdf file and return the data processed as **MoleculeSegement** objects. <br>
+The funcion can also except two parameters: **tokens_mark** and **spaces_mark**. They are detailed in stage 1
 ```
-from text_processing.init_processing import extract_text_with_multi_idx
+from text_processing.full_process import process_text_doc
 pdf_path = 'path_to_your_pdf.pdf'
-pdf_text_with_idx = extract_text_with_multi_idx(pdf_path)
+molecule_segments = process_text_doc(pdf_path)
 ```
 
 The following describes the three operation stages that **process_text_doc** takes for it's analysis:
@@ -242,21 +242,30 @@ optimize_options = [{'tokens': 40, 'spaces': 20},
 
 ```
 from wrappers import process_doc_list_pics_first
-final_molecule_segments = adjust_molecule_segments_by_common_sequence(processed_molecule_segments)
+pdf_dir = 'path_to_pdf_dir'
+results_dict = process_doc_list_pics_first(input_dir=pdf_dir)
 ```
 
 ### Working with previously obtained images
 Since the process of extracting images requires GPU and can be time consuming, the extraction process also allows to extract images ahead of time and possibily on a different using a stored pickle file saved at the end of the images extraction process.
 
-### The output
-The output is in the form of a dictionary, where every key is the file name, and the values in form of a tuple (molecule_segments, mol_pic_clusters) 
+```
+from wrappers import process_doc_list_pics_first
+pkl_pic_fname = 'path_to_pic_pkl_file'
+loaded_pics_dict = load_mol_pic_clusters_dict(pkl_pic_fname)
+results_dict = process_doc_list_pics_first(input_dir=pdf_dir, pre_pics_dict=loaded_pics_dict)
+```
 
 ## Extracting text first
 
 ```
 from wrappers import process_doc_list_text_first
-final_molecule_segments = adjust_molecule_segments_by_common_sequence(processed_molecule_segments)
+pdf_dir = 'path_to_pdf_dir'
+results_dict = process_doc_list_text_first(input_dir=pdf_dir)
 ```
+
+### The output
+The output is in the form of a dictionary, where every key is the file name, and the values in form of a tuple (molecule_segments, mol_pic_clusters) 
 
 
 # PDF extraction visuallization (via label-studio)
