@@ -26,6 +26,8 @@ The core functionalities demonstrated in this repository includes:
 git clone https://github.com/itarog/PDF_extractor
 ```
 
+currently, dependices need to be installed seperately.
+
 ---
 
 ## Playground Data
@@ -62,6 +64,7 @@ mol_pics = extract_pics_from_pdf(pdf_path)
 ### The output
 The output is a list where every items is a MolPic object.
 
+## back-end
 ### MolPic (back-end)
 MolPic is a container for an image, and is initialized using three parameters:
 - **page_num** - int, the page where the image located (used for later matching)
@@ -111,19 +114,18 @@ pdf_text_with_idx = extract_text_with_multi_idx(pdf_path)
 ### The output
 The output is a list where every item is of the form: (multi_idx, text, bbox)
 
-## Molecule segments - initiation (back-end)
-To create a **MoleculeSegement** object, you need to provide one parameter:
-- **segment_lines** - a list describing the text line in the molecule segment, where every item is of the form (multi_idx, text, bbox)
+## Full text grab
+The full extraction process is wrapped by the function **process_text_doc** takes the path to pdf file and return the data processed as **MoleculeSegement** objects
 
 ```
-from molecule_segment.molecule_segment_obj import MoleculeSegment 
+from text_processing.init_processing import extract_text_with_multi_idx
 pdf_path = 'path_to_your_pdf.pdf'
 pdf_text_with_idx = extract_text_with_multi_idx(pdf_path)
-molecule_segment_1 = MoleculeSegment(pdf_text_with_idx)
-molecule_segment_2 = MoleculeSegment(pdf_text_with_idx[5:10])
 ```
 
-## Stage 1 -locating molecule segments
+The following describes the three operation stages that **process_text_doc** takes for it's analysis:
+
+### Stage 1 - locating molecule segments
 The extracted text is divided into **MoleculeSegement** objects, where the each segment is aimed at describing one molecule. <br>
 Molecule segments can initiallized manually but for text extraction, molecule segments will be created automatically. <br>
 The decision of on whice text line each molecule segment begins and ends depends on locating molecule names that serve as a title. <br>
@@ -138,13 +140,54 @@ spaces_mark = 20
 molecule_segments = locate_molecule_segments(page_lines_with_multi_idx, tokens_mark=tokens_mark, spaces_mark=spaces_mark)
 ```
 
-## Stage 2- processing molecule segments
+### Stage 2 - processing molecule segments
 After the inital molecule segments are created, each molecule segement is searched for **TestTextLine** and **TestTextSequence**
 
 ```
 from molecule_segment.sequences2segments import process_molecule_segment_text 
 processed_molecule_segments = process_molecule_segment_text(molecule_segments)
 ```
+
+### Stage 3 - molecule segments final adjustment
+After all molecule segments have been processed, the molecule segments will be adjusted according to the most common test sequence. <br>
+The main target of this part is to combine molecule segments that have been wrongly seperated, deduced by the most common test sequence. <br>
+i.e, if the most common test sequence is ['Rf, 'IR', '1H NMR', '13C NMR'], and there are two adjacent molecule segments (and in physical proximity) that togather complete to the most common test sequence (like ['Rf'] and ['IR', '1H NMR', '13C NMR']), those segments will be united to one.
+
+```
+from molecule_segment.segements_merging import adjust_molecule_segments_by_common_sequence
+final_molecule_segments = adjust_molecule_segments_by_common_sequence(processed_molecule_segments)
+```
+
+### The output
+The output is a list where every item is a MoleculeSegment
+
+## back-end
+### Molecule segments - initiation (back-end)
+To create a **MoleculeSegement** object, you need to provide one parameter:
+- **segment_lines** - a list describing the text line in the molecule segment, where every item is of the form (multi_idx, text, bbox)
+
+```
+from molecule_segment.molecule_segment_obj import MoleculeSegment 
+pdf_path = 'path_to_your_pdf.pdf'
+pdf_text_with_idx = extract_text_with_multi_idx(pdf_path)
+molecule_segment_1 = MoleculeSegment(pdf_text_with_idx)
+molecule_segment_2 = MoleculeSegment(pdf_text_with_idx[5:10])
+```
+
+### MoleculeSegment - after text extraction (back-end)
+The main attributes of MoleculeSegment object in it's post-extraction state are:
+- segment_lines - a list describing the text line in the molecule segment, where every item is of the form (multi_idx, text, bbox)
+- begin_multi_idx - string, the multi_idx of the start page and line where the molecule segment is located
+- end_multi_idx - string, the multi_idx of the end page and line where the molecule segment is located
+- nmr_text_line_list - a list of TestTextLine of all relevant NMR tests
+- ir_text_line_list - a list of TestTextLine of all relevant IR tests
+- rf_text_line_list - a list of TestTextLine of all relevant Rf tests
+- ms_text_line_list - a list of TestTextLine of all relevant MS tests
+- mol_pics - a list of all relevant MolPicCluster
+- molecule_name - the persumed name of the molecule
+- has_test_text_sequence - bool, True if the molecule segment has test_text
+- test_text_sequence - TestTextSequence of the relevant test text lines
+
 
 ### TestTextLine (back-end)
 TestTextLine is a container for text lines pertaining to targeted data, and is initialized using three parameters:
@@ -174,33 +217,6 @@ from test_text_sequence import TestTextSequence
 list_of_test_text_line = [test_text_line_1, test_text_line_2, ...]
 test_text_sequence_ex = TestTextSequence(list_of_test_text_line)
 ```
-
-## Stage 3 - molecule segments final adjustment
-After all molecule segments have been processed, the molecule segments will be adjusted according to the most common test sequence. <br>
-The main target of this part is to combine molecule segments that have been wrongly seperated, deduced by the most common test sequence. <br>
-i.e, if the most common test sequence is ['Rf, 'IR', '1H NMR', '13C NMR'], and there are two adjacent molecule segments (and in physical proximity) that togather complete to the most common test sequence (like ['Rf'] and ['IR', '1H NMR', '13C NMR']), those segments will be united to one.
-
-```
-from molecule_segment.segements_merging import adjust_molecule_segments_by_common_sequence
-final_molecule_segments = adjust_molecule_segments_by_common_sequence(processed_molecule_segments)
-```
-
-### The output
-The output is a list where every item is a MoleculeSegment
-
-### MoleculeSegment (back-end)
-The main attributes of MoleculeSegment object in it's post-extraction state are:
-- segment_lines - a list describing the text line in the molecule segment, where every item is of the form (multi_idx, text, bbox)
-- begin_multi_idx - string, the multi_idx of the start page and line where the molecule segment is located
-- end_multi_idx - string, the multi_idx of the end page and line where the molecule segment is located
-- nmr_text_line_list - a list of TestTextLine of all relevant NMR tests
-- ir_text_line_list - a list of TestTextLine of all relevant IR tests
-- rf_text_line_list - a list of TestTextLine of all relevant Rf tests
-- ms_text_line_list - a list of TestTextLine of all relevant MS tests
-- mol_pics - a list of all relevant MolPicCluster
-- molecule_name - the persumed name of the molecule
-- has_test_text_sequence - bool, True if the molecule segment has test_text
-- test_text_sequence - TestTextSequence of the relevant test text lines
 
 # PDF full extractor
 In full extraction mode, there are two options:
@@ -243,10 +259,12 @@ final_molecule_segments = adjust_molecule_segments_by_common_sequence(processed_
 ```
 
 
-# PDF extraction visuallization
+# PDF extraction visuallization (via label-studio)
 
+## Configuring label-studio
 TBD
 
-# label studio data retrival
+
+# label-studio data retrival
 
 TBD
