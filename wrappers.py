@@ -25,6 +25,7 @@ def store_in_pkl(target_dir, part='full', pdf_file=None, metadata=None, molecule
 
 def process_doc_list_text_first(input_dir, save_dir=None, verbose=True, **kawrgs):
     pdf_files = [f for f in os.listdir(input_dir) if f.endswith('pdf')]
+    results_dict = dict()
     for file_idx, pdf_file in enumerate(pdf_files):
         if verbose:
             print(file_idx, pdf_file)
@@ -32,6 +33,7 @@ def process_doc_list_text_first(input_dir, save_dir=None, verbose=True, **kawrgs
         try:
             metadata = extract_metadata_from_raw_pdf(pdf_path)
             molecule_segments, mol_pic_clusters = process_doc_text_first(pdf_path, **kawrgs)
+            results_dict[pdf_file] = (molecule_segments, mol_pic_clusters)
             if save_dir:
                 store_in_pkl(save_dir, 'text', pdf_file, metadata, molecule_segments, mol_pic_clusters)
             if verbose:
@@ -40,6 +42,7 @@ def process_doc_list_text_first(input_dir, save_dir=None, verbose=True, **kawrgs
         except:
             if verbose:
                 print(f'failed with {pdf_file}')  
+    return results_dict
 
 def process_doc_list_pics_first(input_dir, pre_pics_dict=None, save_dir=None, verbose=True, **kawrgs):
     pdf_files = [f for f in os.listdir(input_dir) if f.endswith('pdf')]
@@ -53,7 +56,7 @@ def process_doc_list_pics_first(input_dir, pre_pics_dict=None, save_dir=None, ve
         try:
             metadata = extract_metadata_from_raw_pdf(pdf_path)
             molecule_segments, mol_pic_clusters = process_doc_pics_first(pdf_path, pre_taken_pics=pre_pics_dict.get(pdf_file), **kawrgs)
-            results_dict[pdf_file] = [molecule_segments, mol_pic_clusters]
+            results_dict[pdf_file] = (molecule_segments, mol_pic_clusters)
             if save_dir:
                 store_in_pkl(save_dir, 'full', pdf_file, metadata, molecule_segments, mol_pic_clusters)
             if verbose:

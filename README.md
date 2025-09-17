@@ -102,7 +102,6 @@ pip install pymupdf
 ## Basic text grab (PyMuPDF wrapper)
 
 The function **pdf_text_with_idx** takes the path to pdf file and return list containing all of the text lines in the pdf. <br>
-The output is a list where every item is of the form: (multi_idx, text, bbox) <br>
 - **multi_idx** - contains the page and line number of the extracted text, i.e 3_12 will be page 3 line 12
 - **text** - the extracted text
 - **bbox** - the location in the page where the text was located in the form of (y_0, x_0, y_1, x_1), where (y_0, x_0) is the upper left corner and (y_1, x_1) is the bottom right corner. All values are normallized by the max width and height. 
@@ -111,9 +110,10 @@ The output is a list where every item is of the form: (multi_idx, text, bbox) <b
 from text_processing.init_processing import extract_text_with_multi_idx
 pdf_path = 'path_to_your_pdf.pdf'
 pdf_text_with_idx = extract_text_with_multi_idx(pdf_path)
-for multi_idx, line, bbox in pdf_text_with_idx:
-    print(multi_idx, line, bbox)
 ```
+
+### The output
+The output is a list where every item is of the form: (multi_idx, text, bbox)
 
 ## Molecule segments - initiation (back-end)
 To create a **MoleculeSegement** object, you need to provide one parameter:
@@ -127,7 +127,7 @@ molecule_segment_1 = MoleculeSegment(pdf_text_with_idx)
 molecule_segment_2 = MoleculeSegment(pdf_text_with_idx[5:10])
 ```
 
-## Locating molecule segments
+## Stage 1 -locating molecule segments
 The extracted text is divided into **MoleculeSegement** objects, where the each segment is aimed at describing one molecule. <br>
 Molecule segments can initiallized manually but for text extraction, molecule segments will be created automatically. <br>
 The decision of on whice text line each molecule segment begins and ends depends on locating molecule names that serve as a title. <br>
@@ -142,8 +142,13 @@ spaces_mark = 20
 molecule_segments = locate_molecule_segments(page_lines_with_multi_idx, tokens_mark=tokens_mark, spaces_mark=spaces_mark)
 ```
 
-## Processing molecule segments
-After the inital molecule segments are created, each molecule segement is searched for *TestTextLine* and *TestTextSequence*
+## Stage 2- processing molecule segments
+After the inital molecule segments are created, each molecule segement is searched for **TestTextLine** and **TestTextSequence**
+
+```
+from molecule_segment.sequences2segments import process_molecule_segment_text 
+processed_molecule_segments = process_molecule_segment_text(molecule_segments)
+```
 
 ### TestTextLine (back-end)
 TestTextLine is a container for text lines pertaining to targeted data, and is initialized using three parameters:
@@ -174,21 +179,18 @@ list_of_test_text_line = [test_text_line_1, test_text_line_2, ...]
 test_text_sequence_ex = TestTextSequence(list_of_test_text_line)
 ```
 
-### code (front-end)
-
-```
-from molecule_segment.sequences2segments import process_molecule_segment_text 
-processed_molecule_segments = process_molecule_segment_text(molecule_segments)
-```
-
-## Molecule segments final adjustment
+## Stage 3 - molecule segments final adjustment
 After all molecule segments have been processed, the molecule segments will be adjusted according to the most common test sequence. <br>
 The main target of this part is to combine molecule segments that have been wrongly seperated, deduced by the most common test sequence. <br>
 i.e, if the most common test sequence is ['Rf, 'IR', '1H NMR', '13C NMR'], and there are two adjacent molecule segments (and in physical proximity) that togather complete to the most common test sequence (like ['Rf'] and ['IR', '1H NMR', '13C NMR']), those segments will be united to one.
 
 ```
+from molecule_segment.segements_merging import adjust_molecule_segments_by_common_sequence
 final_molecule_segments = adjust_molecule_segments_by_common_sequence(processed_molecule_segments)
 ```
+
+### The output
+The output is a list where every item is a MoleculeSegment
 
 ### MoleculeSegment (back-end)
 The main attributes of MoleculeSegment object in it's post-extraction state are:
@@ -205,8 +207,45 @@ The main attributes of MoleculeSegment object in it's post-extraction state are:
 - test_text_sequence - TestTextSequence of the relevant test text lines
 
 # PDF full extractor
+In full extraction mode, there are two options:
+- extracting molecule images first, then extract text (**recommended**)
+- extracting text first, then molecule images
 
-TBD
+The reason behind the order being pivotal, is that initial extracted data can help guide further extraction. <br>
+By extracting molecule images first, the process of identifying molecule segments can be improved by optimizing the two hyperparameters **tokens_mark** and **spaces_mark**. The optimization process is brute-force over the following options:
+
+```
+optimize_options = [{'tokens': 40, 'spaces': 20},
+                    {'tokens': 40, 'spaces': 30},
+                    {'tokens': 40, 'spaces': 40},
+                    {'tokens': 60, 'spaces': 20},
+                    {'tokens': 60, 'spaces': 30},
+                    {'tokens': 60, 'spaces': 40},
+                    {'tokens': 80, 'spaces': 20},
+                    {'tokens': 80, 'spaces': 30},
+                    {'tokens': 80, 'spaces': 40}]
+```
+
+## Extracting images first
+
+```
+from wrappers import process_doc_list_pics_first
+final_molecule_segments = adjust_molecule_segments_by_common_sequence(processed_molecule_segments)
+```
+
+### Working with previously obtained images
+Since the process of extracting images requires GPU and can be time consuming, the extraction process also allows to extract images ahead of time and possibily on a different using a stored pickle file saved at the end of the images extraction process.
+
+### The output
+The output is in the form of a dictionary, where every key is the file name, and the values in form of a tuple (molecule_segments, mol_pic_clusters) 
+
+## Extracting text first
+
+```
+from wrappers import process_doc_list_text_first
+final_molecule_segments = adjust_molecule_segments_by_common_sequence(processed_molecule_segments)
+```
+
 
 # PDF extraction visuallization
 
