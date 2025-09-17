@@ -11,8 +11,6 @@ The scripts provided here demonstrate possible usage in the pdf data extractor.
 
 ## 📄 Overview
 
-TBD
-
 The core functionalities demonstrated in this repository includes:
 
 - PDF image extraction - how to extract molecule images from a PDF document
@@ -24,10 +22,8 @@ The core functionalities demonstrated in this repository includes:
 
 ## 📂 Installing
 
-TBD
-
 ```
-git clone 
+git clone https://github.com/itarog/PDF_extractor
 ```
 
 ---
@@ -57,16 +53,16 @@ Image extraction is excuted using the python package DECIMER-Segmentation (https
 Code is duplicated from their repository to ensure robust and independent work. The code duplicated can be found at ../decimer_functions.py <br>
 **Activation of this code requires GPU**
 
-## Code
-
 ```
 from mol_pic import extract_pics_from_pdf
 pdf_path = 'path_to_your_pdf.pdf'
 mol_pics = extract_pics_from_pdf(pdf_path)
 ```
+
+### The output
 The output is a list where every items is a MolPic object.
 
-## MolPic (back-end)
+### MolPic (back-end)
 MolPic is a container for an image, and is initialized using three parameters:
 - **page_num** - int, the page where the image located (used for later matching)
 - **image** - numpy array of the image
@@ -79,7 +75,7 @@ image = ... # Numpy array of the image
 bbox = (0.24, 0.05, 0.09, 0.8)
 mol_pic = MolPic(page_num, image, bbox)
 ```
-## MolPicCluster (back-end)
+### MolPicCluster (back-end)
 MolPicCluster is container for multiple MolPic, where every MolPicCluster is assigned to a molecule segment, and one MolPic from the cluster is selected as the representative. <br>
 MolPicCluster is initialized using onr parameter:
 - **mol_pics** - list where each item is MolPic
