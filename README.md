@@ -81,7 +81,7 @@ save_object(proccessed_images, pics_pkl_filename)
 
 ## back-end
 ### MolPic (back-end)
-MolPic is a container for an image, and is initialized using three parameters:
+**MolPic** is a container for an image, and is initialized using three parameters:
 - **page_num** - int, the page where the image located (used for later matching)
 - **image** - numpy array of the image
 - **bbox** - tuple of the bbox indicating location of the extracted image in the format of (x, y, width, height) where (x,y) is the upper left corner. All x/width values are normallized according to page width and all y/height values are normallized according to page height
@@ -101,8 +101,8 @@ mol_pics = extract_pics_from_pdf(pdf_path)
 ```
 
 ### MolPicCluster (back-end)
-MolPicCluster is container for multiple MolPic, where every MolPicCluster is assigned to a molecule segment, and one MolPic from the cluster is selected as the representative. <br>
-MolPicCluster is initialized using onr parameter:
+**MolPicCluster** is container for multiple MolPic, where every **MolPicCluster** is assigned to a **MoleculeSegement**, and one **MolPic** from the cluster is selected as the representative. <br>
+**MolPicCluster** is initialized using onr parameter:
 - **mol_pics** - list where each item is MolPic
 
 ```
@@ -176,8 +176,8 @@ The extracted text is divided into **MoleculeSegement** objects, where the each 
 Molecule segments can initiallized manually but for text extraction, molecule segments will be created automatically. <br>
 The decision of on whice text line each molecule segment begins and ends depends on locating molecule names that serve as a title. <br>
 To that end, there are two free parameter that needs to be determined:
-- **tokens_mark** - The mininum percentile of molecule-name-tokens that the text line has compared to all other text lines in the document. In order for a line to be considered the beginning of a molecule segment, the line needs to have tokens percentile above this number. (default: 40)
-- **spaces_mark** - The maximum percentile of spaces that the text line has compared to all other text lines in the document. In order for a line to be considered the beginning of a molecule segment, the line needs to have spaces percentile below this number. (default: 20)
+- **tokens_mark** - The mininum percentile of molecule-name-tokens that the text line has compared to all other text lines in the document. In order for a line to be considered the beginning of a molecule segment, the line needs to have tokens percentile above this number. (default: 80)
+- **spaces_mark** - The maximum percentile of spaces that the text line has compared to all other text lines in the document. In order for a line to be considered the beginning of a molecule segment, the line needs to have spaces percentile below this number. (default: 35)
 
 ```
 from molecule_segment.segments_creation import locate_molecule_segments 
@@ -299,6 +299,27 @@ loaded_pics_dict = load_mol_pic_clusters_dict(pkl_pic_fname)
 results_dict = process_doc_list_pics_first(input_dir=pdf_dir, pre_pics_dict=loaded_pics_dict)
 ```
 
+### The output
+The output is in the form of a dictionary, where every key is the file name, and the values in form of a tuple:
+(list of **MoleculeSegement**, list of **MolPicCluster**) 
+
+### Saving results for later use
+The results can be saved seperatly (see individual extraction for details) or jointly. To save the extracted results togather ..
+
+```
+from wrappers import process_doc_list_pics_first
+from storage_obj import load_mol_pic_clusters_dict
+pkl_pic_fname = 'path_to_pic_pkl_file'
+loaded_pics_dict = load_mol_pic_clusters_dict(pkl_pic_fname)
+results_dict = process_doc_list_pics_first(input_dir=pdf_dir, pre_pics_dict=loaded_pics_dict)
+
+
+for pdf_fname, (molecule_segments, mol_pic_clusters) in results_dict.items():
+    pdf_results_pkl_fname = f'{pdf_fname}_extraction_results.pkl'
+    proccessed_results = ProccessedMoleculeSegments(pdf_fname, molecule_segments=molecule_segments,  mol_pic_clusters= mol_pic_clusters)
+    save_object(proccessed_results, pdf_results_pkl_fname)
+```
+
 ## Extracting text first
 
 ```
@@ -308,14 +329,21 @@ results_dict = process_doc_list_text_first(input_dir=pdf_dir)
 ```
 
 ### The output
-The output is in the form of a dictionary, where every key is the file name, and the values in form of a tuple (molecule_segments, mol_pic_clusters) 
+The output is in the form of a dictionary, where every key is the file name, and the values in form of a tuple:
+(list of **MoleculeSegement**, list of **MolPicCluster**) 
 
+### Saving results for later use
+The results can be saved seperatly (see individual extraction for details) or jointly (see in Extracting images first).
 
 # PDF extraction visuallization (via label-studio)
+The extraction can be visuallized using label-studio (https://github.com/HumanSignal/label-studio). <br>
+for installing label-studio see: https://labelstud.io/guide/install.
 
 ## Configuring label-studio
-TBD
-
+To work with label-studio, a reduced version of the pdf document needs to be created, stored, and given access.
+- **reduced pdf version creation** - using the python package (https://cbrunet.net/python-poppler/)
+- **storage** - currently, only the possibilty of local storage is integrated with the pdf_data_extractor, however there is possibilty of cloud storeage using label-studio.
+- **giving label-studio access** - for local storeage, access is granted by setting an enviorment variable detailed here: https://labelstud.io/guide/storage#Local-storage 
 
 # label-studio data retrival
 
