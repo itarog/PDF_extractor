@@ -56,13 +56,28 @@ Code is duplicated from their repository to ensure robust and independent work. 
 **Activation of this code requires GPU**
 
 ```
-from mol_pic import extract_pics_from_pdf
+from full_process import process_pic_doc
 pdf_path = 'path_to_your_pdf.pdf'
-mol_pics = extract_pics_from_pdf(pdf_path)
+mol_pic_clusters = process_pic_doc(pdf_path)
 ```
 
 ### The output
-The output is a list where every items is a MolPic object.
+The output is a list where every items is a **MolPicCluster** object.
+
+### Saving results for later use
+Since the process of extracting images requires GPU and can be time consuming, the extraction process also allows to extract images separately and storing it in a pickle file for later use. For example, the full extraction process can fully run on CPU provided this previously attained results
+
+
+```
+from storeage_obj import save_object, ProccessedPdfPictures
+from full_process import process_pic_doc
+pdf_path = 'path_to_your_pdf.pdf'
+mol_pic_clusters = process_pic_doc(pdf_path)
+
+pics_pkl_fname = 'my_pics_pickle.pkl'
+proccessed_images = ProccessedPdfPictures(pdf_fname, mol_pic_clusters=mol_pic_clusters)
+save_object(proccessed_images, pics_pkl_filename)
+```
 
 ## back-end
 ### MolPic (back-end)
@@ -78,6 +93,13 @@ image = ... # Numpy array of the image
 bbox = (0.24, 0.05, 0.09, 0.8)
 mol_pic = MolPic(page_num, image, bbox)
 ```
+
+```
+from mol_pic import extract_pics_from_pdf
+pdf_path = 'path_to_your_pdf.pdf'
+mol_pics = extract_pics_from_pdf(pdf_path)
+```
+
 ### MolPicCluster (back-end)
 MolPicCluster is container for multiple MolPic, where every MolPicCluster is assigned to a molecule segment, and one MolPic from the cluster is selected as the representative. <br>
 MolPicCluster is initialized using onr parameter:
@@ -116,12 +138,36 @@ The output is a list where every item is of the form: (multi_idx, text, bbox)
 
 ## Full text grab
 The full extraction process is wrapped by the function **process_text_doc** takes the path to pdf file and return the data processed as **MoleculeSegement** objects. <br>
-The funcion can also except two parameters: **tokens_mark** and **spaces_mark**. They are detailed in stage 1
+The funcion can also except two parameters: **tokens_mark** (default: 80) and **spaces_mark** (default: 35). (They are detailed in backend stage 1)
 ```
-from text_processing.full_process import process_text_doc
+from full_process import process_text_doc
 pdf_path = 'path_to_your_pdf.pdf'
 molecule_segments = process_text_doc(pdf_path)
+
+tokens_mark = 60
+spaces_mark = 55
+molecule_segments_different_tokens = process_text_doc(pdf_path, tokens_mark, spaces_mark)
+
 ```
+
+### The output
+The output is a list where every item is a **MoleculeSegment**
+
+### Saving results for later use
+Since the process of extracting images requires GPU and can be time consuming, the extraction process also allows to extract separately and storing it in a pickle file for later use.
+
+```
+from storeage_obj import save_object, ProccessedMoleculeSegments
+from full_process import process_text_doc
+pdf_path = 'path_to_your_pdf.pdf'
+molecule_segments = process_text_doc(pdf_path)
+
+text_pkl_fname = 'my_text_pickle.pkl'
+proccessed_text = ProccessedMoleculeSegments(pdf_fname, molecule_segments=molecule_segments)
+save_object(proccessed_text, text_pkl_filename)
+```
+
+## back-end
 
 The following describes the three operation stages that **process_text_doc** takes for it's analysis:
 
@@ -158,10 +204,6 @@ from molecule_segment.segements_merging import adjust_molecule_segments_by_commo
 final_molecule_segments = adjust_molecule_segments_by_common_sequence(processed_molecule_segments)
 ```
 
-### The output
-The output is a list where every item is a MoleculeSegment
-
-## back-end
 ### Molecule segments - initiation (back-end)
 To create a **MoleculeSegement** object, you need to provide one parameter:
 - **segment_lines** - a list describing the text line in the molecule segment, where every item is of the form (multi_idx, text, bbox)
@@ -251,6 +293,7 @@ Since the process of extracting images requires GPU and can be time consuming, t
 
 ```
 from wrappers import process_doc_list_pics_first
+from storage_obj import load_mol_pic_clusters_dict
 pkl_pic_fname = 'path_to_pic_pkl_file'
 loaded_pics_dict = load_mol_pic_clusters_dict(pkl_pic_fname)
 results_dict = process_doc_list_pics_first(input_dir=pdf_dir, pre_pics_dict=loaded_pics_dict)
