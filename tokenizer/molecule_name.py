@@ -2,10 +2,10 @@ from .base_tokenize import tokenize
 
 def load_default_molecule_name_tokens(molecule_name_token_patterns=None):
     if molecule_name_token_patterns is None:
-        func_name_options = ['carboxylate', 'phosphate', 'isopropyl', 'azetidin', 'methoxy', 'benzene', 'methane', 'propane', 'uronium',
-                            'ethane', 'phenyl', 'chloro', 'fluoro', 'methyl', 'propan', 'benzyl', 'hydryl', 'thione', 'sodium',
-                            'butan', 'butyl', 'hydro', 'carbo', 'tetra', 'allyl', 'sulfo', 'azete', 'amido', 'pival', 'olate',
-                            'thio', 'tert', 'benz', 'nate', 'piva', 'late', 'loyl', 'azin', 'hexa',
+        func_name_options = ['carboxylate', 'phosphate', 'isopropyl', 'azetidin', 'methoxy', 'benzene', 'methane', 'propane', 'uronium', 'peridine',
+                            'ethane', 'phenyl', 'chloro', 'fluoro', 'methyl', 'propan', 'benzyl', 'hydryl', 'thione', 'sodium', 'malonate',
+                            'butan', 'butyl', 'hydro', 'carbo', 'tetra', 'allyl', 'sulfo', 'azete', 'amido', 'pival', 'olate', 'ethyl',
+                            'thio', 'tert', 'benz', 'nate', 'piva', 'late', 'loyl', 'azin', 'hexa', 'dene',
                             'ace', 'tri', 'oxy', 'oxo', 'one', 'hyl', 'ane', 'ate', 'tol', 'tyl', 'bis', 'nyl',
                             'ol', 'di', 'en', 'yl']
         lower_case_patterns = r'|'.join(func_name_options)

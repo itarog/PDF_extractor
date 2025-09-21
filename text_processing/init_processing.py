@@ -22,9 +22,14 @@ def get_page_text(pdf_page, page_num):
     for x_0, y_0, x_1, y_1, line_text, line_num, _ in page_blocks:
         edited_text = clean_text(line_text) #
         norm_bbox = get_norm_bbox((y_0, x_0, y_1, x_1), 792, 612)
-        output_list.append((get_multi_idx(page_num, line_num), edited_text, norm_bbox))
-    temp_output_list = sorted(output_list, key=lambda x: x[2][0])
-    final_output_list = [(get_multi_idx(page_num, new_line_num), text, bbox) for new_line_num, (multi_idx, text, bbox) in enumerate(temp_output_list)]
+        if '    ' in edited_text: # silent tabs
+            split_result = edited_text.split('    ')
+            for in_result in split_result:
+                output_list.append((in_result, norm_bbox))            
+        else:
+            output_list.append((edited_text, norm_bbox))
+    temp_output_list = sorted(output_list, key=lambda x: x[1][0])
+    final_output_list = [(get_multi_idx(page_num, new_line_num), text, bbox) for new_line_num, (text, bbox) in enumerate(temp_output_list)]
     return final_output_list
 
 def extract_text_with_multi_idx(pdf_path):

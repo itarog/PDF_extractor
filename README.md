@@ -23,7 +23,7 @@ The core functionalities demonstrated in this repository includes:
 ## 📂 Installing
 
 ```
-git clone https://github.com/itarog/PDF_extractor
+git clone https://github.com/itarog/PDF_extractor.git
 ```
 
 currently, dependices need to be installed seperately.
@@ -36,24 +36,26 @@ While the reader can use any aproriate pdf document, some example data can be fo
 ### Example data 1
 
 10 total files., thesis work from Columbia University NY. <br>
-File path: ../demo_data/Exdata_1/
+PDF dir: ../demo_data/Exdata_1/ <br>
+pre-extracted images dir: ../demo_data/Exdata_1/pics_pkl/
 
 ### Example data 2
 
 10 total files, SI from the RSC journal chemical science. <br>
-File path: ../demo_data/Exdata_2/
+File path: ../demo_data/Exdata_2/ <br>
+pre-extracted images dir: ../demo_data/Exdata_2/pics_pkl/
 
 ### Example data 3
 
-10 total files, SI from publications by the Jonathan Burton group (University of Oxford) <br>
-File path: ../demo_data/Exdata_3/
-
+10 total files, SI from publications by the Jonathan Burton group (University of Oxford). <br>
+File path: ../demo_data/Exdata_3/ <br>
+pre-extracted images dir: ../demo_data/Exdata_2/pics_pkl/
 ---
 
 # PDF image extractor
-Image extraction is excuted using the python package DECIMER-Segmentation (https://github.com/Kohulan/DECIMER-Image-Segmentation). <br>
-Code is duplicated from their repository to ensure robust and independent work. The code duplicated can be found at ../decimer_functions.py <br>
-**Activation of this code requires GPU**
+Image extraction is facilitated by the python package **DECIMER-Segmentation** (https://github.com/Kohulan/DECIMER-Image-Segmentation). <br>
+Code is duplicated from their repository to ensure robust and independent work, with a minor modification allowing to track the extracted image page number. The duplicated code can be found at ../decimer_functions.py <br>
+**Activation of this code requires activation of CNNs - therefore GPU is recommended**
 
 ```
 from full_process import process_pic_doc
@@ -74,9 +76,10 @@ from full_process import process_pic_doc
 pdf_path = 'path_to_your_pdf.pdf'
 mol_pic_clusters = process_pic_doc(pdf_path)
 
+pdf_fname = pdf_path
 pics_pkl_fname = 'my_pics_pickle.pkl'
 proccessed_images = ProccessedPdfPictures(pdf_fname, mol_pic_clusters=mol_pic_clusters)
-save_object(proccessed_images, pics_pkl_filename)
+save_object(proccessed_images, pics_pkl_fname)
 ```
 
 ## back-end
@@ -109,6 +112,20 @@ mol_pics = extract_pics_from_pdf(pdf_path)
 from mol_pic_cluster import MolPicCluster
 list_of_mol_pic = [mol_pic_1, mol_pic_2, ...]
 mol_pic_cluster = MolPicCluster(list_of_mol_pic)
+```
+
+### Viewing extracted images (back-end)
+
+```
+from decimer_segmentation import segment_chemical_structures_from_file
+import matplotlib.pyplot as plt
+
+pdf_path = 'path_to_your_pdf.pdf'
+segments = segment_chemical_structures_from_file(pdf_path, expand=True)
+img = segments[0] # or any numpy array of an image
+plt.imshow(img)
+plt.axis("off")
+plt.show()
 ```
 
 ---
@@ -168,10 +185,9 @@ save_object(proccessed_text, text_pkl_filename)
 ```
 
 ## back-end
-
 The following describes the three operation stages that **process_text_doc** takes for it's analysis:
 
-### Stage 1 - locating molecule segments
+### process_text_doc - stage 1 - locating molecule segments (back-end)
 The extracted text is divided into **MoleculeSegement** objects, where the each segment is aimed at describing one molecule. <br>
 Molecule segments can initiallized manually but for text extraction, molecule segments will be created automatically. <br>
 The decision of on whice text line each molecule segment begins and ends depends on locating molecule names that serve as a title. <br>
@@ -186,7 +202,15 @@ spaces_mark = 20
 molecule_segments = locate_molecule_segments(page_lines_with_multi_idx, tokens_mark=tokens_mark, spaces_mark=spaces_mark)
 ```
 
-### Stage 2 - processing molecule segments
+The probability of a string being a molecule name is based on locating small tokens that are related with molecule name like 'carbo' or 'oxo', etc. The function **get_molecule_name_probability** takes a string and returns a probability for the string being a molecule name.
+
+```
+from tokenizer.molecule_name import get_molecule_name_probability
+possible_name = 'your_molecule_name'
+prob = get_molecule_name_probability(possible_name)
+```
+
+### process_text_doc - stage 2 - processing molecule segments (back-end)
 After the inital molecule segments are created, each molecule segement is searched for **TestTextLine** and **TestTextSequence**
 
 ```
@@ -194,7 +218,36 @@ from molecule_segment.sequences2segments import process_molecule_segment_text
 processed_molecule_segments = process_molecule_segment_text(molecule_segments)
 ```
 
-### Stage 3 - molecule segments final adjustment
+One can also scan manually for for possible **TestTextLine** using extracted text. The expected input is in the form of a list where every item is of the form: (multi_idx, text, bbox)
+
+```
+from text_processing.init_processing import extract_text_with_multi_idx
+from test_text_line import extract_test_text_lines
+
+# if you already molecule segments - you can use:
+# segment_lines = molecule_segment.segment_lines
+
+pdf_path = 'path_to_your_pdf.pdf'
+pdf_text_with_idx = extract_text_with_multi_idx(pdf_path)
+
+segment_lines = pdf_text_with_idx [5:100] 
+nmr_text_line_list = extract_test_text_lines(segment_lines, test_names=[r'NMR'])
+ir_text_line_list = extract_test_text_lines(segment_lines, test_names=[r'IR'])
+rf_text_line_list = extract_test_text_lines(segment_lines, test_names=[r'Rf'])
+ms_text_line_list = extract_test_text_lines(segment_lines, test_names=[r'HRMS'])
+```
+
+To create **TestTextSequence** from **TestTextLine**, you can use ..
+
+```
+from test_text_sequence import sort_test_lines_to_sequences, sort_test_list
+all_test_list = nmr_text_line_list + ir_text_line_list + rf_text_line_list + ms_text_line_list 
+sorted_test_list = sort_test_list(all_test_list)
+multi_idx_list = [item[0] for item in segment_lines] 
+test_text_sequence_list = sort_test_lines_to_sequences(sorted_test_list, multi_idx_list)
+```
+
+### Stage 3 - molecule segments final adjustment (back-end)
 After all molecule segments have been processed, the molecule segments will be adjusted according to the most common test sequence. <br>
 The main target of this part is to combine molecule segments that have been wrongly seperated, deduced by the most common test sequence. <br>
 i.e, if the most common test sequence is ['Rf, 'IR', '1H NMR', '13C NMR'], and there are two adjacent molecule segments (and in physical proximity) that togather complete to the most common test sequence (like ['Rf'] and ['IR', '1H NMR', '13C NMR']), those segments will be united to one.
@@ -334,6 +387,17 @@ The output is in the form of a dictionary, where every key is the file name, and
 
 ### Saving results for later use
 The results can be saved seperatly (see individual extraction for details) or jointly (see in Extracting images first).
+
+## back-end
+
+### MoleculeSegement and MolPicCluster matching algorithm (back-end)
+
+TBD
+
+```
+from matching import match_mol_pic_clusters_to_molecule_segments
+match_mol_pic_clusters_to_molecule_segments(molecule_segments, mol_pic_clusters, match_up_to_max_num=False)
+```
 
 # PDF extraction visuallization (via label-studio)
 The extraction can be visuallized using label-studio (https://github.com/HumanSignal/label-studio). <br>
