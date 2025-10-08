@@ -44,6 +44,7 @@ def process_doc_list_text_first(input_dir, save_dir=None, verbose=True, **kawrgs
                 print(f'failed with {pdf_file}')  
     return results_dict
 
+
 def process_doc_list_pics_first(input_dir, pre_pics_dict=None, save_dir=None, verbose=True, **kawrgs):
     pdf_files = [f for f in os.listdir(input_dir) if f.endswith('pdf')]
     results_dict = dict()

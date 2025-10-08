@@ -59,10 +59,42 @@ def clean_molecule_name(molecule_name, replacement=' '):
     cleaned_molecule_name = cleaned_molecule_name.strip(" .")
     return cleaned_molecule_name
 
+# def get_molecule_segment_name(molecule_segment):
+#     molecule_name = molecule_segment.segment_lines[0][1]
+#     cleaned_molecule_name = clean_molecule_name(molecule_name)
+#     return cleaned_molecule_name
+
+def find_mol_tag(text):
+    pattern = r'\((\d+[a-zA-Z]?)\)' # r'\((\d+)\)'
+    matches = re.findall(pattern, text)
+    if matches:
+        return matches[0]
+    else:
+        return None
+
+def search_molecule_name(text):
+    mol_tag = find_mol_tag(text)
+    if mol_tag:
+        full_tag = '(' + mol_tag + ')'
+        end_idx = text.find(full_tag)
+        molecule_name = text[:end_idx].strip()
+    else:
+        molecule_name = None
+    return molecule_name
+
 def get_molecule_segment_name(molecule_segment):
-    molecule_name = molecule_segment.segment_lines[0][1]
-    cleaned_molecule_name = clean_molecule_name(molecule_name)
-    return cleaned_molecule_name
+    molecule_name = None
+    num_lines = 3
+    while num_lines>0 and num_lines<len(molecule_segment.segment_lines) and molecule_name==None:
+        text = ''.join(line for multi_idx, line, bbox in molecule_segment.segment_lines[:num_lines])
+        molecule_name = search_molecule_name(text)
+        num_lines-=1
+    if molecule_name:
+        return molecule_name
+    else:
+        molecule_name = molecule_segment.segment_lines[0][1]
+        cleaned_molecule_name = clean_molecule_name(molecule_name)
+        return cleaned_molecule_name
 
 def assign_molecule_segment_name(molecule_segments):
     for molecule_segment in molecule_segments:
