@@ -40,10 +40,22 @@ def export_mol_pic(mol_pic, export_dir, molecule_name=None):
     image_pil.save(export_path)
     return export_path
 
+def adjust_y(o_y):
+    new_y = 0.9346*o_y + 0.2216
+    return new_y
+
+def adjust_width(o_width):
+    return o_width+2
+
 def bbox_xyxy_to_xywh(bbox):
-    x0, y0, x1, y1 = bbox
-    new_bbox = (x0, y0, x1-x0, y1-y0)
+    y0, x0, y1, x1 = bbox
+    new_bbox = (x0, adjust_y(y0), adjust_width(x1-x0), y1-y0)
     return new_bbox
+
+# def bbox_xyxy_to_xywh(bbox):
+#     x0, y0, x1, y1 = bbox
+#     new_bbox = (x0, y0, x1-x0, y1-y0)
+#     return new_bbox
 
 def extract_pics_from_pdf(pdf_file, save_pics=False, save_dir='', pages=None):
     page_images, overalll_segments = segment_chemical_structures_from_file_modified(pdf_file, expand=True, pages=pages)

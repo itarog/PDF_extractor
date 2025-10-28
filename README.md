@@ -59,6 +59,8 @@ Code is duplicated from their repository to ensure robust and independent work. 
 ## Code
 
 ```
+from .mol_pic import extract_pics_from_pdf 
+
 pdf_path = 'path_to_your_pdf.pdf'
 mol_pics = extract_pics_from_pdf(pdf_path)
 ```
@@ -71,6 +73,8 @@ MolPic is a container for an image, and is initialized using three parameters:
 - bbox - bbox of the location of the extracted image in the format of (x, y, width, height) where (x,y) is the upper left corner.
 
 ```
+from .mol_pic import MolPic
+
 page_num = 3
 image = ... # Numpy array of the image
 bbox = (x, y, width, height)
@@ -82,8 +86,10 @@ MolPicCluster is initialized using onr parameter:
 - mol_pics - list where each item is MolPic
 
 ```
+from .mol_pic_cluster import MolPicCluster
+
 list_of_mol_pic = [mol_pic_1, mol_pic_2, ...]
-mol_pic_cluster = TestTextSequence(list_of_mol_pic)
+mol_pic_cluster = MolPicCluster(list_of_mol_pic)
 ```
 
 ---
@@ -104,6 +110,8 @@ The output is a list where every item is of the form: (multi_idx, text, bbox)
 - bbox - the location in the page where the text was located in the form of (y_0, x_0, y_1, x_1), where (y_0, x_0) is the upper left corner and (y_1, x_1) is the bottom right corner. All values are normallized by the max width and height. 
 
 ```
+from text_processing.init_processing import extract_text_with_multi_idx
+
 pdf_path = 'path_to_your_pdf.pdf'
 pdf_text_with_idx = extract_text_with_multi_idx(pdf_path)
 for multi_idx, line, bbox in pdf_text_with_idx:
@@ -119,6 +127,7 @@ To that end, there are two free parameter that needs to be determined:
 - spaces_mark - The maximum percentile of spaces that the text line has compared to all other text lines in the document. In order for a line to be considered the beginning of a molecule segment, the line needs to have spaces percentile below this number. (default: 20)
 
 ```
+from .molecule_segments.segments_creation import locate_molecule_segments
 tokens_mark = 40
 spaces_mark = 20
 molecule_segments = locate_molecule_segments(page_lines_with_multi_idx, tokens_mark=tokens_mark, spaces_mark=spaces_mark)
@@ -185,12 +194,45 @@ The main attributes of MoleculeSegment object in it's post-extraction state are:
 
 # PDF full extractor
 
-TBD
+Full extraction can be done in two manners:
+- text first, then images
+- images first, then text
+
+The extraction process levreges the initial process to optimize the second extraction.
+
+## text first
+
+```
+from .full_process import process_doc_text_first
+
+pdf_path = 'path_to_your_pdf.pdf'
+molecule_segments, mol_pic_clusters = process_doc_text_first(pdf_path)
+```
+
+## images first
+
+```
+from .full_process import process_doc_pics_first
+
+pdf_path = 'path_to_your_pdf.pdf'
+molecule_segments, mol_pic_clusters = process_doc_pics_first(pdf_path)
+```
 
 # PDF extraction visuallization
 
-TBD
+In order to verify the extraction results, our code interfaces with label-studio:
+Please follow the installation instructions in the following link ..
+set user in label-studio
+opens in a browser
+need to set stoage folder
+
+To fully use label-studio, you need to also set-up access to your local-storage or link label-studio to a cloud service
+**currently**, only the local-storage option is supported. 
 
 # label studio data retrival
 
-TBD
+After the verification process via label-studio, changes made by the user using label-studio is updated and a database file can be create to ... format (csv + images?)
+
+All images are re-extracted according to the final bbox drawn in label-studio
+
+**Important**: Text isn't re-extracted, but rather all changes must be done using the text-box found in label-studio.
