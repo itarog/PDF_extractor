@@ -50,6 +50,55 @@ File path: main/database_files/features_2_df.ftr
 10 total files, SI from ... <br>
 File path: main/database_files/features_3_df.ftr
 
+### Validation / ground-truth for playground data
+
+All of the experimental data found in the PDF of the experimental data have been manually collected and used to evaluate this tool. This data is stored in csv file with four columns ..
+
+The file can be loaded using ...
+
+```
+from .demo_data.load_gt import get_groundtruth_ms
+
+ground_truth_fname = r"..\demo_data\ground_truth.csv"
+gt_dict, overall_gt_stats = get_groundtruth_ms(ground_truth_fname) 
+print('Num of doc:', overall_gt_stats.get('num_of_files'))
+print('Overall num of test lines:', overall_gt_stats.get('total_number_of_tests'))
+print('Mean number of molecules per doc:', overall_gt_stats.get('mean_num_of_molecules'))
+for k, v in overall_gt_stats.items():
+    if not k in ['inner_stats', 'num_of_files', 'total_number_of_tests', 'mean_num_of_molecules']:
+        print(k, ':', v)
+
+```
+
+The name of the molecule can be transformed into SMILES using OPsin (IUPAC names) or PubChem (generic names). This requires internet connection  
+
+
+```
+from .demo_data.molname_to_SMILES import opsin_query, pubchem_name_to_smiles
+
+ground_truth_fname = r"..\demo_data\ground_truth.csv"
+gt_df = pd.read_csv(ground_truth_fname)
+molecule_names = gt_df.molecule_name.unique()
+smiles_dict = dict()
+for nm in molecule_names:
+    try:
+        info = opsin_query(nm)
+        smiles = info.get('smiles')
+    except Exception as e:
+        smiles = ''
+    if smiles == '':
+        smiles = pubchem_name_to_smiles(nm)
+    smiles_dict[nm] = smiles
+```
+
+Reproducing all evaluation results mentioned in the main text body is possible using ..
+
+```
+from .demo_data.inner_validation import opsin_query, pubchem_name_to_smiles
+
+NOT YET ON GITHUB - ADDING PIC to SMILES
+```
+
 ---
 
 # PDF image extractor
