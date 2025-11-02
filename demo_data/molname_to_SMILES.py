@@ -1,5 +1,6 @@
 import requests
 from urllib.parse import quote
+from rdkit import Chem
 
 OPSIN_BASE = "https://opsin.ch.cam.ac.uk/opsin/"
 
@@ -28,8 +29,7 @@ def opsin_query(name: str, out_format: str = "json", timeout: int = 10):
             # OPSIN returns JSON even for parsing failures; surface the message
             msg = data_lc.get("message") or data_lc.get("error") or "Unknown OPSIN failure"
             raise ValueError(f"OPSIN parsing failed for '{name}': {msg}")
-        # return only the main useful fields (may be absent depending on name)
-        return {
+        results_dict = {
             "status": data_lc.get("status"),
             "message": data_lc.get("message"),
             "smiles": data_lc.get("smiles") or data_lc.get("smiles0"),
@@ -37,13 +37,22 @@ def opsin_query(name: str, out_format: str = "json", timeout: int = 10):
             "stdinchikey": data_lc.get("stdinchikey"),
             "cml": data_lc.get("cml"),  # may be large
             # include the full dict if you want more
-            "raw": data_lc,
+            # "raw": data_lc,
         }
+        results_dict['smiles'] = cannonize_smiles_rdkit(results_dict.get('smiles'))
+        return results_dict
     else:
         # For non-json (smi, inchi, png, svg) return raw content
         # images should be written in binary mode
         return resp.content
 
+def cannonize_smiles_rdkit(smiles):
+    try:
+        mol = Chem.MolFromSmiles(smiles)
+        smiles_canon = Chem.MolToSmiles(mol, canonical=True)
+    except:
+        smiles_canon = smiles
+    return smiles_canon
 
 def save_image_from_opsin(name: str, filename: str, fmt: str = "png"):
     """

@@ -47,7 +47,10 @@ def _process_file_group(fname_df):
 
 
 def _build_molecule_dict_list(mol_df):
-    mol_dict = mol_df[['molecule_name', 'test_type', 'test_text']].T.to_dict()
+    trans_columns = ['molecule_name', 'test_type', 'test_text']
+    if 'opsin_smiles' in mol_df.columns:
+        trans_columns.append('opsin_smiles')
+    mol_dict = mol_df[trans_columns].T.to_dict()
     return [
         {**line_dict, 'line_idx': idx}
         for idx, line_dict in mol_dict.items()
