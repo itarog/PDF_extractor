@@ -45,7 +45,7 @@ conda activate pdf_extractor
 
 3. **Install the package:**
 ```bash
-pip install -e .
+python -m pip install .
 ```
 
 **Note:** The installation process will automatically download required dependencies including:

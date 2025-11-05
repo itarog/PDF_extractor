@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 Setup script for PDF Chemical Analysis Extractor
 """
@@ -171,11 +172,17 @@ setup(
     ],
     python_requires=">=3.8",
     install_requires=[
+        "decimer-segmentation>=1.0.0",
         "PyMuPDF>=1.23.0",
         "pypdf>=3.0.0",
+        "numpy>=1.24.0",
         "opencv-python>=4.8.0",
         "Pillow>=10.0.0",
+        "torch>=2.0.0",
+        "torchvision>=0.20.0",
+        "seaborn>=0.13.0",
         "pdf2image>=1.16.0",
+        "label-studio>=1.21.0",
         "regex>=2023.0.0",
         "python-dateutil>=2.8.0",
         "gdown>=5.1.0",
@@ -187,9 +194,6 @@ setup(
             "pytest-cov>=4.0.0",
             "black>=23.0.0",
             "flake8>=6.0.0",
-        ],
-        "decimer": [
-            "decimer-segmentation>=1.0.0",
         ],
     },
     entry_points={

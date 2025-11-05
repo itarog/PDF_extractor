@@ -138,6 +138,7 @@ def process_folder(input_folder, output_folder, process_pics=True, save_images=F
     print(f"Input folder:  {input_folder}")
     print(f"Output folder: {output_folder}")
     print(f"Extract images: {process_pics}")
+    print(f"Image segmentation backend: {img_backend}")
     print(f"{'='*60}\n")
     
     # Create output directory
