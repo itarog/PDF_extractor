@@ -33,7 +33,7 @@ The core functionalities demonstrated in this repository includes:
 
 1. **Clone the repository:**
 ```bash
-git clone [<repository-url>](https://github.com/itarog/PDF_extractor.git)
+git clone https://github.com/itarog/PDF_extractor.git
 cd PDF_extractor
 ```
 
