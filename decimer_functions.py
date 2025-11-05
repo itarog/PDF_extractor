@@ -85,7 +85,7 @@ def get_masked_image(image: np.array, mask: np.array) -> np.array:
     background[trans_mask] = [255, 255, 255, 255]
     return background, bbox
 
-from PDF_text_extractor.general import minimize_pdf_to_relavent_pages
+from general import minimize_pdf_to_relavent_pages
 from pdf2image import convert_from_path
 import copy
 

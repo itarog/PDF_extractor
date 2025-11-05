@@ -1,5 +1,5 @@
 import os
-from .storeage_obj import load_pickle_by_dir
+from storeage_obj import load_pickle_by_dir
 
 def get_loaded_pdf_list_from_dir(pkl_dir):
     loaded_pdf_list = load_pickle_by_dir(pkl_dir)

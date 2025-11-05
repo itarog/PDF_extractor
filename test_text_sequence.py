@@ -1,6 +1,6 @@
 import os
-from .general import get_actual_idx_from_multi_idx
-from .label_studio_wrappers.image_transformers import save_text_to_image
+from general import get_actual_idx_from_multi_idx
+from label_studio_wrappers.image_transformers import save_text_to_image
 class TestTextSequence:
     def __init__(self, test_text_lines):
         self.test_text_lines = test_text_lines

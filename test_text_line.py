@@ -1,8 +1,8 @@
 from collections import defaultdict
-from .general import get_page_num_and_line_num_from_multi_idx, get_actual_idx_from_multi_idx
-from .text_cleaning.clean_patterns import clean_text_by_tokens, load_default_clean_tokens
-from .text_cleaning.replacement import replace_text_by_tokens, load_default_replacement_tokens
-from .text_cleaning.test_enders import cut_text_by_enders, load_default_end_tokens
+from general import get_page_num_and_line_num_from_multi_idx, get_actual_idx_from_multi_idx
+from text_cleaning.clean_patterns import clean_text_by_tokens, load_default_clean_tokens
+from text_cleaning.replacement import replace_text_by_tokens, load_default_replacement_tokens
+from text_cleaning.test_enders import cut_text_by_enders, load_default_end_tokens
 
 class TestTextLine:
     def __init__(self, start_multi_idx, end_multi_idx, bbox_list, test_type, text):

@@ -1,7 +1,7 @@
 import numpy as np
 import re
 from .molecule_segment_obj import MoleculeSegment
-from ..tokenizer.molecule_name import get_molecule_name_probability
+from tokenizer.molecule_name import get_molecule_name_probability
 
 def get_line_statistics(page_lines_with_multi_idx, token_patterns=None, debugging=False):
     tokens_percentages, num_of_spaces_list, suspected_lines = [], [], []

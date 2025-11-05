@@ -1,15 +1,15 @@
 import os
 from collections import defaultdict
-from .metadata import extract_metadata_from_raw_pdf
-from .full_process import process_doc_text_first, process_doc_pics_first
-from .storeage_obj import ProccessedPdf, ProccessedPdfPictures, ProccessedMoleculeSegments, save_object, load_mol_pic_clusters_dict, load_molecule_segments_dict
-from .post_processing import get_filled_matched_molecule_segments
+from metadata import extract_metadata_from_raw_pdf
+from full_process import process_doc_text_first, process_doc_pics_first
+from storeage_obj import ProccessedPdf, ProccessedPdfPictures, ProccessedMoleculeSegments, save_object, load_mol_pic_clusters_dict, load_molecule_segments_dict
+from post_processing import get_filled_matched_molecule_segments
 
-from .label_studio_wrappers.ls_setup import get_label_config, setup_label_studio_project, get_annot_value_from_task
-from .label_studio_wrappers.molecule_segment_to_ls import molecule_segments_to_label_studio_dir
+from label_studio_wrappers.ls_setup import get_label_config, setup_label_studio_project, get_annot_value_from_task
+from label_studio_wrappers.molecule_segment_to_ls import molecule_segments_to_label_studio_dir
 
 def store_in_pkl(target_dir, part='full', pdf_file=None, metadata=None, molecule_segments=None, mol_pic_clusters=None):
-    pkl_filename = pdf_file.replace('pdf', 'pkl')
+    pkl_filename = pdf_file.replace('.pdf', '.pkl')
     if part=='full':
         final_obj = ProccessedPdf(pdf_file, metadata, molecule_segments, mol_pic_clusters)
     elif part=='pics':
@@ -21,7 +21,8 @@ def store_in_pkl(target_dir, part='full', pdf_file=None, metadata=None, molecule
     else:
         print('Exit')
         return None
-    save_object(final_obj, target_dir, pkl_filename)
+    target_path = os.path.join(target_dir, pkl_filename)
+    save_object(final_obj, target_path)
 
 def process_doc_list_text_first(input_dir, save_dir=None, verbose=True, **kawrgs):
     pdf_files = [f for f in os.listdir(input_dir) if f.endswith('pdf')]

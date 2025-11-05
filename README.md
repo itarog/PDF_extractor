@@ -24,11 +24,34 @@ The core functionalities demonstrated in this repository includes:
 
 ## 📂 Installing
 
-TBD
+### Prerequisites
 
+- Python 3.8 or higher
+- Conda (recommended) or pip
+
+### Installation Steps
+
+1. **Clone the repository:**
+```bash
+git clone <repository-url>
+cd PDF_extractor
 ```
-git clone 
+
+2. **Create a conda environment (recommended):**
+```bash
+conda create -n pdf_extractor python=3.10
+conda activate pdf_extractor
 ```
+
+3. **Install the package:**
+```bash
+pip install -e .
+```
+
+**Note:** The installation process will automatically download required dependencies including:
+- YOLOv5 model files
+- Poppler binaries (for PDF processing on Windows)
+- All Python package dependencies listed in `setup.py`
 
 ---
 
