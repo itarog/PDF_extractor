@@ -55,18 +55,18 @@ def process_doc_list_pics_first(input_dir, pre_pics_dict=None, save_dir=None, ve
         if verbose:
             print(file_idx, pdf_file)
         pdf_path = os.path.join(input_dir, pdf_file)
-        try:
-            metadata = extract_metadata_from_raw_pdf(pdf_path)
-            molecule_segments, mol_pic_clusters = process_doc_pics_first(pdf_path, pre_taken_pics=pre_pics_dict.get(pdf_file), **kawrgs)
-            results_dict[pdf_file] = (molecule_segments, mol_pic_clusters)
-            if save_dir:
-                store_in_pkl(save_dir, 'full', pdf_file, metadata, molecule_segments, mol_pic_clusters)
-            if verbose:
-                print(f'success with {pdf_file}')
-                print(f'num of molecule segments {len(molecule_segments)}')
-        except:
-            if verbose:
-                print(f'failed with {pdf_file}')  
+        # try:
+        metadata = extract_metadata_from_raw_pdf(pdf_path)
+        molecule_segments, mol_pic_clusters = process_doc_pics_first(pdf_path, pre_taken_pics=pre_pics_dict.get(pdf_file), **kawrgs)
+        results_dict[pdf_file] = (molecule_segments, mol_pic_clusters)
+        if save_dir:
+            store_in_pkl(save_dir, 'full', pdf_file, metadata, molecule_segments, mol_pic_clusters)
+        if verbose:
+            print(f'success with {pdf_file}')
+            print(f'num of molecule segments {len(molecule_segments)}')
+        # except:
+        # if verbose:
+        #     print(f'failed with {pdf_file}')  
     return results_dict
      
 def load_or_process_data(pdf_dir=None, pkl_pic_dir=None, pkl_text_dir=None, verbose=True):

@@ -49,8 +49,9 @@ def segment_chemical_structures_from_file(file_path: str, expand: bool = True, p
         if im is None:
             overall_segments.append((idx, []))
             continue
-
+        
         if backend == 'yode':
+            # print ('yode')
             segs = segment_chemical_structures_yode (im)
 
         else:
