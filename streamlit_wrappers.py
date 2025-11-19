@@ -89,7 +89,10 @@ def process_pdf_dir_end_to_end(input_dir, verbose=True, backend='yode', database
         m_ms_list_to_export+=m_segments
 
     database_csv_path, image_dir_path = gen_database_from_ms_list(m_ms_list_to_export, database_name=database_name, graph_sketch=graph_sketch)
-    run_str_command_1 = r'streamlit run C:\Users\itaro\PDF_extractor\app.py '
+
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    app_path = os.path.join(script_dir, "app.py")
+    run_str_command_1 = f'streamlit run {app_path} '
     run_str_command_2 = f'-- --csv_fpath {database_csv_path} --images_fpath {image_dir_path}'
     run_str_command = run_str_command_1 + run_str_command_2
 

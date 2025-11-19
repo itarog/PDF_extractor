@@ -53,6 +53,29 @@ python -m pip install .
 - Poppler binaries (for PDF processing on Windows)
 - All Python package dependencies listed in `setup.py`
 
+### Create your own database with a click!
+
+After installation, set all the documents you want to process into one folder, use either the command line or python to run the extractor and produce your database.
+
+## from python
+
+```
+from .streamlit_wrappers import process_pdf_dir_end_to_end
+
+ground_truth_fname = r"..\demo_data\ground_truth.csv"
+verbose = True
+image_backend = 'yode' # can be 'decimer' as well
+database_name = 'my_database'
+graph_sketch = True # if true, a graph sketch will be made from the text (no intesities) 
+cmd_process = process_pdf_dir_end_to_end(pdf_dir,
+                                         verbose=True,
+                                         backend=image_backend,
+                                         database_name=database_name,
+                                         graph_sketch=graph_sketch)
+```
+
+
+
 ---
 
 ## Playground Data
