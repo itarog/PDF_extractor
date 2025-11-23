@@ -1,0 +1,191 @@
+,molecule_name,test_type,test_text,opsin_smiles,line_idx,in_house_namescore,in_house_precision,in_house_recall,in_house_f1,in_house_smiles_sim
+0,Dibutylphosphine oxide,Rf,0.00 (EtOAc:40-60 pet. ether 1:1),CCCC[PH](=O)CCCC,701,,,,,
+1,Dibutylphosphine oxide,1H NMR,"(400 MHz, CDCl3): δ 6.86 (d, J = 446.5 Hz, 1H, PH), 1.89-1.69 (m, 4H, nBu),
+1.69-1.52 (m, 4H, nBu), 1.52-1.38 (m, 4H, nBu), 0.94 (t, J = 8.0 Hz, 6H, nBu)",CCCC[PH](=O)CCCC,702,0.24,0.75,0.75,0.75,
+2,Dibutylphosphine oxide,13C NMR,"(101 MHz, CDCl3): δ 28.7 (d, J = 93.0 Hz, nBu), 24.0 (d, J = 15.0 Hz, nBu),
+23.6 (d, J = 4.0 Hz, nBu), 13.6 (nBu)",CCCC[PH](=O)CCCC,703,0.24,0.0,0.0,0.0,
+3,Dibutylphosphine oxide,31P NMR,"(162 MHz, CDCl3): δ 35.0 (phosphine oxide)",CCCC[PH](=O)CCCC,704,0.24,1.0,1.0,1.0,
+4,Dibutylphosphine oxide,IR,"(ATR): 3323 (br), 1635 (br) νmax/cm-1",CCCC[PH](=O)CCCC,705,,,,,
+5,"(S)-((5-((3,7-dimethyloct-6-en-1-yl)oxy)1,3-phenylene)bis(ethyne-2,1-
+diyl))bis(trimethylsilane)",Rf,0.57 (40-60 pet. ether),CC(C)=CCC[C@H](C)CCOc1cc(C#C[Si](C)(C)C)cc(C#C[Si](C)(C)C)c1,744,,,,,
+6,"(S)-((5-((3,7-dimethyloct-6-en-1-yl)oxy)1,3-phenylene)bis(ethyne-2,1-
+diyl))bis(trimethylsilane)",1H NMR,"(400 MHz, CDCl3): δ 7.18 (t, J = 1.5, Hz, 1H, 4-H), 6.93 (d, J = 1,5 Hz, 2H,
+2-H), 5.13 – 5.07 (m, 1H, Sol), 3.99 – 3.92 (m, 2H, Sol), 2.09 – 1.92 (m, 2H, Sol), 1.85
+– 1.76 (m, 1H, Sol), 1.69 (s, 3H, Sol), 1.68 – 1.63 (m, 1H, Sol), 1.61 (s, 3H, Sol), 1.60
+– 1.55 (m, 1H, Sol), 1.42 – 1.33 (m, 1H, Sol), 1.28 – 1.18 (m, 1H, Sol), 0.95 (d, J = 6.5
+Hz, 3H, Sol), 0.24 (s, 18H, TMS)",CC(C)=CCC[C@H](C)CCOc1cc(C#C[Si](C)(C)C)cc(C#C[Si](C)(C)C)c1,745,,,,,
+7,"(S)-((5-((3,7-dimethyloct-6-en-1-yl)oxy)1,3-phenylene)bis(ethyne-2,1-
+diyl))bis(trimethylsilane)",13C NMR,"(101 MHz, CDCl3): δ 158.6 (1-C), 131.3 (Sol), 128.0 (4-C), 124.6 (Sol),
+124.2 (3-C), 118.3 (2-C), 104.1 (5-C), 94.5 (6-C), 66.7 (Sol), 37.0 (Sol), 35.9 (Sol),
+29.7 (Sol), 25.7 (Sol), 25.4 (Sol), 19.5 (Sol), 17.7 (Sol), -0.09 (TMS)",CC(C)=CCC[C@H](C)CCOc1cc(C#C[Si](C)(C)C)cc(C#C[Si](C)(C)C)c1,746,0.05,1.0,1.0,1.0,
+8,"(S)-((5-((3,7-dimethyloct-6-en-1-yl)oxy)1,3-phenylene)bis(ethyne-2,1-
+diyl))bis(trimethylsilane)",IR,"(ATR): 2961, 2929, 1578, 1249, 1156, 837, 758 νmax/cm-1",CC(C)=CCC[C@H](C)CCOc1cc(C#C[Si](C)(C)C)cc(C#C[Si](C)(C)C)c1,747,0.05,1.0,1.0,1.0,
+9,"(S)-((5-((3,7-dimethyloct-6-en-1-yl)oxy)1,3-phenylene)bis(ethyne-2,1-
+diyl))bis(trimethylsilane)",MS,"(ES+): C26H41OSi2 calcd. 425.2696 found 425.2698, Δ = 0.5 ppm",CC(C)=CCC[C@H](C)CCOc1cc(C#C[Si](C)(C)C)cc(C#C[Si](C)(C)C)c1,748,0.05,1.0,1.0,1.0,
+10,"(S)-dibutyl(3-((3-((3,7-dimethyloct-6-en-1-
+yl)oxy)phenyl)ethynyl)phenyl)phosphine oxide",Rf,0.50 (MeOH:CH2Cl2 1:9),CCCCP(=O)(CCCC)c1cccc(C#Cc2cccc(OCC[C@@H](C)CCC=C(C)C)c2)c1,764,0.63,1.0,1.0,1.0,0.704
+11,"(S)-dibutyl(3-((3-((3,7-dimethyloct-6-en-1-
+yl)oxy)phenyl)ethynyl)phenyl)phosphine oxide",1H NMR,"(400 MHz, CDCl3): δ 7.81 (d, J = 10.0 Hz, 1H, 10-H), 7.67 – 7.59 (m, 2H,
+12, 14-H), 7.44 (t, J = 8.0 Hz, 1H, 13-H), 7.21 (t, J = 8.0 Hz, 1H, 5-H), 7.08 (d, J = 8.0
+Hz, 1H, 4-H), 7.03 (t, J = 2.0 Hz, 1H, 2-H), 6.87 (dd, J = 8.0, 2 Hz, 6-C), 5.11 – 5.04
+(m, 1H, Sol), 4.01 – 3.91 (m, 2H, Sol), 2.04 – 1.73 (m, 7H, Sol, nBu), 1.71 – 1.49 (m,
+12H, Sol, nBu), 1.46 – 1.27 (m, 5H, Sol, nBu), 0.92 (d, J = 6.5 Hz, 3H, Sol), 0.84 (t, J =
+7 Hz, 6H, nBu)",CCCCP(=O)(CCCC)c1cccc(C#Cc2cccc(OCC[C@@H](C)CCC=C(C)C)c2)c1,765,,,,,
+12,"(S)-dibutyl(3-((3-((3,7-dimethyloct-6-en-1-
+yl)oxy)phenyl)ethynyl)phenyl)phosphine oxide",13C NMR,"(101 MHz, CDCl3): δ 158.9 (1-C), 134.3 (14-C), 133.6 (d, J = 84.0 Hz, 11-
+C), 133.4 (d, J = 9.0 Hz, 10-C), 131.2 (Sol), 130.0 (d, J = 7.5 Hz, 12-C), 129.4 (5-C),
+128.7 (d, J = 10.0 Hz, 13-C), 124.6 (Sol), 124.0 (3-C), 123.9 (d, J = 10 Hz, 9-C), 123.9
+(4-C), 117.0 (2-C), 115.9 (6-C), 90.8 (8-C), 88.1 (7-C), 66.4 (Sol), 37.1 (Sol), 36.1 (Sol), 29.6 (d, J = 69.0 Hz, nBu), 29.5 (Sol), 25.7 (Sol), 25.4 (Sol), 24.1 (d, J = 15.0 Hz,
+nBu), 23.4 (d, J = 2.0 Hz, nBu), 19.6 (Sol), 17.7 (Sol), 13.5 (d, J = 1.0 Hz, nBu)",CCCCP(=O)(CCCC)c1cccc(C#Cc2cccc(OCC[C@@H](C)CCC=C(C)C)c2)c1,766,,,,,
+13,"(S)-dibutyl(3-((3-((3,7-dimethyloct-6-en-1-
+yl)oxy)phenyl)ethynyl)phenyl)phosphine oxide",31P NMR,"(162 MHz, CDCl3): δ 40.3 (phosphine oxide)",CCCCP(=O)(CCCC)c1cccc(C#Cc2cccc(OCC[C@@H](C)CCC=C(C)C)c2)c1,767,,,,,
+14,"(S)-dibutyl(3-((3-((3,7-dimethyloct-6-en-1-
+yl)oxy)phenyl)ethynyl)phenyl)phosphine oxide",IR,"(ATR): 2957, 2929, 1596, 1574, 1466, 1222, 1170, 686 νmax/cm-1",CCCCP(=O)(CCCC)c1cccc(C#Cc2cccc(OCC[C@@H](C)CCC=C(C)C)c2)c1,768,,,,,
+15,"(S)-dibutyl(3-((3-((3,7-dimethyloct-6-en-1-
+yl)oxy)phenyl)ethynyl)phenyl)phosphine oxide",MS,"(ES+): C32H46O2P1 calcd. 493.3230 found 493.3222, Δ = -1.69 ppm",CCCCP(=O)(CCCC)c1cccc(C#Cc2cccc(OCC[C@@H](C)CCC=C(C)C)c2)c1,769,,,,,
+16,"(S)-(((5-((3,7-dimethyloct-6-en-1-yl)oxy)-1,3-phenylene)bis(ethyne-2,1-
+diyl))bis(3,1-phenylene))bis(dibutylphosphine oxide)",Rf,0.40 (MeOH:CH2Cl2 1:9),,775,0.57,1.0,1.0,1.0,
+17,"(S)-(((5-((3,7-dimethyloct-6-en-1-yl)oxy)-1,3-phenylene)bis(ethyne-2,1-
+diyl))bis(3,1-phenylene))bis(dibutylphosphine oxide)",1H NMR,"(400 MHz, CDCl3): δ 7.83 (d, J = 11.0 Hz, 2H, 8-H), 7.70 – 7.62 (m, 4H, 10,
+12-H), 7.44 (td, J = 8.0, 2.5 Hz, 2H, 11-H), 7.29 (t, J = 1.5 Hz, 1H, 4-H), 7.04 (d, J =
+2.5 Hz, 2H, 2-H), 5.11 – 5.04 (m, 1H, Sol), 4.01 – 3.91 (m, 2H, Sol), 2.04 – 1.73 (m,
+7H, Sol, nBu), 1.71 – 1.49 (m, 12H, Sol, nBu), 1.46 – 1.27 (m, 5H, Sol, nBu), 0.92 (d, J
+= 6.5 Hz, 3H, Sol), 0.84 (t, J = 7 Hz, 6H, nBu)",,776,,,,,
+18,"(S)-(((5-((3,7-dimethyloct-6-en-1-yl)oxy)-1,3-phenylene)bis(ethyne-2,1-
+diyl))bis(3,1-phenylene))bis(dibutylphosphine oxide)",13C NMR,"(101 MHz, CDCl3): δ 158.9 (1-C), 134.3 (d, J = 2.5 Hz, 12-C), 133.8 (d, J =
+86.0 Hz, 9-C), 133.5 (d, J = 9.5 Hz, 8-C), 131.3 (Sol), 130.2 (d, J = 6.0 Hz, 10-C), 128.7
+(d, J = 10.0 Hz, 11-C), 127.2 (4-C), 124.6 (Sol), 124.1 (3-C), 123.6 (7-C) 118.1 (2-C),
+89.8 (5-C), 88.7 (6-C), 66.4 (Sol), 37.1 (Sol), 36.1 (Sol), 29.6 (d, J = 69.0 Hz, nBu), 29.5 (Sol), 25.7 (Sol), 25.4 (Sol), 24.1 (d, J = 15.0 Hz, nBu), 23.4 (d, J = 2.0 Hz, nBu),
+19.6 (Sol), 17.7 (Sol), 13.5 (d, J = 1.0 Hz, nBu)",,777,,,,,
+19,"(S)-(((5-((3,7-dimethyloct-6-en-1-yl)oxy)-1,3-phenylene)bis(ethyne-2,1-
+diyl))bis(3,1-phenylene))bis(dibutylphosphine oxide)",31P NMR,"(162 MHz, CDCl3): δ 35.3 (phosphine oxide)",,778,,,,,
+20,"(S)-(((5-((3,7-dimethyloct-6-en-1-yl)oxy)-1,3-phenylene)bis(ethyne-2,1-
+diyl))bis(3,1-phenylene))bis(dibutylphosphine oxide)",IR,"(ATR): 2958, 2929, 1578, 1221, 1170, 1046, 793, 692 νmax/cm-1",,779,,,,,
+21,"(S)-(((5-((3,7-dimethyloct-6-en-1-yl)oxy)-1,3-phenylene)bis(ethyne-2,1-
+diyl))bis(3,1-phenylene))bis(dibutylphosphine oxide)",MS,"(ES+): C48H67O3P2 calcd. 753.4560 found 753.4545, Δ = -2.00 ppm",,780,,,,,
+22,"Dibutyl(3-((3-((3-hydroxyphenyl)ethynyl)phenyl)ethynyl)phenyl)phosphine
+oxide",Rf,0.21 (MeOH:CH2Cl2 1:19),CCCCP(=O)(CCCC)c1cccc(C#Cc2cccc(C#Cc3cccc(O)c3)c2)c1,791,0.81,0.0,0.0,0.0,0.5970149253731343
+23,"Dibutyl(3-((3-((3-hydroxyphenyl)ethynyl)phenyl)ethynyl)phenyl)phosphine
+oxide",1H NMR,"(400 MHz, CDCl3): δ 8.40 (bs, 1H, OH), 7.85 (d, J = 11.0 Hz, 1H, 10-H),
+7.74 – 7.60 (m, 3H, 4, 12, 14-H), 7.57 – 7.40 (m, 3H. 2, 6, 13-H), 7.31 (t, J = 7.8 Hz,
+1H, 1-H), 7.19 (t, J = 7.9 Hz, 1H, 21-H), 7.12 (d, J = 1.0 Hz, 1H, 18-H), 7.05 (d, J = 7.6
+Hz, 1H, 22-H), 6.92 (dd, J = 8.0, 1.5 Hz, 1H, 20-H), 2.10 – 1.97 (m, 2H, nBu), 1.96 –
+1.85 (m, 2H, nBu), 1.70 – 1.56 (m, 2H, nBu), 1.50 – 1.34 (m, 6H, nBu), 0.87 (t, J = 7.0
+Hz, 6H, nBu)",CCCCP(=O)(CCCC)c1cccc(C#Cc2cccc(C#Cc3cccc(O)c3)c2)c1,792,,,,,
+24,"Dibutyl(3-((3-((3-hydroxyphenyl)ethynyl)phenyl)ethynyl)phenyl)phosphine
+oxide",13C NMR,"(101 MHz, CDCl3): δ 156.9 (19-C), 134.7 (4-C), 134.6 (d, J = 3.0 Hz, 14-
+C), 133.4 (d, J = 10.0 Hz, 10-C), 132.2 (d, J = 4.0 Hz, 9-C), 132.1 (6-C), 132.1 (2-C),
+132.0 (1-C), 131.4 (d, J = 52 Hz, 11-C), 130.1 (5-C), 130.0 (3-C), 129.5 (21-C), 128.9
+(d, J = 12.0 Hz, 13-C), 128.6 (d, J = 17.0 Hz, 12-H), 123.2 (22-C), 122.9 (17-C), 118.6
+(18-C), 116.5 (20-C), 90.4, 90.1, 88.7, 87.8, 29.4 (d, J = 70 Hz, nBu), 24.0 (d, J = 15
+Hz, nBu), 23.4 (d, J = 4 Hz, nBu), 13.6 (nBu)",CCCCP(=O)(CCCC)c1cccc(C#Cc2cccc(C#Cc3cccc(O)c3)c2)c1,793,,,,,
+25,"Dibutyl(3-((3-((3-hydroxyphenyl)ethynyl)phenyl)ethynyl)phenyl)phosphine
+oxide",31P NMR,"(162 MHz, CDCl3): δ 43.3 (phosphine oxide)",CCCCP(=O)(CCCC)c1cccc(C#Cc2cccc(C#Cc3cccc(O)c3)c2)c1,794,,,,,
+26,"Dibutyl(3-((3-((3-hydroxyphenyl)ethynyl)phenyl)ethynyl)phenyl)phosphine
+oxide",IR,"(ATR): 3073 (br), 2957, 2930, 2217, 1593, 1144, 791, 731, 687 νmax/cm-1",CCCCP(=O)(CCCC)c1cccc(C#Cc2cccc(C#Cc3cccc(O)c3)c2)c1,795,,,,,
+27,"Dibutyl(3-((3-((3-hydroxyphenyl)ethynyl)phenyl)ethynyl)phenyl)phosphine
+oxide",MS,"(ES+): C30H32O2P calcd. 455.2140 found 455.2144, Δ = 0.9 ppm",CCCCP(=O)(CCCC)c1cccc(C#Cc2cccc(C#Cc3cccc(O)c3)c2)c1,796,,,,,
+28,"3,5-dibromoiodobenzene",Rf,0.65 (40-60 pet. ether),C1=C(C=C(C=C1Br)I)Br,797,,,,,
+29,"3,5-dibromoiodobenzene",1H NMR,"(400 MHz, CDCl3): δ 7.80 (d, J = 1.5 Hz, 2H, 2-H), 7.64 (t, J = 1.5 Hz, 1H, 4-
+H)",C1=C(C=C(C=C1Br)I)Br,798,0.16,1.0,1.0,1.0,
+30,"3,5-dibromoiodobenzene",13C NMR,"(101 MHz, CDCl3): δ 138.5 (2-C), 133.6 (4-C), 123.4 (3-C), 94.4 (1-C)",C1=C(C=C(C=C1Br)I)Br,799,0.16,1.0,0.75,0.86,
+31,"3,5-dibromoiodobenzene",IR,"(ATR): 3062, 1546, 1397, 1096 νmax/cm-1",C1=C(C=C(C=C1Br)I)Br,800,,,,,
+32,"Dibutyl(3,5-dibromophenyl)phosphine oxide",Rf,0.25 (MeOH:CH2Cl2 1:20),CCCCP(=O)(CCCC)c1cc(Br)cc(Br)c1,801,,,,,
+33,"Dibutyl(3,5-dibromophenyl)phosphine oxide",1H NMR,"(400 MHz, CDCl3): δ 7.83 (td, J = 2.0, 0.5 Hz, 1H, 4-H), 7.76 (dd, J = 10.5,
+2.0 Hz, 2H, 2-H), 2.02-1.78 (m, 4H, nBu), 1.70-1.54 (m, 2H, nBu), 1.49-1.35 (m, 6H,
+nBu), 0.91 (t, J = 7.0 Hz, 6H, nBu)",CCCCP(=O)(CCCC)c1cc(Br)cc(Br)c1,802,0.18,1.0,1.0,1.0,
+34,"Dibutyl(3,5-dibromophenyl)phosphine oxide",13C NMR,"(101 MHz, CDCl3): δ 137.2 (4-C), 137.0 (d, J = 2 Hz, 3-C), 131.8 (d, J = 9
+Hz, 2-C), 123.8 (d, J = 14 Hz, 1-C), 29.7 (d, J = 69 Hz, nBu), 24.0 (d, J = 15 Hz, nBu),
+23.4 (d, J = 4 Hz, nBu), 13.6 (nBu)",CCCCP(=O)(CCCC)c1cc(Br)cc(Br)c1,803,0.18,0.0,0.0,0.0,
+35,"Dibutyl(3,5-dibromophenyl)phosphine oxide",31P NMR,"(162 MHz, CDCl3): δ 39.5 (Phosphine oxide)",CCCCP(=O)(CCCC)c1cc(Br)cc(Br)c1,804,0.18,1.0,1.0,1.0,
+36,"Dibutyl(3,5-dibromophenyl)phosphine oxide",IR,"(ATR): 2956, 2928, 2869, 1546, 1397, 1169, 1130, 736 νmax/cm-1",CCCCP(=O)(CCCC)c1cc(Br)cc(Br)c1,805,0.18,1.0,1.0,1.0,
+37,"Dibutyl(3,5-dibromophenyl)phosphine oxide",MS,"(ES+): C13H22Br2OP calcd. 394.9775 found 394.9769, Δ = -1.5 ppm",CCCCP(=O)(CCCC)c1cc(Br)cc(Br)c1,806,0.18,1.0,1.0,1.0,
+38,Dibutyl(3-((trimethylsilyl)ethynyl)phenyl)phosphine oxide,Rf,0.28 (MeOH:CH2Cl2 1:19),CCCCP(=O)(CCCC)c1cccc(C#C[Si](C)(C)C)c1,712,0.8,0.0,0.0,0.0,0.6666666666666666
+39,Dibutyl(3-((trimethylsilyl)ethynyl)phenyl)phosphine oxide,1H NMR,"(400 MHz, CDCl3): δ 7.74 (dt, J = 11.0, 1.5 Hz, 1H, 2-H), 7.63 (ddt, J = 10.5,
+7.5, 1.5 Hz, 1H, 6-H), 7.57 (dd, J = 8.0, 1.5 Hz, 1H, 4-H), 7.40 (td, J = 8.0, 2.5 Hz, 1H,
+5-H), 2.06 – 1.75 (m, 4H, nBu), 1.70 – 1.44 (m, 2H, nBu), 1.45 – 1.27 (m, 6H, nBu),
+0.84 (t, J = 7.0 Hz, 6H, nBu), 0.23 (s, 9H, TMS)",CCCCP(=O)(CCCC)c1cccc(C#C[Si](C)(C)C)c1,713,,,,,
+40,Dibutyl(3-((trimethylsilyl)ethynyl)phenyl)phosphine oxide,13C NMR,"(101 MHz, CDCl3): δ 134.7 (d, J = 3.0 Hz, 4-C), 133.6 (d, J = 10.0 Hz, 2-C),
+132.8 (d, J = 91.0 Hz, 1-C), 130.2 (d, J = 8.0 Hz, 6-C), 128.5 (d, J = 12 Hz, 5-C), 123.8
+(d, J = 12 Hz, 3-C), 103.8 (7-C), 95.9 (8-C), 29.5 (d, J = 69.0 Hz, nBu), 24.0 (d, J = 14.0
+Hz, nBu), 23.4 (d, J = 4.0 Hz, nBu), 13.5 (nBu), -0.17 (TMS)",CCCCP(=O)(CCCC)c1cccc(C#C[Si](C)(C)C)c1,714,,,,,
+41,Dibutyl(3-((trimethylsilyl)ethynyl)phenyl)phosphine oxide,31P NMR,"(162 MHz, CDCl3): δ 41.3 (phosphine oxide)",CCCCP(=O)(CCCC)c1cccc(C#C[Si](C)(C)C)c1,715,,,,,
+42,Dibutyl(3-((trimethylsilyl)ethynyl)phenyl)phosphine oxide,IR,"IR (ATR): 2958, 2930, 2163, 1467, 1400, 1164, 842, 759, 693 νmax/cm-1",CCCCP(=O)(CCCC)c1cccc(C#C[Si](C)(C)C)c1,716,,,,,
+43,Dibutyl(3-((trimethylsilyl)ethynyl)phenyl)phosphine oxide,MS,"(ES+): C19H32OPSi calcd. 335.1960 found 335.1956, Δ = -1.2 ppm",CCCCP(=O)(CCCC)c1cccc(C#C[Si](C)(C)C)c1,717,,,,,
+44,"(3,5-bis((trimethylsilyl)ethynyl)phenyl)dibutylphosphine oxide",Rf,"0.25 (MeOH:CH2Cl2, 1:19)",CCCCP(=O)(CCCC)c1cc(C#C[Si](C)(C)C)cc(C#C[Si](C)(C)C)c1,807,,,,,
+45,"(3,5-bis((trimethylsilyl)ethynyl)phenyl)dibutylphosphine oxide",1H NMR,"(400 MHz, CDCl3): δ 7.71-7.68 (m, 3H, 2, 4-H), 2.01-1.70 (m, 4H, nBu),
+1.64-1.51 (m, 2H, nBu), 1.45-1.30 (m, 6H, nBu), 0.87 (t, J = 7.0 Hz, 6H, nBu), -0.24 (s,
+18H, TMS)",CCCCP(=O)(CCCC)c1cc(C#C[Si](C)(C)C)cc(C#C[Si](C)(C)C)c1,808,0.13,1.0,1.0,1.0,
+46,"(3,5-bis((trimethylsilyl)ethynyl)phenyl)dibutylphosphine oxide",13C NMR,"(101 MHz, CDCl3): δ 137.7 (d, J = 3 Hz, 4-C), 133.7 (d, J = 89 Hz, 1-C),
+131.8 (d, J = 9 Hz, 3-C), 124.1 (d, J = 13 Hz, 2-C), 103.0 (5-C), 96.6 (6-C), 29.6 (d, J
+= 69 Hz, nBu), 24.1 (d, J = 14 Hz, nBu), 23.4 (d, J = 4 Hz, nBu), 13.6 (nBu), -0.2 (TMS)",CCCCP(=O)(CCCC)c1cc(C#C[Si](C)(C)C)cc(C#C[Si](C)(C)C)c1,809,0.13,0.0,0.0,0.0,
+47,"(3,5-bis((trimethylsilyl)ethynyl)phenyl)dibutylphosphine oxide",31P NMR,"(162 MHz, CDCl3): δ 40.2 (phosphine oxide)",CCCCP(=O)(CCCC)c1cc(C#C[Si](C)(C)C)cc(C#C[Si](C)(C)C)c1,810,0.13,1.0,1.0,1.0,
+48,"(3,5-bis((trimethylsilyl)ethynyl)phenyl)dibutylphosphine oxide",IR,"(ATR): 2956, 2928, 2869, 1546, 1397, 1169, 1130, 736 νmax/cm-1",CCCCP(=O)(CCCC)c1cc(C#C[Si](C)(C)C)cc(C#C[Si](C)(C)C)c1,811,0.13,1.0,1.0,1.0,
+49,"(3,5-bis((trimethylsilyl)ethynyl)phenyl)dibutylphosphine oxide",MS,"(ES+): C24H40OPSi2 calcd. 431.2355 found 431.2355, Δ = 0 ppm",CCCCP(=O)(CCCC)c1cc(C#C[Si](C)(C)C)cc(C#C[Si](C)(C)C)c1,812,0.13,1.0,1.0,1.0,
+50,"Dibutyl(3,5-diethylphenyl)phosphine oxide",Rf,"0.20 (MeOH:CH2Cl2, 1:19)",CCCCP(=O)(CCCC)c1cc(CC)cc(CC)c1,813,0.15,1.0,1.0,1.0,0.6875
+51,"Dibutyl(3,5-diethylphenyl)phosphine oxide",1H NMR,"(400 MHz, CDCl3): δ 7.80 – 7.71 (m, 3H, 2, 4-H), 3.19 (s, 2H, 6-H), 2.11-
+1.80 (m, 4H, nBu), 1.67-1.53 (m, 2H, nBu), 1.45-1.30 (m, 6H, nBu), 0.88 (t, J = 7.0 Hz,
+6H, nBu)",CCCCP(=O)(CCCC)c1cc(CC)cc(CC)c1,814,0.15,1.0,1.0,1.0,0.6875
+52,"Dibutyl(3,5-diethylphenyl)phosphine oxide",13C NMR,"(101 MHz, CDCl3): δ 138.2 (d, J = 3 Hz, 4-C), 133.8 (d, J = 9 Hz, 3-C), 132.5
+(d, J = 89 Hz, 1-C), 123.3 (d, J = 13 Hz, 2-C), 81.5 (5-C), 79.5 (6-C), 29.2 (d, J = 69 Hz,
+nBu), 24.0 (d, J = 14 Hz, nBu), 23.3 (d, J = 4 Hz, nBu), 13.5 (nBu)",CCCCP(=O)(CCCC)c1cc(CC)cc(CC)c1,815,0.15,0.0,0.0,0.0,0.6875
+53,"Dibutyl(3,5-diethylphenyl)phosphine oxide",31P NMR,"(162 MHz, CDCl3): 40.3 (phosphine oxide)",CCCCP(=O)(CCCC)c1cc(CC)cc(CC)c1,816,0.15,1.0,1.0,1.0,0.6875
+54,"Dibutyl(3,5-diethylphenyl)phosphine oxide",IR,"(ATR): 2956, 2928, 2869, 1546, 1397, 1169, 1130, 736 νmax/cm-1",CCCCP(=O)(CCCC)c1cc(CC)cc(CC)c1,817,0.15,1.0,1.0,1.0,0.6875
+55,"Dibutyl(3,5-diethylphenyl)phosphine oxide",MS,"(ES+): C18H24OP calcd. 287.1559 found 287.1152, Δ = -2.58 ppm",CCCCP(=O)(CCCC)c1cc(CC)cc(CC)c1,818,0.15,1.0,1.0,1.0,0.6875
+56,"3,5-dibromophenyl acetate",Rf,"0.70 (EtOAc:40-60 pet. ether, 1:9)",CC(=O)Oc1cc(Br)cc(Br)c1,819,,,,,
+57,"3,5-dibromophenyl acetate",1H NMR,"(400 MHz, CDCl3): δ 7.56 (t, J = 1.5 Hz, 1H, 4-H), 7.27 (d, J = 1.5 Hz, 2H, 2-
+H), 2.31 (s, 3H, OAc)",CC(=O)Oc1cc(Br)cc(Br)c1,820,0.12,1.0,1.0,1.0,
+58,"3,5-dibromophenyl acetate",13C NMR,"(101 MHz, CDCl3): δ 168.5 (C=O), 151.4 (1-C), 131.7 (4-C), 124.1 (2-C),
+122.8 (3-C), 21.0 (OAc)",CC(=O)Oc1cc(Br)cc(Br)c1,821,0.12,1.0,0.67,0.8,
+59,"3,5-dibromophenyl acetate",IR,"(ATR): 3081, 1771, 1566, 1418, 1223, 933, 747 νmax/cm-1.",CC(=O)Oc1cc(Br)cc(Br)c1,822,,,,,
+60,"3,5-bis((trimethylsilyl)ethynyl)phenyl acetate",Rf,"0.28 (EtOAc:40-60 pet. ether, 1:19)",CC(=O)Oc1cc(C#C[Si](C)(C)C)cc(C#C[Si](C)(C)C)c1,823,,,,,
+61,"3,5-bis((trimethylsilyl)ethynyl)phenyl acetate",1H NMR,"(400 MHz, CDCl3): δ 7.43 (t, J = 1.5 Hz, 1H, 4-H), 7.14 (d, J = 1.5 Hz, 2H, 2-
+H), 2.27 (s, 3H, OAc), 0.23 (s, 18H, TMS)",CC(=O)Oc1cc(C#C[Si](C)(C)C)cc(C#C[Si](C)(C)C)c1,824,0.08,1.0,1.0,1.0,
+62,"3,5-bis((trimethylsilyl)ethynyl)phenyl acetate",13C NMR,"(101 MHz, CDCl3): δ 168.9 (C=O), 150.1 (1-C), 132.9 (4-C), 125.1 (2-C),
+124.6 (3-C), 103.0 (5-C), 95.9 (6-C), 21.0 (OAc), -0.2 (TMS)",CC(=O)Oc1cc(C#C[Si](C)(C)C)cc(C#C[Si](C)(C)C)c1,825,0.08,1.0,0.8,0.89,
+63,"3,5-bis((trimethylsilyl)ethynyl)phenyl acetate",IR,"(ATR): 2960, 2159, 1773, 1195, 840 νmax/cm-1",CC(=O)Oc1cc(C#C[Si](C)(C)C)cc(C#C[Si](C)(C)C)c1,826,,,,,
+64,"Isobutyl 3,5-diiodobenzoate",Rf,"0.78 (EtOAc:40-60 pet. ether, 1:9)",CC(C)COC(=O)c1cc(I)cc(I)c1,831,,,,,
+65,"Isobutyl 3,5-diiodobenzoate",1H NMR,"(400 MHz, CDCl3): δ 8.31 (d, J = 1.5 Hz, 2H, 3-H), 8.22 (t, J = 1.5 Hz, 1H, 1-
+H), 4.10 (d, J = 6.5 Hz, 2H, iBu), 2.16 – 1.85 (m, 1H, iBu), 1.01 (d, J = 6.5 Hz, 6H, iBu)",CC(C)COC(=O)c1cc(I)cc(I)c1,832,0.19,1.0,1.0,1.0,
+66,"Isobutyl 3,5-diiodobenzoate",13C NMR,"(101 MHz, CDCl3): δ 163.7 (C=O), 149.1 (1-C), 137.7 (3-C), 133.7 (4-C),
+94.4 (2-C), 71.8 (iBu), 27.8 (iBu), 19.2 (iBu)",CC(C)COC(=O)c1cc(I)cc(I)c1,833,0.19,1.0,0.5,0.67,
+67,"Isobutyl 3,5-diiodobenzoate",IR,"(ATR): 2961, 2363, 1723, 1546, 1416, 1254, 1120, 982 νmax/cm-1",CC(C)COC(=O)c1cc(I)cc(I)c1,834,,,,,
+68,"Isobutyl 3,5-diiodobenzoate",MS,"(ES+): C18H24OP calcd. 429.8927 found 429.8911, Δ = -3.72 ppm",CC(C)COC(=O)c1cc(I)cc(I)c1,835,,,,,
+69,Acceptor 7-mer,Rf,0.40 (MeOH:CH2Cl2 1:9),,880,1.0,1.0,1.0,1.0,
+70,Acceptor 7-mer,1H NMR,"(500 MHz, CDCl3): δ 8.20 (d, J = 1.5 Hz, 8H, 28, 30, 44, 46-H), 8.19-8.15
+(m, 4H, 12,14-H), 7.91 – 7.84 (m, 23H, 6, 10, 18, 20, 22, 26, 34, 36, 38, 42, 50, 52-
+H), 7.74-7.69 (m, 4H, 2, 4-H), 7.51 (td, J = 7.5, 2.5 Hz, 2H, 3-H), 4.16 (d, J = 6.5 Hz,
+12H, iBu), 2.14 – 2.10 (m, 6H, iBu), 2.07-1.81 (m, 28H, nBu), 1.71-1.55 (m, 14H,
+nBu), 1.49-1.35 (m, 42H, nBu), 1.06 (d, J = 6.5 Hz, 36H, iBu), 0.91-0.87 (m, 42H,
+nBu)",,881,1.0,1.0,1.0,1.0,
+71,Acceptor 7-mer,13C NMR,"(126 MHz, CDCl3): δ 165.1 (13-C=O), 165.1 (29, 45-C=O), 138.3 (10, 26,
+42-C), 137.0 (d, J = 2.5 Hz, 18, 34, 52-C), 134.4 (4-C), 134,4 (d, J = 88.0 Hz, 21, 37,
+51-C), 133.6 (d, J = 9.5 Hz, 6-C), 133.6 (d, J = 89.5 Hz, 1-C), 133.3 (d, J = 8.5 Hz, 20,
+22, 36, 38, 50-C), 132.7 (28, 30, 44, 46-C), 132.7 (12-C), 132.5 (14-C), 131.5 (29,
+45-C), 131.5 (13-C), 130.5 (d, J = 8.0 Hz, 2-C), 128.8 (d, J = 11.0 Hz, 3-C), 123.9 (9-
+C) 123.8 (d, J = 12.5 Hz, 17, 19, 33, 35, 49-C), 123.6 (25, 27, 41, 43-C), 123.5 (11-
+C), 123.3 (d, J = 12.5 Hz, 5-C), 90.0 (-C􀀁), 89.6 (-C≡), 89.5 (bs, -C≡), 89.1 (bs, -C≡),
+89.0 (-C≡), 88.8 (-C≡), 71.7 ( iBu), 29.7 (d, J = 68.5 Hz, nBu), 27.9 ( iBu), 24.1 (d, J =
+14.5 Hz, nBu), 23.5 (d, J = 4.0 Hz, nBu) 19.3 ( iBu), 13.6 (nBu)",,882,1.0,0.0,0.0,0.0,
+72,Acceptor 7-mer,31P NMR,"(162 MHz, CDCl3): δ 40.3 (1-P), 40.1 (21, 37, 51-P) (phosphine oxides)",,883,1.0,1.0,1.0,1.0,
+73,Acceptor 7-mer,IR,"(ATR): 2932, 2184, 1723, 1595, 1444, 1236, 1129 νmax/cm-1",,884,1.0,1.0,1.0,1.0,
+74,Acceptor 7-mer,MS,"(ES+): m/z (%) = 1501.1 (100) [M+2H+], 3000.6 (5) [M+H+]",,885,,,,,
+75,ADDDDDA 7-mer,Rf,0.40 (MeOH:CH2Cl2 1:9),,934,1.0,1.0,1.0,1.0,
+76,ADDDDDA 7-mer,1H NMR,"(500 MHz, THF-d8): δ 9.36 (bs, 5H, OH), 8.15 – 8.12 (m, 12H, 12, 14, 28,
+30, 44, 46-H), 8.03 (dt, J = 11.0, 1.5 Hz, 2H, 6-H), 7.94 – 7.91 (m, 6H, 10, 26, 42-H),
+7.82 (ddt, J = 10.5, 7.5, 1.5 Hz, 2H, 2-H), 7.75 (d, J = 8.0 Hz, 2H, 4-H), 7.57 (td, J =
+7.5, 2.5 Hz, 2H, 3-H), 7.31 – 7.27 (m, 5H, 18, 34, 52-H), 7.08 – 7.02 (m, 10H, 20, 22,
+36, 38, 50-H), 4.15 (d, J = 6.5 Hz, 4H, iBu), 4.14 (d, J = 6.5 Hz, 8H, iBu), 2.14 – 2.10
+(m, 6H, iBu), 2.07 – 1.81 (m, 8H, nBu), 1.71-1.55 (m, 4H, nBu), 1.49-1.35 (m, 12H,
+nBu), 1.06 – 1.03 (m, 36H, iBu), 0.91 (t, J = 7.0 Hz, 12H, nBu)",,935,1.0,1.0,1.0,1.0,
+77,ADDDDDA 7-mer,13C NMR,"(126 MHz, THF-d8): δ 166.1 (29, 45-C=O), 166.0 (13-C=O), 160.1 (21-
+C), 160.0 (37, 51-C), 140.0 (10-C), 139.9 (26, 42-C), 136.3 (d, J = 88.5 Hz, 1-C),
+135.9 (4-C), 135.6 (d, J = 9.0 Hz, 6-C), 133.7 (Ar-C), 133.6 (Ar-C), 133.6 (Ar-C),
+133.6 (Ar-C), 133.4 (Ar-C), 133.4 (Ar-C), 132.0 (d, J = 8.5 Hz, 2-C), 130.5 (d, J = 11.0
+Hz, 3-C), 127.7 (20-C), 127.6 (Ar-C), 126.0 (Ar-C), 126.1 (Ar-C), 125.9 (Ar-C), 125.7
+(Ar-C), 121.1 (34, 52-C), 121.0 (18-C), 92.1 (-C≡), 92.0 (-C≡), 91.9 (-C≡), 90.1 (-
+C≡), 89.1 (-C≡), 89.0 (-C≡), 73.0 ( iBu), 29.3 (d, J = 68.5 Hz, nBu), 27.9 ( iBu), 24.1
+(d, J = 14.5 Hz, nBu), 23.5 (d, J = 4.0 Hz, nBu) 20.3 ( iBu), 14.9 (nBu)",,936,1.0,0.0,0.0,0.0,
+78,ADDDDDA 7-mer,31P NMR,"(162 MHz, CDCl3): δ 39.4 (phosphine oxide)",,937,1.0,1.0,1.0,1.0,
+79,ADDDDDA 7-mer,IR,"(ATR): 3144 (br), 2963, 2199, 1722, 1583, 1237, 770 νmax/cm-1",,938,1.0,1.0,1.0,1.0,
+80,ADDDDDA 7-mer,MS,"(ES+): m/z (%) = 983.4 (100) [M+2H+], 1965.2 (5) [M+H+]",,939,,,,,
