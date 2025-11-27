@@ -27,7 +27,8 @@ def export_ms_list(ms_list, export_dir=None, image_dir_name='images', graph_sket
             img_name = f'image_{segment_idx}.png'
             image_path = os.path.join(image_dir_path, img_name)
             img.save(image_path)
-            images.append(image_path)
+            # Store relative path (just filename) for CSV
+            images.append(img_name)
 
         test_text_sequence = molecule_segment.test_text_sequence
         for test_text_line in test_text_sequence.test_text_lines:
@@ -58,7 +59,8 @@ def export_ms_list(ms_list, export_dir=None, image_dir_name='images', graph_sket
                     parsed_peaks  = parser(test_text)
                     plot_path = os.path.join(image_dir_path, plot_fname)
                     plotter(parsed_peaks, title=f'mol_{segment_idx}', export_fname=plot_path)
-                    images.append(plot_path)     
+                    # Store relative path (just filename) for CSV
+                    images.append(plot_fname)     
 
         ms_dict['image_path'] = '; '.join(images)
         ms_dict_list.append(ms_dict)
