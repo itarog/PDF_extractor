@@ -13,16 +13,17 @@ The scripts provided here demonstrate possible usage in the pdf data extractor.
 
 TBD
 
-The core functionalities demonstrated in this repository includes:
+- [Installation](#installation)
+- [Benchmark data](demo_data/README.md#benchmark-data)
 
 - PDF image extraction - how to extract molecule images from a PDF document
 - PDF text extraction - how to extract text from a PDF document
 - PDF full extraction - how to extract both image and text in a paired manned from a PDF document
 - PDF extraction visuallization - how to view extracted results using labal studio
 - label studio data retrival - how to update extracted data from label studio changes
----
 
-## 📂 Installing
+---
+## 📂 Installation
 
 ### Prerequisites
 
@@ -52,74 +53,26 @@ python -m pip install .
 - YOLOv5 model files
 - Poppler binaries (for PDF processing on Windows)
 - All Python package dependencies listed in `setup.py`
+- 'best.pt' weights from .. (https://drive.google.com/file/d/1tXX_-RE2sL2U7lRvFfOBUBTIIIN_MhnN/view)
+### Create your own database with a click!
 
----
+After installation, set all the documents you want to process into one folder, use either the command line or python to run the extractor and produce your database.
 
-## Playground Data
-While the reader can use any aproriate pdf document, some example data can be found at:
-
-### Example data 1
-
-10 total files., thesis work from Columbia. <br>
-File path: main/database_files/features_1_df.ftr
-
-### Example data 2
-
-10 total files, SI from chemical science. <br>
-File path: main/database_files/features_2_df.ftr
-
-### Example data 3
-
-10 total files, SI from ... <br>
-File path: main/database_files/features_3_df.ftr
-
-### Validation / ground-truth for playground data
-
-All of the experimental data found in the PDF of the experimental data have been manually collected and used to evaluate this tool. This data is stored in csv file with four columns ..
-
-The file can be loaded using ...
+## from python
 
 ```
-from .demo_data.load_gt import get_groundtruth_ms
+from streamlit_wrappers import process_pdf_dir_end_to_end
 
-ground_truth_fname = r"..\demo_data\ground_truth.csv"
-gt_dict, overall_gt_stats = get_groundtruth_ms(ground_truth_fname) 
-print('Num of doc:', overall_gt_stats.get('num_of_files'))
-print('Overall num of test lines:', overall_gt_stats.get('total_number_of_tests'))
-print('Mean number of molecules per doc:', overall_gt_stats.get('mean_num_of_molecules'))
-for k, v in overall_gt_stats.items():
-    if not k in ['inner_stats', 'num_of_files', 'total_number_of_tests', 'mean_num_of_molecules']:
-        print(k, ':', v)
-
-```
-
-The name of the molecule can be transformed into SMILES using OPsin (IUPAC names) or PubChem (generic names). This requires internet connection  
-
-
-```
-from .demo_data.molname_to_SMILES import opsin_query, pubchem_name_to_smiles
-
-ground_truth_fname = r"..\demo_data\ground_truth.csv"
-gt_df = pd.read_csv(ground_truth_fname)
-molecule_names = gt_df.molecule_name.unique()
-smiles_dict = dict()
-for nm in molecule_names:
-    try:
-        info = opsin_query(nm)
-        smiles = info.get('smiles')
-    except Exception as e:
-        smiles = ''
-    if smiles == '':
-        smiles = pubchem_name_to_smiles(nm)
-    smiles_dict[nm] = smiles
-```
-
-Reproducing all evaluation results mentioned in the main text body is possible using ..
-
-```
-from .demo_data.inner_validation import opsin_query, pubchem_name_to_smiles
-
-NOT YET ON GITHUB - ADDING PIC to SMILES
+pdf_dir = './demo_data'
+verbose = True
+image_backend = 'yode' # can be 'decimer' as well
+database_name = 'Benchmark_2111'
+graph_sketch = False # if true, a graph sketch will be made from the text (no intesities) 
+cmd_process = process_pdf_dir_end_to_end(pdf_dir,
+                                         verbose=True,
+                                         backend=image_backend,
+                                         database_name=database_name,
+                                         graph_sketch=graph_sketch)
 ```
 
 ---

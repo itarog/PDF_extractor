@@ -1,0 +1,10 @@
+,molecule_name,test_type,test_text,opsin_smiles,line_idx,in_house_namescore,in_house_precision,in_house_recall,in_house_f1,in_house_smiles_sim
+0,"4,6-Dimethoxy-1,3,5-triazin-2(1H)-one",1H NMR,"(400 MHz, CD3OD): δ 4.00 (s, 6H)",COc1nc(OC)[nH]c(=O)n1,4612,0.81,0.0,0.0,0.0,
+1,"4,6-Dimethoxy-1,3,5-triazin-2(1H)-one",13C NMR,"[100 MHz, (CD3)2SO]: δ 168.2 (br),
+157.1, 55.2",COc1nc(OC)[nH]c(=O)n1,4613,0.81,0.0,0.0,0.0,
+2,"2-(4,6-Dimethoxy-1,3,5-triazin-2-yl)-1,1,3,3-tetramethyluronium hexafluorophosphate",1H NMR,"(600 MHz, CD3CN, 20 °C): δ 4.04 (s, 6H), 3.15 (br s, 12H)",COc1nc(OC)nc(OC(N(C)C)=[N+](C)C)n1.F[P-](F)(F)(F)(F)F,4616,1.0,1.0,1.0,1.0,0.5063291139240507
+3,"2-(4,6-Dimethoxy-1,3,5-triazin-2-yl)-1,1,3,3-tetramethyluronium hexafluorophosphate",1H NMR,"1H NMR
+(600 MHz, CD3CN, 70 °C): δ 4.07 (s, 6H), 3.16 (s, 12H).",COc1nc(OC)nc(OC(N(C)C)=[N+](C)C)n1.F[P-](F)(F)(F)(F)F,4617,1.0,0.0,0.0,0.0,0.5063291139240507
+4,"2-(4,6-Dimethoxy-1,3,5-triazin-2-yl)-1,1,3,3-tetramethyluronium hexafluorophosphate",13C NMR,"(150 MHz, CD3CN, 70 °C): δ 175.7,
+170.8, 159.4, 57.4, 41.7",COc1nc(OC)nc(OC(N(C)C)=[N+](C)C)n1.F[P-](F)(F)(F)(F)F,4618,1.0,0.0,0.0,0.0,0.5063291139240507
+5,"2-(4,6-Dimethoxy-1,3,5-triazin-2-yl)-1,1,3,3-tetramethyluronium hexafluorophosphate",MS,(ESI-TOF) m/z: [M − PF6]+ Calcd for C10H18N5O3 256.1405; Found: 256.1412,COc1nc(OC)nc(OC(N(C)C)=[N+](C)C)n1.F[P-](F)(F)(F)(F)F,4619,1.0,0.06,1.0,0.11,0.5063291139240507

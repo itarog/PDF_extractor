@@ -1,0 +1,81 @@
+,molecule_name,test_type,test_text,opsin_smiles,line_idx,chemdata_namescore,chemdata_precision,chemdata_recall,chemdata_f1
+0,"1,1,3,3-Tetramethyl-2-phenethylguanidine",1H NMR,"(600 MHz, CDCl3): δ 7.30–7.20 (m, 4H), 7.20–7.15 (m, 1H), 3.40
+(t, J = 7.5 Hz, 2H), 2.86 (t, J = 7.5 Hz, 2H), 2.72 (s, 6H), 2.66 (s, 6H)",CN(C)C(=NCCc1ccccc1)N(C)C,4634,,,,
+1,"1,1,3,3-Tetramethyl-2-phenethylguanidine",13C NMR,"(150 MHz, CDCl3): δ
+160.6, 141.1, 129.1, 128.3, 126.0, 51.0, 39.8, 39.0",CN(C)C(=NCCc1ccccc1)N(C)C,4635,0.09,1.0,1.0,1.0
+2,1-Morpholino-3-phenylpropan-1-one,1H NMR,"(400 MHz, CDCl3): δ 7.35–7.15 (m, 5H), 3.62 (s, 4H), 3.51 (t, J = 4.8 Hz, 2H), 3.35 (t,
+J = 4.8 Hz, 2H), 2.98 (t, J = 7.8 Hz, 2H), 2.61 (t, J = 7.8 Hz, 2H)",O=C(CCc1ccccc1)N1CCOCC1,4628,,,,
+3,1-Morpholino-3-phenylpropan-1-one,13C NMR,"(100 MHz, CDCl3): δ 171.0,
+141.2, 128.7, 128.6, 126.4, 67.0, 66.6, 46.1, 42.1, 34.9, 31.6",O=C(CCc1ccccc1)N1CCOCC1,4629,,,,
+4,"2-(4,6-Dimethoxy-1,3,5-triazin-2-yl)-1,1,3,3-tetramethyluronium hexafluorophosphate",1H NMR,"(600 MHz, CD3CN, 20 °C): δ 4.04 (s, 6H), 3.15 (br s, 12H)",COc1nc(OC)nc(OC(N(C)C)=[N+](C)C)n1.F[P-](F)(F)(F)(F)F,4616,,,,
+5,"2-(4,6-Dimethoxy-1,3,5-triazin-2-yl)-1,1,3,3-tetramethyluronium hexafluorophosphate",1H NMR,"1H NMR
+(600 MHz, CD3CN, 70 °C): δ 4.07 (s, 6H), 3.16 (s, 12H).",COc1nc(OC)nc(OC(N(C)C)=[N+](C)C)n1.F[P-](F)(F)(F)(F)F,4617,,,,
+6,"2-(4,6-Dimethoxy-1,3,5-triazin-2-yl)-1,1,3,3-tetramethyluronium hexafluorophosphate",13C NMR,"(150 MHz, CD3CN, 70 °C): δ 175.7,
+170.8, 159.4, 57.4, 41.7",COc1nc(OC)nc(OC(N(C)C)=[N+](C)C)n1.F[P-](F)(F)(F)(F)F,4618,,,,
+7,"2-(4,6-Dimethoxy-1,3,5-triazin-2-yl)-1,1,3,3-tetramethyluronium hexafluorophosphate",MS,(ESI-TOF) m/z: [M − PF6]+ Calcd for C10H18N5O3 256.1405; Found: 256.1412,COc1nc(OC)nc(OC(N(C)C)=[N+](C)C)n1.F[P-](F)(F)(F)(F)F,4619,,,,
+8,"4,6-Dimethoxy-1,3,5-triazin-2(1H)-one",1H NMR,"(400 MHz, CD3OD): δ 4.00 (s, 6H)",COc1nc(OC)[nH]c(=O)n1,4612,,,,
+9,"4,6-Dimethoxy-1,3,5-triazin-2(1H)-one",13C NMR,"[100 MHz, (CD3)2SO]: δ 168.2 (br),
+157.1, 55.2",COc1nc(OC)[nH]c(=O)n1,4613,,,,
+10,4-Methoxy-N-phenethylbenzamide,1H NMR,"(400 MHz, CDCl3): δ 7.73–7.60 (m, 2H), 7.37–7.16 (m, 5H), 6.95–6.80 (m, 2H), 6.27 (s, 1H), 3.81 (s,
+3H), 3.68 (dt, J = 6.9 Hz, 2H), 2.91 (t, J = 6.9 Hz, 2H)",COc1ccc(C(=O)NCCc2ccccc2)cc1,4632,,,,
+11,4-Methoxy-N-phenethylbenzamide,13C NMR,"(100 MHz, CDCl3): δ 167.1, 162.1, 139.1,
+128.9, 128.8, 128.7, 127.0, 126.6, 113.8, 55.5, 41.2, 35.9",COc1ccc(C(=O)NCCc2ccccc2)cc1,4633,,,,
+12,Compound 8df,1H NMR,"(600
+MHz, CDCl3): δ 7.33–7.16 (m, 10H), 6.71 (br s, 1H), 5.70–5.32 (m, 1H), 5.10–4.97 (m, 2H), 4.56–4.44 (m, 2H),
+3.69 (s, 3H), 3.06 (d, J = 4.2 Hz, 2H), 1.31 (d, J = 4.8 Hz, 3H)",,4636,,,,
+13,Compound 8df,13C NMR,"(150 MHz, CDCl3): δ 172.9,
+170.7, 156.1, 136.4, 136.2, 129.4, 128.64, 128.55, 128.2, 128.0, 127.0, 67.0, 56.0, 52.5, 48.1, 38.6, 18.2",,4637,,,,
+14,Compound 8eg,1H NMR,"(400 MHz, CDCl3): δ 7.74 (d, J = 7.7 Hz, 2H), 7.61–7.50
+(m, 2H), 7.42–7.21 (m, 9H), 6.22 (d, J = 6.0 Hz, 1H), 6.10 (d, J = 7.8 Hz, 1H), 5.26 (d, J = 6.0 Hz, 1H), 4.45
+(ddd, J = 7.8, 7.3, 7.3 Hz, 1H), 4.35 (d, J = 7.1 Hz, 2H), 4.18 (dd, J = 7.1, 7.1 Hz, 1H), 1.75–1.40 (m, 3H), 1.34
+(s, 9H), 0.93 (d, J = 6.4 Hz, 6H)",,4640,,,,
+15,Compound 8eg,13C NMR,"(150 MHz, CDCl3): δ 171.2, 169.5, 155.8, 143.9, 143.8, 141.3,
+137.9, 129.0, 128.5, 127.7, 127.3, 127.1, 125.23, 125.18, 120.0, 81.9, 67.3, 58.5, 52.0, 47.1, 41.7, 27.9, 24.9,
+22.7, 22.2",,4641,,,,
+16,Compound 8fg,1H NMR,"(600 MHz, CDCl3): δ 7.76 (d, J = 7.5, 2H), 7.64–7.56 (m,
+2H), 7.40 (dd, J = 7.5, 7.4 Hz, 2H), 7.31 (dd, J = 7.5, 7.4 Hz, 2H), 7.23 (d, J = 6.9, 1H), 5.78 (d, J = 4.7, 1H), 4.52–4.44 (m, 1H), 4.44–4.36 (m, 2H), 4.29–4.20 (m, 2H), 3.83 (dd, J = 8.3 Hz, 1H), 3.47–3.37 (m, 1H), 1.73–
+1.60 (m, 2H), 1.59–1.50 (m, 1H), 1.46 (s, 9H), 1.23 (s, 9H), 0.95 (d, J = 6.6 Hz, 6H)",,4644,,,,
+17,Compound 8fg,13C NMR,"(150 MHz,
+CDCl3): δ 171.8, 170.0, 156.2, 144.1, 143.9, 141.4, 127.8, 127.2, 125.3, 120.1, 81.8, 74.4, 67.2, 61.9, 54.3, 51.8,
+47.3, 42.0, 28.1, 27.5, 25.0, 23.0, 22.3",,4645,,,,
+18,Compound D-8fg,1H NMR,"(600 MHz, CDCl3): δ 7.76 (d, J = 7.5 Hz, 2H), 7.60 (d, J =
+7.5, 2H), 7.40 (dd, J = 7.5, 7.5 Hz, 2H), 7.31 (dd, J = 7.5, 7.5 Hz, 2H), 6.99 (d, J = 7.2 Hz, 1H), 5.80 (br s, 1H),
+4.56–4.49 (m, 1H), 4.38 (d, J = 6.9 Hz, 2H), 4.29–4.20 (m, 1H), 3.88–3.77 (m, 1H), 3.37 (dd, J = 8.3, 8.3 Hz,
+1H), 1.73–1.59 (m, 2H), 1.59–1.50 (m, 1H), 1.47 (s, 9H), 1.22 (s, 9H), 0.99–0.90 (m, 6H)",,4646,,,,
+19,Compound D-8fg,13C NMR,"(150
+MHz, CDCl3): δ 171.9, 169.8, 156.2, 144.0, 143.9, 141.43, 141.42, 127.8, 127.2, 125.3, 120.1, 82.0, 74.4, 67.2,
+61.9, 54.6, 51.7, 47.3, 42.2, 28.1, 27.5, 25.0, 22.9, 22.2",,4647,,,,
+20,Compound DL-8df,1H NMR,"(600 MHz, CDCl3): δ 7.41–7.12 (m, 10H), 6.41–6.24 (m, 0.5H), 6.24–6.06 (m, 0.5H), 5.54–5.24 (m,
+1H), 5.08 (s, 2H), 4.57–4.34 (m, 2H), 3.71 (s, 1.5H), 3.70 (s, 1.5H), 3.20–2.95 (m, 2H), 1.33 (d, J = 6.9 Hz,
+1.5H), 1.21 (d, J = 7.3 Hz, 1.5H)",,4638,,,,
+21,Compound DL-8df,13C NMR,"150 MHz, CDCl3): δ 173.0, 172.9, 170.4, 170.3, 156.0, 136.3,
+129.48, 129.45, 128.85, 128.81, 128.7, 128.3, 128.1, 127.2, 67.2, 56.3, 56.1, 52.6, 48.3, 48.0, 39.0, 38.6, 18.4,
+18.2",,4639,,,,
+22,Compound DL-8eg,1H NMR,"(400 MHz, CDCl3): δ 7.73 (d, J = 7.3 Hz, 2H), 7.63–7.49 (m, 2H), 7.46–7.17 (m, 9H), 6.41–6.12 (m,
+2H), 5.30 (d, J = 5.5 Hz, 1H), 4.55–4.26 (m, 3H), 4.23–4.10 (m, 1H), 1.70–1.40 (m, 3H), 1.44 (s, 4.5H), 1.33
+(s, 4.5H), 0.92 (d, J = 6.4 Hz, 3H), 0.74 (d, J = 6.4 Hz, 3H)",,4642,,,,
+23,Compound DL-8eg,13C NMR,"(150 MHz, CDCl3): δ 171.8, 171.2,
+169.5, 169.4, 155.8, 155.6, 143.95, 143.92, 143.8, 141.3, 138.4, 137.9, 129.10, 129.07, 128.8, 128.6, 128.5,
+127.7, 127.3, 127.2, 127.1, 125.2, 120.0, 82.2, 82.0, 67.3, 67.2, 58.7, 58.6, 52.0, 51.7, 47.1, 41.7, 41.5, 28.0,
+27.9, 24.9, 24.7, 22.74, 22.71, 22.2, 21.9",,4643,,,,
+24,"N,3-Diphenylpropanamide",1H NMR,"(400 MHz, CDCl3): δ 7.43 (d, J = 7.7 Hz, 2H), 7.37–7.16 (m, 8H), 7.08 (dd, J = 7.7,
+7.7 Hz, 1H), 3.03 (t, J = 7.6 Hz, 2H), 2.64 (t, J = 7.6 Hz, 2H)",O=C(CCc1ccccc1)Nc1ccccc1,4622,,,,
+25,"N,3-Diphenylpropanamide",13C NMR,"(100 MHz, CDCl3): δ 170.6, 140.7,
+137.8, 129.1, 128.8, 128.5, 126.5, 124.4, 120.1, 39.5, 31.7",O=C(CCc1ccccc1)Nc1ccccc1,4623,,,,
+26,"N,N-Dibenzyl-3-phenylpropanamide",1H NMR,"(400 MHz, CDCl3): δ 7.41–7.13 (m, 13H), 7.07 (d, J = 7.3 Hz, 2H), 4.60 (s,
+2H), 4.36 (s, 2H), 3.05 (t, J = 7.8 Hz, 2H), 2.72 (t, J = 7.8 Hz, 2H)",O=C(CCc1ccccc1)N(Cc1ccccc1)Cc1ccccc1,4626,,,,
+27,"N,N-Dibenzyl-3-phenylpropanamide",13C NMR,"(100 MHz, CDCl3): δ 172.8,
+141.3, 137.4, 136.5, 129.0, 128.7, 128.62, 128.58, 128.4, 127.7, 127.5, 126.4, 126.3, 49.9, 48.4, 35,1, 31.7",O=C(CCc1ccccc1)N(Cc1ccccc1)Cc1ccccc1,4627,,,,
+28,"N,N-Diethyl-3-phenylpropanamide",1H NMR,"(400 MHz, CDCl3): δ 7.40–7.11 (m, 5H), 3.38 (q, J = 7.2
+Hz, 2H), 3.22 (q, J = 7.2 Hz, 2H), 2.98 (t, J = 8.0 Hz, 2H), 2.59 (t, J = 8.0 Hz, 2H), 1.16–1.04 (m, 6H)",CCN(CC)C(=O)CCc1ccccc1,4624,,,,
+29,"N,N-Diethyl-3-phenylpropanamide",13C NMR,"(100 MHz, CDCl3): δ 171.3, 141.7, 128.6, 128.5, 126.2, 42.0, 40.3, 35.2, 31.7, 14.4, 13.2",CCN(CC)C(=O)CCc1ccccc1,4625,,,,
+30,N-Phenethyl-3-phenylpropanamide,1H NMR,"(400 MHz, CDCl3): δ 7.35–7.14 (m, 8H), 7.08 (d, J = 6.9 Hz, 2H), 5.32 (br s,
+1H), 3.47 (dt, J = 6.8, 6.8 Hz, 2H), 2.94 (t, J = 7.7 Hz, 2H), 2.73 (t, J = 6.8 Hz, 2H), 2.42 (t, J = 7.7 Hz, 2H)",O=C(CCc1ccccc1)NCCc1ccccc1,4620,,,,
+31,N-Phenethyl-3-phenylpropanamide,13C NMR,"(100 MHz, CDCl3): δ 172.1, 141.0, 139.0, 128.9, 128.7, 128.6, 128.5, 126.6, 126.4, 40.7, 38.7,
+35.8, 31.8",O=C(CCc1ccccc1)NCCc1ccccc1,4621,,,,
+32,N-Phenethylbenzamide,1H NMR,"(400 MHz, CDCl3): δ 7.79–7.64 (m, 2H), 7.53–7.43 (m, 1H), 7.43–7.34 (m,
+2H), 7.34–7.28 (m, 2H), 7.28–7.17 (m, 3H), 6.29 (s, 1H), 3.70 (q, J = 6.8 Hz, 2H), 2.64 (t, J = 6.8 Hz, 2H)",O=C(NCCc1ccccc1)c1ccccc1,4630,,,,
+33,N-Phenethylbenzamide,13C NMR,"(100 MHz, CDCl3): δ 167.6, 139.0, 134.7, 131.5, 128.9, 128.8, 128.6, 126.9, 126.7, 41.2, 35.8",O=C(NCCc1ccccc1)c1ccccc1,4631,,,,
+34,"Sodium 4,6-dimethoxy-1,3,5-triazin-2-olate",1H NMR,"(400 MHz, CD3OD): δ
+3.84 (s, 6H)",COc1nc([O-])nc(OC)n1.[Na+],4614,0.05,1.0,1.0,1.0
+35,"Sodium 4,6-dimethoxy-1,3,5-triazin-2-olate",13C NMR,"(100 MHz, CD3OD): δ 174.4, 174.1, 54.5",COc1nc([O-])nc(OC)n1.[Na+],4615,0.09,1.0,1.0,1.0

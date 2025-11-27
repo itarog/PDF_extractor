@@ -1,0 +1,952 @@
+,molecule_name,test_type,test_text,opsin_smiles,line_idx,chemdata_namescore,chemdata_precision,chemdata_recall,chemdata_f1
+0,"(2S,6R)-2,6-Dimethyl-1-(4-methyl-1-phenylpentan-3-yl)piperidine",1H NMR,"(400 MHz; CDCl3): δ 7.31–7.25 (m, 2H,
+H6), 7.19 (dd, J = 17.2, 7.4 Hz, 3H, H5 & H7), 2.85 (m, 3H, H1 & H3 & H11), 2.63–2.49 (m, 2H, H3 &
+H11), 1.90–1.56 (m, 6H), 1.42–1.28 (m, 3H), 1.10–1.03 (m, 6H, H14), 1.03–0.89 (m, 6H, H9-10)",CC(C)C(CCc1ccccc1)N1[C@H](C)CCC[C@@H]1C,1978,,,,
+1,"(2S,6R)-2,6-Dimethyl-1-(4-methyl-1-phenylpentan-3-yl)piperidine",13C NMR,"(101 MHz; CDCl3): δ 143.6 (C4), 128.5 (C5 & C6), 125.7 (C7), 65.8 (C1), 52.7 (C11), 52.5 (C11),
+36.3 (C3), 34.6 (C12), 34.4 (C12), 33.1 (C8), 32.1 (C2), 23.9 (C12), 23.7 (C12), 22.2 (C9 or C10), 21.3 (C9
+or C10), 21.1 (C13)",CC(C)C(CCc1ccccc1)N1[C@H](C)CCC[C@@H]1C,1979,,,,
+2,"(2S,6R)-2,6-Dimethyl-1-(4-methyl-1-phenylpentan-3-yl)piperidine",IR,"(film, cm-1): 2928, 2865, 1454, 1371, 1163, 1044, 907",CC(C)C(CCc1ccccc1)N1[C@H](C)CCC[C@@H]1C,1980,,,,
+3,"(2S,6R)-2,6-Dimethyl-1-(4-methyl-1-phenylpentan-3-yl)piperidine",MS,"(NSI+): m/z calcd
+for C19H32N1, [M+H]+, 274.2529; found, 274.2531 ( = 0.6 ppm)",CC(C)C(CCc1ccccc1)N1[C@H](C)CCC[C@@H]1C,1981,,,,
+4,"1-(1-(Adamantan-1-yl)-3,3,3-trifluoropropyl)pyrrolidine",1H NMR,"(400 MHz; CDCl3): δ 2.86–2.70 (m, 4H, H8), 2.59–2.57 (m, 1H, H1), 2.35–2.26 (m, 1H, H2),
+2.19–2.12 (m, 1H, H2), 1.97 (s, 3H, H6), 1.70–1.50 (m, 16H, H5 & H7 & H9)",FC(F)(F)CC(N1CCCC1)C12CC3CC(CC(C3)C1)C2,2067,0.07,1.0,1.0,1.0
+5,"1-(1-(Adamantan-1-yl)-3,3,3-trifluoropropyl)pyrrolidine",13C NMR,"(101 MHz;
+CDCl3): δ 128.0 (q, J = 276.5 Hz, C3), 62.6 (C1), 50.3 (C8), 39.6 (C5 or C7), 39.2 (C4), 37.3 (C5 or C7),
+28.7 (C6), 28.1 (q, J = 27.5 Hz, C2), 24.8 (C9)",FC(F)(F)CC(N1CCCC1)C12CC3CC(CC(C3)C1)C2,2068,0.07,1.0,1.0,1.0
+6,"1-(1-(Adamantan-1-yl)-3,3,3-trifluoropropyl)pyrrolidine",19F NMR,(376 MHz; CDCl3): δ -63.4,FC(F)(F)CC(N1CCCC1)C12CC3CC(CC(C3)C1)C2,2069,,,,
+7,"1-(1-(Adamantan-1-yl)-3,3,3-trifluoropropyl)pyrrolidine",IR,"(film, cm-1):
+2968, 2904, 1672, 1448, 1254, 1101, 907, 727",FC(F)(F)CC(N1CCCC1)C12CC3CC(CC(C3)C1)C2,2070,,,,
+8,"1-(1-(Adamantan-1-yl)-3,3,3-trifluoropropyl)pyrrolidine",MS,"(NSI+): m/z calcd for C17H27F3N1, [M+H]+,
+302.2096; found, 302.2098 ( = 0.7 ppm)",FC(F)(F)CC(N1CCCC1)C12CC3CC(CC(C3)C1)C2,2071,,,,
+9,"1-(1-Cyclohexylbutyl)-3,3-difluoropyrrolidine",1H NMR,"(400 MHz; CDCl3): δ 2.95 (td, J = 13.7, 1.9 Hz, 2H, H11), 2.85–2.74 (m, 2H), 2.25–2.14 (m, 2H,
+H13), 2.12–2.09 (m, 1H, H1), 1.75–1.64 (m, 5H), 1.44–0.99 (m, 10H), 0.91–0.87 (m, 3H, H4)",CCCC(C1CCCCC1)N1CCC(F)(F)C1,1961,,,,
+10,"1-(1-Cyclohexylbutyl)-3,3-difluoropyrrolidine",13C NMR,"(101 MHz; CDCl3): δ 129.0 (dd, J = 504.1, 257.0 Hz, C12), 66.0 (C1), 58.5 (t, J = 28.8 Hz, C11), 49.0 (t,
+J = 3.9 Hz, C14), 45.1, 41.3 (C5), 35.5 (t, J = 23.9 Hz, C13), 30.8, 30.6, 29.2, 26.94, 26.89, 26.7, 22.3,
+14.6 (C4)",CCCC(C1CCCCC1)N1CCC(F)(F)C1,1962,,,,
+11,"1-(1-Cyclohexylbutyl)-3,3-difluoropyrrolidine",19F NMR,(376 MHz; CDCl3): δ -93.3,CCCC(C1CCCCC1)N1CCC(F)(F)C1,1963,,,,
+12,"1-(1-Cyclohexylbutyl)-3,3-difluoropyrrolidine",IR,"(film, cm-1): 2927, 2854, 1450, 1333, 1108, 928,
+745",CCCC(C1CCCCC1)N1CCC(F)(F)C1,1964,,,,
+13,"1-(1-Cyclohexylbutyl)-3,3-difluoropyrrolidine",MS,"(NSI+): m/z calcd for C14H26N1F2, [M+H]+, 246.2033; found, 246.2037 ( = 1.6 ppm)",CCCC(C1CCCCC1)N1CCC(F)(F)C1,1965,,,,
+14,1-(1-Cyclohexylbutyl)piperidine-4-carbonitrile,1H NMR,"(400 MHz; CDCl3): δ 2.73 (dddd, J = 15.5, 11.5, 6.8, 4.0 Hz, 2H, H11), 2.56 (dtd,
+J = 12.3, 8.1, 4.1 Hz, 1H, H13), 2.50 (ddt, J = 11.7, 7.9, 3.8 Hz, 1H, H11), 2.43 (ddd, J = 11.7, 8.3, 3.3
+Hz, 1H, H11), 2.07 (td, J = 7.0, 4.5 Hz, 1H, H1), 1.88–1.62 (m, 9H, H12), 1.46–1.06 (m, 8H, H2-3), 1.01–
+0.86 (m, 5H, H4)",CCCC(C1CCCCC1)N1CCC(C#N)CC1,1974,,,,
+15,1-(1-Cyclohexylbutyl)piperidine-4-carbonitrile,13C NMR,"(101 MHz; CDCl3): δ 122.3 (C14), 69.7 (C1), 48.2 (C11), 47.7 (C11), 40.4
+(C5), 31.5, 31.0, 30.1, 29.8, 29.7, 27.0 (C13), 26.8, 26.8, 26.7, 22.2, 14.6 (C4); IR (film, cm-1): 2920,
+2853, 2238, 1446, 1379, 1149, 983, 729",CCCC(C1CCCCC1)N1CCC(C#N)CC1,1975,,,,
+16,1-(1-Cyclohexylbutyl)piperidine-4-carbonitrile,IR,"(film, cm-1): 2920,
+2853, 2238, 1446, 1379, 1149, 983, 729",CCCC(C1CCCCC1)N1CCC(C#N)CC1,1976,,,,
+17,1-(1-Cyclohexylbutyl)piperidine-4-carbonitrile,MS,"(NSI+): m/z calcd for C16H29N2, [M+H]+, 249.2331;
+found, 249.2330 ( = -0.4 ppm)",CCCC(C1CCCCC1)N1CCC(C#N)CC1,1977,,,,
+18,1-(1-Cyclohexylbutyl)pyrrolidine,1H NMR,"(400 MHz; CDCl3): δ 2.63 (d, J = 2.4 Hz, 4H, H11), 2.06 (app d, J = 3.7 Hz, 1H, H1), 1.77–1.03 (m,
+19H, H2-3 & H5-10 & H12), 0.90 (q, J = 7.3 Hz, 3H, H4)",CCCC(C1CCCCC1)N1CCCC1,1945,,,,
+19,1-(1-Cyclohexylbutyl)pyrrolidine,13C NMR,"(101 MHz; CDCl3): δ 68.2 (C1), 51.2
+(C11), 41.9 (C5), 31.8, 31.0, 28.3, 27.1, 26.8, 23.6, 22.9, 14.7 (C4)",CCCC(C1CCCCC1)N1CCCC1,1946,,,,
+20,1-(1-Cyclohexylbutyl)pyrrolidine,IR,"(film, cm-1): 2924, 2853, 2785,
+1664, 1450, 1379, 1153, 1032, 842",CCCC(C1CCCCC1)N1CCCC1,1947,,,,
+21,1-(1-Cyclohexylbutyl)pyrrolidine,MS,"(NSI+): m/z calcd for C14H28N, [M+H]+, 210.2216; found,
+210.2216 ( = -0.1 ppm)",CCCC(C1CCCCC1)N1CCCC1,1948,,,,
+22,1-(1-phenylpentan-3-yl)piperidine,1H NMR,"(600 MHz; CDCl3): δ 7.28–7.25 (m, 2H, H6), 7.21–7.15 (m, 3H, H5 & H7), 2.71–2.62
+(m, 2H, H3), 2.54–2.43 (m, 4H, H10), 2.28–2.25 (m, 1H, H1), 1.79–1.75 (m, 1H, H2), 1.62–1.50 (m,
+6H, H2 & H8 & H11), 1.43 (m, 2H, H12), 1.36–1.26 (m, 1H, H8), 0.89 (t, J = 7.4 Hz, 3H, H9)",CCC(CCc1ccccc1)N1CCCCC1,2076,,,,
+23,1-(1-phenylpentan-3-yl)piperidine,13C NMR,"(101 MHz; CDCl3): δ 143.5 (C4), 128.6 (C5 or C6), 128.3 (C5 or C6), 125.6 (C7), 65.7 (C1), 49.6 (C10),
+33.6 (C3), 32.1 (C2), 27.0 (C11), 25.4 (C12), 22.4 (C8), 12.2 (C9)",CCC(CCc1ccccc1)N1CCCCC1,2077,,,,
+24,1-(1-phenylpentan-3-yl)piperidine,IR,"(film, cm-1): 2928, 2872, 2786,
+1494, 1453, 1026, 730, 695",CCC(CCc1ccccc1)N1CCCCC1,2078,,,,
+25,1-(4-Methyl-1-phenylpentan-3-yl)-4-(methylsulfonyl)piperazine,1H NMR,"400 MHz; CDCl3): δ
+7.30–7.26 (m, 2H, H6), 7.20–7.17 (m, 3H, H5 & H7), 3.18–3.15 (m, 4H, H12), 2.77–2.75 (m, 3H, H13),
+2.75–2.62 (m, 6H, H3 & H11), 2.19 (ddd, J = 8.1, 6.5, 4.4 Hz, 1H, H1), 1.86–1.61 (m, 3H, H2 & H8),
+0.91 (app dd, J = 6.7, 0.9 Hz, 6H, H9-10)",CC(C)C(CCc1ccccc1)N1CCN(S(C)(=O)=O)CC1,1994,,,,
+26,1-(4-Methyl-1-phenylpentan-3-yl)-4-(methylsulfonyl)piperazine,13C NMR,"(101 MHz; CDCl3): δ 142.7 (C4), 128.5 (C5-6), 125.9
+(C7), 69.5 (C1), 48.7 (C11), 46.8 (C12), 34.7 (C3), 34.1 (C13), 29.8 (C8), 29.6 (C2), 21.5 (C9 or C10), 20.2
+(C9 or C10)",CC(C)C(CCc1ccccc1)N1CCN(S(C)(=O)=O)CC1,1995,,,,
+27,1-(4-Methyl-1-phenylpentan-3-yl)-4-(methylsulfonyl)piperazine,IR,"(film, cm-1): 2948, 2849, 2813, 1724, 1454, 1454, 1343, 1324, 1157, 959, 776, 695",CC(C)C(CCc1ccccc1)N1CCN(S(C)(=O)=O)CC1,1996,,,,
+28,1-(4-Methyl-1-phenylpentan-3-yl)-4-(methylsulfonyl)piperazine,MS,"(NSI+): m/z calcd for C17H29N2O2S, [M+H]+, 325.1950; found, 325.1947 ( = -0.9 ppm)",CC(C)C(CCc1ccccc1)N1CCN(S(C)(=O)=O)CC1,1997,,,,
+29,1-(4-Methyl-1-phenylpentan-3-yl)-4-phenylpiperidine,1H NMR,"(400 MHz; CDCl3): δ 7.36–7.21 (m, 10H, H5-7 & H15-17), 2.95–2.93 (m,
+1H, H11), 2.88–2.79 (m, 2H, H3 & H11), 2.72–2.66 (m, 1H, H3), 2.64–2.58 (m, 2H, H11), 2.52–2.48 (m,
+1H, H13), 2.24–2.20 (m, 1H, H1), 1.93–1.62 (m, 7H, H2 & H8 & H12), 0.99–0.96 (m, 6H, H9-10)",CC(C)C(CCc1ccccc1)N1CCC(c2ccccc2)CC1,1970,,,,
+30,1-(4-Methyl-1-phenylpentan-3-yl)-4-phenylpiperidine,13C NMR,"(101 MHz; CDCl3): δ 147.2 (C14), 143.4 (C4), 128.6 (C5 or C6 or C15 or C16), 128.5 (C5 or C6 or
+C15 or C16), 128.4 (C5 or C6 or C15 or C16), 127.0 (C5 or C6 or C15 or C16), 126.1 (C7 or C17), 125.7 (C7 or
+C17), 69.8 (C1), 50.4 (C11), 50.3 (C11), 43.6 (C13), 35.1 (C3 or C12), 34.7 (C3 or C12), 34.6, 29.93 (C2),
+29.89 (C8), 21.8 (C9), 20.4 (C10)",CC(C)C(CCc1ccccc1)N1CCC(c2ccccc2)CC1,1971,,,,
+31,1-(4-Methyl-1-phenylpentan-3-yl)-4-phenylpiperidine,IR,"(film, cm-1): 2928, 2797, 1601, 1496, 1450, 1379, 1244, 1094,
+1004, 747, 697",CC(C)C(CCc1ccccc1)N1CCC(c2ccccc2)CC1,1972,,,,
+32,1-(4-Methyl-1-phenylpentan-3-yl)-4-phenylpiperidine,MS,"(NSI+): m/z calcd for C23H32N1, [M+H]+, 322.2529; found, 322.2532 ( = 0.8
+ppm)",CC(C)C(CCc1ccccc1)N1CCC(c2ccccc2)CC1,1973,,,,
+33,1-(4-Methyl-1-phenylpentan-3-yl)azepane,1H NMR,"(400 MHz; CDCl3): δ 7.28 (m, 2H, H6), 7.20 (m, 3H, H5 & H7), 2.86–2.72 (m,
+5H, H3 & H11), 2.63–2.57 (m, 1H, H3), 2.20–2.13 (m, 1H, H1), 1.75–1.61 (m, 11H, H2 & H8 & H12-13),
+0.94 (d, J = 6.7 Hz, 3H, H9), 0.89 (d, J = 6.6 Hz, 3H, H10)",CC(C)C(CCc1ccccc1)N1CCCCCC1,1953,,,,
+34,1-(4-Methyl-1-phenylpentan-3-yl)azepane,13C NMR,"(101 MHz; CDCl3): δ 143.7 (C4),
+128.5 (C5 or C6), 128.4 (C5 or C6), 125.6 (C7), 71.9 (C1), 52.3 (C11), 34.7 (C3), 32.5 (C2), 31.8 (C8), 30.9
+(C12 or C13), 27.4 (C12 or C13), 21.8 (C9), 21.0 (C10)",CC(C)C(CCc1ccccc1)N1CCCCCC1,1954,,,,
+35,1-(4-Methyl-1-phenylpentan-3-yl)azepane,IR,"(film, cm-1): 2920, 2865, 1603, 1452, 1355,
+1133, 1074, 907, 733, 695",CC(C)C(CCc1ccccc1)N1CCCCCC1,1955,,,,
+36,1-(4-Methyl-1-phenylpentan-3-yl)azepane,MS,"(NSI+): m/z calcd for C18H30N1, [M+H]+, 260.2373; found, 260.2375
+( = 0.9 ppm)",CC(C)C(CCc1ccccc1)N1CCCCCC1,1956,,,,
+37,1-(4-Methyl-1-phenylpentan-3-yl)piperidine,1H NMR,"(400 MHz; CDCl3):
+δ 7.31–7.26 (m, 2H, H6), 7.23–7.16 (m, 3H, H5 & H7), 2.77 (ddd, J = 13.6, 10.4, 5.3 Hz, 1H, H3), 2.66–
+2.54 (m, 5H, H3 & H11), 2.14 (ddd, J = 7.6, 6.3, 4.6 Hz, 1H, H1), 1.89–1.76 (m, 2H, H8 &), 1.65–1.54
+(m, 5H), 1.48–1.43 (m, 2H), 0.92 (dd, J = 6.8, 3.6 Hz, 6H, H9-10)",CC(C)C(CCc1ccccc1)N1CCCCC1,1949,,,,
+38,1-(4-Methyl-1-phenylpentan-3-yl)piperidine,13C NMR,"(101 MHz; CDCl3): δ 143.4
+(C4), 128.5 (C5 or C6), 128.4 (C5 or C6), 125.7 (C7), 70.1 (C1), 50.7 (C11), 35.1 (C3), 29.8, 29.7 (C8),
+27.0, 25.3, 21.9 (C9), 20.3 (C10)",CC(C)C(CCc1ccccc1)N1CCCCC1,1950,,,,
+39,1-(4-Methyl-1-phenylpentan-3-yl)piperidine,IR,"(film, cm-1): 2932, 2789, 1494, 1452, 1377, 1163, 1096, 1030, 745,
+695",CC(C)C(CCc1ccccc1)N1CCCCC1,1951,,,,
+40,1-(4-Methyl-1-phenylpentan-3-yl)piperidine,MS,"(NSI+): m/z calcd for C17H28N1, [M+H]+, 246.2216; found, 246.2218 ( = 0.7 ppm)",CC(C)C(CCc1ccccc1)N1CCCCC1,1952,,,,
+41,1-(4-Methyl-1-phenylpentan-3-yl)pyrrolidine,1H NMR,"(400 MHz; CDCl3):
+δ 7.33–7.28 (m, 2H, H6), 7.23–7.19 (m, 3H, H5 & H7), 2.76 (ddd, J = 13.7, 10.1, 6.7 Hz, 1H, H3), 2.67–
+2.60 (m, 5H, H3 & H11), 2.13 (q, J = 4.6 Hz, 1H, H1), 2.04–1.94 (m, 1H, H8), 1.83–1.73 (m, 6H, H2 &
+H12), 0.94 (app, dd, J = 6.8, 4.1 Hz, 6H, H9-10)",CC(C)C(CCc1ccccc1)N1CCCC1,2073,,,,
+42,1-(4-Methyl-1-phenylpentan-3-yl)pyrrolidine,13C NMR,"(101 MHz; CDCl3): δ 143.1 (C4), 128.5 (C5
+or C6), 128.4 (C5 or C6), 125.8 (C7), 68.2 (C1), 51.2 (C11), 35.8 (C3), 31.0 (C2), 30.8 (C8), 23.6 (C12),
+20.5 (C10), 17.6 (C9)",CC(C)C(CCc1ccccc1)N1CCCC1,2074,,,,
+43,1-(4-Methyl-1-phenylpentan-3-yl)pyrrolidine,IR,"(film, cm-1): 2963, 1717, 1664, 1496, 1454, 1374, 752, 701",CC(C)C(CCc1ccccc1)N1CCCC1,2075,,,,
+44,1-(Adamantan-1-yl)-N-benzyl-N-methyl-3-phenylpropan-1-amine,1H NMR,"(400
+MHz; CDCl3): δ 7.45–7.43 (m, 2H, H5-7 or H15-17), 7.37–7.32 (m, 4H, H5-7 or H15-17), 7.29–7.21 (m, 4H,
+H5-7 or H15-17), 4.00 (d, J = 14.0 Hz, 1H, H13), 3.89 (d, J = 14.1 Hz, 1H, H13), 2.91 (ddd, J = 13.6, 10.6,
+5.4 Hz, 1H, H3), 2.64 (ddd, J = 13.6, 10.1, 6.4 Hz, 1H, H3), 2.40 (s, 3H, H12), 2.24 (dd, J = 9.5, 3.6 Hz,
+1H, H1), 1.99 (d, J = 10.1 Hz, 3H, H10), 1.96–1.86 (m, 2H, H2), 1.77–1.64 (m, 12H, H9 & H11)",CN(Cc1ccccc1)C(CCc1ccccc1)C12CC3CC(CC(C3)C1)C2,2059,,,,
+45,1-(Adamantan-1-yl)-N-benzyl-N-methyl-3-phenylpropan-1-amine,13C NMR,"(101 MHz; CDCl3): δ 143.3 (C4), 141.6 (C14), 128.5 (C5-6 or C15-16), 128.4 (C5-6 or C15-16), 128.3
+(C5-6 or C15-16), 126.6 (C7 or C17), 125.8 (C7 or C17), 73.8 (C1), 61.5 (C13), 40.4 (C9 or C11), 39.9 (broad,
+C12), 39.9 (C8), 37.5 (C9 or C11), 36.2 (C3), 28.9 (C9 or C11), 28.2 (C2)",CN(Cc1ccccc1)C(CCc1ccccc1)C12CC3CC(CC(C3)C1)C2,2060,,,,
+46,1-(Adamantan-1-yl)-N-benzyl-N-methyl-3-phenylpropan-1-amine,IR,"(film, cm-1): 2900, 2841,
+1601, 1490, 1450, 1264, 1028, 731, 695",CN(Cc1ccccc1)C(CCc1ccccc1)C12CC3CC(CC(C3)C1)C2,2061,,,,
+47,1-(Adamantan-1-yl)-N-benzyl-N-methyl-3-phenylpropan-1-amine,MS,"(NSI+): m/z calcd for C27H36N1, [M+H]+, 374.2842;
+found, 374.2841 ( = -0.3 ppm)",CN(Cc1ccccc1)C(CCc1ccccc1)C12CC3CC(CC(C3)C1)C2,2062,,,,
+48,"1-Benzyl-2,2,3-trimethylpyrrolidine",1H NMR,"(400 MHz; CDCl3): δ 7.34–7.27 (m, 4H, H10-11), 7.23–7.21 (m, 1H, H12), 3.84 (d, J =
+13.1 Hz, 1H, H8), 3.25 (d, J = 13.0 Hz, 1H, H8), 2.79–2.77 (m, 1H, H4), 2.33 (td, J = 9.8, 4.3 Hz, 1H,
+H4), 1.92–1.85 (m, 2H, H2 & H3), 1.31 (ddd, J = 10.6, 5.4, 2.9 Hz, 1H, H3), 1.11 (s, 3H, H6) 0.92 (d, J
+= 6.6 Hz, 3H, H7), 0.78 (s, 3H, H5)",CC1CCN(Cc2ccccc2)C1(C)C,2136,,,,
+49,"1-Benzyl-2,2,3-trimethylpyrrolidine",13C NMR,"(101 MHz; CDCl3): δ 141.0 (C9), 128.5 (C10), 128.1
+(C11), 126.5 (C12), 62.0 (C1), 53.5 (C7), 49.5 (C4), 43.4 (C2), 29.6 (C3), 25.1 (C5), 15.3 (C7), 13.8 (C6)",CC1CCN(Cc2ccccc2)C1(C)C,2137,,,,
+50,"1-Benzyl-2,2,3-trimethylpyrrolidine",IR,"(film, cm-1): 3027, 2958, 2875, 2791, 1494, 1453, 1382, 1361, 1347, 1310, 1254, 1192, 1165, 1062,
+1028, 932, 905, 881, 807, 735, 695",CC1CCN(Cc2ccccc2)C1(C)C,2138,,,,
+51,"1-Benzyl-2,2,3-trimethylpyrrolidine",MS,"(NSI+): m/z calcd for C14H22N1, [M+H]+, 204.1747; found,
+204.1747 ( = 0.1 ppm)",CC1CCN(Cc2ccccc2)C1(C)C,2139,,,,
+52,1-Benzyl-3-methyl-2-propylpyrrolidine,1H NMR,"(400 MHz; CDCl3): δ 7.34–7.27 (m, 4H, H11-12), 7.25–7.20 (m, 1H, H13), 4.02 (dd, J = 13.1,
+5.0 Hz, 1H, H9), 3.22 (d, J = 13.3 Hz, 1H, H9(cis)), 3.13 (d, J = 12.9 Hz, 1H, H9(trans)), 2.95–2.89 (m, 1H),
+2.83–2.81 (m, 1H), 2.40–2.36 (m, 1H), 2.23–2.08 (m, 2H), 1.96–1.82 (m, 2H), 1.53–1.22 (m, 6H), 1.01–
+0.93 (m, 3H, H8)",CCCC1C(C)CCN1Cc1ccccc1,2110,,,,
+53,1-Benzyl-4-methyl-1-azaspiro[4.4]nonane,1H NMR,"(400 MHz; CDCl3): δ 7.34 (d, J = 7.1 Hz, 2H, H12), 7.34–7.28 (m,
+2H, H13), 7.23–7.19 (m, 1H, H14), 3.73 (d, J = 13.1 Hz, 1H, H10), 3.41 (d, J = 13.1 Hz, 1H, H10), 2.63
+(td, J = 9.3, 5.4 Hz, 1H, H4), 2.36 (td, J = 9.8, 4.7 Hz, 1H, H4), 2.02–1.95 (m, 1H, H2), 1.89 (m, 1H,
+H3), 1.85–1.77 (m, 1H, H5), 1.73–1.45 (m, 7H, H5 & H6 & H7 & H8), 1.30 (m, 1H, H3), 0.95 (s, 3H, H9)",CC1CCN(Cc2ccccc2)C12CCCC2,2115,,,,
+54,1-Benzyl-4-methyl-1-azaspiro[4.4]nonane,13C NMR,"(101 MHz; CDCl3): δ 141.0 (C11), 128.4 (C12), 128.1 (C13), 126.4 (C14), 74.0 (C1), 53.7 (C10),
+49.8 (C4), 43.0 (C2), 33.8 (C5), 30.0 (C3), 26.4 (C6), 25.9 (C7), 25.0 (C8), 15.6 (C9)",CC1CCN(Cc2ccccc2)C12CCCC2,2116,,,,
+55,1-Benzyl-4-methyl-1-azaspiro[4.4]nonane,IR,"(film, cm-1):
+3028, 2949, 2870, 2788, 1494, 1452, 1362, 1324, 1216, 1189, 1166, 1113, 1070, 1028, 960, 942, 906,
+825, 733, 695",CC1CCN(Cc2ccccc2)C12CCCC2,2117,,,,
+56,1-Benzyl-4-methyl-1-azaspiro[4.4]nonane,MS,"(NSI+): m/z calcd for C16H24N1, [M+H]+, 230.1903; found, 230.1906 ( = 1.2
+ppm)",CC1CCN(Cc2ccccc2)C12CCCC2,2118,,,,
+57,1-Benzyl-4-methyl-1-azaspiro[4.5]decane,1H NMR,"(400 MHz; CDCl3): δ 7.35 (d, J = 7.4 Hz, 2H, H13), 7.31–7.27 (m, 2H,
+H14), 7.20 (t, J = 7.2 Hz, 1H, H15), 3.97 (d, J = 13.7 Hz, 1H, H11), 3.25 (d, J = 13.8 Hz, 1H, H11), 2.94–
+2.91 (m, 1H, H4), 2.37 (dd, J = 9.8, 4.8 Hz, 1H, H4), 2.23 (m, 1H, H2), 2.05 (m, 1H, H3), 1.74–1.50 (m,
+5H, H5-9), 1.44–1.27 (m, 5H, H3 & H5 & H7-9), 1.17–1.14 (m, 1H, H7), 1.01 (d, J = 6.9 Hz, 3H, H10)",CC1CCN(Cc2ccccc2)C12CCCCC2,2119,,,,
+58,1-Benzyl-4-methyl-1-azaspiro[4.5]decane,13C NMR,"(101 MHz; CDCl3): δ 142.2 (C12), 128.1 (C13-14), 126.4 (C15), 64.7 (C1), 52.2 (C11), 49.6 (C4),
+36.4 (C2), 31.5 (C5), 29.9 (C3), 28.6 (C9), 26.5 (C7), 24.22 (C6), 24.06 (C8), 17.7 (C10)",CC1CCN(Cc2ccccc2)C12CCCCC2,2120,,,,
+59,1-Benzyl-4-methyl-1-azaspiro[4.5]decane,IR,"(film, cm-1):
+3026, 2928, 2857, 2794, 1704, 1602, 1493, 1451, 1362, 1309, 1180, 1135, 1072, 1027, 906, 844, 728,
+696, 648",CC1CCN(Cc2ccccc2)C12CCCCC2,2121,,,,
+60,1-Benzyl-4-methyl-1-azaspiro[4.5]decane,MS,"(NSI+): m/z calcd for C17H26N1, [M+H]+, 244.2060; found, 244.2061 ( = 0.5 ppm)",CC1CCN(Cc2ccccc2)C12CCCCC2,2122,,,,
+61,1-Benzyl-4-methyl-1-azaspiro[4.6]undecane,1H NMR,"(400 MHz; CDCl3): δ 7.35–7.26 (m, 4H, H14-15), 7.20 (t, J = 7.1
+Hz, 1H, H16), 3.79 (d, J = 13.2 Hz, 1H, H12), 3.54 (d, J = 13.2 Hz, 1H, H12), 2.63 (td, J = 9.5, 4.8 Hz,
+1H, H4), 2.38 (td, J = 9.5, 5.3 Hz, 1H, H4), 2.00–1.88 (m, 2H, H2 & H3), 1.84–1.77 (m, 1H, H5), 1.69–
+1.46 (m, 11H, H5-10), 1.28 (dt, J = 11.8, 4.7 Hz, 1H, H3), 1.03 (d, J = 6.8 Hz, 3H, H11)",CC1CCN(Cc2ccccc2)C12CCCCCC2,2132,,,,
+62,1-Benzyl-4-methyl-1-azaspiro[4.6]undecane,13C NMR,"(101
+MHz; CDCl3): δ 142.2 (C13), 128.7 (C14 or C15), 128.5 (C14 or C15), 126.8 (C16), 67.5 (C1), 53.7 (C12), 49.7 (C4), 43.5 (C2), 35.5 (C5), 32.0 (C6 or C9-10), 31.7 (C6 or C9-10), 31.4 (C6 or C9-10), 30.4 (C3), 24.9
+(C7 or C8), 24.7 (C7 or C8), 17.8 (C16)",CC1CCN(Cc2ccccc2)C12CCCCCC2,2133,,,,
+63,1-Benzyl-4-methyl-1-azaspiro[4.6]undecane,IR,"(film, cm-1): 3027, 2919, 2854, 2792, 1603, 1493, 1453, 1363,
+1202, 1157, 1124, 1069, 1028, 951, 906, 867, 838, 736, 696, 616",CC1CCN(Cc2ccccc2)C12CCCCCC2,2134,,,,
+64,1-Benzyl-4-methyl-1-azaspiro[4.6]undecane,MS,"(NSI+): m/z calcd for
+C18H28N1, [M+H]+, 258.2216; found, 258.2220 ( = -0.5 ppm)",CC1CCN(Cc2ccccc2)C12CCCCCC2,2135,,,,
+65,1-Benzyl-4-methyl-8-oxa-1-azaspiro[4.5]decane,1H NMR,"(400 MHz; CDCl3):
+δ 7.36 (d, J = 7.1 Hz, 2H, H12 or H13), 7.33–7.29 (m, 2H, H12 or H13), 7.23 (t, J = 7.0 Hz, 1H, H14), 4.02–
+3.95 (m, 3H, H6 & H7 & H10), 3.60 (td, J = 11.9, 2.4 Hz, 1H, H7), 3.52 (td, J = 11.8, 1.8 Hz, 1H, H6),
+3.30 (d, J = 13.7 Hz, 1H, H10), 2.96 (td, J = 9.4, 5.0 Hz, 1H, H4), 2.44–2.37 (m, 2H, H4 & H2), 2.09
+(dddd, J = 13.2, 10.3, 8.2, 5.0 Hz, 1H, H3), 1.80 (dtd, J = 29.4, 12.7, 4.7 Hz, 2H, H5 & H8), 1.55 (dq, J
+= 13.8, 2.2 Hz, 1H, H5), 1.42–1.35 (m, 2H, H3 & H8), 1.04 (d, J = 6.9 Hz, 3H, H9)",CC1CCN(Cc2ccccc2)C12CCOCC2,2164,,,,
+66,1-Benzyl-4-methyl-8-oxa-1-azaspiro[4.5]decane,13C NMR,"(101 MHz;
+CDCl3): δ 141.5 (C11), 128.1 (C12 or C13), 128.0 (C12 or C13), 126.5 (C14), 66.3 (C6), 65.9 (C7), 62.4 (C1),
+51.9 (C10), 49.3 (C4), 36.2 (C2), 31.3 (C5), 29.8 (C3), 29.4 (C8), 17.8 (C9)",CC1CCN(Cc2ccccc2)C12CCOCC2,2165,,,,
+67,1-Benzyl-4-methyl-8-oxa-1-azaspiro[4.5]decane,IR,"(film, cm-1): 3027, 2952,
+2848, 2795, 1603, 1493, 1453, 1387, 1364, 1297, 1233, 1216, 1183, 1164, 1106, 1011, 939, 835, 729,
+696, 629",CC1CCN(Cc2ccccc2)C12CCOCC2,2166,,,,
+68,1-Benzyl-4-methyl-8-oxa-1-azaspiro[4.5]decane,MS,"(NSI+): m/z calcd for C16H24O1N1, [M+H]+, 246.1852; found, 246.1855 ( = 1.1
+ppm)",CC1CCN(Cc2ccccc2)C12CCOCC2,2167,,,,
+69,"1-Benzyl-4-methyl-8-thia-1-azaspiro[4.5]decane 8,8-dioxide",1H NMR,"(400 MHz;
+CDCl3): δ 7.30 (q, J = 5.3 Hz, 4H, H12-13), 7.23 (dt, J = 7.0, 3.3 Hz, 1H, H14), 3.96 (d, J = 13.6 Hz, 1H,
+H10), 3.32 (d, J = 13.6 Hz, 1H, H10), 3.19–3.01 (m, 4H, H6-7), 2.97 (td, J = 9.9, 5.8 Hz, 1H, H4), 2.41
+(td, J = 10.4, 4.8 Hz, 1H, H4), 2.35–2.16 (m, 3H, H2 & H5 & H8), 2.10 (tdd, J = 10.3, 7.7, 5.2 Hz, 1H,
+H3), 2.01–1.93 (m, 2H, H5 & H8), 1.46–1.38 (m, 1H, H3), 1.08 (d, J = 6.9 Hz, 3H, H9)",CC1CCN(Cc2ccccc2)C12CCS(=O)(=O)CC2,2168,,,,
+70,"1-Benzyl-4-methyl-8-thia-1-azaspiro[4.5]decane 8,8-dioxide",13C NMR,"(101
+MHz; CDCl3): δ 140.4 (C11), 128.4 (C12 or C13), 128.0 (C12 or C13), 126.9 (C14), 63.2 (C1), 52.2 (C10),
+49.3 (C4 or C6-7), 49.0 (C4 or C6-7), 36.6 (C2), 29.6 (C3), 28.8 (C8), 26.4 (C5), 17.4 (C9)",CC1CCN(Cc2ccccc2)C12CCS(=O)(=O)CC2,2169,,,,
+71,"1-Benzyl-4-methyl-8-thia-1-azaspiro[4.5]decane 8,8-dioxide",IR,"(film, cm-1):
+2957, 2804, 1723, 1601, 1494, 1452, 1403, 1373, 1293, 1202, 1124, 1075, 1028, 965, 909, 843, 728,
+697, 666, 647",CC1CCN(Cc2ccccc2)C12CCS(=O)(=O)CC2,2170,,,,
+72,"1-Benzyl-4-methyl-8-thia-1-azaspiro[4.5]decane 8,8-dioxide",MS,"(NSI+): m/z calcd for C16H24N1O2S, [M+H]+, 294.1528; found 294.1534 ( =
+2.0 ppm)",CC1CCN(Cc2ccccc2)C12CCS(=O)(=O)CC2,2171,,,,
+73,1-Benzyl-4-methylene-1-azaspiro[4.4]nonane,1H NMR,"(400 MHz; CDCl3): δ 7.37–7.29 (m, 4H, H10-11), 7.26–7.22 (m, 1H,
+H12), 4.86 (t, J = 2.4 Hz, 1H, H7), 4.79 (t, J = 2.1 Hz, 1H, H7), 3.61 (s, 2H, H8), 2.59 (t, J = 6.7 Hz, 2H,
+H4), 2.51–2.47 (m, 2H, H3), 1.98–1.93 (m, 2H, H5), 1.74–1.63 (m, 6H, H5 & H6)",C=C1CCN(Cc2ccccc2)C12CCCC2,2248,,,,
+74,1-Benzyl-4-methylene-1-azaspiro[4.4]nonane,13C NMR,"(101 MHz;
+CDCl3): δ 160.4 (C2), 140.4 (C9), 128.8 (C10 or C11), 128.3 (C10 or C11), 126.8 (C12), 102.9 (C7), 74.6
+(C1), 53.1 (C8), 49.5 (C4), 34.0 (C5), 30.0 (C3), 25.9 (C6)",C=C1CCN(Cc2ccccc2)C12CCCC2,2249,,,,
+75,1-Benzyl-4-methylene-1-azaspiro[4.4]nonane,IR,"(film, cm-1): 3027, 2949, 2868, 2789, 1655,
+1603, 1494, 1451, 1362, 1308, 1229, 1186, 1148, 1114, 1071, 1028, 971, 951, 875, 735, 696",C=C1CCN(Cc2ccccc2)C12CCCC2,2250,,,,
+76,1-Benzyl-4-methylene-1-azaspiro[4.4]nonane,MS,"(NSI+): m/z calcd for C16H22N1, [M+H]+, 228.1747; found, 228.1749 ( = 1.0 ppm)",C=C1CCN(Cc2ccccc2)C12CCCC2,2251,,,,
+77,1-Benzyl-4-methylene-8-oxa-1-azaspiro[4.5]decane,1H NMR,"(400 MHz; CDCl3):
+δ 7.32 (dt, J = 14.0, 7.8 Hz, 4H, H10-11), 7.26–7.23 (m, 1H, H12), 5.21 (t, J = 2.3 Hz, 1H, H7), 4.98 (t, J
+= 2.1 Hz, 1H, H7), 3.96 (dt, J = 11.5, 4.4 Hz, 2H, H6), 3.83 (td, J = 11.1, 2.6 Hz, 2H, H6), 3.64 (s, 2H,
+H8), 2.72 (t, J = 7.1 Hz, 2H, H4), 2.52 (ddt, J = 7.1, 4.8, 2.3 Hz, 2H, H3), 1.96 (ddd, J = 14.2, 10.1, 4.5
+Hz, 2H, H5), 1.59 (d, J = 13.7 Hz, 2H, H5)",C=C1CCN(Cc2ccccc2)C12CCOCC2,2252,,,,
+78,1-Benzyl-4-methylene-8-oxa-1-azaspiro[4.5]decane,13C NMR,"(101 MHz; CDCl3): δ 156.3 (C2), 140.6 (C9),
+128.5 (C10 or C11), 128.3 (C10 or C11), 126.9 (C11), 106.1 (C12), 64.9 (C6), 62.0 (C1), 52.5 (C8), 47.8 (C4),
+31.3 (C5), 30.3 (C3)",C=C1CCN(Cc2ccccc2)C12CCOCC2,2253,,,,
+79,1-Benzyl-4-methylene-8-oxa-1-azaspiro[4.5]decane,IR,"(film, cm-1): 3027, 2918, 2850, 2796, 1652, 1603, 1494, 1353, 1225, 1153,
+1099, 1026, 944, 884, 837, 739, 698, 640",C=C1CCN(Cc2ccccc2)C12CCOCC2,2254,,,,
+80,1-Benzyl-4-methylene-8-oxa-1-azaspiro[4.5]decane,MS,"(NSI+): m/z calcd for C16H22O1N1, [M+H]+,
+244.1696; found, 244.1699 ( = 1.3 ppm)",C=C1CCN(Cc2ccccc2)C12CCOCC2,2255,,,,
+81,"1-Benzyl-8,8-difluoro-4-methyl-1-azaspiro[4.5]decane",1H NMR,"(400 MHz;
+CDCl3): δ 7.34–7.28 (m, 4H, H13-14), 7.24–7.22 (m, 1H, H15), 3.94 (d, J = 13.7 Hz, 1H, H11), 3.28 (d, J
+= 13.7 Hz, 1H, H11), 2.96 (td, J = 9.5, 5.4 Hz, 1H, H4), 2.39 (td, J = 10.1, 5.1 Hz, 1H, H4), 2.26–2.22
+(m, 1H, H2), 2.17–2.04 (m, 3H, H3 & H6 & H8), 1.97–1.76 (m, 3H, H5 & H6 & H8), 1.72–1.54 (m, 3H,
+H5 & H9), 1.37 (dddd, J = 12.5, 9.7, 5.2, 2.6 Hz, 1H, H3), 1.05 (d, J = 6.9 Hz, 3H, H10)",CC1CCN(Cc2ccccc2)C12CCC(F)(F)CC2,2123,,,,
+82,"1-Benzyl-8,8-difluoro-4-methyl-1-azaspiro[4.5]decane",13C NMR,"(101
+MHz; CDCl3): δ 141.3 (C12), 128.2 (C13 or C14), 128.0 (C13 or C14), 126.6 (C15), 123.7 (t, J = 240.8 Hz,
+C7), 63.8 (C1), 52.2 (C11), 49.6 (C4), 36.3 (C2), 31.9 (d, J = 23.9 Hz, C6), 31.5 (d, J = 24.3, C8), 29.8
+(C3), 26.9 (d, J = 8.4 Hz, C5), 24.4 (d, J = 9.4 Hz, C9), 17.7 (C10)",CC1CCN(Cc2ccccc2)C12CCC(F)(F)CC2,2124,,,,
+83,"1-Benzyl-8,8-difluoro-4-methyl-1-azaspiro[4.5]decane",19F NMR,"(376 MHz; CDCl3): δ –
+92.9 (d, J = 234.1 Hz), –101.8 (d, J = 234.1 Hz)",CC1CCN(Cc2ccccc2)C12CCC(F)(F)CC2,2125,,,,
+84,"1-Benzyl-8,8-difluoro-4-methyl-1-azaspiro[4.5]decane",IR,"(film, cm-1): 2957, 2799, 1492, 1447, 1374, 1269,
+1144, 1101, 972, 909, 733, 695",CC1CCN(Cc2ccccc2)C12CCC(F)(F)CC2,2126,,,,
+85,"1-Benzyl-8,8-difluoro-4-methyl-1-azaspiro[4.5]decane",MS,"(NSI+): m/z calcd for C17H24N1F2, [M+H]+, 280.1871; found,
+280.1875 ( = 1.3 ppm)",CC1CCN(Cc2ccccc2)C12CCC(F)(F)CC2,2127,,,,
+86,"3-(2-Methylhexan-3-yl)-3,4,5,6-tetrahydro-1H-1,5-methanopyrido[1,2-a][1,5]
+diazocine-8(2H)-one",1H NMR,"(500 MHz; CDCl3): δ 7.23 (ddd, J = 9.0, 6.8, 2.2 Hz, 1H, H16), 6.41 (dt, J = 9.0, 1.3 Hz, 1H, H15), 5.95 (dd, J = 6.9, 1.4 Hz,
+1H, H17), 4.02 (d, J = 15.3 Hz, 1H, H13), 3.87–3.82 (m, 1H, H13), 2.89–2.72 (m, 5H, H8 & H11-12), 2.35
+(dd, J = 5.4, 2.4 Hz, 1H, H9), 1.93–1.86 (m, 2H, H1 & H10), 1.78–1.74 (m, 1H, H10), 1.65 (dq, J = 13.4,
+6.7 Hz, 1H, H5), 1.48 (dq, J = 13.9, 6.9 Hz, 1H, H5), 1.40–1.32 (m, 1H, H2), 1.25–0.94 (m, 3H, H2-3),
+0.79 (t, J = 7.1 Hz, 3H, H6 or H7), 0.72 (m, 9H, H4 & H6-7), 0.49 (d, J = 6.7 Hz, 3H, H6 or H7)",CCCC(C(C)C)N1CC2CC(C1)c1cccc(=O)n1C2,2023,,,,
+87,"3-(2-Methylhexan-3-yl)-3,4,5,6-tetrahydro-1H-1,5-methanopyrido[1,2-a][1,5]
+diazocine-8(2H)-one",13C NMR,"(126 MHz; CDCl3): δ 163.7 (C14), 163.7 (C14), 152.2 (C18), 152.1 (C18), 138.5 (C16), 138.5 (C16), 116.5
+(C15), 116.4 (C15), 104.6 (C17), 104.5 (C17), 69.9 (C1), 69.8 (C1), 58.7 (C8 or C12), 57.8 (C8 or C12), 56.8
+(C8 or C12), 56.1 (C8 or C12), 50.3 (C13), 50.3 (C13), 36.2 (C11), 35.9 (C11), 30.5 (C5), 30.1 (C2-3 or C9),
+29.8 (C2-3 or C9), 29.8 (C5), 28.7 (C9), 28.5 (C9), 26.5 (C2-3 or C9), 26.5 (C2-3 or C9), 21.7 (C2-3 or C9),
+21.3 (C6 or C7), 20.9 (C2-3 or C9), 20.6 (C6 or C7), 20.2 (C6 or C7), 20.2 (C6 or C7), 14.4 (C4), 14.4 (C4)",CCCC(C(C)C)N1CC2CC(C1)c1cccc(=O)n1C2,2024,,,,
+88,"3-(2-Methylhexan-3-yl)-3,4,5,6-tetrahydro-1H-1,5-methanopyrido[1,2-a][1,5]
+diazocine-8(2H)-one",IR,"(film, cm-1): 2956, 2797, 1647, 1544, 1466, 1351, 1141, 794",CCCC(C(C)C)N1CC2CC(C1)c1cccc(=O)n1C2,2025,,,,
+89,"3-(2-Methylhexan-3-yl)-3,4,5,6-tetrahydro-1H-1,5-methanopyrido[1,2-a][1,5]
+diazocine-8(2H)-one",MS,"(NSI+): m/z calcd for
+C18H29N2O1, [M+H]+, 289.2280; found, 289.2281 ( = 0.3 ppm)",CCCC(C(C)C)N1CC2CC(C1)c1cccc(=O)n1C2,2026,,,,
+90,"3-(4-Methyl-1-phenylpentan-3-yl)-2,3,4,5-tetrahydro-1H-1,5-methanobenzo[d]
+azepine",1H NMR,"(400 MHz; CDCl3): δ 7.24–
+7.11 (m, 7H), 6.96 (d, J = 7.2 Hz, 2H), 3.11 (m, 3H, H11-12), 2.96 (d, J = 10.1 Hz, 1H, H11), 2.76 (dd, J
+= 9.9, 1.7 Hz, 1H, H11), 2.66 (dd, J = 9.8, 1.5 Hz, 1H, H11), 2.36–2.31 (m, 1H, H13), 2.07–1.90 (m, 2H,
+H3), 1.83 (q, J = 6.8 Hz, 1H, H1), 1.75–1.62 (m, 2H, H8 & H13), 1.51–1.45 (m, 2H, H2), 0.75 (d, J = 6.7
+Hz, 3H, H10), 0.64 (d, J = 6.7 Hz, 3H, H9)",CC(C)C(CCc1ccccc1)N1CC2CC(C1)c1ccccc12,1998,,,,
+91,"3-(4-Methyl-1-phenylpentan-3-yl)-2,3,4,5-tetrahydro-1H-1,5-methanobenzo[d]
+azepine",13C NMR,"(101 MHz; CDCl3): δ 147.0 (C14), 146.9 (C14),
+143.6 (C4), 128.6 (C5-7 or C15-16), 128.1 (C5-7 or C15-16), 126.4 (C5-7 or C15-16), 126.3 (C5-7 or C15-16), 125.4 (C5-7 or C15-16), 121.7 (C5-7 or C15-16), 121.6 (C5-7 or C15-16), 68.3 (C1), 55.1 (C11), 51.6 (C11), 43.9 (C13),
+41.8 (C12), 41.6 (C12), 33.1 (C3), 30.82 (C8), 30.77 (C2), 21.5 (C9), 20.7 (C10)",CC(C)C(CCc1ccccc1)N1CC2CC(C1)c1ccccc12,1999,,,,
+92,"3-(4-Methyl-1-phenylpentan-3-yl)-2,3,4,5-tetrahydro-1H-1,5-methanobenzo[d]
+azepine",IR,"(film, cm-1): 3023,
+2964, 1712, 1601, 1456, 1284, 1032, 757",CC(C)C(CCc1ccccc1)N1CC2CC(C1)c1ccccc12,2000,,,,
+93,"3-(4-Methyl-1-phenylpentan-3-yl)-2,3,4,5-tetrahydro-1H-1,5-methanobenzo[d]
+azepine",MS,"(NSI+): m/z calcd for C23H30N1, [M+H]+, 320.2378;
+found, 320.2383 ( = 1.6 ppm)",CC(C)C(CCc1ccccc1)N1CC2CC(C1)c1ccccc12,2001,,,,
+94,3-(4-Methyl-1-phenylpentan-3-yl)-3-azabicyclo[3.1.0]hexane,1H NMR,"(400 MHz;
+CDCl3): δ 7.30–7.26 (m, 2H, H6), 7.21–7.16 (m, 3H, H5 & H7), 2.87 (d, J = 7.8 Hz, 2H, H12), 2.72–2.63
+(m, 3H, H3 & H11), 2.59–2.51 (m, 1H, H3), 2.19 (t, J = 5.1 Hz, 1H, H1), 1.81–1.74 (m, 1H, H8), 1.69–
+1.62 (m, 2H), 1.29 (dd, J = 8.6, 5.2 Hz, 2H, H13-14), 0.88–0.85 (m, 6H, H9-10), 0.69–0.68 (m, 1H, H13),
+0.36–0.31 (m, 1H, H13)",CC(C)C(CCc1ccccc1)N1CC2CC2C1,1957,,,,
+95,3-(4-Methyl-1-phenylpentan-3-yl)-3-azabicyclo[3.1.0]hexane,13C NMR,"(101 MHz; CDCl3): δ 143.4 (C4), 128.5 (C5 or C6), 128.4 (C5 or C6), 125.7 (C7), 64.2 (C1), 51.0 (C11), 50.4 (C12), 35.1 (C3), 31.2 (C2 & C8), 20.8 (C9 or C10), 19.3 (C9 or C10),
+15.4 (C13), 15.2 (C14), 7.1 (C15)",CC(C)C(CCc1ccccc1)N1CC2CC2C1,1958,,,,
+96,3-(4-Methyl-1-phenylpentan-3-yl)-3-azabicyclo[3.1.0]hexane,IR,"(film, cm-1): 2956, 2873, 2793, 1684, 1601, 1496, 1452, 1365, 1163,
+1030, 749, 657",CC(C)C(CCc1ccccc1)N1CC2CC2C1,1959,,,,
+97,3-(4-Methyl-1-phenylpentan-3-yl)-3-azabicyclo[3.1.0]hexane,MS,"(NSI+): m/z calcd for C17H26N1, [M+H]+, 244.2060; found, 244.2062 ( = 0.9
+ppm)",CC(C)C(CCc1ccccc1)N1CC2CC2C1,1960,,,,
+98,3-(8-Methyl-5-azaspiro[3.4]octan-5-yl)propanenitrile,1H NMR,"(400 MHz; CDCl3): δ 2.97–2.92 (m, 1H, H9), 2.87–2.83 (m, 1H, H9), 2.72 (td, J = 8.9, 5.8 Hz,
+1H, H4), 2.60 (td, J = 9.2, 4.7 Hz, 1H, H4), 2.47 (t, J = 7.1 Hz, 2H, H10), 2.14 (d, J = 12.0 Hz, 1H, H5),
+1.98–1.83 (m, 4H, H2 & H3), 1.78–1.70 (m, 1H, H5), 1.62–1.55 (m, 2H, H6), 1.32 (dd, J = 5.5, 4.1 Hz,
+1H, H3), 1.05 (d, J = 6.8 Hz, 3H, H8)",CC1CCN(CCC#N)C12CCC2,2172,,,,
+99,3-(8-Methyl-5-azaspiro[3.4]octan-5-yl)propanenitrile,13C NMR,"(101 MHz; CDCl3): δ 119.2 (C11), 69.0 (C1), 49.7 (C4),
+45.9 (C9), 41.6 (C2), 29.3 (C5), 29.1 (C3), 23.9 (C7), 18.6 (C10), 15.8 (C8), 13.5 (C6)",CC1CCN(CCC#N)C12CCC2,2173,,,,
+100,3-(8-Methyl-5-azaspiro[3.4]octan-5-yl)propanenitrile,IR,"(film, cm-1):
+2954, 2874, 2812, 2248, 1460, 1425, 1373, 1250, 1156, 1117, 966, 932, 807, 625",CC1CCN(CCC#N)C12CCC2,2174,,,,
+101,3-(8-Methyl-5-azaspiro[3.4]octan-5-yl)propanenitrile,MS,"(ESI+): m/z
+calcd for C11H19N2, [M+H]+, 179.1543; found 179.1537 ( = -3.5 ppm)",CC1CCN(CCC#N)C12CCC2,2175,,,,
+102,3-(8-Methyl-5-azaspiro[3.4]octan-5-yl)propanenitrile,1H NMR,"(400 MHz; CDCl3): δ 2.97–2.92 (m, 1H, H9), 2.87–2.83 (m, 1H, H9), 2.72 (td, J = 8.9, 5.8 Hz,
+1H, H4), 2.60 (td, J = 9.2, 4.7 Hz, 1H, H4), 2.47 (t, J = 7.1 Hz, 2H, H10), 2.14 (d, J = 12.0 Hz, 1H, H5),
+1.98–1.83 (m, 4H, H2 & H3), 1.78–1.70 (m, 1H, H5), 1.62–1.55 (m, 2H, H6), 1.32 (dd, J = 5.5, 4.1 Hz,
+1H, H3), 1.05 (d, J = 6.8 Hz, 3H, H8)",CC1CCN(CCC#N)C12CCC2,2180,,,,
+103,3-(8-Methyl-5-azaspiro[3.4]octan-5-yl)propanenitrile,13C NMR,"(101 MHz; CDCl3): δ 119.2 (C11), 69.0 (C1), 49.7 (C4),
+45.9 (C9), 41.6 (C2), 29.3 (C5), 29.1 (C3), 23.9 (C7), 18.6 (C10), 15.8 (C8), 13.5 (C6)",CC1CCN(CCC#N)C12CCC2,2181,,,,
+104,3-(8-Methyl-5-azaspiro[3.4]octan-5-yl)propanenitrile,IR,"(film, cm-1):
+2954, 2874, 2812, 2248, 1460, 1425, 1373, 1250, 1156, 1117, 966, 932, 807, 625",CC1CCN(CCC#N)C12CCC2,2182,,,,
+105,3-(8-Methyl-5-azaspiro[3.4]octan-5-yl)propanenitrile,MS,"(ESI+): m/z
+calcd for C11H19N2, [M+H]+, 179.1543; found 179.1537 ( = -3.5 ppm)",CC1CCN(CCC#N)C12CCC2,2183,,,,
+106,4-(1-(Benzyl(methyl)amino)-2-methylpropyl)benzonitrile,1H NMR,"400 MHz; CDCl3): δ 7.65 (d, J = 7.8 Hz, 2H,
+H4), 7.34–7.22 (m, 7H, H3 & H13-15), 3.46 (d, J = 13.5 Hz, 1H, H11), 3.22–3.19 (m, 2H, H1 & H11), 2.37–
+2.28 (m, 1H, H7), 2.05 (s, 3H, H10), 1.10 (d, J = 6.5 Hz, 3H, H9), 0.70 (d, J = 6.6 Hz, 3H, H8)",CC(C)C(c1ccc(C#N)cc1)N(C)Cc1ccccc1,2095,,,,
+107,4-(1-(Benzyl(methyl)amino)-2-methylpropyl)benzonitrile,13C NMR,"(101 MHz; CDCl3): δ 143.5 (C2), 139.6 (C12), 131.7 (C3-4 or C13-14), 130.0 (C3-4 or C13-14), 128.7 (C3-4 or
+C13-14), 128.4 (C3-4 or C13-14), 127.0 (C15), 119.2 (C2), 110.8 (C5), 74.4 (C1), 58.9 (C11), 37.5 (C10), 28.6
+(C7), 20.7 (C8), 20 (C9)",CC(C)C(c1ccc(C#N)cc1)N(C)Cc1ccccc1,2096,,,,
+108,4-(1-(Benzyl(methyl)amino)-2-methylpropyl)benzonitrile,IR,"(film, cm-1): 2959, 2934, 2790, 2227, 1453, 1019, 909, 731, 698, 568",CC(C)C(c1ccc(C#N)cc1)N(C)Cc1ccccc1,2097,,,,
+109,4-(1-Cyclohexylbutyl)morpholine,1H NMR,"(400 MHz; CDCl3): δ 3.63 (t, J = 4.6 Hz, 4H, H12), 2.60–2.49 (m, 4H, H11), 2.03 (q, J = 5.6 Hz,
+1H, H1), 1.83–1.80 (m, 1H, H5), 1.74–1.63 (m, 4H), 1.49–0.93 (m, 10H, H2-3), 0.89 (t, J = 7.1 Hz, 3H,
+H4)",CCCC(C1CCCCC1)N1CCOCC1,1982,,,,
+110,4-(1-Cyclohexylbutyl)morpholine,13C NMR,"(101 MHz; CDCl3): δ 69.4 (C1), 67.9 (C12), 50.0 (C11), 40.1 (C5), 31.4 (C6), 30.7 (C10),
+29.8 (C3), 26.9 (C7 or C8 or C9), 26.9 (C7 or C8 or C9), 26.7 (C7 or C8 or C9), 22.3 (C2), 14.6 (C4)",CCCC(C1CCCCC1)N1CCOCC1,1983,,,,
+111,4-(1-Cyclohexylbutyl)morpholine,IR,"(film, cm-1): 2920, 2849, 1448, 1258, 1117, 1000, 854, 733",CCCC(C1CCCCC1)N1CCOCC1,1984,,,,
+112,4-(1-Cyclohexylbutyl)morpholine,MS,"(NSI+): m/z calcd for C14H28N1O1,
+[M+H]+, 226.2165; found, 226.2167 ( = 0.7 ppm)",CCCC(C1CCCCC1)N1CCOCC1,1985,,,,
+113,4-(2-methoxy-1-(tetrahydro-2H-pyran-4-yl)ethyl)morpholine,1H NMR,"(400 MHz; CDCl3): δ 4.00–3.94 (m, 2H, H5), 3.64 (qdd, J = 11.1, 6.4, 3.2 Hz,
+4H, H8), 3.49 (qd, J = 10.7, 4.2 Hz, 2H, H4), 3.39–3.33 (m, 2H, H4), 3.29 (s, 3H, H6), 2.74 (ddd, J =
+10.8, 6.7, 3.5 Hz, 2H, H7), 2.47 (ddd, J = 11.2, 6.3, 3.1 Hz, 2H, H7), 2.20 (ddd, J = 9.1, 5.5, 3.4 Hz, 1H,
+H1), 1.92 (ddd, J = 13.6, 3.6, 2.0 Hz, 1H, H3), 1.82–1.73 (m, 1H, H2), 1.58 (ddd, J = 13.0, 3.5, 2.0 Hz,
+1H, H3), 1.39–1.23 (m, 2H, H3)",COCC(C1CCOCC1)N1CCOCC1,2063,,,,
+114,4-(2-methoxy-1-(tetrahydro-2H-pyran-4-yl)ethyl)morpholine,13C NMR,"(101 MHz; CDCl3): δ 69.6 (C4 or C5), 68.7 (C1), 68.6 (C4 or
+C5), 68.0 (C4 or C5), 67.9 (C8), 58.8 (C6), 50.4 (C7), 34.3 (C2), 31.2 (C3), 30.7 (C3)",COCC(C1CCOCC1)N1CCOCC1,2064,,,,
+115,4-(2-methoxy-1-(tetrahydro-2H-pyran-4-yl)ethyl)morpholine,IR,"(film, cm-1):
+2947, 2911, 2844, 1450, 1291, 1262, 1235, 1133, 1113, 1093, 1021, 963, 864",COCC(C1CCOCC1)N1CCOCC1,2065,,,,
+116,4-(2-methoxy-1-(tetrahydro-2H-pyran-4-yl)ethyl)morpholine,MS,"(NSI+): m/z
+calcd for C12H24N1O3, [M+H]+, 230.1756; found, 230.1754 ( = -0.9 ppm)",COCC(C1CCOCC1)N1CCOCC1,2066,,,,
+117,4-(3-(8-Methyl-5-azaspiro[3.4]octan-5-yl)propyl)morpholine,1H NMR,"(400 MHz; CDCl3): δ
+3.73 (t, J = 4.7 Hz, 4H, H13), 2.73 (m, 2H, H4 & H9), 2.53–2.38 (m, 8H, H4 & H9 & H11-12), 2.24 (dt, J =
+12.3, 9.6 Hz, 1H, H5), 2.08–1.95 (m, 2H, H2 & H7), 1.93–1.85 (m, 1H, H3), 1.78–1.65 (m, 4H, H5 & H7
+& H10), 1.65–1.53 (m, 2H, H6), 1.28 (dddd, J = 12.2, 10.0, 7.8, 5.8 Hz, 1H, H3), 1.08 (d, J = 6.8 Hz, 3H,
+H8)",CC1CCN(CCCN2CCOCC2)C12CCC2,2192,,,,
+118,4-(3-(8-Methyl-5-azaspiro[3.4]octan-5-yl)propyl)morpholine,13C NMR,"(101 MHz; CDCl3): δ 69.0 (C1), 67.2 (C13), 57.3 (C11), 53.9 (C12), 49.9 (C4), 47.7 (C9),
+41.8 (C2), 29.1 (C3), 28.8 (C5), 26.4 (C10), 22.6 (C7), 15.8 (C8), 13.6 (C6)",CC1CCN(CCCN2CCOCC2)C12CCC2,2193,,,,
+119,4-(3-(8-Methyl-5-azaspiro[3.4]octan-5-yl)propyl)morpholine,IR,"(film, cm-1): 2952, 2869,
+2800, 1455, 1354, 1269, 1117, 1070, 1007, 916, 862, 731",CC1CCN(CCCN2CCOCC2)C12CCC2,2194,,,,
+120,4-(3-(8-Methyl-5-azaspiro[3.4]octan-5-yl)propyl)morpholine,MS,"(NSI+): m/z calcd for C15H29N2O,
+[M+H]+, 253.2283; found 253.2280 ( = 1.2 ppm)",CC1CCN(CCCN2CCOCC2)C12CCC2,2195,,,,
+121,4-(4-Methyl-1-phenylpentan-3-yl)thiomorpholine,1H NMR,"(400 MHz; CDCl3): δ 7.30–7.26 (m, 2H, H6), 7.20–7.18 (m, 3H, H5 & H7), 2.97–2.86 (m, 4H, H11), 2.77 (ddd, J = 13.8, 9.9, 5.2 Hz, 1H, H3), 2.65–2.56 (m, 5H, H3 & H12), 2.07 (ddd, J = 8.7,
+7.0, 4.2 Hz, 1H, H1), 1.81–1.70 (m, 2H, H2 & H8), 1.63 (dddd, J = 14.1, 10.3, 6.5, 3.9 Hz, 1H, H2), 0.90
+(app t, J = 7.1 Hz, 6H, H9-10)",CC(C)C(CCc1ccccc1)N1CCSCC1,1986,,,,
+122,4-(4-Methyl-1-phenylpentan-3-yl)thiomorpholine,13C NMR,"(101 MHz; CDCl3): δ 143.1 (C4), 128.5 (C5 or C6), 128.4 (C5
+or C6), 125.8 (C7), 71.6 (C1), 52.3 (C11), 34.7, 30.3 (C8), 30.2 (C2), 29.0 (C12), 21.8 (C9), 20.6 (C10)",CC(C)C(CCc1ccccc1)N1CCSCC1,1987,,,,
+123,4-(4-Methyl-1-phenylpentan-3-yl)thiomorpholine,IR,"(film, cm-1): 2952, 2904, 2801, 1603, 1496, 1452, 1375, 1276, 1105, 973, 745, 695",CC(C)C(CCc1ccccc1)N1CCSCC1,1988,,,,
+124,4-(4-Methyl-1-phenylpentan-3-yl)thiomorpholine,MS,"(NSI+):
+m/z calcd for C16H26N1S1, [M+H]+, 264.1786; found, 264.1780 ( = -2.3 ppm)",CC(C)C(CCc1ccccc1)N1CCSCC1,1989,,,,
+125,4-Methyl-N-(2-(8-methyl-5-azaspiro[3.4]octan-5-yl)ethyl)benzene sulfonamide,1H NMR,"(400 MHz;
+CDCl3): δ 7.30 (q, J = 5.3 Hz, 4H, H12-13), 7.23 (dt, J = 7.0, 3.3 Hz, 1H, H14), 3.96 (d, J = 13.6 Hz, 1H,
+H10), 3.32 (d, J = 13.6 Hz, 1H, H10), 3.19–3.01 (m, 4H, H6-7), 2.97 (td, J = 9.9, 5.8 Hz, 1H, H4), 2.41
+(td, J = 10.4, 4.8 Hz, 1H, H4), 2.35–2.16 (m, 3H, H2 & H5 & H8), 2.10 (tdd, J = 10.3, 7.7, 5.2 Hz, 1H,
+H3), 2.01–1.93 (m, 2H, H5 & H8), 1.46–1.38 (m, 1H, H3), 1.08 (d, J = 6.9 Hz, 3H, H9)",Cc1ccc(S(=O)(=O)NCCN2CCC(C)C23CCC3)cc1,2176,,,,
+126,4-Methyl-N-(2-(8-methyl-5-azaspiro[3.4]octan-5-yl)ethyl)benzene sulfonamide,13C NMR,"(101
+MHz; CDCl3): δ 140.4 (C11), 128.4 (C12 or C13), 128.0 (C12 or C13), 126.9 (C14), 63.2 (C1), 52.2 (C10),
+49.3 (C4 or C6-7), 49.0 (C4 or C6-7), 36.6 (C2), 29.6 (C3), 28.8 (C8), 26.4 (C5), 17.4 (C9)",Cc1ccc(S(=O)(=O)NCCN2CCC(C)C23CCC3)cc1,2177,,,,
+127,4-Methyl-N-(2-(8-methyl-5-azaspiro[3.4]octan-5-yl)ethyl)benzene sulfonamide,IR,"(film, cm-1):
+2957, 2804, 1723, 1601, 1494, 1452, 1403, 1373, 1293, 1202, 1124, 1075, 1028, 965, 909, 843, 728,
+697, 666, 647",Cc1ccc(S(=O)(=O)NCCN2CCC(C)C23CCC3)cc1,2178,,,,
+128,4-Methyl-N-(2-(8-methyl-5-azaspiro[3.4]octan-5-yl)ethyl)benzene sulfonamide,MS,"(NSI+): m/z calcd for C16H24N1O2S, [M+H]+, 294.1528; found 294.1534 ( =
+2.0 ppm)",Cc1ccc(S(=O)(=O)NCCN2CCC(C)C23CCC3)cc1,2179,,,,
+129,4-Methyl-N-(2-(8-methyl-5-azaspiro[3.4]octan-5-yl)ethyl)benzene sulfonamide,1H NMR,"(400 MHz; CDCl3): δ 7.75–7.72 (m, 2H, H12), 7.32–7.29 (m, 2H,
+H13), 5.10 (br s, 1H, NH), 2.98–2.94 (m, 2H, H10), 2.67 (ddd, J = 12.1, 6.8, 5.2 Hz, 1H, H9), 2.60–2.56
+(m, 1H, H8), 2.42 (s, 3H, H15), 2.31 (dt, J = 9.2, 4.6 Hz, 1H, H4), 2.23 (td, J = 9.4, 4.9 Hz, 1H, H4), 2.02–
+1.97 (m, 1H, H7), 1.91 (dd, J = 14.6, 7.1 Hz, 1H, H2), 1.84–1.74 (m, 3H, H3 & H5), 1.65 (dt, J = 8.8, 4.6
+Hz, 1H, H7), 1.56–1.50 (m, 2H, H6), 1.24–1.17 (m, 1H, H3), 1.02 (d, J = 6.9 Hz, 3H, H8)",Cc1ccc(S(=O)(=O)NCCN2CCC(C)C23CCC3)cc1,2184,,,,
+130,4-Methyl-N-(2-(8-methyl-5-azaspiro[3.4]octan-5-yl)ethyl)benzene sulfonamide,13C NMR,"(101 MHz; CDCl3): δ 143.4 (C11), 136.8 (C14), 129.7 (C13), 127.3 (C12), 68.6 (C1), 48.7 (C4), 47.5 (C9),
+41.6 (C2), 41.0 (C10), 28.9 (C3 & C7), 23.7 (C5), 21.6 (C15), 15.9 (C8), 13.4 (C6)",Cc1ccc(S(=O)(=O)NCCN2CCC(C)C23CCC3)cc1,2185,,,,
+131,4-Methyl-N-(2-(8-methyl-5-azaspiro[3.4]octan-5-yl)ethyl)benzene sulfonamide,IR,"(film, cm-1): 3281,
+2956, 2876, 2813, 1599, 1458, 1395, 1325, 1155, 1090, 907, 814, 727",Cc1ccc(S(=O)(=O)NCCN2CCC(C)C23CCC3)cc1,2186,,,,
+132,4-Methyl-N-(2-(8-methyl-5-azaspiro[3.4]octan-5-yl)ethyl)benzene sulfonamide,MS,"(NSI+): m/z calcd for
+C17H27N2O2S, [M+H] , 323.1788; found, 323.1789 ( = 0.4 ppm)",Cc1ccc(S(=O)(=O)NCCN2CCC(C)C23CCC3)cc1,2187,,,,
+133,"5,6-dimethoxy-2-((1-(2-methylhexan-3-yl)piperidin-4-yl)methyl)-2,3-
+dihydro-1H-inden-1-one",1H NMR,"(400 MHz; CDCl3): δ 7.15 (s, 1H, H20), 6.85 (s,
+1H, H17), 3.95 (s, 3H, H21), 3.89 (s, 3H, H22), 3.23 (dd, J = 17.6, 8.1 Hz, 1H, H16), 2.84–2.80 (m, 2H,
+H8), 2.69 (m, 2H, H12 & H16), 2.50–2.36 (m, 2H, H8), 2.18–2.15 (m, 1H, H1), 1.91–1.80 (m, 2H, H11 &
+H5), 1.72–1.66 (m, 2H, H9-10), 1.53–1.24 (m, 8H, H2-3 & H11 & H9), 0.93–0.84 (m, 9H, H4 & H6-7)",CCCC(C(C)C)N1CCC(CC2Cc3cc(OC)c(OC)cc3C2=O)CC1,2019,,,,
+134,"5,6-dimethoxy-2-((1-(2-methylhexan-3-yl)piperidin-4-yl)methyl)-2,3-
+dihydro-1H-inden-1-one",13C NMR,"(101 MHz; CDCl3): δ 208.0 (C13), 155.6 (C18), 149.5 (C19), 149.0 (C14), 129.4 (C15), 107.5 (C17),
+104.5 (C20), 70.4 (C1), 56.3 (C21 or C22), 56.2 (C21 or C22), 51.0 (C8), 51.0 (C8), 49.0 (C8), 49.0 (C8), 45.5
+(C12), 38.9 (C11), 34.9 (broad, C9), 33.6 (C16), 33.5 (C16), 32.2 (broad, C10), 29.9 (C2 or C3), 29.8 (C5),
+22.4 (C2 or C3), 21.6 (C6 or C7), 19.9 (C6 or C7), 14.6 (C4)",CCCC(C(C)C)N1CCC(CC2Cc3cc(OC)c(OC)cc3C2=O)CC1,2020,,,,
+135,"5,6-dimethoxy-2-((1-(2-methylhexan-3-yl)piperidin-4-yl)methyl)-2,3-
+dihydro-1H-inden-1-one",IR,"(film, cm-1): 2960, 2924, 2865, 1694,
+1498, 1310, 1262, 1119, 1032, 915, 727",CCCC(C(C)C)N1CCC(CC2Cc3cc(OC)c(OC)cc3C2=O)CC1,2021,,,,
+136,"5,6-dimethoxy-2-((1-(2-methylhexan-3-yl)piperidin-4-yl)methyl)-2,3-
+dihydro-1H-inden-1-one",MS,"(NSI+): m/z calcd for C24H38N1O3, [M+H]+, 388.2846;
+found, 388.2843 ( = -0.8 ppm)",CCCC(C(C)C)N1CCC(CC2Cc3cc(OC)c(OC)cc3C2=O)CC1,2022,,,,
+137,"5,8-Dibenzyl-2-oxa-5-azaspiro[3.4]octane",1H NMR,"(400 MHz; CDCl3): δ 7.38–7.20 (m, 10H, H9-11 & H14-16), 4.94 (d, J = 6.9 Hz, 1H, H5),
+4.81 (s, 2H, H6), 4.57 (d, J = 6.9 Hz, 1H, H5), 4.11 (s, 2H, H12), 3.25 (dd, J = 13.3, 3.8 Hz, 1H, H7),
+2.68–2.54 (m, 3H, H4 & H7), 2.42 (ddd, J = 11.3, 7.5, 3.7 Hz, 1H, H2), 1.73–1.67 (m, 1H, H3), 1.46–
+1.38 (m, 1H, H3)",c1ccc(CC2CCN(Cc3ccccc3)C23COC3)cc1,2216,,,,
+138,"5,8-Dibenzyl-2-oxa-5-azaspiro[3.4]octane",13C NMR,"(101 MHz; CDCl3): δ 140.8 (C8), 140.1 (C13), 129.0 (C9), 128.6 (C10),
+128.4 (C14), 128.2 (C15), 127.0 (C16), 126.2 (C11), 79.1 (C5), 75.6 (C6), 69.5 (C1), 53.5 (C12), 49.8 (C4),
+47.7 (C2), 37.3 (C7), 27.1 (C3)",c1ccc(CC2CCN(Cc3ccccc3)C23COC3)cc1,2217,,,,
+139,"5,8-Dibenzyl-2-oxa-5-azaspiro[3.4]octane",IR,"(film, cm-1): 3028, 2937, 2869, 1603, 1494, 1453, 1453, 1368, 1245,
+1156, 1074, 1028, 977, 906, 826, 726, 697, 646",c1ccc(CC2CCN(Cc3ccccc3)C23COC3)cc1,2218,,,,
+140,"5,8-Dibenzyl-2-oxa-5-azaspiro[3.4]octane",MS,"(NSI+): m/z calcd for C20H24O1N1, [M+H]+,
+294.1852; found 294.1855 ( = 0.9 ppm)",c1ccc(CC2CCN(Cc3ccccc3)C23COC3)cc1,2219,,,,
+141,"5-(3,4-Dimethoxyphenethyl)-8-methyl-5-azaspiro[3.4]octane",1H NMR,"(400
+MHz; CDCl3): δ 6.82–6.77 (m, 3H, H12 & H15-16), 3.88 (s, 3H, H17 or H18), 3.86 (s, 3H, H17 or H18),
+2.90–2.84 (m, 2H, H4 & H9), 2.76–2.66 (m, 3H, H9-10), 2.58 (td, J = 9.6, 4.6 Hz, 1H, H4), 2.28–2.21 (m,
+1H, H5), 2.04–1.95 (m, 2H, H2 & H7), 1.92 (dd, J = 10.6, 5.8 Hz, 1H, H3), 1.78–1.72 (m, 2H, H5 & H7),
+1.59–1.53 (m, 2H, H6), 1.35–1.25 (m, 1H, H3), 1.09 (d, J = 6.7 Hz, 3H, H8)",COc1ccc(CCN2CCC(C)C23CCC3)cc1OC,2188,,,,
+142,"5-(3,4-Dimethoxyphenethyl)-8-methyl-5-azaspiro[3.4]octane",13C NMR,"(101 MHz;
+CDCl3): δ 148.9 (C13 or C14), 147.4 (C13 or C14), 133.8 (C11), 120.7 (C16), 112.3 (C12), 111.3 (C15), 69.0 (C1), 56.0 (C17 or C18), 55.9 (C17 or C18), 52.3 (C9), 50.0 (C4), 41.9 (C2), 35.8 (C10), 29.2 (C3), 28.8 (C5),
+22.6 (C7), 15.8 (C8), 13.5 (C6)",COc1ccc(CCN2CCC(C)C23CCC3)cc1OC,2189,,,,
+143,"5-(3,4-Dimethoxyphenethyl)-8-methyl-5-azaspiro[3.4]octane",IR,"(film, cm-1): 2951, 2833, 1590, 1513, 1462, 1417, 1368, 1259, 1234,
+1184, 1154, 1139, 1029, 912, 850, 802, 763, 729, 643, 614",COc1ccc(CCN2CCC(C)C23CCC3)cc1OC,2190,,,,
+144,"5-(3,4-Dimethoxyphenethyl)-8-methyl-5-azaspiro[3.4]octane",MS,"(ESI+): m/z calcd for C18H28N1O2,
+[M+H]+, 290.2120; found 290.2114 ( = -2.1 ppm)",COc1ccc(CCN2CCC(C)C23CCC3)cc1OC,2191,,,,
+145,5-(3-(1H-Imidazol-1-yl)propyl)-8-methyl-5-azaspiro[3.4]octane,1H NMR,"(500 MHz, CDCl3): δ 7.45 (s, 1H, H12), 7.03 (s, 1H, H13), 6.90 (s, 1H, H14),
+4.00 (t, J = 6.8 Hz, 2H, H11), 2.60 (tt, J = 8.6, 4.3 Hz, 1H, H9), 2.57–2.50 (m, 2H, H4 & H9), 2.48–2.41
+(m, 1H, H4), 2.13–2.04 (m, 1H, H10), 1.98 (dt, J = 13.7, 7.0 Hz, 1H, H2), 1.94–1.87 (m, 4H, H5 & H7),
+1.80–1.71 (m, 1H, H3), 1.70–1.59 (m, 1H, H10), 1.55–1.47 (m, 2H, H6), 1.34–1.26 (m, 1H, H3), 1.06 (d,
+J = 6.9 Hz, 3H, H8)",CC1CCN(CCCn2ccnc2)C12CCC2,2204,,,,
+146,5-(3-(1H-Imidazol-1-yl)propyl)-8-methyl-5-azaspiro[3.4]octane,13C NMR,"(126 MHz, CDCl3): δ 137.3 (C12), 129.1 (C13), 118.9 (C14), 69.0 (C1),
+49.1 (C4), 45.4 (C9), 44.5 (C11), 41.5 (C2), 29.8 (C3), 28.8 (C5 or C7), 28.4 (C5 or C7), 23.2 (C10), 15.9
+(C8), 13.4 (C6)",CC1CCN(CCCn2ccnc2)C12CCC2,2205,,,,
+147,5-(3-(1H-Imidazol-1-yl)propyl)-8-methyl-5-azaspiro[3.4]octane,IR,"(film, cm-1): 2953, 2807, 1716, 1507, 1446, 1369, 1267, 1228, 1077, 663",CC1CCN(CCCn2ccnc2)C12CCC2,2206,,,,
+148,5-(3-(1H-Imidazol-1-yl)propyl)-8-methyl-5-azaspiro[3.4]octane,MS,"(NSI+): m/z calcd for C14H24N3, [M+H]+, 234.1970; found, 234.1970 ( = 0.0 ppm)",CC1CCN(CCCn2ccnc2)C12CCC2,2207,,,,
+149,5-Benzyl-11-methyl-2-oxa-5-azadispiro[3.1.36.24]undecane,1H NMR,"(400 MHz; CDCl3): δ 7.37–7.35 (m, 2H, H13), 7.32–7.28 (m, 2H, H14), 7.23–7.19
+(m, 1H, H15), 4.75 (d, J = 6.7 Hz, 1H, H5), 4.55 (d, J = 7.0 Hz, 1H, H6), 4.46 (d, J = 7.0 Hz, 1H, H6),
+4.36 (d, J = 6.7 Hz, 1H, H5), 4.33 (m, 2H, H11), 2.27–2.06 (m, 4H, H2-3 & H8-9), 1.65–1.41 (m, 5H, H3
+& H8-10), 1.25 (d, J = 6.8 Hz, 3H, H7)",CC1CC2(CCC2)N(Cc2ccccc2)C12COC2,2232,,,,
+150,5-Benzyl-11-methyl-2-oxa-5-azadispiro[3.1.36.24]undecane,13C NMR,"(101 MHz; CDCl3): δ 143.5 (C12), 128.3 (C14), 127.2
+(C13), 126.5 (C15), 81.0 (C5), 77.4 (C6), 69.8 (C1), 65.3 (C4), 46.0 (C11), 45.8 (C3), 38.6 (C2), 34.4 (C8),
+33.7 (C10), 16.2 (C7), 14.1 (C9)",CC1CC2(CCC2)N(Cc2ccccc2)C12COC2,2233,,,,
+151,5-Benzyl-11-methyl-2-oxa-5-azadispiro[3.1.36.24]undecane,IR,"(film, cm-1): 2956, 2928, 2869, 1692, 1530, 1492, 1452, 1393, 1371,
+1256, 1199, 1153, 951, 735, 699",CC1CC2(CCC2)N(Cc2ccccc2)C12COC2,2234,,,,
+152,5-Benzyl-11-methyl-2-oxa-5-azadispiro[3.1.36.24]undecane,MS,"(NSI+): m/z calcd for C17H24N1O1, [M+H]+, 258.1852; found
+258.1842 ( = -4.0 ppm)",CC1CC2(CCC2)N(Cc2ccccc2)C12COC2,2235,,,,
+153,5-Benzyl-8-(hydroxymethyl)-2-oxa-5-azaspiro[3.4]octan-8-ol,1H NMR,"(400 MHz; CDCl3): δ 7.36–7.30 (m, 4H, H10-11), 7.29–7.25 (m, 1H, H12), 4.93 (d, J = 7.2 Hz, 1H, H5 or H6), 4.75 (app d, J = 7.6 Hz, 2H, H5 or H6), 4.70 (d, J = 7.6 Hz, 1H, H5 or H6), 4.09 (d, J = 13.5 Hz, 1H, H8), 4.05 (d, J = 13.6 Hz, 1H, H8),, 3.88 (d, J = 11.1 Hz, 1H, H7), 3.78 (d, J = 11.1 Hz, 1H, H7), 3.12 (s, 1H, OH), 2.87 (s, 1H, OH), 2.70 (td, J = 9.6, 5.5 Hz, 1H, H4), 2.54 (td, J = 9.6, 5.3 Hz, 1H, H4), 1.91 (ddd, J = 13.6, 9.5, 5.5 Hz, 1H, H3), 1.77 (ddd, J = 13.9, 9.3, 5.0 Hz, 1H, H3)",OCC1(O)CCN(Cc2ccccc2)C12COC2,2273,,,,
+154,5-Benzyl-8-(hydroxymethyl)-2-oxa-5-azaspiro[3.4]octan-8-ol,13C NMR,"(101 MHz; CDCl3): δ 138.8 (C9), 128.6 (C10 or C11), 128.4 (C10 or C11), 127.3 (C12), 79.2 (C2), 74.2 (C6 or C5), 73.5 (C6 or C5), 71.8 (C1), 66.8 (C7), 53.0 (C8), 47.7 (C4), 32.5 (C3)",OCC1(O)CCN(Cc2ccccc2)C12COC2,2274,0.06,1.0,1.0,1.0
+155,5-Benzyl-8-(hydroxymethyl)-2-oxa-5-azaspiro[3.4]octan-8-ol,IR,"(film, cm-1): 3384, 2960, 2880, 1454, 1371, 1209, 1155, 1048, 973, 737, 697",OCC1(O)CCN(Cc2ccccc2)C12COC2,2275,,,,
+156,5-Benzyl-8-(hydroxymethyl)-2-oxa-5-azaspiro[3.4]octan-8-ol,MS,"(NSI+): m/z calcd for C14H20N1O3, [M-H]+, 250.1438; found, 250.1435 ( = -1.0 ppm)",OCC1(O)CCN(Cc2ccccc2)C12COC2,2276,,,,
+157,5-Benzyl-8-benzylidene-2-oxa-5-azaspiro[3.4]octane,1H NMR,"(500 MHz, CDCl3): δ 7.56–7.47 (m, 2H, H8-10 or H13-15), 7.43–7.19 (m, 8H, H8-10 or H13-15), 6.65
+(s, 1H, H6), 4.90 (d, J = 7.2 Hz, 2H, H5), 4.81 (d, J = 7.2 Hz, 2H, H5), 4.10 (s, 2H, H11), 2.66–2.60 (m,
+2H, H4), 2.60–2.54 (m, 2H, H3)",C(=C1CCN(Cc2ccccc2)C12COC2)c1ccccc1,2260,,,,
+158,5-Benzyl-8-benzylidene-2-oxa-5-azaspiro[3.4]octane,13C NMR,"(126 MHz, CDCl3): δ 143.5 (C7), 139.4 (C12), 136.6 (C6),
+129.0 (C8-10 or C13-15), 128.4 (C8-10 or C13-15), 128.4 (C8-10 or C13-15), 128.3 (C8-10 or C13-15), 127.0 (C8-10 or
+C13-15), 126.9 (C8-10 or C13-15), 125.1 (C2), 78.2 (C5), 68.1 (C1), 52.9 (C11), 48.6 (C4), 32.8 (C3)",C(=C1CCN(Cc2ccccc2)C12COC2)c1ccccc1,2261,,,,
+159,5-Benzyl-8-benzylidene-2-oxa-5-azaspiro[3.4]octane,IR,"(film,
+cm-1): 3026, 2946, 2879, 2798, 1702, 1598, 1494, 1452, 1369, 1255, 1183, 979, 931, 825, 738, 695,
+618",C(=C1CCN(Cc2ccccc2)C12COC2)c1ccccc1,2262,,,,
+160,5-Benzyl-8-benzylidene-2-oxa-5-azaspiro[3.4]octane,MS,"(NSI+): m/z calcd for C20H22O1N1, [M+H]+, 292.1696; found, 292.1698 ( = 0.7 ppm)",C(=C1CCN(Cc2ccccc2)C12COC2)c1ccccc1,2263,,,,
+161,5-Benzyl-8-ethyl-5-azaspiro[3.4]octane,1H NMR,"(400 MHz; CDCl3): δ 7.36–7.28 (m, 4H, H12-13), 7.24–7.20 (m, 1H,
+H14), 3.86 (d, J = 13.3 Hz, 1H, H10), 3.65 (d, J = 13.3 Hz, 1H, H10), 2.59 (td, J = 9.1, 5.7 Hz, 1H, H4),
+2.43 (td, J = 9.6, 4.8 Hz, 1H, H4), 2.38–2.30 (m, 1H, H5), 2.16–2.09 (m, 1H, H7), 1.93–1.82 (m, 3H, H3
+& H5 & H7), 1.81–1.74 (m, 2H, H2 & H8), 1.71–1.59 (m, 2H, H6), 1.35–1.25 (m, 2H, H3 & H8), 0.97 (t,
+J = 7.3 Hz, 3H, H9)",CCC1CCN(Cc2ccccc2)C12CCC2,2212,,,,
+162,5-Benzyl-8-ethyl-5-azaspiro[3.4]octane,13C NMR,"(101 MHz; CDCl3): δ 141.1 (C11), 128.5 (C12 or C13), 128.3 (C12 or C13),
+126.6 (C14), 69.0 (C1), 53.8 (C10), 49.82 (C4), 49.67 (C2), 29.3 (C5), 26.5 (C3), 23.8 (C8), 23.4 (C7), 13.8
+(C6), 12.9 (C9)",CCC1CCN(Cc2ccccc2)C12CCC2,2213,,,,
+163,5-Benzyl-8-ethyl-5-azaspiro[3.4]octane,IR,"(film, cm-1): 3027, 2957, 2872, 2789, 1494, 1453, 1425, 1360, 1315, 1250, 1167,
+1070, 1028, 965, 909, 809",CCC1CCN(Cc2ccccc2)C12CCC2,2214,,,,
+164,5-Benzyl-8-ethyl-5-azaspiro[3.4]octane,MS,"(NSI+): m/z calcd for C16H24N1, [M+H]+, 230.1903; found 230.1905
+( = 0.8 ppm)",CCC1CCN(Cc2ccccc2)C12CCC2,2215,,,,
+165,5-Benzyl-8-isopropyl-5-azaspiro[3.4]octane,1H NMR,"(400 MHz; CDCl3): δ 7.36–7.28 (m, 4H, H12-13),
+7.24–7.20 (m, 1H, H14), 3.97 (d, J = 13.4 Hz, 1H, H10), 3.56 (d, J = 13.4 Hz, 1H, H10), 2.55 (td, J = 9.2,
+4.1 Hz, 1H, H4), 2.35–2.26 (m, 2H, H4 & H2), 2.21–2.09 (m, 2H, H5), 2.02–1.94 (m, 1H, H6 or H7), 1.90
+(dt, J = 9.2, 5.4 Hz, 1H, H2), 1.81–1.66 (m, 4H, H3 & H6 & H7), 1.48–1.39 (m, 1H, H3), 0.99 (d, J = 6.7
+Hz, 3H, H9), 0.87 (d, J = 6.7 Hz, 3H, H9)",CC(C)C1CCN(Cc2ccccc2)C12CCC2,2220,,,,
+166,5-Benzyl-8-isopropyl-5-azaspiro[3.4]octane,13C NMR,"(101 MHz; CDCl3): δ 141.2 (C11), 128.4 (C12),
+128.2 (C13), 126.6 (C14), 69.4 (C1), 53.4 (C10), 52.5 (C2), 49.8 (C4), 29.5 (C7), 29.3 (C8), 25.5 (C5), 22.7
+(C3), 22.4 (C9), 18.9 (C9), 14.2 (C6)",CC(C)C1CCN(Cc2ccccc2)C12CCC2,2221,,,,
+167,5-Benzyl-8-isopropyl-5-azaspiro[3.4]octane,IR,"(film, cm-1): 2952, 1873, 2793, 1603, 1452, 1363, 1262, 1155,
+1028, 733, 697",CC(C)C1CCN(Cc2ccccc2)C12CCC2,2222,,,,
+168,5-Benzyl-8-isopropyl-5-azaspiro[3.4]octane,MS,"(NSI+): m/z calcd for C17H26N1, [M+H]+, 244.2060; found 244.2061 ( = 0.5
+ppm)",CC(C)C1CCN(Cc2ccccc2)C12CCC2,2223,,,,
+169,5-Benzyl-8-methyl-2-oxa-5-azaspiro[3.4]octane,1H NMR,"(400 MHz; CDCl3): δ 7.40–7.33 (m, 4H, H10-
+11), 7.29–7.27 (m, 1H, H12), 4.91 (d, J = 6.8 Hz, 1H, H5), 4.76 (d, J = 7.1 Hz, 1H, H6), 4.71 (d, J = 7.1
+Hz, 1H, H6), 4.52 (d, J = 6.7 Hz, 1H, H5), 4.13 (d, J = 13.8 Hz, 1H, H8), 4.07 (d, J = 13.8 Hz, 1H, H8),
+2.65–2.60 (m, 2H, H4), 2.24 (q, J = 7.4 Hz, 1H, H2), 1.92 (dtd, J = 12.9, 7.7, 5.4 Hz, 1H, H3), 1.37–1.30
+(m, 1H, H3), 1.24 (d, J = 6.9 Hz, 3H, H7)",CC1CCN(Cc2ccccc2)C12COC2,2160,,,,
+170,5-Benzyl-8-methyl-2-oxa-5-azaspiro[3.4]octane,13C NMR,"(101 MHz; CDCl3): δ 140.2 (C9), 128.4 (C10 or
+C11), 128.2 (C10 or C11), 126.9 (C12), 79.1 (C5), 75.2 (C6), 69.6 (C1), 53.6 (C8), 49.9 (C4), 40.4 (C2), 29.7
+(C3), 16.2 (C7)",CC1CCN(Cc2ccccc2)C12COC2,2161,,,,
+171,5-Benzyl-8-methyl-2-oxa-5-azaspiro[3.4]octane,IR,"(film, cm-1): 3027, 2931, 2869, 2795, 1703, 1604, 1494, 1452, 1368, 1247, 1201,
+1159, 1028, 977, 827, 735, 697",CC1CCN(Cc2ccccc2)C12COC2,2162,,,,
+172,5-Benzyl-8-methyl-2-oxa-5-azaspiro[3.4]octane,MS,"(NSI+): m/z calcd for C14H20O1N1, [M+H]+, 218.1539; found,
+218.1540 ( = 0.3 ppm)",CC1CCN(Cc2ccccc2)C12COC2,2163,,,,
+173,5-Benzyl-8-methyl-5-azaspiro[3.4]octane,1H NMR,"(400 MHz; CDCl3): δ 7.40–7.31 (m, 4H, H11-12), 7.27–7.23 (m, 1H,
+H13), 3.84 (d, J = 13.4 Hz, 1H, H9), 3.74 (d, J = 13.4 Hz, 1H, H9), 2.60–2.49 (m, 2H, H4), 2.36 (q, J =
+10.5 Hz, 1H, H5), 2.20–2.05 (m, 2H, H2 & H7), 1.96–1.88 (m, 2H, H3 & H7), 1.86–1.79 (m, 1H, H5),
+1.74–1.61 (m, 2H, H6), 1.36–1.27 (m, 1H, H3), 1.14 (d, J = 6.9 Hz, 3H, H8)",CC1CCN(Cc2ccccc2)C12CCC2,2111,,,,
+174,5-Benzyl-8-methyl-5-azaspiro[3.4]octane,13C NMR,"(101 MHz;
+CDCl3): δ 140.8 (C10), 128.3 (C11), 128.1 (C12), 126.5 (C13), 69.0 (C1), 53.7 (C9), 49.7 (C4), 41.6 (C2),
+29.03 (C3), 28.92 (C5), 23.5 (C7), 16.1 (C8), 13.6 (C6)",CC1CCN(Cc2ccccc2)C12CCC2,2112,,,,
+175,5-Benzyl-8-methyl-5-azaspiro[3.4]octane,IR,"(film, cm-1): 2955, 2872, 2788, 1604, 1494,
+1453, 1424, 1361, 1310, 1251, 1208, 1154, 1073, 1028, 980, 925, 806, 732, 696",CC1CCN(Cc2ccccc2)C12CCC2,2113,,,,
+176,5-Benzyl-8-methyl-5-azaspiro[3.4]octane,MS,"(NSI+): m/z
+calcd for C15H22N1, [M+H]+, 216.1747; found, 216.1747 ( = 0.1 ppm)",CC1CCN(Cc2ccccc2)C12CCC2,2114,,,,
+177,"5-Benzyl-8-methyl-6-(((triisopropylsilyl)oxy)methyl)-2-oxa-5-azaspiro[3.4]
+octane",1H NMR,"(400 MHz; CDCl3): δ 7.35–
+7.26 (m, 4H, H10-11), 7.24–7.19 (m, 1H, H12), 4.89 (d, J = 6.6 Hz, 1H), 4.84 (d, J = 7.0 Hz, 1H, H5 or
+H6, a or b), 4.72 (d, J = 6.8 Hz, 1H, H5 or H6, a or b), 4.61 (d, J = 7.1 Hz, 1H, H5 or H6, a or b), 4.57 (d,
+J = 7.1 Hz, 1H, H5 or H6, a or b), 4.53 (m, 3H, H8a & H5 and/or H6, a or b), 4.40 (d, J = 6.6 Hz, 1H, H5
+or H6, a or b), 4.36 (d, J = 15.5 Hz, 1H, H8b), 4.08 (d, J = 15.5 Hz, 1H, H8b), 3.83 (d, J = 14.3 Hz, 1H,
+H8a), 3.34 (qd, J = 11.2, 5.0 Hz, 1H, H13, a or b), 3.12–3.03 (m, 1H, H13, a or b), 3.00 (ddd, J = 8.2, 4.0,
+2.1 Hz, 1H, H4, a or b), 2.90–2.86 (m, 1H, H4, a or b), 2.23 (q, J = 7.1 Hz, 1H, H2, a or b), 2.17–2.10
+(m, 1H, H2, a or b), 2.03 (dt, J = 12.9, 8.0 Hz, 1H, H3, a or b), 1.94 (ddd, J = 12.7, 6.7, 2.3 Hz, 1H, H3,
+a or b), 1.49–1.36 (m, 1H, H3, a or b), 1.27 (d, J = 6.8 Hz, 2H, H7, a or b), 1.21 (d, J = 6.9 Hz, 2H, H7,
+a or b), 0.97–0.90 (m, 21H, H14-15)",CC1CC(CO[Si](C(C)C)(C(C)C)C(C)C)N(Cc2ccccc2)C12COC2,2224,,,,
+178,"5-Benzyl-8-methyl-6-(((triisopropylsilyl)oxy)methyl)-2-oxa-5-azaspiro[3.4]
+octane",13C NMR,"(101 MHz; CDCl3): δ 141.6 (C9, d.r. 1 or d.r. 2), 141.4
+(C9, d.r. 1 or d.r. 2), 128.24 (C10 or C11), 128.22 (C10 or C11), 128.20 (C10 or C11), 127.5 (C10 or C11),
+126.8 (C12, a or b), 126.6 (C12, a or b), 79.8, 79.4, 77.5, 73.8, 70.5 (C1, a or b), 70.4 (C1, a or b), 66.0,
+65.7, 63.8 (C4, a or b), 62.5 (C4, a or b), 53.1 (C8a), 50.8 (C8b), 39.6 (C2, a or b), 37.8 (C2, a or b), 33.7,
+33.2, 18.0 (C15, a or b), 17.92 (C15, a or b), 16.2 (C7, a or b), 14.4 (C7, a or b), 11.9 (C14, a or b), 11.8
+(C14, a or b)",CC1CC(CO[Si](C(C)C)(C(C)C)C(C)C)N(Cc2ccccc2)C12COC2,2225,,,,
+179,"5-Benzyl-8-methyl-6-(((triisopropylsilyl)oxy)methyl)-2-oxa-5-azaspiro[3.4]
+octane",IR,"(film, cm-1): 2941, 2865, 1454, 1367, 1245, 1209, 1097, 1065, 980, 881, 784, 731, 698,
+680, 657",CC1CC(CO[Si](C(C)C)(C(C)C)C(C)C)N(Cc2ccccc2)C12COC2,2226,,,,
+180,"5-Benzyl-8-methyl-6-(((triisopropylsilyl)oxy)methyl)-2-oxa-5-azaspiro[3.4]
+octane",MS,"(NSI+): m/z calcd for C24H42O2N1Si1, [M+H]+, 216.1383; found, 216.1381 ( = -0.8
+ppm)",CC1CC(CO[Si](C(C)C)(C(C)C)C(C)C)N(Cc2ccccc2)C12COC2,2227,,,,
+181,5-Benzyl-8-methylene-2-oxa-5-azaspiro[3.4]octane,1H NMR,"(400 MHz; CDCl3): δ 7.40–7.32 (m, 4H, H9-10), 7.29–7.25 (m, 1H, H11),
+5.55 (t, J = 2.5 Hz, 1H, H6), 5.17 (t, J = 2.2 Hz, 1H, H6), 5.02–5.00 (dd, J = 6.6, 0.5 Hz, 2H, H5), 4.65
+(dd, J = 6.6, 0.5 Hz, 2H, H5), 4.08 (s, 2H, H7), 2.61–2.58 (m, 2H, H4), 2.45–2.41 (m, 2H, H3)",C=C1CCN(Cc2ccccc2)C12COC2,2244,,,,
+182,5-Benzyl-8-methylene-2-oxa-5-azaspiro[3.4]octane,13C NMR,"(101 MHz; CDCl3): δ 154.3 (C2), 139.4 (C8), 128.51 (C9 or C10), 128.48 (C9 or C10), 127.1 (C11), 106.4
+(C6), 81.7 (C5), 68.9 (C1), 53.6 (C7), 49.8 (C4), 30.2 (C3)",C=C1CCN(Cc2ccccc2)C12COC2,2245,,,,
+183,5-Benzyl-8-methylene-2-oxa-5-azaspiro[3.4]octane,IR,"(film, cm-1): 3027, 2937, 2868, 2795, 1703,
+1660, 1603, 1495, 1453, 1368, 1294, 1232, 1195, 1158, 1114, 980, 888, 735, 697",C=C1CCN(Cc2ccccc2)C12COC2,2246,,,,
+184,5-Benzyl-8-methylene-2-oxa-5-azaspiro[3.4]octane,MS,"(NSI+): m/z
+calcd for C14H18O1N1, [M+H]+, 216.1383; found, 216.1381 ( = -0.9 ppm)",C=C1CCN(Cc2ccccc2)C12COC2,2247,,,,
+185,5-Benzyl-9-methyl-2-oxa-5-azaspiro[3.5]nonane,1H NMR,"(400 MHz; CDCl3): δ 7.40 (dd, J = 7.9,
+1.0 Hz, 2H, H12), 7.34–7.30 (m, 2H, H11), 7.26–7.22 (m, 1H, H13), 4.74 (d, J = 6.5 Hz, 1H, H6), 4.65 (d,
+J = 6.8 Hz, 1H, H7), 4.50 (m, 2H, H6 & H7), 3.91 (d, J = 14.5 Hz, 1H, H9), 3.80 (d, J = 14.7 Hz, 1H,
+H9), 2.46–2.37 (m, 2H, H5), 2.03 (td, J = 7.2, 3.9 Hz, 1H, H2), 1.63–1.56 (m, 1H, H3), 1.52–1.46 (m,
+2H, H4), 1.32–1.27 (m, 1H, H3), 1.16 (d, J = 6.9 Hz, 3H, H8)",CC1CCCN(Cc2ccccc2)C12COC2,2228,,,,
+186,5-Benzyl-9-methyl-2-oxa-5-azaspiro[3.5]nonane,13C NMR,"(101 MHz; CDCl3): δ 140.8
+(C10), 128.4 (C11 or C12), 128.2 (C11 or C12), 126.8 (C13), 77.2 (C7), 76.74 (C6), 65.4 (C1), 53.0 (C9), 47.8
+(C5), 34.4 (C2), 28.9 (C3), 21.1 (C4), 15.3 (C8)",CC1CCCN(Cc2ccccc2)C12COC2,2229,,,,
+187,5-Benzyl-9-methyl-2-oxa-5-azaspiro[3.5]nonane,IR,"(film, cm-1): 3028, 2929, 2871, 1603, 1493, 1451,
+1368, 1186, 1072, 981, 836, 732, 697",CC1CCCN(Cc2ccccc2)C12COC2,2230,,,,
+188,5-Benzyl-9-methyl-2-oxa-5-azaspiro[3.5]nonane,MS,"(NSI+): m/z calcd for C15H22N1O1, [M+H]+, 232.1701;
+found 232.1710 ( = 3.9 ppm)",CC1CCCN(Cc2ccccc2)C12COC2,2231,,,,
+189,6-Fluoro-3-(1-(2-methylhexan-3-yl)piperidin-4-yl)benzo[d]isoxazole,1H NMR,"(400 MHz;
+CDCl3): δ 7.67 (dd, J = 8.7, 5.1 Hz, 1H, H17), 7.22 (dd, J = 8.5, 2.1 Hz, 1H, H14),
+7.04 (td, J = 8.8, 2.1 Hz, 1H, H16), 3.05–2.97 (m, 1H, H10), 2.89 (dt, J = 10.1, 4.6 Hz, 2H, H8), 2.66–
+2.60 (m, 1H, H8), 2.56–2.49 (m, 1H, H8), 2.14–2.10 (m, 1H, H1), 1.99–1.91 (m, 4H, H9), 1.81–1.73 (m,
+1H, H5), 1.53–1.24 (m, 4H, H2-3), 0.95–0.89 (m, 9H, H4 & H6-7)",CCCC(C(C)C)N1CCC(c2noc3cc(F)ccc23)CC1,2014,,,,
+190,6-Fluoro-3-(1-(2-methylhexan-3-yl)piperidin-4-yl)benzo[d]isoxazole,13C NMR,"(101 MHz; CDCl3): δ 164.2
+(d, J = 250.5 Hz, C15), 163.9 (d, J = 13.6 Hz, C13), 161.7 (C11), 122.8 (d, J = 10.8 Hz, C17), 117.6 (C12),
+112.3 (d, J = 25.1 Hz, C16), 97.5 (d, J = 26.8 Hz, C14), 70.4 (C1), 51.0 (C8), 48.7 (C8), 35.5 (C10), 31.8
+(C9), 31.5 (C9), 30.4 (C5), 30.2 (C2 or C3), 22.2 (C2 or C3), 21.5 (C9), 20.5 (C10), 14.6 (C4)",CCCC(C(C)C)N1CCC(c2noc3cc(F)ccc23)CC1,2015,,,,
+191,6-Fluoro-3-(1-(2-methylhexan-3-yl)piperidin-4-yl)benzo[d]isoxazole,19F NMR,(376 MHz; CDCl3): δ -109.9,CCCC(C(C)C)N1CCC(c2noc3cc(F)ccc23)CC1,2016,,,,
+192,6-Fluoro-3-(1-(2-methylhexan-3-yl)piperidin-4-yl)benzo[d]isoxazole,IR,"(film, cm-1): 2952, 1615, 1415, 1274, 1119, 955, 838, 812",CCCC(C(C)C)N1CCC(c2noc3cc(F)ccc23)CC1,2017,,,,
+193,6-Fluoro-3-(1-(2-methylhexan-3-yl)piperidin-4-yl)benzo[d]isoxazole,MS,"(NSI+): m/z calcd for C19H28N2O1F1, [M+H]+, 319.2180; found, 319.2182 ( = 0.6 ppm)",CCCC(C(C)C)N1CCC(c2noc3cc(F)ccc23)CC1,2018,,,,
+194,8-(2-Methylhexan-3-yl)-8-azabicyclo[3.2.1]octan-3-one,1H NMR,"(400 MHz; CDCl3): δ 3.69–3.66 (m, 2H, H8), 2.66 (dd, J
+= 15.8, 4.3 Hz, 1H, H10a), 2.56 (dd, J = 15.5, 4.0 Hz, 1H, H10a), 2.47–2.44 (m, 1H, H1), 2.15 (t, J = 2.1
+Hz, 1H, H10b), 2.11 (t, J = 2.2 Hz, 1H, H10b), 1.99–1.90 (m, 3H, H5 & H9), 1.61–1.29 (m, 6H, H2-3 &
+H9), 0.94–0.89 (m, 9H, H4 & H6-7)",CCCC(C(C)C)N1C2CCC1CC(=O)C2,1966,,,,
+195,8-(2-Methylhexan-3-yl)-8-azabicyclo[3.2.1]octan-3-one,13C NMR,"(101 MHz; CDCl3): δ 211.1 (C11), 60.9 (C1), 57.1 (C8),
+55.5 (C8), 46.8 (C10), 46.6 (C10), 31.9 (C2), 30.1 (C5), 29.0 (C9), 28.9 (C9), 22.7 (C3), 19.7 (C6), 16.5
+(C7), 14.9 (C4)",CCCC(C(C)C)N1C2CCC1CC(=O)C2,1967,,,,
+196,8-(2-Methylhexan-3-yl)-8-azabicyclo[3.2.1]octan-3-one,IR,"(film, cm-1): 2960, 2869, 1714, 1468, 1347, 1195, 1141, 1000, 907, 729",CCCC(C(C)C)N1C2CCC1CC(=O)C2,1968,,,,
+197,8-(2-Methylhexan-3-yl)-8-azabicyclo[3.2.1]octan-3-one,MS,"(NSI+): m/z calcd for C14H26N1O1, [M+H]+, 224.2009; found, 224.2009 ( = 0.0 ppm)",CCCC(C(C)C)N1C2CCC1CC(=O)C2,1969,,,,
+198,"8-Benzyl-1,1-difluoro-6-oxa-azadispiro[2.0.3.3]decane",1H NMR,"(400 MHz; CDCl3): δ 7.41–7.39 (m, 2H, H11), 7.36–7.33 (m, 2H, H12), 7.29–7.25 (m,
+1H, H13), 4.78 (m, 2H, H5-6), 4.73 (d, J = 7.6 Hz, 1H, H5), 4.59 (d, J = 7.3 Hz, 1H, H6), 4.06 (s, 2H, H9),
+2.71 (ddd, J = 8.3, 6.3, 1.9 Hz, 2H, H4), 2.15–2.09 (m, 1H, H3), 1.76 (ddt, J = 13.7, 8.9, 4.7 Hz, 1H,
+H8), 1.70–1.62 (m, 1H, H3), 1.31 (ddd, J = 12.5, 8.5, 3.9 Hz, 1H, H8)",,2268,,,,
+199,"8-Benzyl-1,1-difluoro-6-oxa-azadispiro[2.0.3.3]decane",13C NMR,"(101 MHz; CDCl3): δ
+139.2 (C10), 128.5 (C11 or C12), 128.5 (C11 or C12), 127.2 (C13), 113.9 (dd, J = 290.3, 287.0 Hz, C7), 76.2
+(app t, J = 2.6 Hz, C6), 75.5 (app d, J = 5.9 Hz, C5), 68.8 (app d, J = 1.4 Hz, C1), 53.1 (C9), 48.8 (C4),
+35.3 (app d, J = 9.0 Hz, C2), 26.9 (app d, J = 4.5 Hz, C3), 19.0 (app t, J = 10 Hz, C8)",,2269,,,,
+200,"8-Benzyl-1,1-difluoro-6-oxa-azadispiro[2.0.3.3]decane",19F NMR,"(376 MHz; CDCl3): δ -129.8 (d, J = 160.0 Hz), -139.4 (d, J = 160.0 Hz)",,2270,,,,
+201,"8-Benzyl-1,1-difluoro-6-oxa-azadispiro[2.0.3.3]decane",IR,"(film, cm-1): 2948, 2880,
+2805, 1466, 1371, 1222, 1137, 983, 699",,2271,,,,
+202,"8-Benzyl-1,1-difluoro-6-oxa-azadispiro[2.0.3.3]decane",MS,"(NSI+): m/z calcd for C15H18N1O1F2, [M+H]+,
+266.1351; found, 266.1354 ( = 1.1 ppm)",,2272,,,,
+203,8-Methyl-5-(2-(thiophen-2-yl)ethyl)-5-azaspiro[3.4]octane,1H NMR,"(400 MHz; CDCl3): δ 7.03 (dd, J = 5.1, 1.2 Hz, 1H, H14),
+6.83 (dd, J = 5.1, 3.4 Hz, 1H, H13), 6.76–6.75 (m, 1H, H12), 2.95–2.82 (m, 3H, H9-10), 2.77–2.66 (m, 2H,
+H4 & H9), 2.53 (td, J = 9.5, 4.8 Hz, 1H, H4), 2.19–2.11 (m, 1H, H5), 1.97–1.88 (m, 2H, H2 & H7), 1.87–
+1.79 (m, 1H, H3), 1.72–1.62 (m, 2H, H5 & H7), 1.47 (tt, J = 11.1, 6.7 Hz, 2H, H6), 1.23 (dddd, J = 12.2,
+9.9, 7.7, 5.8 Hz, 1H, H3), 1.00 (d, J = 6.8 Hz, 3H, H8)",CC1CCN(CCc2cccs2)C12CCC2,2200,,,,
+204,8-Methyl-5-(2-(thiophen-2-yl)ethyl)-5-azaspiro[3.4]octane,13C NMR,"(101 MHz; CDCl3): δ 143.4 (C11),
+126.6 (H13), 124.7 (H12), 123.6 (H14), 69.2 (C1), 51.7 (C9), 49.8 (C4), 41.8 (C2), 30.1 (C10), 29.1 (C3),
+28.8 (C5), 23.1 (C7), 15.8 (C8), 13.6 (C6)",CC1CCN(CCc2cccs2)C12CCC2,2201,,,,
+205,8-Methyl-5-(2-(thiophen-2-yl)ethyl)-5-azaspiro[3.4]octane,IR,"(film, cm-1): 2950, 2800, 1458, 1438, 1368, 1249, 1159,
+1110, 1029, 908, 850, 818, 730, 689",CC1CCN(CCc2cccs2)C12CCC2,2202,,,,
+206,8-Methyl-5-(2-(thiophen-2-yl)ethyl)-5-azaspiro[3.4]octane,MS,"(ESI+): m/z calcd for C14H22N1S1, [M+H]+, 236.1473;
+found 236.1474 ( = 0.4 ppm)",CC1CCN(CCc2cccs2)C12CCC2,2203,,,,
+207,8-Methyl-5-phenyl-2-oxa-5-azaspiro[3.4]octane,1H NMR,"(400 MHz; CDCl3): δ 7.33–7.29 (m, 2H, H10), 7.16–7.14 (m, 2H, H9), 6.77 (t, J
+= 7.2 Hz, 1H, H11), 5.45 (d, J = 7.1 Hz, 1H, H5), 5.19 (d, J = 7.3 Hz, 1H, H6), 4.76 (d, J = 7.3 Hz, 1H,
+H6), 4.52 (d, J = 7.1 Hz, 1H, H5), 3.40–3.30 (m, 2H, H4), 2.26–2.20 (m, 1H, H2), 1.98 (dtd, J = 12.1,
+6.1, 3.5 Hz, 1H, H3), 1.52–1.48 (m, 1H, H3), 1.32 (d, J = 6.9 Hz, 3H, H7)",CC1CCN(c2ccccc2)C12COC2,2208,,,,
+208,8-Methyl-5-phenyl-2-oxa-5-azaspiro[3.4]octane,13C NMR,"(101 MHz; CDCl3):
+δ 145.9 (C8), 129.5 (C10), 116.7 (C11), 113.0 (C9), 78.2 (C5), 75.6 (C6), 67.1 (C1), 48.7 (C4), 43.3 (C2),
+30.3 (C3), 14.5 (C7)",CC1CCN(c2ccccc2)C12COC2,2209,,,,
+209,8-Methyl-5-phenyl-2-oxa-5-azaspiro[3.4]octane,IR,"(film, cm-1): 2958, 2876, 1599, 1504, 1484, 1382, 1356, 1337, 1209, 1137, 977,
+746, 698",CC1CCN(c2ccccc2)C12COC2,2210,,,,
+210,8-Methyl-5-phenyl-2-oxa-5-azaspiro[3.4]octane,MS,"(NSI+): m/z calcd for C13H18O1N1, [M+H]+, 204.1383; found, 204.1383 ( = 0.0
+ppm)",CC1CCN(c2ccccc2)C12COC2,2211,,,,
+211,"9-Benzyl-12-methyl-1,4-dioxa-9-azadispiro[4.2.48.25]tetradecane",1H NMR,"(400 MHz; CDCl3): δ 7.33–7.26 (m, 4H, H15-16), 7.19 (t,
+J = 7.1 Hz, 1H, H17), 4.00–3.94 (m, 5H, H10-11 & H13), 3.25 (d, J = 13.8 Hz, 1H, H13), 2.92 (td, J = 9.4,
+5.2 Hz, 1H, H4), 2.38–2.32 (m, 1H, H4), 2.28–2.23 (m, 1H, H2), 2.10–2.03 (m, 1H, H3), 1.82–1.60 (m,
+6H, H5-6 & H8-9), 1.57–1.48 (m, 2H, H5 & H9), 1.35–1.28 (m, 1H, H3), 1.02 (d, J = 6.9 Hz, 3H, H12)",CC1CCN(Cc2ccccc2)C12CCC1(CC2)OCCO1,2128,,,,
+212,"9-Benzyl-12-methyl-1,4-dioxa-9-azadispiro[4.2.48.25]tetradecane",13C NMR,"(101 MHz; CDCl3): δ 141.9 (C14), 128.14 (C15 or C16), 128.07 (C15 or C16), 126.4 (C17), 109.0
+(C7), 64.41 (C10 or C11), 64.38 (C10 or C11), 64.1 (C1), 52.2 (C13), 49.6 (C4), 36.1 (C2), 32.7 (C6 or C8),
+32.5 (C6 or C8), 29.8 (C3), 28.0 (C5 or C9), 25.4 (C5 or C9), 18.0 (C12)",CC1CCN(Cc2ccccc2)C12CCC1(CC2)OCCO1,2129,,,,
+213,"9-Benzyl-12-methyl-1,4-dioxa-9-azadispiro[4.2.48.25]tetradecane",IR,"(film, cm-1): 2951, 2876, 2795,
+1493, 1452, 1369, 1268, 1152, 1100, 1035, 945, 896, 850, 730, 697, 660",CC1CCN(Cc2ccccc2)C12CCC1(CC2)OCCO1,2130,,,,
+214,"9-Benzyl-12-methyl-1,4-dioxa-9-azadispiro[4.2.48.25]tetradecane",MS,"(NSI+): m/z calcd for
+C19H28O2N1, [M+H]+, 302.2115; found, 302.2117 ( = 0.8 ppm)",CC1CCN(Cc2ccccc2)C12CCC1(CC2)OCCO1,2131,,,,
+215,"Benzyl 4-(1-(benzyl(methyl)amino)-3-phenylpropyl)piperidine-1-
+carboxylate",1H NMR,"(400 MHz; CDCl3): δ 7.38–7.18 (m, 15H,
+H5-7 & H14-16 & H20-22), 5.14 (s, 2H, H12), 4.23–4.17 (m, 2H, H10), 3.72–3.64 (m, 2H, H18), 2.82–2.71
+(m, 3H, H10 & H3), 2.70–2.61 (m, 1H, H3), 2.37 (td, J = 7.3, 4.8 Hz, 1H, H1), 2.22 (s, 3H, H12), 1.98–
+1.85 (m, 2H, H2 & H9), 1.72–1.62 (m, 3H, H2 & H8 & H9), 1.30–1.18 (m, 2H, H9)",CN(Cc1ccccc1)C(CCc1ccccc1)C1CCN(C(=O)OCc2ccccc2)CC1,2047,,,,
+216,"Benzyl 4-(1-(benzyl(methyl)amino)-3-phenylpropyl)piperidine-1-
+carboxylate",13C NMR,"(101 MHz;
+CDCl3): δ 155.4 (C11), 142.8 (C4), 140.5 (C19), 137.1 (C13), 128.6 (C5-7 or C14-16 or C20-22), 128.6 (C5-7 or
+C14-16 or C20-22), 128.5 (C5-7 or C14-16 or C20-22), 128.4 (C5-7 or C14-16 or C20-22), 128.3 (C5-7 or C14-16 or C20-
+22), 128.0 (C5-7 or C14-16 or C20-22), 128.0 (C5-7 or C14-16 or C20-22), 126.9 (C5-7 or C14-16 or C20-22), 126.0
+(C5-7 or C14-16 or C20-22), 67.1 (C12), 66.9 (C1), 59.6 (C18), 44.6 (C10), 44.4 (C10), 39.2 (C8), 36.8 (C17),
+35.2 (C3), 30.7 (C2 or C9), 30.0 (C2 or C9)",CN(Cc1ccccc1)C(CCc1ccccc1)C1CCN(C(=O)OCc2ccccc2)CC1,2048,,,,
+217,"Benzyl 4-(1-(benzyl(methyl)amino)-3-phenylpropyl)piperidine-1-
+carboxylate",IR,"(film, cm-1): 2936, 2857, 1698, 1429, 1222, 1026, 735,
+697",CN(Cc1ccccc1)C(CCc1ccccc1)C1CCN(C(=O)OCc2ccccc2)CC1,2049,,,,
+218,"Benzyl 4-(1-(benzyl(methyl)amino)-3-phenylpropyl)piperidine-1-
+carboxylate",MS,"(NSI+): m/z calcd for C30H37N2O2, [M+H]+, 457.2850; found, 457.2841 ( = -1.9 ppm)",CN(Cc1ccccc1)C(CCc1ccccc1)C1CCN(C(=O)OCc2ccccc2)CC1,2050,,,,
+219,Benzyl 4-(4-methyl-1-phenylpentan-3-yl)piperazine-1-carboxylate,1H NMR,"(400 MHz; CDCl3): δ 7.38–7.27 (m, 7H, H5-7 and/or H16-
+18), 7.21–7.17 (m, 3H, H5-7 and/or H16-18), 5.15 (s, 2H, H14), 3.48 (t, J = 4.9 Hz, 4H, H12), 2.74 (ddd, J =
+13.7, 10.0, 5.4 Hz, 1H, H3), 2.62 (m, 5H, H3 & H11), 2.17 (ddd, J = 8.0, 6.4, 4.4 Hz, 1H, H1), 1.86–1.71
+(m, 2H, H2 & H8), 1.68–1.59 (m, 1H, H2), 0.92 (app dd, J = 6.7, 1.3 Hz, 6H, H9-10)",CC(C)C(CCc1ccccc1)N1CCN(C(=O)OCc2ccccc2)CC1,1990,,,,
+220,Benzyl 4-(4-methyl-1-phenylpentan-3-yl)piperazine-1-carboxylate,13C NMR,"(101
+MHz; CDCl3): δ 155.4 (C13), 142.9 (C4), 137.0 (C15), 128.6 (C5-7 or C16-18), 128.5 (C5-7 or C16-18), 128.4
+(C5-7 or C16-18), 128.1 (C5-7 or C16-18), 128.0 (C5-7 or C16-18), 125.8 (C5-7 or C16-18), 69.6 (C1), 67.1 (C14),
+49.2 (C11), 44.9 (C12), 34.8 (C3), 29.7 (C8), 29.6 (C2), 21.6 (C9 or C10), 20.2 (C9 or C10)",CC(C)C(CCc1ccccc1)N1CCN(C(=O)OCc2ccccc2)CC1,1991,,,,
+221,Benzyl 4-(4-methyl-1-phenylpentan-3-yl)piperazine-1-carboxylate,IR,"(film, cm-1):
+2948, 2865, 1692, 1427, 1240, 1119, 907, 729, 697",CC(C)C(CCc1ccccc1)N1CCN(C(=O)OCc2ccccc2)CC1,1992,,,,
+222,Benzyl 4-(4-methyl-1-phenylpentan-3-yl)piperazine-1-carboxylate,MS,"(NSI+): m/z calcd for C24H33N2O2, [M+H]+,
+381.2537; found, 381.2537 ( = 0.1 ppm)",CC(C)C(CCc1ccccc1)N1CCN(C(=O)OCc2ccccc2)CC1,1993,,,,
+223,Methyl 1-(4-methyl-1-phenylpentan-3-yl)piperidine-2-carboxylate,1H NMR,"(400
+MHz; CDCl3): δ 7.30–7.26 (m, 2H, H6), 7.18 (m, 3H, H5 & H7), 3.68 (s, 3H, H17), 3.67 (s, 3H, H17),
+3.48 (t, J = 5.5 Hz, 1H, H11), 3.39 (dd, J = 8.0, 3.9 Hz, 1H, H11), 3.06 (ddd, J = 11.3, 6.8, 4.2 Hz, 1H,
+H15), 3.00–2.95 (m, 1H, H15), 2.82–2.76 (m, 1H, H3), 2.69–2.50 (m, 1H, H3), 2.46–2.40 (m, 1H, H15),
+2.36–2.29 (m, 2H, H1 & H15), 2.14–2.09 (m, 1H, H1), 1.92–1.31 (m, 9H, H2 & H8 & H12-H14), 0.95 (t, J
+= 6.6 Hz, 6H, H9-10), 0.87 (d, J = 6.8 Hz, 6H, H9-10)",COC(=O)C1CCCCN1C(CCc1ccccc1)C(C)C,2010,,,,
+224,Methyl 1-(4-methyl-1-phenylpentan-3-yl)piperidine-2-carboxylate,13C NMR,"(101 MHz; CDCl3): δ 175.4 (C16), 175.3
+(C16), 143.6 (C4), 143.1 (C4), 128.5 (C5 or C6), 128.5 (C5 or C6), 128.4 (C5 or C6), 128.4 (C5 or C6), 125.8
+(C7), 125.6 (C7), 67.8 (C1), 67.4 (C1), 63.9 (C11), 63.7 (C11), 51.5 (C17), 51.3 (C17), 44.4 (C15), 44.3 (C15), 35.7 (C3), 34.3 (C3), 31.3 (C8), 30.4 (C2), 30.2 (C2), 30.0 (C12), 29.8 (C12), 29.1 (C8), 26.4 (C13 or C14),
+26.0 (C13 or C14), 23.2 (C13 or C14), 22.7 (C13 or C14), 21.2 (C9 or C10), 20.9 (C9 or C10), 20.6 (C9 or C10),
+20.1 (C9 or C10)",COC(=O)C1CCCCN1C(CCc1ccccc1)C(C)C,2011,,,,
+225,Methyl 1-(4-methyl-1-phenylpentan-3-yl)piperidine-2-carboxylate,IR,"(film, cm-1): 3023, 2936, 1736, 1454, 1159, 1052, 697",COC(=O)C1CCCCN1C(CCc1ccccc1)C(C)C,2012,,,,
+226,Methyl 1-(4-methyl-1-phenylpentan-3-yl)piperidine-2-carboxylate,MS,"(NSI+): m/z calcd
+for C19H30N1O2, [M+H]+, 304.2277; found, 304.2278 ( = 0.3 ppm)",COC(=O)C1CCCCN1C(CCc1ccccc1)C(C)C,2013,,,,
+227,Methyl 1-(4-methyl-1-phenylpentan-3-yl)pyrrolidine-2-carboxylate,1H NMR,"(400 MHz; CDCl3): δ 7.29–7.25 (m, 2H, H6), 7.21–7.14 (m, 3H, H5 & H7), 3.72 (dd, J = 8.4, 3.0 Hz,
+1H, H11), 3.67 (s, 3H, H16), 3.07 (td, J = 7.4, 3.4 Hz, 1H, H14), 2.87–2.77 (m, 2H, H3 & H14), 2.55–2.47
+(m, 2H, H1 & H3), 2.05–1.92 (m, 3H, H12-13), 1.88–1.73 (m, 3H, H2 & H8 & H13), 1.69–1.59 (m, 1H,
+H2), 0.90 (app dd, J = 6.8, 1.9 Hz, 6H, H9-10)",COC(=O)C1CCCN1C(CCc1ccccc1)C(C)C,2002,,,,
+228,Methyl 1-(4-methyl-1-phenylpentan-3-yl)pyrrolidine-2-carboxylate,13C NMR,"(101 MHz; CDCl3): δ 176.3 (C15), 143.6 (C4),
+128.5 (C5 or C6), 128.4 (C5 or C6), 125.6 (C7), 64.2 (C1), 62.8 (C11), 51.5 (C16), 47.4 (C14), 34.3 (C3),
+32.2 (C2), 30.8 (C8), 30.1 (C12), 24.5 (C13), 21.2 (C9), 19.9 (C10)",COC(=O)C1CCCN1C(CCc1ccccc1)C(C)C,2003,,,,
+229,Methyl 1-(4-methyl-1-phenylpentan-3-yl)pyrrolidine-2-carboxylate,IR,"(film, cm-1): 2948, 2869, 1732,
+1454, 1167, 907, 731, 699",COC(=O)C1CCCN1C(CCc1ccccc1)C(C)C,2004,,,,
+230,Methyl 1-(4-methyl-1-phenylpentan-3-yl)pyrrolidine-2-carboxylate,MS,"(NSI+): m/z calcd for C18H28N1O2, [M+H]+, 290.2115; found,
+290.2117 ( = 0.8 ppm)",COC(=O)C1CCCN1C(CCc1ccccc1)C(C)C,2005,,,,
+231,"N-Benzyl-1-(3-bromophenyl)-N,2-dimethylpropan-1-amine",1H NMR,"(400 MHz; CDCl3): δ 7.42 (d, J = 7.9 Hz, 1H, H5), 7.32
+(q, J = 6.6 Hz, 5H, H3 or H6 & H14-15), 7.26–7.21 (m, 2H, H3 or H6 & H16), 7.11 (d, J = 7.6 Hz, 1H, H7),
+3.49 (d, J = 13.5 Hz, 1H, H12), 3.23 (d, J = 13.5 Hz, 1H, H12), 3.12 (d, J = 9.6 Hz, 1H, H1), 2.32–2.27
+(m, 1H, H8), 2.06 (s, 3H, H11), 1.12 (d, J = 6.5 Hz, 3H, H10), 0.72 (d, J = 6.5 Hz, 3H, H9)",CC(C)C(c1cccc(Br)c1)N(C)Cc1ccccc1,2104,,,,
+232,"N-Benzyl-1-(3-bromophenyl)-N,2-dimethylpropan-1-amine",13C NMR,"(101 MHz; CDCl3): δ 140.2 (C2 or C13), 140.0 (C2 or C13), 132.2 (C3), 130.0, 129.4, 128.8, 128.3, 128.0,
+126.9 (C16), 122.3 (C4), 74.3 (C1), 58.7 (C12), 37.4 (C11), 28.7 (C8), 20.8 (C9), 19.9 (C10)",CC(C)C(c1cccc(Br)c1)N(C)Cc1ccccc1,2105,,,,
+233,"N-Benzyl-1-(3-bromophenyl)-N,2-dimethylpropan-1-amine",IR,"(film, cm-
+1): 2956, 1453, 1022, 1073, 781, 734, 708, 697",CC(C)C(c1cccc(Br)c1)N(C)Cc1ccccc1,2106,,,,
+234,"N-Benzyl-1-(4-fluoro-3-methoxyphenyl)-N,2-dimethylpropan-1-amine",1H NMR,"(400 MHz; CDCl3): δ 7.32 (q, J = 7.3 Hz, 4H, H15-16),
+7.26–7.22 (m, 1H, H17), 7.05 (dd, J = 11.2, 8.3 Hz, 1H, H6), 6.78 (d, J = 8.4 Hz, 1H, H3), 6.72–6.68 (m,
+1H, H7), 3.90 (s, 3H, H8), 3.51 (d, J = 13.5 Hz, 1H, H13), 3.21 (d, J = 13.5 Hz, 1H, H13), 3.11 (d, J = 9.3
+Hz, 1H, H1), 2.32–2.23 (m, 1H, H9), 2.08 (s, 3H, H12), 1.10 (d, J = 6.5 Hz, 3H, H11), 0.73 (d, J = 6.5 Hz,
+3H, H10)",COc1cc(C(C(C)C)N(C)Cc2ccccc2)ccc1F,2101,,,,
+235,"N-Benzyl-1-(4-fluoro-3-methoxyphenyl)-N,2-dimethylpropan-1-amine",13C NMR,"(101 MHz; CDCl3): δ 151.5 (d, J = 244.1 Hz, C5), 147.0 (d, J = 10.6 Hz, C4), 140.2
+(C14), 134.1 (d, J = 3.9 Hz, C2), 128.7 (C15 or C16), 128.3 (C15 or C16), 126.9 (C17), 121.7 (d, J = 6.6 Hz,
+C7), 115.2 (d, J = 18.0 Hz, C6), 114.7 (d, J = 1.7 Hz, C3), 74.2 (C1), 58.9 (C13), 56.5 (C8), 37.6 (C12),
+29.0 (C9), 20.8 (C10), 19.7 (C11)",COc1cc(C(C(C)C)N(C)Cc2ccccc2)ccc1F,2102,,,,
+236,"N-Benzyl-1-(4-fluoro-3-methoxyphenyl)-N,2-dimethylpropan-1-amine",IR,"(film, cm-1): 2956, 1512, 1464, 1452, 1272, 1216, 1143, 1123,
+1023, 816, 769, 735, 698",COc1cc(C(C(C)C)N(C)Cc2ccccc2)ccc1F,2103,,,,
+237,"N-Benzyl-1-(4-methoxyphenyl)-N,2-dimethylpropan-1-amine",1H NMR,"(400 MHz; CDCl3): δ 7.32 (dt, J = 13.4, 6.9
+Hz, 4H, H13-14), 7.22 (t, J = 7.0 Hz, 1H, H15), 7.10 (d, J = 8.4 Hz, 2H, H3), 6.89 (d, J = 8.4 Hz, 2H, H4),
+3.83 (s, 3H, H6), 3.50 (d, J = 13.5 Hz, 1H, H11), 3.21 (d, J = 13.5 Hz, 1H, H11), 3.10 (d, J = 9.6 Hz, 1H,
+H1), 2.33–2.24 (m, 1H, H7), 2.04 (s, 3H, H10), 1.12 (d, J = 6.5 Hz, 3H, H8), 0.71 (d, J = 6.6 Hz, 3H, H9)",COc1ccc(C(C(C)C)N(C)Cc2ccccc2)cc1,2098,,,,
+238,"N-Benzyl-1-(4-methoxyphenyl)-N,2-dimethylpropan-1-amine",13C NMR,"(101 MHz; CDCl3): δ 158.5 (C5), 140.6 (C12), 130.4 (C3 or C13-14), 129.8 (C2), 128.8 (C3 or
+C13-14), 128.2 (C3 or C13-14), 126.7 (C15), 113.1 (C4), 74.1 (C1), 58.7 (C11), 55.3 (C6), 37.5 (C10), 29.0
+(C7), 21.0 (C9), 20.1 (C8)",COc1ccc(C(C(C)C)N(C)Cc2ccccc2)cc1,2099,,,,
+239,"N-Benzyl-1-(4-methoxyphenyl)-N,2-dimethylpropan-1-amine",IR,"(film, cm-1): 2954, 1509, 1247, 1237, 1179, 1035, 1022, 908, 834, 730,
+698",COc1ccc(C(C(C)C)N(C)Cc2ccccc2)cc1,2100,,,,
+240,"N-Benzyl-1-cyclopropyl-N,2-dimethylpropan-1-amine",1H NMR,"(400 MHz; CDCl3): δ
+7.37–7.26 (m, 4H, H10-11), 7.23–7.19 (m, 1H, H12), 3.85–3.81 (m, 1H, H8), 3.69–3.66 (m, 1H, H8), 2.25
+(s, 3H, H7), 1.97–1.88 (m, 1H, H1), 1.49–1.45 (m, 1H, H4), 1.07–1.03 (m, 6H, H5-6), 0.79–0.72 (m, 1H,
+H2), 0.58–0.48 (m, 2H, H3), 0.41–0.35 (m, 1H, H3), 0.12–0.08 (m, 1H, H3)",CC(C)C(C1CC1)N(C)Cc1ccccc1,2107,,,,
+241,"N-Benzyl-1-cyclopropyl-N,2-dimethylpropan-1-amine",13C NMR,"(101 MHz;
+CDCl3): δ 141.5 (C9), 128.7 (C10 or C11), 128.2 (C10 or C11), 126.6 (C12), 74.9 (C1), 60.2 (C8), 38.1 (C7),
+32.8 (C4), 21.8 (C5), 21.1 (C6), 9.9 (C2), 3.7 (C3), 3.2 (C3)",CC(C)C(C1CC1)N(C)Cc1ccccc1,2108,,,,
+242,"N-Benzyl-1-cyclopropyl-N,2-dimethylpropan-1-amine",IR,"(film, cm-1): 3078, 2953, 2872, 2788,
+1469, 1453, 1026, 737, 698",CC(C)C(C1CC1)N(C)Cc1ccccc1,2109,,,,
+243,N-Benzyl-1-methoxy-N-methyl-4-phenylbutan-2-amine,1H NMR,"(400 MHz; CDCl3): δ 7.38–7.16 (m, 10H, H5-7 & H13-15), 3.75 (d, J = 13.6 Hz,
+1H, H11), 3.67–3.60 (m, 2H, H8 & H11), 3.39–3.35 (m, 4H, H8-9), 2.86–2.81 (m, 2H, H1 & H3), 2.69 (ddd,
+J = 13.7, 9.8, 6.6 Hz, 1H, H3), 2.26 (s, 3H, H10), 1.84 (qd, J = 9.1, 4.5 Hz, 1H, H2), 1.73 (dtd, J = 14.6,
+10.9, 6.5 Hz, 1H, H2)",COCC(CCc1ccccc1)N(C)Cc1ccccc1,2035,,,,
+244,N-Benzyl-1-methoxy-N-methyl-4-phenylbutan-2-amine,13C NMR,"(101 MHz; CDCl3): δ 142.9 (C4 or C12), 140.6 (C4 or C12), 128.8 (C5
+or C6 or C13 or C14), 128.6 (C5 or C6 or C13 or C14), 128.5 (C5 or C6 or C13 or C14), 128.4 (C5 or C6 or C13
+or C14), 128.3 (C5 or C6 or C13 or C14), 126.8 (C4 or C12), 125.8 (C4 or C12), 73.1 (C8), 61.5 (C9), 59.0
+(C1), 58.7 (C11), 37.2 (C10), 33.3 (C3), 31.0 (C2)",COCC(CCc1ccccc1)N(C)Cc1ccccc1,2036,,,,
+245,N-Benzyl-1-methoxy-N-methyl-4-phenylbutan-2-amine,IR,"(film, cm-1): 2920, 2857, 2801, 1601, 1494, 1452,
+1193, 1117, 1028, 909, 733, 697",COCC(CCc1ccccc1)N(C)Cc1ccccc1,2037,,,,
+246,N-Benzyl-1-methoxy-N-methyl-4-phenylbutan-2-amine,MS,"(NSI+): m/z calcd for C19H26N1O1, [M+H]+, 284.2014; found,
+284.2013 ( = -0.4 ppm)",COCC(CCc1ccccc1)N(C)Cc1ccccc1,2038,,,,
+247,"N-Benzyl-N,2,4-trimethylpentan-3-amine",1H NMR,"(400 MHz; CDCl3) δ 7.36
+(dd, J = 7.9, 1.0 Hz, 2H, H7 or H8), 7.32–7.28 (m, 2H, H7 or H8), 7.23–7.19 (m, 1H, H9), 3.77 (s, 2H,
+H5), 2.24 (s, 3H, H4), 2.10–1.96 (m, 3H, H1-2), 0.99 (dd, J = 6.7, 3.7 Hz, 12H, H3)",CC(C)C(C(C)C)N(C)Cc1ccccc1,2088,,,,
+248,"N-Benzyl-N,2-dimethyl-1-(tetrahydro-2H-pyran-4-yl)propan-1-amine",1H NMR,"(400 MHz; CDCl3) δ 7.38–7.30 (m, 4H, H11-12), 7.26–
+7.22 (m, 1H, H13), 4.05–3.99 (m, 2H, H4), 3.80 (app s, 2H, H9), 3.47–3.39 (m, 2H, H4), 2.28 (s, 3H, H8),
+2.24–2.20 (m, 1H, H1), 2.10–2.02 (m, 1H, H5), 1.97–1.90 (m, 1H, H2), 1.80–1.76 (m, 1H, H3), 1.65–
+1.46 (m, 3H, H3), 1.06 (d, J = 6.8 Hz, 3H, H6), 1.01 (d, J = 7.0 Hz, 3H, H7)",CC(C)C(C1CCOCC1)N(C)Cc1ccccc1,2089,,,,
+249,"N-Benzyl-N,2-dimethyl-1-(tetrahydro-2H-pyran-4-yl)propan-1-amine",13C NMR,"(101 MHz;
+CDCl3): δ 141.1 (C10), 128.5 (C11 or C12), 128.3 (C11 or C12), 126.7 (C13), 73.1 (C1), 68.8 (C4), 68.3 (C4),
+60.9 (C9), 38.6 (C8), 36.6 (C2), 32.1 (C3), 31.8 (C3), 28.0 (C5), 21.30 (C6 or C7), 21.27 (C6 or C7)",CC(C)C(C1CCOCC1)N(C)Cc1ccccc1,2090,,,,
+250,"N-Benzyl-N,2-dimethyl-1-(tetrahydro-2H-pyran-4-yl)propan-1-amine",IR,"(film, cm-1): 2952, 2840, 1466, 1388, 1238, 1095, 1021, 699",CC(C)C(C1CCOCC1)N(C)Cc1ccccc1,2091,,,,
+251,"N-Benzyl-N,2-dimethyl-1-phenylpropan-1-amine",1H NMR,"(400 MHz; CDCl3): δ 7.37–7.17 (m, 10H, H3-5 & H12-14), 3.51 (d, J = 13.5 Hz, 1H, H10), 3.24 (d,
+J = 13.5 Hz, 1H, H10), 3.15 (d, J = 9.7 Hz, 1H, H1), 2.36–2.31 (m, 1H, H6), 2.06 (s, 3H, H9), 1.14 (d, J = 6.5 Hz, 3H, H8), 0.72 (d, J = 6.5 Hz, 3H, H7)",CC(C)C(c1ccccc1)N(C)Cc1ccccc1,2092,,,,
+252,"N-Benzyl-N,2-dimethyl-1-phenylpropan-1-amine",13C NMR,"(101 MHz; CDCl3): δ 140.5 (C11), 137.6 (C2),
+129.5 (C3-4 or C12-13), 128.8 (C3-4 or C12-13), 128.3 (C3-4 or C12-13), 127.7 (C3-4 or C12-13), 126.8 (C5 or C14),
+126.7 (C5 or C14), 74.8 (C1), 58.7 (C10), 37.5 (C9), 28.7 (C6), 20.9 (C7), 20.1 (C8)",CC(C)C(c1ccccc1)N(C)Cc1ccccc1,2093,,,,
+253,"N-Benzyl-N,2-dimethyl-1-phenylpropan-1-amine",IR,"(film, cm-1): 3027,
+2956, 2934, 2872, 2844, 2790, 1493, 1467, 1452, 1384, 1366, 1101, 1021",CC(C)C(c1ccccc1)N(C)Cc1ccccc1,2094,,,,
+254,"N-Benzyl-N,4-dimethyl-1-phenylpentan-3-amine",1H NMR,"(400 MHz;
+CDCl3): δ 7.42–7.32 (m, 6H, H5-7 & H14-16), 7.30–7.22 (m, 4H, H5-7 & H14-16), 3.74 (app s, 2H, H12),
+2.88 (ddd, J = 13.6, 10.8, 5.4 Hz, 1H, H3), 2.70 (ddd, J = 13.6, 10.8, 6.0 Hz, 1H, H3), 2.36 (td, J = 7.3,
+4.3 Hz, 1H, H1), 2.27 (s, 3H, H11), 2.00–1.85 (m, 2H, H2 & H8), 1.72 (dddd, J = 14.1, 10.7, 6.1, 4.5 Hz,
+1H, H2), 1.04 (d, J = 6.8 Hz, 3H, H9), 1.00 (d, J = 6.7 Hz, 3H, H10)",CC(C)C(CCc1ccccc1)N(C)Cc1ccccc1,2072,,,,
+255,"N-Benzyl-N-methyl-1,4-diphenylbutan-2-amine",1H NMR,"(400 MHz; CDCl3): δ 7.32–7.09 (m, 15H, H5-7 & H10-12
+& H16-18), 3.75 (d, J = 13.5 Hz, 1H, H14), 3.61 (d, J = 13.5 Hz, 1H, H14), 3.03 (dd, J = 13.2, 4.8 Hz, 1H,
+H3), 2.90–2.82 (m, 2H, H1 & H3), 2.49 (m, 2H, H8), 2.29 (s, 3H, H13), 1.84–1.77 (m, 1H, H2), 1.70–1.63
+(m, 1H, H2)",CN(Cc1ccccc1)C(CCc1ccccc1)Cc1ccccc1,2039,,,,
+256,"N-Benzyl-N-methyl-1,4-diphenylbutan-2-amine",13C NMR,"(101 MHz; CDCl3): δ 143.0 (C4 or C9 or C15), 141.0 (C4 or C9 or C15), 140.4 (C4
+or C9 or C15), 129.4 (C5-6 or C10-11 or C16-17), 128.8 (C5-6 or C10-11 or C16-17), 128.5 (C5-6 or C10-11 or C16-17),
+128.4 (C5-6 or C10-11 or C16-17), 128.4 (C5-6 or C10-11 or C16-17), 128.3 (C5-6 or C10-11 or C16-17), 126.9 (C7 or
+C12 or C18), 125.8 (C7 or C12 or C18), 125.7 (C7 or C12 or C18), 64.4 (C1), 58.2 (C14), 36.5 (C13), 35.2 (C3),
+33.4 (C8), 32.7 (C2)",CN(Cc1ccccc1)C(CCc1ccccc1)Cc1ccccc1,2040,,,,
+257,"N-Benzyl-N-methyl-1,4-diphenylbutan-2-amine",IR,"(film, cm-1): 3027, 2932, 2789, 1601, 1494, 1452, 1026, 905, 731, 697",CN(Cc1ccccc1)C(CCc1ccccc1)Cc1ccccc1,2041,,,,
+258,"N-Benzyl-N-methyl-1,4-diphenylbutan-2-amine",MS,"(NSI+): m/z calcd for C24H28N, [M-H]+, 330.2216; found, 330.2217 ( = 0.2 ppm)",CN(Cc1ccccc1)C(CCc1ccccc1)Cc1ccccc1,2042,,,,
+259,N-Benzyl-N-methyl-1-(1-methylcyclohexyl)-3-phenylpropan-1-amine,1H NMR,"(400 MHz; CDCl3): δ 7.36–7.12 (m, 10H, H5-7 & H17-19), 7.05 (d, J = 8.5
+Hz, 2H, H10), 6.85–6.82 (m, 2H, H11), 3.82 (s, 3H, H13), 3.76 (d, J = 13.5 Hz, 1H, H15), 3.62 (d, J = 13.5
+Hz, 1H, H15), 2.99 (dd, J = 13.3, 4.7 Hz, 1H, H8), 2.89–2.84 (m, 1H, H3), 2.81 (dt, J = 9.1, 4.5 Hz, 1H,
+H1), 2.52 (dt, J = 6.5, 3.4 Hz, 1H, H3), 2.42 (dd, J = 13.3, 9.0 Hz, 1H, H8), 2.29 (s, 3H, H14), 1.86–1.76
+(m, 1H, H2), 1.71–1.62 (m, 1H, H2)",CN(Cc1ccccc1)C(CCc1ccccc1)C1(C)CCCCC1,2043,,,,
+260,N-Benzyl-N-methyl-1-(1-methylcyclohexyl)-3-phenylpropan-1-amine,13C NMR,"(101 MHz; CDCl3): δ 157.8 (C12), 143.1 (C4 or C9 or
+C16), 140.5 (C4 or C9 or C16), 133.0 (C4 or C9 or C16), 130.2 (C5-6 or C11 or C17-18), 128.8 (C5-6 or C11 or
+C17-18), 128.5 (C5-6 or C11 or C17-18), 128.4 (C5-6 or C11 or C17-18), 128.3 (C5-6 or C11 or C17-18), 126.8 (C7
+or C19), 125.7 (C7 or C19), 113.8 (C9 & C11), 64.5 (C1), 58.2 (C15), 55.4 (C13), 36.5 (C14), 34.2 (C3), 33.4
+(C8), 32.7 (C2)",CN(Cc1ccccc1)C(CCc1ccccc1)C1(C)CCCCC1,2044,,,,
+261,N-Benzyl-N-methyl-1-(1-methylcyclohexyl)-3-phenylpropan-1-amine,IR,"(film, cm-1): 2952, 2841, 1450, 1262, 1133, 1111, 1094, 963, 862",CN(Cc1ccccc1)C(CCc1ccccc1)C1(C)CCCCC1,2045,,,,
+262,N-Benzyl-N-methyl-1-(1-methylcyclohexyl)-3-phenylpropan-1-amine,MS,"(NSI+):
+m/z calcd for C25H30N1O1, [M+H]+, 360.2327; found, 360.2331 ( = 1.1 ppm)",CN(Cc1ccccc1)C(CCc1ccccc1)C1(C)CCCCC1,2046,,,,
+263,N-Benzyl-N-methyl-1-(1-methylcyclohexyl)-3-phenylpropan-1-amine,1H NMR,"(400 MHz; CDCl3): δ 7.43 (d, J = 7.1 Hz, 2H, H5-7 or H16-18), 7.37–7.32 (m, 4H,
+H5-7 or H16-18), 7.29–7.21 (m, 4H, H5-7 or H16-18), 4.04 (d, J = 14.0 Hz, 1H, H14), 3.91 (d, J = 14.1 Hz,
+1H, H14), 2.92 (ddd, J = 13.6, 11.0, 4.9 Hz, 1H, H3), 2.65 (ddd, J = 13.6, 10.5, 6.2 Hz, 1H, H3), 2.51
+(dd, J = 10.1, 2.7 Hz, 1H, H1), 2.41 (s, 3H, H13), 1.99 (dtd, J = 14.8, 10.0, 4.8 Hz, 1H, H2), 1.88 (tdd, J
+= 11.3, 6.0, 2.9 Hz, 1H, H2), 1.60–1.35 (m, 9H, H9-11), 1.27–1.21 (m, 1H, H11), 0.96 (s, 3H, H12)",CN(Cc1ccccc1)C(CCc1ccccc1)C1(C)CCCCC1,2055,,,,
+264,N-Benzyl-N-methyl-1-(1-methylcyclohexyl)-3-phenylpropan-1-amine,13C NMR,"(101 MHz; CDCl3): δ 143.2 (C4), 141.6 (C15), 128.5 (C5-6 or C16-17), 128.5 (C5-6 or C16-17), 128.4
+(C5-6 or C16-17), 128.3 (C5-6 or C16-17), 126.6 (C7 or C18), 125.9 (C7 or C18), 72.9 (C1), 61.8 (C14), 40.3
+(C8), 40.0 (C13), 36.3 (C3), 36.2 (C10 or C9), 28.8 (C2), 26.7 (C11), 22.4 (C10 or C9), 22.1 (C10 or C9), 20.7 (C12)",CN(Cc1ccccc1)C(CCc1ccccc1)C1(C)CCCCC1,2056,,,,
+265,N-Benzyl-N-methyl-1-(1-methylcyclohexyl)-3-phenylpropan-1-amine,IR,"(film, cm-1): 2920, 2781, 1450, 1046, 1026, 731, 697",CN(Cc1ccccc1)C(CCc1ccccc1)C1(C)CCCCC1,2057,,,,
+266,N-Benzyl-N-methyl-1-(1-methylcyclohexyl)-3-phenylpropan-1-amine,MS,"(NSI+): m/z calcd for C24H34N1,
+[M+H]+, 336.2686; found, 336.2689 ( = 1.0 ppm)",CN(Cc1ccccc1)C(CCc1ccccc1)C1(C)CCCCC1,2058,,,,
+267,N-Benzyl-N-methyl-1-phenylhexan-3-amine,1H NMR,"(400 MHz; CDCl3): δ 7.41–7.21 (m, 10H, H5-7 & H14-16), 3.63 (d, J = 13.5 Hz,
+1H, H12), 3.58 (d, J = 13.5 Hz, 1H, H12), 2.82–2.78 (m, 1H, H3), 2.72 (dd, J = 10.1, 6.2 Hz, 1H, H3),
+2.58 (t, J = 6.8 Hz, 1H, H1), 2.21 (s, 3H, H11), 1.90–1.81 (d, J = 10.1 Hz, 1H, H2), 1.69–1.60 (m, 2H,
+H2 & H8), 1.69–1.60 (m, 3H, H8-9), 0.95 (t, J = 7.2 Hz, 3H, H10)",CCCC(CCc1ccccc1)N(C)Cc1ccccc1,2031,,,,
+268,N-Benzyl-N-methyl-1-phenylhexan-3-amine,13C NMR,"(101 MHz; CDCl3): δ 143.3
+(C4 or C11), 140.9 (C4 or C11), 128.8 (C5 or C6 or C14 or C15), 128.6 (C5 or C6 or C14 or C15), 128.4 (C5 or
+C6 or C14 or C15), 128.3 (C5 or C6 or C14 or C15), 126.7 (C4 or C11), 125.7 (C4 or C11), 62.1 (C1), 58.0
+(C12), 36.5 (C11), 33.7 (C3), 32.5 (C3 or C8), 31.8 (C3 or C8), 20.5 (C9), 14.5 (C10)",CCCC(CCc1ccccc1)N(C)Cc1ccccc1,2032,,,,
+269,N-Benzyl-N-methyl-1-phenylhexan-3-amine,IR,"(film, cm-1): 2956,
+2861, 2785, 1494, 1452, 1359, 1028, 729, 695",CCCC(CCc1ccccc1)N(C)Cc1ccccc1,2033,,,,
+270,N-Benzyl-N-methyl-1-phenylhexan-3-amine,MS,"(NSI+): m/z calcd for C20H28N1, [M+H]+,
+282.2222; found, 282.2222 ( = 0.0 ppm)",CCCC(CCc1ccccc1)N(C)Cc1ccccc1,2034,,,,
+271,N-Benzyl-N-methyl-3-phenyl-1-(tetrahydrofuran-2-yl)propan-1-amine,1H NMR,"(400 MHz; CDCl3): δ 7.39 (d, J = 7.4 Hz, 2H, H15), 7.33–7.16 (m, 8H, H5-7 &
+H16-17), 4.01 (q, J = 7.1 Hz, 1H, H8), 3.88–3.72 (m, 4H, H11 & H13), 2.97–2.90 (m, 1H, H3), 2.69 (ddd,
+J = 13.7, 9.6, 6.8 Hz, 1H, H3), 2.62–2.57 (m, 1H, H1), 2.32 (s, 3H, H12), 1.93–1.71 (m, 4H, H2 & H9-10),
+1.64–1.53 (m, 2H, H2 & H9)",CN(Cc1ccccc1)C(CCc1ccccc1)C1CCCO1,2085,,,,
+272,N-Benzyl-N-methyl-3-phenyl-1-(tetrahydrofuran-2-yl)propan-1-amine,13C NMR,"(101 MHz; CDCl3): δ 143.2 (C4), 141.4 (C14), 128.8 (C5-6 or
+C15-16), 128.6 (C5-6 or C15-16), 128.5 (C5-6 or C15-16), 128.2 (C5-6 or C15-16), 126.7 (C7 or C17), 125.8 (C7 or
+C17), 80.6 (C8), 67.8 (C11), 66.0 (C1), 59.9 (C13), 37.1 (C12), 33.6 (C3), 30.8 (C2), 30.1 (C9), 26.1 (C10)",CN(Cc1ccccc1)C(CCc1ccccc1)C1CCCO1,2086,,,,
+273,N-Benzyl-N-methyl-3-phenyl-1-(tetrahydrofuran-2-yl)propan-1-amine,IR,"(film, cm-1): 3025, 2947, 2860, 1495, 1453, 1065, 1040, 1028, 734, 698",CN(Cc1ccccc1)C(CCc1ccccc1)C1CCCO1,2087,,,,
+274,N-Benzyl-N-methyl-4-phenylbutan-2-amine,1H NMR,"(400 MHz; CDCl3): δ 7.37–7.16 (m, 10H, H5-7 & H12-14), 3.61 (d, J = 13.4 Hz, 1H, H10), 3.46 (d,
+J = 13.4 Hz, 1H, H10), 2.80–2.64 (m, 3H, H1 & H3), 2.15 (s, 3H, H9), 1.95–1.85 (m, 1H, H2), 1.64–1.57
+(m, 1H, H2), 1.03 (d, J = 6.6 Hz, 3H, H8)",CC(CCc1ccccc1)N(C)Cc1ccccc1,2027,,,,
+275,N-Benzyl-N-methyl-4-phenylbutan-2-amine,13C NMR,"(101 MHz; CDCl3): δ 143.1 (C4 or C11), 140.6 (C4
+or C11), 128.9 (C5 or C6 or C12 or C13), 128.6 (C5 or C6 or C12 or C13), 128.4 (C5 or C6 or C12 or C13), 128.3
+(C5 or C6 or C12 or C13), 126.8 (C7 or C14), 125.7 (C7 or C14), 57.7 (C10), 57.3 (C1), 36.6 (C9), 36.2 (C3),
+33.3 (C2), 13.4 (C8)",CC(CCc1ccccc1)N(C)Cc1ccccc1,2028,,,,
+276,N-Benzyl-N-methyl-4-phenylbutan-2-amine,IR,"(film, cm-1): 2928, 2789, 1603, 1494, 1452, 1367, 1028, 731, 701",CC(CCc1ccccc1)N(C)Cc1ccccc1,2029,,,,
+277,N-Benzyl-N-methyl-4-phenylbutan-2-amine,MS,"(NSI+): m/z calcd for C18H24N1, [M+H]+, 254.1909; found, 254.1904 ( = -2.0 ppm)",CC(CCc1ccccc1)N(C)Cc1ccccc1,2030,,,,
+278,"N-benzyl-1-(3,3-difluorocyclobutyl)-N-methyl-3-phenylpropan-1-amine",1H NMR,"(400 MHz; CDCl3): δ 7.33–7.19 (m, 10H, H5-7 & H14-16), 3.66 (s, 2H, H12), 2.83 (ddd,
+J = 14.0, 9.8, 4.7 Hz, 1H, H3), 2.71–2.55 (m, 4H, H1 & H3 & H9), 2.51–2.30 (m, 2H, H8-9), 2.25–2.13
+(m, 4H, H11 & H9), 1.84 (dtd, J = 14.0, 9.3, 4.9 Hz, 1H, H2), 1.63–1.54 (m, 1H, H2)",CN(Cc1ccccc1)C(CCc1ccccc1)C1CC(F)(F)C1,2082,,,,
+279,"N-benzyl-1-(3,3-difluorocyclobutyl)-N-methyl-3-phenylpropan-1-amine",13C NMR,"(101
+MHz; CDCl3): δ 142.6 (C4), 140.3 (C13), 128.6 (C5-6 or C14-15), 128.53 (C5-6 or C14-15), 128.47 (C5-6 or
+C14-15), 128.4 (C5-6 or C14-15), 127.0 (C7 or C16), 126.0 (C7 or C16), 120.1 (dd, J = 287.2, 269.8 Hz,),
+67.2 (app t, J = 2.3 Hz, C1), 59.0 (C12), 40.5 (dd, J = 21.6, 19.3 Hz, C9), 40.1 (dd, J = 21.6, 19.3 Hz,
+C9), 36.9 (C11), 33.7 (C3), 31.0 (C2), 25.9 (dd, J = 13.8, 3.2 Hz, C8)",CN(Cc1ccccc1)C(CCc1ccccc1)C1CC(F)(F)C1,2083,,,,
+280,"N-benzyl-1-(3,3-difluorocyclobutyl)-N-methyl-3-phenylpropan-1-amine",IR,"(film, cm-1): 3026, 2945,
+2857, 2790, 1293, 1167, 898, 733, 697",CN(Cc1ccccc1)C(CCc1ccccc1)C1CC(F)(F)C1,2084,,,,
+281,N-benzyl-1-cyclobutyl-N-methyl-3-phenylpropan-1-amine,1H NMR,"(400 MHz; CDCl3): δ 7.38–7.17 (m, 10H,
+H5-7 & H14-16), 3.70–3.62 (m, 2H, H12), 2.90–2.83 (m, 1H, H3), 2.68–2.50 (m, 3H, H1 & H3 & H8), 2.20
+(s, 3H, H11), 2.11–2.03 (m, 1H, H10), 1.97–1.86 (m, 3H, H3 & H10), 1.75–1.59 (m, 4H, H9)",CN(Cc1ccccc1)C(CCc1ccccc1)C1CCC1,2079,,,,
+282,N-benzyl-1-cyclobutyl-N-methyl-3-phenylpropan-1-amine,13C NMR,"(101 MHz; CDCl3): δ 143.5 (C4 or C13), 141.1 (C4 or C13), 128.62 (C5-6 or C14-15), 128.57 (C5-6 or C14-
+15), 128.4 (C5-6 or C14-15), 128.3 (C5-6 or C14-15), 126.7 (C7 or C16), 125.7 (C7 or C16), 68.2 (C1), 59.0 (C12),
+38.4 (C8), 37.2 (C11), 33.7 (C3), 31.1 (C2), 29.2 (C9), 28.1 (C9’), 19.2 (C10)",CN(Cc1ccccc1)C(CCc1ccccc1)C1CCC1,2080,,,,
+283,N-benzyl-1-cyclobutyl-N-methyl-3-phenylpropan-1-amine,IR,"(film, cm-1): 3025, 2933,
+2856, 2787, 1494, 1453, 1020, 733, 698",CN(Cc1ccccc1)C(CCc1ccccc1)C1CCC1,2081,,,,
+284,"N-benzyl-N,4,4-trimethyl-1-phenylpentan-3-amine",1H NMR,"(400 MHz; CDCl3): δ 7.40–7.38 (m, 2H), 7.34–
+7.29 (m, 4H), 7.26–7.19 (m, 4H), 3.97 (d, J = 14.0 Hz, 1H, H11), 3.88 (d, J = 14.0 Hz, 1H, H11), 2.91
+(ddd, J = 13.6, 11.0, 4.9 Hz, 1H, H3), 2.64 (ddd, J = 13.6, 10.5, 6.2 Hz, 1H, H3), 2.42 (dd, J = 10.1, 2.9
+Hz, 1H, H1), 2.38 (s, 3H, H10), 1.95 (dtd, J = 14.9, 9.8, 4.9 Hz, 1H, H2), 1.82 (dddd, J = 14.2, 11.0, 6.2,
+3.0 Hz, 1H, H2), 0.97 (s, 9H, H9)",CN(Cc1ccccc1)C(CCc1ccccc1)C(C)(C)C,2051,,,,
+285,"N-benzyl-N,4,4-trimethyl-1-phenylpentan-3-amine",13C NMR,"(101 MHz; CDCl3): δ 143.2 (C4), 141.5 (C12), 128.5 (C5-6
+or C12-13), 128.4 (C5-6 or C12-13), 128.3 (C5-6 or C12-13), 126.7 (C7 or C14), 125.9 (C7 or C14), 72.9 (C1),
+61.4 (C11), 39.3 (C10), 37.9 (C8), 36.1 (C3), 29.7 (C2), 28.5 (C9)",CN(Cc1ccccc1)C(CCc1ccccc1)C(C)(C)C,2052,,,,
+286,"N-benzyl-N,4,4-trimethyl-1-phenylpentan-3-amine",IR,"(film, cm-1): 2948, 2865, 2785, 1603,
+1496, 1452, 1359, 1074, 1028, 733, 695",CN(Cc1ccccc1)C(CCc1ccccc1)C(C)(C)C,2053,,,,
+287,"N-benzyl-N,4,4-trimethyl-1-phenylpentan-3-amine",MS,"(NSI+): m/z calcd for C21H30N1, [M+H]+, 296.2378;
+found, 296.2380 ( = 0.7 ppm)",CN(Cc1ccccc1)C(CCc1ccccc1)C(C)(C)C,2054,,,,
+288,"tert-Butyl (Z)-5-benzyl-8-(bromomethylene)-2,5-diazaspiro[3.4]octane-2-
+carboxylate",1H NMR,"(400 MHz; CDCl3): δ 7.36–7.30 (m, 4H, H12-13), 7.28–7.24 (m, 1H, H14), 6.16 (t, J
+= 1.9 Hz, 1H, H9), 4.52 (m, 2H, H5), 4.12 (m, 2H, H5), 3.97–3.89 (m, 2H, H10), 2.57 (td, J = 6.2, 2.4 Hz,
+2H, H4), 2.42–2.39 (m, 2H, H3), 1.46 (s, 9H, H8)",CC(C)(C)OC(=O)N1CC2(C1)/C(=C\Br)CCN2Cc1ccccc1,2264,,,,
+289,"tert-Butyl (Z)-5-benzyl-8-(bromomethylene)-2,5-diazaspiro[3.4]octane-2-
+carboxylate",13C NMR,"(101 MHz; CDCl3): δ 156.8 (C6), 147.6
+(C9), 139.0 (C11), 128.5 (C12 or C13), 128.4 (C12 or C13), 127.2 (C14), 98.7 (C2), 79.6 (C7), 64.0 (C1), 56.7
+(C5), 55.3 (C5), 52.1 (C10), 49.5 (C4), 33.1 (C3), 28.5 (C8)",CC(C)(C)OC(=O)N1CC2(C1)/C(=C\Br)CCN2Cc1ccccc1,2265,,,,
+290,"tert-Butyl (Z)-5-benzyl-8-(bromomethylene)-2,5-diazaspiro[3.4]octane-2-
+carboxylate",IR,"(film, cm-1): 2972, 2884, 2785, 1694,
+1391, 1367, 1161, 1127, 1105, 1068, 983, 919, 860, 778, 729, 697",CC(C)(C)OC(=O)N1CC2(C1)/C(=C\Br)CCN2Cc1ccccc1,2266,,,,
+291,"tert-Butyl (Z)-5-benzyl-8-(bromomethylene)-2,5-diazaspiro[3.4]octane-2-
+carboxylate",MS,"(NSI+): m/z calcd for
+C19H26N2O2Br, [M+H]+, 393.1178; found 393.1171 ( = -1.8 ppm)",CC(C)(C)OC(=O)N1CC2(C1)/C(=C\Br)CCN2Cc1ccccc1,2267,,,,
+292,tert-Butyl 1-(4-methyl-1-phenylpentan-3-yl)pyrrolidine-2-carboxylate,1H NMR,"(400 MHz; CDCl3): δ 7.29–7.25 (m, 2H, H6), 7.21–7.15 (m, 3H, H5 & H7), 3.58 (dd, J = 8.3, 2.9 Hz,
+1H, H11), 3.07 (td, J = 7.5, 3.3 Hz, 1H, H14), 2.88–2.81 (m, 2H, H3 & H14), 2.58–2.50 (m, 2H, H1 & H3),
+2.03–1.85 (m, 4H, H8 & H12-13), 1.83–1.72 (m, 2H, H2 & H13), 1.70–1.61 (m, 1H, H2), 1.45 (s, 9H, H17),
+0.90 (app t, J = 6.6 Hz, 6H, H9-10)",CC(C)C(CCc1ccccc1)N1CCCC1C(=O)OC(C)(C)C,2006,,,,
+293,tert-Butyl 1-(4-methyl-1-phenylpentan-3-yl)pyrrolidine-2-carboxylate,13C NMR,"(101 MHz; CDCl3): δ 175.3 (C15), 143.6 (C4), 128.5 (C5
+or C6), 128.4 (C5 or C6), 125.6 (C7), 80.1 (C16), 64.4 (C1), 63.5 (C11), 48.1 (C14), 34.7 (C3), 32.0 (C2),
+30.6 (C8), 30.2 (C12), 28.3 (C17), 24.4 (C13), 21.2 (C9), 19.6 (C10)",CC(C)C(CCc1ccccc1)N1CCCC1C(=O)OC(C)(C)C,2007,,,,
+294,tert-Butyl 1-(4-methyl-1-phenylpentan-3-yl)pyrrolidine-2-carboxylate,IR,"(film, cm-1): 2956, 2869, 1718,
+1454, 1367, 1143, 842, 697",CC(C)C(CCc1ccccc1)N1CCCC1C(=O)OC(C)(C)C,2008,,,,
+295,tert-Butyl 1-(4-methyl-1-phenylpentan-3-yl)pyrrolidine-2-carboxylate,MS,"(NSI+): m/z calcd for C21H34N1O2, [M+H]+, 332.2584; found,
+332.2587 ( = 0.9 ppm)",CC(C)C(CCc1ccccc1)N1CCCC1C(=O)OC(C)(C)C,2009,,,,
+296,"tert-Butyl 1-benzyl-4-methyl-1,10-diazadispiro[4.1.57.15]tridecane-10-
+carboxylate",1H NMR,"(400 MHz; CDCl3): δ 7.35–7.28 (m, 4H, H18-19), 7.22 (m, 1H, H20), 3.89 (d, J = 13.4 Hz, 1H,
+H16), 3.50 (d, J = 13.4 Hz, 1H, H16), 3.33 (m, 4H, H9 & H10), 2.67 (d, J = 5.3 Hz, 1H, H4), 2.28 (d, J =
+5.3 Hz, 1H, H4), 2.10–2.01 (m, 2H, H2 & H5), 1.97–1.87 (m, 3H, H3 & H7), 1.54 (m, 5H, H5, H8 & H11),
+1.45 (s, 9H, H14), 1.34–1.29 (m, 1H, H3), 1.03 (d, J = 6.8 Hz, 3H, H15)",CC1CCN(Cc2ccccc2)C12CC1(CCN(C(=O)OC(C)(C)C)CC1)C2,2156,,,,
+297,"tert-Butyl 1-benzyl-4-methyl-1,10-diazadispiro[4.1.57.15]tridecane-10-
+carboxylate",13C NMR,"(101 MHz; CDCl3):
+δ 155.1 (C12), 141.1 (C17), 128.3 (C18 or C19), 128.2 (C18 or C19), 126.7 (C20), 79.3 (C13), 63.9 (C1), 53.8
+(C16), 49.1 (C4), 43.2 (C2), 41.0 (C9 & C10), 38.4 (C8), 37.8 (C5), 37.3 (C11), 35.1 (C6), 29.3 (C7), 28.9
+(C3), 28.6 (C14), 17.3 (C15)",CC1CCN(Cc2ccccc2)C12CC1(CCN(C(=O)OC(C)(C)C)CC1)C2,2157,,,,
+298,"tert-Butyl 1-benzyl-4-methyl-1,10-diazadispiro[4.1.57.15]tridecane-10-
+carboxylate",IR,"(film, cm-1): 3029, 2960, 2799, 1603, 1494, 1448, 1374, 1354, 1271,
+1144, 1128, 1102, 972, 907, 732, 696, 539",CC1CCN(Cc2ccccc2)C12CC1(CCN(C(=O)OC(C)(C)C)CC1)C2,2158,,,,
+299,"tert-Butyl 1-benzyl-4-methyl-1,10-diazadispiro[4.1.57.15]tridecane-10-
+carboxylate",MS,"(NSI+): m/z calcd for C24H37O2N2, [M+H]+,
+385.2850; found, 385.2847 ( = -0.7 ppm)",CC1CCN(Cc2ccccc2)C12CC1(CCN(C(=O)OC(C)(C)C)CC1)C2,2159,,,,
+300,"tert-Butyl 1-benzyl-4-methyl-1,7-diazaspiro[4.4]nonane-7-carboxylate",1H NMR,"(500 MHz; DMSO-d6, 102
+°C): δ 7.29–7.27 (m, 4H, H14-15), 7.22–7.19 (m, 1H, H16), 3.67 (dd, J = 13.6, 5.8 Hz, 1H), 3.63 (d, J =
+13.5 Hz, 1H), 3.46–3.25 (m, 3H), 3.17 (dd, J = 28.5, 11.6 Hz, 1H), 2.58–2.54 (m, 2H), 2.11–1.87 (m,
+3H), 1.84–1.71 (m, 1H), 1.42 (d, J = 1.3 Hz, 9H), 1.37–1.28 (m, 1H), 0.99 (m, 3H, H11)",CC1CCN(Cc2ccccc2)C12CCN(C(=O)OC(C)(C)C)C2,2144,,,,
+301,"tert-Butyl 1-benzyl-4-methyl-1,7-diazaspiro[4.4]nonane-7-carboxylate",13C NMR,"(126
+MHz; DMSO-d6, 102 °C): δ 153.1 (C8), 153.1 (C8), 139.9 (C13), 139.9 (C13), 127.5 (C14 or C15), 127.4
+(C14 or C15), 127.3 (C14 or C15), 127.3 (C14 or C15), 125.9 (C16), 77.7 (C9), 71.4 (C1), 71.0 (C1), 52.1 (C12),
+52.0 (C12), 51.3 (C4), 49.2 (C4), 49.0 (C5), 46.0 (C5), 44.6 (C6), 43.9 (C2), 41.3 (C2), 40.1 (C6), 31.1 (C3),
+29.6 (C3), 29.1 (C7), 27.7 (C10), 25.2 (C7), 15.5 (C11), 15.1 (C11)",CC1CCN(Cc2ccccc2)C12CCN(C(=O)OC(C)(C)C)C2,2145,,,,
+302,"tert-Butyl 1-benzyl-4-methyl-1,7-diazaspiro[4.4]nonane-7-carboxylate",IR,"(film, cm-1): 2972, 2876, 2801,
+1688, 1395, 1169, 1101, 909, 729",CC1CCN(Cc2ccccc2)C12CCN(C(=O)OC(C)(C)C)C2,2146,,,,
+303,"tert-Butyl 1-benzyl-4-methyl-1,7-diazaspiro[4.4]nonane-7-carboxylate",MS,"(NSI+): m/z calcd for C20H31O2N1, [M+H] , 331.2380; found,
+331.2382 ( = 0.6 ppm)",CC1CCN(Cc2ccccc2)C12CCN(C(=O)OC(C)(C)C)C2,2147,,,,
+304,"tert-Butyl 1-benzyl-4-methyl-1,8-diazaspiro[4.5]decane-8-carboxylate",1H NMR,"(500 MHz; CDCl3): δ 7.36–7.26 (m, 4H, H15-16), 7.21 (t, J = 7.1 Hz, 1H, H17), 4.04–4.03 (m, 2H,
+H6-7), 3.91 (d, J = 13.6 Hz, 1H, H13), 3.27 (d, J = 12.8 Hz, 1H, H13), 2.93–2.83 (m, 3H, H4 & H6-7), 2.40
+(t, J = 3.8 Hz, 1H, H4), 2.29–2.27 (m, 1H, H2), 2.10–2.03 (m, 1H, H3), 1.65–1.51 (m, 3H, H5 & H8),
+1.52–1.40 (m, 10H, H8 & H11), 1.40–1.34 (m, 1H, H3), 1.03 (t, J = 6.5 Hz, 3H, H12)",CC1CCN(Cc2ccccc2)C12CCN(C(=O)OC(C)(C)C)CC2,2148,,,,
+305,"tert-Butyl 1-benzyl-4-methyl-1,8-diazaspiro[4.5]decane-8-carboxylate",13C NMR,"(126
+MHz; CDCl3): δ 155.1 (C9), 141.4 (C14), 128.2 (C15 or C16), 128.1 (C15 or C16), 126.6 (C17), 79.5 (C10),
+63.3 (C1), 52.1 (C13), 49.5 (C4), 41.9 (broad, C6 & C7), 36.1 (C2), 30.4 (C5), 29.8 (C3), 28.6 (C11), 28.3
+(C8), 17.7 (C12)",CC1CCN(Cc2ccccc2)C12CCN(C(=O)OC(C)(C)C)CC2,2149,,,,
+306,"tert-Butyl 1-benzyl-4-methyl-1,8-diazaspiro[4.5]decane-8-carboxylate",IR,"(film, cm-1): 2957, 1689, 1421, 1364, 1243, 1165, 1145, 1019, 867, 759, 697",CC1CCN(Cc2ccccc2)C12CCN(C(=O)OC(C)(C)C)CC2,2150,,,,
+307,"tert-Butyl 1-benzyl-4-methyl-1,8-diazaspiro[4.5]decane-8-carboxylate",MS,"(NSI+): m/z calcd for C21H33N2O2, [M+H]+, 345.2542; found 345.2549 ( = 2.0 ppm)",CC1CCN(Cc2ccccc2)C12CCN(C(=O)OC(C)(C)C)CC2,2151,,,,
+308,"tert-Butyl 4-(2-(8-methyl-5-azaspiro[3.4]octan-5-yl)ethyl)piperazine-1-
+carboxylate",1H NMR,"(400 MHz; CDCl3): δ 3.41 (t, J = 5.0 Hz, 4H, H12), 2.88–2.75 (m,
+2H, H4 & H9), 2.64–2.58 (m, 1H, H9), 2.51–2.39 (m, 7H, H4 & H10-11), 2.22–2.17 (m, 1H, H7), 2.02–
+1.84 (m, 3H, H2-3 & H5), 1.74 (ddd, J = 13.2, 9.1, 4.1 Hz, 2H, H5 & H7), 1.59–1.52 (m, 2H, H6), 1.43 (s,
+9H, H15), 1.25 (tdd, J = 8.9, 4.2, 2.3 Hz, 1H, H3), 1.05 (d, J = 6.7 Hz, 3H, H8)",CC1CCN(CCN2CCN(C(=O)OC(C)(C)C)CC2)C12CCC2,2196,,,,
+309,"tert-Butyl 4-(2-(8-methyl-5-azaspiro[3.4]octan-5-yl)ethyl)piperazine-1-
+carboxylate",13C NMR,"(101 MHz;
+CDCl3): δ 154.8 (C13), 79.7 (C14), 69.2 (C1), 58.1 (C10), 53.6 (C11), 50.4 (C4), 47.6 (C9), 43.5 (broad,
+C12), 41.6 (C2), 29.2 (C7), 28.8 (C3), 28.5 (C15), 22.6 (C5), 15.6 (C8), 13.5 (C6)",CC1CCN(CCN2CCN(C(=O)OC(C)(C)C)CC2)C12CCC2,2197,,,,
+310,"tert-Butyl 4-(2-(8-methyl-5-azaspiro[3.4]octan-5-yl)ethyl)piperazine-1-
+carboxylate",IR,"(film, cm-1): 2948,
+2809, 1696, 1454, 1417, 1363, 1242, 1167, 1123, 1002, 868, 766",CC1CCN(CCN2CCN(C(=O)OC(C)(C)C)CC2)C12CCC2,2198,,,,
+311,"tert-Butyl 4-(2-(8-methyl-5-azaspiro[3.4]octan-5-yl)ethyl)piperazine-1-
+carboxylate",MS,"(ESI+): m/z calcd for
+C19H36N3O2, [M+H] , 338.2802; found 338.2803 ( = 0.3 ppm)",CC1CCN(CCN2CCN(C(=O)OC(C)(C)C)CC2)C12CCC2,2199,,,,
+312,"tert-Butyl 5-benzyl-11-methyl-2,5-diazadispiro[3.1.36.24]undecane-2-
+carboxylate",1H NMR,"(400 MHz; CDCl3): δ 7.36–7.34 (m, 2H, H16), 7.31–7.27 (m, 2H,
+H17), 7.23–7.19 (m, 1H, H18), 4.15 (d, J = 16.4 Hz, 1H, H14), 4.10 (d, J = 16.4 Hz, 1H, H14), 3.94–3.91
+(m, 1H, H5), 3.80 (d, J = 9.6 Hz, 1H, H6), 3.64–3.59 (m, 2H, H5 & H6), 2.27–2.17 (m, 2H, H3 & H13),
+2.14–2.07 (m, 2H, H2 & H11), 1.64–1.45 (m, 5H, H3 & H11-13), 1.40 (s, 9H, H9), 1.13 (d, J = 6.9 Hz, 3H,
+H10)",CC1CC2(CCC2)N(Cc2ccccc2)C12CN(C(=O)OC(C)(C)C)C2,2236,,,,
+313,"tert-Butyl 5-benzyl-11-methyl-2,5-diazadispiro[3.1.36.24]undecane-2-
+carboxylate",13C NMR,"(101 MHz; CDCl3): δ 156.3 (C7), 143.0 (C15), 128.3 (C17), 127.4 (C16), 126.6 (C18), 79.3
+(C8), 65.4 (C4), 65.1 (C1), 57.8 (broad, C5), 54.9 (broad, C6), 46.2 (C14), 45.9 (C3), 39.1 (C2), 34.4 (C13),
+34.0 (broad, C11), 28.5 (C9), 16.0 (C10), 14.3 (C12)",CC1CC2(CCC2)N(Cc2ccccc2)C12CN(C(=O)OC(C)(C)C)C2,2237,,,,
+314,"tert-Butyl 5-benzyl-11-methyl-2,5-diazadispiro[3.1.36.24]undecane-2-
+carboxylate",IR,"(film, cm-1): 2959, 2879, 1701, 1453, 1391, 1365,
+1292, 1255, 1156, 1111, 1028, 933, 862, 772, 747, 699",CC1CC2(CCC2)N(Cc2ccccc2)C12CN(C(=O)OC(C)(C)C)C2,2238,,,,
+315,"tert-Butyl 5-benzyl-11-methyl-2,5-diazadispiro[3.1.36.24]undecane-2-
+carboxylate",MS,"(NSI+): m/z calcd for C22H33N2O2,
+[M+H]+, 357.2537; found 357.2540 ( = 1.0 ppm)",CC1CC2(CCC2)N(Cc2ccccc2)C12CN(C(=O)OC(C)(C)C)C2,2239,,,,
+316,"tert-Butyl 5-benzyl-8-benzylidene-2,5-diazaspiro[3.4]octane-2-carboxylate",1H NMR,"(500 MHz, CDCl3): δ
+7.43–7.18 (m, 10H, H11-13 & H16-18), 6.70 (t, J = 2.4 Hz, 1H, H9), 4.31 (d, J = 9.3 Hz, 2H, H5), 3.99 (d,
+J = 9.4 Hz, 2H, H5), 3.89 (s, 2H, H14), 2.79–2.63 (m, 4H, H3-4), 1.49 (s, 9H, H8)",CC(C)(C)OC(=O)N1CC2(C1)C(=Cc1ccccc1)CCN2Cc1ccccc1,2256,,,,
+317,"tert-Butyl 5-benzyl-8-benzylidene-2,5-diazaspiro[3.4]octane-2-carboxylate",13C NMR,"(126 MHz,
+CDCl3): δ 156.5 (C6), 147.9 (C10), 139.1 (C15), 137.7 (C9), 128.6 (C11 or C12 or C16 or C17), 128.5 (C11
+or C12 or C16 or C17), 128.5 (C11 or C12 or C16 or C17), 128.4 (C11 or C12 or C16 or C17), 127.3 (C13 or C18),
+126.8 (C13 or C18), 121.8 (C2), 79.9 (C7), 65.1 (C5), 53.2 (C14), 50.3 (C4), 29.7 (C3), 28.6 (C8)",CC(C)(C)OC(=O)N1CC2(C1)C(=Cc1ccccc1)CCN2Cc1ccccc1,2257,,,,
+318,"tert-Butyl 5-benzyl-8-benzylidene-2,5-diazaspiro[3.4]octane-2-carboxylate",IR,"(film, cm-1): 3059, 2976, 2888, 1696, 1393, 1365, 1151, 858, 735, 699",CC(C)(C)OC(=O)N1CC2(C1)C(=Cc1ccccc1)CCN2Cc1ccccc1,2258,,,,
+319,"tert-Butyl 5-benzyl-8-benzylidene-2,5-diazaspiro[3.4]octane-2-carboxylate",MS,"(NSI+): m/z calcd for
+C25H31N2O2, [M-H]+, 391.2380; found, 391.2381 ( = 0.2 ppm)",CC(C)(C)OC(=O)N1CC2(C1)C(=Cc1ccccc1)CCN2Cc1ccccc1,2259,,,,
+320,"tert-Butyl 5-benzyl-8-methylene-2,5-diazaspiro[3.4]octane-2-carboxylate",1H NMR,"400 MHz; CDCl3): δ 7.39–7.32 (m, 4H, H12-13), 7.30–7.26 (m, 1H, H14), 5.30 (t, J = 2.5 Hz, 1H,
+H9), 5.10 (t, J = 2.2 Hz, 1H, H9), 4.24 (d, J = 9.2 Hz, 2H, H5), 3.90–3.87 (m, 4H, H5 & H10), 2.61 (t, J
+= 6.7 Hz, 2H, H4), 2.47 (ddd, J = 5.0, 4.1, 3.8 Hz, 2H, H3), 1.49 (s, 9H, H8)",C=C1CCN(Cc2ccccc2)C12CN(C(=O)OC(C)(C)C)C2,2240,,,,
+321,"tert-Butyl 5-benzyl-8-methylene-2,5-diazaspiro[3.4]octane-2-carboxylate",13C NMR,"(101 MHz;
+CDCl3): δ 156.4 (C6), 155.1 (C2), 139.2 (C11), 128.50 (C12 or C13), 128.46 (C12 or C13), 127.2 (C14),
+106.0 (C9), 79.7 (C7), 63.6 (C1), 59.0 (broad, C5), 53.3 (C10), 49.7 (C4), 30.0 (C3), 28.5 (C8)",C=C1CCN(Cc2ccccc2)C12CN(C(=O)OC(C)(C)C)C2,2241,,,,
+322,"tert-Butyl 5-benzyl-8-methylene-2,5-diazaspiro[3.4]octane-2-carboxylate",IR,"(film,
+cm-1): 2977, 2881, 2801, 1691, 1393, 1366, 1285, 1256, 1155, 1124, 908, 727, 698",C=C1CCN(Cc2ccccc2)C12CN(C(=O)OC(C)(C)C)C2,2242,,,,
+323,"tert-Butyl 5-benzyl-8-methylene-2,5-diazaspiro[3.4]octane-2-carboxylate",MS,"(NSI+):
+m/z calcd for C19H27O2N2, [M+H]+, 315.2067; found, 315.2070 ( = 0.9 ppm)",C=C1CCN(Cc2ccccc2)C12CN(C(=O)OC(C)(C)C)C2,2243,,,,
+324,"tert-Butyl 7-benzyl-10-methyl-2,7-diazadispiro[3.1.46.14]undecane-2-
+carboxylate",1H NMR,"(400 MHz; CDCl3): δ 7.36–7.30 (m, 4H, H16-17), 7.26–7.24 (m, 1H, H18), 3.97–3.92 (m, 2H, H8),
+3.90 (s, 2H, H9), 3.64 (q, J = 12.2 Hz, 2H, H14), 2.57–2.45 (m, 3H, H4 & H5), 2.31–2.19 (m, 2H, H7),
+2.05–1.89 (m, 3H, H2 & H3 & H5), 1.45 (s, 9H, H12), 1.35–1.27 (m, 1H, H3), 1.03 (d, J = 6.7 Hz, 3H,
+H13)",CC1CCN(Cc2ccccc2)C12CC1(CN(C(=O)OC(C)(C)C)C1)C2,2152,,,,
+325,"tert-Butyl 7-benzyl-10-methyl-2,7-diazadispiro[3.1.46.14]undecane-2-
+carboxylate",13C NMR,"(101 MHz; CDCl3): δ 156.1 (C10), 140.4 (C15), 128.2 (C16-17), 126.7 (C18), 79.2 (C11),
+64.5 (C1), 61.4 (broad, C8 & C9), 53.4 (C14), 49.5 (C4), 41.5 (C2), 40.0 (C5), 35.0 (C6), 29.9 (C7), 28.9
+(C3), 28.4 (C12), 16.4 (C13)",CC1CCN(Cc2ccccc2)C12CC1(CN(C(=O)OC(C)(C)C)C1)C2,2153,,,,
+326,"tert-Butyl 7-benzyl-10-methyl-2,7-diazadispiro[3.1.46.14]undecane-2-
+carboxylate",IR,"(film, cm-1): 2956, 2871, 1689, 1477, 1454, 1403, 1365, 1311, 1251,
+1157, 1089, 1028, 907, 861, 771, 727, 698, 646",CC1CCN(Cc2ccccc2)C12CC1(CN(C(=O)OC(C)(C)C)C1)C2,2154,,,,
+327,"tert-Butyl 7-benzyl-10-methyl-2,7-diazadispiro[3.1.46.14]undecane-2-
+carboxylate",MS,"(NSI+): m/z calcd for C22H33O2N2, [M+H]+,
+357.2537; found, 357.2541 ( = -0.2 ppm)",CC1CCN(Cc2ccccc2)C12CC1(CN(C(=O)OC(C)(C)C)C1)C2,2155,,,,
+328,"tert-butyl 5-benzyl-8-methyl-2,5-diazaspiro[3.4]octane-2-carboxylate",1H NMR,"(400 MHz; CDCl3): δ 7.35–7.29 (m, 4H, H13-14), 7.25–7.22
+(m, 1H, H15), 4.06 (d, J = 9.3 Hz, 1H, H5), 3.91–3.84 (m, 3H, H6 & H11), 3.79 (d, J = 13.6 Hz, 1H, H11),
+3.70 (d, J = 9.3 Hz, 1H, H5), 2.63–2.55 (m, 2H, H4), 2.15 (q, J = 7.3 Hz, 1H, H2), 1.95–1.89 (m, 1H,
+H3), 1.45 (s, 9H, H9), 1.35–1.27 (m, 1H, H3), 1.12 (d, J = 6.9 Hz, 3H, H10)",CC1CCN(Cc2ccccc2)C12CN(C(=O)OC(C)(C)C)C2,2140,,,,
+329,"tert-butyl 5-benzyl-8-methyl-2,5-diazaspiro[3.4]octane-2-carboxylate",13C NMR,"(101 MHz;
+CDCl3): δ 156.5 (C7), 139.9 (C12), 128.4 (C13 or C14), 128.2 (C13 or C14), 126.9 (C15), 79.5 (C8), 64.8
+(C1), 55.8 (broad, C5), 53.4 (C11), 52.2 (broad, C6), 49.8 (C4), 40.8 (C2), 29.3 (C3), 28.5 (C9), 16.0 (C10)",CC1CCN(Cc2ccccc2)C12CN(C(=O)OC(C)(C)C)C2,2141,,,,
+330,"tert-butyl 5-benzyl-8-methyl-2,5-diazaspiro[3.4]octane-2-carboxylate",IR,"(film, cm-1): 2964, 2879, 1697, 1476, 1453, 1390, 1365, 1247, 1158, 1104, 1028, 919, 860, 771,
+730, 698, 646",CC1CCN(Cc2ccccc2)C12CN(C(=O)OC(C)(C)C)C2,2142,,,,
+331,"tert-butyl 5-benzyl-8-methyl-2,5-diazaspiro[3.4]octane-2-carboxylate",MS,"(NSI+): m/z calcd for C19H29O2N2, [M+H]+, 317.2224; found, 317.2225 ( = 0.5
+ppm)",CC1CCN(Cc2ccccc2)C12CN(C(=O)OC(C)(C)C)C2,2143,,,,

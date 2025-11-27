@@ -1,0 +1,1023 @@
+,molecule_name,test_type,test_text,opsin_smiles,line_idx
+0,1-((2-(Trimethylsilyl)ethoxy)methyl)-1H-pyrazole,Rf,"0.50 (15 % EtOAc in PE40–60, red in vanillin)",C[Si](C)(C)CCOCn1cccn1,3730
+1,1-((2-(Trimethylsilyl)ethoxy)methyl)-1H-pyrazole,1H NMR,"(400 MHz, CDCl3)  7.56 (dd,
+1H, J = 2.5, 0.5 Hz, C{1} –H), 7.55 (dd, 1H, J = 2.0, 0.5 Hz, C{3} –H), 6.33 (dd, 1H, J = 2.5,
+2.0 Hz, C{2} –H), 5.44 (s, 2H, J = 6.0 Hz, C{4} –H), 3.61–3.46 (m, 2H, C{5} –H), 0.96–0.78
+(m, 2H, C{6} –H), −0.03 (s, 9H, Si(Me)3)",C[Si](C)(C)CCOCn1cccn1,3731
+2,1-((2-(Trimethylsilyl)ethoxy)methyl)-1H-pyrazole,13C NMR,"(101 MHz, CDCl3)  140.0 (C{3}),
+129.5 (C{1}), 106.9 (C{2}), 80.2 (C{4}), 66.8 (C{5}), 17.9 (C{6}), −1.3 (Si(Me)3)",C[Si](C)(C)CCOCn1cccn1,3732
+3,1-((2-(Trimethylsilyl)ethoxy)methyl)-1H-pyrazole,MS,"(m/z +ESI): Found: [M+Na]+, 221.0. C9H18N2NaOSi+ requires 221.1",C[Si](C)(C)CCOCn1cccn1,3733
+4,1-(2-Bromoethyl)-1H-pyrrole,Rf,"0.59 (25% Et2O in PE40–60, KMnO4)",BrCCn1cccc1,3642
+5,1-(2-Bromoethyl)-1H-pyrrole,1H NMR,"(400 MHz, CDCl3)  6.70 (t, 2H,
+J = 2.0 Hz, C{2} –H), 6.19 (t, 2H, J = 2.0 Hz, C{1} –H), 4.28 (t, 2H, J = 7.0 Hz, C{3} –H),
+3.59 (t, 2H, J = 7.0 Hz, C{4} –H)",BrCCn1cccc1,3643
+6,1-(2-Bromoethyl)-1H-pyrrole,13C NMR,"(101 MHz, CDCl3)  120.6 (C{2}), 108.8
+(C{1}), 51.0 (C{3}), 31.0 (C{4})",BrCCn1cccc1,3644
+7,1-(3-Bromopropyl)-1H-indole,Rf,"0.64 (30% EtOAc in PE40–60, KMnO4)",BrCCCn1ccc2ccccc21,3601
+8,1-(3-Bromopropyl)-1H-indole,1H NMR,"(400 MHz, CDCl3)  7.64 (ddd, 1H,
+J = 8.0, 1.0, 1.0 Hz, C{4} –H), 7.38 (ddd, 1H, J = 8.5, 1.0, 1.0 Hz, C{7} –H), 7.22 (ddd, 1H,
+J = 8.5, 7.0, 1.0 Hz, C{6} –H), 7.15 (d, 1H, J = 3.0 Hz, C{1} –H), 7.12 (ddd, 1H, J = 8.0,
+7.0, 1.0 Hz, C{5} –H), 6.51 (d, 1H, J = 3.0 Hz, C{2} –H), 4.34 (t, 2H, J = 6.5 Hz, C{9} –H),
+3.31 (t, 2H, J = 6.0 Hz, C{11} –H), 2.36 (tt, 2H, J = 6,5 6.0 Hz, C{10} –H)",BrCCCn1ccc2ccccc21,3602
+9,1-(3-Bromopropyl)-1H-indole,13C NMR,"(101 MHz, CDCl3)  136.0 (C{8}), 128.9 (C{3}), 128.2 (C{1}), 121.8 (C{6}), 121.3 (C{4}),
+119.7 (C{5}), 109.4 (C{7}), 101.7 (C{2}), 44.1 (C{9}), 32.9 (C{11}), 30.7 (C{10})",BrCCCn1ccc2ccccc21,3603
+10,1-(3-Bromopropyl)-1H-indole,MS,"(m/z +ESI): Found: [M]+, 237.0. C11H12
+79BrN+ requires 237.0",BrCCCn1ccc2ccccc21,3604
+11,1-(3-Bromopropyl)-1H-pyrrole,Rf,"0.44 (25% CH2Cl2 in PE40–60, KMnO4)",BrCCCn1cccc1,3613
+12,1-(3-Bromopropyl)-1H-pyrrole,1H NMR,"(400 MHz, CDCl3)  6.68 (t, 2H,
+J = 2.0 Hz, C{2} –H), 6.16 (t, 2H, J = 2.0 Hz, C{1} –H), 4.08 (t, 2H, J = 6.5 Hz, C{3} –H),
+3.31 (t, 2H, J = 6.0 Hz, C{5} –H), 2.26 (tt, 2H, J = 6.5, 6.0 Hz, C{4} –H)",BrCCCn1cccc1,3614
+13,1-(3-Bromopropyl)-1H-pyrrole,13C NMR,"(101 MHz, CDCl3)  120.8 (C{2}), 108.6 (C{1}), 47.2 (C{3}), 34.3 (C{4}), 30.4 (C{5})",BrCCCn1cccc1,3615
+14,1-(3-Chloropropyl)cyclopropan-1-ol,Rf,"0.33 (50% EtOAc in PE40–60, KMnO4)",OC1(CCCCl)CC1,3758
+15,1-(3-Chloropropyl)cyclopropan-1-ol,1H NMR,"(400 MHz, CDCl3)  3.64 (t, 2H,
+J = 6.5 Hz, C{5} –H), 2.09–1.96 (m, 2H, C{4} –H), 1.85 (br, 1H, O–H), 1.74–1.61 (m, 2H,
+C{3} –H), 0.80–0.73 (m, 2H, C{1} –H), 0.52–0.44 (m, 2H, C{1’} –H)",OC1(CCCCl)CC1,3759
+16,1-(3-Chloropropyl)cyclopropan-1-ol,13C NMR,"101 MHz,
+CDCl3)  55.2 (C{2}), 45.2 (C{5}), 35.6 (C{3}), 29.4 (C{4}), 13.8 (C{1})",OC1(CCCCl)CC1,3760
+17,"1-(3-chloropropyl)-1H-pyrrolo[2,3-b]pyridine",Rf,"0.37 (33 % EtOAc in PE40–60, KMnO4)",ClCCCn1ccc2cccnc21,3823
+18,"1-(3-chloropropyl)-1H-pyrrolo[2,3-b]pyridine",1H NMR,"(400 MHz, CDCl3)  8.31 (dd, 1H,
+J = 4.5, 1.5 Hz, C{6} –H), 7.91 (dd, 1H, J = 8.0, 1.5 Hz, C{4} –H), 7.26 (d, 1H, J = 3.5 Hz,
+C{1} –H), 7.07 (dd, 1H, J = 8.0, 4.5 Hz, C{5} –H), 6.46 (d, 1H, J = 3.5 Hz, C{2} –H), 4.49
+(t, 2H, J = 6.5 Hz, C{8} –H), 3.49 (t, 2H, J = 6.5 Hz, C{10} –H), 2.36 (tt, 2H, J = 6.5 Hz,
+C{9} –H)",ClCCCn1ccc2cccnc21,3824
+19,"1-(3-chloropropyl)-1H-pyrrolo[2,3-b]pyridine",13C NMR,"(101 MHz, CDCl3)  147.5 (C{7}), 143.0 (C{6}), 129.0 (C{4}), 128.6
+(C{1}), 120.9 (C{3}), 115.9 (C{5}), 99.7 (C{2}), 42.2 (C{10}), 41.9 (C{8}), 32.8 (C{9})",ClCCCn1ccc2cccnc21,3825
+20,"1-(3-chloropropyl)-1H-pyrrolo[2,3-b]pyridine",MS,"(m/z +ESI): Found: [M+H]+, 195.0. C10H12
+35ClN2
++ requires 195.1",ClCCCn1ccc2cccnc21,3826
+21,1-(3-chloropropyl)-4-phenyl-1H-pyrazole,Rf,"0.50 (50% EtOAc in PE40–60, KMnO4)",ClCCCn1cc(-c2ccccc2)cn1,3748
+22,1-(3-chloropropyl)-4-phenyl-1H-pyrazole,1H NMR,"(400 MHz, CDCl3)  7.80 (d, 1H,
+J = 1.0 Hz, C{6} –H), 7.68 (d, 1H, J = 1.0 Hz, C{7} –H), 7.51–7.45 (m, 2H, C{3} –H),
+7.41–7.32 (m, 2H, C{2} –H), 7.26–7.19 (m, 1H, C{1} –H), 4.35 (t, 2H, J = 6.5 Hz, C{8} –H),
+3.51 (t, 2H, J = 6.0 Hz, C{10} –H), 2.36 (tt, 2H, J = 6.5, 6.0 Hz, C{9} –H)",ClCCCn1cc(-c2ccccc2)cn1,3749
+23,1-(3-chloropropyl)-4-phenyl-1H-pyrazole,13C NMR,"(126 MHz, CDCl3)  137.4 (C{6}), 132.6 (C{4}), 129.0 (C{2}), 126.9 (C{7}), 126.6 (C{1}), 125.6 (C{3}), 123.1 (C{5}), 48.9 (C{8}), 41.8 (C{10}), 32.8 (C{9})",ClCCCn1cc(-c2ccccc2)cn1,3750
+24,1-(3-chloropropyl)-4-phenyl-1H-pyrazole,IR,"(film) 2956w,
+1607m, 954m, 760s, 695s",ClCCCn1cc(-c2ccccc2)cn1,3751
+25,1-(3-chloropropyl)-4-phenyl-1H-pyrazole,MS,"(m/z +ESI): Found: [M+H]+, 221.0842. C12H14N2
+35Cl+
+requires 221.0840",ClCCCn1cc(-c2ccccc2)cn1,3752
+26,"2,3-Dihydro-1H-pyrrolo[1,2-a]indole",Rf,"0.58 (20% EtOAc in PE40–60, KMnO4)",c1ccc2c(c1)cc1n2CCC1,3846
+27,"2,3-Dihydro-1H-pyrrolo[1,2-a]indole",1H NMR,"(500 MHz, CDCl3)  7.57 (ddd, 1H,
+J = 8.0, 1.0, 1.0 Hz, C{4} –H), 7.26 (ddd, 1H, J = 8.0, 1.0, 1.0 Hz, C{7} –H), 7.14 (ddd,
+1H, J = 8.0, 7.0, 1.0 Hz, C{6} –H), 7.08 (ddd, 1H, J = 8.0, 7.0, 1.0 Hz, C{5} –H), 6.19 (dt,
+1H, J = 1.0, 1.0 Hz, C{2} –H), 4.08 (t, 2H, J = 7.0 Hz, C{9} –H), 3.04 (t, 2H, J = 7.5 Hz,
+C{11} –H), 2.63 (tt, 2H, J = 7.5, 7.0 Hz, C{10} –H)",c1ccc2c(c1)cc1n2CCC1,3847
+28,"2,3-Dihydro-1H-pyrrolo[1,2-a]indole",13C NMR,"(126 MHz, CDCl3)  144.7
+(C{1}), 133.4 (C{3/8}), 132.8 (C{3/8}), 120.4 (C{4}), 120.2 (C{6}), 119.2 (C{5}), 109.5
+(C{7}), 92.4 (C{2}), 43.7 (C{9}), 28.0 (C{10}), 24.4 (C{11})",c1ccc2c(c1)cc1n2CCC1,3848
+29,"2,3-Dihydro-1H-pyrrolo[1,2-a]indole",IR,"(film) 2951w, 1738s,
+1479m, 1207m, 771m",c1ccc2c(c1)cc1n2CCC1,3849
+30,"2,3-Dihydro-1H-pyrrolo[1,2-a]indole",MS,"(m/z +ESI): Found: [M+H]+, 216.1021. C13H14O2N+ requires
+216.1019",c1ccc2c(c1)cc1n2CCC1,3850
+31,2-(4-Methoxyphenyl)-1H-pyrrole,Rf,"0.17 (10% EtOAc in PE40–60, red in vanillin)",COc1ccc(-c2ccc[nH]2)cc1,3670
+32,2-(4-Methoxyphenyl)-1H-pyrrole,1H NMR,"400 MHz, CDCl3)  8.34 (br, 1H, N–H), 7.44–7.37 (m, 2H, C{6} –H), 6.95–6.89
+(m, 2H, C{7} –H), 6.83 (ddd, 1H, J = 2.5, 2.5, 1.5 Hz, C{1} –H), 6.41 (ddd, 1H, J = 3.5,
+2.5, 1.5 Hz, C{3} –H), 6.28 (ddd, 1H, J = 3.5, 2.5, 2.5 Hz, C{2} –H), 3.83 (s, 3H, C{9} –H)",COc1ccc(-c2ccc[nH]2)cc1,3671
+33,2-(4-Methoxyphenyl)-1H-pyrrole,13C NMR,"(101 MHz, CDCl3)  158.4 (C{8}), 132.3 (C{4}), 126.1 (C{5}), 125.4 (C{6}),
+118.3 (C{1}), 114.5 (C{7}), 110.1 (C{2}), 105.0 (C{3}), 55.5 (C{9})",COc1ccc(-c2ccc[nH]2)cc1,3672
+34,2-(4-Methoxyphenyl)-1H-pyrrole,MS,"(m/z +ESI):
+Found: [M+H]+, 174.0. C11H12NO+ requires 174.1",COc1ccc(-c2ccc[nH]2)cc1,3673
+35,2-Chloro-1-(1H-indol-1-yl)ethan-1-one,Rf,"0.52 (50% Et2O in PE40–60, KMnO4)",O=C(CCl)n1ccc2ccccc21,3620
+36,2-Chloro-1-(1H-indol-1-yl)ethan-1-one,1H NMR,"(400 MHz, CDCl3)
+ 8.44 (d, 1H, J = 8.0 Hz, C{7} –H), 7.58 (d, 1H, J = 7.5 Hz, C{4} –H), 7.43 (d, 1H, J = 4.0 Hz,
+C{1} –H), 7.39 (ddd, 1H, J = 8.0, 7.5, 1.5 Hz, C{6} –H), 7.32 (ddd, 1H, J = 7.5, 7.5, 1.0 Hz,
+C{5} –H), 6.71 (dd, 1H, J = 4.0, 1.0 Hz, C{2} –H), 4.58 (s, 2H, C{10} –H)",O=C(CCl)n1ccc2ccccc21,3621
+37,2-Chloro-1-(1H-indol-1-yl)ethan-1-one,13C NMR,"(101 MHz, CDCl3)  164.1 (C{9}), 135.7 (C{8}), 130.3 (C{3}), 125.70 (C{5}), 124.4 (C{6}),
+124.2 (C{1}), 121.1 (C{4}), 116.7 (C{7}), 110.6 (C{2}), 42.4 (C{10})",O=C(CCl)n1ccc2ccccc21,3622
+38,2-Chloro-1-(1H-indol-1-yl)ethan-1-one,MS,"(m/z +ESI):
+Found: [M+Na]+, 216.9. C10H8
+35ClNNaO+ requires 216.6",O=C(CCl)n1ccc2ccccc21,3623
+39,"2-Ethyl 7,7-dimethyl 1-methyl-1,4,5,6-tetrahydro-7H-indole-2,7,7-tricarboxylate",Rf,"0.16 (33% Et2O in PE40–60, KMnO4)",CCOC(=O)c1cc2c(n1C)C(C(=O)OC)(C(=O)OC)CCC2,3515
+40,"2-Ethyl 7,7-dimethyl 1-methyl-1,4,5,6-tetrahydro-7H-indole-2,7,7-tricarboxylate",1H NMR,"(500 MHz, CDCl3)  6.76 (s, 1H,
+C{2} –H), 4.26 (q, 2H, J = 7.0 Hz, C{9} –H), 3.78 (s, 6H, CO2Me), 3.76 (s, 3H, N-Me),
+2.55 (t, 2H, J = 6.5 Hz, C{8} –H), 2.43–2.35 (m, 2H, C{6} –H), 1.82–1.71 (m, 2H, C{7} –H),
+1.32 (t, 3H, J = 7.0 Hz, C{10} –H)",CCOC(=O)c1cc2c(n1C)C(C(=O)OC)(C(=O)OC)CCC2,3516
+41,"2-Ethyl 7,7-dimethyl 1-methyl-1,4,5,6-tetrahydro-7H-indole-2,7,7-tricarboxylate",13C NMR,"(126 MHz, CDCl3)  170.9 (CO2Me),
+161.6 (CO2Et), 130.4 (C{4}), 123.6 (C{1}), 120.2 (C{3}), 115.6 (C{2}), 59.9 (C{9}), 56.3
+(C{5}), 53.3 (CO2Me), 34.1 (N-Me), 33.9 (C{6}), 22.8 (C{8}), 20.9 (C{7}), 14.6 (C{10})",CCOC(=O)c1cc2c(n1C)C(C(=O)OC)(C(=O)OC)CCC2,3517
+42,"2-Ethyl 7,7-dimethyl 1-methyl-1,4,5,6-tetrahydro-7H-indole-2,7,7-tricarboxylate",IR,"(film) 2980w, 1734s, 1700s, 1248s, 1086m",CCOC(=O)c1cc2c(n1C)C(C(=O)OC)(C(=O)OC)CCC2,3518
+43,"2-Ethyl 7,7-dimethyl 1-methyl-1,4,5,6-tetrahydro-7H-indole-2,7,7-tricarboxylate",MS,"(m/z +ESI): Found: [M+H]+,
+346.1260. C16H21NNaO6
++ requires 346.1261",CCOC(=O)c1cc2c(n1C)C(C(=O)OC)(C(=O)OC)CCC2,3519
+44,2-Phenyl-1H-pyrrole,Rf,"0.39 (20% EtOAc in PE40–60, pink in vanillin)",c1ccc(-c2ccc[nH]2)cc1,3662
+45,2-Phenyl-1H-pyrrole,1H NMR,"(400 MHz, CDCl3)  8.43 (br, 1H, N–H), 7.54–7.43 (m, 2H, C{6} –H), 7.42–7.32
+(m, 2H, C{7} –H), 7.25–7.17 (m, 1H, C{8} –H), 6.87 (ddd, 1H, J = 2.5, 2.5, 1.5 Hz, C{1} –H),
+6.54 (ddd, 1H, J = 3.5, 2.5, 1.5 Hz, C{3} –H), 6.32 (ddd, 1H, J = 3.5, 2.5, 2.5 Hz, C{2} –H)",c1ccc(-c2ccc[nH]2)cc1,3663
+46,2-Phenyl-1H-pyrrole,13C NMR,"(101 MHz, CDCl3)  132.9 (C{4/5}), 132.3 (C{4/5}), 129.0 (C{7}), 126.3 (C{8}),
+124.0 (C{6}), 119.0 (C{1}), 110.3 (C{2}), 106.1 (C{5})",c1ccc(-c2ccc[nH]2)cc1,3664
+47,2-Phenyl-1H-pyrrole,MS,"(m/z +ESI): Found: [M+H]+,
+144.0. C10H10N+ requires 144.1",c1ccc(-c2ccc[nH]2)cc1,3665
+48,3-(1-Methyl-1H-indol-3-yl)propan-1-ol,Rf,"0.17 (33% EtOAc in PE40–60, KMnO4)",Cn1cc(CCCO)c2ccccc21,3785
+49,3-(1-Methyl-1H-indol-3-yl)propan-1-ol,1H NMR,"(400 MHz, CDCl3)  7.61 (ddd, 1H,
+J = 8.0, 1.0, 1.0 Hz, C{5} –H), 7.30 (ddd, 1H, J = 8.0, 1.0, 1.0 Hz, C{2} –H), 7.23 (ddd, 1H,
+J = 8.0, 7.0, 1.0 Hz, C{3} –H), 7.11 (ddd, 1H, J = 8.0, 7.0, 1.0 Hz, C{4} –H), 6.86 (s, 1H,
+C{8} –H), 3.75 (s, 3H, NMe), 3.73 (t, 2H, J = 6.5 Hz, C{11} –H), 2.86 (t, 2H, J = 7.5 Hz,
+C{9} –H), 1.99 (tt, 2H, J = 7.5, 6.5 Hz, C{10} –H)",Cn1cc(CCCO)c2ccccc21,3786
+50,3-(1-Methyl-1H-indol-3-yl)propan-1-ol,13C NMR,"(101 MHz, CDCl3)  137.1
+(C{1}), 127.9 (C{6}), 126.1 (C{8}), 121.5 (C{3}), 119.0 (C{5}), 118.6 (C{4}), 114.4 (C{7}),
+109.1 (C{2}), 62.7 (C{11}), 33.2 (C{10}), 32.5 (N–Me), 21.3 (C{9})",Cn1cc(CCCO)c2ccccc21,3787
+51,3-(1-Methyl-1H-indol-3-yl)propan-1-ol,MS,"(m/z +ESI):
+Found: [M+H]+, 190.0. C15H17O4N2
++ requires 190.1",Cn1cc(CCCO)c2ccccc21,3788
+52,"3-(1H-1,2,3-Triazol-1-yl)propan-1-ol",Rf,"0.21 (10% MeOH in CH2Cl2, KMnO4)",OCCCn1ccnn1,3689
+53,"3-(1H-1,2,3-Triazol-1-yl)propan-1-ol",1H NMR,"(400 MHz, CDCl3)  7.69 (d, 1H,
+J = 1.0 Hz, C{1} –H), 7.63 (d, 1H, J = 1.0 Hz, C{4} –H), 4.55 (t, 2H, J = 7.0 Hz, C{3} –H),
+3.64 (t, 2H, J = 6.0 Hz, C{5} –H), 2.98 (s, 1H, O–H), 2.13 (tt, 2H, J = 7.0, 6.0 Hz, C{4} –H)",OCCCn1ccnn1,3690
+54,"3-(1H-1,2,3-Triazol-1-yl)propan-1-ol",13C NMR,"(101 MHz, CDCl3)  133.7 (C{1}), 124.1 (C{2}), 58.7 (C{5}), 47.1 (C{3}), 32.8
+(C{4})",OCCCn1ccnn1,3691
+55,"3-(tert-Butyl) 1,1-dimethyl propane-1,1,3-tricarboxylate",Rf,"0.50 (40% Et2O in PE40–60, KMnO4)",COC(=O)C(CCC(=O)OC(C)(C)C)C(=O)OC,3585
+56,"3-(tert-Butyl) 1,1-dimethyl propane-1,1,3-tricarboxylate",1H NMR,"(400 MHz,
+CDCl3)  3.74 (s, 6H, C{1} –H), 3.47 (t, 1H, J = 7.5 Hz, C{3} –H), 2.33–2.25 (m, 2H,
+C{5} –H), 2.21–2.13 (m, 2H, C{4} –H), 1.43 (s, 9H, C{8} –H)",COC(=O)C(CCC(=O)OC(C)(C)C)C(=O)OC,3586
+57,"3-(tert-Butyl) 1,1-dimethyl propane-1,1,3-tricarboxylate",13C NMR,"(101 MHz, CDCl3)
+ 171.8 (C{6}), 169.6 (C{2}), 80.8 (C{7}), 52.7 (C{1}), 50.7 (C{3}), 32.8 (C{5}), 28.2 (C{8}),
+24.1 (C{4})",COC(=O)C(CCC(=O)OC(C)(C)C)C(=O)OC,3587
+58,"3-(tert-Butyl) 1,1-dimethyl propane-1,1,3-tricarboxylate",MS,"(m/z +ESI): Found: [M+Na]+, 283.1. C12H20NaO6
++ requires 283.1",COC(=O)C(CCC(=O)OC(C)(C)C)C(=O)OC,3588
+59,4-Phenyl-1H-pyrazole,Rf,"0.22 (50 % EtOAc in PE40–60, UV)",c1ccc(-c2cn[nH]c2)cc1,3744
+60,4-Phenyl-1H-pyrazole,1H NMR,"(400 MHz, DMSO–d6)  8.05 (br,
+2H, C{6} –H), 7.63–7.56 (m, 2H, C{3} –H), 7.38–7.29 (m, 2H, C{2} –H), 7.22–7.13 (m, 1H,
+C{1} –H)",c1ccc(-c2cn[nH]c2)cc1,3745
+61,4-Phenyl-1H-pyrazole,13C NMR,"(101 MHz, DMSO–d6)  132.8 (C{4}), 128.7 (C{2}), 125.8 (C{1}),
+125.0 (C{3, 6}), 121.1 (C{5})",c1ccc(-c2cn[nH]c2)cc1,3746
+62,4-Phenyl-1H-pyrazole,MS,"(m/z +ESI): Found: [M+H]+, 145.0. C9H9N2
++ requires
+145.1",c1ccc(-c2cn[nH]c2)cc1,3747
+63,5-(3-Chloropropyl)-1-((2-(trimethylsilyl)ethoxy)methyl)-1H-pyrazole,Rf,"0.26 (15% EtOAc in PE40–60, vanillin)",C[Si](C)(C)CCOCn1nccc1CCCCl,3734
+64,5-(3-Chloropropyl)-1-((2-(trimethylsilyl)ethoxy)methyl)-1H-pyrazole,1H NMR,"(500 MHz, CDCl3)  7.43 (d, 1H,
+J = 2.0 Hz, C{1} –H), 6.12 (d, 1H, J = 2.0 Hz, C{2} –H), 5.43 (s, 2H, C{7} –H), 3.58 (t,
+2H, J = 6.5 Hz, C{6} –H), 3.56–3.51 (m, 2H, C{8} –H), 2.89 (t, 2H, J = 7.5 Hz, C{4} –H), 2.20–2.08 (m, 2H, C{5} –H), 0.95–0.81 (m, 2H, C{9} –H), −0.03 (s, 9H, Si(Me)3)",C[Si](C)(C)CCOCn1nccc1CCCCl,3735
+65,5-(3-Chloropropyl)-1-((2-(trimethylsilyl)ethoxy)methyl)-1H-pyrazole,13C NMR,"(126 MHz, CDCl3)  142.1 (C{3}), 139.1 (C{1}), 105.9 (C{2}), 77.9 (C{7}), 66.4 (C{8}), 44.1
+(C{6}), 31.5 (C{5}), 22.5 (C{4}), 18.0 (C{9}), −1.3 (Si(Me)3)",C[Si](C)(C)CCOCn1nccc1CCCCl,3736
+66,5-(3-Chloropropyl)-1-((2-(trimethylsilyl)ethoxy)methyl)-1H-pyrazole,IR,"(film) 2955s, 1733m,
+1248s, 1081s, 836s",C[Si](C)(C)CCOCn1nccc1CCCCl,3737
+67,5-(3-Chloropropyl)-1-((2-(trimethylsilyl)ethoxy)methyl)-1H-pyrazole,MS,"(m/z +ESI): Found: [M+H]+, 275.13410. C12H24ON2
+35Cl28Si+ requires
+275.13409",C[Si](C)(C)CCOCn1nccc1CCCCl,3738
+68,5-(3-Chloropropyl)isoxazole,Rf,"0.69 (50% EtOAc in PE40–60, KMnO4)",ClCCCc1ccno1,3761
+69,5-(3-Chloropropyl)isoxazole,1H NMR,"(400 MHz, CDCl3)  8.16 (s, 1H,
+C{1} –H), 6.04 (s, 1H, C{2} –H), 3.57 (t, 2H, J = 6.5 Hz, C{6} –H), 2.98 (t, 2H, J = 7.5 Hz,
+C{4} –H), 2.22–2.13 (m, 2H, C{5} –H)",ClCCCc1ccno1,3762
+70,5-(3-Chloropropyl)isoxazole,13C NMR,"(101 MHz, CDCl3)  171.0 (C{3}),
+150.3 (C{1}), 100.7 (C{2}), 43.6 (C{6}), 30.2 (C{5}), 23.8 (C{4})",ClCCCc1ccno1,3763
+71,5-(3-Chloropropyl)isoxazole,MS,"(m/z +ESI):
+Found: [M+H]+, 146.0. C6H9
+35ClNO+ requires 146.0",ClCCCc1ccno1,3764
+72,"5-Benzoyl-2,3-dihydro-1H-pyrrolizine-1-carboxylic acid",Rf,"0.05 (40% EtOAc in PE40–60, KMnO4)",O=C(c1ccccc1)c1ccc2n1CCC2C(=O)O,3864
+73,"5-Benzoyl-2,3-dihydro-1H-pyrrolizine-1-carboxylic acid",1H NMR,"(400 MHz, CDCl3)  7.87–7.75 (m, 2H, C{10} –H), 7.58–7.49 (m, 1H, C{12} –H), 7.49–7.39
+(m, 2H, C{11} –H), 6.84 (d, 1H, J = 4.0 Hz, C{3} –H), 6.15 (d, 1H, J = 4.0 Hz, C{2} –H),
+4.58 (ddd, 1H, J = 12.0, 8.5, 6.0 Hz, C{5} –H), 4.47 (ddd, 1H, J = 12.0, 8.5, 6.0 Hz, C{5’} –H),
+4.11 (dd, 1H, J = 9.0, 5.5 Hz, C{7} –H), 3.02–2.74 (m, 2H, C{6} –H)",O=C(c1ccccc1)c1ccc2n1CCC2C(=O)O,3865
+74,"5-Benzoyl-2,3-dihydro-1H-pyrrolizine-1-carboxylic acid",13C NMR,"(101 MHz,
+CDCl3)  185.3 (C{8}), 176.8 (CO2H), 141.9 (C{1}), 139.2 (C{9}), 131.6 (C{12}), 129.1
+(C{10}), 128.3 (C{11}), 127.4 (C{4}), 125.3 (C{3}), 103.6 (C{2}), 47.7 (C{5}), 42.5 (C{7}),
+31.1 (C{6})",O=C(c1ccccc1)c1ccc2n1CCC2C(=O)O,3866
+75,"5-Benzoyl-2,3-dihydro-1H-pyrrolizine-1-carboxylic acid",IR,"(film) 3000br (CO2H), 1739s, 1712s, 1270s, 723s",O=C(c1ccccc1)c1ccc2n1CCC2C(=O)O,3867
+76,"5-Benzoyl-2,3-dihydro-1H-pyrrolizine-1-carboxylic acid",MS,"(m/z +ESI):
+Found: [M–H]−, 254.0832. C15H12NO3− requires 254.0823",O=C(c1ccccc1)c1ccc2n1CCC2C(=O)O,3868
+77,5-Methoxy-4-(methoxycarbonyl)-5-oxopentanoic acid,Rf,"0.05 (40% Et2O in PE40–60, KMnO4)",COC(=O)C(CCC(=O)O)C(=O)OC,3589
+78,5-Methoxy-4-(methoxycarbonyl)-5-oxopentanoic acid,1H NMR,"(400 MHz, CDCl3)  3.73 (s, 6H, C{1} –H), 3.49 (t, 1H, J = 7.5 Hz, C{3} –H), 2.45 (t, 2H, J = 7.5 Hz, C{5} –H), 2.20 (dt, 2H,
+J = 8.0, 7.5 Hz, C{4} –H)",COC(=O)C(CCC(=O)O)C(=O)OC,3590
+79,5-Methoxy-4-(methoxycarbonyl)-5-oxopentanoic acid,13C NMR,"(101 MHz, CDCl3)  178.6 (C{6}), 169.4 (C{2}), 52.8
+(C{1}), 50.4 (C{3}), 31.2 (C{5}), 23.5 (C{4})",COC(=O)C(CCC(=O)O)C(=O)OC,3591
+80,5-Methoxy-4-(methoxycarbonyl)-5-oxopentanoic acid,MS,"(m/z +ESI): Found: [M+H]+, 203.0.
+C8H11O6
++ requires 203.2",COC(=O)C(CCC(=O)O)C(=O)OC,3592
+81,"7-(3-Bromopropyl)-1,3-dimethyl-3,7-dihydro-1H-purine-2,6-dione",Rf,"0.31 (EtOAc, KMnO4)",Cn1c(=O)c2c(ncn2CCCBr)n(C)c1=O,3832
+82,"7-(3-Bromopropyl)-1,3-dimethyl-3,7-dihydro-1H-purine-2,6-dione",1H NMR,"(400 MHz,
+DMSO–d6)  8.07 (s, 1H, C{1} –H), 4.35 (t, 2H, J = 7.0 Hz, C{6} –H), 3.46 (t, 2H, J = 6.5 Hz,
+C{8} –H), 3.42 (s, 3H, C{9} –H), 3.22 (s, 3H, C{10} –H), 2.35 (tt, 2H, J = 7.0, 6.5 Hz,
+C{7} –H)",Cn1c(=O)c2c(ncn2CCCBr)n(C)c1=O,3833
+83,"7-(3-Bromopropyl)-1,3-dimethyl-3,7-dihydro-1H-purine-2,6-dione",13C NMR,"(101 MHz, DMSO–d6)  154.3 (C{3}), 150.9 (C{4}), 148.5 (C{5}),
+142.5 (C{1}), 106.0 (C{2}), 44.9 (C{6}), 32.7 (C{7}), 30.7 (C{8}), 29.4 (C{9}), 27.5 (C{10})",Cn1c(=O)c2c(ncn2CCCBr)n(C)c1=O,3834
+84,"7-(3-Bromopropyl)-1,3-dimethyl-3,7-dihydro-1H-purine-2,6-dione",MS,"(m/z +ESI): Found: [M+H]+, 303.0. C10H14
+81BrN4O2
++ requires 303.0",Cn1c(=O)c2c(ncn2CCCBr)n(C)c1=O,3835
+85,"7-(3-Bromopropyl)-4-chloro-7H-pyrrolo[2,3-d]pyrimidine",Rf,"0.42 (33% EtOAc in PE40–60, KMnO4)",Clc1ncnc2c1ccn2CCCBr,3813
+86,"7-(3-Bromopropyl)-4-chloro-7H-pyrrolo[2,3-d]pyrimidine",1H NMR,"(500 MHz, CDCl3)  8.60 (s, 1H,
+C{5} –H), 7.29 (d, 1H, J = 3.5 Hz, C{1} –H), 6.58 (d, 1H, J = 3.5 Hz, C{2} –H), 4.44 (t, 2H,
+J = 6.5 Hz, C{7} –H), 3.31 (t, 2H, J = 6.5 Hz, C{9} –H), 2.40 (tt, 2H, J = 6.5 Hz, C{8} –H)",Clc1ncnc2c1ccn2CCCBr,3814
+87,"7-(3-Bromopropyl)-4-chloro-7H-pyrrolo[2,3-d]pyrimidine",13C NMR,"(126 MHz, CDCl3)  152.2 (C{4}), 150.9 (C{6}), 150.7 (C{5}), 129.6 (C{1}),
+117.7 (C{3}), 99.6 (C{2}), 43.5 (C{7}), 32.4 (C{8}), 29.8 (C{9})",Clc1ncnc2c1ccn2CCCBr,3815
+88,"7-(3-Bromopropyl)-4-chloro-7H-pyrrolo[2,3-d]pyrimidine",IR,"(film) 2947w, 1587s,
+1351s, 923s, 726s",Clc1ncnc2c1ccn2CCCBr,3816
+89,"7-(3-Bromopropyl)-4-chloro-7H-pyrrolo[2,3-d]pyrimidine",MS,"(m/z +ESI): Found: [M+H]+, 273.9742. C9H10N3
+79Br35Cl+ requires
+273.9741",Clc1ncnc2c1ccn2CCCBr,3817
+90,"Di-tert-butyl 2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",Rf,"0.40 (20% EtOAc in PE40–60, purple in vanillin)",CC(C)(C)OC(=O)C1(C(=O)OC(C)(C)C)CCn2cccc21,3480
+91,"Di-tert-butyl 2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",1H NMR,"(400 MHz,
+CDCl3)  6.60 (dd, 1H, J = 2.5, 1.5 Hz, C{1} –H), 6.24 (dd, 1H, J = 3.5, 2.5 Hz, C{2} –H),
+6.10 (dd, 1H, J = 3.5, 1.5 Hz, C{3} –H), 4.03 (t, 2H, J = 7.0 Hz, C{7} –H), 2.95 (t, 2H,
+J = 7.0 Hz, C{6} –H), 1.47 (s, 18H, CMe3)",CC(C)(C)OC(=O)C1(C(=O)OC(C)(C)C)CCn2cccc21,3481
+92,"Di-tert-butyl 2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",13C NMR,"(126 MHz, CDCl3)  168.8 (CO2R),
+133.3 (C{4}), 114.9 (C{1}), 113.0 (C{2}), 102.7 (C{3}), 82.0 (CMe3), 60.4 (C{5}), 44.9
+(C{7}), 36.4 (C{6}), 28.0 (CMe3)",CC(C)(C)OC(=O)C1(C(=O)OC(C)(C)C)CCn2cccc21,3482
+93,"Di-tert-butyl 2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",IR,"/cm−1(film) 2976w, 1726s, 1160m, 1100m, 715m",CC(C)(C)OC(=O)C1(C(=O)OC(C)(C)C)CCn2cccc21,3483
+94,"Di-tert-butyl 2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",MS,"(m/z +ESI): Found: [M+H]+, 308.1857. C17H26NO4
++ requires 308.1856",CC(C)(C)OC(=O)C1(C(=O)OC(C)(C)C)CCn2cccc21,3484
+95,Di-tert-butyl 2-(2-(1H-pyrrol-1-yl)ethyl)malonate,Rf,"0.35 (10% acetone in PE40–60, red in vanillin)",CC(C)(C)OC(=O)C(CCn1cccc1)C(=O)OC(C)(C)C,3645
+96,Di-tert-butyl 2-(2-(1H-pyrrol-1-yl)ethyl)malonate,1H NMR,"(500 MHz, CDCl3)  6.65
+(t, 2H, J = 2.0 Hz, C{2} –H), 6.15 (t, 2H, J = 2.0 Hz, C{1} –H), 3.95 (t, 2H, J = 7.0 Hz,
+C{3} –H), 3.06 (t, 1H, J = 7.5 Hz, C{5} –H), 2.24 (tt, 2H, J = 7.5, 7.0 Hz, C{4} –H), 1.46
+(s, 18H, CMe3)",CC(C)(C)OC(=O)C(CCn1cccc1)C(=O)OC(C)(C)C,3646
+97,Di-tert-butyl 2-(2-(1H-pyrrol-1-yl)ethyl)malonate,13C NMR,"(126 MHz, CDCl3)  168.3 (CO2R), 120.6 (C{2}), 108.3 (C{1}),
+81.8 (CMe3), 50.9 (C{5}), 46.9 (C{3}), 30.6 (C{4}), 27.9 (CMe3)",CC(C)(C)OC(=O)C(CCn1cccc1)C(=O)OC(C)(C)C,3647
+98,Di-tert-butyl 2-(2-(1H-pyrrol-1-yl)ethyl)malonate,IR,"(film) 2979m,
+1725s, 1369m, 1140s, 724m",CC(C)(C)OC(=O)C(CCn1cccc1)C(=O)OC(C)(C)C,3648
+99,Di-tert-butyl 2-(2-(1H-pyrrol-1-yl)ethyl)malonate,MS,"(m/z +ESI): Found: [M+Na]+, 332.3314. C17H27NNaO4
++
+requires 332.1832",CC(C)(C)OC(=O)C(CCn1cccc1)C(=O)OC(C)(C)C,3649
+100,"Dibenzyl 2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate,",Rf,"0.28 (20% EtOAc in PE40–60, orange in vanillin)",,3485
+101,"Dibenzyl 2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate,",1H NMR,"(500 MHz, CDCl3)
+ 7.33–7.29 (m, 6H, C{12, 13} –H), 7.26–7.23 (m, 4H, C{11} –H), 6.63 (dd, 1H, J = 2.5,
+1.5 Hz, C{1} –H), 6.25 (dd, 1H, J = 3.5, 2.5 Hz, C{2} –H), 6.14 (dd, 1H, J = 3.5, 1.5 Hz,
+C{3} –H), 5.19–5.11 (m, 4H, C{9} –H), 4.06 (t, 2H, J = 7.0 Hz, C{7} –H), 3.07 (t, 2H, J = 7.0 Hz, C{6} –H)",,3486
+102,"Dibenzyl 2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate,",13C NMR,"(126 MHz, CDCl3)  169.3 (CO2R), 135.4 (C{10}), 132.0
+(C{4}), 128.7 (C{12}), 128.4 (C{13}), 128.1 (C{11}), 115.3 (C{1}), 113.3 (C{2}), 103.4
+(C{3}), 67.7 (C{9}), 58.9 (C{5}), 45.0 (C{7}), 36.9 (C{6})",,3487
+103,"Dibenzyl 2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate,",IR,"/cm−1(film) 2980w, 1734s,
+1263m, 1097m, 697w",,3488
+104,"Dibenzyl 2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate,",MS,"(m/z +ESI): Found: [M+H]+, 376.1543. C23H22NO4
++ requires
+376.1543",,3489
+105,Dibenzyl 2-(2-(1H-pyrrol-1-yl)ethyl)malonate,Rf,"0.33 (30% Et2O in PE40–60, orange in vanillin)",O=C(OCc1ccccc1)C(CCn1cccc1)C(=O)OCc1ccccc1,3654
+106,Dibenzyl 2-(2-(1H-pyrrol-1-yl)ethyl)malonate,1H NMR,"(500 MHz, CDCl3)  7.36–7.31
+(m, 6H, C{10, 11} –H), 7.31–7.27 (m, 4H, C{9} –H), 6.54 (t, 2H, J = 2.0 Hz, C{2} –H), 6.11 (t,
+2H, J = 2.0 Hz, C{1} –H), 5.14 (s, 4H, C{7} –H), 3.91 (t, 2H, J = 7.0 Hz, C{3} –H), 3.35 (t, 1H,
+J = 7.5 Hz, C{5} –H), 2.37 (dt, 2H, J = 7.5, 7.0 Hz, C{4} –H)",O=C(OCc1ccccc1)C(CCn1cccc1)C(=O)OCc1ccccc1,3655
+107,Dibenzyl 2-(2-(1H-pyrrol-1-yl)ethyl)malonate,13C NMR,"(126 MHz, CDCl3)
+ 168.6 (C{6}), 135.3 (C{8}), 128.8 (C{10}), 128.6 (C{11}), 128.4 (C{9}), 120.7 (C{2}), 108.6
+(C{1}), 67.5 (C{7}), 49.1 (C{5}), 46.8 (C{3}), 30.7 (C{4})",O=C(OCc1ccccc1)C(CCn1cccc1)C(=O)OCc1ccccc1,3656
+108,Dibenzyl 2-(2-(1H-pyrrol-1-yl)ethyl)malonate,IR,"1(film) 2956w, 1731s,
+1499w, 1150m, 729m",O=C(OCc1ccccc1)C(CCn1cccc1)C(=O)OCc1ccccc1,3657
+109,Dibenzyl 2-(2-(1H-pyrrol-1-yl)ethyl)malonate,MS,"(m/z +ESI): Found: [M+H]+, 378.1698. C23H23NO4
++ requires
+378.1700",O=C(OCc1ccccc1)C(CCn1cccc1)C(=O)OCc1ccccc1,3658
+110,"Dibenzyl cyclopropane-1,1-dicarboxylate",Rf,"0.41 (30% Et2O in PE40–60, yellow in vanillin)",O=C(OCc1ccccc1)C1(C(=O)OCc2ccccc2)CC1,3650
+111,"Dibenzyl cyclopropane-1,1-dicarboxylate",1H NMR,"(400 MHz, CDCl3)
+ 7.39–7.27 (m, 10H, C{6, 7, 8} –H), 5.16 (s, 4H, C{4} –H), 1.50 (s, 4H, C{2} –H)",O=C(OCc1ccccc1)C1(C(=O)OCc2ccccc2)CC1,3651
+112,"Dibenzyl cyclopropane-1,1-dicarboxylate",13C NMR,"(101 MHz, CDCl3)  169.7 (C{3}), 135.7 (C{5}), 128.7 (C{6/7/8}), 128.4
+(C{6/7/8}), 128.2 (C{6/7/8}), 67.4 (C{4}), 28.4 (C{1}), 17.1 (C{2})",O=C(OCc1ccccc1)C1(C(=O)OCc2ccccc2)CC1,3652
+113,"Dibenzyl cyclopropane-1,1-dicarboxylate",MS,"(m/z +ESI):
+Found: [M+H]+, 333.0. C19H18NaO4
++ requires 333.1",O=C(OCc1ccccc1)C1(C(=O)OCc2ccccc2)CC1,3653
+114,"Dimethyl 1,3-dimethyl-2,4-dioxo-1,2,3,4,7,8-hexahydropyrido[2,1-f ]purine-
+9,9(6H)- dicarboxylate",Rf,"0.25 (80% EtOAc in PE40–60, KMnO4)",COC(=O)C1(C(=O)OC)CCCn2c1nc1c2c(=O)n(C)c(=O)n1C,3571
+115,"Dimethyl 1,3-dimethyl-2,4-dioxo-1,2,3,4,7,8-hexahydropyrido[2,1-f ]purine-
+9,9(6H)- dicarboxylate",1H NMR,"(500 MHz,
+CDCl3)  4.38 (t, 2H, J = 6.5 Hz, C{6} –H), 3.84 (s, 6H, CO2Me), 3.57 (s, 3H, C{10} –H),
+3.39 (s, 3H, C{11} –H), 2.62–2.56 (m, 2H, C{8} –H), 2.10–2.01 (m, 2H, C{7} –H)",COC(=O)C1(C(=O)OC)CCCn2c1nc1c2c(=O)n(C)c(=O)n1C,3572
+116,"Dimethyl 1,3-dimethyl-2,4-dioxo-1,2,3,4,7,8-hexahydropyrido[2,1-f ]purine-
+9,9(6H)- dicarboxylate",13C NMR,"(126 MHz, CDCl3)  168.4 (CO2Me), 155.3 (C{4}), 151.7 (C{3}), 148.2 (C{2}), 144.7 (C{1}),
+107.4 (C{5}), 57.1 (C{9}), 53.7 (CO2Me), 44.8 (C{6}), 30.1 (C{10}), 28.5 (C{8}), 27.9
+(C{11}), 19.1 (C{7})",COC(=O)C1(C(=O)OC)CCCn2c1nc1c2c(=O)n(C)c(=O)n1C,3573
+117,"Dimethyl 1,3-dimethyl-2,4-dioxo-1,2,3,4,7,8-hexahydropyrido[2,1-f ]purine-
+9,9(6H)- dicarboxylate",IR,"(film) 2956m, 1737m, 1704s, 1663s, 1262m",COC(=O)C1(C(=O)OC)CCCn2c1nc1c2c(=O)n(C)c(=O)n1C,3574
+118,"Dimethyl 1,3-dimethyl-2,4-dioxo-1,2,3,4,7,8-hexahydropyrido[2,1-f ]purine-
+9,9(6H)- dicarboxylate",MS,"(m/z
++ESI): Found: [M+H]+, 351.1299. C15H18N4O6
++ requires 351.1299",COC(=O)C1(C(=O)OC)CCCn2c1nc1c2c(=O)n(C)c(=O)n1C,3575
+119,"Dimethyl 2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",Rf,"0.41 (50% Et2O in PE40–60, KMnO4)",COC(=O)C1(C(=O)OC)CCn2cccc21,3475
+120,"Dimethyl 2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",1H NMR,"(500 MHz, CDCl3)  6.64 (dd, 1H,
+J = 2.5, 1.5 Hz, C{4} –H), 6.26 (dd, 1H, J = 3.5, 2.5 Hz, C{3} –H), 6.15 (dd, 1H, J = 3.5,
+1.5 Hz, C{2} –H), 4.08 (t, 2H, J = 7.0 Hz, C{5} –H), 3.77 (s, H, CO2Me), 3.06 (t, 2H,
+J = 7.0 Hz, C{6} –H)",COC(=O)C1(C(=O)OC)CCn2cccc21,3476
+121,"Dimethyl 2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",13C NMR,"(126 MHz, CDCl3)  170.1 (CO2Me), 132.2 (C{1}), 115.3
+(C{4}), 113.2 (C{3}), 103.1 (C{2}), 58.6 (C{7}), 53.3 (CO2Me), 45.0 (C{5}), 37.1 (C{6})",COC(=O)C1(C(=O)OC)CCn2cccc21,3477
+122,"Dimethyl 2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",IR,"/cm−1(film) 2955w, 1732s, 1267m, 1226m, 1098m",COC(=O)C1(C(=O)OC)CCn2cccc21,3478
+123,"Dimethyl 2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",MS,"(m/z +ESI): Found: [M+H]+,
+224.09195. C11H14NO4
++ requires 224.09173",COC(=O)C1(C(=O)OC)CCn2cccc21,3479
+124,"Dimethyl 2,3-dihydro-1H-pyrrolo[1,2-a]indole-1,1-dicarboxylate",Rf,"0.37 (30% EtOAc in PE40–60, KMnO4)",COC(=O)C1(C(=O)OC)CCn2c1cc1ccccc12,3463
+125,"Dimethyl 2,3-dihydro-1H-pyrrolo[1,2-a]indole-1,1-dicarboxylate",1H NMR,"(400 MHz, CDCl3)  7.61 (ddd, 1H,
+J = 8.0, 1.0, 1.0 Hz, C{4} –H), 7.27 (ddd, 1H, J = 8.0, 1.0, 1.0 Hz, C{7} –H), 7.19 (ddd,
+1H, J = 8.0, 7.0, 1.0 Hz, C{6} –H), 7.10 (ddd, 1H, J = 8.0, 7.0, 1.0 Hz, C{5} –H), 6.55 (d,
+1H, J = 1.0 Hz, C{2} –H), 4.21 (t, 2H, J = 7.0 Hz, C{9} –H), 3.81 (s, 6H, CO2Me), 3.19
+(dd, 2H, J = 7.0, 6.5 Hz, C{10} –H)",COC(=O)C1(C(=O)OC)CCn2c1cc1ccccc12,3464
+126,"Dimethyl 2,3-dihydro-1H-pyrrolo[1,2-a]indole-1,1-dicarboxylate",13C NMR,"(101 MHz, CDCl3)  169.6 (CO2Me), 139.0
+(C{1}), 132.9 (C{8}), 132.6 (C{3}), 121.8 (C{6}), 121.5 (C{4}), 119.9 (C{5}), 109.9 (C{7}),
+96.7 (C{2}), 58.9 (C{1}), 53.5 (CO2Me), 42.7 (C{9}), 37.1 (C{10})",COC(=O)C1(C(=O)OC)CCn2c1cc1ccccc12,3465
+127,"Dimethyl 2,3-dihydro-1H-pyrrolo[1,2-a]indole-1,1-dicarboxylate",MS,"(m/z +ESI):
+Found: [M+H]+, 274.1. C15H16NO4
++ requires 274.1",COC(=O)C1(C(=O)OC)CCn2c1cc1ccccc12,3466
+128,"Dimethyl 2,3-dihydrodibenzo[b,d]furan-4,4(1H)-dicarboxylate",Rf,"0.40 (50% Et2O in PE40–60, KMnO4)",COC(=O)C1(C(=O)OC)CCCc2c1oc1ccccc21,3546
+129,"Dimethyl 2,3-dihydrodibenzo[b,d]furan-4,4(1H)-dicarboxylate",1H NMR,"(500 MHz, CDCl3)  7.50 (ddd, 1H,
+J = 8.0, 1.0, 1.0 Hz, C{2} –H), 7.47 (ddd, 1H, J = 7.5, 1.0, 1.0 Hz, C{5} –H), 7.29 (ddd, 1H,
+J = 8.0, 7.5, 1.0 Hz, C{3} –H), 7.23 (ddd, 1H, J = 7.5, 7.5, 1.0 Hz, C{4} –H), 3.81 (s, 6H,
+CO2Me), 2.71 (t, 2H, J = 6.0 Hz, C{8} –H), 2.55–2.48 (m, 2H, C{10} –H), 1.97–1.90 (m, 2H,
+C{9} –H)",COC(=O)C1(C(=O)OC)CCCc2c1oc1ccccc21,3547
+130,"Dimethyl 2,3-dihydrodibenzo[b,d]furan-4,4(1H)-dicarboxylate",13C NMR,"(126 MHz, CDCl3)  170.0 (CO2Me), 154.9 (C{1}), 146.8 (C{12}),
+127.6 (C{6}), 124.6 (C{3}), 122.5 (C{4}), 119.3 (C{5}), 117.0 (C{7}), 111.6 (C{2}), 56.1
+(C{11}), 53.2 (CO2Me), 31.9 (C{10}), 20.3 (C{8}), 20.0 (C{9})",COC(=O)C1(C(=O)OC)CCCc2c1oc1ccccc21,3548
+131,"Dimethyl 2,3-dihydrodibenzo[b,d]furan-4,4(1H)-dicarboxylate",IR,"(film) 2953w, 1734s,
+1452m, 1253s, 748m",COC(=O)C1(C(=O)OC)CCCc2c1oc1ccccc21,3549
+132,"Dimethyl 2,3-dihydrodibenzo[b,d]furan-4,4(1H)-dicarboxylate",MS,"(m/z +ESI): Found: [M+H]+, 289.1071. C16H17O5
++ requires
+289.1071",COC(=O)C1(C(=O)OC)CCCc2c1oc1ccccc21,3550
+133,"Dimethyl 2,3-dihydrodibenzo[b,d]thiophene-4,4(1H)-dicarboxylate",Rf,"0.19 (20 % Et2O in PE40–60, KMnO4)",COC(=O)C1(C(=O)OC)CCCc2c1sc1ccccc21,3541
+134,"Dimethyl 2,3-dihydrodibenzo[b,d]thiophene-4,4(1H)-dicarboxylate",1H NMR,"(500 MHz,
+CDCl3)  7.81–7.75 (m, 1H, C{7} –H), 7.66–7.60 (m, 1H, C{4} –H), 7.38–7.30 (m, 2H,
+C{5, 6} –H), 3.81 (s, 6H, CO2Me), 2.83 (t, 2H, J = 6.5 Hz, C{12} –H), 2.58–2.50 (m, 2H,
+C{10} –H), 2.02–1.94 (m, 2H, C{11} –H)",COC(=O)C1(C(=O)OC)CCCc2c1sc1ccccc21,3542
+135,"Dimethyl 2,3-dihydrodibenzo[b,d]thiophene-4,4(1H)-dicarboxylate",13C NMR,"(126 MHz, CDCl3)  170.8 (CO2Me),
+139.8 (C{8}), 138.5 (C{3}), 133.6 (C{2}), 131.7 (C{1}), 125.0 (C{5}), 124.1 (C{6}), 122.3
+(C{7}), 121.6 (C{4}), 57.5 (C{9}), 53.2 (CO2Me), 31.7 (C{10}), 23.9 (C{12}), 19.4 (C{11})",COC(=O)C1(C(=O)OC)CCCc2c1sc1ccccc21,3543
+136,"Dimethyl 2,3-dihydrodibenzo[b,d]thiophene-4,4(1H)-dicarboxylate",IR,"(film) 2952w, 1735s, 1435m, 1247m, 754w",COC(=O)C1(C(=O)OC)CCCc2c1sc1ccccc21,3544
+137,"Dimethyl 2,3-dihydrodibenzo[b,d]thiophene-4,4(1H)-dicarboxylate",MS,"(m/z +ESI): Found: [M+H]+,
+305.0843. C16H17O4S+ requires 305.0842",COC(=O)C1(C(=O)OC)CCCc2c1sc1ccccc21,3545
+138,"Dimethyl 2-(1H-indole-1-carbonyl)cyclopropane-1,1-dicarboxylate",Rf,"0.32 (30% EtOAc in PE40–60, KMnO4)",COC(=O)C1(C(=O)OC)CC1C(=O)n1ccc2ccccc21,3454
+139,"Dimethyl 2-(1H-indole-1-carbonyl)cyclopropane-1,1-dicarboxylate",1H NMR,"(500 MHz, CDCl3)  8.38 (d, 1H,
+J = 8.0 Hz, C{7} –H), 7.64 (d, 1H, J = 4.0 Hz, C{1} –H), 7.57 (d, 1H, J = 7.5 Hz, C{4} –H),
+7.34 (dd, 1H, J = 8.0, 7.0 Hz, C{6} –H), 7.29 (dd, 1H, J = 7.5, 7.0 Hz, C{5} –H), 6.70
+(d, 1H, J = 4.0 Hz, C{2} –H), 3.84 (s, 3H, CO2Me), 3.67 (s, 3H, CO2Me’), 3.25 (dd, 1H,
+J = 8.5, 7.0 Hz, C{10} –H), 2.34 (dd, 1H, J = 7.0, 5.0 Hz, HB), 1.83 (dd, 1H, J = 8.5, 5.0 Hz,
+HA)",COC(=O)C1(C(=O)OC)CC1C(=O)n1ccc2ccccc21,3455
+140,"Dimethyl 2-(1H-indole-1-carbonyl)cyclopropane-1,1-dicarboxylate",13C NMR,"(126 MHz, CDCl3)  169.2 (C{9}), 166.4 (CO2Me), 166.2 (CO2Me’), 135.8
+(C{3}), 130.6 (C{8}), 125.4 (C{6}), 124.9 (C{1}), 124.2 (C{5}), 121.1 (C{4}), 116.7 (C{7}),
+110.1 (C{2}), 53.7 (CO2Me), 53.3 (CO2Me’), 37.7 (C{11}), 29.1 (C{10}), 20.1 (C{12});",COC(=O)C1(C(=O)OC)CC1C(=O)n1ccc2ccccc21,3456
+141,"Dimethyl 2-(1H-indole-1-carbonyl)cyclopropane-1,1-dicarboxylate",IR,"/cm−1(film) 2954w, 1735s, 1670m, 1319s, 1208m",COC(=O)C1(C(=O)OC)CC1C(=O)n1ccc2ccccc21,3457
+142,"Dimethyl 2-(1H-indole-1-carbonyl)cyclopropane-1,1-dicarboxylate",MS,"(m/z +ESI): Found: [M+Na]+, 324.0. C16H15NNaO5
++ requires 324.1",COC(=O)C1(C(=O)OC)CC1C(=O)n1ccc2ccccc21,3458
+143,Dimethyl 2-(2-(1H-imidazol-1-yl)ethyl)malonate,Rf,"0.30 (5% MeOH in CH2Cl2, KMnO4)",COC(=O)C(CCn1ccnc1)C(=O)OC,3679
+144,Dimethyl 2-(2-(1H-imidazol-1-yl)ethyl)malonate,1H NMR,"(500 MHz, CDCl3)  7.47 (s, 1H,
+C{5} –H), 7.07 (s, 1H, C{2} –H), 6.91 (s, 1H, C{3} –H), 4.04 (t, 2H, J = 7.0 Hz, C{4} –H),
+3.74 (s, 6H, CO2Me), 3.29 (t, 1H, J = 7.5 Hz, C{6} –H), 2.36 (dt, 2H, J = 7.5, 7.0 Hz,
+C{5} –H)",COC(=O)C(CCn1ccnc1)C(=O)OC,3680
+145,Dimethyl 2-(2-(1H-imidazol-1-yl)ethyl)malonate,13C NMR,"(126 MHz, CDCl3)  169.0 (CO2Me), 137.4 (C{1}), 130.0 (C{2}),
+118.9 (C{3}), 53.0 (CO2Me), 48.5 (C{6}), 44.5 (C{4}), 30.2 (C{5})",COC(=O)C(CCn1ccnc1)C(=O)OC,3681
+146,Dimethyl 2-(2-(1H-imidazol-1-yl)ethyl)malonate,IR,"(film) 2956w,
+1730s, 1437m, 1229m, 665w",COC(=O)C(CCn1ccnc1)C(=O)OC,3682
+147,Dimethyl 2-(2-(1H-imidazol-1-yl)ethyl)malonate,MS,"(m/z +ESI): Found: [M+H]+, 227.10280. C10H15N2O4
++
+requires 227.10263",COC(=O)C(CCn1ccnc1)C(=O)OC,3683
+148,Dimethyl 2-(2-(1H-indol-1-yl)-2-oxoethyl)malonate,Rf,"0.28 (50% Et2O in PE40–60, KMnO4)",COC(=O)C(CC(=O)n1ccc2ccccc21)C(=O)OC,3624
+149,Dimethyl 2-(2-(1H-indol-1-yl)-2-oxoethyl)malonate,1H NMR,"(400 MHz, CDCl3)  8.39 (d, 1H,
+J = 8.5 Hz, C{7} –H), 7.56 (ddd, 1H, J = 7.5, 1.5, 1.0 Hz, C{4} –H), 7.50 (d, 1H, J = 4.0 Hz,
+C{1} –H), 7.34 (ddd, 1H, J = 8.5, 7.0, 1.5 Hz, C{6} –H), 7.31–7.27 (m, 1H, C{5} –H), 6.68
+(d, 1H, J = 4.0 Hz, C{2} –H), 4.16 (t, 1H, J = 7.0 Hz, C{11} –H), 3.82 (s, 6H, CO2Me),
+3.60 (d, 2H, J = 7.0 Hz, C{10} –H)",COC(=O)C(CC(=O)n1ccc2ccccc21)C(=O)OC,3625
+150,Dimethyl 2-(2-(1H-indol-1-yl)-2-oxoethyl)malonate,13C NMR,"(101 MHz, CDCl3)  169.1 (CO2Me), 130.5
+(C{3}), 125.5 (C{5}), 124.4 (C{6}), 124.1 (C{1}), 121.1 (C{4}), 116.7 (C{7}), 110.1 (C{2}),
+53.2 (CO2Me), 47.3 (C{11}), 35.2 (C{10})",COC(=O)C(CC(=O)n1ccc2ccccc21)C(=O)OC,3626
+151,Dimethyl 2-(2-(1H-indol-1-yl)-2-oxoethyl)malonate,IR,"(film) 2955w, 1736s,
+1704s, 1454m, 1317m, 753w",COC(=O)C(CC(=O)n1ccc2ccccc21)C(=O)OC,3627
+152,Dimethyl 2-(2-(1H-indol-1-yl)-2-oxoethyl)malonate,MS,"(m/z +ESI): Found: [M+H]+, 290.10245. C15H16NO5
++ requires 290.10230.",COC(=O)C(CC(=O)n1ccc2ccccc21)C(=O)OC,3628
+153,Dimethyl 2-(2-(1H-indol-1-yl)ethyl)malonate,Rf,"0.24 (30% Et2O in PE40–60, KMnO4)",COC(=O)C(CCn1ccc2ccccc21)C(=O)OC,3633
+154,Dimethyl 2-(2-(1H-indol-1-yl)ethyl)malonate,1H NMR,"(400 MHz, CDCl3)  7.63 (ddd, 1H, J = 8.0, 1.0, 1.0 Hz, C{4} –H), 7.35 (ddd, 1H, J = 8.0, 1.0, 1.0 Hz, C{7} –H), 7.22
+(ddd, 1H, J = 8.0, 7.0, 1.0 Hz, C{6} –H), 7.11 (ddd, 1H, J = 8.0, 7.0, 1.0 Hz, C{5} –H),
+7.07 (d, 1H, J = 3.0 Hz, C{1} –H), 6.51 (dd, 1H, J = 3.0, 1.0 Hz, C{2} –H), 4.24 (t, 2H,
+J = 7.0 Hz, C{9} –H), 3.72 (s, 6H, CO2Me), 3.32 (t, 1H, J = 7.5 Hz, C{11} –H), 2.45 (dt,
+2H, J = 7.5, 7.0 Hz, C{10} –H)",COC(=O)C(CCn1ccc2ccccc21)C(=O)OC,3634
+155,Dimethyl 2-(2-(1H-indol-1-yl)ethyl)malonate,13C NMR,"(101 MHz, CDCl3)  169.3 (CO2Me), 136.1
+(C{8}), 128.8 (C{3}), 127.8 (C{1}), 121.8 (C{6}), 121.2 (C{4}), 119.7 (C{5}), 109.4 (C{7}),
+101.9 (C{2}), 52.8 (CO2Me), 48.9 (C{11}), 43.9 (C{9}), 29.4 (C{10})",COC(=O)C(CCn1ccc2ccccc21)C(=O)OC,3635
+156,Dimethyl 2-(2-(1H-indol-1-yl)ethyl)malonate,MS,"(m/z +ESI):
+Found: [M+Na]+, 276.0. C15H18NO4
++ requires 276.1",COC(=O)C(CCn1ccc2ccccc21)C(=O)OC,3636
+157,Dimethyl 2-(2-(1H-pyrrol-1-yl)ethyl)malonate,Rf,"0.17 (20% Et2O in PE40–60, KMnO4)",COC(=O)C(CCn1cccc1)C(=O)OC,3637
+158,Dimethyl 2-(2-(1H-pyrrol-1-yl)ethyl)malonate,1H NMR,"(500 MHz, CDCl3)  6.62 (t, 2H,
+J = 2.0 Hz, C{2} –H), 6.14 (t, 2H, J = 2.0 Hz, C{1} –H), 3.97 (t, 2H, J = 7.0 Hz, C{3} –H),
+3.74 (s, 6H, CO2Me), 3.28 (t, 1H, J = 7.5 Hz, C{5} –H), 2.35 (dt, 2H, J = 7.5, 7.0 Hz,
+C{4} –H)",COC(=O)C(CCn1cccc1)C(=O)OC,3638
+159,Dimethyl 2-(2-(1H-pyrrol-1-yl)ethyl)malonate,13C NMR,"(126 MHz, CDCl3)  169.4 (CO2Me), 120.7 (C{2}), 108.7 (C{1}), 52.8
+(CO2Me), 48.7 (C{5}), 47.0 (C{3}); 30.8 (C{4})",COC(=O)C(CCn1cccc1)C(=O)OC,3639
+160,Dimethyl 2-(2-(1H-pyrrol-1-yl)ethyl)malonate,IR,"(film) 2955w, 1731s, 1436m, 1154m,
+727s",COC(=O)C(CCn1cccc1)C(=O)OC,3640
+161,Dimethyl 2-(2-(1H-pyrrol-1-yl)ethyl)malonate,MS,"(m/z +ESI): Found: [M+H]+, 226.10759. C11H16NO4
++ requires 226.10848",COC(=O)C(CCn1cccc1)C(=O)OC,3641
+162,Dimethyl 2-(2-(2-(4-methoxyphenyl)-1H-pyrrol-1-yl)ethyl)malonate,Rf,"0.40 (33% EtOAc in PE40–60, red in vanillin)",COC(=O)C(CCn1cccc1-c1ccc(OC)cc1)C(=O)OC,3674
+163,Dimethyl 2-(2-(2-(4-methoxyphenyl)-1H-pyrrol-1-yl)ethyl)malonate,1H NMR,"(500 MHz, CDCl3)  7.30–7.26
+(m, 2H, C{9} –H), 6.96–6.90 (m, 2H, C{10} –H), 6.71 (dd, 1H, J = 3.0, 2.0 Hz, C{1} –H),
+6.20 (dd, 1H, J = 3.5, 3.0 Hz, C{2} –H), 6.11 (dd, 1H, J = 3.5, 2.0 Hz, C{3} –H), 3.99
+(t, 2H, J = 7.0 Hz, C{5} –H), 3.84 (s, 3H, C{12} –H), 3.65 (s, 6H, CO2Me), 3.15 (t, 1H,
+J = 7.5 Hz, C{7} –H), 2.19 (dt, 2H, J = 7.5, 7.5 Hz, C{6} –H)",COC(=O)C(CCn1cccc1-c1ccc(OC)cc1)C(=O)OC,3675
+164,Dimethyl 2-(2-(2-(4-methoxyphenyl)-1H-pyrrol-1-yl)ethyl)malonate,13C NMR,"(126 MHz, CDCl3)
+ 169.3 (CO2Me), 159.0 (C{11}), 134.2 (C{4}), 130.5 (C{9}), 125.9 (C{8}), 121.6 (C{1}),
+114.0 (C{10}), 108.9 (C{3}), 108.4 (C{2}), 55.4 (C{12}), 52.8 (CO2Me), 48.7 (C{7}), 44.6
+(C{5}), 44.6 (C{6})",COC(=O)C(CCn1cccc1-c1ccc(OC)cc1)C(=O)OC,3676
+165,Dimethyl 2-(2-(2-(4-methoxyphenyl)-1H-pyrrol-1-yl)ethyl)malonate,IR,"(film) 2954w, 1733s, 1506m, 1249s, 837w",COC(=O)C(CCn1cccc1-c1ccc(OC)cc1)C(=O)OC,3677
+166,Dimethyl 2-(2-(2-(4-methoxyphenyl)-1H-pyrrol-1-yl)ethyl)malonate,MS,"(m/z +ESI):
+Found: [M+H]+, 332.1493. C18H22NO5
++ requires 332.1492",COC(=O)C(CCn1cccc1-c1ccc(OC)cc1)C(=O)OC,3678
+167,Dimethyl 2-(2-(2-benzoyl-1H-pyrrol-1-yl)ethyl)malonate,Rf,"0.28 (30% EtOAc in PE40–60, orange in vanillin)",COC(=O)C(CCn1cccc1C(=O)c1ccccc1)C(=O)OC,3855
+168,Dimethyl 2-(2-(2-benzoyl-1H-pyrrol-1-yl)ethyl)malonate,1H NMR,"(500 MHz, CDCl3)
+ 7.80–7.74 (m, 2H, C{10} –H), 7.56–7.51 (m, 1H, C{12} –H), 7.47–7.42 (m, 2H, C{11} –H),
+6.97 (dd, 1H, J = 2.5, 1.5 Hz, C{1} –H), 6.74 (dd, 1H, J = 4.0, 1.5 Hz, C{3} –H), 6.18 (dd,
+1H, J = 4.0, 2.5 Hz, C{2} –H), 4.50 (t, 2H, J = 7.0 Hz, C{5} –H), 3.73 (s, 6H, CO2Me),
+3.40 (t, 1H, J = 7.0 Hz, C{7} –H), 2.45 (dt, 2H, J = 7.0, 7.0 Hz, C{6} –H)",COC(=O)C(CCn1cccc1C(=O)c1ccccc1)C(=O)OC,3856
+169,Dimethyl 2-(2-(2-benzoyl-1H-pyrrol-1-yl)ethyl)malonate,13C NMR,"(126 MHz, CDCl3)  186.2 (C{8}), 169.5 (CO2Me), 140.1 (C{9}), 131.5 (C{12}), 131.0
+(C{1}), 130.0 (C{4}), 129.3 (C{10}), 128.2 (C{11}), 123.8 (C{3}), 108.8 (C{2}), 52.8
+(CO2Me), 48.9 (C{7}), 47.0 (C{5}), 30.7 (C{6})",COC(=O)C(CCn1cccc1C(=O)c1ccccc1)C(=O)OC,3857
+170,Dimethyl 2-(2-(2-benzoyl-1H-pyrrol-1-yl)ethyl)malonate,MS,"(m/z +ESI): Found: [M+H]+,
+352.0. C18H19NNaO5
++ requires 352.1",COC(=O)C(CCn1cccc1C(=O)c1ccccc1)C(=O)OC,3858
+171,Dimethyl 2-(2-(2-phenyl-1H-pyrrol-1-yl)ethyl)malonate,Rf,"0.15 (10% EtOAc in PE40–60, red in vanillin)",COC(=O)C(CCn1cccc1-c1ccccc1)C(=O)OC,3666
+172,Dimethyl 2-(2-(2-phenyl-1H-pyrrol-1-yl)ethyl)malonate,1H NMR,"(400 MHz, CDCl3)  7.42–7.33
+(m, 4H, C{6,7} –H), 7.33–7.28 (m, 1H, C{8} –H), 6.74 (dd, 1H, J = 3.0, 1.5 Hz, C{1} –H),
+6.22 (dd, 1H, J = 3.5, 3.0 Hz, C{2} –H), 6.18 (dd, 1H, J = 3.5, 1.5 Hz, C{3} –H), 4.04 (t,
+2H, J = 7.0 Hz, C{9} –H), 3.63 (s, 6H, CO2Me), 3.14 (t, 1H, J = 7.5 Hz, C{11} –H), 2.20
+(dt, 2H, J = 7.5, 7.0 Hz, C{10} –H)",COC(=O)C(CCn1cccc1-c1ccccc1)C(=O)OC,3667
+173,Dimethyl 2-(2-(2-phenyl-1H-pyrrol-1-yl)ethyl)malonate,13C NMR,"(126 MHz, CDCl3)  169.2 (CO2Me), 134.6
+(C{4}), 133.4 (C{5}), 129.1 (C{6/7}), 128.6 (C{6/7}), 127.2 (C{8}), 122.2 (C{1}), 109.4
+(C{3}), 108.6 (C{2}), 52.7 (CO2Me), 48.6 (C{11}), 44.6 (C{9}), 30.6 (C{10})",COC(=O)C(CCn1cccc1-c1ccccc1)C(=O)OC,3668
+174,Dimethyl 2-(2-(2-phenyl-1H-pyrrol-1-yl)ethyl)malonate,MS,"(m/z +ESI): Found: [M+H]+, 302.1388. C17H20O4N+ requires 302.1387",COC(=O)C(CCn1cccc1-c1ccccc1)C(=O)OC,3669
+175,Dimethyl 2-(2-(indolin-1-yl)ethyl)malonate,Rf,"0.45 (30% EtOAc in PE40–60, KMnO4)",COC(=O)C(CCN1CCc2ccccc21)C(=O)OC,3629
+176,Dimethyl 2-(2-(indolin-1-yl)ethyl)malonate,1H NMR,"(400 MHz, CDCl3)  7.09–7.02 (m,
+2H, C{4,6} –H), 6.66 (ddd, 1H, J = 7.5, 7.5, 1.0 Hz, C{5} –H), 6.46 (d, 1H, J = 8.0 Hz,
+C{7} –H), 3.72 (s, 6H, CO2Me), 3.57 (t, 1H, J = 7.5 Hz, C{11} –H), 3.33 (t, 2H, J = 8.5 Hz,
+C{1} –H), 3.13 (t, 2H, J = 7.0 Hz, C{9} –H); 2.95 (t, 2H, J = 8.5 Hz, C{2} –H); 2.23 (dt,
+2H, J = 7.5, 7.0 Hz, C{10} –H)",COC(=O)C(CCN1CCc2ccccc21)C(=O)OC,3630
+177,Dimethyl 2-(2-(indolin-1-yl)ethyl)malonate,13C NMR,"(101 MHz, CDCl3)  169.9 (CO2Me), 152.3
+(C{8}), 130.1 (C{3}), 127.5 (C{6}), 124.6 (C{4}), 118.1 (C{5}), 107.3 (C{7}), 53.5 (C{1}),
+52.7 (CO2Me), 49.4 (C{11}), 47.5 (C{9}), 28.7 (C{2}), 27.1 (C{10})",COC(=O)C(CCN1CCc2ccccc21)C(=O)OC,3631
+178,Dimethyl 2-(2-(indolin-1-yl)ethyl)malonate,MS,"(m/z +ESI):
+Found: [M+H]+, 278.1. C15H20NO4
++ requires 278.1",COC(=O)C(CCN1CCc2ccccc21)C(=O)OC,3632
+179,"Dimethyl 2-(3-(1,3-dimethyl-2,6-dioxo-1,2,3,6-tetrahydro-7H-purin-7-yl)propyl)
+malonate",Rf,"0.27 (EtOAc, KMnO4)",,3836
+180,"Dimethyl 2-(3-(1,3-dimethyl-2,6-dioxo-1,2,3,6-tetrahydro-7H-purin-7-yl)propyl)
+malonate",1H NMR,"(500 MHz, CDCl3)  7.55 (s, 1H,
+C{1} –H), 4.30 (t, 2H, J = 6.5 Hz, C{6} –H), 3.72 (s, 6H, CO2Me), 3.58 (s, 3H, C{10} –H),
+3.40 (s, 3H, C{11} –H), 3.39 (t, 1H, J = 7.0 Hz, C{9} –H), 1.99–1.85 (m, 4H, C{7, 8} –H)",,3837
+181,"Dimethyl 2-(3-(1,3-dimethyl-2,6-dioxo-1,2,3,6-tetrahydro-7H-purin-7-yl)propyl)
+malonate",13C NMR,"(126 MHz, CDCl3)  169.3 (CO2Me), 155.1 (C{4}), 151.7 (C{3}), 149.0 (C{2}),
+140.9 (C{1}), 106.9 (C{5}), 52.7 (CO2Me), 50.8 (C{9}), 46.7 (C{8}), 29.8 (C{10}), 28.5
+(C{7}), 28.0 (C{11}), 25.4 (C{8})",,3838
+182,"Dimethyl 2-(3-(1,3-dimethyl-2,6-dioxo-1,2,3,6-tetrahydro-7H-purin-7-yl)propyl)
+malonate",IR,"(film) 2955w, 1733m, 1702s, 1657s, 1234m",,3839
+183,"Dimethyl 2-(3-(1,3-dimethyl-2,6-dioxo-1,2,3,6-tetrahydro-7H-purin-7-yl)propyl)
+malonate",MS,"(m/z +ESI): Found: [M+H]+, 353.1458. C15H21N4O6
++ requires 353.1456",,3840
+184,Dimethyl 2-(3-(1-((2-(trimethylsilyl)ethoxy)methyl)-1H-pyrazol-5-yl)propyl)malonate,Rf,"0.35 (67% Et2O in PE40–60, KMnO4)",COC(=O)C(CCCc1ccnn1COCC[Si](C)(C)C)C(=O)OC,3739
+185,Dimethyl 2-(3-(1-((2-(trimethylsilyl)ethoxy)methyl)-1H-pyrazol-5-yl)propyl)malonate,1H NMR,"(500 MHz, CDCl3)  7.40 (d, 1H,
+J = 2.0 Hz, C{1} –H), 6.09 (d, 1H, J = 2.0 Hz, C{2} –H), 5.40 (s, 2H, C{8} –H), 3.74
+(s, 6H, CO2Me), 3.55–3.47 (m, 2H, C{9} –H), 3.40 (t, 1H, J = 7.5 Hz, C{7} –H), 2.73
+(t, 2H, J = 7.5 Hz, C{4} –H), 2.03–1.93 (m, 2H, C{6} –H), 1.78–1.66 (m, 2H, C{5} –H),
+0.92–0.82 (m, 2H, C{10} –H), −0.04 (s, 9H, Si(Me)3)",COC(=O)C(CCCc1ccnn1COCC[Si](C)(C)C)C(=O)OC,3740
+186,Dimethyl 2-(3-(1-((2-(trimethylsilyl)ethoxy)methyl)-1H-pyrazol-5-yl)propyl)malonate,13C NMR,"(126 MHz, CDCl3)
+ 169.8 (CO2Me), 142.9 (C{3}), 139.0 (C{1}), 105.6 (C{2}), 77.9 (C{8}), 66.3 (C{9}), 52.7
+(CO2Me), 51.5 (C{7}), 28.5 (C{6}), 26.4 (C{5}), 24.9 (C{4}), 17.9 (C{10}), −1.3 (Si(Me)3)",COC(=O)C(CCCc1ccnn1COCC[Si](C)(C)C)C(=O)OC,3741
+187,Dimethyl 2-(3-(1-((2-(trimethylsilyl)ethoxy)methyl)-1H-pyrazol-5-yl)propyl)malonate,IR,"(film) 2953w, 1736s, 1436m, 1248m, 836w",COC(=O)C(CCCc1ccnn1COCC[Si](C)(C)C)C(=O)OC,3742
+188,Dimethyl 2-(3-(1-((2-(trimethylsilyl)ethoxy)methyl)-1H-pyrazol-5-yl)propyl)malonate,MS,"(m/z +ESI): Found: [M+H]+,
+371.20005. C17H31O5N2
+28Si+ requires 371.19968",COC(=O)C(CCCc1ccnn1COCC[Si](C)(C)C)C(=O)OC,3743
+189,Dimethyl 2-(3-(1-methyl-1H-indol-3-yl)propyl)malonate,Rf,"0.33 (50% Et2O in PE40–60, red in vanillin)",COC(=O)C(CCCc1cn(C)c2ccccc12)C(=O)OC,3789
+190,Dimethyl 2-(3-(1-methyl-1H-indol-3-yl)propyl)malonate,1H NMR,"(500 MHz, CDCl3)  7.56 (ddd,
+1H, J = 8.0, 1.0, 1.0 Hz, C{4} –H), 7.28 (ddd, 1H, J = 8.0, 1.0, 1.0 Hz, C{7} –H), 7.21
+(ddd, 1H, J = 8.0, 7.0, 1.0 Hz, C{6} –H), 7.09 (ddd, 1H, J = 8.0, 7.0, 1.0 Hz, C{5} –H),
+6.84 (s, 1H, C{1} –H), 3.74 (s, 3H, C{9} –H), 3.72 (s, 6H, CO2Me), 3.41 (t, 1H, J = 7.5 Hz,
+C{13} –H), 2.78 (t, 2H, J = 7.5 Hz, C{10} –H), 2.06–1.97 (m, 2H, C{12} –H), 1.78–1.69
+(m, 2H, C{11} –H)",COC(=O)C(CCCc1cn(C)c2ccccc12)C(=O)OC,3790
+191,Dimethyl 2-(3-(1-methyl-1H-indol-3-yl)propyl)malonate,13C NMR,"(126 MHz, CDCl3)  169.9 (CO2Me), 137.0 (C{8}), 127.7
+(C{3}), 126.2 (C{1}), 121.5 (C{6}), 118.9 (C{4}), 118.6 (C{5}), 114.3 (C{2}), 109.1 (C{7}),
+52.5 (CO2Me), 51.6 (C{13}), 32.6 (C{9}), 28.7 (C{12}), 28.0 (C{11}), 24.7 (C{10})",COC(=O)C(CCCc1cn(C)c2ccccc12)C(=O)OC,3791
+192,Dimethyl 2-(3-(1-methyl-1H-indol-3-yl)propyl)malonate,MS,"(m/z +ESI): Found: [M+H]+, 304.2. C17H22NO4
++ requires 304.2",COC(=O)C(CCCc1cn(C)c2ccccc12)C(=O)OC,3792
+193,"Dimethyl 2-(3-(1H-1,2,3-triazol-1-yl)propyl)malonate",Rf,"0.46 (EtOAc, KMnO4)",COC(=O)C(CCCn1ccnn1)C(=O)OC,3692
+194,"Dimethyl 2-(3-(1H-1,2,3-triazol-1-yl)propyl)malonate",1H NMR,"(400 MHz, CDCl3)  7.70 (s, 1H, C{1} –H), 7.56 (s,
+1H, C{2} –H), 4.41 (t, 2H, J = 7.0 Hz, C{3} –H), 3.73 (s, 6H, CO2Me), 3.38 (t, 1H, J = 7.0 Hz,
+C{6} –H), 2.05–1.82 (m, 4H, C{4,5} –H)",COC(=O)C(CCCn1ccnn1)C(=O)OC,3693
+195,"Dimethyl 2-(3-(1H-1,2,3-triazol-1-yl)propyl)malonate",13C NMR,"(101 MHz, CDCl3)  169.4 (CO2Me),
+134.0 (C{1}), 123.5 (C{2}), 52.8 (CO2Me), 51.0 (C{6}), 49.7 (C{3}), 28.0 (C{4}), 25.8
+(C{5})",COC(=O)C(CCCn1ccnn1)C(=O)OC,3694
+196,"Dimethyl 2-(3-(1H-1,2,3-triazol-1-yl)propyl)malonate",MS,"(m/z +ESI): Found: [M+H]+, 242.11364. C10H16O4N3
++ requires 242.11353.",COC(=O)C(CCCn1ccnn1)C(=O)OC,3695
+197,Dimethyl 2-(3-(1H-imidazol-1-yl)propyl)malonate,Rf,"0.14 3% MeOH in CH2Cl2, KMnO4)",COC(=O)C(CCCn1ccnc1)C(=O)OC,3684
+198,Dimethyl 2-(3-(1H-imidazol-1-yl)propyl)malonate,1H NMR,"(400 MHz, CDCl3)  7.46 (br,
+1H, C{3} –H), 7.04 (br, 1H, C{2} –H), 6.89 (br, 1H, C{1} –H), 3.94 (t, 2H, J = 7.0 Hz,
+C{4} –H), 3.71 (d, 6H, J = 1.0 Hz, CO2Me), 3.33 (t, 1H, J = 7.0 Hz, C{7} –H), 1.95–1.75
+(m, 4H, C{6} –H)",COC(=O)C(CCCn1ccnc1)C(=O)OC,3685
+199,Dimethyl 2-(3-(1H-imidazol-1-yl)propyl)malonate,13C NMR,"(101 MHz, CDCl3)  169.4 (CO2Me), 137.1 (C{3}), 129.7
+(C{2}), 118.8 (C{1}), 52.8 (CO2Me), 51.0 (C{7}), 46.6 (C{4}), 28.8 (C{5}), 25.8 (C{6})",COC(=O)C(CCCn1ccnc1)C(=O)OC,3686
+200,Dimethyl 2-(3-(1H-imidazol-1-yl)propyl)malonate,IR,"(film) 2955w, 1729s, 1230m, 1154m, 665m",COC(=O)C(CCCn1ccnc1)C(=O)OC,3687
+201,Dimethyl 2-(3-(1H-imidazol-1-yl)propyl)malonate,MS,"(m/z +ESI): Found: [M+H]+,
+241.11819. C11H17N2O4
++ requires 241.11828",COC(=O)C(CCCn1ccnc1)C(=O)OC,3688
+202,"Dimethyl 2-(3-(1H-indol-1-yl)-3-oxopropyl)-2-((2,2,6,6-tetramethylpiperidin-1-yl)
+oxy)malonate",Rf,"0.52 (30% Et2O in PE40–60, KMnO4)",COC(=O)C(CCC(=O)n1ccc2ccccc21)(ON1C(C)(C)CCCC1(C)C)C(=O)OC,3576
+203,"Dimethyl 2-(3-(1H-indol-1-yl)-3-oxopropyl)-2-((2,2,6,6-tetramethylpiperidin-1-yl)
+oxy)malonate",1H NMR,"(400 MHz, CDCl3)  8.47 (d, 1H,
+J = 8.0 Hz, C{7} –H), 7.60 (d, 1H, J = 4.0 Hz, C{1} –H), 7.57 (ddd, 1H, J = 7.5, 1.0, 1.0 Hz,
+C{4} –H), 7.34 (ddd, 1H, J = 8.5, 7.5, 1.5 Hz, C{6} –H), 7.27 (ddd, 1H, J = 7.5, 1.0, 1.0 Hz,
+C{5} –H), 6.65 (dd, 1H, J = 4.0, 1.0 Hz, C{2} –H), 3.76 (s, 6H, CO2Me), 3.22–3.13 (m,
+2H, C{10} –H), 2.83–2.74 (m, 2H, C{11} –H), 1.66–1.38 (m, 6H, C{15, 16} –H), 1.23 (s, 6H, C{13} –H), 1.15 (s, 6H, C{13’} –H)",COC(=O)C(CCC(=O)n1ccc2ccccc21)(ON1C(C)(C)CCCC1(C)C)C(=O)OC,3577
+204,"Dimethyl 2-(3-(1H-indol-1-yl)-3-oxopropyl)-2-((2,2,6,6-tetramethylpiperidin-1-yl)
+oxy)malonate",IR,"(film) 2935m, 1742s, 1708m, 1453m, 1208m",COC(=O)C(CCC(=O)n1ccc2ccccc21)(ON1C(C)(C)CCCC1(C)C)C(=O)OC,3578
+205,"Dimethyl 2-(3-(1H-indol-1-yl)-3-oxopropyl)-2-((2,2,6,6-tetramethylpiperidin-1-yl)
+oxy)malonate",MS,"(m/z +ESI): Found: [M+H]+, 459.2488. C25H35N2O6
++ requires 459.2490",COC(=O)C(CCC(=O)n1ccc2ccccc21)(ON1C(C)(C)CCCC1(C)C)C(=O)OC,3579
+206,Dimethyl 2-(3-(1H-indol-1-yl)-3-oxopropyl)malonate,Rf,"0.19 (20% EtOAc in PE40–60, KMnO4)",COC(=O)C(CCC(=O)n1ccc2ccccc21)C(=O)OC,3597
+207,Dimethyl 2-(3-(1H-indol-1-yl)-3-oxopropyl)malonate,1H NMR,"(400 MHz, CDCl3)
+ 8.45 (d, 1H, J = 8.0 Hz, C{7} –H), 7.56 (ddd, 1H, J = 7.5, 1.5, 1.0 Hz, C{4} –H), 7.47
+(d, 1H, J = 4.0 Hz, C{1} –H), 7.35 (ddd, 1H, J = 8.5, 7.0, 1.5 Hz, C{6} –H), 7.27 (td, 1H,
+J = 7.5, 1.0 Hz, C{5} –H), 6.65 (dd, 1H, J = 4.0, 1.0 Hz, C{2} –H), 3.77 (s, 6H, CO2Me),
+3.66 (t, 1H, J = 7.0 Hz, C{12} –H), 3.05 (t, 2H, J = 7.0 Hz, C{10} –H), 2.44 (dt, 2H, J = 7.0,
+7.0 Hz, C{11} –H)",COC(=O)C(CCC(=O)n1ccc2ccccc21)C(=O)OC,3598
+208,Dimethyl 2-(3-(1H-indol-1-yl)-3-oxopropyl)malonate,13C NMR,"(101 MHz, CDCl3)  170.3 (C{9}), 169.6 (CO2Me), 135.8
+(C{8}), 130.5 (C{3}), 125.4 (C{6}), 124.6 (C{1}), 123.9 (C{5}), 121.0 (C{4}), 116.7 (C{7}),
+109.6 (C{2}), 52.8 (CO2Me), 50.4 (C{12}), 33.0 (C{10}), 23.7 (C{11})",COC(=O)C(CCC(=O)n1ccc2ccccc21)C(=O)OC,3599
+209,Dimethyl 2-(3-(1H-indol-1-yl)-3-oxopropyl)malonate,MS,"(m/z +ESI):
+Found: [M+Na]+, 326.0. C16H17NNaO5
++ requires 326.1",COC(=O)C(CCC(=O)n1ccc2ccccc21)C(=O)OC,3600
+210,Dimethyl 2-(3-(1H-indol-1-yl)propyl)malonate,Rf,"0.42 (30% EtOAc in PE40–60, KMnO4)",COC(=O)C(CCCn1ccc2ccccc21)C(=O)OC,3605
+211,Dimethyl 2-(3-(1H-indol-1-yl)propyl)malonate,1H NMR,"(400 MHz, CDCl3)  7.63 (d, 1H,
+J = 8.0 Hz, C{4} –H), 7.32 (d, 1H, J = 8.5 Hz, C{7} –H), 7.21 (ddd, 1H, J = 8.5, 7.0,
+1.0 Hz, C{6} –H), 7.13–7.06 (m, 2H, C{5} –H), 6.49 (d, 1H, J = 3.0 Hz, C{2} –H), 4.15 (t,
+2H, J = 6.5 Hz, C{9} –H), 3.70 (s, 6H, CO2Me), 3.34 (t, 1H, J = 7.0 Hz, C{12} –H), 2.00–1.84
+(m, 4H, C{10, 11} –H)",COC(=O)C(CCCn1ccc2ccccc21)C(=O)OC,3606
+212,Dimethyl 2-(3-(1H-indol-1-yl)propyl)malonate,13C NMR,"(101 MHz, CDCl3)  169.6 (CO2Me), 136.0 (C{8}), 128.8
+(C{3}), 127.8 (C{1}), 121.7 (C{6}), 121.2 (C{4}), 119.5 (C{5}), 109.4 (C{7}), 101.5 (C{2}),
+52.7 (CO2Me), 51.3 (C{12}), 46.0 (C{9}), 28.0 (C{10}), 26.3 (C{11})",COC(=O)C(CCCn1ccc2ccccc21)C(=O)OC,3607
+213,Dimethyl 2-(3-(1H-indol-1-yl)propyl)malonate,MS,"(m/z +ESI):
+Found: [M+H]+, 290.1. C16H20NO4
++ requires 290.2",COC(=O)C(CCCn1ccc2ccccc21)C(=O)OC,3608
+214,Dimethyl 2-(3-(1H-pyrrol-1-yl)propyl)malonate,Rf,"0.27 (20% EtOAc in PE40–60, KMnO4)",COC(=O)C(CCCn1cccc1)C(=O)OC,3616
+215,Dimethyl 2-(3-(1H-pyrrol-1-yl)propyl)malonate,1H NMR,"(400 MHz, CDCl3)  6.63 (t, 2H,
+J = 2.0 Hz, C{2} –H), 6.14 (t, 2H, J = 2.0 Hz, C{1} –H), 3.90 (t, 2H, J = 7.0 Hz, C{3} –H),
+3.73 (s, 6H, CO2Me), 3.33 (t, 1H, J = 7.5 Hz, C{6} –H), 1.95–1.85 (m, 2H, C{5} –H), 1.85–1.74
+(m, 2H, C{4} –H)",COC(=O)C(CCCn1cccc1)C(=O)OC,3617
+216,Dimethyl 2-(3-(1H-pyrrol-1-yl)propyl)malonate,13C NMR,"(101 MHz, CDCl3)  169.6 (CO2Me), 120.6 (C{2}), 108.3
+(C{1}), 52.7 (CO2Me), 51.3 (C{6}), 49.2 (C{3}), 29.4 (C{4}), 26.2 (C{5})",COC(=O)C(CCCn1cccc1)C(=O)OC,3618
+217,Dimethyl 2-(3-(1H-pyrrol-1-yl)propyl)malonate,MS,"(m/z
++ESI): Found: [M+Na]+, 262.1. C12H17NNaO4
++ requires 262.1",COC(=O)C(CCCn1cccc1)C(=O)OC,3619
+218,"Dimethyl 2-(3-(1H-pyrrolo[2,3-b]pyridin-1-yl)propyl)malonate",Rf,"0.19 (33% EtOAc in PE40–60, KMnO4)",COC(=O)C(CCCn1ccc2cccnc21)C(=O)OC,3827
+219,"Dimethyl 2-(3-(1H-pyrrolo[2,3-b]pyridin-1-yl)propyl)malonate",1H NMR,"(500 MHz, CDCl3)  8.30 (dd, 1H,
+J = 4.5, 1.5 Hz, C{6} –H), 7.91 (dd, 1H, J = 8.0, 1.5 Hz, C{4} –H), 7.21 (d, 1H, J = 3.5 Hz,
+C{1} –H), 7.05 (dd, 1H, J = 8.0, 4.5 Hz, C{5} –H), 6.46 (d, 1H, J = 3.5 Hz, C{2} –H),
+4.38–4.28 (m, 2H, C{8} –H), 3.70 (s, 6H, CO2Me), 3.46–3.35 (m, 1H, C{11} –H), 1.99–1.88
+(m, 4H, C{9, 10} –H)",COC(=O)C(CCCn1ccc2cccnc21)C(=O)OC,3828
+220,"Dimethyl 2-(3-(1H-pyrrolo[2,3-b]pyridin-1-yl)propyl)malonate",13C NMR,"(126 MHz, CDCl3)  169.6 (CO2Me), 147.3 (C{7}),
+142.6 (C{6}), 129.0 (C{4}), 127.9 (C{1}), 120.7 (C{3}), 115.7 (C{5}), 99.7 (C{2}), 52.6
+(CO2Me), 51.1 (C{11}), 44.1 (C{8}), 28.0 (C{9/10}), 26.0 (C{9/10})",COC(=O)C(CCCn1ccc2cccnc21)C(=O)OC,3829
+221,"Dimethyl 2-(3-(1H-pyrrolo[2,3-b]pyridin-1-yl)propyl)malonate",IR,"(film) 2955w,
+1734s, 1428m, 1234m, 776w",COC(=O)C(CCCn1ccc2cccnc21)C(=O)OC,3830
+222,"Dimethyl 2-(3-(1H-pyrrolo[2,3-b]pyridin-1-yl)propyl)malonate",MS,"(m/z +ESI): Found: [M+H]+, 291.1341. C15H19N2O4
++
+requires 291.1339",COC(=O)C(CCCn1ccc2cccnc21)C(=O)OC,3831
+223,Dimethyl 2-(3-(2-methylthiazol-5-yl)propyl)malonate,Rf,"0.24 (50% Et2O in PE40–60, KMnO4)",COC(=O)C(CCCc1cnc(C)s1)C(=O)OC,3780
+224,Dimethyl 2-(3-(2-methylthiazol-5-yl)propyl)malonate,1H NMR,"(500 MHz, CDCl3)  7.28 (t, 1H,
+J = 1.0 Hz, C{3} –H), 3.74 (s, 6H, CO2Me), 3.37 (t, 1H, J = 7.5 Hz, C{8} –H), 2.80 (t, 2H, J = 7.5 Hz, C{5} –H), 2.64 (s, 3H, C{1} –H), 2.00–1.90 (m, 2H, C{7} –H), 1.71–1.61
+(m, 2H, C{6} –H)",COC(=O)C(CCCc1cnc(C)s1)C(=O)OC,3781
+225,Dimethyl 2-(3-(2-methylthiazol-5-yl)propyl)malonate,13C NMR,"(126 MHz, CDCl3)  169.7 (CO2Me), 164.7 (C{2}), 139.3
+(C{3}), 138.1 (C{4}), 52.7 (CO2Me), 51.5 (C{8}), 29.3 (C{6}), 28.2 (C{7}), 26.8 (C{5}),
+19.4 (C{1})",COC(=O)C(CCCc1cnc(C)s1)C(=O)OC,3782
+226,Dimethyl 2-(3-(2-methylthiazol-5-yl)propyl)malonate,IR,"(film) 2955w, 1732s, 1436m, 1157s, 638w",COC(=O)C(CCCc1cnc(C)s1)C(=O)OC,3783
+227,Dimethyl 2-(3-(2-methylthiazol-5-yl)propyl)malonate,MS,"(m/z +ESI):
+Found: [M+H]+, 272.09506. C12H18O4N32S+ requires 272.09511",COC(=O)C(CCCc1cnc(C)s1)C(=O)OC,3784
+228,"Dimethyl 2-(3-(4-chloro-7H-pyrrolo[2,3-d]pyrimidin-7-yl)propyl)malonate",Rf,"0.29 (33% EtOAc in PE40–60, KMnO4)",COC(=O)C(CCCn1ccc2c(Cl)ncnc21)C(=O)OC,3818
+229,"Dimethyl 2-(3-(4-chloro-7H-pyrrolo[2,3-d]pyrimidin-7-yl)propyl)malonate",1H NMR,"(500 MHz, CDCl3)  8.63 (s, 1H,
+C{5} –H), 7.25 (d, 1H, J = 3.5 Hz, C{1} –H), 6.62 (d, 1H, J = 3.5 Hz, C{2} –H), 4.30 (t, 2H,
+J = 6.5 Hz, C{7} –H), 3.71 (s, 6H, CO2Me), 3.41 (t, 1H, J = 7.0 Hz, C{10} –H), 1.97–1.84
+(m, 4H, C{8, 9} –H)",COC(=O)C(CCCn1ccc2c(Cl)ncnc21)C(=O)OC,3819
+230,"Dimethyl 2-(3-(4-chloro-7H-pyrrolo[2,3-d]pyrimidin-7-yl)propyl)malonate",13C NMR,"(126 MHz, CDCl3)  169.3 (CO2Me), 152.0 (C{4}), 150.9
+(C{6}), 150.4 (C{5}), 129.1 (C{1}), 117.5 (C{3}), 99.8 (C{2}), 52.6 (CO2Me), 50.8 (C{10}),
+44.6 (C{7}), 27.8 (C{8}), 25.8 (C{9})",COC(=O)C(CCCn1ccc2c(Cl)ncnc21)C(=O)OC,3820
+231,"Dimethyl 2-(3-(4-chloro-7H-pyrrolo[2,3-d]pyrimidin-7-yl)propyl)malonate",IR,"(film) 2954w, 1733s, 1352m, 1234m, 927w",COC(=O)C(CCCn1ccc2c(Cl)ncnc21)C(=O)OC,3821
+232,"Dimethyl 2-(3-(4-chloro-7H-pyrrolo[2,3-d]pyrimidin-7-yl)propyl)malonate",MS,"(m/z +ESI): Found: [M+H]+, 326.0904. C14H17
+35ClN3O4
++ requires 326.0902",COC(=O)C(CCCn1ccc2c(Cl)ncnc21)C(=O)OC,3822
+233,Dimethyl 2-(3-(4-phenyl-1H-pyrazol-1-yl)propyl)malonate,Rf,"0.31 (50% EtOAc in PE40–60, KMnO4)",COC(=O)C(CCCn1cc(-c2ccccc2)cn1)C(=O)OC,3753
+234,Dimethyl 2-(3-(4-phenyl-1H-pyrazol-1-yl)propyl)malonate,1H NMR,"(500 MHz, CDCl3)
+ 7.77 (d, 1H, J = 1.0 Hz, C{6} –H), 7.63 (d, 1H, J = 1.0 Hz, C{7} –H), 7.50–7.44 (m,
+2H, C{3} –H), 7.39–7.32 (m, 2H, C{2} –H), 7.25–7.18 (m, 1H, C{1} –H), 4.21–4.13 (m,
+2H, C{8} –H), 3.73 (s, 6H, CO2Me), 3.43–3.36 (m, 1H, C{11} –H), 2.01–1.89 (m, 4H,
+C{9, 10} –H)",COC(=O)C(CCCn1cc(-c2ccccc2)cn1)C(=O)OC,3754
+235,Dimethyl 2-(3-(4-phenyl-1H-pyrazol-1-yl)propyl)malonate,13C NMR,"(126 MHz, CDCl3)  169.4 (CO2Me), 136.9 (C{6}), 132.6 (C{4}),
+128.8 (C{2}), 126.4 (C{1}), 126.0 (C{7}), 125.5 (C{3}), 123.0 (C{5}), 52.6 (CO2Me), 51.8
+(C{8}), 51.1 (C{11}), 28.0 (C{9}), 25.9 (C{10})",COC(=O)C(CCCn1cc(-c2ccccc2)cn1)C(=O)OC,3755
+236,Dimethyl 2-(3-(4-phenyl-1H-pyrazol-1-yl)propyl)malonate,IR,"(film) 2954w, 1733s, 1608m, 1436m,
+762m;",COC(=O)C(CCCn1cc(-c2ccccc2)cn1)C(=O)OC,3756
+237,Dimethyl 2-(3-(4-phenyl-1H-pyrazol-1-yl)propyl)malonate,MS,"(m/z +ESI): Found: [M+H]+, 317.1497. C17H21O4N2
++ requires 317.1496",COC(=O)C(CCCn1cc(-c2ccccc2)cn1)C(=O)OC,3757
+238,Dimethyl 2-(3-(5-(ethoxycarbonyl)-1-methyl-1H-pyrrol-3-yl)prop-2-yn-1-yl)malonate,Rf,"0.17 (30% Et2O in PE40–60, KMnO4)",CCOC(=O)c1cc(C#CCC(C(=O)OC)C(=O)OC)cn1C,3710
+239,Dimethyl 2-(3-(5-(ethoxycarbonyl)-1-methyl-1H-pyrrol-3-yl)prop-2-yn-1-yl)malonate,1H NMR,"(500 MHz, CDCl3)  6.92 (d, 1H,
+J = 2.0 Hz, C{2} –H), 6.85 (d, 1H, J = 2.0 Hz, C{4} –H), 4.26 (q, 2H, J = 7.0 Hz, C{9} –H),
+3.87 (s, 3H, N-Me), 3.77 (s, 6H, CO2Me), 3.65 (t, 1H, J = 8.0 Hz, C{8} –H), 2.96 (d,
+2H, J = 8.0 Hz, C{7} –H), 1.33 (t, 3H, J = 7.0 Hz, C{10} –H)",CCOC(=O)c1cc(C#CCC(C(=O)OC)C(=O)OC)cn1C,3711
+240,Dimethyl 2-(3-(5-(ethoxycarbonyl)-1-methyl-1H-pyrrol-3-yl)prop-2-yn-1-yl)malonate,13C NMR,"(126 MHz,
+CDCl3)  168.7 (CO2Me), 161.0 (CO2Et), 132.3 (C{4}), 122.6 (C{1}), 120.6 (C{2}), 103.9
+(C{3}), 83.8 (C{6}), 76.4 (C{5}), 60.2 (C{9}), 52.9 (CO2Me), 51.5 (C{8}), 37.1 (N-Me),
+19.7 (C{7}), 14.5 (C{10})",CCOC(=O)c1cc(C#CCC(C(=O)OC)C(=O)OC)cn1C,3712
+241,Dimethyl 2-(3-(5-(ethoxycarbonyl)-1-methyl-1H-pyrrol-3-yl)prop-2-yn-1-yl)malonate,IR,"(film) 2956w, 1737s, 1702s, 1437m, 1101m",CCOC(=O)c1cc(C#CCC(C(=O)OC)C(=O)OC)cn1C,3713
+242,Dimethyl 2-(3-(5-(ethoxycarbonyl)-1-methyl-1H-pyrrol-3-yl)prop-2-yn-1-yl)malonate,MS,"(m/z
++ESI): Found: [M+Na]+, 344.1104. C16H19NNaO6
++ requires 344.1105",CCOC(=O)c1cc(C#CCC(C(=O)OC)C(=O)OC)cn1C,3714
+243,Dimethyl 2-(3-(5-(ethoxycarbonyl)-1-methyl-1H-pyrrol-3-yl)propyl) malonate,Rf,"0.35 (50% Et2O in PE40–60, KMnO4)",,3715
+244,Dimethyl 2-(3-(5-(ethoxycarbonyl)-1-methyl-1H-pyrrol-3-yl)propyl) malonate,1H NMR,"(500 MHz, CDCl3)  6.75 (d, 1H,
+J = 2.0 Hz, C{2} –H), 6.57 (d, 1H, J = 2.0 Hz, C{4} –H), 4.25 (q, 2H, J = 7.0 Hz, C{9} –H),
+3.86 (s, 3H, N-Me), 3.73 (s, 6H, CO2Me), 3.37 (t, 1H, J = 7.5 Hz, C{8} –H), 2.44 (t, 2H,
+J = 7.5 Hz, C{5} –H), 1.97–1.89 (m, 2H, C{7} –H), 1.61–1.52 (m, 2H, C{6} –H), 1.33 (t, 3H,
+J = 7.0 Hz, C{10} –H)",,3716
+245,Dimethyl 2-(3-(5-(ethoxycarbonyl)-1-methyl-1H-pyrrol-3-yl)propyl) malonate,13C NMR,"(126 MHz, CDCl3)  170.0 (CO2Me), 161.5 (CO2Et), 127.7
+(C{4}), 122.9 (C{3}), 122.4 (C{1}), 117.1 (C{2}), 59.8 (C{9}), 52.6 (CO2Me), 51.7 (C{8}),
+36.7 (N-Me), 28.8 (C{6}), 28.6 (C{7}),26.3 (C{5}),14.6 (C{10})",,3717
+246,Dimethyl 2-(3-(5-(ethoxycarbonyl)-1-methyl-1H-pyrrol-3-yl)propyl) malonate,IR,"(film) 2954w, 1734s, 1697s, 1435m, 1097m",,3718
+247,Dimethyl 2-(3-(5-(ethoxycarbonyl)-1-methyl-1H-pyrrol-3-yl)propyl) malonate,MS,"(m/z +ESI): Found: [M+Na]+, 348.1418. C16H23NNaO6
++ requires
+348.1418",,3719
+248,Dimethyl 2-(3-(benzo[b]thiophen-3-yl)prop-2-yn-1-yl)malonate,Rf,"0.33 (33 % Et2O in PE40–60, KMnO4)",COC(=O)C(CC#Cc1csc2ccccc12)C(=O)OC,3793
+249,Dimethyl 2-(3-(benzo[b]thiophen-3-yl)prop-2-yn-1-yl)malonate,1H NMR,"(500 MHz, CDCl3)  7.88 (ddd,
+1H, J = 8.0, 1.0, 1.0 Hz, C{5} –H), 7.83 (ddd, 1H, J = 8.0, 1.0, 1.0 Hz, C{2} –H), 7.53 (s,
+1H, C{8} –H), 7.43 (ddd, 1H, J = 8.0, 7.0, 1.0 Hz, C{4} –H), 7.38 (ddd, 1H, J = 8.0, 7.0,
+1.0 Hz, C{3} –H), 3.81 (s, 6H, CO2Me), 3.77 (t, 1H, J = 7.5 Hz, C{12} –H), 3.12 (d, 2H,
+J = 7.5 Hz, C{11} –H)",COC(=O)C(CC#Cc1csc2ccccc12)C(=O)OC,3794
+250,Dimethyl 2-(3-(benzo[b]thiophen-3-yl)prop-2-yn-1-yl)malonate,13C NMR,"(126 MHz, CDCl3)  168.6 (CO2Me), 139.5 (C{1}), 138.9
+(C{6}), 129.7 (C{8}), 125.1 (C{3}), 124.8 (C{4}), 123.0 (C{5}), 122.7 (C{2}), 118.3 (C{7}),
+87.9 (C{10}), 76.4 (C{9}), 53.0 (CO2Me), 51.4 (C{12}), 19.8 (C{11})",COC(=O)C(CC#Cc1csc2ccccc12)C(=O)OC,3795
+251,Dimethyl 2-(3-(benzo[b]thiophen-3-yl)prop-2-yn-1-yl)malonate,IR,"(film) 2954w,
+1737s, 1435m, 1159m, 760w",COC(=O)C(CC#Cc1csc2ccccc12)C(=O)OC,3796
+252,Dimethyl 2-(3-(benzo[b]thiophen-3-yl)prop-2-yn-1-yl)malonate,MS,"(m/z +ESI): Found: [M+Na]+, 325.0505. C16H14O4NaS+
+requires 325.0505",COC(=O)C(CC#Cc1csc2ccccc12)C(=O)OC,3797
+253,Dimethyl 2-(3-(benzo[b]thiophen-3-yl)propyl)malonate,Rf,"0.14 (20 % Et2O in PE40–60, KMnO4)",COC(=O)C(CCCc1csc2ccccc12)C(=O)OC,3798
+254,Dimethyl 2-(3-(benzo[b]thiophen-3-yl)propyl)malonate,1H NMR,"(500 MHz, CDCl3)  7.85 (d, 1H,
+J = 8.0 Hz, C{2} –H), 7.72 (d, 1H, J = 8.0 Hz, C{5} –H), 7.38 (ddd, 1H, J = 8.0, 7.5,
+1.5 Hz, C{4} –H), 7.34 (ddd, 1H, J = 7.5, 7.0, 1.5 Hz, C{3} –H), 7.11 (s, 1H, C{8} –H), 3.73
+(s, 6H, CO2Me), 3.42 (t, 1H, J = 7.5 Hz, C{12} –H), 2.88 (t, 2H, J = 7.5 Hz, C{9} –H),
+2.08–1.99 (m, 2H, C{11} –H), 1.84–1.73 (m, 2H, C{10} –H)",COC(=O)C(CCCc1csc2ccccc12)C(=O)OC,3799
+255,Dimethyl 2-(3-(benzo[b]thiophen-3-yl)propyl)malonate,13C NMR,"(126 MHz, CDCl3)
+ 169.9 (CO2Me), 140.6 (C{1}), 139.0 (C{6}), 136.0 (C{7}), 124.3 (C{3}), 124.0 (C{4}),
+123.0 (C{2}), 121.7 (C{5}), 121.5 (C{8}), 52.7 (CO2Me), 51.7 (C{12}), 28.8 (C{11}), 28.3
+(C{9}), 26.9 (C{10})",COC(=O)C(CCCc1csc2ccccc12)C(=O)OC,3800
+256,Dimethyl 2-(3-(benzo[b]thiophen-3-yl)propyl)malonate,IR,"(film) 2952w, 1732s, 1434m, 1149m, 762w",COC(=O)C(CCCc1csc2ccccc12)C(=O)OC,3801
+257,Dimethyl 2-(3-(benzo[b]thiophen-3-yl)propyl)malonate,MS,"(m/z +ESI):
+Found: [M+Na]+, 329.0818. C16H18O4NaS+ requires 329.0818",COC(=O)C(CCCc1csc2ccccc12)C(=O)OC,3802
+258,Dimethyl 2-(3-(benzofuran-3-yl)prop-2-yn-1-yl)malonate,Rf,"0.19 (20% Et2O in PE40–60, KMnO4)",COC(=O)C(CC#Cc1coc2ccccc12)C(=O)OC,3803
+259,Dimethyl 2-(3-(benzofuran-3-yl)prop-2-yn-1-yl)malonate,1H NMR,"(400 MHz, CDCl3)  7.73 (s, 1H,
+C{8} –H), 7.62 (d, 1H, J = 7.0 Hz, C{5} –H), 7.47 (d, 1H, J = 8.5 Hz, C{2} –H), 7.36–7.25
+(m, 2H, C{3, 4} –H), 3.80 (s, 6H, CO2Me), 3.74 (t, 1H, J = 7.5 Hz, C{12} –H), 3.09 (d, 2H,
+J = 7.5 Hz, C{11} –H)",COC(=O)C(CC#Cc1coc2ccccc12)C(=O)OC,3804
+260,Dimethyl 2-(3-(benzofuran-3-yl)prop-2-yn-1-yl)malonate,13C NMR,"(126 MHz, CDCl3)  168.5 (CO2Me), 154.6 (C{1}), 147.5
+(C{8}), 127.9 (C{6}), 125.2 (C{3}), 123.4 (C{4}), 120.5 (C{5}), 111.7 (C{2}), 104.4 (C{7}),
+90.1 (C{10}), 72.1 (C{9}), 53.0 (CO2Me), 51.4 (C{12}), 19.9 (C{11})",COC(=O)C(CC#Cc1coc2ccccc12)C(=O)OC,3805
+261,Dimethyl 2-(3-(benzofuran-3-yl)prop-2-yn-1-yl)malonate,IR,"(film) 2955w,
+1737s, 1435m, 1089w, 749m",COC(=O)C(CC#Cc1coc2ccccc12)C(=O)OC,3806
+262,Dimethyl 2-(3-(benzofuran-3-yl)prop-2-yn-1-yl)malonate,MS,"(m/z +ESI): Found: [M+H]+, 287.0916. C16H15O5
++ requires
+287.0914",COC(=O)C(CC#Cc1coc2ccccc12)C(=O)OC,3807
+263,Dimethyl 2-(3-(benzofuran-3-yl)propyl)malonate,Rf,"0.40 (50% Et2O in PE40–60, KMnO4)",COC(=O)C(CCCc1coc2ccccc12)C(=O)OC,3808
+264,Dimethyl 2-(3-(benzofuran-3-yl)propyl)malonate,1H NMR,"(500 MHz, CDCl3)  7.53 (d, 1H,
+J = 8.0 Hz, C{2} –H), 7.46 (d, 1H, J = 8.0 Hz, C{5} –H), 7.42 (s, 1H, C{8} –H), 7.28
+(dd, 1H, J = 8.0, 7.5 Hz, C{4} –H), 7.23 (dd, 1H, J = 8.0, 7.5 Hz, C{3} –H), 3.73 (s, 6H,
+CO2Me), 3.41 (t, 1H, C{12} –H), 2.71 (t, 2H, C{9} –H), 2.06 – 1.97 (m, 2H, C{11} –H), 1.80
+– 1.71 (m, 2H, C{10} –H)",COC(=O)C(CCCc1coc2ccccc12)C(=O)OC,3809
+265,Dimethyl 2-(3-(benzofuran-3-yl)propyl)malonate,13C NMR,"(126 MHz, CDCl3)  169.9 (CO2Me), 155.5 (C{1}),
+141.3 (C{8}), 128.2 (C{6}), 124.3 (C{4}), 122.4 (C{3}), 119.7 (C{7}), 119.7 (C{2}), 111.6
+(C{5}), 52.6 (CO2Me), 51.6 (C{12}), 28.7 (C{11}), 26.8 (C{10}), 23.4 (C{9})",COC(=O)C(CCCc1coc2ccccc12)C(=O)OC,3810
+266,Dimethyl 2-(3-(benzofuran-3-yl)propyl)malonate,IR,"(film)
+2953w, 1733s, 1453m, 1153s, 748m",COC(=O)C(CCCc1coc2ccccc12)C(=O)OC,3811
+267,Dimethyl 2-(3-(benzofuran-3-yl)propyl)malonate,MS,"(m/z +ESI): Found: [M+H]+, 291.1227. C16H19O5
++
+requires 291.1227",COC(=O)C(CCCc1coc2ccccc12)C(=O)OC,3812
+268,Dimethyl 2-(3-(indolin-1-yl)-3-oxopropyl)malonate,Rf,"0.38 (50% EtOAc in PE40–60, KMnO4)",COC(=O)C(CCC(=O)N1CCc2ccccc21)C(=O)OC,3593
+269,Dimethyl 2-(3-(indolin-1-yl)-3-oxopropyl)malonate,1H NMR,"(400 MHz, CDCl3)  8.19 (d, 1H, J = 8.0 Hz, C{7} –H), 7.20–7.12 (m, 2H, C{4,6} –H),
+6.98 (dd, 1H, J = 7.5, 7.5 Hz, C{5} –H), 3.98 (t, 2H, J = 8.5 Hz, C{1} –H), 3.73 (s, 6H,
+CO2Me), 3.63 (t, 1H, J = 7.0 Hz, C{12} –H), 3.16 (t, 2H, J = 8.5 Hz, C{2} –H), 2.49 (t, 2H,
+J = 7.0 Hz, C{10} –H), 2.31 (dt, 2H, J = 7.0, 7.0 Hz, C{11} –H)",COC(=O)C(CCC(=O)N1CCc2ccccc21)C(=O)OC,3594
+270,Dimethyl 2-(3-(indolin-1-yl)-3-oxopropyl)malonate,13C NMR,"(101 MHz,
+CDCl3)  169.7 (9,CO2Me), 143.0 (C{8}), 131.1 (C{3}), 127.6 (C{6}), 124.6 (C{4}), 123.7
+(C{5}), 117.0 (C{7}), 52.6 (CO2Me), 50.5 (C{12}), 47.9 (C{1}), 32.8 (C{10}), 28.0 (C{2}),
+23.6 (C{11})",COC(=O)C(CCC(=O)N1CCc2ccccc21)C(=O)OC,3595
+271,Dimethyl 2-(3-(indolin-1-yl)-3-oxopropyl)malonate,MS,"(m/z +ESI): Found: [M+Na]+, 328.0. C16H19NNaO5
++ requires 328.3",COC(=O)C(CCC(=O)N1CCc2ccccc21)C(=O)OC,3596
+272,"Dimethyl 2-(3-(isoxazol-4-yl)propyl)-2-((2,2,6,6-tetramethylpiperidin-1-yl)oxy)malonate",Rf,"0.32 (40% Et2O in PE40–60, KMnO4)",COC(=O)C(CCCc1cnoc1)(ON1C(C)(C)CCCC1(C)C)C(=O)OC,3580
+273,"Dimethyl 2-(3-(isoxazol-4-yl)propyl)-2-((2,2,6,6-tetramethylpiperidin-1-yl)oxy)malonate",1H NMR,"(400 MHz, CDCl3)  8.24 (t,
+1H, J = 1.0 Hz, C{1} –H), 8.15 (s, 1H, C{3} –H), 3.75 (s, 6H, CO2Me), 2.50 (t, 2H,
+J = 7.5 Hz, C{4} –H), 2.32–2.13 (m, 2H, C{6} –H), 1.71–1.59 (m, 2H, C{5} –H), 1.58–1.52
+(m, 1H, C{10} –H), 1.52–1.31 (m, 4H, C{9} –H), 1.30–1.22 (m, 1H, C{10’} –H), 1.18 (s,
+6H, C{11} –H), 1.06 (s, 6H, C{11’} –H)",COC(=O)C(CCCc1cnoc1)(ON1C(C)(C)CCCC1(C)C)C(=O)OC,3581
+274,"Dimethyl 2-(3-(isoxazol-4-yl)propyl)-2-((2,2,6,6-tetramethylpiperidin-1-yl)oxy)malonate",13C NMR,"(101 MHz, CDCl3)  169.4 (CO2Me),
+154.1 (C{1}), 149.9 (C{3}), 118.3 (C{2}), 88.4 (C{7}), 60.6 (C{8}), 51.8 (CO2Me), 40.8
+(C{9}), 33.5 (C{6}), 33.0 (C{11}), 24.3 (C{5}), 22.0 (C{4}), 20.5 (C{11’}), 16.6 (C{10})",COC(=O)C(CCCc1cnoc1)(ON1C(C)(C)CCCC1(C)C)C(=O)OC,3582
+275,"Dimethyl 2-(3-(isoxazol-4-yl)propyl)-2-((2,2,6,6-tetramethylpiperidin-1-yl)oxy)malonate",IR,"(film) 2936m, 1743s, 1364w, 1009w, 699w",COC(=O)C(CCCc1cnoc1)(ON1C(C)(C)CCCC1(C)C)C(=O)OC,3583
+276,"Dimethyl 2-(3-(isoxazol-4-yl)propyl)-2-((2,2,6,6-tetramethylpiperidin-1-yl)oxy)malonate",MS,"(m/z +ESI): Found: [M+H]+,
+397.2338. C20H33N2O6
++ requires 397.2333",COC(=O)C(CCCc1cnoc1)(ON1C(C)(C)CCCC1(C)C)C(=O)OC,3584
+277,Dimethyl 2-(3-(isoxazol-4-yl)propyl)malonate,Rf,"0.23 (40% Et2O in PE40–60, KMnO4)",COC(=O)C(CCCc1cnoc1)C(=O)OC,3696
+278,Dimethyl 2-(3-(isoxazol-4-yl)propyl)malonate,1H NMR,"(400 MHz, CDCl3)  8.22 (t,
+1H, C{1} –H), 8.14 (s, 1H, C{3} –H), 3.73 (s, 6H, CO2Me), 3.37 (t, 1H, J = 7.5 Hz,
+C{7} –H), 2.50 (t, 2H, J = 7.5 Hz, C{4} –H), 1.99–1.87 (m, 2H, C{6} –H), 1.68–1.54 (m,
+2H, C{5} –H)",COC(=O)C(CCCc1cnoc1)C(=O)OC,3697
+279,Dimethyl 2-(3-(isoxazol-4-yl)propyl)malonate,13C NMR,"(101 MHz, CDCl3)  169.7 (CO2Me), 154.5 (C{1}), 150.2 (C{3}), 118.5 (C{2}), 52.7 (CO2Me), 51.4 (C{7}), 28.3 (C{6}), 27.7 (C{5}), 21.9 (C{4})",COC(=O)C(CCCc1cnoc1)C(=O)OC,3698
+280,Dimethyl 2-(3-(isoxazol-4-yl)propyl)malonate,IR,"(film) 2955w, 1731s, 1435m, 1148m, 851w",COC(=O)C(CCCc1cnoc1)C(=O)OC,3699
+281,Dimethyl 2-(3-(isoxazol-4-yl)propyl)malonate,MS,"(m/z +ESI): Found: [M+Na]+,
+264.08419. C11H15O5N23Na+ requires 264.08424",COC(=O)C(CCCc1cnoc1)C(=O)OC,3700
+282,Dimethyl 2-(3-(isoxazol-5-yl)propyl)malonate,Rf,"0.56 (50% EtOAc in PE40–60, KMnO4)",COC(=O)C(CCCc1ccno1)C(=O)OC,3765
+283,Dimethyl 2-(3-(isoxazol-5-yl)propyl)malonate,1H NMR,"(500 MHz, CDCl3)  8.14 (d, 1H,
+J = 2.0 Hz, C{1} –H), 6.01 (dd, 1H, J = 2.0, 1.0 Hz, C{2} –H), 3.74 (s, 6H, CO2Me),
+3.39 (t, 1H, J = 7.5 Hz, C{7} –H), 2.81 (t, 2H, J = 7.5 Hz, C{4} –H), 2.01–1.93 (m, 2H,
+C{6} –H), 1.80–1.69 (m, 2H, C{5} –H)",COC(=O)C(CCCc1ccno1)C(=O)OC,3766
+284,Dimethyl 2-(3-(isoxazol-5-yl)propyl)malonate,13C NMR,"(126 MHz, CDCl3)  171.9 (C{4}),
+169.6 (CO2Me), 150.4 (C{1}), 100.4 (C{2}), 52.8 (CO2Me), 51.4 (C{7}), 28.3 (C{6}), 26.3
+(C{4}), 25.4 (C{5})",COC(=O)C(CCCc1ccno1)C(=O)OC,3767
+285,Dimethyl 2-(3-(isoxazol-5-yl)propyl)malonate,IR,"(film) 2958w, 1731s, 1594w, 1435m, 1154s",COC(=O)C(CCCc1ccno1)C(=O)OC,3768
+286,Dimethyl 2-(3-(isoxazol-5-yl)propyl)malonate,MS,"(m/z +ESI):
+Found: [M+Na]+, 264.08416. C11H15O5N23Na+ requires 264.08424",COC(=O)C(CCCc1ccno1)C(=O)OC,3769
+287,Dimethyl 2-(3-(thiazol-4-yl)prop-2-yn-1-yl)malonate,Rf,"0.39 (40% acetone in PE40–60, KMnO4)",COC(=O)C(CC#Cc1cscn1)C(=O)OC,3770
+288,Dimethyl 2-(3-(thiazol-4-yl)prop-2-yn-1-yl)malonate,1H NMR,"(500 MHz, CDCl3)  8.73 (d, 1H,
+J = 2.0 Hz, C{1} –H), 7.42 (d, 1H, J = 2.0 Hz, C{3} –H), 3.79 (s, 6H, CO2Me), 3.72 (t,
+1H, J = 7.5 Hz, C{7} –H), 3.04 (d, 2H, J = 7.5 Hz, C{6} –H)",COC(=O)C(CC#Cc1cscn1)C(=O)OC,3771
+289,Dimethyl 2-(3-(thiazol-4-yl)prop-2-yn-1-yl)malonate,13C NMR,"(126 MHz,
+CDCl3)  168.4 (CO2Me), 152.4 (C{1}), 138.4 (C{2}), 122.1 (C{3}), 86.1 (C{5}), 76.5 (C{4}),
+53.1 (CO2Me), 50.9 (C{6}), 19.5 (C{7})",COC(=O)C(CC#Cc1cscn1)C(=O)OC,3772
+290,Dimethyl 2-(3-(thiazol-4-yl)prop-2-yn-1-yl)malonate,IR,"(film) 2955w, 1736s, 1436m, 1240m, 1158w",COC(=O)C(CC#Cc1cscn1)C(=O)OC,3773
+291,Dimethyl 2-(3-(thiazol-4-yl)prop-2-yn-1-yl)malonate,MS,"(m/z +ESI): Found: [M+H]+, 254.0483. C11H12O4NS+ requires 254.0482",COC(=O)C(CC#Cc1cscn1)C(=O)OC,3774
+292,Dimethyl 2-(3-(thiazol-4-yl)propyl)malonate,Rf,"0.14 (20% Et2O in PE40–60, KMnO4)",COC(=O)C(CCCc1cscn1)C(=O)OC,3775
+293,Dimethyl 2-(3-(thiazol-4-yl)propyl)malonate,1H NMR,"(500 MHz, CDCl3)  8.79 (d, 1H, J = 2.0 Hz, C{1} –H), 7.00 (s, 1H, C{3} –H), 3.73 (s, 6H, CO2Me), 3.40 (t, 1H, J = 7.5 Hz,
+C{7} –H), 2.88 (t, 2H, J = 7.5 Hz, C{4} –H), 2.00–1.93 (m, 2H, C{6} –H), 1.83–1.74 (m,
+2H, C{5} –H)",COC(=O)C(CCCc1cscn1)C(=O)OC,3776
+294,Dimethyl 2-(3-(thiazol-4-yl)propyl)malonate,13C NMR,"(126 MHz, CDCl3)  169.9 (CO2Me), 157.0 (C{2}), 152.7
+(C{1}), 113.5 (C{3}), 52.7 (CO2Me), 51.6 (C{7}), 30.8 (C{4}), 28.4 (C{6}), 27.0 (C{5})",COC(=O)C(CCCc1cscn1)C(=O)OC,3777
+295,Dimethyl 2-(3-(thiazol-4-yl)propyl)malonate,IR,"(film) 2954w, 1733s, 1436m, 1150m, 731w",COC(=O)C(CCCc1cscn1)C(=O)OC,3778
+296,Dimethyl 2-(3-(thiazol-4-yl)propyl)malonate,MS,"(m/z +ESI): Found: [M+H]+,
+258.0796. C11H16O4NS+ requires 258.0795",COC(=O)C(CCCc1cscn1)C(=O)OC,3779
+297,Dimethyl 2-(3-(thiophen-3-yl)prop-2-yn-1-yl)malonate)-dicarboxylate,Rf,"0.35 (33 % Et2O in PE40–60, KMnO4)",,3720
+298,Dimethyl 2-(3-(thiophen-3-yl)prop-2-yn-1-yl)malonate)-dicarboxylate,1H NMR,"(500 MHz, CDCl3)  7.36 (dd, 1H,
+J = 3.0, 1.0 Hz, C{4} –H), 7.22 (dd, 1H, J = 5.0, 3.0 Hz, C{1} –H), 7.04 (dd, 1H, J = 5.0,
+1.0 Hz, C{2} –H), 3.78 (s, 6H, CO2Me), 3.68 (t, 1H, J = 7.5 Hz, C{8} –H), 2.99 (d, 2H,
+J = 7.5 Hz, C{7} –H)",,3721
+299,Dimethyl 2-(3-(thiophen-3-yl)prop-2-yn-1-yl)malonate)-dicarboxylate,13C NMR,"(126 MHz, CDCl3)  168.6 (CO2Me), 130.1 (C{2}),
+128.6 (C{4}), 125.3 (C{1}), 122.2 (C{3}), 84.9 (C{6}), 77.7 (C{5}), 53.0 (CO2Me), 51.3
+(C{8}), 19.6 (C{7})",,3722
+300,Dimethyl 2-(3-(thiophen-3-yl)prop-2-yn-1-yl)malonate)-dicarboxylate,IR,"(film) 2954w, 1736s, 1436m, 1341m, 785m",,3723
+301,Dimethyl 2-(3-(thiophen-3-yl)prop-2-yn-1-yl)malonate)-dicarboxylate,MS,"(m/z +ESI):
+Found: [M+Na]+, 275.0349. C12H12O4NaS+ requires 275.0349",,3724
+302,Dimethyl 2-(3-(thiophen-3-yl)propyl)malonate,Rf,"0.16 (20 % Et2O in PE40–60, KMnO4)",COC(=O)C(CCCc1ccsc1)C(=O)OC,3725
+303,Dimethyl 2-(3-(thiophen-3-yl)propyl)malonate,1H NMR,"(500 MHz, CDCl3)  7.24 (dd, 1H,
+J = 5.0, 3.0 Hz, C{1} –H), 6.95–6.93 (m, 1H, C{4} –H), 6.92 (dd, 1H, J = 5.0, 1.5 Hz,
+C{2} –H), 3.73 (s, 6H, CO2Me), 3.38 (t, 1H, J = 7.5 Hz, C{8} –H), 2.66 (t, 2H, J = 7.5 Hz,
+C{5} –H), 1.99–1.91 (m, 2H, C{7} –H), 1.70–1.61 (m, 2H, C{6} –H)",COC(=O)C(CCCc1ccsc1)C(=O)OC,3726
+304,Dimethyl 2-(3-(thiophen-3-yl)propyl)malonate,13C NMR,"(126 MHz,
+CDCl3)  169.9 (CO2Me), 142.0 (C{3}), 128.2 (C{2}), 125.5 (C{1}), 120.4 (C{4}), 52.7
+(CO2Me), 51.7 (C{8}), 29.9 (C{5}), 28.6 (C{7}), 28.3 (C{6})",COC(=O)C(CCCc1ccsc1)C(=O)OC,3727
+305,Dimethyl 2-(3-(thiophen-3-yl)propyl)malonate,IR,"(film) 2953w, 1734s,
+1435m, 1154m, 776w",COC(=O)C(CCCc1ccsc1)C(=O)OC,3728
+306,Dimethyl 2-(3-(thiophen-3-yl)propyl)malonate,MS,"(m/z +ESI): Found: [M+Na]+, 279.0663. C12H16O4NaS+ requires
+279.0662",COC(=O)C(CCCc1ccsc1)C(=O)OC,3729
+307,Dimethyl 2-(3-oxo-3-(1H-pyrrol-1-yl)propyl)malonate,Rf,"0.17 (15% EtOAc in PE40–60, KMnO4)",COC(=O)C(CCC(=O)n1cccc1)C(=O)OC,3609
+308,Dimethyl 2-(3-oxo-3-(1H-pyrrol-1-yl)propyl)malonate,1H NMR,"(400 MHz, CDCl3)  7.30 (br,
+2H, C{2} –H), 6.38–6.22 (t, 3H, J = 2.4 Hz, C{1} –H), 3.76 (s, 6H, CO2Me), 3.60 (t, 1H,
+J = 7.0 Hz, C{6} –H), 2.96 (t, 2H, J = 7.0 Hz, C{4} –H), 2.38 (dt, 2H, J = 7.0, 7.0 Hz,
+C{5} –H)",COC(=O)C(CCC(=O)n1cccc1)C(=O)OC,3610
+309,Dimethyl 2-(3-oxo-3-(1H-pyrrol-1-yl)propyl)malonate,13C NMR,"(101 MHz, CDCl3)  169.5 (3,CO2Me), 119.1 (C{2}), 113.4 (C{1}),
+52.8 (CO2Me), 50.3 (C{6}), 31.8 (C{4}), 23.5 (C{5})",COC(=O)C(CCC(=O)n1cccc1)C(=O)OC,3611
+310,Dimethyl 2-(3-oxo-3-(1H-pyrrol-1-yl)propyl)malonate,MS,"(m/z +ESI): Found: [M+Na]+,
+276.0. C12H15NNaO5
++ requires 276.2",COC(=O)C(CCC(=O)n1cccc1)C(=O)OC,3612
+311,Dimethyl 2-(prop-2-yn-1-yl)malonate,Rf,"0.52 (30% Et2O in PE40–60, KMnO4)",C#CCC(C(=O)OC)C(=O)OC,3706
+312,Dimethyl 2-(prop-2-yn-1-yl)malonate,1H NMR,"(400 MHz, CDCl3)  3.77 (s, 6H,
+CO2Me), 3.61 (t, 1H, J = 8.0 Hz, C{4} –H), 2.79 (dd, 2H, J = 8.0, 3.0 Hz, C{3} –H), 2.02
+(t, 1H, J = 3.0 Hz, C{1} –H)",C#CCC(C(=O)OC)C(=O)OC,3707
+313,Dimethyl 2-(prop-2-yn-1-yl)malonate,13C NMR,"(101 MHz, CDCl3)  168.3 (CO2Me), 79.8 (C{2}),
+70.5 (C{1}), 52.8 (C{3}), 50.9 (CO2Me), 18.5 (C{3})",C#CCC(C(=O)OC)C(=O)OC,3708
+314,Dimethyl 2-(prop-2-yn-1-yl)malonate,MS,"(m/z +ESI): Found: [M+H]+,
+171.0. C8H11O4
++ requires 171.0",C#CCC(C(=O)OC)C(=O)OC,3709
+315,Dimethyl 2-hydroxy-2-(3-(isoxazol-4-yl)propyl)malonate,1H NMR,"(500 MHz, CDCl3)  8.22 (s, 1H, C{3} –H), 8.14 (s, 1H, C{1} –H), 3.80 (s, 6H,
+CO2Me), 2.50 (t, 2H, J = 7.5 Hz, C{4} –H), 2.10–2.03 (m, 2H, C{6} –H), 1.68–1.58 (m, 2H,
+C{5} –H)",COC(=O)C(O)(CCCc1cnoc1)C(=O)OC,3530
+316,Dimethyl 2-hydroxy-2-(3-(isoxazol-4-yl)propyl)malonate,13C NMR,"(126 MHz, CDCl3)  170.9 (CO2Me), 154.6 (C{3}), 150.3 (C{1}),
+118.6 (C{2}), 78.9 (C{7}), 53.7 (CO2Me), 34.2 (C{6}), 23.6 (C{5}), 22.0 (C{4})",COC(=O)C(O)(CCCc1cnoc1)C(=O)OC,3531
+317,Dimethyl 2-iodo-2-(3-(isoxazol-4-yl)propyl)malonate,Rf,"0.29 (50% Et2O in PE40–60, KMnO4)",COC(=O)C(I)(CCCc1cnoc1)C(=O)OC,3701
+318,Dimethyl 2-iodo-2-(3-(isoxazol-4-yl)propyl)malonate,1H NMR,"(500 MHz, CDCl3)  8.25 (s, 1H,
+C{3} –H), 8.16 (s, 1H, C{1} –H), 3.80 (s, 6H, CO2Me), 2.55 (t, 2H, J = 7.5 Hz, C{4} –H),
+2.24–2.17 (m, 2H, C{6} –H), 1.73–1.63 (m, 2H, C{5} –H)",COC(=O)C(I)(CCCc1cnoc1)C(=O)OC,3702
+319,Dimethyl 2-iodo-2-(3-(isoxazol-4-yl)propyl)malonate,13C NMR,"(126 MHz, CDCl3)
+ 168.7 (CO2Me), 154.6 (C{3}), 150.2 (C{1}), 118.3 (C{2}), 54.2z (CO2Me), 42.6 (C{7}),
+39.6 (C{6}), 28.2 (C{5}), 21.7 (C{4})",COC(=O)C(I)(CCCc1cnoc1)C(=O)OC,3703
+320,Dimethyl 2-iodo-2-(3-(isoxazol-4-yl)propyl)malonate,IR,"(film) 2954w, 1732s, 1435m, 1249s, 1104m",COC(=O)C(I)(CCCc1cnoc1)C(=O)OC,3704
+321,Dimethyl 2-iodo-2-(3-(isoxazol-4-yl)propyl)malonate,MS,"(m/z +ESI): Found: [M+H]+, 367.9989. C11H15INO5
++ requires 367.9989",COC(=O)C(I)(CCCc1cnoc1)C(=O)OC,3705
+322,"Dimethyl 4-chloro-8,9-dihydropyrimido[5,4-b]indolizine-6,6(7H)-dicarboxylate",Rf,"0.32 (50% EtOAc in PE40–60, KMnO4)",COC(=O)C1(C(=O)OC)CCCn2c1cc1c(Cl)ncnc12,3551
+323,"Dimethyl 4-chloro-8,9-dihydropyrimido[5,4-b]indolizine-6,6(7H)-dicarboxylate",1H NMR,"(500 MHz, CDCl3)
+ 8.62 (s, 1H, C{5} –H), 6.71 (s, 1H, C{2} –H), 4.25 (t, 2H, J = 6.5 Hz, C{7} –H), 3.84 (s, 6H,
+CO2Me), 2.59–2.53 (m, 2H, C{9} –H), 2.16–2.08 (m, 2H, C{8} –H)",COC(=O)C1(C(=O)OC)CCCn2c1cc1c(Cl)ncnc12,3552
+324,"Dimethyl 4-chloro-8,9-dihydropyrimido[5,4-b]indolizine-6,6(7H)-dicarboxylate",13C NMR,"(126 MHz,
+CDCl3)  169.3 (CO2Me ), 151.9 (C{4/6}), 150.7 (C{4/6}), 150.6 (C{5}), 133.4 (C{1}), 117.2
+(C{3}), 100.0 (C{2}), 55.9 (C{10}), 53.6 (CO2Me), 41.5 (C{7}), 28.5 (C{9}), 19.3 (C{8})",COC(=O)C1(C(=O)OC)CCCn2c1cc1c(Cl)ncnc12,3553
+325,"Dimethyl 4-chloro-8,9-dihydropyrimido[5,4-b]indolizine-6,6(7H)-dicarboxylate",IR,"(film) 2957w, 1733s, 1432m, 1259s, 1180s",COC(=O)C1(C(=O)OC)CCCn2c1cc1c(Cl)ncnc12,3554
+326,"Dimethyl 4-chloro-8,9-dihydropyrimido[5,4-b]indolizine-6,6(7H)-dicarboxylate",MS,"(m/z +ESI): Found: [M+H]+,
+324.0747. C14H15
+35ClN3O4
++ requires 324.0746",COC(=O)C1(C(=O)OC)CCCn2c1cc1c(Cl)ncnc12,3555
+327,"Dimethyl 4-chloro-8,9-dihydropyrimido[5,4-b]indolizine-6,6(7H)-dicarboxylate",Rf,"0.32 (50% EtOAc in PE40–60, KMnO4)",COC(=O)C1(C(=O)OC)CCCn2c1cc1c(Cl)ncnc12,3561
+328,"Dimethyl 4-chloro-8,9-dihydropyrimido[5,4-b]indolizine-6,6(7H)-dicarboxylate",1H NMR,"(500 MHz, CDCl3)
+ 8.62 (s, 1H, C{5} –H), 6.71 (s, 1H, C{2} –H), 4.25 (t, 2H, J = 6.5 Hz, C{7} –H), 3.84 (s, 6H,
+CO2Me), 2.59–2.53 (m, 2H, C{9} –H), 2.16–2.08 (m, 2H, C{8} –H)",COC(=O)C1(C(=O)OC)CCCn2c1cc1c(Cl)ncnc12,3562
+329,"Dimethyl 4-chloro-8,9-dihydropyrimido[5,4-b]indolizine-6,6(7H)-dicarboxylate",13C NMR,"(126 MHz,
+CDCl3)  169.3 (CO2Me ), 151.9 (C{4/6}), 150.7 (C{4/6}), 150.6 (C{5}), 133.4 (C{1}), 117.2
+(C{3}), 100.0 (C{2}), 55.9 (C{10}), 53.6 (CO2Me), 41.5 (C{7}), 28.5 (C{9}), 19.3 (C{8})",COC(=O)C1(C(=O)OC)CCCn2c1cc1c(Cl)ncnc12,3563
+330,"Dimethyl 4-chloro-8,9-dihydropyrimido[5,4-b]indolizine-6,6(7H)-dicarboxylate",IR,"(film) 2957w, 1733s, 1432m, 1259s, 1180s",COC(=O)C1(C(=O)OC)CCCn2c1cc1c(Cl)ncnc12,3564
+331,"Dimethyl 4-chloro-8,9-dihydropyrimido[5,4-b]indolizine-6,6(7H)-dicarboxylate",MS,"(m/z +ESI): Found: [M+H]+,
+324.0747. C14H15
+35ClN3O4
++ requires 324.0746",COC(=O)C1(C(=O)OC)CCCn2c1cc1c(Cl)ncnc12,3565
+332,"Dimethyl 5,6-dihydrobenzo[b]thiophene-7,7(4H)-dicarboxylate",Rf,"0.22 (20% Et2O in PE40–60, KMnO4)",COC(=O)C1(C(=O)OC)CCCc2ccsc21,3520
+333,"Dimethyl 5,6-dihydrobenzo[b]thiophene-7,7(4H)-dicarboxylate",1H NMR,"(500 MHz, CDCl3)  7.25 (d, 1H,
+J = 5.0 Hz, C{1} –H), 6.77 (d, 2H, J = 5.0 Hz, C{2} –H), 3.78 (s, 6H, CO2Me), 2.67 (t, 2H,
+J = 6.5 Hz, C{5} –H), 2.45–2.39 (m, 2H, C{7} –H), 1.89–1.82 (m, 2H, C{6} –H)",COC(=O)C1(C(=O)OC)CCCc2ccsc21,3521
+334,"Dimethyl 5,6-dihydrobenzo[b]thiophene-7,7(4H)-dicarboxylate",13C NMR,"(126 MHz, CDCl3)  171.2 (CO2Me), 138.9 (C{3}), 130.3 (C{4}), 127.1 (C{2}), 125.8 (C{1}),
+56.9 (C{8}), 53.1 (CO2Me), 31.5 (C{7}), 25.7 (C{5}), 20.0 (C{6})",COC(=O)C1(C(=O)OC)CCCc2ccsc21,3522
+335,"Dimethyl 5,6-dihydrobenzo[b]thiophene-7,7(4H)-dicarboxylate",IR,"(film) 2952w,
+1736s, 1434m, 1240m, 1177m",COC(=O)C1(C(=O)OC)CCCc2ccsc21,3523
+336,"Dimethyl 5,6-dihydrobenzo[b]thiophene-7,7(4H)-dicarboxylate",MS,"(m/z +ESI): Found: [M+H]+, 255.0687. C12H15O5S+
+requires 255.0686",COC(=O)C1(C(=O)OC)CCCc2ccsc21,3524
+337,"Dimethyl 5,6-dihydrobenzo[d]isoxazole-7,7(4H)-dicarboxylate",Rf,"0.33 (50% Et2O in PE40–60, KMnO4)",COC(=O)C1(C(=O)OC)CCCc2cnoc21,3525
+338,"Dimethyl 5,6-dihydrobenzo[d]isoxazole-7,7(4H)-dicarboxylate",1H NMR,"(500 MHz, CDCl3)  8.13 (s, 1H,
+C{1} –H), 3.80 (s, 6H, CO2Me), 2.52 (t, 2H, J = 6.0 Hz, C{4} –H), 2.48–2.41 (m, 2H,
+C{6} –H), 1.88–1.80 (m, 2H, C{5} –H)",COC(=O)C1(C(=O)OC)CCCc2cnoc21,3526
+339,"Dimethyl 5,6-dihydrobenzo[d]isoxazole-7,7(4H)-dicarboxylate",13C NMR,"(126 MHz, CDCl3)  168.6 (CO2Me),
+161.1 (C{3}), 149.5 (C{1}), 115.4 (C{2}), 55.5 (C{7}), 53.6 (CO2Me), 31.6 (C{6}), 20.3
+(C{5}), 19.6 (C{4})",COC(=O)C1(C(=O)OC)CCCc2cnoc21,3527
+340,"Dimethyl 5,6-dihydrobenzo[d]isoxazole-7,7(4H)-dicarboxylate",IR,"(film) 2980m, 1733s, 1436w, 1252m, 1158m",COC(=O)C1(C(=O)OC)CCCc2cnoc21,3528
+341,"Dimethyl 5,6-dihydrobenzo[d]isoxazole-7,7(4H)-dicarboxylate",MS,"(m/z
++ESI): Found: [M+H]+, 240.08680. C11H14NO5
++ requires 240.08665",COC(=O)C1(C(=O)OC)CCCc2cnoc21,3529
+342,"Dimethyl 5,6-dihydrobenzo[d]thiazole-7,7(4H)-dicarboxylate",Rf,"0.31 (60% EtOAc in PE40–60, KMnO4)",COC(=O)C1(C(=O)OC)CCCc2ncsc21,3532
+343,"Dimethyl 5,6-dihydrobenzo[d]thiazole-7,7(4H)-dicarboxylate",1H NMR,"(500 MHz, CDCl3)  8.76 (s, 1H,
+C{1} –H), 3.77 (s, 6H, CO2Me), 2.87 (t, 2H, J = 6.5 Hz, C{6} –H), 2.45–2.39 (m, 2H,
+C{4} –H), 2.01–1.90 (m, 2H, C{5} –H)",COC(=O)C1(C(=O)OC)CCCc2ncsc21,3533
+344,"Dimethyl 5,6-dihydrobenzo[d]thiazole-7,7(4H)-dicarboxylate",13C NMR,"(126 MHz, CDCl3)  170.4 (CO2Me),
+154.1 (C{7}), 153.5 (C{1}), 124.9 (C{2}), 56.1 (C{3}), 53.4 (CO2Me), 31.2 (C{4}), 26.9
+(C{6}), 20.1 (C{5})",COC(=O)C1(C(=O)OC)CCCc2ncsc21,3534
+345,"Dimethyl 5,6-dihydrobenzo[d]thiazole-7,7(4H)-dicarboxylate",IR,"(film) 2954w, 1736s, 1244m, 1103w",COC(=O)C1(C(=O)OC)CCCc2ncsc21,3535
+346,"Dimethyl 5,6-dihydrobenzo[d]thiazole-7,7(4H)-dicarboxylate",MS,"(m/z +ESI):
+Found: [M+H]+, 256.0640. C11H14NO4S+ requires 256.0638",COC(=O)C1(C(=O)OC)CCCc2ncsc21,3536
+347,"Dimethyl 5-(4-methoxyphenyl)-2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",Rf,"0.16 (20% EtOAc in PE40–60, red in vanillin)",COC(=O)C1(C(=O)OC)CCn2c(-c3ccc(OC)cc3)ccc21,3510
+348,"Dimethyl 5-(4-methoxyphenyl)-2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",1H NMR,"(500 MHz, CDCl3)  7.40–7.34
+(m, 2H, C{9} –H), 6.96–6.87 (m, 2H, C{10} –H), 6.34 (d, 1H, J = 3.5 Hz, C{2} –H), 6.22
+(d, 1H, J = 3.5 Hz, C{3} –H), 4.20 (t, 2H, J = 7.0 Hz, C{7} –H), 3.83 (s, 3H, C{12} –H),
+3.80 (s, 6H, CO2Me), 3.09 (t, 2H, J = 7.0 Hz, C{6} –H)",COC(=O)C1(C(=O)OC)CCn2c(-c3ccc(OC)cc3)ccc21,3511
+349,"Dimethyl 5-(4-methoxyphenyl)-2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",13C NMR,"(126 MHz, CDCl3)
+ 170.1 (CO2Me), 158.4 (C{11}), 132.7 (C{4}), 129.9 (C{1}), 127.5 (C{9}), 125.9 (C{8}),
+114.3 (C{10}), 110.8 (C{2}), 104.0 (C{3}), 58.7 (C{5}), 55.4 (C{12}), 53.3 (CO2Me), 45.2
+(C{7}), 37.1 (C{6})",COC(=O)C1(C(=O)OC)CCn2c(-c3ccc(OC)cc3)ccc21,3512
+350,"Dimethyl 5-(4-methoxyphenyl)-2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",IR,"(film) 2955w, 1735s, 1556m, 1250s, 832w",COC(=O)C1(C(=O)OC)CCn2c(-c3ccc(OC)cc3)ccc21,3513
+351,"Dimethyl 5-(4-methoxyphenyl)-2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",MS,"(m/z +ESI):
+Found: [M+H]+, 330.1335. C18H20NO5
++ requires 330.1336",COC(=O)C1(C(=O)OC)CCn2c(-c3ccc(OC)cc3)ccc21,3514
+352,"Dimethyl 5-benzoyl-2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",Rf,"0.41 (40% EtOAc in PE40–60, orange in vanillin)",COC(=O)C1(C(=O)OC)CCn2c(C(=O)c3ccccc3)ccc21,3500
+353,"Dimethyl 5-benzoyl-2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",1H NMR,"(500 MHz, CDCl3)
+ 7.86–7.79 (m, 2H, C{10} –H), 7.57–7.50 (m, 1H, C{12} –H), 7.48–7.42 (m, 2H, C{11} –H),
+6.84 (d, 1H, J = 4.0 Hz, C{3} –H), 6.27 (d, 1H, J = 4.0 Hz, C{2} –H), 4.55 (t, 2H, J = 7.0 Hz,
+C{5} –H), 3.81 (s, 6H, CO2Me), 3.14 (t, 2H, J = 7.0 Hz, C{6} –H)",COC(=O)C1(C(=O)OC)CCn2c(C(=O)c3ccccc3)ccc21,3501
+354,"Dimethyl 5-benzoyl-2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",13C NMR,"(126 MHz,
+CDCl3)  185.4 (C{8}), 169.2 (CO2Me), 140.4 (C{1}), 139.1 (C{9}), 131.7 (C{12}), 129.1
+(C{10}), 128.3 (C{11}), 127.6 (C{4}), 124.7 (C{3}), 105.0 (C{2}), 58.9 (C{7}), 53.6
+(CO2Me), 47.1 (C{5}), 36.6 (C{6})",COC(=O)C1(C(=O)OC)CCn2c(C(=O)c3ccccc3)ccc21,3502
+355,"Dimethyl 5-benzoyl-2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",IR,"(film) 2955w, 1737s, 1625m, 1262s, 1099m",COC(=O)C1(C(=O)OC)CCn2c(C(=O)c3ccccc3)ccc21,3503
+356,"Dimethyl 5-benzoyl-2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",MS,"(m/z +ESI): Found: [M+H]+, 328.1178. C18H18NO5
++ requires 328.1179",COC(=O)C1(C(=O)OC)CCn2c(C(=O)c3ccccc3)ccc21,3504
+357,"Dimethyl 5-benzoyl-2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",Rf,"0.41 (40% EtOAc in PE40–60, orange in vanillin)",COC(=O)C1(C(=O)OC)CCn2c(C(=O)c3ccccc3)ccc21,3859
+358,"Dimethyl 5-benzoyl-2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",1H NMR,"(500 MHz, CDCl3)
+ 7.86–7.79 (m, 2H, C{10} –H), 7.57–7.50 (m, 1H, C{12} –H), 7.48–7.42 (m, 2H, C{11} –H),
+6.84 (d, 1H, J = 4.0 Hz, C{3} –H), 6.27 (d, 1H, J = 4.0 Hz, C{2} –H), 4.55 (t, 2H, J = 7.0 Hz,
+C{5} –H), 3.81 (s, 6H, CO2Me), 3.14 (t, 2H, J = 7.0 Hz, C{6} –H)",COC(=O)C1(C(=O)OC)CCn2c(C(=O)c3ccccc3)ccc21,3860
+359,"Dimethyl 5-benzoyl-2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",13C NMR,"(126 MHz,
+CDCl3)  185.4 (C{8}), 169.2 (CO2Me), 140.4 (C{1}), 139.1 (C{9}), 131.7 (C{12}), 129.1
+(C{10}), 128.3 (C{11}), 127.6 (C{4}), 124.7 (C{3}), 105.0 (C{2}), 58.9 (C{7}), 53.6 (CO2Me), 47.1 (C{5}), 36.6 (C{6})",COC(=O)C1(C(=O)OC)CCn2c(C(=O)c3ccccc3)ccc21,3861
+360,"Dimethyl 5-benzoyl-2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",IR,"(film) 2955w, 1737s, 1625m, 1262s, 1099m",COC(=O)C1(C(=O)OC)CCn2c(C(=O)c3ccccc3)ccc21,3862
+361,"Dimethyl 5-benzoyl-2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",MS,"(m/z +ESI): Found: [M+H]+, 328.1178. C18H18NO5
++ requires 328.1179",COC(=O)C1(C(=O)OC)CCn2c(C(=O)c3ccccc3)ccc21,3863
+362,"Dimethyl 5-oxo-6,7-dihydroindolizine-8,8(5H)-dicarboxylate",Rf,"0.38 (30% EtOAc in PE40–60, KMnO4)",COC(=O)C1(C(=O)OC)CCC(=O)n2cccc21,3467
+363,"Dimethyl 5-oxo-6,7-dihydroindolizine-8,8(5H)-dicarboxylate",1H NMR,"(400 MHz, CDCl3)  7.44 (dd, 1H,
+J = 3.5, 1.5 Hz, C{1} –H), 6.35 (dd, 1H, J = 3.5, 1.5 Hz, C{3} –H), 6.29 (t, 1H, J = 3.5 Hz,
+C{2} –H), 3.81 (s, 6H, CO2Me), 2.80–2.71 (m, 2H, C{7} –H), 2.66–2.58 (m, 2H, C{6} –H)",COC(=O)C1(C(=O)OC)CCC(=O)n2cccc21,3468
+364,"Dimethyl 5-oxo-6,7-dihydroindolizine-8,8(5H)-dicarboxylate",13C NMR,"(101 MHz, CDCl3)  169.3 (CO2Me), 166.6 (C{8}), 127.7 (C{4}), 118. (C{1}),
+113.6 (C{3}), 113.0 (C{2}), 54.5 (C{5}), 53.6 (CO2Me), 30.0 (C{7}), 28.8 (C{6})",COC(=O)C1(C(=O)OC)CCC(=O)n2cccc21,3469
+365,"Dimethyl 5-oxo-6,7-dihydroindolizine-8,8(5H)-dicarboxylate",MS,"(m/z +ESI): Found: [M+H]+, 252.0. C12H14NO5
++ requires 252.1",COC(=O)C1(C(=O)OC)CCC(=O)n2cccc21,3470
+366,"Dimethyl 5-phenyl-2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",Rf,"0.23 (20% EtOAc in PE40–60, orange in vanillin)",COC(=O)C1(C(=O)OC)CCn2c(-c3ccccc3)ccc21,3505
+367,"Dimethyl 5-phenyl-2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",1H NMR,"(500 MHz, CDCl3)
+ 7.48–7.42 (m, 2H, C{9} –H), 7.39–7.33 (m, 2H, C{10} –H), 7.25–7.19 (m, 1H, C{11} –H),
+6.45 (d, 1H, J = 3.5 Hz, C{2} –H), 6.25 (d, 1H, J = 3.5 Hz, C{3} –H), 4.26 (t, 2H, J = 7.0 Hz,
+C{7} –H), 3.80 (s, 6H, CO2Me), 3.10 (t, 2H, J = 7.0 Hz, C{6} –H)",COC(=O)C1(C(=O)OC)CCn2c(-c3ccccc3)ccc21,3506
+368,"Dimethyl 5-phenyl-2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",13C NMR,"(126 MHz,
+CDCl3)  170.0 (CO2Me), 133.5 (C{4}), 133.1 (C{8}), 130.1 (C{1}), 128.8 (C{10}), 126.4
+(C{11}), 126.0 (C{9}), 111.7 (C{2}), 104.2 (C{3}), 58.6 (C{5}), 53.4 (CO2Me), 45.5
+(C{7}), 37.0 (C{6})",COC(=O)C1(C(=O)OC)CCn2c(-c3ccccc3)ccc21,3507
+369,"Dimethyl 5-phenyl-2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",IR,"(film) 2954w, 1735s, 1435m, 1247m, 755m",COC(=O)C1(C(=O)OC)CCn2c(-c3ccccc3)ccc21,3508
+370,"Dimethyl 5-phenyl-2,3-dihydro-1H-pyrrolizine-1,1-dicarboxylate",MS,"(m/z +ESI):
+Found: [M+H]+, 300.1231. C17H18NO4
++ requires 300.1230",COC(=O)C1(C(=O)OC)CCn2c(-c3ccccc3)ccc21,3509
+371,"Dimethyl 6,7-dihydroimidazo[1,2-a]pyridine-8,8(5H)-dicarboxylate",Rf,"0.14 (EtOAc, KMnO4)",COC(=O)C1(C(=O)OC)CCCn2ccnc21,3495
+372,"Dimethyl 6,7-dihydroimidazo[1,2-a]pyridine-8,8(5H)-dicarboxylate",1H NMR,"(500 MHz, CDCl3)  7.11 (d, 1H, J = 1.5 Hz,
+C{2} –H), 6.86 (d, 1H, J = 1.5 Hz, C{3} –H), 4.01 (t, 2H, J = 6.0 Hz, C{4} –H), 3.81 (s, 6H,
+CO2Me), 2.59–2.52 (m, 2H, C{6} –H), 2.06–1.97 (m, 2H, C{5} –H)",COC(=O)C1(C(=O)OC)CCCn2ccnc21,3496
+373,"Dimethyl 6,7-dihydroimidazo[1,2-a]pyridine-8,8(5H)-dicarboxylate",13C NMR,"(126 MHz,
+CDCl3)  169.5 (CO2Me), 139.7 (C{1}), 128.8 (C{2}), 119.2 (C{3}), 56.7 (C{7}), 53.6
+(CO2Me), 44.7 (C{4}), 29.5 (C{6}), 20.0 (C{5})",COC(=O)C1(C(=O)OC)CCCn2ccnc21,3497
+374,"Dimethyl 6,7-dihydroimidazo[1,2-a]pyridine-8,8(5H)-dicarboxylate",IR,"(film) 2956w, 1731s, 1436m, 1260m,
+1114w",COC(=O)C1(C(=O)OC)CCCn2ccnc21,3498
+375,"Dimethyl 6,7-dihydroimidazo[1,2-a]pyridine-8,8(5H)-dicarboxylate",MS,"(m/z +ESI): Found: [M+H]+, 239.10271. C11H15N2O4
++ requires 239.10263",COC(=O)C1(C(=O)OC)CCCn2ccnc21,3499
+376,"Dimethyl 6,7-dihydroindolizine-8,8(5H)-dicarboxylate",Rf,"0.28 (20% EtOAc in PE40–60, KMnO4)",COC(=O)C1(C(=O)OC)CCCn2cccc21,3471
+377,"Dimethyl 6,7-dihydroindolizine-8,8(5H)-dicarboxylate",1H NMR,"(500 MHz, CDCl3)  6.60 (dd, 1H,
+J = 2.5, 1.5 Hz, C{4} –H), 6.23 (dd, 1H, J = 3.5, 1.5 Hz, C{2} –H), 6.17 (dd, 1H, J = 3.5,
+2.5 Hz, C{3} –H), 3.95 (t, 2H, J = 6.0 Hz, C{5} –H), 3.76 (s, 6H, CO2Me), 2.47–2.38 (m, 2H,
+C{7} –H), 2.06–1.96 (m, 2H, C{6} –H)",COC(=O)C1(C(=O)OC)CCCn2cccc21,3472
+378,"Dimethyl 6,7-dihydroindolizine-8,8(5H)-dicarboxylate",13C NMR,"(126 MHz, CDCl3)  171.1 (CO2Me),
+123.3 (C{1}), 120.6 (C{4}), 109.1 (C{2}), 108.3 (C{3}), 55.4 (C{8}), 53.1 (CO2Me), 45.2
+(C{5}), 29.2 (C{7}), 20.7 (C{6})",COC(=O)C1(C(=O)OC)CCCn2cccc21,3473
+379,"Dimethyl 6,7-dihydroindolizine-8,8(5H)-dicarboxylate",MS,"(m/z +ESI): Found: [M+H]+, 238.0. C12H16NO4
++
+requires 238.1",COC(=O)C1(C(=O)OC)CCCn2cccc21,3474
+380,"Dimethyl 6-oxo-7,8-dihydropyrido[1,2-a]indole-9,9(6H)-dicarboxylate",Rf,"0.18 (20% EtOAc in PE40–60, KMnO4)",COC(=O)C1(C(=O)OC)CCC(=O)n2c1cc1ccccc12,3450
+381,"Dimethyl 6-oxo-7,8-dihydropyrido[1,2-a]indole-9,9(6H)-dicarboxylate",1H NMR,"(400 MHz, CDCl3)  8.48 (ddd, 1H,
+J = 8.0, 1.5, 1.0 Hz, C{2} –H), 7.53 (ddd, 1H, J = 7.5, 1.5, 1.0 Hz, C{5} –H), 7.36 (ddd,
+1H, J = 8.0, 7.5, 1.5 Hz, C{3} –H), 7.29 (ddd, 1H, J = 7.5, 7.5, 1.5 Hz, C{4} –H), 6.70 (d,
+1H, J = 1.0 Hz, C{7} –H), 3.85 (s, 6H, CO2Me), 2.85–2.79 (m, H, C{11} –H), 2.73–2.67
+(m, H, C{10} –H)",COC(=O)C1(C(=O)OC)CCC(=O)n2c1cc1ccccc12,3451
+382,"Dimethyl 6-oxo-7,8-dihydropyrido[1,2-a]indole-9,9(6H)-dicarboxylate",13C NMR,"(101 MHz, CDCl3)  169.0 (CO2Me), 167.6 (C{12}), 135.3
+(C{8}), 132.8 (C{1}), 129.1 (C{6}), 125.6 (C{3}), 124.5 (C{4}), 120.8 (C{5}), 116.8 (C{2}),
+109.5 (C{7}), 55.5 (C{9}), 53.7 (CO2Me), 30.9 (C{11}), 28.5 (C{10})",COC(=O)C1(C(=O)OC)CCC(=O)n2c1cc1ccccc12,3452
+383,"Dimethyl 6-oxo-7,8-dihydropyrido[1,2-a]indole-9,9(6H)-dicarboxylate",MS,"(m/z +ESI):
+Found: [M+Na]+, 302.0. C16H16NO5
++ requires 302.1",COC(=O)C1(C(=O)OC)CCC(=O)n2c1cc1ccccc12,3453
+384,"Dimethyl 7,8-dihydropyrido[1,2-a]indole-9,9(6H)-dicarboxylate",Rf,"0.40 (30% EtOAc in PE40–60, KMnO4)",COC(=O)C1(C(=O)OC)CCCn2c1cc1ccccc12,3459
+385,"Dimethyl 7,8-dihydropyrido[1,2-a]indole-9,9(6H)-dicarboxylate",1H NMR,"(400 MHz, CDCl3)  7.59 (ddd, 1H,
+J = 8.0, 1.0, 1.0 Hz, C{7} –H), 7.29 (ddd, 1H, J = 8.5, 1.0, 1.0 Hz, C{4} –H), 7.20 (ddd, 1H,
+J = 8.5, 7.0, 1.0 Hz, C{5} –H), 7.11 (ddd, 1H, J = 8.0, 7.0, 1.0 Hz, C{6} –H), 6.60 (d, 1H,
+J = 1.0 Hz, C{2} –H), 4.08 (t, 2H, J = 6.0 Hz, C{9} –H), 3.80 (s, 6H, CO2Me), 2.58–2.50
+(m, 2H, C{11} –H), 2.18–2.07 (m, 2H, C{10} –H)",COC(=O)C1(C(=O)OC)CCCn2c1cc1ccccc12,3460
+386,"Dimethyl 7,8-dihydropyrido[1,2-a]indole-9,9(6H)-dicarboxylate",13C NMR,"(101 MHz, CDCl3)  170.5
+(CO2Me), 136. (C{1}), 131. (C{8}), 127. (C{3}), 121.8 (C{5}), 120.9 (C{7}), 120.2 (C{6}),
+109.2 (C{4}), 102.3 (C{2}), 56.3 (C{12}), 53.3 (CO2Me), 42.0 (C{9}), 28.9 (C{11}), 20.0
+(C{10})",COC(=O)C1(C(=O)OC)CCCn2c1cc1ccccc12,3461
+387,"Dimethyl 7,8-dihydropyrido[1,2-a]indole-9,9(6H)-dicarboxylate",MS,"(m/z +ESI): Found: [M+Na]+, 288.0. C16H18NO4
++ requires 288.1",COC(=O)C1(C(=O)OC)CCCn2c1cc1ccccc12,3462
+388,"Dimethyl 8,9-dihydropyrido[3,2-b]indolizine-6,6(7H)-dicarboxylate",Rf,"0.15 (33% EtOAc in PE40–60, KMnO4)",COC(=O)C1(C(=O)OC)CCCn2c1cc1cccnc12,3556
+389,"Dimethyl 8,9-dihydropyrido[3,2-b]indolizine-6,6(7H)-dicarboxylate",1H NMR,"(500 MHz, CDCl3)
+ 8.30 (dd, 1H, J = 4.5, 1.5 Hz, C{6} –H), 7.87 (dd, 1H, J = 8.0, 1.5 Hz, C{4} –H), 7.06 (dd,
+1H, J = 8.0, 4.5 Hz, C{5} –H), 6.56 (s, 1H, C{2} –H), 4.26 (t, 2H, J = 6.0 Hz, C{8} –H),
+3.81 (s, 6H, CO2Me), 2.58–2.52 (m, 2H, C{10} –H), 2.15–2.07 (m, 2H, C{9} –H)",COC(=O)C1(C(=O)OC)CCCn2c1cc1cccnc12,3557
+390,"Dimethyl 8,9-dihydropyrido[3,2-b]indolizine-6,6(7H)-dicarboxylate",13C NMR,"(126 MHz, CDCl3)  170.2 (CO2Me), 147.6 (C{7}), 143.1 (C{6}), 131.8 (C{1}), 128.7 (C{4}),
+120.3 (C{3}), 116.5 (C{5}), 100.4 (C{2}), 56.3 (C{11}), 53.5 (CO2Me), 41.0 (C{8}), 28.9
+(C{10}), 19.8 (C{9})",COC(=O)C1(C(=O)OC)CCCn2c1cc1cccnc12,3558
+391,"Dimethyl 8,9-dihydropyrido[3,2-b]indolizine-6,6(7H)-dicarboxylate",IR,"(film) 2954w, 1734s, 1434m, 1257m, 1064w",COC(=O)C1(C(=O)OC)CCCn2c1cc1cccnc12,3559
+392,"Dimethyl 8,9-dihydropyrido[3,2-b]indolizine-6,6(7H)-dicarboxylate",MS,"(m/z
++ESI): Found: [M+H]+, 289.1182. C15H17O4N2
++ requires 289.1183",COC(=O)C1(C(=O)OC)CCCn2c1cc1cccnc12,3560
+393,"Dimethyl 8,9-dihydropyrido[3,2-b]indolizine-6,6(7H)-dicarboxylate",Rf,"0.15 (33% EtOAc in PE40–60, KMnO4)",COC(=O)C1(C(=O)OC)CCCn2c1cc1cccnc12,3566
+394,"Dimethyl 8,9-dihydropyrido[3,2-b]indolizine-6,6(7H)-dicarboxylate",1H NMR,"(500 MHz, CDCl3)
+ 8.30 (dd, 1H, J = 4.5, 1.5 Hz, C{6} –H), 7.87 (dd, 1H, J = 8.0, 1.5 Hz, C{4} –H), 7.06 (dd,
+1H, J = 8.0, 4.5 Hz, C{5} –H), 6.56 (s, 1H, C{2} –H), 4.26 (t, 2H, J = 6.0 Hz, C{8} –H),
+3.81 (s, 6H, CO2Me), 2.58–2.52 (m, 2H, C{10} –H), 2.15–2.07 (m, 2H, C{9} –H)",COC(=O)C1(C(=O)OC)CCCn2c1cc1cccnc12,3567
+395,"Dimethyl 8,9-dihydropyrido[3,2-b]indolizine-6,6(7H)-dicarboxylate",13C NMR,"(126 MHz, CDCl3)  170.2 (CO2Me), 147.6 (C{7}), 143.1 (C{6}), 131.8 (C{1}), 128.7 (C{4}),
+120.3 (C{3}), 116.5 (C{5}), 100.4 (C{2}), 56.3 (C{11}), 53.5 (CO2Me), 41.0 (C{8}), 28.9
+(C{10}), 19.8 (C{9})",COC(=O)C1(C(=O)OC)CCCn2c1cc1cccnc12,3568
+396,"Dimethyl 8,9-dihydropyrido[3,2-b]indolizine-6,6(7H)-dicarboxylate",IR,"(film) 2954w, 1734s, 1434m, 1257m, 1064w",COC(=O)C1(C(=O)OC)CCCn2c1cc1cccnc12,3569
+397,"Dimethyl 8,9-dihydropyrido[3,2-b]indolizine-6,6(7H)-dicarboxylate",MS,"(m/z
++ESI): Found: [M+H]+, 289.1182. C15H17O4N2
++ requires 289.1183",COC(=O)C1(C(=O)OC)CCCn2c1cc1cccnc12,3570
+398,"Dimethyl 9-methyl-2,3,4,9-tetrahydro-1H-carbazole-1,1-dicarboxylate",Rf,"0.47 (50% Et2O in PE40–60, brown in vanillin)",COC(=O)C1(C(=O)OC)CCCc2c1n(C)c1ccccc21,3537
+399,"Dimethyl 9-methyl-2,3,4,9-tetrahydro-1H-carbazole-1,1-dicarboxylate",1H NMR,"(500 MHz, CDCl3)  7.52 (dt,
+1H, J = 8.0, 1.0 Hz, C{5} –H), 7.30 (dt, 1H, J = 8.5, 1.0 Hz, C{2} –H), 7.27–7.23 (m, 1H,
+C{3} –H), 7.10 (ddd, 1H, J = 8.0, 7.0, 1.0 Hz, C{4} –H), 3.78 (s, 6H, CO2Me), 3.65 (s, 3H,
+C{13} –H), 2.82 (t, 2H, J = 6.5 Hz, C{8} –H), 2.53–2.47 (m, 2H, C{10} –H), 1.99–1.88 (m, 2H,
+C{9} –H)",COC(=O)C1(C(=O)OC)CCCc2c1n(C)c1ccccc21,3538
+400,"Dimethyl 9-methyl-2,3,4,9-tetrahydro-1H-carbazole-1,1-dicarboxylate",13C NMR,"(126 MHz, CDCl3)  171.2 (CO2Me), 137.9 (C{1}), 129.9 (C{12}),
+126.1 (C{6}), 122.4 (C{3}), 119.1 (C{4}), 118.8 (C{5}), 112.7 (C{7}), 109.2 (C{2}), 56.2
+(C{11}), 53.2 (CO2Me), 33.9 (C{10}), 31.0 (C{13}), 21.0 (C{8}), 20.6 (C{9})",COC(=O)C1(C(=O)OC)CCCc2c1n(C)c1ccccc21,3539
+401,"Dimethyl 9-methyl-2,3,4,9-tetrahydro-1H-carbazole-1,1-dicarboxylate",MS,"(m/z +ESI): Found: [M+Na]+, 324.0. C17H19NNaO4
++ requires 324.1",COC(=O)C1(C(=O)OC)CCCc2c1n(C)c1ccccc21,3540
+402,"Methyl 2,3-dihydro-1H-pyrrolo[1,2-a]indole-1-carboxylate",Rf,"0.40 (20% EtOAc in PE40–60, KMnO4)",COC(=O)C1CCn2c1cc1ccccc12,3841
+403,"Methyl 2,3-dihydro-1H-pyrrolo[1,2-a]indole-1-carboxylate",1H NMR,"(500 MHz, CDCl3)  7.57 (ddd, 1H,
+J = 8.0, 1.0, 1.0 Hz, C{4} –H), 7.25 (ddd, 1H, J = 8.0, 1.0, 1.0 Hz, C{7} –H), 7.15 (ddd,
+1H, J = 8.0, 7.0, 1.0 Hz, C{6} –H), 7.08 (ddd, 1H, J = 8.0, 7.0, 1.0 Hz, C{5} –H), 6.35 (dd,
+1H, J = 1.0, 1.0 Hz, C{2} –H), 4.29–4.18 (m, 2H, C{9, 11} –H), 4.10 (ddd, 1H, J = 9.5, 8.5,
+5.0 Hz, C{9’} –H), 3.76 (s, 3H, CO2Me), 3.00 (dddd, 1H, J = 13.0, 8.5, 5.0, 5.0 Hz, C{10} –H),
+2.83 (dddd, 1H, J = 13.0, 8.5, 8.5, 6.0 Hz, C{10’} –H)",COC(=O)C1CCn2c1cc1ccccc12,3842
+404,"Methyl 2,3-dihydro-1H-pyrrolo[1,2-a]indole-1-carboxylate",13C NMR,"(126 MHz, CDCl3)
+ 172.3 (CO2Me), 140.9 (C{1}), 132.9 (C{3}), 132.9 (C{8}), 121.2 (C{6}), 121.0 (C{4}), 119.6
+(C{5}), 109.8 (C{7}), 94.4 (C{2}), 52.7 (CO2Me), 43.2 (C{9}), 42.5 (C{11}), 31.5 (C{10})",COC(=O)C1CCn2c1cc1ccccc12,3843
+405,"Methyl 2,3-dihydro-1H-pyrrolo[1,2-a]indole-1-carboxylate",IR,"(film) 2951w, 1738s, 1457w, 1207m, 745m",COC(=O)C1CCn2c1cc1ccccc12,3844
+406,"Methyl 2,3-dihydro-1H-pyrrolo[1,2-a]indole-1-carboxylate",MS,"(m/z +ESI): Found: [M+H]+,
+216.1021. C13H14O2N+ requires 216.1019",COC(=O)C1CCn2c1cc1ccccc12,3845
+407,Phenyl(1H-pyrrol-2-yl)methanone,Rf,"0.56 (50% EtOAc in PE40–60, brown in vanillin)",O=C(c1ccccc1)c1ccc[nH]1,3851
+408,Phenyl(1H-pyrrol-2-yl)methanone,1H NMR,"(500 MHz, CDCl3)  9.89 (br, 1H, N–H), 7.98–7.84 (m, 2H, C{7} –H), 7.62–7.53
+(m, 1H, C{9} –H), 7.53–7.45 (m, 2H, C{8} –H), 7.16 (ddd, 1H, J = 2.5, 2.5, 1.5 Hz, C{1} –H),
+6.90 (ddd, 1H, J = 4.0, 2.5, 1.5 Hz, C{3} –H), 6.35 (ddd, 1H, J = 4.0, 2.5, 2.5 Hz, C{2} –H)",O=C(c1ccccc1)c1ccc[nH]1,3852
+409,Phenyl(1H-pyrrol-2-yl)methanone,13C NMR,"(126 MHz, CDCl3)  184.8 (C{5}), 138.3 (C{6}), 131.8 (C{9}), 131.1 (C{4}),
+129.0 (C{7}), 128.3 (C{8}), 125.3 (C{1}), 119.5 (C{3}), 111.0 (C{2})",O=C(c1ccccc1)c1ccc[nH]1,3853
+410,Phenyl(1H-pyrrol-2-yl)methanone,MS,"(m/z +ESI):
+Found: [M+H]+, 172.0. C11H10NO+ requires 172.1",O=C(c1ccccc1)c1ccc[nH]1,3854
+411,"Trimethyl 2,3-dihydro-1H-pyrrolizine-1,1,7-tricarboxylate",Rf,"0.23 (40% EtOAc in PE40–60, orange in vanillin)",COC(=O)c1ccn2c1C(C(=O)OC)(C(=O)OC)CC2,3490
+412,"Trimethyl 2,3-dihydro-1H-pyrrolizine-1,1,7-tricarboxylate",1H NMR,"(500 MHz,
+CDCl3)  6.67 (d, 1H, J = 3.0 Hz, C{3} –H), 6.59 (d, 1H, J = 3.0 Hz, C{4} –H), 4.05
+(t, 2H, J = 7.0 Hz, C{5} –H), 3.76 (s, 6H, CO2Me), 3.75 (s, 3H, C{9} –H), 3.20 (t, 2H,
+J = 7.0 Hz, C{6} –H)",COC(=O)c1ccn2c1C(C(=O)OC)(C(=O)OC)CC2,3491
+413,"Trimethyl 2,3-dihydro-1H-pyrrolizine-1,1,7-tricarboxylate",13C NMR,"(126 MHz, CDCl3)  169.6 (CO2Me), 164.5 (C{8}), 137.6
+(C{1}), 115.6 (C{4}), 115.0 (C{3}), 110.0 (C{2}), 60.1 (C{7}), 53.4 (CO2Me), 51.0 (C{9}),
+45.8 (C{5}), 39.1 (C{6})",COC(=O)c1ccn2c1C(C(=O)OC)(C(=O)OC)CC2,3492
+414,"Trimethyl 2,3-dihydro-1H-pyrrolizine-1,1,7-tricarboxylate",IR,"/cm−1(film) 2952w, 1750s, 1733m, 1436m, 1228m",COC(=O)c1ccn2c1C(C(=O)OC)(C(=O)OC)CC2,3493
+415,"Trimethyl 2,3-dihydro-1H-pyrrolizine-1,1,7-tricarboxylate",MS,"(m/z
++ESI): Found: [M+Na]+, 304.0789. C13H15NNaO6
++ requires 304.0792",COC(=O)c1ccn2c1C(C(=O)OC)(C(=O)OC)CC2,3494
+416,tert-Butyl 2-bromo-1H-pyrrole-1-carboxylate,Rf,"0.38 (5% EtOAc in PE40–60, brown in vanillin)",CC(C)(C)OC(=O)n1cccc1Br,3659
+417,tert-Butyl 2-bromo-1H-pyrrole-1-carboxylate,1H NMR,"(400 MHz, CDCl3)  7.31
+(dd, 1H, J = 3.5, 2.0 Hz, C{4} –H), 6.29 (dd, 1H, J = 3.5, 2.0 Hz, C{2} –H), 6.15 (t, 1H,
+J = 3.5 Hz, C{3} –H), 1.61 (s, 9H, C{7} –H)",CC(C)(C)OC(=O)n1cccc1Br,3660
+418,tert-Butyl 2-bromo-1H-pyrrole-1-carboxylate,13C NMR,"(101 MHz, CDCl3)  148.1 (C{5}),
+123.0 (C{4}), 117.2 (C{2}), 111.6 (C{3}), 100.3 (C{1}), 84.8 (C{6}), 27.8 (C{7})",CC(C)(C)OC(=O)n1cccc1Br,3661

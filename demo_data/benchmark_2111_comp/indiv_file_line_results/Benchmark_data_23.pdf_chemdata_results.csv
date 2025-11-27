@@ -1,0 +1,462 @@
+,molecule_name,test_type,test_text,opsin_smiles,line_idx,chemdata_namescore,chemdata_precision,chemdata_recall,chemdata_f1
+0,"(1S,2R,5S)-2-isopropyl-5-methylcyclohexyl 2-(4-((2-oxo-2H-chromen-4-yl)amino)phenyl)acetate",1H NMR,"(400 MHz, CDCl3) δ 7.63 (d, J = 7.2 Hz, 1H), 7.55 – 7.48 (m, 1H), 7.31 – 7.27 (m, 2H), 7.24 (d,
+J = 7.6 Hz, 1H), 7.21 – 7.16 (m, 3H), 6.87 (s, 1H), 5.64 (s, 1H), 3.66 (s, 3H), 3.59 (s, 2H)",CC(C)[C@H]1CC[C@H](C)C[C@@H]1OC(=O)Cc1ccc(Nc2cc(=O)oc3ccccc23)cc1,5033,0.02,1.0,1.0,1.0
+1,"(1S,2R,5S)-2-isopropyl-5-methylcyclohexyl 2-(4-((2-oxo-2H-chromen-4-yl)amino)phenyl)acetate",13C NMR,"(126 MHz, CDCl3) δ 171.9, 163.3, 154.0, 151.9, 136.6, 132.3, 130.8, 125.0, 123.8, 120.6, 118.1, 114.6, 87.2, 52.4, 40.7",CC(C)[C@H]1CC[C@H](C)C[C@@H]1OC(=O)Cc1ccc(Nc2cc(=O)oc3ccccc23)cc1,5034,,,,
+2,"(1S,2R,5S)-2-isopropyl-5-methylcyclohexyl 2-(4-((2-oxo-2H-chromen-4-yl)amino)phenyl)acetate",MS,"(ESI) calcd for C27H32NO4 [M+H]+: 434.2317, Found: 434.2321",CC(C)[C@H]1CC[C@H](C)C[C@@H]1OC(=O)Cc1ccc(Nc2cc(=O)oc3ccccc23)cc1,5035,,,,
+3,"1,3-dimethoxy-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",1H NMR,"(400 MHz, DMSO) δ 8.06 (d, J = 7.8 Hz, 1H), 7.73 (t,1H), 7.54 (dt, J = 5.6, 3.3 Hz, 1H), 6.80
+(s, 1H), 6.70 (s, 1H), 4.08 (s, 3H), 3.93 (s, 3H)",COc1cc(OC)c2c3c(c(=O)oc2c1)[I+]c1ccccc1O3.O=S(=O)([O-])C(F)(F)F,4856,0.0,1.0,1.0,1.0
+4,"1,3-dimethoxy-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",13C NMR,"(101 MHz, DMSO) δ 166.4, 165.8,
+158.9, 157.2, 156.7, 150.9, 133.5, 133.1, 129.3, 122.0, 100.3, 99.4, 96.7, 94.2, 81.8, 57.0, 56.6",COc1cc(OC)c2c3c(c(=O)oc2c1)[I+]c1ccccc1O3.O=S(=O)([O-])C(F)(F)F,4857,0.04,1.0,1.0,1.0
+5,"1,3-dimethoxy-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",19F NMR,"(376 MHz, DMSO) δ -77.74 ppm",COc1cc(OC)c2c3c(c(=O)oc2c1)[I+]c1ccccc1O3.O=S(=O)([O-])C(F)(F)F,4858,,,,
+6,"1,3-dimethoxy-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",MS,"(ESI) calcd for C17H12IO5 [M-OTf]+: 422.9724,
+Found: 422.9720",COc1cc(OC)c2c3c(c(=O)oc2c1)[I+]c1ccccc1O3.O=S(=O)([O-])C(F)(F)F,4859,,,,
+7,"2-(4-((2-Oxo-2H-chromen-4-yl)amino)phenyl)-N-((4-(5-(p-tolyl)-3-(trifluoromethyl)-1H-pyrazol-
+1-yl)phenyl)sulfinyl)acetamide",1H NMR,"(400 MHz, DMSO) δ 9.25 (s, 1H), 8.22 (d, J = 7.8 Hz, 1H), 7.93
+(d, J = 8.6 Hz, 2H), 7.66 (t, J = 7.5 Hz, 1H), 7.54 (d, J = 8.6 Hz, 2H), 7.39 (dd, J = 13.5, 7.9 Hz, 2H),
+7.26 (s, 4H), 7.17 (d, J = 4.4 Hz, 4H), 5.25 (s, 1H), 3.57 (s, 2H), 2.29 (s, 3H)",Cc1ccc(-c2cc(C(F)(F)F)nn2-c2ccc(S(=O)NC(=O)Cc3ccc(Nc4cc(=O)oc5ccccc45)cc3)cc2)cc1,5028,0.02,1.0,1.0,1.0
+8,"2-(4-((2-Oxo-2H-chromen-4-yl)amino)phenyl)-N-((4-(5-(p-tolyl)-3-(trifluoromethyl)-1H-pyrazol-
+1-yl)phenyl)sulfinyl)acetamide",13C NMR,"(100 MHz,
+DMSO) δ 161.7, 153.5, 152.7, 145.4, 141.7, 139.2, 136.7, 132.6, 130.5, 129.6, 128.8, 128.6, 125.8,
+125.4, 124.9, 123.8, 122.9, 117.2, 114.6, 106.2, 84.4, 43.1, 20.9",Cc1ccc(-c2cc(C(F)(F)F)nn2-c2ccc(S(=O)NC(=O)Cc3ccc(Nc4cc(=O)oc5ccccc45)cc3)cc2)cc1,5029,0.02,1.0,1.0,1.0
+9,"2-bromo-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",1H NMR,"(400 MHz, DMSO) δ 8.57 (s, 1H), 8.21 (d, J = 7.8 Hz, 1H), 8.09 (d, J = 7.9 Hz, 1H), 8.05 (d,
+J = 8.5 Hz, 1H), 7.74 (t, J = 6.7 Hz, 1H), 7.61 (d, J = 8.7 Hz, 1H), 7.56 (t, 1H)",O=S(=O)([O-])C(F)(F)F.O=c1oc2ccc(Br)cc2c2c1[I+]c1ccccc1O2,4848,0.0,1.0,1.0,1.0
+10,"2-bromo-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",13C NMR,"(126
+MHz, DMSO) δ 162.7, 156.4, 152.3, 149.9, 137.9, 133.5, 133.3, 129.6, 125.8, 122.0, 119.3, 117.6,
+116.6, 97.3, 85.3",O=S(=O)([O-])C(F)(F)F.O=c1oc2ccc(Br)cc2c2c1[I+]c1ccccc1O2,4849,0.02,1.0,1.0,1.0
+11,"2-bromo-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",19F NMR,"(376 MHz, DMSO) δ -77.75 ppm",O=S(=O)([O-])C(F)(F)F.O=c1oc2ccc(Br)cc2c2c1[I+]c1ccccc1O2,4850,,,,
+12,"2-bromo-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",MS,"(ESI) calcd for C15H7O3BrI [MOTf]+:
+440.8618, Found: 440.8616",O=S(=O)([O-])C(F)(F)F.O=c1oc2ccc(Br)cc2c2c1[I+]c1ccccc1O2,4851,,,,
+13,"2-chloro-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",1H NMR,"(400 MHz, DMSO) δ 8.46 (s, 1H), 8.20 (d, J = 7.7 Hz, 1H), 8.10 (d, J = 7.6 Hz, 1H), 7.94 (d,
+J = 8.1 Hz, 1H), 7.75 (t, 1H), 7.68 (d, J = 8.8 Hz, 1H), 7.55 (t, J = 7.3 Hz, 1H)",O=S(=O)([O-])C(F)(F)F.O=c1oc2ccc(Cl)cc2c2c1[I+]c1ccccc1O2,4844,0.0,1.0,1.0,1.0
+14,"2-chloro-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",13C NMR,"(101
+MHz, DMSO) δ 162.7, 156.4, 151.9, 149.9, 135.0, 133.5, 133.3, 129.8, 129.6, 123.0, 122.0, 119.1,
+116.2, 97.3, 85.4",O=S(=O)([O-])C(F)(F)F.O=c1oc2ccc(Cl)cc2c2c1[I+]c1ccccc1O2,4845,0.02,1.0,1.0,1.0
+15,"2-chloro-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",19F NMR,"(376 MHz, DMSO) δ -77.73 ppm",O=S(=O)([O-])C(F)(F)F.O=c1oc2ccc(Cl)cc2c2c1[I+]c1ccccc1O2,4846,,,,
+16,"2-chloro-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",MS,"(ESI) calcd for C15H7O3ClI [MOTf]+:
+396.9123, Found: 396.9120",O=S(=O)([O-])C(F)(F)F.O=c1oc2ccc(Cl)cc2c2c1[I+]c1ccccc1O2,4847,,,,
+17,"2-fluoro-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",1H NMR,"(400 MHz, DMSO) δ 8.27 (d, J = 5.4 Hz, 1H), 8.15 (d, J = 9.6 Hz, 1H), 8.10 (d, J = 7.0 Hz, 1H), 7.84 –
+7.67 (m, 3H), 7.56 (t, J = 7.8 Hz, 1H)",O=S(=O)([O-])C(F)(F)F.O=c1oc2ccc(F)cc2c2c1[I+]c1ccccc1O2,4840,,,,
+18,"2-fluoro-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",13C NMR,"(101 MHz, DMSO) δ 163.0, 159.9, 157.4, 156.6,
+149.9, 149.7, 133.4, 129.6, 122.9, 121.9, 119.4, 115.9, 109.7, 97.4, 85.6",O=S(=O)([O-])C(F)(F)F.O=c1oc2ccc(F)cc2c2c1[I+]c1ccccc1O2,4841,0.02,1.0,1.0,1.0
+19,"2-fluoro-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",19F NMR,"(376 MHz, DMSO)
+δ -77.74, -115.58 ppm",O=S(=O)([O-])C(F)(F)F.O=c1oc2ccc(F)cc2c2c1[I+]c1ccccc1O2,4842,,,,
+20,"2-fluoro-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",MS,"(ESI) calcd for C15H7O3FI [M-OTf]+: 380.9418, Found: 380.9416",O=S(=O)([O-])C(F)(F)F.O=c1oc2ccc(F)cc2c2c1[I+]c1ccccc1O2,4843,,,,
+21,"3-(diethylamino)-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium
+trifluoromethanesulfonate",1H NMR,"(400 MHz, DMSO) δ 8.04 (t, J = 9.8 Hz, 2H), 7.97 (d, J = 8.1
+Hz, 1H), 7.72 (t, J = 7.8 Hz, 1H), 7.51 (t, J = 7.7 Hz, 1H), 6.89 (d, J = 9.2 Hz, 1H), 6.71 (s, 1H), 3.51
+(q, J = 6.8 Hz, 4H), 1.14 (dd, J = 13.6, 6.7 Hz, 6H)",CCN(CC)c1ccc2c3c(c(=O)oc2c1)[I+]c1ccccc1O3.O=S(=O)([O-])C(F)(F)F,4860,0.0,1.0,1.0,1.0
+22,"3-(diethylamino)-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium
+trifluoromethanesulfonate",13C NMR,"(101 MHz, DMSO) δ 162.9, 156.2,
+153.6, 150.0, 147.3, 133.6, 129.7, 125.9, 121.7, 119.1, 117.9, 116.6, 111.1, 97.7, 86.6, 66.4, 48.8, 26.9,
+7.8",CCN(CC)c1ccc2c3c(c(=O)oc2c1)[I+]c1ccccc1O3.O=S(=O)([O-])C(F)(F)F,4861,0.02,1.0,1.0,1.0
+23,"3-(diethylamino)-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium
+trifluoromethanesulfonate",19F NMR,"(376 MHz, DMSO) δ -77.75 ppm",CCN(CC)c1ccc2c3c(c(=O)oc2c1)[I+]c1ccccc1O3.O=S(=O)([O-])C(F)(F)F,4862,,,,
+24,"3-(diethylamino)-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium
+trifluoromethanesulfonate",MS,"(ESI) calcd for C19H17INO3 [M-OTf]+:
+434.0248, Found: 434.0242",CCN(CC)c1ccc2c3c(c(=O)oc2c1)[I+]c1ccccc1O3.O=S(=O)([O-])C(F)(F)F,4863,,,,
+25,4-((2-(1H-indol-3-yl)ethyl)amino)-2H-chromen-2-one,1H NMR,"(400
+MHz, DMSO) δ 10.86 (s, 1H), 8.05 (d, J = 7.3 Hz, 1H), 7.77 (t, J = 5.3 Hz, 1H), 7.59 (t, J = 7.7 Hz,
+1H), 7.56 (d, 1H), 7.33 (m, J = 15.4, 8.1 Hz, 3H), 7.26 (s, 1H), 7.07 (t, J = 7.8 Hz, 1H), 6.98 (t, J = 7.4
+Hz, 1H), 5.23 (s, 1H), 3.54 (q, J = 13.9, 6.5 Hz, 2H), 3.07 (t, J = 7.4 Hz, 2H)",O=c1cc(NCCc2c[nH]c3ccccc23)c2ccccc2o1,4995,0.0,1.0,1.0,1.0
+26,4-((2-(1H-indol-3-yl)ethyl)amino)-2H-chromen-2-one,13C NMR,"(100 MHz,
+DMSO) δ 161.6, 153.1, 153.1, 136.2, 131.9, 127.2, 123.3, 123.0, 122.5, 121.0, 118.4, 118.1, 117.0,
+114.5, 111.5, 111.4, 81.3, 43.2, 23.5",O=c1cc(NCCc2c[nH]c3ccccc23)c2ccccc2o1,4996,0.08,0.95,0.95,0.95
+27,4-((2-(1H-indol-3-yl)ethyl)amino)-2H-chromen-2-one,MS,"(ESI) calcd for C19H16N2O2 [M+H]+: 305.1285, Found:
+305.1282",O=c1cc(NCCc2c[nH]c3ccccc23)c2ccccc2o1,4997,,,,
+28,"4-((2-Oxo-2H-chromen-4-yl)amino)phenyl 2-((2,5,7,8-tetramethyl-2-(4,8,12-
+trimethyltridecyl)chroman-6-yl)oxy)acetate",1H NMR,"(400 MHz, CDCl3) δ 7.65 (d, J = 7.9 Hz,
+1H), 7.60 (t, J = 7.8 Hz, 1H), 7.39 (d, J = 8.2 Hz, 1H), 7.34 (d, J = 8.8 Hz, 3H), 7.28 (d, 2H), 6.68 (s,
+1H), 5.71 (s, 1H), 4.58 (s, 2H), 2.60 (t, J = 6.7 Hz, 2H), 2.25 (s, 3H), 2.21 (s, 3H), 2.10 (s, 3H), 1.80
+(dq, J = 19.3, 6.6 Hz, 2H), 1.55 (s, 3H), 1.53 – 1.49 (m, 2H), 1.45 – 1.35 (m, 4H), 1.32 – 1.22 (m, 12H),
+1.18 – 1.05 (m, 6H), 0.88 (s, 3H), 0.87 – 0.83 (m, 6H)",Cc1c(C)c2c(c(C)c1OCC(=O)Oc1ccc(Nc3cc(=O)oc4ccccc34)cc1)CCC(C)(CCCC(C)CCCC(C)CCCC(C)C)O2,5039,,,,
+29,"4-((2-Oxo-2H-chromen-4-yl)amino)phenyl 2-((2,5,7,8-tetramethyl-2-(4,8,12-
+trimethyltridecyl)chroman-6-yl)oxy)acetate",13C NMR,"(126 MHz, CDCl3) δ 168.0,
+163.0, 154.1, 151.8, 148.6, 148.4, 147.9, 135.4, 132.4, 127.6, 126.1, 125.8, 123.9, 123.4, 122.9, 120.4,
+118.2, 118.0, 114.4, 87.6, 75.1, 70.0, 40.2, 39.5, 37.5, 32.9, 32.8, 31.4, 29.8, 28.1, 25.0, 24.6, 24.0, 22.9,
+22.8, 21.2, 20.8, 19.9, 19.8, 13.0, 12.2, 12.0, 1.2, 0.1",Cc1c(C)c2c(c(C)c1OCC(=O)Oc1ccc(Nc3cc(=O)oc4ccccc34)cc1)CCC(C)(CCCC(C)CCCC(C)CCCC(C)C)O2,5040,,,,
+30,"4-((2-Oxo-2H-chromen-4-yl)amino)phenyl 2-((2,5,7,8-tetramethyl-2-(4,8,12-
+trimethyltridecyl)chroman-6-yl)oxy)acetate",MS,"(ESI) calcd for C46H62NO6 [M+H]+:
+724.4572, Found: 724.4563",Cc1c(C)c2c(c(C)c1OCC(=O)Oc1ccc(Nc3cc(=O)oc4ccccc34)cc1)CCC(C)(CCCC(C)CCCC(C)CCCC(C)C)O2,5041,,,,
+31,4-((2-Oxo-2H-chromen-4-yl)amino)phenyl 2-(4-(4-chlorobenzoyl)phenoxy)-2-methylpropanoate,1H NMR,"(500 MHz, CDCl3) δ 7.69 (d, J = 8.8 Hz, 3H), 7.61 (d, J = 8.4 Hz, 2H),
+7.45 (t, J = 7.4 Hz, 1H), 7.35 (d, J = 8.4 Hz, 2H), 7.23 – 7.14 (m, 4H), 6.91 (dd, J = 16.6, 8.7 Hz, 4H),
+5.52 (s, 1H), 1.75 (s, 7H)",CC(C)(Oc1ccc(C(=O)c2ccc(Cl)cc2)cc1)C(=O)Oc1ccc(Nc2cc(=O)oc3ccccc23)cc1,5030,0.02,1.0,1.0,1.0
+32,4-((2-Oxo-2H-chromen-4-yl)amino)phenyl 2-(4-(4-chlorobenzoyl)phenoxy)-2-methylpropanoate,13C NMR,"(126 MHz, CDCl3) δ 194.5, 172.4, 163.4, 159.6, 153.9, 152.4,
+148.3, 138.7, 136.3, 135.8, 132.3, 131.3, 130.8, 128.7, 126.1, 123.9, 122.5, 121.1, 117.9, 117.4, 114.5,
+86.8, 79.5, 25.5",CC(C)(Oc1ccc(C(=O)c2ccc(Cl)cc2)cc1)C(=O)Oc1ccc(Nc2cc(=O)oc3ccccc23)cc1,5031,,,,
+33,4-((2-Oxo-2H-chromen-4-yl)amino)phenyl 2-(4-(4-chlorobenzoyl)phenoxy)-2-methylpropanoate,MS,"(ESI) calcd for C32H24ClNO6 [M+H]+: 554.1365, Found: 554.1362",CC(C)(Oc1ccc(C(=O)c2ccc(Cl)cc2)cc1)C(=O)Oc1ccc(Nc2cc(=O)oc3ccccc23)cc1,5032,,,,
+34,4-((2-Oxo-2H-chromen-4-yl)amino)phenyl 2-(4-isobutylphenyl)acetate,1H NMR,"(400 MHz, CDCl3) δ
+7.69 (d, J = 7.7 Hz, 1H), 7.58 – 7.51 (m, 1H), 7.38 – 7.25 (m, 5H), 7.22 (dd, J = 9.0, 2.5 Hz, 2H), 7.17
+(d, J = 8.0 Hz, 2H), 7.06 – 6.99 (m, 2H), 5.61 (s, 1H), 3.96 (q, J = 7.2 Hz, 1H), 2.49 (d, J = 7.1 Hz, 2H),
+1.88 (td, J = 13.2, 6.6 Hz, 1H), 1.63 (d, J = 7.1 Hz, 3H), 1.59 (d, J = 7.2 Hz, 1H), 0.92 (dd, J = 6.4, 3.9
+Hz, 6H)",CC(C)Cc1ccc(CC(=O)Oc2ccc(Nc3cc(=O)oc4ccccc34)cc2)cc1,5022,0.03,1.0,1.0,1.0
+35,4-((2-Oxo-2H-chromen-4-yl)amino)phenyl 2-(4-isobutylphenyl)acetate,13C NMR,"(100 MHz, DMSO) δ 173.0, 161.6, 153.5, 152.7, 148.2, 140.2, 137.5, 135.9,
+132.6, 129.5, 127.3, 126.4, 123.8, 122.9, 122.7, 117.2, 114.5, 84.5, 44.3, 44.3, 29.7, 22.3, 18.6",CC(C)Cc1ccc(CC(=O)Oc2ccc(Nc3cc(=O)oc4ccccc34)cc2)cc1,5023,0.0,0.96,0.96,0.96
+36,4-((2-Oxo-2H-chromen-4-yl)amino)phenyl 2-(4-isobutylphenyl)acetate,MS,"(ESI) calcd for C28H27NO4 [M+H]+: 442.2013, Found: 442.2008",CC(C)Cc1ccc(CC(=O)Oc2ccc(Nc3cc(=O)oc4ccccc34)cc2)cc1,5024,,,,
+37,4-((2-Oxo-2H-chromen-4-yl)amino)phenyl-2-(6-methoxynaphthalen-2-yl)propanoate,1H NMR,"(400 MHz,
+DMSO) δ 9.29 (s, 1H), 8.21 (d, J = 7.6 Hz, 1H), 7.86 (dd, J = 8.6, 3.6 Hz, 3H), 7.66 (t, J = 7.7 Hz, 1H),
+7.53 (d, J = 10.1 Hz, 1H), 7.39 (q, J = 6.0 Hz, 4H), 7.33 (d, J = 2.3 Hz, 1H), 7.20 – 7.13 (m, 3H), 5.25
+(s, 1H), 3.88 (s, 3H), 3.07 (s, 1H), 1.62 (d, J = 7.1 Hz, 3H)",COc1ccc2cc(C(C)C(=O)Oc3ccc(Nc4cc(=O)oc5ccccc45)cc3)ccc2c1,5025,0.02,1.0,1.0,1.0
+38,4-((2-Oxo-2H-chromen-4-yl)amino)phenyl-2-(6-methoxynaphthalen-2-yl)propanoate,13C NMR,"(126 MHz, DMSO) δ 173.4,
+161.9, 157.8, 153.8, 152.9, 148.5, 136.2, 135.7, 133.9, 132.9, 129.7, 129.0, 127.8, 126.7, 126.7, 126.4,
+124.1, 123.2, 123.1, 119.4, 117.5, 114.9, 114.5, 106.2, 84.9, 55.7, 49.2, 45.0, 27.3, 18.9",COc1ccc2cc(C(C)C(=O)Oc3ccc(Nc4cc(=O)oc5ccccc45)cc3)ccc2c1,5026,0.0,0.97,0.97,0.97
+39,4-((2-Oxo-2H-chromen-4-yl)amino)phenyl-2-(6-methoxynaphthalen-2-yl)propanoate,MS,"(ESI)
+calcd for C29H24NO5 [M+H]+: 466.1649, Found: 466.1646",COc1ccc2cc(C(C)C(=O)Oc3ccc(Nc4cc(=O)oc5ccccc45)cc3)ccc2c1,5027,,,,
+40,"4-((2-amino-4,5-dimethylphenyl)amino)-2H-chromen-2-one",1H NMR,"(500
+MHz, DMSO) δ 8.86 (s, 1H), 8.24 (d, J = 7.8 Hz, 1H), 7.62 (t, J = 7.4 Hz, 1H), 7.35 (dd, J = 15.3, 7.9
+Hz, 2H), 6.78 (s, 1H), 6.63 (s, 1H), 4.78 (s, 2H), 4.66 (s, 1H), 2.14 (s, 3H), 2.10 (s, 3H)",Cc1cc(N)c(Nc2cc(=O)oc3ccccc23)cc1C,4953,0.0,1.0,1.0,1.0
+41,"4-((2-amino-4,5-dimethylphenyl)amino)-2H-chromen-2-one",13C NMR,"(100 MHz, DMSO) δ 161.7, 153.4, 153.2, 142.3, 136.0, 131.9, 128.8, 123.9, 123.3, 123.2, 119.2, 117.0,
+116.8, 114.8, 83.5, 19.3, 18.3",Cc1cc(N)c(Nc2cc(=O)oc3ccccc23)cc1C,4954,0.0,1.0,1.0,1.0
+42,"4-((2-amino-4,5-dimethylphenyl)amino)-2H-chromen-2-one",MS,"(ESI) calcd for C17H16N2O2 [M+H]+: 281.1285, Found: 281.1282",Cc1cc(N)c(Nc2cc(=O)oc3ccccc23)cc1C,4955,,,,
+43,4-((2-aminophenyl)amino)-2H-chromen-2-one,1H NMR,"(400
+MHz, DMSO) δ 8.95 (s, 1H), 8.24 (d, J = 8.0 Hz, 1H), 7.63 (t, J = 8.4 Hz, 1H), 7.37 (dd, J = 13.5, 7.5
+Hz, 2H), 7.09 (t, J = 8.3 Hz, 1H), 7.02 (d, J = 7.7 Hz, 1H), 6.83 (d, J = 9.1 Hz, 1H), 6.63 (t, J = 7.5 Hz,
+1H), 5.10 (s, 2H), 4.66 (s, 1H)",Nc1ccccc1Nc1cc(=O)oc2ccccc12,4950,0.0,1.0,1.0,1.0
+44,4-((2-aminophenyl)amino)-2H-chromen-2-one,13C NMR,"(126 MHz, DMSO) δ 161.8, 153.4, 153.1, 144.9, 132.0,
+128.4, 123.4, 123.3, 121.5, 116.9, 116.3, 115.6, 114.8, 83.7",Nc1ccccc1Nc1cc(=O)oc2ccccc12,4951,0.0,1.0,1.0,1.0
+45,4-((2-aminophenyl)amino)-2H-chromen-2-one,MS,"(ESI) calcd for C15H12N2O2
+[M+H]+: 253.0972, Found: 253.0968",Nc1ccccc1Nc1cc(=O)oc2ccccc12,4952,,,,
+46,4-((2-chlorophenyl)amino)-2H-chromen-2-one,1H NMR,"(400
+MHz, DMSO) δ 9.43 (s, 1H), 8.26 (d, J = 8.1 Hz, 1H), 7.68 (t, J = 7.8 Hz, 2H), 7.52 (dd, J = 4.2, 1.8
+Hz, 2H), 7.49 – 7.44 (m, 1H), 7.40 (t, J = 7.4 Hz, 2H), 4.64 (s, 1H)",O=c1cc(Nc2ccccc2Cl)c2ccccc2o1,4915,0.0,1.0,1.0,1.0
+47,4-((2-chlorophenyl)amino)-2H-chromen-2-one,13C NMR,"(100 MHz, DMSO)
+δ 161.2, 153.3, 152.9, 135.0, 132.5, 131.4, 130.5, 130.1, 129.4, 128.7, 123.8, 122.8, 117.1, 114.1, 84.8",O=c1cc(Nc2ccccc2Cl)c2ccccc2o1,4916,0.0,1.0,1.0,1.0
+48,4-((2-chlorophenyl)amino)-2H-chromen-2-one,MS,"(ESI) calcd for C15H11NO2Cl [M+H]+: 272.0473, Found: 272.0470",O=c1cc(Nc2ccccc2Cl)c2ccccc2o1,4917,,,,
+49,4-((2-fluorophenyl)amino)-2H-chromen-2-one,1H NMR,"(400
+MHz, DMSO) δ 9.30 (s, 1H), 8.24 (d, J = 7.9 Hz, 1H), 7.68 (t, J = 7.5 Hz, 1H), 7.53 – 7.29 (m, 7H),
+4.87 (s, 1H)",O=c1cc(Nc2ccccc2F)c2ccccc2o1,4905,0.0,1.0,1.0,1.0
+50,4-((2-fluorophenyl)amino)-2H-chromen-2-one,13C NMR,"(126 MHz, DMSO) δ 161.3, 158.0, 156.0, 153.3, 152.8, 132.5, 129.1,
+125.4, 123.8, 122.8, 117.1, 116.9, 116.7, 114.2, 85.1",O=c1cc(Nc2ccccc2F)c2ccccc2o1,4906,0.0,1.0,1.0,1.0
+51,4-((2-fluorophenyl)amino)-2H-chromen-2-one,19F NMR,"(376 MHz, DMSO) δ -120.39 ppm",O=c1cc(Nc2ccccc2F)c2ccccc2o1,4907,,,,
+52,4-((2-fluorophenyl)amino)-2H-chromen-2-one,MS,"(ESI) calcd for C16H13NO2F [M+H]+: 256.0768, Found: 256.0765",O=c1cc(Nc2ccccc2F)c2ccccc2o1,4908,,,,
+53,4-((2-methoxyphenyl)amino)-2H-chromen-2-one,1H NMR,"(400
+MHz, DMSO) δ 9.04 (s, 1H), 8.25 (d, J = 7.7 Hz, 1H), 7.65 (t, J = 7.6 Hz, 1H), 7.38 (dd, J = 14.5, 7.8
+Hz, 3H), 7.31 (d, J = 7.2 Hz, 1H), 7.21 (d, J = 8.1 Hz, 1H), 7.07 (t, J = 7.7 Hz, 1H), 4.72 (s, 1H), 3.80
+(s, 3H)",COc1ccccc1Nc1cc(=O)oc2ccccc12,4930,0.0,1.0,1.0,1.0
+54,4-((2-methoxyphenyl)amino)-2H-chromen-2-one,13C NMR,"(100 MHz, DMSO) δ 161.5, 154.6, 153.3, 153.2, 132.3, 128.8, 128.5, 125.8,
+123.6, 122.8, 121.0, 117.0, 114.4, 112.6, 83.9, 55.6",COc1ccccc1Nc1cc(=O)oc2ccccc12,4931,0.0,1.0,1.0,1.0
+55,4-((2-methoxyphenyl)amino)-2H-chromen-2-one,MS,"(ESI) calcd for C16H13NO3 [M+H]+:
+268.0968, Found: 268.0964",COc1ccccc1Nc1cc(=O)oc2ccccc12,4932,,,,
+56,4-((2-methylallyl)amino)-2H-chromen-2-one,1H NMR,"(400
+MHz, CDCl3) δ 7.54 (t, J = 7.8 Hz, 1H), 7.46 (d, J = 8.0 Hz, 1H), 7.35 (d, J = 7.6 Hz, 1H), 7.28 (d, J = 8.1 Hz, 1H), 5.33 (s, 1H), 4.99 (d, J = 6.4 Hz, 2H), 3.86 (d, J = 5.7 Hz, 2H), 1.82 (s, 3H)",C=C(C)CNc1cc(=O)oc2ccccc12,5016,,,,
+57,4-((2-methylallyl)amino)-2H-chromen-2-one,13C NMR,"(126 MHz, CDCl3) δ 163.2, 153.8, 152.9, 139.6, 132.0, 123.6, 120.1, 118.2, 114.34, 112.8, 85.0,
+49.0, 20.5",C=C(C)CNc1cc(=O)oc2ccccc12,5017,0.0,1.0,1.0,1.0
+58,4-((2-methylallyl)amino)-2H-chromen-2-one,MS,"(ESI) calcd for C13H14NO2 [M+H]+: 216.1019, Found: 216.1019",C=C(C)CNc1cc(=O)oc2ccccc12,5018,,,,
+59,"4-((3,5-dimethylphenyl)amino)-2H-chromen-2-one",1H NMR,"(400
+MHz, DMSO) δ 9.21 (s, 1H), 8.24 (d, J = 7.4 Hz, 1H), 7.65 (t, J = 7.3 Hz, 1H), 7.38 (dd, J = 12.4, 7.8
+Hz, 2H), 6.96 (d, J = 19.2 Hz, 3H), 5.30 (s, 1H), 2.31 (s, 5H)",Cc1cc(C)cc(Nc2cc(=O)oc3ccccc23)c1,4881,0.0,1.0,1.0,1.0
+60,"4-((3,5-dimethylphenyl)amino)-2H-chromen-2-one",13C NMR,"(126 MHz, DMSO) δ 161.5, 153.4, 152.4, 138.8, 138.0, 132.3, 127.5, 123.6, 122.8, 122.6, 117.0, 114.5, 84.3, 20.9",Cc1cc(C)cc(Nc2cc(=O)oc3ccccc23)c1,4882,,,,
+61,"4-((3,5-dimethylphenyl)amino)-2H-chromen-2-one",MS,"(ESI) calcd for C17H15NO2 [M+H]+: 266.1176, Found: 266.1171",Cc1cc(C)cc(Nc2cc(=O)oc3ccccc23)c1,4883,,,,
+62,4-((3-chlorophenyl)amino)-2H-chromen-2-one,1H NMR,"(400
+MHz, DMSO) δ 9.33 (s, 1H), 8.20 (d, J = 7.8 Hz, 1H), 7.67 (t, 1H), 7.50 (d, J = 8.1 Hz, 1H), 7.46 (d,
+1H), 7.40 (t, J = 7.2 Hz, 3H), 7.34 (d, J = 7.9 Hz, 1H), 5.42 (s, 1H)",O=c1cc(Nc2cccc(Cl)c2)c2ccccc2o1,4912,0.0,1.0,1.0,1.0
+63,4-((3-chlorophenyl)amino)-2H-chromen-2-one,13C NMR,"(126 MHz, DMSO)
+δ 161.6, 153.5, 152.2, 140.1, 133.8, 132.7, 131.3, 125.7, 124.5, 123.9, 123.4, 122.9, 117.2, 114.5, 85.7",O=c1cc(Nc2cccc(Cl)c2)c2ccccc2o1,4913,0.04,1.0,1.0,1.0
+64,4-((3-chlorophenyl)amino)-2H-chromen-2-one,MS,"(ESI) calcd for C15H10ClNO2 [M+H]+: 272.0473, Found: 272.0471",O=c1cc(Nc2cccc(Cl)c2)c2ccccc2o1,4914,,,,
+65,4-((3-fluoro-4-methylphenyl)amino)-2H-chromen-2-one,1H NMR,"(400
+MHz, CDCl3) δ 7.60 (dd, J = 15.8, 7.7 Hz, 2H), 7.38 (d, J = 8.1 Hz, 1H), 7.33 (t, J = 7.7 Hz, 1H), 7.23
+(d, J = 7.9 Hz, 1H), 7.03 – 6.93 (m, 2H), 6.65 (s, 1H), 5.73 (s, 1H), 2.30 (s, 3H)",Cc1ccc(Nc2cc(=O)oc3ccccc23)cc1F,4901,0.04,1.0,1.0,1.0
+66,4-((3-fluoro-4-methylphenyl)amino)-2H-chromen-2-one,13C NMR,"(100
+MHz, DMSO) δ 161.9, 161.4, 153.4, 152.2, 137.6, 132.4, 132.2, 123.7, 122.8, 121.8, 120.7, 117.1,
+114.4, 111.8, 111.6, 85.0, 13.84",Cc1ccc(Nc2cc(=O)oc3ccccc23)cc1F,4902,0.04,1.0,1.0,1.0
+67,4-((3-fluoro-4-methylphenyl)amino)-2H-chromen-2-one,19F NMR,"(376 MHz, DMSO) δ -115.40, -116.41, -119.48 ppm",Cc1ccc(Nc2cc(=O)oc3ccccc23)cc1F,4903,,,,
+68,4-((3-fluoro-4-methylphenyl)amino)-2H-chromen-2-one,MS,"(ESI) calcd for C16H13NO2F [M+H]+: 270.0925, Found: 270.0923",Cc1ccc(Nc2cc(=O)oc3ccccc23)cc1F,4904,,,,
+69,4-((3-fluorophenyl)amino)-2H-chromen-2-one,1H NMR,"(500
+MHz, DMSO) δ 9.37 (s, 1H), 8.21 (d, J = 7.3 Hz, 1H), 7.68 (t, J = 7.8 Hz, 1H), 7.55 – 7.48 (q,1H),
+7.44 – 7.37 (m, 2H), 7.26 (m, J = 8.5, 3.9 Hz, 2H), 7.12 (t, J = 8.9 Hz, 1H), 5.45 (s, 1H)",O=c1cc(Nc2cccc(F)c2)c2ccccc2o1,4897,0.0,1.0,1.0,1.0
+70,4-((3-fluorophenyl)amino)-2H-chromen-2-one,13C NMR,"(126 MHz, DMSO) δ 163.5, 161.5, 153.4, 151.9, 140.3, 132.5, 131.2, 123.7, 122.9, 120.6, 117.1, 114.5,
+112.4, 111.6, 85.7",O=c1cc(Nc2cccc(F)c2)c2ccccc2o1,4898,0.04,1.0,1.0,1.0
+71,4-((3-fluorophenyl)amino)-2H-chromen-2-one,19F NMR,"(376 MHz, DMSO) δ -111.42",O=c1cc(Nc2cccc(F)c2)c2ccccc2o1,4899,,,,
+72,4-((3-fluorophenyl)amino)-2H-chromen-2-one,MS,"(ESI) calcd for C15H10FNO2
+[M+H]+: 256.0768, Found: 256.0767",O=c1cc(Nc2cccc(F)c2)c2ccccc2o1,4900,,,,
+73,4-((3-methoxyphenyl)amino)-2H-chromen-2-one,1H NMR,"(400 MHz, DMSO) δ 9.27 (s, 1H), 8.23 (d, J = 8.0 Hz, 1H), 7.66 (t, J = 7.9 Hz, 1H), 7.39 (dd, J = 13.4, 5.3
+Hz, 3H), 6.99 – 6.91 (m, 2H), 6.88 (d, J = 8.2 Hz, 1H), 5.37 (s, 1H), 3.79 (s, 3H)",COc1cccc(Nc2cc(=O)oc3ccccc23)c1,4927,,,,
+74,4-((3-methoxyphenyl)amino)-2H-chromen-2-one,13C NMR,"(126
+MHz, DMSO) δ 161.5, 160.1, 153.4, 152.3, 139.5, 132.4, 130.3, 123.6, 122.8, 117.0, 114.5, 111.5,
+110.6, 84.9, 55.3",COc1cccc(Nc2cc(=O)oc3ccccc23)c1,4928,0.04,1.0,1.0,1.0
+75,4-((3-methoxyphenyl)amino)-2H-chromen-2-one,MS,"(ESI) calcd for C16H13NO3 [M+H]+: 268.0968, Found: 268.0967",COc1cccc(Nc2cc(=O)oc3ccccc23)c1,4929,,,,
+76,4-((3-phenylpropyl)amino)-2H-chromen-2-one,1H NMR,"(400
+MHz, DMSO) δ 8.06 (d, J = 7.1 Hz, 1H), 7.65 (t, J = 5.1 Hz, 1H), 7.58 (t, J = 7.1 Hz, 1H), 7.34 – 7.27
+(m, 4H), 7.24 (d, J = 6.8 Hz, 2H), 7.18 (t, J = 7.1 Hz, 1H), 5.11 (s, 1H), 3.26 (dd, J = 12.9, 6.8 Hz, 2H),
+2.73 – 2.65 (m, 2H), 2.00 – 1.88 (m, 2H)",O=c1cc(NCCCc2ccccc2)c2ccccc2o1,4992,0.0,1.0,1.0,1.0
+77,4-((3-phenylpropyl)amino)-2H-chromen-2-one,13C NMR,"(126 MHz, DMSO) δ 161.6, 153.2, 153.1,
+141.6, 131.9, 128.4, 125.9, 123.3, 122.5, 117.0, 114.5, 81.3, 41.9, 32.6, 29.2",O=c1cc(NCCCc2ccccc2)c2ccccc2o1,4993,0.04,1.0,1.0,1.0
+78,4-((3-phenylpropyl)amino)-2H-chromen-2-one,MS,"(ESI) calcd for
+C18H17NO2 [M+H]+: 280.1332, Found: 280.1329",O=c1cc(NCCCc2ccccc2)c2ccccc2o1,4994,,,,
+79,"4-((4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl)amino)-2H-chromen-2-one",1H NMR,"(400
+MHz, DMSO) δ 9.42 (s, 1H), 8.79 (d, J = 13.2 Hz, 1H), 8.24 (d, J = 7.9 Hz, 1H), 7.77 (d, J = 8.3 Hz,
+2H), 7.68 (t, J = 7.6 Hz, 1H), 7.55 (d, J = 8.5 Hz, 2H), 7.41 (dd, J = 13.9, 7.8 Hz, 2H), 5.50 (s, 1H), 3.07 (s, 1H)",O=c1cc(Nc2ccc(C(O)(C(F)(F)F)C(F)(F)F)cc2)c2ccccc2o1,4943,0.0,1.0,0.89,0.94
+80,"4-((4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl)amino)-2H-chromen-2-one",13C NMR,"(100 MHz, DMSO) δ 161.4, 153.4, 151.7, 140.3, 132.6, 128.2, 127.3,
+124.1, 123.7, 123.0, 117.1, 114.5, 85.7, 26.8",O=c1cc(Nc2ccc(C(O)(C(F)(F)F)C(F)(F)F)cc2)c2ccccc2o1,4944,0.05,1.0,1.0,1.0
+81,"4-((4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl)amino)-2H-chromen-2-one",19F NMR,"(376 MHz, DMSO) δ -73.76, -73.95 ppm",O=c1cc(Nc2ccc(C(O)(C(F)(F)F)C(F)(F)F)cc2)c2ccccc2o1,4945,,,,
+82,"4-((4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)phenyl)amino)-2H-chromen-2-one",MS,"(ESI) calcd for C18H11F6NO3 [M+H]+: 404.0716, Found: 404.0714",O=c1cc(Nc2ccc(C(O)(C(F)(F)F)C(F)(F)F)cc2)c2ccccc2o1,4946,,,,
+83,4-((4-(phenylamino)phenyl)amino)-2H-chromen-2-one,1H NMR,"(400
+MHz, DMSO) δ 9.28 (s, 1H), 8.24 (s, 1H), 7.66 (s, 1H), 7.40 (m, 6H), 7.24 – 7.04 (m, 5H), 5.25 (s, 1H)",O=c1cc(Nc2ccc(Nc3ccccc3)cc2)c2ccccc2o1,4959,0.04,1.0,1.0,1.0
+84,4-((4-(phenylamino)phenyl)amino)-2H-chromen-2-one,13C NMR,"(126 MHz, DMSO) δ 161.6, 156.7, 154.7, 153.4, 153.0, 133.4, 132.5, 130.2, 127.3,
+123.7, 122.8, 119.6, 118.8, 117.2, 114.5, 84.2",O=c1cc(Nc2ccc(Nc3ccccc3)cc2)c2ccccc2o1,4960,0.0,1.0,1.0,1.0
+85,4-((4-(phenylamino)phenyl)amino)-2H-chromen-2-one,MS,"(ESI) calcd for C21H16N2O2 [M+H]+: 329.1285,
+Found: 329.1281",O=c1cc(Nc2ccc(Nc3ccccc3)cc2)c2ccccc2o1,4961,,,,
+86,4-((4-(tert-butyl)phenyl)amino)-2H-chromen-2-one,1H NMR,"(400
+MHz, DMSO) δ 9.27 (s, 1H), 8.24 (d, J = 7.7 Hz, 1H), 7.66 (t, J = 7.5 Hz, 1H), 7.50 (d, J = 8.5 Hz, 2H),
+7.39 (dd, J = 14.4, 7.8 Hz, 2H), 7.30 (d, J = 8.4 Hz, 2H), 5.26 (s, 1H), 1.32 (s, 9H)",CC(C)(C)c1ccc(Nc2cc(=O)oc3ccccc23)cc1,4878,0.0,1.0,1.0,1.0
+87,4-((4-(tert-butyl)phenyl)amino)-2H-chromen-2-one,13C NMR,"(100
+MHz, DMSO) δ 161.8, 153.6, 152.8, 148.8, 135.6, 132.6, 126.4, 124.9, 123.9, 122.8, 117.3, 114.6, 84.2,
+34.4, 31.24",CC(C)(C)c1ccc(Nc2cc(=O)oc3ccccc23)cc1,4879,0.0,1.0,1.0,1.0
+88,4-((4-(tert-butyl)phenyl)amino)-2H-chromen-2-one,MS,"(ESI) calcd for C19H19NO2 [M+H]+: 294.1489, Found: 294.1487",CC(C)(C)c1ccc(Nc2cc(=O)oc3ccccc23)cc1,4880,,,,
+89,4-((4-(trifluoromethoxy)phenyl)amino)-2H-chromen-2-one,1H NMR,"(400
+MHz, DMSO) δ 9.35 (s, 1H), 8.22 (d, J = 7.9 Hz, 1H), 7.68 (t, J = 7.6 Hz, 1H), 7.50 (q, J = 8.9 Hz, 4H),
+7.41 (dd, J = 14.5, 7.9 Hz, 2H), 5.37 (s, 1H)",O=c1cc(Nc2ccc(OC(F)(F)F)cc2)c2ccccc2o1,4939,0.0,1.0,1.0,1.0
+90,4-((4-(trifluoromethoxy)phenyl)amino)-2H-chromen-2-one,13C NMR,"(100 MHz, DMSO) δ 161.5, 153.4, 152.3,
+145.6, 137.6, 132.6, 126.6, 123.8, 122.9, 122.4, 117.2, 114.5, 99.6, 85.1",O=c1cc(Nc2ccc(OC(F)(F)F)cc2)c2ccccc2o1,4940,0.0,1.0,1.0,1.0
+91,4-((4-(trifluoromethoxy)phenyl)amino)-2H-chromen-2-one,19F NMR,"(376 MHz, DMSO)
+δ -56.96 ppm",O=c1cc(Nc2ccc(OC(F)(F)F)cc2)c2ccccc2o1,4941,,,,
+92,4-((4-(trifluoromethoxy)phenyl)amino)-2H-chromen-2-one,MS,"(ESI) calcd for C16H9NO3F3 [M+H]+: 322.0686, Found: 322.0684",O=c1cc(Nc2ccc(OC(F)(F)F)cc2)c2ccccc2o1,4942,,,,
+93,4-((4-bromophenyl)amino)-2H-chromen-2-one,1H NMR,"(400
+MHz, DMSO) δ 9.31 (s, 1H), 8.22 (d, J = 7.8 Hz, 1H), 7.66 (d, J = 8.2 Hz, 3H), 7.46 – 7.30 (m, 4H), 5.37 (s, 1H)",O=c1cc(Nc2ccc(Br)cc2)c2ccccc2o1,4918,0.0,1.0,0.83,0.91
+94,4-((4-bromophenyl)amino)-2H-chromen-2-one,13C NMR,"(100 MHz, DMSO) δ 161.3, 153.4, 152.0, 137.8, 132.5, 132.4, 126.8,
+123.7, 122.8, 117.9, 117.1, 114.4, 85.1",O=c1cc(Nc2ccc(Br)cc2)c2ccccc2o1,4919,0.0,1.0,1.0,1.0
+95,4-((4-bromophenyl)amino)-2H-chromen-2-one,MS,"(ESI) calcd for C15H10BrNO2 [M+H]+: 315.9968, Found:
+315.9966",O=c1cc(Nc2ccc(Br)cc2)c2ccccc2o1,4920,,,,
+96,4-((4-chlorophenyl)amino)-2H-chromen-2-one,1H NMR,"(400
+MHz, DMSO) δ 9.32 (s, 1H), 8.22 (d, J = 7.8 Hz, 1H), 7.67 (s, 1H), 7.53 (d, J = 8.6 Hz, 2H), 7.40 (dd,
+J = 12.1, 8.4 Hz, 4H), 5.35 (s, 1H)",O=c1cc(Nc2ccc(Cl)cc2)c2ccccc2o1,4909,0.0,1.0,1.0,1.0
+97,4-((4-chlorophenyl)amino)-2H-chromen-2-one,13C NMR,"(126 MHz, DMSO) δ 161.4, 153.4, 152.1, 137.3, 132.4, 129.7, 129.5, 126.5, 123.6, 122.8, 117.1, 114.4, 85.0",O=c1cc(Nc2ccc(Cl)cc2)c2ccccc2o1,4910,,,,
+98,4-((4-chlorophenyl)amino)-2H-chromen-2-one,MS,"(ESI) calcd for C15H10ClNO2
+[M+H]+: 272.0473, Found: 272.0469",O=c1cc(Nc2ccc(Cl)cc2)c2ccccc2o1,4911,,,,
+99,4-((4-fluorophenyl)amino)-2H-chromen-2-one,1H NMR,"(400
+MHz, DMSO) δ 9.23 (s, 1H), 8.16 (d, J = 7.8 Hz, 1H), 7.60 (t, 1H), 7.38 – 7.31 (m, 3H), 7.26 (t, J =
+8.8 Hz, 2H), 5.12 (s, 1H)",O=c1cc(Nc2ccc(F)cc2)c2ccccc2o1,4893,0.0,1.0,1.0,1.0
+100,4-((4-fluorophenyl)amino)-2H-chromen-2-one,13C NMR,"(126 MHz, DMSO) δ 161.4, 160.9, 159.0, 153.4, 152.8, 134.4,
+132.4, 127.6, 123.6, 122.75, 117.1, 116.4, 116.3, 114.4, 84.3",O=c1cc(Nc2ccc(F)cc2)c2ccccc2o1,4894,0.0,1.0,1.0,1.0
+101,4-((4-fluorophenyl)amino)-2H-chromen-2-one,19F NMR,DMSO) δ -115.8 ppm,O=c1cc(Nc2ccc(F)cc2)c2ccccc2o1,4895,,,,
+102,4-((4-fluorophenyl)amino)-2H-chromen-2-one,MS,"(ESI) calcd for C15H11NO2F [M+H]+: 256.0768, Found: 256.0766",O=c1cc(Nc2ccc(F)cc2)c2ccccc2o1,4896,,,,
+103,4-((4-hydroxybutyl)amino)-2H-chromen-2-one,1H NMR,"400
+MHz, CDCl3) δ 7.55 (d, J = 8.0 Hz, 1H), 7.48 (t, J = 7.6 Hz, 1H), 7.28 (d, 1H), 7.22 (t, J = 7.6 Hz, 1H),
+6.16 (s, 1H), 5.26 (s, 1H), 3.78 (t, J = 5.8 Hz, 2H), 3.28 (dd, J = 11.6, 6.2 Hz, 2H), 1.90 (dt, J = 13.3,
+6.8 Hz, 2H), 1.75 (dt, J = 12.9, 6.4 Hz, 2H)",O=c1cc(NCCCCO)c2ccccc2o1,5007,,,,
+104,4-((4-hydroxybutyl)amino)-2H-chromen-2-one,13C NMR,"(100 MHz, CDCl3) δ 163.6, 153.3, 131.8, 123.5, 120.5, 118.0, 83.5, 62.4, 43.2, 29.9, 25.0",O=c1cc(NCCCCO)c2ccccc2o1,5008,,,,
+105,4-((4-hydroxybutyl)amino)-2H-chromen-2-one,MS,"(ESI) calcd for C13H16NO3 [M+H]+: 234.1125,
+Found: 234.1120",O=c1cc(NCCCCO)c2ccccc2o1,5009,,,,
+106,4-((4-hydroxyphenyl)amino)-2H-chromen-2-one,1H NMR,"(400
+MHz, DMSO) δ 9.62 (s, 1H), 9.15 (s, 1H), 8.21 (d, J = 7.8 Hz, 1H), 7.64 (t, J = 7.6 Hz, 1H), 7.37 (d, J
+= 4.4 Hz, 2H), 7.15 (d, J = 8.3 Hz, 2H), 6.87 (d, J = 8.4 Hz, 2H), 5.04 (s, 1H)",O=c1cc(Nc2ccc(O)cc2)c2ccccc2o1,4947,0.0,1.0,1.0,1.0
+107,4-((4-hydroxyphenyl)amino)-2H-chromen-2-one,13C NMR,"(100
+MHz, DMSO) δ 161.9, 156.0, 153.7, 153.5, 132.5, 129.1, 127.6, 123.8, 122.8, 117.2, 116.2, 114.6, 83.4",O=c1cc(Nc2ccc(O)cc2)c2ccccc2o1,4948,0.0,1.0,1.0,1.0
+108,4-((4-hydroxyphenyl)amino)-2H-chromen-2-one,MS,"(ESI) calcd for C15H11NO3 [M+H]+: 254.0812, Found: 254.0807",O=c1cc(Nc2ccc(O)cc2)c2ccccc2o1,4949,,,,
+109,4-((4-iodophenyl)amino)-2H-chromen-2-one,1H NMR,"(400
+MHz, DMSO) δ 9.30 (s, 1H), 8.21 (d, J = 7.8 Hz, 1H), 7.81 (d, J = 8.4 Hz, 2H), 7.66 (t, J = 7.5 Hz, 1H),
+7.40 (dd, J = 12.7, 7.9 Hz, 2H), 7.21 (d, J = 8.5 Hz, 2H), 5.39 (s, 1H)",O=c1cc(Nc2ccc(I)cc2)c2ccccc2o1,4921,0.0,1.0,1.0,1.0
+110,4-((4-iodophenyl)amino)-2H-chromen-2-one,13C NMR,"(100 MHz,
+DMSO) δ 161.3, 153.4, 151.9, 138.2, 132.4, 126.8, 123.6, 122.8, 117.1, 114.5, 90.2, 85.2",O=c1cc(Nc2ccc(I)cc2)c2ccccc2o1,4922,0.0,1.0,1.0,1.0
+111,4-((4-iodophenyl)amino)-2H-chromen-2-one,MS,"(ESI)
+calcd for C15H10INO2 [M+H]+: 363.9829, Found: 363.9825",O=c1cc(Nc2ccc(I)cc2)c2ccccc2o1,4923,,,,
+112,4-((4-methoxyphenyl)amino)-2H-chromen-2-one,1H NMR,"(400
+MHz, CDCl3) δ 7.62 (d, J = 8.0 Hz, 1H), 7.58 (t, J = 7.8 Hz, 1H), 7.38 (d, J = 8.1 Hz, 1H), 7.32 (t, J =
+7.7 Hz, 1H), 7.21 (d, J = 8.8 Hz, 2H), 6.96 (d, J = 8.8 Hz, 2H), 6.61 (s, 1H), 5.51 (s, 2H), 3.85 (s, 3H)",COc1ccc(Nc2cc(=O)oc3ccccc23)cc1,4924,0.04,1.0,1.0,1.0
+113,4-((4-methoxyphenyl)amino)-2H-chromen-2-one,13C NMR,"(100 MHz, CDCl3) δ 158.5, 154.0, 152.9, 132.2, 130.0, 127.2, 123.8, 120.4, 118.1,
+115.1, 114.5, 86.4, 55.7",COc1ccc(Nc2cc(=O)oc3ccccc23)cc1,4925,0.0,1.0,1.0,1.0
+114,4-((4-methoxyphenyl)amino)-2H-chromen-2-one,MS,"(ESI) calcd for C16H13NO3 [M+H]+: 268.0968, Found: 268.0966",COc1ccc(Nc2cc(=O)oc3ccccc23)cc1,4926,,,,
+115,4-((4-morpholinophenyl)amino)-2H-chromen-2-one,1H NMR,"(500
+MHz, DMSO) δ 9.19 (s, 1H), 8.23 (d, J = 7.9 Hz, 1H), 7.64 (t, J = 7.7 Hz, 1H), 7.37 (dd, J = 15.3, 7.9
+Hz, 2H), 7.22 (d, J = 8.5 Hz, 2H), 7.04 (d, J = 8.5 Hz, 2H), 5.10 (s, 1H), 3.75 (s, 4H), 3.14 (s, 4H)",O=c1cc(Nc2ccc(N3CCOCC3)cc2)c2ccccc2o1,4962,0.0,1.0,1.0,1.0
+116,4-((4-morpholinophenyl)amino)-2H-chromen-2-one,13C NMR,"(100 MHz, DMSO) δ 162.1, 153.8, 153.7, 149.9, 132.8, 129.6, 127.0, 124.1, 123.1,
+117.5, 116.1, 114.9, 83.8, 66.5, 48.8",O=c1cc(Nc2ccc(N3CCOCC3)cc2)c2ccccc2o1,4963,0.0,1.0,1.0,1.0
+117,4-((4-morpholinophenyl)amino)-2H-chromen-2-one,MS,"(ESI) calcd for C19H18N2O3 [M+H]+: 323.1390, Found:
+323.1388",O=c1cc(Nc2ccc(N3CCOCC3)cc2)c2ccccc2o1,4964,,,,
+118,4-((4-phenoxyphenyl)amino)-2H-chromen-2-one,1H NMR,"(400
+MHz, DMSO) δ 9.20 (s, 1H), 8.31 (s, 1H), 8.23 (d, J = 7.9 Hz, 1H), 7.65 (t, J = 7.7 Hz, 1H), 7.38 (dd, J
+= 12.9, 7.9 Hz, 2H), 7.26 (t, 2H), 7.22 (d, J = 9.0 Hz, 2H), 7.17 (d, J = 8.8 Hz, 2H), 7.12 (d, J = 7.9 Hz,
+2H), 6.85 (t, J = 7.2 Hz, 1H), 5.16 (s, 1H)",O=c1cc(Nc2ccc(Oc3ccccc3)cc2)c2ccccc2o1,4956,0.0,1.0,1.0,1.0
+119,4-((4-phenoxyphenyl)amino)-2H-chromen-2-one,13C NMR,"(100 MHz, DMSO) δ 161.5, 153.4, 153.1,
+143.1, 141.9, 132.3, 129.4, 129.2, 126.8, 123.5, 122.7, 120.0, 117.1, 117.0, 114.5, 83.4",O=c1cc(Nc2ccc(Oc3ccccc3)cc2)c2ccccc2o1,4957,0.0,1.0,1.0,1.0
+120,4-((4-phenoxyphenyl)amino)-2H-chromen-2-one,MS,"(ESI)
+calcd for C21H15NO3 [M+H]+: 330.1125, Found: 330.1123",O=c1cc(Nc2ccc(Oc3ccccc3)cc2)c2ccccc2o1,4958,,,,
+121,4-(butylamino)-2H-chromen-2-one,1H NMR,"(500
+MHz, CDCl3) δ 7.51 (t, J = 7.8 Hz, 1H), 7.46 (d, J = 8.0 Hz, 1H), 7.32 (d, J = 8.3 Hz, 1H), 7.24 (t, 1H),
+5.31 (s, 1H), 5.21 (s, 1H), 3.27 (dd, J = 12.6, 7.0 Hz, 2H), 1.76 – 1.68 (m, 2H), 1.51 – 1.42 (m, 2H),
+0.98 (t, J = 7.4 Hz, 3H)",CCCCNc1cc(=O)oc2ccccc12,4986,0.06,1.0,1.0,1.0
+122,4-(butylamino)-2H-chromen-2-one,13C NMR,"(100 MHz, CDCl3) δ 163.4, 153.8, 153.0, 131.9, 123.5, 120.1,
+118.1, 114.4, 83.9, 43.0, 30.6, 20.4, 13.9",CCCCNc1cc(=O)oc2ccccc12,4987,0.0,1.0,1.0,1.0
+123,4-(butylamino)-2H-chromen-2-one,MS,"(ESI) calcd for C13H15NO2 [M+H]+: 218.1178, Found:
+218.1176",CCCCNc1cc(=O)oc2ccccc12,4988,,,,
+124,4-(cyclohexylamino)-2H-chromen-2-one,1H NMR,"(400
+MHz, CDCl3) δ 7.50 (t, J = 8.8 Hz, 2H), 7.29 (d, J = 8.2 Hz, 1H), 7.23 (t, J = 7.6 Hz, 1H), 5.32 (s, 1H),
+3.39 (dt, J = 13.4, 6.6 Hz, 1H), 2.10 (d, J = 11.0 Hz, 2H), 1.84 – 1.76 (m, 2H), 1.69 (d, J = 13.1 Hz,
+1H), 1.48 – 1.20 (m, 5H)",O=c1cc(NC2CCCCC2)c2ccccc2o1,5001,0.05,1.0,1.0,1.0
+125,4-(cyclohexylamino)-2H-chromen-2-one,13C NMR,"(126 MHz, CDCl3) δ 163.6, 153.7, 151.9, 131.8, 123.4, 120.6,
+117.8, 114.5, 83.4, 51.8, 32.2, 25.6, 24.9",O=c1cc(NC2CCCCC2)c2ccccc2o1,5002,0.0,1.0,1.0,1.0
+126,4-(cyclohexylamino)-2H-chromen-2-one,MS,"(ESI) calcd for C15H18NO2 [M+H]+: 244.1332, Found:
+244.1326",O=c1cc(NC2CCCCC2)c2ccccc2o1,5003,,,,
+127,4-(cyclopropylamino)-2H-chromen-2-one,1H NMR,"(400
+MHz, CDCl3) δ 7.51 (t, J = 7.8 Hz, 1H), 7.47 (d, J = 11.7 Hz, 1H), 7.31 (d, J = 8.2 Hz, 1H), 7.23 (t, J =
+7.6 Hz, 1H), 5.75 (s, 1H), 2.66 – 2.55 (m, 1H), 0.95 – 0.87 (m, 2H), 0.73 – 0.67 (m, 2H)",O=c1cc(NC2CC2)c2ccccc2o1,4998,0.05,1.0,1.0,1.0
+128,4-(cyclopropylamino)-2H-chromen-2-one,13C NMR,"(100 MHz, CDCl3) δ 163.3, 154.2, 153.7, 131.9, 123.6, 120.3, 118.0, 114.3, 86.0, 24.7, 7.6",O=c1cc(NC2CC2)c2ccccc2o1,4999,,,,
+129,4-(cyclopropylamino)-2H-chromen-2-one,MS,"(ESI) calcd for C12H12NO2 [M+H]+: 202.0863, Found: 202.0862",O=c1cc(NC2CC2)c2ccccc2o1,5000,,,,
+130,4-(mesitylamino)-2H-chromen-2-one,1H NMR,"(500
+MHz, DMSO) δ 9.08 (s, 1H), 8.27 (d, J = 6.5 Hz, 1H), 7.66 (d, 1H), 7.38 (t, 2H), 7.05 (s, 2H), 4.39 (s,
+1H), 2.29 (s, 3H), 2.12 (s, 6H)",Cc1cc(C)c(Nc2cc(=O)oc3ccccc23)c(C)c1,4887,0.06,1.0,1.0,1.0
+131,4-(mesitylamino)-2H-chromen-2-one,13C NMR,"(126 MHz, DMSO) δ 161.50, 153.48, 153.0, 137.1,
+135.6, 132.3, 132.0, 129.2, 123.6, 122.6, 117.1, 114.2, 82.2, 20.6, 17.3",Cc1cc(C)c(Nc2cc(=O)oc3ccccc23)c(C)c1,4888,0.0,1.0,1.0,1.0
+132,4-(mesitylamino)-2H-chromen-2-one,MS,"(ESI) calcd for
+C17H15NO2 [M+H]+: 280.1332, Found: 280.1324",Cc1cc(C)c(Nc2cc(=O)oc3ccccc23)c(C)c1,4889,,,,
+133,4-(naphthalen-2-ylamino)-2H-chromen-2-one,1H NMR,"(400 MHz,
+CDCl3) δ 7.91 (d, J = 8.6 Hz, 1H), 7.87 (d, J = 8.5 Hz, 1H), 7.81 (d, J = 6.9 Hz, 1H), 7.75 (d, J = 1.6 Hz, 1H), 7.69 (d, J = 8.2 Hz, 1H), 7.61 (t, J = 7.2 Hz, 1H), 7.57 – 7.49 (m, 2H), 7.42 (dd, J = 8.5, 2.6
+Hz, 2H), 7.36 (t, J = 7.6 Hz, 1H), 6.82 (s, 1H), 5.87 (s, 1H)",O=c1cc(Nc2ccc3ccccc3c2)c2ccccc2o1,4890,0.04,1.0,1.0,1.0
+134,4-(naphthalen-2-ylamino)-2H-chromen-2-one,13C NMR,"(100 MHz, DMSO) δ 161.5,
+153.4, 152.3, 135.9, 133.5, 132.4, 131.0, 129.3, 127.7, 127.5, 126.8, 125.9, 124.0, 123.7, 122.9, 122.0,
+117.1, 114.6, 84.8",O=c1cc(Nc2ccc3ccccc3c2)c2ccccc2o1,4891,0.0,1.0,1.0,1.0
+135,4-(naphthalen-2-ylamino)-2H-chromen-2-one,MS,"(ESI) calcd for C19H13NO2 [M+H]+: 288.1019, Found: 288.1016",O=c1cc(Nc2ccc3ccccc3c2)c2ccccc2o1,4892,,,,
+136,4-(o-tolylamino)-2H-chromen-2-one,1H NMR,"(400
+MHz, CDCl3) δ 7.67 (d, J = 8.0 Hz, 1H), 7.59 (t, J = 7.8 Hz, 1H), 7.40 – 7.30 (m, 3H), 7.26 (m, 3H),
+6.60 (s, 1H), 5.20 (s, 1H), 2.27 (s, 3H)",Cc1ccccc1Nc1cc(=O)oc2ccccc12,4884,0.05,1.0,1.0,1.0
+137,4-(o-tolylamino)-2H-chromen-2-one,13C NMR,"(100 MHz, CDCl3) δ 163.2, 154.1, 152.4, 135.6,
+135.1, 132.2, 131.6, 128.1, 127.5, 127.3, 123.8, 120.4, 118.2, 114.4, 86.9, 17.8",Cc1ccccc1Nc1cc(=O)oc2ccccc12,4885,0.0,1.0,1.0,1.0
+138,4-(o-tolylamino)-2H-chromen-2-one,MS,"(ESI) calcd for
+C16H13NO2 [M+H]+: 252.1019, Found: 252.1023",Cc1ccccc1Nc1cc(=O)oc2ccccc12,4886,,,,
+139,4-(p-tolylamino)-2H-benzo[g]chromen-2-one,1H NMR,"(400
+MHz, CDCl3) δ 8.71 (d, J = 8.7 Hz, 1H), 7.97 (d, J = 8.7 Hz, 2H), 7.65 (t, J = 7.6 Hz, 1H), 7.59 – 7.54
+(t, 1H), 7.45 (d, J = 9.0 Hz, 1H), 7.28 (s, 1H), 7.19 (d, J = 8.2 Hz, 2H), 7.03 (s, 1H), 5.79 (s, 1H), 2.40
+(s, 3H)",Cc1ccc(Nc2cc(=O)oc3cc4ccccc4cc23)cc1,4977,0.04,1.0,1.0,1.0
+140,4-(p-tolylamino)-2H-benzo[g]chromen-2-one,13C NMR,"(100 MHz, DMSO) δ 161.1, 152.5, 151.7, 135.6, 135.3, 134.8, 130.1, 125.4,
+125.0, 119.4, 116.4, 115.7, 84.4, 20.7",Cc1ccc(Nc2cc(=O)oc3cc4ccccc4cc23)cc1,4978,0.0,1.0,1.0,1.0
+141,4-(p-tolylamino)-2H-benzo[g]chromen-2-one,MS,"(ESI) calcd for C20H16NO2 [M+H]+: 302.1176, Found:
+302.1173",Cc1ccc(Nc2cc(=O)oc3cc4ccccc4cc23)cc1,4979,,,,
+142,4-(p-tolylamino)-2H-chromen-2-one,1H NMR,"(400
+MHz, DMSO) δ 9.26 (s, 1H), 8.24 (d, J = 7.4 Hz, 1H), 7.66 (t, J = 7.2 Hz, 1H), 7.40 (d, J = 7.6 Hz, 1H),
+7.37 (d, J = 8.2 Hz, 1H), 7.30 (d, J = 8.3 Hz, 2H), 7.25 (d, J = 8.3 Hz, 2H), 5.21 (s, 1H), 2.35 (s, 3H)",Cc1ccc(Nc2cc(=O)oc3ccccc23)cc1,4872,0.0,1.0,1.0,1.0
+143,4-(p-tolylamino)-2H-chromen-2-one,13C NMR,"(100 MHz, DMSO) δ 161.5, 153.4, 152.8, 135.5, 132. 130.1, 125.3, 123.6, 122.8, 117.1,
+114.5, 84.0, 20.7",Cc1ccc(Nc2cc(=O)oc3ccccc23)cc1,4873,,,,
+144,4-(p-tolylamino)-2H-chromen-2-one,MS,"(ESI) calcd for C16H13NO2 [M+H]+: 252.1019, Found: 252,1016",Cc1ccc(Nc2cc(=O)oc3ccccc23)cc1,4874,,,,
+145,4-(phenethylamino)-2H-chromen-2-one,1H NMR,"(400
+MHz, CDCl3) δ 7.44 (t, J = 7.7 Hz, 1H), 7.27 (dd, J = 13.3, 5.6 Hz, 3H), 7.22 (d, J = 3.3 Hz, 1H), 7.20
+(d, J = 2.7 Hz, 1H), 7.15 (dd, J = 14.5, 7.1 Hz, 3H), 5.32 (s, 1H), 3.49 (dd, J = 12.5, 6.9 Hz, 2H), 2.97
+(t, J = 7.0 Hz, 2H)",O=c1cc(NCCc2ccccc2)c2ccccc2o1,4989,0.05,1.0,1.0,1.0
+146,4-(phenethylamino)-2H-chromen-2-one,13C NMR,"(100 MHz, CDCl3) δ 163.2, 153.8, 152.7, 138.0, 132.0, 129.2, 128.8,
+127.2, 123.6, 120.0, 118.1, 114.3, 84.3, 44.0, 34.4",O=c1cc(NCCc2ccccc2)c2ccccc2o1,4990,0.0,1.0,1.0,1.0
+147,4-(phenethylamino)-2H-chromen-2-one,MS,"(ESI) calcd for C17H16NO2 [M+H]+:
+266.1176, Found: 266.1172",O=c1cc(NCCc2ccccc2)c2ccccc2o1,4991,,,,
+148,4-(phenylamino)-2H-chromen-2-one,1H NMR,"(400
+MHz, CDCl3) δ 7.65 (d, J = 8.0 Hz, 1H), 7.59 (t, J = 7.8 Hz, 1H), 7.48 – 7.41 (m, 2H), 7.38 (d, J = 8.3
+Hz, 1H), 7.34 (t, J = 8.1 Hz, 1H), 7.30 (t, J = 7.6 Hz, 3H), 6.73 (s, 1H), 5.74 (s, 1H)",O=c1cc(Nc2ccccc2)c2ccccc2o1,4875,0.05,1.0,1.0,1.0
+149,4-(phenylamino)-2H-chromen-2-one,13C NMR,"(100 MHz, DMSO) δ 161.4, 153.4, 152.4, 138.2, 132.4, 129.5, 126.0, 125.1, 123.6, 122.8, 117.0, 114.5,
+99.5, 84.4, 54.9",O=c1cc(Nc2ccccc2)c2ccccc2o1,4876,0.0,1.0,1.0,1.0
+150,4-(phenylamino)-2H-chromen-2-one,MS,"(ESI) calcd for C15H12NO2 [M+H]+: 238.0863, Found: 238.0858",O=c1cc(Nc2ccccc2)c2ccccc2o1,4877,,,,
+151,4-(prop-2-yn-1-ylamino)-2H-chromen-2-one,1H NMR,"400
+MHz, DMSO) δ 8.06 (s, 1H), 7.97 (d, J = 8.4 Hz, 1H), 7.60 (t, J = 7.3 Hz, 1H), 7.40 – 7.27 (m, 2H),
+5.27 (s, 1H), 4.12 (dd, J = 5.4, 2.2 Hz, 2H), 3.27 (s, 1H)",C#CCNc1cc(=O)oc2ccccc12,5019,0.0,1.0,0.89,0.94
+152,4-(prop-2-yn-1-ylamino)-2H-chromen-2-one,13C NMR,"(126 MHz, DMSO) δ 161.4,
+153.1, 152.7, 132.1, 123.6, 122.4, 117.1, 114.3, 83.3, 79.5, 74.6, 31.6",C#CCNc1cc(=O)oc2ccccc12,5020,0.05,1.0,1.0,1.0
+153,4-(prop-2-yn-1-ylamino)-2H-chromen-2-one,MS,"(ESI) calcd for
+C12H10NO2 [M+H]+: 200.0706, Found: 200.0705",C#CCNc1cc(=O)oc2ccccc12,5021,,,,
+154,4-(pyridin-3-ylamino)-2H-chromen-2-one,1H NMR,"(400
+MHz, DMSO) δ 9.39 (s, 1H), 8.62 (s, 1H), 8.49 (d, J = 4.2 Hz, 1H), 8.23 (d, J = 8.1 Hz, 1H), 7.86 (d, J
+= 8.2 Hz, 1H), 7.69 (t, J = 7.8 Hz, 1H), 7.52 (dd, J = 8.1, 4.8 Hz, 1H), 7.42 (dd, J = 15.8, 8.0 Hz, 2H),
+5.30 (s, 1H)",O=c1cc(Nc2cccnc2)c2ccccc2o1,4965,0.0,1.0,1.0,1.0
+155,4-(pyridin-3-ylamino)-2H-chromen-2-one,13C NMR,"(100 MHz, DMSO) δ 161.4, 153.4, 152.5, 146.8, 146.4, 135.2, 132.6,
+132.5, 124.3, 123.8, 122.9, 117.2, 114.4, 85.2",O=c1cc(Nc2cccnc2)c2ccccc2o1,4966,0.05,1.0,1.0,1.0
+156,4-(pyridin-3-ylamino)-2H-chromen-2-one,MS,"(ESI) calcd for C14H11N2O2 [M+H]+: 239.0815,
+Found: 239.0812",O=c1cc(Nc2cccnc2)c2ccccc2o1,4967,,,,
+157,4-(tert-butylamino)-2H-chromen-2-one,1H NMR,"(400
+MHz, CDCl3) δ 7.51 (t, J = 7.2 Hz, 1H), 7.36 (d, J = 7.6 Hz, 1H), 7.32 (d, J = 8.2 Hz, 1H), 7.24 (d, J =
+7.4 Hz, 1H), 5.56 (s, 1H), 3.49 (s, 1H), 1.51 (s, 9H)",CC(C)(C)Nc1cc(=O)oc2ccccc12,5004,0.05,1.0,1.0,1.0
+158,4-(tert-butylamino)-2H-chromen-2-one,13C NMR,"(100 MHz, CDCl3) δ 162.9, 153.7,
+150.6, 131.8, 123.4, 119.9, 118.3, 114.9, 86.4, 52.4, 29.0",CC(C)(C)Nc1cc(=O)oc2ccccc12,5005,0.0,1.0,1.0,1.0
+159,4-(tert-butylamino)-2H-chromen-2-one,MS,"(ESI) calcd for C13H16NO2 [M+H]+:
+218.1176, Found: 218.1174",CC(C)(C)Nc1cc(=O)oc2ccccc12,5006,,,,
+160,"5,7-dimethoxy-4-(p-tolylamino)-2H-chromen-2-one",1H NMR,"(400
+MHz, CDCl3) δ 8.85 (s, 1H), 7.21 (d, J = 7.9 Hz, 2H), 7.15 (d, J = 8.0 Hz, 2H), 6.48 (s, 1H), 6.35 (s,
+1H), 3.98 (s, 3H), 3.86 (s, 3H), 2.37 (s, 3H)",COc1cc(OC)c2c(Nc3ccc(C)cc3)cc(=O)oc2c1,4980,0.04,1.0,1.0,1.0
+161,"5,7-dimethoxy-4-(p-tolylamino)-2H-chromen-2-one",13C NMR,"(100 MHz, CDCl3) δ 163.2, 162.6, 158.3,
+157.6, 155.2, 136.6, 135.1, 130.3, 125.7, 95.5, 94.5, 82.0, 56.7, 55.9, 21.2",COc1cc(OC)c2c(Nc3ccc(C)cc3)cc(=O)oc2c1,4981,0.0,1.0,1.0,1.0
+162,"5,7-dimethoxy-4-(p-tolylamino)-2H-chromen-2-one",MS,"(ESI) calcd for
+C18H17NO4 [M+H]+: 312.1230, Found: 312.1225",COc1cc(OC)c2c(Nc3ccc(C)cc3)cc(=O)oc2c1,4982,,,,
+163,6-bromo-4-(p-tolylamino)-2H-chromen-2-one,1H NMR,"(400
+MHz, DMSO) δ 9.30 (s, 1H), 8.51 (s, 1H), 7.81 (d, J = 7.5 Hz, 1H), 7.35 (d, J = 8.8 Hz, 1H), 7.27 (dd,
+J = 21.4, 8.1 Hz, 4H), 5.26 (s, 1H), 2.34 (s, 3H)",Cc1ccc(Nc2cc(=O)oc3ccc(Br)cc23)cc1,4974,0.05,1.0,1.0,1.0
+164,6-bromo-4-(p-tolylamino)-2H-chromen-2-one,13C NMR,"(100 MHz, DMSO) δ 161.1, 152.5,
+151.7, 135.6, 135.3, 134.8, 130.1, 125.4, 125.0, 119.4, 116.4, 115.7, 84.4, 20.7",Cc1ccc(Nc2cc(=O)oc3ccc(Br)cc23)cc1,4975,0.0,1.0,1.0,1.0
+165,6-bromo-4-(p-tolylamino)-2H-chromen-2-one,MS,"(ESI) calcd for
+C16H12BrNO2 [M+H]+: 330.0124, Found: 330.0122",Cc1ccc(Nc2cc(=O)oc3ccc(Br)cc23)cc1,4976,,,,
+166,6-chloro-4-(p-tolylamino)-2H-chromen-2-one,1H NMR,"(400
+MHz, DMSO) δ 9.30 (s, 1H), 8.39 (s, 1H), 7.69 (d, J = 7.6 Hz, 1H), 7.42 (s, 1H), 7.27 (d, J = 13.1 Hz,
+4H), 5.26 (s, 1H), 2.34 (s, 3H)",Cc1ccc(Nc2cc(=O)oc3ccc(Cl)cc23)cc1,4971,0.05,1.0,1.0,1.0
+167,6-chloro-4-(p-tolylamino)-2H-chromen-2-one,13C NMR,"(100 MHz, DMSO) δ 161.2, 152.1, 151.7, 135.6, 135.3,
+132.0, 130.1, 127.9, 125.0, 122.5, 119.1, 116.0, 84.5, 20.7",Cc1ccc(Nc2cc(=O)oc3ccc(Cl)cc23)cc1,4972,0.0,1.0,1.0,1.0
+168,6-chloro-4-(p-tolylamino)-2H-chromen-2-one,MS,"(ESI) calcd for C16H12ClNO2
+[M+H]+: 286.0629, Found: 286.0627",Cc1ccc(Nc2cc(=O)oc3ccc(Cl)cc23)cc1,4973,,,,
+169,6-fluoro-4-(p-tolylamino)-2H-chromen-2-one,1H NMR,"(400 MHz, DMSO) δ 9.20 (s, 1H), 8.14 (dd, J = 10.0, 2.9 Hz, 1H), 7.57 – 7.51 (m, 1H), 7.43 (dd, J = 9.1,
+4.8 Hz, 1H), 7.30 (d, J = 8.2 Hz, 2H), 7.25 (d, J = 8.4 Hz, 2H), 5.26 (s, 1H), 2.35 (s, 3H)",Cc1ccc(Nc2cc(=O)oc3ccc(F)cc23)cc1,4968,,,,
+170,6-fluoro-4-(p-tolylamino)-2H-chromen-2-one,13C NMR,"(100 MHz, DMSO) δ 161.4, 159.1, 156.7, 152.0, 149.8, 135.6, 135.3, 130.1, 125.1, 119.7, 119.1,
+108.9, 108.7, 84.4, 20.6",Cc1ccc(Nc2cc(=O)oc3ccc(F)cc23)cc1,4969,0.0,1.0,1.0,1.0
+171,6-fluoro-4-(p-tolylamino)-2H-chromen-2-one,MS,"(ESI) calcd for C16H12FNO2 [M+H]+: 270.0925, Found: 270.0921",Cc1ccc(Nc2cc(=O)oc3ccc(F)cc23)cc1,4970,,,,
+172,"6-oxo-6H-benzo[b]benzo[6,7 ]chromeno[4,3-e][1,4]iodaoxin-5-ium
+trifluoromethanesulfonate",1H NMR,"(400 MHz, DMSO) δ 9.48 (d, J = 8.7 Hz, 1H), 8.45 (d, J = 9.1
+Hz, 1H), 8.20 (d, J = 7.9 Hz, 1H), 8.14 (d, J = 9.1 Hz, 1H), 8.04 – 7.95 (m, 2H), 7.82 – 7.70 (m, 3H),
+7.59 (t, J = 8.0 Hz, 1H)",O=S(=O)([O-])C(F)(F)F.O=c1oc2cc3ccccc3cc2c2c1[I+]c1ccccc1O2,4852,0.0,1.0,1.0,1.0
+173,"6-oxo-6H-benzo[b]benzo[6,7 ]chromeno[4,3-e][1,4]iodaoxin-5-ium
+trifluoromethanesulfonate",13C NMR,"(101 MHz, DMSO) δ 167.9, 156.6, 155.5, 150.8, 137.4, 133.5,
+133.4, 130.6, 130.2, 129.8, 127.4, 126.8, 125.2, 122.3, 121.8, 116.9, 108.7, 99.4, 86.4",O=S(=O)([O-])C(F)(F)F.O=c1oc2cc3ccccc3cc2c2c1[I+]c1ccccc1O2,4853,0.02,1.0,1.0,1.0
+174,"6-oxo-6H-benzo[b]benzo[6,7 ]chromeno[4,3-e][1,4]iodaoxin-5-ium
+trifluoromethanesulfonate",19F NMR,"(376
+MHz, DMSO) δ -77.72 ppm",O=S(=O)([O-])C(F)(F)F.O=c1oc2cc3ccccc3cc2c2c1[I+]c1ccccc1O2,4854,,,,
+175,"6-oxo-6H-benzo[b]benzo[6,7 ]chromeno[4,3-e][1,4]iodaoxin-5-ium
+trifluoromethanesulfonate",MS,"(ESI) calcd for C19H10O3I [M-OTf]+: 412.9669, Found: 412.9666",O=S(=O)([O-])C(F)(F)F.O=c1oc2cc3ccccc3cc2c2c1[I+]c1ccccc1O2,4855,,,,
+176,7-(diethylamino)-4-(p-tolylamino)-2H-chromen-2-one,1H NMR,"(500
+MHz, CDCl3) δ 7.40 (d, J = 9.0 Hz, 1H), 7.19 (d, J = 8.1 Hz, 2H), 7.14 (d, J = 8.2 Hz, 2H), 6.59 (d, J =
+9.0 Hz, 1H), 6.55 (s, 1H), 6.50 (d, J = 2.4 Hz, 1H), 3.41 (q, J = 7.1 Hz, 4H), 2.36 (s, 3H), 1.21 (t, J =
+7.1 Hz, 6H)",CCN(CC)c1ccc2c(Nc3ccc(C)cc3)cc(=O)oc2c1,4983,0.04,1.0,1.0,1.0
+177,7-(diethylamino)-4-(p-tolylamino)-2H-chromen-2-one,13C NMR,"(126 MHz, CDCl3) δ 164.4, 156.3, 152.8, 150.8, 136.0, 135.4, 130.2, 124.8,
+121.6, 108.2, 102.7, 98.4, 82.9, 44.8, 21.1, 12.6",CCN(CC)c1ccc2c(Nc3ccc(C)cc3)cc(=O)oc2c1,4984,0.0,1.0,1.0,1.0
+178,7-(diethylamino)-4-(p-tolylamino)-2H-chromen-2-one,MS,"(ESI) calcd for C20H22N2O2 [M+H]+: 323.1754,
+Found: 323.1751",CCN(CC)c1ccc2c(Nc3ccc(C)cc3)cc(=O)oc2c1,4985,,,,
+179,"9-chloro-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",1H NMR,"(500 MHz, DMSO) δ 8.37 (d, J = 9.3 Hz, 1H), 8.15 (d, J = 2.3 Hz, 1H), 8.09 (d, J = 8.8 Hz,
+1H), 7.91 (t, J = 8.6 Hz, 1H), 7.86 (d, J = 8.8 Hz, 1H), 7.65 (d, J = 8.4 Hz, 1H), 7.61 (t, J = 7.7 Hz, 1H)",O=S(=O)([O-])C(F)(F)F.O=c1oc2ccccc2c2c1[I+]c1cc(Cl)ccc1O2,4868,0.0,1.0,1.0,1.0
+180,"9-chloro-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",13C NMR,"(101 MHz, DMSO) δ 163.8, 156.7, 153.2, 149.3, 135.7, 133.3, 132.4, 125.6, 123.9,
+122.8, 117.1, 114.7, 98.5, 84.5",O=S(=O)([O-])C(F)(F)F.O=c1oc2ccccc2c2c1[I+]c1cc(Cl)ccc1O2,4869,0.02,1.0,1.0,1.0
+181,"9-chloro-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",19F NMR,"(376 MHz, DMSO) δ -77.74 ppm",O=S(=O)([O-])C(F)(F)F.O=c1oc2ccccc2c2c1[I+]c1cc(Cl)ccc1O2,4870,,,,
+182,"9-chloro-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",MS,"(ESI) calcd for
+C15H7ClIO3 [M-OTf]+: 396.9123, Found: 396.9107",O=S(=O)([O-])C(F)(F)F.O=c1oc2ccccc2c2c1[I+]c1cc(Cl)ccc1O2,4871,,,,
+183,"9-fluoro-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",1H NMR,"(400 MHz, DMSO) δ 8.37 (d, J = 7.9 Hz, 1H), 8.13 (dd, J = 9.1, 4.6 Hz, 1H), 7.96 (d, J = 10.7
+Hz, 1H), 7.91 (t, J = 7.9 Hz, 1H), 7.74 – 7.55 (m, 3H)",O=S(=O)([O-])C(F)(F)F.O=c1oc2ccccc2c2c1[I+]c1cc(F)ccc1O2,4864,0.0,1.0,1.0,1.0
+184,"9-fluoro-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",13C NMR,"(101 MHz, DMSO) δ 164.1,
+161.3, 158.8, 156.7, 153.3, 146.9, 135.6, 125.6, 123.8, 122.8, 120.6, 117.1, 114.7, 98.2, 84.6",O=S(=O)([O-])C(F)(F)F.O=c1oc2ccccc2c2c1[I+]c1cc(F)ccc1O2,4865,0.02,1.0,1.0,1.0
+185,"9-fluoro-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",19F NMR,"(376 MHz, DMSO) δ -77.75, -111.98 ppm",O=S(=O)([O-])C(F)(F)F.O=c1oc2ccccc2c2c1[I+]c1cc(F)ccc1O2,4866,,,,
+186,"9-fluoro-6-oxo-6H-benzo[b]chromeno[4,3-e][1,4]iodaoxin-7-ium trifluoromethanesulfonate",MS,"(ESI) calcd for C15H7O3FI [M-OTf]+: 380.9418,
+Found: 380.9415",O=S(=O)([O-])C(F)(F)F.O=c1oc2ccccc2c2c1[I+]c1cc(F)ccc1O2,4867,,,,
+187,methyl 3-((2-oxo-2H-chromen-4-yl)amino)benzoate,1H NMR,"(400
+MHz, CDCl3) δ 7.97 – 7.95 (m, 1H), 7.65 (d, J = 8.1 Hz, 1H), 7.60 (t, J = 7.8 Hz, 1H), 7.54 – 7.51 (m,
+2H), 7.39 (d, J = 7.7 Hz, 1H), 7.35 (t, J = 7.7 Hz, 1H), 5.73 (s, 1H), 3.94 (s, 3H)",COC(=O)c1cccc(Nc2cc(=O)oc3ccccc23)c1,4936,0.08,1.0,1.0,1.0
+188,methyl 3-((2-oxo-2H-chromen-4-yl)amino)benzoate,13C NMR,"(100
+MHz, CDCl3) δ 166.3, 163.0, 154.0, 151.6, 138.0, 132.5, 132.1, 130.0, 129.1, 127.6, 125.8, 124.0,
+120.4, 118.2, 114.4, 87.8, 52.6",COC(=O)c1cccc(Nc2cc(=O)oc3ccccc23)c1,4937,0.04,1.0,1.0,1.0
+189,methyl 3-((2-oxo-2H-chromen-4-yl)amino)benzoate,MS,"(ESI) calcd for C17H13NO4 [M+H]+: 296.0917, Found: 296.0915",COC(=O)c1cccc(Nc2cc(=O)oc3ccccc23)c1,4938,,,,
+190,methyl 4-((2-oxo-2H-chromen-4-yl)amino)benzoate,1H NMR,"(400
+MHz, CDCl3) δ 8.10 (d, J = 8.6 Hz, 2H), 7.66 (d, J = 7.9 Hz, 1H), 7.61 (t, J = 7.8 Hz, 1H), 7.36 (m, J =
+8.6 Hz, 4H), 6.84 (s, 1H), 5.98 (s, 1H), 3.94 (s, 3H)",COC(=O)c1ccc(Nc2cc(=O)oc3ccccc23)cc1,4933,0.04,1.0,1.0,1.0
+191,methyl 4-((2-oxo-2H-chromen-4-yl)amino)benzoate,13C NMR,"(100 MHz, DMSO) δ 165.7, 161.3,
+153.4, 151.1, 143.4, 132.6, 130.7, 125.6, 123.7, 123.0, 117.1, 114.6, 99.5, 87.2, 52.1",COC(=O)c1ccc(Nc2cc(=O)oc3ccccc23)cc1,4934,0.0,1.0,1.0,1.0
+192,methyl 4-((2-oxo-2H-chromen-4-yl)amino)benzoate,MS,"(ESI)
+calcd for C17H13NO4 [M+H]+: 296.0917, Found: 296.0916",COC(=O)c1ccc(Nc2cc(=O)oc3ccccc23)cc1,4935,,,,
+193,methyl 4-((2-oxo-2H-chromen-4-yl)amino)butanoate,1H NMR,"(400
+MHz, CDCl3) δ 7.62 (d, J = 8.0 Hz, 1H), 7.53 (t, J = 7.7 Hz, 1H), 7.32 (d, J = 8.3 Hz, 1H), 7.29 (t, 1H),
+5.28 (s, 1H), 3.74 (s, 3H), 3.34 (dd, J = 11.3, 6.0 Hz, 2H), 2.58 (t, 2H), 2.16 – 2.08 (m, 2H)",COC(=O)CCCNc1cc(=O)oc2ccccc12,5013,0.04,1.0,1.0,1.0
+194,methyl 4-((2-oxo-2H-chromen-4-yl)amino)butanoate,13C NMR,"(126 MHz, CDCl3) δ 175.3, 163.4, 153.7, 153.3, 131.82, 123.6, 120.8, 117.9, 114.6, 83.4, 52.3,
+43.5, 32.4, 22.7",COC(=O)CCCNc1cc(=O)oc2ccccc12,5014,0.0,1.0,1.0,1.0
+195,methyl 4-((2-oxo-2H-chromen-4-yl)amino)butanoate,MS,"(ESI) calcd for C14H15NO4 [M+H]+: 262.1074, Found: 262.1072",COC(=O)CCCNc1cc(=O)oc2ccccc12,5015,,,,
+196,"rac-4-((((1R,4aS,10aS)-7-isopropyl-1,4a-dimethyl-1,2,3,4,4a,9,10,10a-octahydrophenanthren-1-
+yl)methyl)amino)-2H-chromen-2-one",1H NMR,"(400 MHz, CDCl3) δ 7.52 (t, J = 11.3, 4.3 Hz, 1H), 7.35 (t, J = 8.9 Hz, 2H), 7.23 (d, J = 7.2 Hz,
+1H), 7.19 (d, J = 8.2 Hz, 1H), 7.02 (d, J = 8.1 Hz, 1H), 6.91 (s, 1H), 5.40 (s, 1H), 5.08 (s, 1H), 3.22 –
+3.08 (m, 2H), 2.97 (d, J = 13.3 Hz, 1H), 2.84 (td, J = 13.8, 8.5 Hz, 2H), 2.36 (d, J = 12.5 Hz, 1H), 1.90
+– 1.78 (m, 3H), 1.44 (ddd, J = 18.4, 13.3, 5.2 Hz, 2H), 1.26 (s, 3H), 1.24 (s, 3H), 1.22 (s, 3H), 1.09 (s,
+3H)",CC(C)c1ccc2c(c1)CC[C@@H]1[C@](C)(CNc3cc(=O)oc4ccccc34)CCC[C@]21C,5036,0.03,1.0,1.0,1.0
+197,"rac-4-((((1R,4aS,10aS)-7-isopropyl-1,4a-dimethyl-1,2,3,4,4a,9,10,10a-octahydrophenanthren-1-
+yl)methyl)amino)-2H-chromen-2-one",13C NMR,"(100 MHz, CDCl3) δ 163.2, 153.7, 153.0, 146.8, 146.1, 134.5, 132.0, 127.1, 124.4,
+124.3, 123.6, 119.7, 118.3, 114.4, 84.3, 53.7, 46.4, 38.4, 37.8, 36.8, 33.6, 30.4, 25.6, 24.1, 24.1, 19.3,
+18.7, 0.1",CC(C)c1ccc2c(c1)CC[C@@H]1[C@](C)(CNc3cc(=O)oc4ccccc34)CCC[C@]21C,5037,0.03,0.96,0.96,0.96
+198,"rac-4-((((1R,4aS,10aS)-7-isopropyl-1,4a-dimethyl-1,2,3,4,4a,9,10,10a-octahydrophenanthren-1-
+yl)methyl)amino)-2H-chromen-2-one",MS,"(ESI) calcd for C29H35NO2 [M+H]+: 430.2741, Found: 430.2737",CC(C)c1ccc2c(c1)CC[C@@H]1[C@](C)(CNc3cc(=O)oc4ccccc34)CCC[C@]21C,5038,,,,
+199,tert-butyl (3-((2-oxo-2H-chromen-4-yl)amino)propyl)carbamate,1H NMR,"(400
+MHz, CDCl3) δ 7.78 (d, J = 7.7 Hz, 1H), 7.52 (t, J = 7.2 Hz, 1H), 7.33 – 7.27 (m, 2H), 5.29 (s, 1H),
+3.37 (q, J = 12.0, 5.9 Hz, 2H), 3.27 (q, J = 12.4, 6.3 Hz, 2H), 1.85 – 1.78 (m, 2H), 1.49 (s, 9H)",CC(C)(C)OC(=O)NCCCNc1cc(=O)oc2ccccc12,5010,0.06,1.0,1.0,1.0
+200,tert-butyl (3-((2-oxo-2H-chromen-4-yl)amino)propyl)carbamate,13C NMR,"(126 MHz, CDCl3) δ 163.8, 157.5, 153.8, 153.4, 131.8, 123.7, 121.2, 117.8, 114.8, 82.6, 80.2,
+39.1, 37.2, 28.6, 28.5",CC(C)(C)OC(=O)NCCCNc1cc(=O)oc2ccccc12,5011,0.03,1.0,1.0,1.0
+201,tert-butyl (3-((2-oxo-2H-chromen-4-yl)amino)propyl)carbamate,MS,"(ESI) calcd for C17H22N2O4 [M+H]+: 319.1652, Found: 319.1648",CC(C)(C)OC(=O)NCCCNc1cc(=O)oc2ccccc12,5012,,,,

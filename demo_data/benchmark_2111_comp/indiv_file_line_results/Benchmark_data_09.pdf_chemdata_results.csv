@@ -1,0 +1,925 @@
+,molecule_name,test_type,test_text,opsin_smiles,line_idx,chemdata_namescore,chemdata_precision,chemdata_recall,chemdata_f1
+0,(R)-Mosher ester 116,Rf,"0.48 (PE:EtOAc, 4:1)",,1750,,,,
+1,(R)-Mosher ester 116,1H NMR,"(400 MHz, CDCl3):  7.4-7.6 (5H, m, HPh), 5.94 (1H,
+m, H3), 4.78 (1H, br s, H9A), 4.69 (1H, br s, H9B), 3.80 (6H, m, Horthoester), 3.65 (3H, s, OMe),
+3.27 (1H, m, H4), 2.52 (1H, d, J = 13.9 Hz, H7A), 2.22 (1H, d, J = 13.9 Hz, H7B), 2.22 (1H,
+m, H2A), 1.92 (1H, m, H2B), 1.78 (1H, m, H24A), 1.76 (3H, s, Me8), 1.45 (1H, m, H24B), 1.44
+(3H, s, Me6), 0.81 (3H, t, J = 7.5 Hz, H25), 0.75 (3H, s, Meorthoester), 0.25 (9H, s, TMS)",,1751,0.0,0.95,0.95,0.95
+2,(R)-Mosher ester 215,Rf,"0.52 (PE:EtOAc, 4:1)",,1941,,,,
+3,(R)-Mosher ester 215,1H NMR,"(400 MHz, CDCl3):  7.55 (2H, m, Ph), 7.42 (2H, m, Ph),
+7.38 (1H, m, Ph), 7.21 (2H, d, J = 8.6 Hz, HPMB Ar-H ), 6.85 (2H, d, J = 8.6 Hz, HPMB Ar-H ),
+5.78 (1H, ddd, J = 9.3, 3.3, 3.3 Hz, H3), 4.78 (1H, s, H9A), 4.70 (1H, s, H9B), 4.32 (2H, ABq,
+HPMB ArCH2O), 3.80 (3H, s, MeOPMB), 3.54 (3H, s, OMe), 3.28 (1H, m, H4), 3.20 (2H, m, H1),
+2.51 (1H, d, J = 14.0 Hz, H7A), 2.21 (1H, d, J = 14.0 Hz, H7B), 1.93 (2H, m, H2), 1.76 (3H,
+s, Me8), 1.79 (1H, m, H24A), 1.50 (1H, m, H24B), 1.43 (3H, s, Me6), 0.78 (3H, t, J = 7.5 Hz,
+H25), 0.21 (9H, s, TMS)",,1942,0.0,1.0,1.0,1.0
+4,(R)-Mosher ester 67,Rf,"0.46 (PE:EtOAc, 6:1)",,1929,,,,
+5,(R)-Mosher ester 67,1H NMR,"(400 MHz, CDCl3):  7.51 (2H, m, HPh), 7.40 (3H, m,
+HPh), 7.19 (2H, d, J = 8.5 Hz, HPMB Ar-H ), 6.85 (2H, d, J = 8.5 Hz, HPMB Ar-H ), 5.70 (1H,
+d, J = 6.7 Hz, H17), 5.02 (1H, m, H15A), 4.96 (1H, m, H15B), 4.36 (2H, s, HPMB ArCH2O), 3.79
+(3H, s, MeOPMB), 3.53 (3H, s, MeO), 3.51 (2H, ABQ, J = 11.6 Hz, H21), 3.04 (1H, m, H20),
+2.97 (1H, m, H18), 1.68 (3H, s, Me16), 1.04 (3H, d, J = 7.2 Hz, Me18), 1.01 (3H, d, J = 7.0 Hz,
+Me20)",,1930,,,,
+6,(R)-Mosher ester 93,Rf,"0.59 (PE:EtOAc, 6:1)",,1937,,,,
+7,(R)-Mosher ester 93,1H NMR,"(400 MHz, CDCl3):  7.56 (2H, m, HPh), 7.42 (3H, m,
+HPh), 7.24 (2H, d, J = 8.2 Hz, HPMB Ar-H ), 6.87 (2H, d, J = 8.2 Hz, HPMB Ar-H ), 5.72 (1H,
+m, H9), 5.38 (1H, t, J = 6.1 Hz, H11), 5.10 (1H, d, J = 15.1, H8A), 5.07 (1H, d, J = 8.3 Hz,
+H8B), 4.86 (1H, d, J = 9.7 Hz, H17), 4.40 (2H, ABQ, J = 11.5 Hz, HPMB ArCH2O), 3.80 (3H,
+s, MeOPMB), 3.56 (3H, s, MeO), 3.54 (1H, m, H19), 3.35 (1H, m, H21A), 3.34 (1H, m, H13),
+3.19 (1H, m, H21B), 2.54 (1H, m, H10A), 2.46 (1H, m, H18), 2.38 (1H, m, H10B), 1.93 (1H, m,
+H20), 1.91 (1H, m, H15A), 1.79 (1H, m, H12), 1.73 (1H, m, H15B), 1.69 (1H, m, H14), 1.54 (3H,
+s, Me16), 0.95 (18H, m, SiCH2CH3), 0.92 (3H, m, Me18), 0.81 (3H, d, J = 6.5 Hz, Me20), 0.80
+(3H, d, J = 6.7 Hz, Me12), 0.76 (3H, d, J = 4.7 Hz, Me14), 0.64 (6H, q, J = 7.9 Hz, SiCH2CH3),
+0.59 (6H, t, J = 7.9 Hz, SiCH2CH3)",,1938,,,,
+8,(S)-Mosher ester 117,Rf,"0.48 (PE:EtOAc, 4:1)",,1752,,,,
+9,(S)-Mosher ester 117,1H NMR,"(400 MHz, CDCl3):  7.4-7.6 (5H, m, HPh), 5.97 (1H,
+m, H3), 4.75 (1H, br s, H9A), 4.66 (1H, br s, H9B), 3.85 (6H, m, Horthoester), 3.69 (3H, s, OMe),
+3.20 (1H, m, H4), 2.48 (1H, d, J = 13.9 Hz, H7A), 2.28 (1H, m, H2A), 2.17 (1H, d, J = 13.9
+Hz, H7B), 1.96 (1H, m, H2B), 1.66 (1H, m, H24A), 1.73 (3H, s, Me8), 1.40 (1H, m, H24B), 1.39
+(3H, s, Me6), 0.74 (3H, t, J = 7.5 Hz, H25), 0.77 (3H, s, Meorthoester), 0.22 (9H, s, TMS)",,1753,,,,
+10,(S)-Mosher ester 216,Rf,"0.52 (PE:EtOAc, 4:1)",,1943,,,,
+11,(S)-Mosher ester 216,1H NMR,"(400 MHz, CDCl3):  7.55 (2H, m, Ph), 7.40 (3H, m,
+Ph), 7.21 (2H, d, J = 8.5 Hz, HPMB Ar-H ), 6.85 (2H, d, J = 8.5 Hz, HPMB Ar-H ), 5.75 (1H, ddd,
+J = 9.3, 3.6, 3.6 Hz, H3), 4.78 (1H, s, H9A), 4.68 (1H, s, H9B), 4.37 (2H, ABq, HPMB ArCH2O),
+3.79 (3H, s, MeOPMB), 3.47 (3H, s, OMe), 3.39 (2H, m, H1), 3.27 (1H, m, H4), 2.50 (1H, d, J
+= 13.9 Hz, H7A), 2.19 (1H, d, J = 13.9 Hz, H7B), 1.98 (2H, m, H2), 1.75 (3H, s, Me8), 1.67
+(1H, m, H24A), 1.45 (1H, m, H24B), 1.43 (3H, s, Me6), 0.73 (3H, t, J = 7.5 Hz, H25), 0.20 (9H,
+s, TMS)",,1944,0.0,1.0,1.0,1.0
+12,(S)-Mosher ester 68,Rf,"0.46 (PE:EtOAc, 6:1)",,1931,,,,
+13,(S)-Mosher ester 68,1H NMR,"(400 MHz, CDCl3):  7.52 (2H, m, HPh), 7.40 (3H, m,
+HPh), 7.19 (2H, d, J = 8.5 Hz, HPMB Ar-H ), 6.85 (2H, d, J = 8.5 Hz, HPMB Ar-H ), 5.67 (1H,
+d, J = 5.2 Hz, H17), 4.87 (1H, m, H15A), 4.79 (1H, m, H15B), 4.35 (2H, s, HPMB ArCH2O), 3.79
+(3H, s, MeOPMB), 3.55 (3H, s, MeO), 3.52 (2H, ABQ, J = 11.6 Hz, H21), 3.03 (1H, m, H20),
+3.00 (1H, m, H18), 1.60 (3H, s, Me16), 1.14 (3H, d, J = 7.2 Hz, Me18), 1.03 (3H, d, J = 7.0 Hz,
+Me20)",,1932,,,,
+14,(S)-Mosher ester 94,Rf,"0.59 (PE:EtOAc, 6:1)",,1939,,,,
+15,(S)-Mosher ester 94,1H NMR,"(400 MHz, CDCl3):  7.56 (2H, m, HPh), 7.42 (3H, m,
+HPh), 7.24 (2H, d, J = 8.3 Hz, HPMB Ar-H ), 6.86 (2H, d, J = 8.3 Hz, HPMB Ar-H ), 5.68 (1H,
+m, H9), 5.39 (1H, t, J = 6.2 Hz, H11), 5.06 (1H, d, J = 14.4, H8A), 5.03 (1H, d, J = 7.2 Hz,
+H8B), 4.88 (1H, d, J = 9.7 Hz, H17), 4.40 (2H, ABQ, J = 11.5 Hz, HPMB ArCH2O), 3.79 (3H,
+s, MeOPMB), 3.51 (3H, s, MeO), 3.54 (1H, m, H19), 3.35 (1H, m, H21A), 3.37 (1H, m, H13),
+3.19 (1H, m, H21B), 2.46 (1H, m, H10A), 2.46 (1H, m, H18), 2.31 (1H, m, H10B), 1.92 (1H, m,
+H20), 1.91 (1H, m, H15A), 1.80 (1H, m, H12), 1.73 (1H, m, H15B), 1.72 (1H, m, H14), 1.55 (3H, s,
+Me16), 0.94 (18H, m, SiCH2CH3), 0.92 (3H, m, Me18), 0.86 (3H, d, J = 7.1 Hz, Me12), 0.81 (3H,
+d, J = 6.7 Hz, Me20), 0.79 (3H, d, J = 5.6 Hz, Me14), 0.60 (12H, q, J = 7.9 Hz, SiCH2CH3)",,1940,,,,
+16,"1,2-Diol ent-87",Rf,"0.32 (PE:EtOAc, 6:1)",,1699,,,,
+17,"1,2-Diol ent-87",1H NMR,"(400 MHz, CDCl3):  7.25 (2H, d, J = 8.4 Hz,
+HPMB Ar-H ), 6.87 (2H, d, J = 8.4 Hz, HPMB Ar-H ), 4.91 (1H, d, J = 9.8 Hz, H17), 4.44 (1H, d,
+J = 11.5 Hz, HPMB ArCH2O), 4.38 (1H, d, J = 11.5 Hz, HPMB ArCH2O), 3.81 (3H, s, MeOPMB),
+3.77 (1H, m, H11), 3.63 (1H, m, H10), 3.57 (1H, dd, J = 8.4, 1.9, H19), 3.51 (1H, t, J = 4.9 Hz,
+H13), 3.48 (1H, s, HO11), 3.35 (1H, dd, J = 8.7, 7.9 Hz, H21A), 3.20 (1H, dd, J = 8.7, 6.8 Hz,
+H21B), 2.83 (1H, d, J = 8.4 Hz, HO10), 2.48 (1H, m, H18), 2.19 (1H, d, J = 13.0 Hz, H15A),
+1.93 (1H, m, H20), 1.81 (1H, m, H14), 1.76 (1H, m, H12), 1.61 (1H, m, H15B), 1.56 (3H, s, Me16),
+1.17 (3H, d, J = 6.3 Hz, Me10), 0.99 (9H, t, J = 7.9 Hz, SiCH2CH3), 0.95 (9H, t, J = 7.9 Hz,
+SiCH2CH3), 0.93 (3H, m, Me18), 0.82 (3H, m, Me20), 0.82 (3H, m, Me14), 0.60 (6H, q, J = 7.9
+Hz, SiCH2CH3), 0.57 (6H, q, J = 7.9 Hz, SiCH2CH3)",,1700,,,,
+18,"1,3-Diol 53",Rf,"0.16 (PE:EtOAc, 6:1)",,1666,,,,
+19,"1,3-Diol 53",1H NMR,"(400 MHz, CDCl3):  7.23
+(2H, d, J = 8.6 Hz, HPMB Ar-H ), 6.87 (2H, d, J = 8.6 Hz, HPMB Ar-H ), 5.02 (1H, m, H15A), 4.92
+(1H, m, H15B), 4.42 (2H, s, HPMB ArCH2O), 4.20 (1H, m, H17), 3.80 (3H, s, MeOPMB), 3.80 (1H,
+m, H19), 3.43 (2H, m, H21), 2.90 (1H, d, J = 3.3 Hz, HO17), 2.44 (1H, d, J = 3.0 Hz, HO19),
+1.98 (1H, m, H20), 1.86 (1H, m, H18), 1.66 (3H, s, Me16), 1.06 (3H, d, J = 6.9 Hz, Me20), 0.86
+(3H, d, J = 7.0 Hz, Me18)",,1667,,,,
+20,"1,3-Diol 53",13C NMR,"(125 MHz, CDCl3):  159.2, 145.9, 130.3, 129.2, 113.8,
+110.2, 78.7, 78.2, 73.9, 73.0, 55.3, 36.9, 36.8, 29.7, 19.6, 13.2, 5.9",,1668,,,,
+21,"1,3-Diol 53",IR,"(thin lm, max/cm-1):
+3440 (br), 2922, 1610, 1514, 1247, 1035",,1669,,,,
+22,"1,3-Diol 53",MS,"(ES+): Calculated for C18H29O4 [M+H]+:
+309.2060, found 309.2066",,1670,,,,
+23,5-Iodo-1-trimethylsilyl-1-pentyne,Rf,"0.90 (PE:EtOAc, 4:1)",C[Si](C)(C)C#CCCCI,1653,,,,
+24,5-Iodo-1-trimethylsilyl-1-pentyne,1H NMR,"(400 MHz, CDCl3):  3.29 (2H, t, J = 6.8 Hz, Ha), 2.36
+(2H, t, J = 6.8 Hz, Hc), 2.00 (2H, qn, J = 6.8 Hz, Hb), 0.15 (9H, s, HTMS).",C[Si](C)(C)C#CCCCI,1654,,,,
+25,Acetal 145,1H NMR,"(400 MHz, CDCl3):  7.03 (2H, m, HDMB Ar-H ), 6.85 (2H, d, J = 8.2 Hz, HDMB Ar-H ),
+5.46 (1H, s, HDMB ArCH ), 4.27 (2H, ddd, J = 11.8, 5.0, 1.1 Hz, H1A), 3.99 (2H, ddd, J = 11.8,
+11.8, 2.3 Hz, H1B), 3.91 (3H, s, MeODMB), 3.87 (3H, s, MeODMB), 2.23 (2H, dtt, J = 13.5, 5.0,
+12.4 Hz, H2A), 1.45 (1H, dt, J = 13.5, 1.3, 1.3 Hz, H2B)",,1778,,,,
+26,Acetonide 73,Rf,"0.66 (PE:EtOAc, 6:1)",,1933,,,,
+27,Acetonide 73,1H NMR,"(400 MHz, CDCl3):  7.24 (2H, d, J = 8.6 Hz,
+HPMB Ar-H ), 6.88 (2H, d, J = 8.6 Hz, HPMB Ar-H ), 5.02 (1H, m, H15A), 4.86 (1H, m, H15B),
+4.46 (1H, d, J = 11.8 Hz, HPMB ArCH2O), 4.37 (1H, d, J = 11.8 Hz, HPMB ArCH2O), 4.21 (1H,
+m, H17), 3.81 (3H, s, MeOPMB), 3.71 (1H, dd, J = 9.5, 2.0 Hz, H19), 3.34 (2H, m, H21), 1.84
+(1H, m, H20), 1.59 (1H, qt, J = 6.8, 2.0 Hz, H18), 1.63 (3H, s, Me16), 1.43 (3H, s, Meacetonide),
+1.42 (3H, s, Meacetonide), 1.05 (3H, d, J = 6.6 Hz, Me20), 0.71 (3H, d, J = 6.8 Hz, Me18)",,1934,,,,
+28,Acetonide 73,13C NMR,"(125 MHz, CDCl3):  159.1, 142.8, 130.6, 129.2, 113.8, 110.1, 98.9, 75.6, 75.4, 72.8, 71.2,
+55.3, 35.3, 31.6, 30.0, 19.6, 19.4, 14.8, 5.3",,1935,0.13,1.0,1.0,1.0
+29,Acetonide 73,MS,"(ES+): Calculated for C21H33O4 [M+H]+:
+349.2373, found 349.2374",,1936,,,,
+30,Actinoallolide A,Rf,"0.46 (PE:EtOAc, 1:1)",CCC1C(=O)C2(CC(=CCC(OC(=O)CC1(O2)O)C(C)C(C(C)CC(=CC(C)C(C(C)C(=O)CC)O)C)O)C)C,1839,,,,
+31,Actinoallolide A,1H NMR,"(400
+MHz, CDCl3):  5.40 (1H, ddd, J = 7.1, 7.1, 1.8 Hz, H11), 5.13 (1H, dd, J = 7.8, 7.8 Hz, H9),
+4.88 (1H, d, J = 9.8 Hz, H17), 3.64 (1H, ddd, J = 9.4, 2.3, 2.3 Hz, H19), 3.26 (1H, ddd, J =
+9.2, 4.9, 2.5 Hz, H13), 2.91 (1H, d, J = 12.0 Hz, H2A), 2.83 (1H, dd, J = 7.6, 5.5 Hz, H4),
+2.77 (1H, d, J = 12.0 Hz, H2B), 2.67 (1H, qd, J = 7.3, 2.2 Hz, H20), 2.52 (1H, m, H22A), 2.50
+(1H, m, H10A), 2.46 (1H, m, H18), 2.44 (1H, m, H22B), 2.34 (1H, m, H10B), 2.36 (1H, d, J =
+13.4 Hz, H7A), 2.30 (1H, d, J = 13.4 Hz, H7B), 2.13 (1H, d, J = 11.0 Hz, H15A), 1.84 (1H, m,
+H24A), 1.83 (1H, m, H14), 1.78 (1H, m, H12), 1.78 (1H, m, H15B), 1.63 (3H, s, Me16), 1.61 (1H,
+m, H24B), 1.47 (3H, s, Me8), 1.34 (3H, s, Me6), 1.14 (3H, t, J = 7.5 Hz, H25), 1.07 (3H, d, J
+= 7.0 Hz, Me20), 1.05 (3H, d, J = 6.4 Hz, Me18), 1.05 (3H, t, J = 7.5 Hz, H23), 1.01 (3H, d,
+J = 7.0 Hz, Me12), 0.89 (3H, d, J = 6.6 Hz, Me14)",CCC1C(=O)C2(CC(=CCC(OC(=O)CC1(O2)O)C(C)C(C(C)CC(=CC(C)C(C(C)C(=O)CC)O)C)O)C)C,1840,,,,
+32,Actinoallolide A,13C NMR,"(125 MHz, CDCl3):  217.7,
+217.3, 170.2, 133.7, 131.7, 128.8, 126.5, 102.3, 82.1, 76.6, 74.9, 73.6, 53.3, 48.9, 47.5, 46.7, 40.6,
+38.8, 35.9, 34.8, 32.2, 29.9, 26.8, 18.7, 17.9, 17.2, 16.9, 16.1, 12.1, 10.2, 9.4, 7.7",CCC1C(=O)C2(CC(=CCC(OC(=O)CC1(O2)O)C(C)C(C(C)CC(=CC(C)C(C(C)C(=O)CC)O)C)O)C)C,1841,0.1,1.0,1.0,1.0
+33,Actinoallolide A,IR,"(thin lm,
+max/cm-1): 2926, 1704, 1455, 1314, 1147, 977",CCC1C(=O)C2(CC(=CCC(OC(=O)CC1(O2)O)C(C)C(C(C)CC(=CC(C)C(C(C)C(=O)CC)O)C)O)C)C,1842,,,,
+34,Actinoallolide A,MS,"(ES+): Calculated for C32H52O8Na
+[M+Na]+: 587.3554, found 587.3570",CCC1C(=O)C2(CC(=CCC(OC(=O)CC1(O2)O)C(C)C(C(C)CC(=CC(C)C(C(C)C(=O)CC)O)C)O)C)C,1843,,,,
+35,Actinoallolide B,Rf,"0.39 (PE:EtOAc, 1:1)",CCC1C(=O)C2(CC(=CCC(OC(=O)CC1(O2)O)C(C)C(C(C)CC(=CC(C)C(C(C)C(CC)O)O)C)O)C)C,1844,,,,
+36,Actinoallolide B,1H NMR,"(400
+MHz, CDCl3):  5.39 (1H, ddd, J = 7.9, 7.9, 1.8 Hz, H11), 5.13 (1H, dd, J = 7.5, 7.5 Hz, H9),
+4.88 (1H, d, J = 9.9 Hz, H17), 3.71 (1H, dd, J = 7.2, 6.2 Hz, H21), 3.52 (1H, d, J = 9.5 Hz,
+H19), 3.26 (1H, ddd, J = 9.6, 4.9, 2.6 Hz, H13), 2.91 (1H, d, J = 12.1 Hz, H2A), 2.84 (1H, dd,
+J = 7.9, 5.8 Hz, H4), 2.77 (1H, m, J = 12.1 Hz, H2B), 2.52 (1H, m, H18), 2.51 (1H, m, H10A),
+2.35 (1H, m, H7A), 2.33 (1H, m, H10B), 2.29 (1H, m, H7B), 2.12 (1H, d, J = 12.4 Hz, H15A),
+1.84 (1H, m, H24A), 1.82 (1H, m, H14), 1.78 (1H, m, H12), 1.77 (1H, m, H15B), 1.66 (1H, m,
+H20), 1.63 (3H, d, J = 0.7 Hz, Me16), 1.61 (1H, m, H24B), 1.53 (1H, m, H22A), 1.47 (3H, d, J
+= 0.8 Hz, Me8), 1.42 (1H, m, H22B), 1.34 (3H, s, Me6), 1.14 (3H, t, J = 7.5 Hz, H25), 1.04 (3H,
+d, J = 6.6 Hz, Me18), 1.00 (3H, d, J = 7.0 Hz, Me12), 0.90 (3H, t, J = 7.4 Hz, H23), 0.88 (3H,
+d, J = 6.4 Hz, Me14), 0.84 (3H, d, J = 7.1 Hz, Me20)",CCC1C(=O)C2(CC(=CCC(OC(=O)CC1(O2)O)C(C)C(C(C)CC(=CC(C)C(C(C)C(CC)O)O)C)O)C)C,1845,,,,
+37,Actinoallolide B,13C NMR,"(125 MHz, CDCl3):  217.7,
+170.1, 133.2, 131.7, 129.1, 126.5, 102.3, 82.1, 82.0, 79.3, 76.6, 73.6, 53.3, 48.9, 46.7, 40.6, 38.7,
+37.8, 36.8, 32.4, 29.9, 28.1, 26.8, 18.4, 17.9, 17.2, 17.0, 16.2, 12.0, 10.4, 10.3, 4.2",CCC1C(=O)C2(CC(=CCC(OC(=O)CC1(O2)O)C(C)C(C(C)CC(=CC(C)C(C(C)C(CC)O)O)C)O)C)C,1846,0.1,1.0,1.0,1.0
+38,Actinoallolide B,IR,"(thin lm,
+max/cm-1): 3420, 2963, 1754, 1719, 1457, 1317, 1149, 1102, 972",CCC1C(=O)C2(CC(=CCC(OC(=O)CC1(O2)O)C(C)C(C(C)CC(=CC(C)C(C(C)C(CC)O)O)C)O)C)C,1847,,,,
+39,Actinoallolide B,MS,"(ES+): Calculated
+for C32H54O8K [M+K]+: 605.3450, found 605.3431",CCC1C(=O)C2(CC(=CCC(OC(=O)CC1(O2)O)C(C)C(C(C)CC(=CC(C)C(C(C)C(CC)O)O)C)O)C)C,1848,,,,
+40,Actinoallolide C,Rf,"0.71 (PE:EtOAc, 1:1)",CCC1=C2CC(=O)OC(CC=C(CC(C1=O)(O2)C)C)C(C)C(C(C)CC(=CC(C)C(C(C)C(=O)CC)O)C)O,1854,,,,
+41,Actinoallolide C,1H NMR,"(400 MHz, CDCl3):  5.28 (1H, ddd, J = 6.9, 6.9, 1.7 Hz, H11), 5.17 (1H, dd,
+J = 7.9, 7.9 Hz, H9), 4.89 (1H, d, J = 9.9 Hz, H17), 3.64 (1H, m, H19), 3.64 (1H, d, J = 11.4
+Hz, H2A), 3.31 (1H, d, J = 11.4 Hz, H2B), 3.27 (1H, m, H13), 2.67 (1H, qd, J = 7.2, 2.2 Hz,
+H20), 2.49 (1H, m, H10A), 2.48 (2H, m, H22), 2.46 (1H, m, H18), 2.46 (2H, m, H7), 2.31 (1H,
+m, H10B), 2.23 (2H, m, H24), 2.13 (1H, d, J = 12.6 Hz, H15A), 1.84 (1H, m, H14), 1.80 (1H, m,
+H12), 1.80 (1H, m, H15B), 1.63 (3H, s, Me16), 1.44 (3H, s, Me8), 1.41 (3H, s, Me6), 1.07 (3H, d,
+J = 7.2 Hz, Me20), 1.05 (3H, d, J = 7.1 Hz, Me18), 1.05 (3H, t, J = 7.0 Hz, H25), 1.05 (3H,
+t, J = 7.0 Hz, H23), 1.01 (3H, d, J = 7.0 Hz, Me12), 0.89 (3H, d, J = 6.4 Hz, Me14)",CCC1=C2CC(=O)OC(CC=C(CC(C1=O)(O2)C)C)C(C)C(C(C)CC(=CC(C)C(C(C)C(=O)CC)O)C)O,1855,,,,
+42,Actinoallolide C,13C NMR,"(125 MHz, CDCl3):  217.3, 206.5, 177.4, 168.4, 133.7, 131.0, 128.8, 126.2, 119.0, 87.6,
+76.6, 76.0, 74.9, 47.9, 47.5, 41.1, 38.9, 37.6, 36.0, 34.8, 32.2, 29.9, 22.3, 17.9, 17.0, 17.0, 16.1,
+14.9, 12.3, 10.4, 9.4, 7.7",CCC1=C2CC(=O)OC(CC=C(CC(C1=O)(O2)C)C)C(C)C(C(C)CC(=CC(C)C(C(C)C(=O)CC)O)C)O,1856,,,,
+43,Actinoallolide C,IR,"(thin lm, max/cm-1): 2927, 1698, 1614, 1451, 1398, 1272, 979",CCC1=C2CC(=O)OC(CC=C(CC(C1=O)(O2)C)C)C(C)C(C(C)CC(=CC(C)C(C(C)C(=O)CC)O)C)O,1857,,,,
+44,Actinoallolide C,MS,"(ES+): Calculated for C32H51O7 [M+H]+: 547.3629, found 547.3603",CCC1=C2CC(=O)OC(CC=C(CC(C1=O)(O2)C)C)C(C)C(C(C)CC(=CC(C)C(C(C)C(=O)CC)O)C)O,1858,,,,
+45,Actinoallolide D,Rf,"0.39 (PE:EtOAc, 1:1)",CCC1=C2CC(=O)OC(CC=C(CC(C1=O)(O2)C)C)C(C)C(C(C)CC(=CC(C)C(C(C)C(CC)O)O)C)O,1849,,,,
+46,Actinoallolide D,1H NMR,"(400
+MHz, CDCl3):  5.27 (1H, ddd, J = 7.0, 7.0, 1.3 Hz, H11), 5.16 (1H, dd, J = 7.7, 7.7 Hz, H9),
+4.88 (1H, d, J = 9.8 Hz, H17), 3.71 (1H, dd, J = 6.7, 6.7 Hz, H21), 3.63 (1H, d, J = 11.4 Hz,
+H2A), 3.52 (1H, d, J = 9.5 Hz, H19), 3.31 (1H, d, J = 11.4 Hz, H2B), 3.27 (1H, ddd, J = 9.0,
+5.2, 2.7 Hz, H13), 2.51 (1H, m, H18), 2.49 (1H, m, H10A), 2.47 (1H, d, J = 13.2 Hz, H7A), 2.43
+(1H, d, J = 13.2 Hz, H7B), 2.29 (1H, m, H10B), 2.27 (1H, m, H24A), 2.19 (1H, m, H24B), 2.12
+(1H, d, J = 12.1 Hz, H15A), 1.82 (1H, m, H14), 1.79 (1H, m, H12), 1.78 (1H, m, H15B), 1.65 (1H,
+m, H20), 1.63 (3H, s, Me16), 1.53 (1H, m, H22A), 1.43 (3H, s, Me8), 1.41 (1H, m, H22B), 1.41
+(3H, s, Me6), 1.04 (3H, t, J = 7.2 Hz, H25), 1.04 (3H, d, J = 6.8 Hz, Me18), 1.00 (3H, d, J =
+7.0 Hz, Me12), 0.90 (3H, t, J = 7.4 Hz, H23), 0.89 (3H, d, J = 6.5 Hz, Me14), 0.84 (3H, d, J =
+7.1 Hz, Me20)",CCC1=C2CC(=O)OC(CC=C(CC(C1=O)(O2)C)C)C(C)C(C(C)CC(=CC(C)C(C(C)C(CC)O)O)C)O,1850,,,,
+47,Actinoallolide D,13C NMR,"(125 MHz, CDCl3):  206.5, 177.4, 168.3, 133.2, 130.9, 129.1, 126.2,
+119.0, 87.6, 82.0, 79.3, 76.6, 76.0, 47.9, 41.1, 38.7, 37.8, 37.5, 36.8, 32.3, 29.9, 28.1, 22.2, 17.9,
+17.1, 17.0, 16.2, 14.9, 12.3, 10.4, 10.4, 4.2",CCC1=C2CC(=O)OC(CC=C(CC(C1=O)(O2)C)C)C(C)C(C(C)CC(=CC(C)C(C(C)C(CC)O)O)C)O,1851,0.1,0.97,0.97,0.97
+48,Actinoallolide D,IR,"(thin lm, max/cm-1): 3458, 2934, 1734, 1716,
+1693, 1683, 1614, 1458, 1398, 1272, 1210, 974, 958",CCC1=C2CC(=O)OC(CC=C(CC(C1=O)(O2)C)C)C(C)C(C(C)CC(=CC(C)C(C(C)C(CC)O)O)C)O,1852,,,,
+49,Actinoallolide D,MS,"(NSI􀀀): Calculated for C32H51O7
+[M􀀀H]􀀀: 547.3640, found 547.3641",CCC1=C2CC(=O)OC(CC=C(CC(C1=O)(O2)C)C)C(C)C(C(C)CC(=CC(C)C(C(C)C(CC)O)O)C)O,1853,,,,
+50,Actinoallolide E,Rf,"0.62 (PE:EtOAc, 1:1)",CCC1=C2CC(=O)OC(C(C(CC=C(CC(C1=O)(O2)C)C)O)C)C(C)CC(=CC(C)C(C(C)C(=O)CC)O)C,1859,,,,
+51,Actinoallolide E,1H NMR,"(400 MHz, CDCl3):  5.23 (1H, dd, J = 8.2, 8.2 Hz, H9), 4.97 (1H, dd, J = 9.4, 2.1
+Hz, H13), 4.82 (1H, d, J = 10.0 Hz, H17), 3.82 (1H, d, J = 14.8 Hz, H2A), 3.65 (1H, d, J = 9.2
+Hz, H19), 3.26 (1H, d, J = 14.8 Hz, H2B), 3.26 (1H, d, J = 8.8 Hz, H13), 2.65 (1H, qd, J = 7.2,
+2.2 Hz, H20), 2.62 (1H, d, J = 13.6 Hz, H7A), 2.56 (1H, m, H22A), 2.48 (1H, m, H22B), 2.47 (1H,
+m, H18), 2.47 (1H, d, J = 13.6 Hz, H7B), 2.30 (1H, m, H24A), 2.24 (1H, m, H10A), 2.22 (1H, m,
+H24B), 2.13 (1H, d, J = 13.2 Hz, H15A), 1.97 (1H, m, H10B), 1.93 (1H, m, H14), 1.68 (1H, dd,
+J = 13.2, 11.7 Hz, H15B), 1.63 (3H, s, Me16), 1.54 (1H, m, H12), 1.53 (3H, s, Me8), 1.36 (3H, s,
+Me6), 1.11 (3H, t, J = 7.5 Hz, H25), 1.09 (3H, d, J = 7.2 Hz, Me20), 1.06 (3H, t, J = 7.3 Hz,
+H23), 1.05 (3H, d, J = 6.4 Hz, Me18), 0.95 (3H, d, J = 7.2 Hz, Me12), 0.81 (3H, d, J = 6.8 Hz,
+Me14)",CCC1=C2CC(=O)OC(C(C(CC=C(CC(C1=O)(O2)C)C)O)C)C(C)CC(=CC(C)C(C(C)C(=O)CC)O)C,1860,,,,
+52,Actinoallolide E,13C NMR,"(125 MHz, CDCl3):  217.3, 207.0, 177.7, 166.7, 132.9, 130.7, 129.4, 126.6,
+117.6, 88.2, 81.4, 74.8, 72.7, 47.5, 46.4, 40.2, 39.5, 36.0, 35.8, 35.2, 34.8, 31.6, 24.9, 17.9, 17.7,
+16.5, 15.9, 15.6, 13.1, 9.5, 8.1, 7.7",CCC1=C2CC(=O)OC(C(C(CC=C(CC(C1=O)(O2)C)C)O)C)C(C)CC(=CC(C)C(C(C)C(=O)CC)O)C,1861,,,,
+53,Actinoallolide E,IR,"(thin lm, max/cm-1): 2932, 1734, 1696, 1620, 1452,
+1250, 979",CCC1=C2CC(=O)OC(C(C(CC=C(CC(C1=O)(O2)C)C)O)C)C(C)CC(=CC(C)C(C(C)C(=O)CC)O)C,1862,,,,
+54,Actinoallolide E,MS,"(ES+): Calculated for C32H50O7Na [M+Na]+: 547.3629, found 547.3620",CCC1=C2CC(=O)OC(C(C(CC=C(CC(C1=O)(O2)C)C)O)C)C(C)CC(=CC(C)C(C(C)C(=O)CC)O)C,1863,,,,
+55,Adol adduct 65,Rf,"0.27 (PE:EtOAc, 6:1)",,1661,,,,
+56,Adol adduct 65,1H NMR,"(400 MHz, CDCl3): 
+7.20 (2H, d, J = 8.6 Hz, HPMB Ar-H ), 6.86 (2H, d, J = 8.6 Hz, HPMB Ar-H ), 5.09 (1H, m, H15A),
+4.93 (1H, m, H15B), 4.50 (1H, m, H17), 4.42 (1H, d, J = 11.7 Hz, HPMB ArCH2O), 4.38 (1H, d,
+J = 11.7 Hz, HPMB ArCH2O), 3.80 (3H, s, MeOPMB), 3.58 (1H, dd, J = 8.8, 8.6 Hz, H21A), 3.45
+(1H, dd, J = 8.6, 5.0 Hz, H21B), 3.18 (1H, d, J = 2.8 Hz, HO17), 3.16 (1H, m, H20), 2.86 (1H,
+qd, J = 7.2, 2.5 Hz, H18), 1.63 (3H, s, Me16), 1.03 (3H, d, J = 6.9 Hz, Me20), 1.00 (3H, d,
+J = 7.2 Hz, Me18)",,1662,,,,
+57,Adol adduct 65,13C NMR,"(125 MHz, CDCl3):  218.1, 159.3, 143.3, 129.6, 129.3, 113.8,
+111.4, 73.1, 72.8, 72.5, 55.2, 48.5, 44.6, 19.6, 13.6, 8.2",,1663,,,,
+58,Adol adduct 65,IR,"(thin lm, max/cm-1): 3494 (br), 2940, 1701, 1612, 1513, 1453, 1247, 1095, 1034, 818",,1664,,,,
+59,Adol adduct 65,MS,"(ES+): Calculated for C18H27O4
+[M+H]+: 307.1904, found 307.1908",,1665,,,,
+60,Alcohol 146,Rf,"0.04 (PE:EtOAc, 4:1)",,1779,,,,
+61,Alcohol 146,1H NMR,"(400 MHz, CDCl3):  6.86 (3H, m, HDMB Ar-H ), 4.46
+(2H, s, HDMB ArCH2O), 3.89 (3H, s, MeODMB), 3.88 (3H, s, MeODMB), 3.79 (2H, dt, J = 5.5,
+5.5 Hz, H3), 3.65 (2H, t, J = 5.8 Hz, H1), 2.24 (1H, t, J = 5.5 Hz, HO3), 1.87 (2H, qn, J = 5.7
+Hz, H2)",,1780,0.12,1.0,1.0,1.0
+62,Alcohol 91,Rf,"0.63 (PE:EtOAc, 6:1)",,1706,,,,
+63,Alcohol 91,1H NMR,"(400 MHz, CDCl3):  5.80
+(1H, dddd, J = 17.1, 10.1, 7.4, 6.8 Hz, Hb), 5.11 (1H, d, J = 17.1 Hz, HaA), 5.05 (1H, d, J =
+10.1 Hz, HaB), 4.12 (1H, t, J = 7.0 Hz, Hd), 3.78 (1H, dd, J = 9.7, 5.8 Hz, HhA), 3.76 (1H, m,
+Hf), 3.52 (1H, s, HOd), 3.50 (1H, dd, J = 9.6, 7.2 Hz, HhB), 2.31 (1H, m, HcA), 2.10 (1H, m,
+HcB), 2.02 (1H, m, Hg), 1.76 (1H, m, He), 1.06 (21H, m, HTIPS), 1.02 (3H, d, J = 7.1 Hz, Mee),
+0.97 (9H, t, J = 7.9 Hz, SiCH2CH3), 0.93 (3H, d, J = 7.0 Hz, Meg), 0.66 (6H, q, J = 7.9 Hz,
+SiCH2CH3)",,1707,,,,
+64,Alcohol 91,13C NMR,"(125 MHz, CDCl3):  135.5, 116.9, 80.6, 70.7, 66.0, 41.0, 39.3, 36.3,
+18.1, 13.5, 12.0, 11.8, 7.0, 5.3",,1708,,,,
+65,Alcohol 91,MS,"(ES+): Calculated for C25H55O3Si2 [M+H]+: 459.3684, found
+459.3675",,1709,,,,
+66,Aldehyde 101,Rf,"0.22 (PE:EtOAc, 4:1)",,1756,,,,
+67,Aldehyde 101,1H NMR,"(400 MHz, CDCl3):  9.79 (1H, t, J = 1.6 Hz, CHO),
+7.25 (2H, d, J = 8.4 Hz, HPMB Ar-H ), 6.88 (2H, d, J = 8.4 Hz, HPMB Ar-H ), 4.46 (2H, s,
+HPMB ArCH2O), 3.81 (3H, s, MeOPMB), 3.79 (2H, t, J = 6.1 Hz, H1), 2.68 (2H, td, J = 6.1, 1.6
+Hz, H2)",,1757,0.12,1.0,1.0,1.0
+68,Aldehyde 108,Rf,"0.16 (PE:EtOAc, 4:1)",,1743,,,,
+69,Aldehyde 108,1H NMR,"(400 MHz, CDCl3):  9.72 (1H, t, J = 2.8 Hz, CHO),
+3.95 (6H, s, Hb), 2.66 (2H, d, J = 2.8 Hz, Ha), 0.83 (3H, s, Hc)",,1744,0.12,1.0,1.0,1.0
+70,Aldehyde 110,1H NMR,"(400 MHz, CDCl3):  9.82 (1H, t, J = 2.4 Hz, CHO), 3.79 (3H, s, OMe), 3.41 (2H,
+d, J = 2.4 Hz, CH2)",,1739,,,,
+71,Aldehyde 143,Rf,"0.22 (PE:EtOAc, 4:1)",,1781,,,,
+72,Aldehyde 143,1H NMR,"(400 MHz, CDCl3):  9.80 (1H, br s, CHO), 6.86 (3H,
+m, HDMB Ar-H ), 4.47 (2H, s, HDMB ArCH2O), 3.89 (3H, s, MeODMB), 3.88 (3H, s, MeODMB),
+3.80 (2H, t, J = 6.1 Hz, H1), 2.70 (2H, t, J = 6.1 Hz, H2)",,1782,0.24,1.0,1.0,1.0
+73,Aldehyde 150,Rf,"0.46 (PE:EtOAc, 4:1)",,1798,,,,
+74,Aldehyde 150,1H NMR,"(400 MHz, CDCl3):  9.79
+(1H, dd, J = 2.9, 1.3 Hz, H1), 7.25 (2H, d, J = 8.6 Hz, HPMBM Ar-H ), 6.87 (2H, d, J = 8.6 Hz,
+HPMBM Ar-H ), 4.81 (1H, s, H9A), 4.74 (2H, s, HPMBM acetal), 4.71 (1H, s, H9B), 4.52 (1H, d, J
+= 11.5 Hz, HPMBM ArCH2O), 4.51 (1H, m, H3), 4.42 (1H, d, J = 11.5 Hz, HPMBM ArCH2O), 3.80
+(3H, s, MeOPMBM), 3.42 (1H, dt, J = 5.8, 5.8 Hz, H4), 2.74 (1H, ddd, J = 16.7, 7.6, 3.0 Hz,
+H2A), 2.63 (1H, ddd, J = 16.7, 3.7, 1.3 Hz, H2B), 2.61 (1H, d, J = 14.0 Hz, H7A), 2.22 (1H, d,
+J = 14.0 Hz, H7B), 1.81 (1H, ddq, J = 14.2, 7.1, 7.1 Hz, H24A), 1.75 (3H, s, Me8), 1.49 (1H,
+ddq, J = 14.2, 8.0, 7.5 Hz, H24B), 1.38 (3H, s, Me6), 0.87 (3H, t, J = 7.5 Hz, H25), 0.22 (9H, s,
+TMS)",,1799,,,,
+75,Aldehyde 150,13C NMR,"(125 MHz, CDCl3):  215.7, 201.2, 159.3, 141.3, 129.5, 129.5, 115.4, 113.8,
+94.0, 84.3, 72.7, 69.6, 55.3, 50.1, 47.6, 47.3, 27.1, 24.8, 20.1, 11.6, 2.5",,1800,0.13,0.95,0.95,0.95
+76,Aldehyde 150,IR,"(thin lm, max/cm-1): 2960, 1721, 1613, 1514, 1250, 1034, 843",,1801,,,,
+77,Aldehyde 150,MS,"(ES+): Calculated for C25H41O6Si [M+H]+:
+465.2667, found 465.2658",,1802,,,,
+78,Aldehyde 187,Rf,"0.78 (PE:EtOAc, 4:1)",,1829,,,,
+79,Aldehyde 187,1H NMR,"(400 MHz, CDCl3):  9.73
+(1H, s, H21), 5.35 (1H, dt, J = 11.6, 2.6 Hz, H11), 5.09 (1H, d, J = 10.0 Hz, H9), 4.90 (1H, d,
+J = 9.8 Hz, H17), 4.07 (1H, dddd, J = 7.9, 4.3, 3.7, 3.7 Hz, H3), 3.98 (1H, dd, J = 8.1, 2.2 Hz,
+H19), 3.66 (1H, d, J = 5.0 Hz, HO3), 3.38 (1H, dd, J = 4.7, 4.7 Hz, H13), 2.83 (1H, dt, J = 4.0,
+4.0 Hz, H4), 2.61 (2H, m, H7), 2.55 (1H, m, H18), 2.50 (2H, m, H2), 2.50 (1H, m, H10A), 2.48
+(1H, m, H20), 2.18 (1H, d, J = 12.7 Hz, H15A), 1.95 (1H, m, H10B), 1.89 (1H, m, H24A), 1.80
+(1H, m, H24B), 1.79 (1H, m, H14), 1.76 (1H, m, H12), 1.64 (1H, dd, J = 12.7, 11.9 Hz, H15B),
+1.58 (3H, s, Me16), 1.57 (3H, s, Me8), 1.43 (3H, s, Me6), 1.09 (3H, d, J = 7.0 Hz, Me20), 1.01
+(3H, t, J = 7.5 Hz, H25), 0.98 (3H, d, J = 6.6 Hz, Me18), 0.97 (9H, t, J = 7.9 Hz, SiCH2CH3),
+0.95 (9H, t, J = 7.9 Hz, SiCH2CH3), 0.95 (3H, m, Me12), 0.78 (3H, d, J = 6.7 Hz, Me14), 0.64
+(6H, q, J = 8.0 Hz, SiCH2CH3), 0.59 (6H, q, J = 8.0 Hz, SiCH2CH3), 0.14 (9H, s, TMS)",,1830,,,,
+80,Aldehyde 187,13C NMR,"(125 MHz, CDCl3):  217.3, 205.5, 171.5, 134.9, 134.2, 129.5, 125.5, 83.6, 79.3, 75.7,
+73.2, 68.7, 52.9, 51.2, 49.5, 41.8, 41.0, 39.2, 37.3, 34.3, 33.5, 28.6, 19.9, 17.8, 16.4, 16.1, 15.2,
+12.6, 12.2, 7.5, 7.1, 7.0, 5.5, 5.3, 2.8'",,1831,,,,
+81,Aldehyde 187,IR,"(thin lm, max/cm-1): 2959, 1731, 1702, 1708, 1458,
+1246, 1013, 843, 742",,1832,,,,
+82,Aldehyde 187,MS,"(ES+): Calculated for C45H87O8Si3 [M+H]+: 839.5703, found
+839.5743",,1833,,,,
+83,Aldehyde 50,Rf,"0.74 (PE:EtOAc, 6:1)",,1701,,,,
+84,Aldehyde 50,1H NMR,"(400 MHz, CDCl3): 
+9.78 (1H, d, J = 2.7 Hz, H11), 7.24 (2H, d, J = 8.6 Hz, HPMB Ar-H ), 6.87 (2H, d, J = 8.6 Hz,
+HPMB Ar-H ), 4.90 (1H, d, J = 9.8 Hz, H17), 4.43 (1H, d, J = 11.5 Hz, HPMB ArCH2O), 4.37 (1H,
+d, J = 11.5 Hz, HPMB ArCH2O), 3.81 (3H, s, MeOPMB), 3.72 (1H, t, J = 4.4 Hz, H13), 3.57
+(1H, dd, J = 8.4, 2.1, H19), 3.34 (1H, dd, J = 8.8, 7.8 Hz, H21A), 3.19 (1H, dd, J = 8.8, 6.6
+Hz, H21B), 2.52 (1H, m, H12), 2.48 (1H, m, H18), 2.14 (1H, dd, J = 12.9, 4.3 Hz, H15A), 1.92
+(1H, m, H20), 1.83 (1H, m, H14), 1.70 (1H, dd, J = 12.9, 10.0 Hz, H15B), 1.55 (3H, s, Me16),
+1.09 (3H, d, J = 7.0 Hz, Me12), 0.96 (9H, t, J = 7.9 Hz, SiCH2CH3), 0.95 (9H, t, J = 7.9
+Hz, SiCH2CH3), 0.93 (3H, m, Me18), 0.82 (3H, d, J = 6.8 Hz, Me20), 0.79 (3H, d, J = 6.8 Hz,
+Me14), 0.60 (12H, m, SiCH2CH3)",,1702,,,,
+85,Aldehyde 50,13C NMR,"(125 MHz, CDCl3):  205.4, 159.1, 131.7, 130.9,
+130.7, 129.3, 113.7, 78.7, 76.9, 73.5, 72.6, 55.3, 49.2, 43.2, 37.1, 36.2, 29.7, 18.3, 16.0, 15.1, 12.3,
+10.7, 7.2, 7.0, 5.6, 5.2",,1703,,,,
+86,Aldehyde 50,IR,"(thin lm, max/cm-1): 2956, 2876, 1724, 1613, 1513, 1459, 1247,
+1082, 1039, 1008, 820, 738",,1704,,,,
+87,Aldehyde 50,MS,"(ES+): Calculated for C36H67O5Si2 [M+H]+: 635.4522,
+found 635.4519",,1705,,,,
+88,Aldehyde ent-81,Rf,"0.14 (PE:EtOAc, 6:1)",,1684,,,,
+89,Aldehyde ent-81,1H NMR,"(400 MHz, CDCl3): 
+9.59 (1H, d, J = 2.1 Hz, H13), 7.24 (2H, d, J = 8.5 Hz, HPMB Ar-H ), 6.87 (2H, d, J = 8.5
+Hz, HPMB Ar-H ), 4.93 (1H, d, J = 9.9 Hz, H17), 4.45 (1H, d, J = 11.6 Hz, HPMB ArCH2O), 4.42
+(1H, d, J = 11.6 Hz, HPMB ArCH2O), 3.81 (3H, s, MeOPMB), 3.51 (1H, m, H19), 3.48 (2H, m,
+H21), 2.72 (1H, d, J = 2.8 Hz, HO19), 2.48 (1H, m, H14), 2.48 (1H, m, H18), 2.39 (1H, dd, J
+= 13.7, 6.6 Hz, H15A), 1.96 (1H, dd, J = 13.7, 7.9 Hz, H15B), 1.80 (1H, m, H20), 1.63 (3H, s,
+Me16), 1.02 (3H, d, J = 6.7 Hz, Me14), 1.02 (3H, d, J = 6.7 Hz, Me18), 0.90 (3H, d, J = 7.0
+Hz, Me20)",,1685,,,,
+90,Aldehyde ent-81,13C NMR,"(125 MHz, CDCl3):  204.6, 158.9, 130.7, 130.4, 129.8, 128.8, 113.5,
+77.7, 75.2, 72.8, 54.9, 44.0, 40.6, 36.3, 35.2, 17.6, 15.8, 12.7, 9.4",,1686,0.11,1.0,1.0,1.0
+91,Aldehyde ent-81,IR,"(thin lm, max/cm-1):
+3527 (br), 2931, 2353, 1724, 1513, 1247, 1089, 822",,1687,,,,
+92,Aldehyde ent-81,MS,"(ES+): Calculated for C21H33O4
+[M+H]+: 349.2373, found 349.2368",,1688,,,,
+93,Aldol adduct 102,Rf,"0.24 (PE:EtOAc, 4:1)",,1758,,,,
+94,Aldol adduct 102,1H NMR,"(400 MHz, CDCl3):  7.24
+(2H, d, J = 8.3 Hz, HPMB Ar-H ), 6.86 (2H, d, J = 8.3 Hz, HPMB Ar-H ), 4.82 (1H, s, H9A), 4.71
+(1H, s, H9B), 4.44 (2H, s, HPMB ArCH2O), 4.08 (1H, m, H3), 3.80 (3H, s, MeOPMB), 3.63 (2H,
+m, H1), 3.23 (1H, ddd, J = 7.1, 4.8, 4.8 Hz, H4), 3.09 (1H, s, HO3), 2.58 (1H, d, J = 14.0 Hz,
+H7A), 2.21 (1H, d, J = 14.0 Hz, H7B), 1.76 (2H, m, H24A,2A), 1.70 (3H, s, Me8), 1.66 (1H, m,
+H2B), 1.59 (1H, m, H24B), 1.37 (3H, s, Me6), 0.87 (3H, t, J = 7.7 Hz, H25), 0.19 (9H, s, TMS)",,1759,0.1,1.0,1.0,1.0
+95,Aldol adduct 102,13C NMR,"(125 MHz, CDCl3):  217.3, 159.2, 141.3, 130.1, 129.3, 115.3, 113.8, 83.9, 72.9, 70.2,
+68.7, 55.2, 51.7, 47.5, 34.6, 26.8, 24.7, 18.9, 11.9, 2.4",,1760,0.11,1.0,1.0,1.0
+96,Aldol adduct 102,IR,"(thin lm, max/cm-1): 3495, 2955,
+1706, 1613, 1513, 1249, 1092, 1035, 842",,1761,,,,
+97,Aldol adduct 102,MS,"(ES+): Calculated for C24H41O5Si [M+H]+:
+437.2723, found 437.2725",,1762,,,,
+98,Aldol adduct 109,Rf,"0.08 (PE:EtOAc, 4:1)",,1745,,,,
+99,Aldol adduct 109,1H NMR,"(400 MHz, CDCl3):  4.78
+(1H, br s, H9A), 4.70 (1H, br s, H9B), 4.35 (1H, dddd, J = 8.6, 5.8, 2.7, 1.0 Hz, H3), 3.90 (6H, s,
+Horthoester), 3.25 (1H, d, J = 1.0 Hz, HO3), 3.19 (1H, ddd, J = 7.2, 5.8, 4.5 Hz, H4), 2.60 (1H,
+d, J = 13.9 Hz, H7A), 2.18 (1H, d, J = 13.9 Hz, H7B), 1.81 (3H, m, H24A,2), 1.73 (3H, s, Me8),
+1.51 (1H, m, H24B), 1.37 (3H, s, Me6), 0.83 (3H, t, J = 7.5 Hz, H25), 0.80 (3H, s, Meorthoester),
+0.19 (9H, s, TMS)",,1746,,,,
+100,Aldol adduct 109,13C NMR,"(125 MHz, CDCl3):  216.1, 141.6, 115.1, 109.0, 84.0, 72.5,
+66.5, 51.5, 41.2, 30.4, 27.0, 24.7, 18.9, 14.5, 11.5, 2.4",,1747,0.11,1.0,1.0,1.0
+101,Aldol adduct 109,IR,"(thin lm, max/cm-1): 2961, 2882,
+1712, 1398, 1251, 1193, 1055, 992, 890, 842, 753",,1748,,,,
+102,Aldol adduct 109,MS,"(ES+): Calculated for C21H39O6Si
+[M+H]+: 415.2516, found 415.2517",,1749,,,,
+103,Aldol adduct 147,Rf,"0.21 (PE:EtOAc, 4:1)",,1783,,,,
+104,Aldol adduct 147,1H NMR,"(400 MHz, CDCl3):  6.84
+(3H, m, HDMB Ar-H ), 4.82 (1H, s, H9A), 4.71 (1H, s, H9B), 4.45 (2H, s, HDMB ArCH2O), 4.08 (1H,
+ddd, J = 9.8, 4.8, 2.4 Hz, H3), 3.88 (3H, s, MeODMB), 3.87 (3H, s, MeODMB), 3.64 (2H, m,
+H1), 3.23 (1H, ddd, J = 7.0, 4.8, 4.8 Hz, H4), 3.07 (1H, d, J = 2.3 Hz, HO3), 2.58 (1H, d, J
+= 14.0 Hz, H7A), 2.21 (1H, d, J = 14.0 Hz, H7B), 1.76 (2H, m, H24A,2A), 1.75 (3H, s, Me8),
+1.67 (1H, m, H2B), 1.60 (1H, m, H24B), 1.37 (3H, s, Me6), 0.87 (3H, t, J = 7.5 Hz, H25), 0.19
+(9H, s, TMS)",,1784,,,,
+105,Aldol adduct 147,13C NMR,"(125 MHz, CDCl3):  217.4, 149.0, 148.6, 141.3, 130.6, 120.3, 115.3,
+111.0, 110.9, 83.9, 73.2, 70.2, 68.7, 55.9, 55.8, 51.7, 47.5, 34.6, 26.8, 24.7, 19.0, 12.0, 2.5",,1785,,,,
+106,Aldol adduct 147,IR,"(thin lm, max/cm-1): 3743, 3960, 1703, 1517, 1261, 1031, 843",,1786,,,,
+107,Aldol adduct 147,MS,"(ES+): Calculated
+for C25H42O6SiNa [M+Na]+: 489.2643, found 489.2643",,1787,,,,
+108,Aldol adduct 65,Rf,"0.27 (PE:EtOAc, 6:1)",,1924,,,,
+109,Aldol adduct 65,1H NMR,"(400 MHz, CDCl3):  7.20
+(2H, d, J = 8.6 Hz, HPMB Ar-H ), 6.86 (2H, d, J = 8.6 Hz, HPMB Ar-H ), 5.09 (1H, m, H15A),
+4.93 (1H, m, H15B), 4.50 (1H, m, H17), 4.42 (1H, d, J = 11.7 Hz, HPMB ArCH2O), 4.38 (1H, d,
+J = 11.7 Hz, HPMB ArCH2O), 3.80 (3H, s, MeOPMB), 3.58 (1H, dd, J = 8.8, 8.6 Hz, H21A), 3.45
+(1H, dd, J = 8.6, 5.0 Hz, H21B), 3.18 (1H, d, J = 2.8 Hz, HO17), 3.16 (1H, m, H20), 2.86 (1H,
+qd, J = 7.2, 2.5 Hz, H18), 1.63 (3H, s, Me16), 1.03 (3H, d, J = 6.9 Hz, Me20), 1.00 (3H, d,
+J = 7.2 Hz, Me18)",,1925,,,,
+110,Aldol adduct 65,13C NMR,"(125 MHz, CDCl3):  218.1, 159.3, 143.3, 129.6, 129.3, 113.8,
+111.4, 73.1, 72.8, 72.5, 55.2, 48.5, 44.6, 19.6, 13.6, 8.2",,1926,,,,
+111,Aldol adduct 65,IR,"(thin lm, max/cm-1): 3494 (br),
+2940, 1701, 1612, 1513, 1453, 1247, 1095, 1034, 818",,1927,,,,
+112,Aldol adduct 65,MS,"(ES+): Calculated for C18H27O4
+[M+H]+: 307.1904, found 307.1908",,1928,,,,
+113,Aldol adduct ent-84,Rf,"0.07 (PE:EtOAc, 6:1)",,1689,,,,
+114,Aldol adduct ent-84,1H NMR,"(400 MHz, CDCl3):  8.08
+(2H, d, J = 7.9 Hz, HBz), 7.59 (1H, t, J = 7.4 Hz, HBz), 7.46 (2H, t, J = 7.7 Hz, HBz), 7.23
+(2H, d, J = 8.6 Hz, HPMB Ar-H ), 6.87 (2H, d, J = 8.6 Hz, HPMB Ar-H ), 5.46 (1H, q, J = 7.1
+Hz, H10), 4.87 (1H, d, J = 10.0 Hz, H17), 4.43 (2H, ABQ, J = 11.6 Hz, HPMB ArCH2O), 3.80
+(3H, s, MeOPMB), 3.56 (1H, m, H13), 3.50 (1H, m, H19), 3.49 (2H, m, H21), 3.07 (1H, q, J =
+7.1 Hz, H12), 2.68 (1H, d, J = 2.9 Hz, HO19), 2.47 (1H, m, H18), 2.41 (1H, d, J = 7.0 Hz,
+HO13), 2.25 (1H, d, J = 12.6 Hz, H15A), 1.85 (1H, m, H20), 1.71 (1H, m, H14), 1.70 (1H, dd, J
+= 12.6, 11.3 Hz, H15B), 1.59 (3H, s, Me16), 1.57 (3H, d, J = 7.1 Hz, Me10), 1.28 (3H, d, J =
+6.6 Hz, Me12), 1.02 (3H, d, J = 6.5 Hz, Me18), 0.91 (3H, d, J = 7.0 Hz, Me20), 0.82 (3H, d,
+J = 6.5 Hz, Me14)",,1690,,,,
+115,Aldol adduct ent-84,13C NMR,"(125 MHz, CDCl3):  212.2, 165.9, 159.2, 133.4, 132.7, 130.2,
+129.8, 129.8, 129.4, 129.2, 128.5, 113.8, 78.3, 78.0, 75.6, 74.6, 73.1, 55.3, 44.8, 40.4, 36.6, 35.6,
+33.3, 18.0, 16.3, 16.1, 16.0, 14.7, 9.9",,1691,0.08,0.97,0.97,0.97
+116,Aldol adduct ent-84,IR,"(thin lm, max/cm-1): 2934, 1718, 1250, 1114, 713",,1692,,,,
+117,Aldol adduct ent-84,MS,"(ES+): Calculated for C33H47O7 [M+H]+: 555.3322, found 555.3318",,1693,,,,
+118,Alkylated dioxolanone 98,Rf,"0.21 (PE:EtOAc, 19:1)",,1717,,,,
+119,Alkylated dioxolanone 98,1H NMR,"(400 MHz, CDCl3): 
+5.17 (1H, s, HCHtBu), 4.96 (1H, m, H9A), 4.87 (1H, s, H9B), 2.53 (1H, d, J = 13.8 Hz, H7A),
+2.32 (1H, d, J = 13.8 Hz, H7B), 1.83 (3H, s, Me8), 1.43 (3H, s, Me6), 0.95 (9H, s, tBu)",,1718,0.07,1.0,1.0,1.0
+120,Alkylated dioxolanone 98,13C NMR,"(125 MHz, CDCl3):  175.8, 139.8, 116.4, 108.4, 80.5, 43.1, 34.4, 23.9, 23.2, 22.9",,1719,0.0,1.0,1.0,1.0
+121,Alkylated dioxolanone 98,IR,"(thin lm, max/cm-1): 2972, 2912, 2880, 1797, 1647, 1486, 1375, 1236, 1171, 1137, 1076, 979",,1720,,,,
+122,Alkylated dioxolanone 98,MS,"(ES+): Calculated for C12H21O3 [M+H]+: 213.1491, found 213.1488",,1721,,,,
+123,Alkyne 196,Rf,"0.72 (PE:EtOAc, 4:1)",,1884,,,,
+124,Alkyne 196,1H NMR,"(400 MHz, CDCl3):  5.35
+(1H, ddd, J = 11.6, 3.0, 3.0 Hz, H11), 5.09 (1H, d, J = 10.5 Hz, H9), 4.91 (1H, d, J = 9.8 Hz,
+H17), 4.07 (1H, m, H3), 3.70 (1H, dd, J = 7.7, 2.3 Hz, H19), 3.65 (1H, d, J = 5.0 Hz, HO3),
+3.58 (1H, dd, J = 8.9, 8.9 Hz, H21), 3.38 (1H, dd, J = 5.7, 4.3 Hz, H13), 3.21 (1H, s, HO21),
+2.83 (1H, m, H4), 2.64 (1H, m, H18), 2.61 (2H, m, H7), 2.51 (2H, m, H2), 2.49 (1H, m, H10A),
+2.23 (2H, m, Ha), 2.16 (1H, d, J = 12.8 Hz, H15A), 1.95 (1H, m, H10B), 1.94 (1H, t, J = 2.6
+Hz, Hc), 1.90 (1H, m, H24A), 1.80 (1H, m, H24B), 1.79 (1H, m, H14), 1.74 (1H, m, H12), 1.72
+(1H, m, H23A), 1.68 (1H, m, H20), 1.68 (1H, m, H22A), 1.62 (1H, m, H23B), 1.61 (1H, m, H15B),
+1.58 (3H, s, Me16), 1.57 (3H, s, Me8), 1.43 (3H, s, Me6), 1.38 (1H, m, H22B), 1.00 (3H, t, J =
+7.6 Hz, H25), 0.99 (3H, d, J = 6.9 Hz, Me18), 0.98 (9H, t, J = 8.0 Hz, SiCH2CH3), 0.97 (9H,
+t, J = 8.0 Hz, SiCH2CH3), 0.96 (3H, d, J = 7.6 Hz, Me12), 0.80 (3H, d, J = 7.3 Hz, Me20),
+0.78 (3H, d, J = 7.3 Hz, Me14), 0.65 (6H, q, J = 8.0 Hz, SiCH2CH3), 0.65 (6H, q, J = 8.0
+Hz, SiCH2CH3), 0.14 (9H, s, OTMS)",,1885,,,,
+125,Alkyne 196,13C NMR,"(125 MHz, CDCl3):  217.2, 171.5, 134.9,
+131.8, 130.8, 125.5, 84.6, 83.6, 80.0, 79.3, 73.2, 72.8, 68.7, 68.3, 52.9, 49.5, 43.7, 41.6, 41.0, 39.1,
+35.8, 34.4, 34.3, 33.5, 28.5, 23.8, 19.9, 18.6, 18.4, 16.3, 16.0, 15.1, 13.0, 12.5, 12.2, 7.1, 7.0, 5.5,
+5.2, 2.7",,1886,,,,
+126,Alkyne 196,IR,"(thin lm, max/cm-1): 2958, 1734, 1704, 1247, 1039, 843, 741",,1887,,,,
+127,Alkyne 196,MS,"(NSI):
+Calculated for C50H93O8Si3 [M-H]􀀀: 905.6184, found 905.6174",,1888,,,,
+128,Alkyne 196,Rf,"0.66 (PE:EtOAc, 4:1)",,1889,,,,
+129,Alkyne 196,1H NMR,"(400 MHz, CDCl3):  5.35
+(1H, ddd, J = 11.7, 3.1, 3.1 Hz, H11), 5.09 (1H, d, J = 10.5 Hz, H9), 4.93 (1H, d, J = 9.5 Hz,
+H17), 4.07 (1H, dddd, J = 9.7, 4.9, 4.0, 3.0 Hz, H3), 3.66 (1H, m, H21), 3.65 (1H, d, J = 5.0 Hz,
+HO3), 3.59 (1H, dd, J = 7.0, 3.6 Hz, H19), 3.38 (1H, dd, J = 5.4, 4.7 Hz, H13), 2.83 (1H, dt, J
+= 5.3, 4.0 Hz, H4), 2.61 (2H, m, H7), 2.56 (1H, m, H18), 2.51 (2H, m, H2), 2.50 (1H, m, H10A),
+2.23 (2H, m, Ha), 2.18 (1H, d, J = 12.8 Hz, H15A), 1.96 (1H, m, H10B), 1.95 (1H, t, J = 2.6
+Hz, Hc), 1.90 (1H, m, H24A), 1.80 (1H, d, J = 4.0 Hz, HO21), 1.80 (1H, m, H24B), 1.79 (1H, m,
+H14), 1.75 (1H, m, H12), 1.71 (1H, m, H23A), 1.64 (1H, m, H15B), 1.61 (1H, m, H20), 1.58 (3H,
+s, Me16), 1.57 (3H, s, Me8), 1.56 (2H, m, H22), 1.55 (1H, m, H23B), 1.43 (3H, s, Me6), 1.00 (3H,
+t, J = 7.6 Hz, H25), 0.98 (9H, t, J = 8.0 Hz, SiCH2CH3), 0.97 (9H, t, J = 8.0 Hz, SiCH2CH3),
+0.96 (3H, d, J = 6.2 Hz, Me12), 0.94 (3H, d, J = 6.9 Hz, Me18), 0.90 (3H, d, J = 6.9 Hz, Me20),
+0.78 (3H, d, J = 6.8 Hz, Me14), 0.64 (6H, q, J = 8.0 Hz, SiCH2CH3), 0.64 (6H, q, J = 8.0 Hz,
+SiCH2CH3), 0.14 (9H, s, OTMS)",,1890,,,,
+130,Alkyne 196,13C NMR,"(125 MHz, CDCl3):  217.2, 171.5, 134.9, 132.7,
+130.4, 125.5, 84.4, 83.6, 80.2, 79.4, 73.7, 73.2, 68.7, 68.4, 52.9, 49.5, 41.8, 41.7, 41.0, 39.1, 36.8,
+34.6, 34.3, 33.5, 28.5, 25.0, 19.9, 18.5, 17.5, 16.3, 16.0, 15.1, 13.0, 12.5, 12.3, 7.1, 7.1, 5.7, 5.5,
+2.7",,1891,,,,
+131,Alkyne 196,IR,"(thin lm, max/cm-1): 2956, 2878, 1731, 1704, 1457, 1380, 1247, 1184, 1017, 842, 737",,1892,,,,
+132,Alkyne 196,MS,"(NSI): Calculated for C50H93O8Si3 [M-H]􀀀: 905.6184, found 905.6173",,1893,,,,
+133,Amide 199,Rf,"0.22 (PE:EtOAc, 1:1)",,1904,,,,
+134,Amide 199,1H NMR,"(400 MHz, CDCl3):  7.39
+(1H, s, Hc), 5.85 (1H, br s, NH), 5.35 (1H, ddd, J = 11.7, 3.0, 3.0 Hz, H11), 5.09 (1H, d, J
+= 10.3 Hz, H9), 4.91 (1H, d, J = 9.8 Hz, H17), 4.18 (2H, td, J = 7.0, 2.2 Hz, Hd), 4.07 (1H,
+m, H3), 4.03 (2H, dd, J = 5.3, 2.6 Hz, Hj), 3.70 (1H, dd, J = 7.5, 2.1 Hz, H19), 3.60 (1H, m,
+H21), 3.38 (1H, dd, J = 5.6, 4.2 Hz, H13), 2.83 (1H, m, H4), 2.76 (2H, m, Ha), 2.64 (1H, m,
+H18), 2.61 (2H, m, H7), 2.51 (2H, m, H2), 2.50 (1H, m, H10A), 2.23 (1H, t, J = 2.6 Hz, Hl),
+2.15 (1H, d, J = 12.7 Hz, H15A), 2.02 (2H, m, He), 1.95 (1H, m, H10B), 1.88 (1H, m, H24A),
+1.88 (2H, m, H23), 1.86 (2H, t, J = 7.3 Hz, Hh), 1.81 (1H, m, H24B), 1.78 (1H, m, H14), 1.74
+(1H, m, H12), 1.70 (2H, m, Hg), 1.67 (1H, m, H20), 1.63 (1H, m, H22A), 1.57 (1H, m, H15B),
+1.57 (3H, s, Me16), 1.57 (3H, s, Me8), 1.43 (3H, s, Me6), 1.37 (1H, m, H22B), 1.00 (3H, t, J =
+7.6 Hz, H25), 0.99 (3H, d, J = 7.8 Hz, Me18), 0.97 (9H, t, J = 8.0 Hz, SiCH2CH3), 0.96 (9H,
+t, J = 8.0 Hz, SiCH2CH3), 0.96 (3H, d, J = 7.0 Hz, Me12), 0.78 (3H, d, J = 7.0 Hz, Me20),
+0.78 (3H, d, J = 7.0 Hz, Me14), 0.64 (6H, q, J = 8.0 Hz, SiCH2CH3), 0.64 (6H, q, J = 8.0
+Hz, SiCH2CH3), 0.14 (9H, s, OTMS)",,1905,,,,
+135,Amide 199,13C NMR,"(125 MHz, CDCl3):  217.2, 171.5, 170.5,
+148.6, 134.9, 131.8, 130.8, 125.5, 121.2, 83.6, 80.1, 79.3, 79.3, 73.2, 73.1, 71.7, 68.7, 52.9, 49.5,
+44.5, 43.7, 41.6, 41.0, 39.1, 35.7, 35.0, 34.3, 34.1, 33.5, 29.6, 29.3, 28.5, 28.1, 26.2, 25.7, 24.9,
+19.9, 18.6, 16.3, 15.9, 15.1, 13.2, 12.5, 12.2, 7.1, 7.0, 5.5, 5.2, 2.7",,1906,,,,
+136,Amide 199,IR,"(thin lm, max/cm-1):
+2958, 1738, 1699, 1672, 1668, 1539, 1458, 1248, 1008, 847, 740",,1907,,,,
+137,Amide 199,MS,"(ES+): Calculated for
+C59H106N6O9Si3Na [M+Na]+: 1149.7221, found 1149.7218",,1908,,,,
+138,Amide 199,Rf,"0.16 (PE:EtOAc, 1:1)",,1909,,,,
+139,Amide 199,1H NMR,"(400 MHz, CDCl3):  7.39
+(1H, s, Hc), 5.83 (1H, br s, NH), 5.35 (1H, ddd, J = 11.6, 3.0, 3.0 Hz, H11), 5.09 (1H, d, J =
+9.9 Hz, H9), 4.94 (1H, d, J = 9.3 Hz, H17), 4.18 (2H, t, J = 6.9 Hz, Hd), 4.07 (1H, m, H3),
+4.02 (2H, dd, J = 5.3, 2.6 Hz, Hj), 3.69 (1H, m, H21), 3.60 (1H, dd, J = 6.5, 4.0 Hz, H19), 3.38
+(1H, dd, J = 5.4, 4.4 Hz, H13), 2.83 (1H, m, H4), 2.77 (sH, ddd, J = 13.4, 8.0, 6.8 Hz, Ha),
+2.61 (2H, m, H7), 2.56 (1H, m, H18), 2.51 (2H, m, H2), 2.50 (1H, m, H10A), 2.23 (1H, t, J = 2.6
+Hz, Hl), 2.18 (1H, m, H15A), 2.02 (2H, td, J = 6.9, 2.9 Hz, He), 1.97 (1H, m, H10B), 1.90 (1H,
+m, H24A), 1.86 (2H, t, J = 7.4 Hz, Hh), 1.83 (1H, m, H23A), 1.80 (1H, m, H24B), 1.78 (1H, m,
+H14), 1.75 (1H, m, H12), 1.73 (1H, m, H23B), 1.71 (2H, m, Hg), 1.60 (1H, m, H20), 1.63 (1H, m,
+H15B), 1.57 (3H, s, Me16), 1.57 (3H, s, Me8), 1.51 (2H, m, H22), 1.43 (3H, s, Me6), 1.00 (3H, t,
+J = 7.8 Hz, H25), 0.97 (9H, t, J = 8.0 Hz, SiCH2CH3), 0.97 (9H, t, J = 8.0 Hz, SiCH2CH3),
+0.96 (3H, d, J = 7.0 Hz, Me12), 0.93 (3H, d, J = 7.7 Hz, Me18), 0.88 (3H, d, J = 6.9 Hz, Me20),
+0.77 (3H, d, J = 7.0 Hz, Me14), 0.64 (6H, q, J = 8.0 Hz, SiCH2CH3), 0.64 (6H, q, J = 8.0
+Hz, SiCH2CH3), 0.14 (9H, s, OTMS)",,1910,,,,
+140,Amide 199,13C NMR,"(125 MHz, CDCl3):  217.2, 171.5, 170.5,
+148.3, 134.9, 132.6, 130.5, 125.5, 121.2, 83.6, 80.4, 79.4, 79.3, 73.9, 73.2, 71.7, 68.7, 52.9, 49.5,
+44.4, 41.8, 41.6, 41.0, 39.1, 36.6, 35.1, 34.3, 34.1, 33.5, 29.6, 29.3, 28.5, 28.0, 26.2, 26.0, 25.6,
+19.9, 17.3, 16.3, 15.9, 15.1, 13.0, 12.5, 12.3, 7.1, 7.1, 5.7, 5.5, 2.7",,1911,,,,
+141,Amide 199,IR,"(thin lm, max/cm-1):
+2959, 1737, 1700, 1672, 1668, 1540, 1458, 1248, 1019, 842, 739",,1912,,,,
+142,Amide 199,MS,"(ES+): Calculated for
+C59H1067N6O9Si3 [M+H]+: 1127.7402, found 1127.7409",,1913,,,,
+143,Azide 205,Rf,"0.13 (PE:EtOAc, 1:1)",,1870,,,,
+144,Azide 205,1H NMR,"(400 MHz, CDCl3):  3.69 (3H, s, OMe), 3.16 (2H, t, J
+= 6.8 Hz, Ha), 2.13 (2H, t, J = 7.6 Hz, Hd), 1.81 (2H, t, J = 7.6 Hz, Hc), 1.67 (2H, t, J = 6.8
+Hz, Hb)",,1871,0.0,1.0,1.0,1.0
+145,Bis TES ether ent-86,Rf,"0.71 (PE:EtOAc, 6:1)",,1694,,,,
+146,Bis TES ether ent-86,1H NMR,"(400 MHz, CDCl3):  8.08
+(2H, d, J = 8.0 Hz, HBz), 7.57 (1H, t, J = 7.4 Hz, HBz), 7.45 (2H, t, J = 7.7 Hz, HBz), 7.25 (2H, d, J = 8.6 Hz, HPMB Ar-H ), 6.87 (2H, d, J = 8.6 Hz, HPMB Ar-H ), 5.44 (1H, q, J = 7.0
+Hz, H10), 4.89 (1H, d, J = 9.7 Hz, H17), 4.43 (1H, d, J = 11.6 Hz, HPMB ArCH2O), 4.38 (1H,
+d, J = 11.6 Hz, HPMB ArCH2O), 3.94 (1H, d, J = 9.0 Hz, H13), 3.80 (3H, s, MeOPMB), 3.56
+(1H, dd, J = 8.4, 2.2, H19), 3.35 (1H, dd, J = 8.8, 7.8 Hz, H21A), 3.19 (1H, dd, J = 8.8, 6.7
+Hz, H21B), 3.11 (1H, m, H12), 2.46 (1H, m, H18), 2.08 (1H, m, H15A), 1.93 (1H, m, H20), 1.76
+(1H, m, H14), 1.75 (1H, m, H15B), 1.55 (3H, s, Me16), 1.51 (3H, d, J = 7.0 Hz, Me10), 1.11
+(3H, d, J = 7.0 Hz, Me12), 0.94 (18H, m, SiCH2CH3), 0.92 (3H, m, Me18), 0.84 (3H, d, J = 6.2
+Hz, Me14), 0.82 (3H, d, J = 6.8 Hz, Me20), 0.58 (12H, m, SiCH2CH3)",,1695,,,,
+147,Bis TES ether ent-86,13C NMR,"(125 MHz,
+CDCl3):  209.2, 165.7, 159.1, 133.2, 132.0, 130.8, 130.5, 129.8, 129.8, 129.3, 128.4, 113.7, 78.2,
+77.2, 75.0, 73.5, 72.5, 55.2, 46.1, 41.0, 37.1, 37.0, 34.2, 18.3, 16.0, 16.0, 15.5, 14.3, 10.8, 7.1, 7.0,
+5.5, 5.3",,1696,,,,
+148,Bis TES ether ent-86,IR,"(thin lm, max/cm-1): 2955, 1722, 1514, 1457, 1249",,1697,,,,
+149,Bis TES ether ent-86,MS,"(ES+): Calculated
+for C45H78O7Si2N [M+NH4]+: 800.5311, found 800.5306",,1698,,,,
+150,Carboxylic acid 151,Rf,"0.46 (PE:EtOAc, 4:1)",,1803,,,,
+151,Carboxylic acid 151,1H NMR,"(400 MHz, CDCl3):  7.23
+(2H, d, J = 8.4 Hz, HPMBM Ar-H ), 6.85 (2H, d, J = 8.4 Hz, HPMBM Ar-H ), 4.80 (1H, s, H9A),
+4.76 (1H, d, J = 7.0 Hz, HPMBM acetal A), 4.72 (1H, d, J = 7.0 Hz, HPMBM acetal B), 4.70 (1H,
+s, H9B), 4.54 (1H, d, J = 11.8 Hz, HPMBM ArCH2O), 4.45 (1H, d, J = 11.8 Hz, HPMBM ArCH2O),
+4.43 (1H, m, H3), 3.79 (3H, s, MeOPMBM), 3.44 (1H, dt, J = 5.7, 5.7 Hz, H4), 2.69 (1H, dd, J
+= 15.9, 4.0 Hz, H2A), 2.63 (1H, dd, J = 15.9, 7.1 Hz, H2B), 2.81 (1H, d, J = 13.8 Hz, H7A), 2.22
+(1H, d, J = 13.8 Hz, H7B), 1.82 (1H, ddq, J = 12.4, 6.2, 6.2 Hz, H24A), 1.75 (3H, s, Me8), 1.51
+(1H, m, H24B), 1.39 (3H, s, Me6), 0.85 (3H, t, J = 7.4 Hz, H25), 0.21 (9H, s, TMS)",,1804,,,,
+152,Carboxylic acid 151,13C NMR,"(125 MHz, CDCl3):  215.6, 175.9, 159.2, 141.4, 129.7, 129.6, 115.4, 113.8, 94.0, 84.4, 74.0,
+69.6, 55.3, 50.1, 47.7, 38.5, 27.2, 24.8, 19.7, 11.7, 2.5",,1805,0.09,1.0,1.0,1.0
+153,Carboxylic acid 151,IR,"(thin lm, max/cm-1): 2960, 1736,
+1712, 1514, 1251, 1033, 843",,1806,,,,
+154,Carboxylic acid 151,MS,"(NSI􀀀): Calculated for C25H39O7Si [M􀀀H]􀀀: 479.2471,
+found 479.2457",,1807,,,,
+155,Carboxylic acid 197,1H NMR,"(400 MHz, CDCl3):  10.34 (1H, br s, COOH), 3.17 (2H, t, J = 6.7 Hz, Ha), 2.18
+(2H, t, J = 7.5 Hz, Hd), 1.82 (2H, t, J = 7.5 Hz, Hc), 1.68 (2H, t, J = 6.7 Hz, Hb)",,1872,0.17,1.0,1.0,1.0
+156,Carboxylic acid 197,13C NMR,"(125 MHz, CDCl3):  176.8, 45.9, 32.6, 27.8, 27.8, 26.2",,1873,,,,
+157,Carboxylic acid ent-79,Rf,"0.42 (PE:EtOAc, 1:1)",,1676,,,,
+158,Carboxylic acid ent-79,1H NMR,"(400 MHz, CDCl3):  7.26
+(2H, d, J = 8.5 Hz, HPMB Ar-H ), 6.87 (2H, d, J = 8.5 Hz, HPMB Ar-H ), 4.97 (1H, d, J = 10.0
+Hz, H17), 4.84 (1H, dd, J = 9.5, 2.2 Hz, H19), 4.50 (1H, d, J = 11.4 Hz, HPMB ArCH2O), 4.38
+(1H, d, J = 11.4 Hz, HPMB ArCH2O), 3.80 (3H, s, MeOPMB), 3.24 (2H, m, H21), 2.64 (1H, m,
+H14), 2.64 (1H, m, H18), 2.33 (2H, q, J = 7.6 Hz, HPropionate), 2.25 (1H, dd, J = 13.2, 10.0 Hz,
+H15A), 2.09 (1H, dd, J = 13.2, 6.3 Hz, H15B), 2.06 (1H, m, H20), 1.64 (3H, s, Me16), 1.14 (3H,
+t, J = 7.6 Hz, HPropionate), 1.13 (3H, d, J = 6.9 Hz, Me14), 0.88 (3H, d, J = 6.6 Hz, Me20),
+0.85 (3H, d, J = 7.0 Hz, Me18)",,1677,,,,
+159,Carboxylic acid ent-79,MS,"(NSI-): Calculated for C24H35O6 [M-H]-: 419.2439,
+found 419.2444",,1678,,,,
+160,Diazirine 204,Rf,"0.04 (PE:EtOAc, 1:1)",,1868,,,,
+161,Diazirine 204,1H NMR,"(400 MHz, CDCl3):  3.69 (3H, s, OMe), 3.51 (2H, t, J
+= 6.0 Hz, Ha), 2.11 (2H, t, J = 7.4 Hz, Hd), 1.95 (1H, br s, HO), 1.83 (2H, t, J = 7.4 Hz, Hc),
+1.64 (2H, t, J = 6.0 Hz, Hb)",,1869,,,,
+162,Diester 112,1H NMR,"(400 MHz, CDCl3):  4.52 (2H, d, J = 6.0 Hz, Hd), 4.38 (2H, d, J = 6.0 Hz, Hd),
+4.25 (2H, s, Hb), 4.21 (2H, q, J = 7.2 Hz, OCH2CH3), 3.42 (2H, s, Ha), 1.34 (3H, s, Hc), 1.28
+(3H, t, J = 7.2 Hz, OCH2CH3)",,1740,,,,
+163,Diester 52,Rf,"0.53 (PE:EtOAc, 6:1)",,1671,,,,
+164,Diester 52,1H NMR,"(400 MHz, CDCl3):  7.24
+(2H, d, J = 8.5 Hz, HPMB Ar-H ), 6.86 (2H, d, J = 8.5 Hz, HPMB Ar-H ), 5.14 (1H, d, J = 5.1 Hz, H17), 5.05 (1H, dd, J = 6.6, 4.4 Hz, H19), 4.92 (1H, m, H15A), 4.83 (1H, m, H15B), 4.36
+(2H, s, HPMB ArCH2O), 3.80 (3H, s, MeOPMB), 3.25 (2H, ABQ, H21), 2.31 (4H, m, HPropionate),
+2.10 (1H, m, H20), 2.10 (1H, m, H18), 1.68 (3H, s, Me16), 1.14 (3H, t, J = 7.6 Hz, MePropionate),
+1.10 (3H, t, J = 7.6 Hz, MePropionate), 0.91 (3H, d, J = 7.2 Hz, Me20), 0.89 (3H, d, J = 6.9
+Hz, Me18)",,1672,,,,
+165,Diester 52,13C NMR,"(125 MHz, CDCl3):  173.8, 173.6, 159.0, 141.3, 130.6, 129.2, 113.6,
+113.0, 76.8, 74.4, 72.7, 72.6, 55.3, 36.2, 35.1, 27.7, 27.7, 18.9, 11.6, 9.9, 9.4, 9.1",,1673,,,,
+166,Diester 52,IR,"(thin lm,
+max/cm-1): 2975, 2942, 1737, 1613, 1514, 1462, 1248, 1181, 1098",,1674,,,,
+167,Diester 52,MS,"(ES+): Calculated
+for C24H37O6 [M+H]+: 421.2585, found 421.2584",,1675,,,,
+168,Dimer 155,Rf,"0.04 (PE:EtOAc, 6:1)",,1813,,,,
+169,Dimer 155,1H NMR,"(400 MHz, CDCl3): 
+7.33 (10H, m, HBn), 5.59 (2H, m, He), 4.52 (4H, s, HBn), 3.83 (2H, m, Hc), 3.70 (2H, m,
+HaA), 3.64 (2H, m, HaB), 2.89 (2H, s, HOc), 2.21 (4H, m, Hd), 1.75 (4H, m, Hb)",,1814,,,,
+170,Dimer 155,13C NMR,"(125 MHz, CDCl3):  138.0, 129.6, 128.5, 127.7, 127.7, 73.3, 70.5, 69.0, 40.8, 36.0",,1815,,,,
+171,Dimer 155,IR,"(thin
+lm, max/cm-1): 3461 (br), 2854, 1438, 1392, 1099, 743, 697",,1816,,,,
+172,Dimer 155,MS,"(ES+): Calculated for
+C24O33O4 [M+H]+: 385.2373, found 385.2373",,1817,,,,
+173,Diol 180,Rf,"0.56 (PE:EtOAc, 4:1)",,1824,,,,
+174,Diol 180,1H NMR,"(400 MHz, CDCl3):  5.35
+(1H, dt, J = 11.7, 3.2 Hz, H11), 5.09 (1H, d, J = 10.8 Hz, H9), 4.89 (1H, d, J = 9.5 Hz, H17),
+4.07 (1H, dddd, J = 8.7, 4.8, 3.6, 3.6 Hz, H3), 3.65 (1H, d, J = 4.8 Hz, HO3), 3.58 (1H, m,
+H19), 3.58 (1H, m, H21A), 3.47 (1H, m, H21B), 3.38 (1H, dd, J = 4.5, 5.3 Hz, H13), 2.83 (1H, dt, J = 5.5, 3.9 Hz, H4), 2.61 (2H, m, H7), 2.55 (1H, m, H18), 2.50 (2H, m, H2), 2.50 (1H, m,
+H10A), 2.17 (1H, dd, J = 12.2, 2.4 Hz, H15A), 1.95 (1H, m, H10B), 1.88 (1H, m, H20), 1.88 (1H,
+m, H24A), 1.83 (1H, t, J = 5.4 Hz, HO21), 1.82 (1H, m, H24B), 1.79 (1H, m, H14), 1.76 (1H, m,
+H12), 1.63 (1H, dd, J = 12.2, 11.4 Hz, H15B), 1.58 (3H, s, Me16), 1.57 (3H, s, Me8), 1.43 (3H, s,
+Me6), 1.00 (3H, t, J = 7.6 Hz, H25), 0.98 (9H, t, J = 7.9 Hz, SiCH2CH3), 0.96 (9H, t, J = 7.9
+Hz, SiCH2CH3), 0.96 (3H, d, J = 6.3 Hz, Me18), 0.95 (3H, d, J = 3.7 Hz, Me12), 0.82 (3H, d,
+J = 7.1 Hz, Me20), 0.78 (3H, d, J = 6.8 Hz, Me14), 0.64 (6H, q, J = 8.0 Hz, SiCH2CH3), 0.64
+(6H, q, J = 8.0 Hz, SiCH2CH3), 0.14 (9H, s, TMS)",,1825,,,,
+175,Diol 180,13C NMR,"(125 MHz, CDCl3):  217.2,
+171.5, 134.9, 132.4, 130.5, 125.5, 83.5, 79.3, 77.9, 73.3, 68.7, 66.3, 52.9, 49.5, 41.8, 41.0, 40.0,
+39.2, 36.4, 34.5, 33.5, 28.5, 19.9, 18.3, 16.4, 16.0, 15.1, 12.6, 12.3, 11.3, 7.1, 7.1, 5.5, 5.4, 2.7",,1826,,,,
+176,Diol 180,IR,"(thin lm, max/cm-1): 2956, 2877, 1733, 1705, 1459, 1416, 1381, 1247, 1182, 1095, 1019, 974,
+842, 736.",,1827,,,,
+177,Diol 180,MS,"(ES+): Calculated for C45H88O8Si3K [M+K]+: 879.5419, found 879.5452",,1828,,,,
+178,Diol 213,Rf,"0.78 (PE:EtOAc, 4:1)",,1874,,,,
+179,Diol 213,1H NMR,"(400 MHz, CDCl3):  5.35
+(1H, ddd, J = 11.6, 3.1, 3.1 Hz, H11), 5.09 (1H, d, J = 10.3 Hz, H9), 4.91 (1H, d, J = 9.9 Hz, H17), 4.07 (1H, dddd, J = 9.0, 5.0, 4.0, 3.3 Hz, H3), 3.70 (1H, dd, J = 7.0, 1.9 Hz, H19), 3.65
+(1H, d, J = 5.0 Hz, HO3), 3.57 (1H, dd, J = 8.4, 8.4 Hz, H21), 3.38 (1H, dd, J = 5.3, 3.4 Hz,
+H13), 3.19 (1H, br s, HO21), 2.83 (1H, dt, J = 5.2, 3.9 Hz, H4), 2.65 (1H, m, H18), 2.60 (2H, m,
+H7), 2.49 (2H, m, H2), 2.48 (1H, m, H10A), 2.25 (2H, m, Ha), 2.15 (1H, d, J = 13.0 Hz, H15A),
+1.92 (1H, m, H10B), 1.88 (1H, m, H24A), 1.79 (1H, m, H14), 1.78 (1H, m, H24B), 1.72 (1H, m,
+H12), 1.70 (1H, m, H22A), 1.68 (1H, m, H20), 1.66 (2H, m, H23), 1.62 (1H, dd, J = 12.7, 11.9
+Hz, H15B), 1.58 (3H, s, Me16), 1.57 (3H, s, Me8), 1.43 (3H, s, Me6), 1.35 (1H, m, H22B), 1.00
+(3H, t, J = 9.0 Hz, H25), 0.99 (3H, d, J = 8.0 Hz, Me18), 0.98 (9H, t, J = 8.0 Hz, SiCH2CH3),
+0.96 (9H, t, J = 8.0 Hz, SiCH2CH3), 0.96 (3H, d, J = 7.5 Hz, Me12), 0.79 (3H, d, J = 7.0 Hz,
+Me20), 0.78 (3H, d, J = 6.6 Hz, Me14), 0.65 (6H, q, J = 8.0 Hz, SiCH2CH3), 0.64 (6H, q, J =
+8.0 Hz, SiCH2CH3), 0.15 (9H, s, OTMS), 0.14 (9H, s, TMS)",,1875,,,,
+180,Diol 213,13C NMR,"(125 MHz, CDCl3): 
+217.2, 171.5, 134.9, 131.8, 130.8, 125.5, 107.5, 84.6, 83.6, 79.9, 79.3, 73.2, 72.8, 68.7, 52.9, 49.5,
+43.7, 41.6, 41.0, 39.1, 35.8, 34.4, 34.3, 33.5, 28.5, 24.0, 19.9, 19.8, 18.6, 16.3, 16.0, 15.1, 13.0,
+12.5, 12.2, 7.1, 7.0, 5.5, 5.2, 2.7, 0.1",,1876,,,,
+181,Diol 213,IR,"(thin lm, max/cm-1): 2963, 1733, 1713, 1698, 1248,
+1005, 841, 738",,1877,,,,
+182,Diol 213,MS,"(NSI): Calculated for C53H101O8Si4 [M-H]􀀀: 977.6579, found 977.6565",,1878,,,,
+183,Diol 213,Rf,"0.72 (PE:EtOAc, 4:1)",,1879,,,,
+184,Diol 213,1H NMR,"(400 MHz, CDCl3):  5.35
+(1H, ddd, J = 11.7, 3.2, 3.2 Hz, H11), 5.09 (1H, d, J = 10.4 Hz, H9), 4.94 (1H, d, J = 9.5 Hz,
+H17), 4.07 (1H, dddd, J = 9.7, 4.9, 4.0, 3.0 Hz, H3), 3.66 (1H, m, H21), 3.65 (1H, d, J = 4.9
+Hz, HO3), 3.58 (1H, dd, J = 6.7, 3.7 Hz, H19), 3.38 (1H, dd, J = 5.5, 4.4 Hz, H13), 2.83 (1H,
+dt, J = 5.6, 3.9 Hz, H4), 2.65 (1H, d, J = 15.1 Hz, H7A), 2.58 (1H, d, J = 15.1 Hz, H7A), 2.56
+(1H, m, H18), 2.48 (2H, m, H2), 2.45 (1H, m, H10A), 2.26 (2H, m, Ha), 2.18 (1H, d, J = 12.7
+Hz, H15A), 1.96 (1H, m, H10B), 1.86 (1H, m, H24A), 1.80 (1H, br s, HO21), 1.80 (1H, m, H24B),
+1.79 (1H, m, H14), 1.74 (1H, m, H12), 1.68 (1H, m, H23A), 1.59 (1H, m, H20), 1.59 (1H, dd, J =
+12.7, 11.9 Hz, H15B), 1.58 (3H, d, J = 0.8 Hz, Me16), 1.57 (3H, d, J = 0.7 Hz, Me8), 1.54 (2H,
+m, H22), 1.53 (1H, m, H23B), 1.43 (3H, s, Me6), 1.00 (3H, t, J = 7.6 Hz, H25), 0.98 (9H, t, J =
+7.9 Hz, SiCH2CH3), 0.97 (9H, t, J = 8.0 Hz, SiCH2CH3), 0.96 (3H, d, J = 7.5 Hz, Me12), 0.94
+(3H, d, J = 6.7 Hz, Me18), 0.90 (3H, d, J = 7.0 Hz, Me20), 0.78 (3H, d, J = 6.8 Hz, Me14), 0.64
+(6H, q, J = 7.9 Hz, SiCH2CH3), 0.64 (6H, q, J = 8.0 Hz, SiCH2CH3), 0.14 (9H, s, OTMS),
+0.14 (9H, s, TMS)",,1880,,,,
+185,Diol 213,13C NMR,"(125 MHz, CDCl3):  217.2, 171.5, 134.9, 132.6, 130.5, 125.5,
+107.3, 84.7, 83.6, 80.2, 79.4, 73.5, 73.2, 68.7, 52.9, 49.5, 41.8, 41.7, 41.0, 39.1, 36.7, 34.8, 34.3,
+33.5, 28.5, 25.1, 19.9, 19.9, 17.4, 16.3, 16.0, 15.1, 13.0, 12.5, 12.3, 7.1, 7.1, 5.7, 5.5, 2.7, 0.1",,1881,,,,
+186,Diol 213,IR,"(thin lm, max/cm-1): 2960, 2878, 1711, 1735, 1700, 1455, 1379, 1248, 1028, 841, 737",,1882,,,,
+187,Diol 213,MS,"(NSI): Calculated for C53H101O8Si4 [M-H]􀀀: 977.6579, found 977.6567",,1883,,,,
+188,Dioxolanone 97,Rf,"0.48 (PE:EtOAc, 4:1)",,1715,,,,
+189,Dioxolanone 97,1H NMR,"(400 MHz, CDCl3):  5.15 (1H, d, J = 1.2 Hz, HCHtBu),
+4.36 (1H, qd, J = 6.7, 1.2 Hz, H6), 1.48 (3H, d, J = 6.7 Hz, Me6), 0.98 (9H, s, tBu)",,1716,,,,
+190,Ester 156,Rf,"0.74 (PE:EtOAc, 4:1)",,1818,,,,
+191,Ester 156,1H NMR,"(400 MHz, CDCl3):  7.26
+(4H, m, HPMBM and PMB Ar-H ), 6.86 (4H, m, HPMBM and PMB Ar-H ), 5.68 (1H, dddd, J = 16.0,
+9.4, 7.1, 7.1 Hz, H9), 5.10 (1H, t, J = 6.6 Hz, H11), 5.01 (1H, d, J = 16.0 Hz, H8'A), 4.98 (1H,
+d, J = 9.4 Hz, H8'B), 4.88 (1H, d, J = 9.9 Hz, H17), 4.80 (1H, s, H9'A), 4.72 (1H, s, H9'B), 4.72
+(2H, s, HPMBM acetal), 4.51 (1H, d, J = 11.6 Hz, HPMBM ArCH2O), 4.50 (1H, m, H3), 4.44 (1H, d,
+J = 11.6 Hz, HPMBM ArCH2O), 4.43 (1H, d, J = 11.5 Hz, HPMB ArCH2O), 4.38 (1H, d, J = 11.5
+Hz, HPMB ArCH2O), 3.80 (3H, s, MeOPMB), 3.79 (3H, s, MeOPMBM), 3.55 (1H, dd, J = 8.2, 1.4
+Hz, H19), 3.44 (1H, m, H4), 3.41 (1H, m, H13), 3.35 (1H, dd, J = 8.6, 7.1 Hz, H21A), 3.19 (1H,
+dd, J = 8.6, 7.1 Hz, H21B), 2.61 (2H, m, H2), 2.61 (1H, d, J = 13.8 Hz, H7A), 2.47 (1H, m,
+H18), 2.42 (1H, m, H10A), 2.24 (1H, d, J = 13.8 Hz, H7B), 2.19 (1H, m, H10B), 2.06 (1H, d, J =
+12.0 Hz, H15A), 1.94 (1H, qd, J = 6.9, 1.2 Hz, H20), 1.81 (1H, m, 24A), 1.75 (3H, s, Me8), 1.75
+(1H, m, H12), 1.75 (1H, m, H14), 1.69 (1H, m, H15B), 1.55 (3H, s, Me16), 1.43 (1H, m, 24B), 1.41
+(3H, s, Me6), 0.95 (18H, t, J = 8.0 Hz, SiCH2CH3), 0.93 (3H, d, J = 6.0 Hz, Me18), 0.88 (3H, t,
+J = 7.4 Hz, H25), 0.87 (3H, d, J = 7.0 Hz, Me12), 0.82 (3H, d, J = 7.0 Hz, Me20), 0.77 (3H, d,
+J = 6.2 Hz, Me14), 0.62 (6H, q, J = 8.0 Hz, SiCH2CH3), 0.60 (6H, q, J = 8.0 Hz, SiCH2CH3),
+0.22 (9H, s, TMS)",,1819,,,,
+192,Ester 156,13C NMR,"(125 MHz, CDCl3):  215.7, 171.3, 159.1, 159.1, 141.5, 134.0,
+132.3, 130.8, 130.3, 130.0, 129.6, 129.3, 117.4, 115.2, 113.7, 113.7, 93.9, 84.2, 78.5, 77.1, 73.9,
+73.6, 73.5, 72.5, 69.4, 55.3, 55.3, 50.1, 47.7, 40.4, 39.2, 38.4, 37.1, 37.0, 36.9, 33.6, 27.1, 24.8,
+20.1, 18.2, 16.8, 15.9, 12.1, 10.9, 10.5, 7.2, 7.1, 5.5, 5.5, 2.5",,1820,,,,
+193,Ester 156,IR,"(thin lm, max/cm-1): 2957,
+2876, 1731, 1715, 1613, 1514, 1458, 1369, 1248, 1181, 1098, 1036, 842, 737",,1821,,,,
+194,Ester 156,MS,"(ES+):
+Calculated for C64H114O11Si3N [M+NH4]+: 1156.7694, found 1156.7685",,1822,,,,
+195,Ethyl ketone ent-54,Rf,"0.22 (PE:EtOAc, 6:1)",,1659,,,,
+196,Ethyl ketone ent-54,1H NMR,"(400 MHz, CDCl3):  7.21 (2H, d, J = 8.3 Hz,
+HPMB Ar-H ), 6.87 (2H, d, J = 8.3 Hz, HPMB Ar-H ), 4.43 (1H, d, J = 11.7 Hz, HPMB ArCH2O),
+4.39 (1H, d, J = 11.7 Hz, HPMB ArCH2O), 3.80 (3H, s, MeOPMB), 3.59 (1H, dd, J = 9.0, 8.4 Hz,
+H21A), 3.42 (1H, dd, J = 9.0, 5.4 Hz, H21B), 2.86 (1H, m, H20), 2.50 (2H, q, J = 7.2 Hz, H18),
+1.06 (3H, d, J = 6.9 Hz, Me20), 1.04 (3H, t, J = 7.2 Hz, Me18)",,1660,0.08,1.0,0.91,0.95
+197,Evans-Tishchenko product 186,Rf,"0.24 (PE:EtOAc, 4:1)",,1763,,,,
+198,Evans-Tishchenko product 186,1H NMR,"(400 MHz, CDCl3):  7.25
+(2H, d, J = 8.4 Hz, HPMB Ar-H ), 6.86 (2H, d, J = 8.4 Hz, HPMB Ar-H ), 5.14 (1H, m, H3), 4.90
+(1H, s, H9A), 4.70 (1H, s, H9B), 4.40 (2H, m, HPMB ArCH2O), 3.80 (3H, s, MeOPMB), 3.45 (2H,
+m, H1), 2.12 (1H, m, H7A), 2.04 (1H, m, H7B), 2.00 (3H, s, MeAc), 1.95 (1H, m, H2A), 1.85 (1H, m, H4), 1.84 (1H, m, H2B), 1.83 (3H, s, Me8), 1.61 (1H, m, H24A), 1.24 (1H, m, H24B), 1.08 (3H,
+s, Me6), 0.96 (3H, t, J = 7.9 Hz, H25), 0.15 (9H, s, TMS)",,1764,,,,
+199,Evans-Tishchenko product 186,13C NMR,"(125 MHz, CDCl3): 
+170.7, 159.1, 142.9, 130.4, 129.3, 114.8, 113.7, 78.6, 75.2, 73.8, 72.7, 66.8, 55.3, 46.0, 44.5, 31.7,
+24.9, 22.1, 21.3, 19.2, 13.8, 0.9",,1765,,,,
+200,Evans-Tishchenko product 186,IR,"(thin lm, max/cm-1): 2957, 1730, 1513, 1248, 1100, 843",,1766,,,,
+201,Evans-Tishchenko product 186,MS,"(ES+): Calculated for C26H45O6Si [M+H]+: 481.2980, found 481.2975",,1767,,,,
+202,Ketone 201,Rf,"0.06 (PE:EtOAc, 1:1)",,1866,,,,
+203,Ketone 201,1H NMR,"(400 MHz, CDCl3):  3.88 (2H, t, J = 5.4 Hz, Ha), 2.77
+(2H, t, J = 6.3 Hz, Hc), 2.73 (2H, t, J = 5.4 Hz, Hb), 2.67 (2H, t, J = 6.3 Hz, Hd).",,1867,0.0,1.0,1.0,1.0
+204,Lactone 200,Rf,"0.44 (PE:EtOAc, 4:1)",,1864,,,,
+205,Lactone 200,1H NMR,"(400 MHz, CDCl3):  4.42 (2H, m, Ha), 2.83 (4H, m,
+Hb,c), 2.73 (2H, m, Hd)",,1865,,,,
+206,Macrocycle 178,MS,"Calculated for C62H106O11Si3Na [M+Na]+:
+1133.6935, found 1133.6950",,1823,,,,
+207,Methyl ester 51,Rf,"0.46 (PE:EtOAc, 6:1)",,1679,,,,
+208,Methyl ester 51,1H NMR,"(400 MHz, CDCl3):  7.24
+(2H, d, J = 8.7 Hz, HPMB Ar-H ), 6.86 (2H, d, J = 8.7 Hz, HPMB Ar-H ), 4.95 (1H, m, H17), 4.95
+(1H, m, H19), 4.39 (1H, d, J = 11.5 Hz, HPMB ArCH2O), 4.35 (1H, d, J = 11.5 Hz, HPMB ArCH2O),
+3.80 (3H, s, MeOPMB), 3.63 (3H, s, MeO), 3.24 (1H, dd, J = 9.1, 7.0 Hz, H21A), 3.14 (1H, dd,
+J = 9.1, 6.8 Hz, H21B), 2.63 (1H, m, H14), 2.63 (1H, m, H18), 2.36 (1H, dd, J = 13.7, 7.4 Hz,
+H15A), 2.31 (2H, q, J = 7.6 Hz, HPropionate), 2.02 (1H, dd, J = 13.7, 7.4 Hz, H15B), 2.00 (1H,
+m, H20), 1.62 (3H, d, J = 1.3 Hz, Me16), 1.13 (3H, t, J = 7.6 Hz, HPropionate), 1.09 (3H, d, J
+= 6.9 Hz, Me14), 0.87 (3H, d, J = 6.8 Hz, Me20), 0.87 (3H, d, J = 6.8 Hz, Me18)",,1680,,,,
+209,Methyl ester 51,13C NMR,"(125 MHz, CDCl3):  176.9, 174.1, 159.1, 132.5, 130.7, 129.3, 129.1, 113.7, 76.9, 73.1, 72.8, 55.3,
+51.6, 43.8, 37.8, 35.5, 34.8, 27.8, 17.6, 16.7, 16.0, 10.6, 9.5",,1681,0.11,1.0,1.0,1.0
+210,Methyl ester 51,IR,"(thin lm, max/cm-1): 2973,
+1737, 1613, 1514, 1461, 1360, 1248, 1186, 1086, 821",,1682,,,,
+211,Methyl ester 51,MS,"(ES+): Calculated for C25H39O6
+[M+H]+: 435.2745, found 435.2741",,1683,,,,
+212,Methyl-(E)-3-hexenoate,Rf,"0.85 (PE:EtOAc, 4:1)",CC/C=C/CC(=O)OC,1737,,,,
+213,Methyl-(E)-3-hexenoate,1H NMR,"(400 MHz, CDCl3):  5.61 (1H, dtt, J = 15.3, 6.1, 1.1
+Hz, Hc), 5.51 (1H, dtt, J = 15.3, 6.8, 1.3 Hz, Hb), 3.68 (3H, s, OMe), 3.03 (2H, dd, J = 6.8,
+1.1 Hz, Ha), 2.05 (2H, qdd, J = 7.5, 6.1, 1.3 Hz, Hd), 0.99 (3H, t, J = 7.5 Hz, He)",CC/C=C/CC(=O)OC,1738,,,,
+214,Orthoester 113,Rf,"0.11 (PE:EtOAc, 4:1)",,1741,,,,
+215,Orthoester 113,1H NMR,"(400 MHz, CDCl3):  4.18 (2H, q, J = 7.1 Hz,
+OCH2CH3), 3.93 (6H, s, Hb), 2.75 (2H, s, Ha), 1.26 (3H, t, J = 7.2 Hz, OCH2CH3), 0.81
+(3H, s, Hc)",,1742,0.11,1.0,1.0,1.0
+216,PMB ether 120,Rf,"0.05 (PE:EtOAc, 4:1)",,1754,,,,
+217,PMB ether 120,1H NMR,"(400 MHz, CDCl3):  7.25 (2H, d, J = 8.7 Hz,
+HPMB Ar-H ), 6.88 (2H, d, J = 8.7 Hz, HPMB Ar-H ), 4.46 (2H, s, HPMB ArCH2O), 3.81 (3H, s,
+MeOPMB), 3.78 (2H, dt, J = 5.6, 5.6 Hz, H3), 3.64 (2H, t, J = 5.8 Hz, H1), 2.25 (1H, t, J =
+5.6 Hz, HO3), 1.86 (2H, qn, J = 5.7 Hz, H2)",,1755,,,,
+218,PMB ether 60,Rf,"0.60 (PE:EtOAc, 6:1)",,1655,,,,
+219,PMB ether 60,1H NMR,"(400 MHz, CDCl3):  7.24 (2H, d, J = 8.8 Hz,
+HPMB Ar-H ), 6.78 (2H, d, J = 8.8 Hz, HPMB Ar-H ), 4.45 (2H, ABQ, J = 11.8 Hz, HPMB ArCH2O),
+3.80 (3H, s, MeOPMB), 3.68 (3H, s, MeO), 3.63 (1H, dd, J = 9.2, 7.3 Hz, H21A), 3.45 (1H, dd,
+J = 9.2, 5.9 Hz, H21B), 2.77 (1H, qd, J = 7.1, 6.0 Hz, H20), 1.17 (3H, d, J = 7.1 Hz, Me20)",,1656,,,,
+220,PMBM ether 148,Rf,"0.27 (PE:EtOAc, 4:1)",,1788,,,,
+221,PMBM ether 148,1H NMR,"(400 MHz, CDCl3): 
+7.23 (2H, d, J = 8.6 Hz, HPMBM Ar-H ), 6.85 (2H, d, J = 8.6 Hz, HPMBM Ar-H ), 6.83 (3H, m,
+HDMB Ar-H ), 4.79 (1H, s, H9A), 4.71 (1H, s, H9B), 4.68 (1H, d, J = 7.0 Hz, HPMBM acetal A), 4.66
+(1H, d, J = 7.0 Hz, HPMBM acetal B), 4.50 (1H, d, J = 11.5 Hz, HPMBM ArCH2O), 4.46 (1H, d,
+J = 11.5 Hz, HPMBM ArCH2O), 4.40 (2H, s, HDMB ArCH2O), 4.15 (1H, dt, J = 8.4, 4.1 Hz, H3),
+3.88 (3H, s, MeODMB), 3.85 (3H, s, MeODMB), 3.79 (3H, s, MeOPMBM), 3.55 (2H, m, H1), 3.25
+(1H, dt, J = 7.5, 4.4 Hz, H4), 2.57 (1H, d, J = 14.0 Hz, H7A), 2.21 (1H, d, J = 14.0 Hz, H7B),
+1.90 (2H, m, H2), 1.83 (1H, dt, J = 14.2, 7.1 Hz, H24A), 1.75 (3H, s, Me8), 1.57 (1H, m, H24B),
+1.40 (3H, s, Me6), 0.84 (3H, t, J = 7.5 Hz, H25), 0.19 (9H, s, TMS)",,1789,,,,
+222,PMBM ether 148,13C NMR,"(125 MHz,
+CDCl3):  215.8, 159.2, 149.0, 148.5, 141.3, 131.1, 130.0, 129.5, 115.4, 113.7, 111.1, 110.8, 93.9,
+84.1, 74.5, 72.8, 69.4, 66.9, 55.9, 55.8, 55.3, 51.3, 48.1, 34.3, 27.4, 24.8, 19.2, 12.3, 2.5",,1790,,,,
+223,PMBM ether 148,IR,"(thin
+lm, max/cm-1): 2959, 1708, 1612, 1515, 1463, 1368, 1250, 1158, 1097, 1031, 843",,1791,,,,
+224,PMBM ether 148,MS,"(ES+): Calculated for C34H52O8SiNa [M+Na]+: 639.3324, found 639.3337",,1792,,,,
+225,PMBMCl (139),1H NMR,"(400 MHz, CDCl3):  7.29 (2H, d, J = 8.6 Hz, HPMB Ar-H ), 6.90 (2H, d, J = 8.6
+Hz, HPMB Ar-H ), 5.50 (2H, s, CH2Cl), 4.69 (2H, s, HPMB ArCH2O), 3.82 (3H, s, MeOPMB)",,1652,0.35,1.0,1.0,1.0
+226,PMP acetal 121,Rf,"0.62 (PE:EtOAc, 4:1)",,1768,,,,
+227,PMP acetal 121,1H NMR,"(400 MHz, CDCl3):  7.40
+(2H, d, J = 8.7 Hz, HPMP Ar-H ), 6.89 (2H, d, J = 8.7 Hz, HPMP Ar-H ), 5.53 (1H, s, HPMP CH),
+4.83 (1H, br s, H9A), 4.72 (1H, br s, H9B), 4.22 (1H, m, H3), 4.18 (1H, m, H1A), 3.94 (1H, m,
+H1B), 3.80 (3H, s, MeOPMB), 3.40 (1H, ddd, J = 9.0, 5.9, 4.3 Hz, H4), 2.64 (1H, d, J = 13.7
+Hz, H7A), 2.22 (1H, d, J = 13.7 Hz, H7B), 1.91 (1H, m, H24A), 1.77 (3H, s, Me8), 1.69 (2H,
+m, H24B, 2A), 1.43 (1H, m, H2B), 1.33 (3H, s, Me6), 0.87 (3H, t, J = 7.3 Hz, H25), 0.20 (9H, s,
+TMS)",,1769,,,,
+228,PMP acetal 121,13C NMR,"(125 MHz, CDCl3):  215.1, 159.8, 141.5, 131.3, 127.1, 115.3, 113.5, 101.1,
+84.0, 76.1, 66.9, 55.3, 50.7, 47.1, 29.7, 26.8, 24.8, 19.9, 10.4, 2.5",,1770,0.12,1.0,1.0,1.0
+229,PMP acetal 121,IR,"(thin lm, max/cm-1):
+2959, 1707, 1615, 1519, 1457, 1369, 1302, 1250, 1170, 1105, 1036, 896, 841, 754",,1771,,,,
+230,PMP acetal 121,MS,"(ES+):
+Calculated for C24H38O5SiNa [M+Na]+: 457.2381, found 457.2389",,1772,,,,
+231,Photoaffnity probe,Rf,"0.04 (PE:EtOAc, 1:1)",,1919,,,,
+232,Photoaffnity probe,1H NMR,"(400 MHz, CDCl3):  7.39 (1H, s, Hc),
+5.94 (1H, br s, NH), 5.38 (1H, ddd, J = 6.5, 6.5, 1.3 Hz, H11), 5.13 (1H, dd, J = 7.4, 7.4 Hz,
+H9), 4.88 (1H, d, J = 9.8 Hz, H17), 4.22 (2H, td, J = 6.9, 1.9 Hz, Hd), 4.04 (2H, dd, J = 5.2,
+2.5 Hz, Hj), 3.65 (1H, m, H19), 3.28 (1H, m, H13), 2.92 (1H, d, J = 12.2 Hz, H2A), 2.84 (1H,
+t, J = 7.8 Hz, H4), 2.77 (1H, d, J = 12.2 Hz, H2B), 2.75 (2H, m, Ha), 2.65 (1H, m, H20), 2.56
+(2H, t, J = 7.1 Hz, H22), 2.54 (1H, m, H10A), 2.46 (1H, m, H18), 2.33 (1H, m, H10B), 2.36 (1H,
+d, J = 13.4 Hz, H7A), 2.29 (1H, d, J = 13.4 Hz, H7B), 2.23 (1H, t, J = 2.5 Hz, Hl), 2.13 (1H,
+d, J = 12.0 Hz, H15A), 2.02 (2H, m, He), 1.95 (2H, m, H23), 1.89 (2H, t, J = 7.5 Hz, Hh), 1.85
+(1H, m, H24A), 1.84 (1H, m, H14), 1.78 (1H, m, H12), 1.78 (1H, m, H15B), 1.74 (2H, m, Hg),
+1.62 (3H, s, Me16), 1.61 (1H, m, H24B), 1.47 (3H, s, Me8), 1.34 (3H, s, Me6), 1.14 (3H, t, J =
+7.5 Hz, H25), 1.05 (3H, d, J = 7.1 Hz, Me20), 1.05 (3H, d, J = 6.3 Hz, Me18), 1.02 (3H, d, J =
+6.9 Hz, Me12), 0.88 (3H, d, J = 6.5 Hz, Me14)",,1920,,,,
+233,Photoaffnity probe,13C NMR,"(125 MHz, CDCl3):  217.8, 215.9,
+170.6, 170.1, 147.5, 133.7, 131.7, 128.9, 126.5, 121.5, 102.3, 82.1, 79.3, 76.8, 75.0, 73.6, 71.7,
+53.4, 49.0, 48.3, 46.7, 44.7, 40.7, 40.1, 39.1, 36.2, 34.1, 32.4, 29.8, 29.6, 29.3, 27.9, 26.8, 26.2,
+24.6, 23.2, 18.3, 18.1, 17.2, 17.0, 16.1, 12.1, 10.4, 9.0",,1921,,,,
+234,Photoaffnity probe,IR,"(thin lm, max/cm-1): 3293, 2973,
+2929, 1704, 1662, 1543, 1453, 1366, 1319, 1250, 1149, 1059, 978",,1922,,,,
+235,Photoaffnity probe,MS,"(ES+): Calculated
+for C44H67N6O9 [M+H]+: 823.4969, found 823.4988",,1923,,,,
+236,Pivaldehyde,1H NMR,"(400 MHz, CDCl3):  9.48 (1H, s, CHO), 1.08 (9H, s, tBu)",CC(C)(C)C=O,1650,,,,
+237,Primary alcohol 137,Rf,"0.38 (PE:EtOAc, 4:1)",,1773,,,,
+238,Primary alcohol 137,1H NMR,"(400 MHz, CDCl3): 
+7.28 (2H, d, J = 8.6 Hz, HPMB Ar-H ), 6.88 (2H, d, J = 8.6 Hz, HPMB Ar-H ), 4.90 (1H, br s,
+H9A), 4.71 (1H, br s, H9B), 4.58 (1H, d, J = 11.4 Hz, HPMB ArCH2O), 4.42 (1H, d, J = 11.4 Hz,
+HPMB ArCH2O), 3.80 (3H, s, MeOPMB), 3.68 (2H, m, H1), 3.58 (2H, m, H3,5), 2.17 (1H, m, H4),
+2.16 (2H, m, H7), 1.83 (3H, s, Me8), 1.82 (1H, m, H2A), 1.73 (1H, m, H2B), 1.29 (3H, s, Me6),
+1.09 (1H, m, H24B), 0.94 (3H, t, J = 7.4 Hz, H25), 0.13 (9H, s, TMS) 0.13 (9H, s, TMS)",,1774,,,,
+239,Primary alcohol 137,13C NMR,"(125 MHz, CDCl3):  159.2, 143.0, 129.7, 114.4, 113.8, 79.8, 79.7, 79.0, 70.7, 61.3, 55.3,
+43.6, 41.5, 33.4, 29.8, 25.4, 25.3, 13.9, 3.0, 1.2",,1775,,,,
+240,Primary alcohol 137,IR,"(thin lm, max/cm-1): 1957, 1514, 1249,
+1107, 839, 752",,1776,,,,
+241,Primary alcohol 137,MS,"(ES+): Calculated for C27H50O5Si2Na [M+Na]+: 533.3094, found
+533.3098",,1777,,,,
+242,Primary alcohol 149,Rf,"0.08 (PE:EtOAc, 4:1)",,1793,,,,
+243,Primary alcohol 149,1H NMR,"(400 MHz, CDCl3):  7.25
+(2H, d, J = 8.6 Hz, HPMBM Ar-H ), 6.87 (2H, d, J = 8.6 Hz, HPMBM Ar-H ), 4.80 (1H, s, H9A), 4.73
+(1H, d, J = 6.8 Hz, HPMBM acetal A), 4.71 (1H, s, H9B), 4.66 (1H, d, J = 6.8 Hz, HPMBM acetal B),
+4.62 (1H, d, J = 11.6 Hz, HPMBM ArCH2O), 4.47 (1H, d, J = 11.6 Hz, HPMBM ArCH2O), 4.16
+(1H, dt, J = 8.0, 4.6 Hz, H3), 3.80 (3H, s, MeOPMBM), 3.80 (1H, m, H1A), 3.73 (1H, m, H1B),
+3.27 (1H, dt, J = 7.3, 4.6 Hz, H4), 2.56 (1H, d, J = 13.9 Hz, H7A), 2.40 (1H, t, J = 5.7 Hz,
+HO1), 2.21 (1H, d, J = 13.9 Hz, H7B), 1.82 (2H, m, H2), 1.78 (1H, m, H24A), 1.75 (3H, s, Me8),
+1.50 (1H, m, H24B), 1.41 (3H, s, Me6), 0.84 (3H, t, J = 7.5 Hz, H25), 0.21 (9H, s, TMS)",,1794,,,,
+244,Primary alcohol 149,13C NMR,"(125 MHz, CDCl3):  216.2, 159.3, 141.2, 129.5, 129.4, 115.5, 113.9, 94.4, 84.2, 75.8,
+69.8, 59.7, 55.3, 51.0, 48.0, 36.3, 27.3, 24.7, 19.4, 12.3, 2.6",,1795,0.09,1.0,1.0,1.0
+245,Primary alcohol 149,IR,"(thin lm, max/cm-1): 3490,
+2959, 1708, 1514, 1251, 1033, 843",,1796,,,,
+246,Primary alcohol 149,MS,"(ES+): Calculated for C25H42O6SiNa [M+Na]+:
+489.2643, found 489.2660",,1797,,,,
+247,Propyl ketone 100,Rf,"0.80 (PE:EtOAc, 4:1)",,1732,,,,
+248,Propyl ketone 100,1H NMR,"(400 MHz, CDCl3):  4.79
+(1H, s, H9A), 4.63 (1H, s, H9B), 2.56 (2H, t, J = 7.1 Hz, H4), 2.50 (1H, d, J = 13.7 Hz, H7A),
+2.19 (1H, d, J = 13.7 Hz, H7B), 1.72 (3H, s, Me8), 1.54 (2H, app. sex, J = 7.5 Hz, H24), 1.35
+(3H, s, Me6), 0.90 (3H, t, J = 7.5 Hz, H25), 0.16 (9H, s, TMS)",,1733,,,,
+249,Propyl ketone 100,13C NMR,"(125 MHz, CDCl3):
+ 215.3, 141.7, 114.5, 83.1, 48.6, 39.3, 26.0, 24.2, 16.8, 13.8, 2.3",,1734,0.1,1.0,1.0,1.0
+250,Propyl ketone 100,IR,"(thin lm, max/cm-1):
+2958, 1716, 1645, 1453, 1369, 1250, 1120, 1036, 888, 836, 751",,1735,,,,
+251,Propyl ketone 100,MS,"(ES+): Calculated for
+C13H27NO2Si [M+H]+: 243.1780, found 243.1813",,1736,,,,
+252,Side chain fragment 49,Rf,"0.52 (PE:EtOAc, 6:1)",,1710,,,,
+253,Side chain fragment 49,1H NMR,"(400 MHz, CDCl3):  7.25
+(2H, d, J = 8.6 Hz, HPMB Ar-H ), 6.87 (2H, d, J = 8.6 Hz, HPMB Ar-H ), 5.80 (1H, dddd, J =
+17.2, 10.2, 7.4, 6.9 Hz, H9), 5.11 (1H, dd, J = 17.2, 1.7 Hz, H8A), 5.06 (1H, d, J = 10.2 Hz,
+H8B), 4.90 (1H, d, J = 9.5 Hz, H17), 4.43 (1H, d, J = 11.5 Hz, HPMB ArCH2O), 4.39 (1H, d, J
+= 11.5 Hz, HPMB ArCH2O), 4.11 (1H, t, J = 7.1 Hz, H11), 3.81 (3H, s, MeOPMB), 3.57 (1H, m,
+H19), 3.55 (1H, s, HO11), 3.48 (1H, dd, J = 7.4, 2.3 Hz, H13), 3.36 (1H, dd, J = 8.9, 7.5 Hz,
+H21A), 3.20 (1H, dd, J = 8.9, 6.7 Hz, H21B), 2.48 (1H, m, H18), 2.31 (1H, m, H10A), 2.27 (1H,
+m, H15A), 2.09 (1H, m, H10B), 1.93 (1H, m, H20), 1.88 (1H, m, H14), 1.73 (1H, m, H12), 1.56
+(3H, s, Me16), 1.52 (1H, m, H15B), 1.00 (3H, d, J = 7.3 Hz, Me12), 0.98 (9H, t, J = 7.9 Hz,
+SiCH2CH3), 0.95 (9H, t, J = 7.9 Hz, SiCH2CH3), 0.94 (3H, m, Me18), 0.83 (3H, d, J = 6.9
+Hz, Me20), 0.75 (3H, d, J = 6.8 Hz, Me14), 0.67 (6H, q, J = 7.9 Hz, SiCH2CH3), 0.60 (6H, q,
+J = 7.9 Hz, SiCH2CH3)",,1711,,,,
+254,Side chain fragment 49,13C NMR,"(125 MHz, CDCl3):  159.1, 135.5, 132.0, 131.0, 130.7,
+129.3, 116.9, 113.7, 83.8, 76.9, 73.6, 72.6, 70.6, 55.3, 44.2, 39.4, 37.0, 37.0, 36.6, 35.5, 18.1, 15.9,
+15.2, 11.7, 11.0, 7.2, 7.0, 5.6, 5.4",,1712,,,,
+255,Side chain fragment 49,IR,"(thin lm, max/cm-1): 2954, 1514, 1462, 1247, 1090,
+1043, 1008, 823, 737",,1713,,,,
+256,Side chain fragment 49,MS,"(ES+): Calculated for C39H73O5Si2 [M+H]+: 677.4991, found
+677.4985",,1714,,,,
+257,TMS ether 107,Rf,"0.38 (PE:EtOAc, 4:1)",,1727,,,,
+258,TMS ether 107,1H NMR,"(400 MHz, CDCl3):  4.84
+(1H, m, H9A), 4.72 (1H, s, H9B), 3.70 (3H, s, MeO), 3.31 (3H, br s, MeN), 2.55 (1H, d, J = 13.5
+Hz, H7A), 2.48 (1H, d, J = 13.5 Hz, H7B), 1.75 (3H, s, Me8), 1.52 (3H, s, Me6), 0.16 (9H, s,
+TMS)",,1728,0.0,1.0,1.0,1.0
+259,TMS ether 107,13C NMR,"(125 MHz, CDCl3):  174.2, 141.8, 114.6, 79.4, 60.4, 48.3, 35.6, 26.4, 23.9,
+2.2",,1729,0.12,1.0,1.0,1.0
+260,TMS ether 107,IR,"(thin lm, max/cm-1): 2953, 1663, 1452, 1373, 1247, 1179, 1120, 1003, 842",,1730,,,,
+261,TMS ether 107,MS,"Calculated for C12H26NO3Si [M+H]+: 260.1682, found 260.1652",,1731,,,,
+262,Thioether 141,1H NMR," 7.28 (2H, d, J = 8.7 Hz, HPMB Ar-H ), 6.89 (2H, d, J = 8.7 Hz,
+HPMB Ar-H ), 4.66 (2H, s, HPMB ArCH2O), 4.55 (2H, s, Hthioacetal), 3.81 (3H, s, MeOPMB), 2.18
+(3H, s, MeS)",,1651,0.0,1.0,1.0,1.0
+263,Triazole 198,Rf,"0.22 (PE:EtOAc, 1:1)",,1894,,,,
+264,Triazole 198,1H NMR,"(400 MHz, CDCl3):  7.64
+(1H, s, Hc), 5.35 (1H, ddd, J = 11.7, 3.0, 3.0 Hz, H11), 5.09 (1H, d, J = 10.2 Hz, H9), 4.91 (1H,
+d, J = 10.0 Hz, H17), 4.18 (2H, td, J = 6.1, 1.6 Hz, Hd), 4.07 (1H, dt, J = 9.3, 3.4 Hz, H3),
+3.77 (1H, dd, J = 7.4, 7.4 Hz, H21), 3.67 (1H, dd, J = 7.3, 2.2 Hz, H19), 3.38 (1H, dd, J =
+5.8, 4.1 Hz, H13), 2.84 (1H, m, H4), 2.80 (2H, t, J = 6.8 Hz, Ha), 2.66 (1H, m, H18), 2.62 (2H,
+m, H7), 2.51 (2H, m, H2), 2.50 (1H, m, H10A), 2.15 (1H, d, J = 12.8 Hz, H15A), 2.07 (2H, m,
+He), 1.96 (2H, m, Hh), 1.95 (1H, m, H10B), 1.90 (1H, m, H24A), 1.85 (2H, m, H23), 1.81 (1H, m,
+H20), 1.80 (1H, m, H24B), 1.79 (1H, m, H14), 1.74 (2H, m, Hg), 1.74 (1H, m, H12), 1.70 (1H, m,
+H22A), 1.61 (1H, m, H15B), 1.57 (3H, s, Me16), 1.57 (3H, s, Me8), 1.46 (1H, m, H22B), 1.43 (3H,
+s, Me6), 1.00 (3H, t, J = 7.5 Hz, H25), 0.98 (3H, d, J = 7.8 Hz, Me18), 0.98 (9H, t, J = 8.0 Hz,
+SiCH2CH3), 0.96 (9H, t, J = 8.0 Hz, SiCH2CH3), 0.96 (3H, d, J = 6.3 Hz, Me12), 0.81 (3H, d,
+J = 7.2 Hz, Me20), 0.78 (3H, d, J = 6.8 Hz, Me14), 0.65 (6H, q, J = 8.0 Hz, SiCH2CH3), 0.65
+(6H, q, J = 8.0 Hz, SiCH2CH3), 0.14 (9H, s, OTMS)",,1895,,,,
+265,Triazole 198,13C NMR,"(125 MHz, CDCl3):  217.2,
+173.5, 171.5, 148.3, 134.9, 131.8, 130.6, 125.5, 121.8, 83.6, 80.9, 79.3, 73.9, 73.2, 68.7, 52.9, 49.5,
+44.3, 43.1, 41.6, 41.0, 39.1, 35.4, 34.3, 33.8, 33.8, 33.5, 28.5, 27.6, 27.3, 26.0, 25.4, 23.7, 19.9,
+18.6, 16.3, 15.9, 15.1, 13.8, 12.5, 12.1, 7.1, 6.9, 5.5, 5.1, 2.7",,1896,,,,
+266,Triazole 198,IR,"(thin lm, max/cm-1): 2960,
+1740, 1728, 1710, 1685, 1014, 845, 736, 666",,1897,,,,
+267,Triazole 198,MS,"(NSI): Calculated for C56H102N5O10Si3
+[M-H]􀀀: 1088.6940, found 1088.6932",,1898,,,,
+268,Triazole 198,Rf,"0.16 (PE:EtOAc, 1:1)",,1899,,,,
+269,Triazole 198,1H NMR,"(400 MHz, CDCl3):  7.57
+(1H, s, Hc), 5.35 (1H, ddd, J = 11.7, 3.1, 3.1 Hz, H11), 5.09 (1H, d, J = 10.3 Hz, H9), 4.94
+(1H, d, J = 9.5 Hz, H17), 4.19 (2H, td, J = 6.1, 2.5 Hz, Hd), 4.08 (1H, ddd, J = 9.1, 3.7, 2.8
+Hz, H3), 3.79 (1H, m, H21), 3.62 (1H, dd, J = 6.8, 3.5 Hz, H19), 3.38 (1H, dd, J = 5.5, 4.5 Hz,
+H13), 2.84 (1H, m, HaA), 2.84 (1H, dt, J = 5.3, 4.0 Hz, H4), 2.75 (1H, m, HaB), 2.61 (2H, m,
+H7), 2.56 (1H, m, H18), 2.52 (2H, m, H2), 2.50 (1H, m, H10A), 2.18 (1H, m, H15A), 2.07 (2H, m,
+He), 1.97 (2H, m, Hh), 1.96 (1H, m, H10B), 1.89 (1H, m, H24A), 1.82 (1H, m, H23A), 1.79 (1H,
+m, H24B), 1.79 (1H, m, H14), 1.75 (2H, m, Hg), 1.75 (1H, m, H12), 1.73 (1H, m, H23B), 1.66
+(1H, m, H20), 1.64 (1H, m, H22A), 1.62 (1H, m, H15B), 1.57 (3H, s, Me16), 1.57 (3H, s, Me8),
+1.51 (1H, m, H22B), 1.43 (3H, s, Me6), 1.00 (3H, t, J = 7.6 Hz, H25), 0.97 (9H, t, J = 8.0 Hz, SiCH2CH3), 0.97 (9H, t, J = 8.0 Hz, SiCH2CH3), 0.96 (3H, d, J = 7.0 Hz, Me12), 0.95 (3H,
+d, J = 7.7 Hz, Me18), 0.88 (3H, d, J = 7.0 Hz, Me20), 0.78 (3H, d, J = 6.2 Hz, Me14), 0.64
+(6H, q, J = 8.0 Hz, SiCH2CH3), 0.64 (6H, q, J = 8.0 Hz, SiCH2CH3), 0.14 (9H, s, OTMS)",,1900,,,,
+270,Triazole 198,13C NMR,"(125 MHz, CDCl3):  217.2, 173.6, 171.5, 147.9, 134.9, 132.9, 130.1, 125.5, 121.8,
+83.6, 81.0, 79.4, 75.1, 73.2, 68.7, 52.9, 49.5, 44.4, 41.8, 41.0, 40.9, 39.1, 36.8, 34.4, 34.2, 33.8,
+33.5, 28.5, 27.5, 27.3, 26.0, 25.5, 25.4, 19.9, 17.6, 16.3, 16.0, 15.1, 13.0, 12.5, 12.2, 7.1, 7.1, 5.7,
+5.5, 2.7",,1901,,,,
+271,Triazole 198,IR,"(thin lm, max/cm-1): 2959, 1738, 1710, 1685, 1247, 1016, 843, 736, 667",,1902,,,,
+272,Triazole 198,MS,"(NSI): Calculated for C56H102N5O10Si3 [M-H]􀀀: 1088.6940, found 1088.6936",,1903,,,,
+273,Triketone 189,Rf,"0.82 (PE:EtOAc, 4:1)",,1834,,,,
+274,Triketone 189,1H NMR,"(400 MHz, CDCl3):  5.23
+(1H, dt, J = 11.1, 3.8 Hz, H11), 5.18 (1H, dd, J = 9.3, 6.0 Hz, H9), 4.89 (1H, d, J = 9.6 Hz,
+H17), 4.05 (1H, t, J = 6.9 Hz, H4), 3.88 (1H, dd, J = 6.5, 4.9 Hz, H19), 3.51 (1H, d, J = 17.9
+Hz, H2A), 3.38 (1H, dd, J = 4.8, 4.8 Hz, H13), 3.23 (1H, d, J = 17.9 Hz, H2B), 2.68 (1H, d, J
+= 13.9 Hz, H7A), 2.62 (1H, m, H20), 2.46 (2H, qd, J = 7.0, 2.5 Hz, H22), 2.38 (1H, m, H10A),
+2.37 (1H, m, H18), 2.27 (1H, d, J = 13.9 Hz, H7B), 2.20 (1H, d, J = 12.9 Hz, H15A), 2.09 (1H,
+m, H24A), 2.08 (1H, m, H10B), 1.77 (1H, m, H24B), 1.77 (1H, m, H14), 1.77 (1H, m, H12), 1.69
+(3H, s, Me8), 1.58 (1H, d, J = 12.9 Hz, H15B), 1.54 (3H, s, Me16), 1.45 (3H, s, Me6), 1.08 (3H,
+d, J = 7.0 Hz, Me20), 1.02 (3H, t, J = 7.3 Hz, H23), 0.97 (3H, d, J = 7.4 Hz, Me12), 0.96 (3H,
+d, J = 7.6 Hz, Me18), 0.95 (18H, t, J = 7.6 Hz, SiCH2CH3), 0.91 (3H, t, J = 7.4 Hz, H25),
+0.75 (3H, d, J = 6.9 Hz, Me14), 0.59 (12H, q, J = 7.6 Hz, SiCH2CH3), 0.19 (9H, s, TMS)",,1835,,,,
+275,Triketone 189,13C NMR,"(125 MHz, CDCl3):  214.0, 209.0, 198.0, 167.3, 134.8, 133.5, 130.5, 126.3, 85.5,
+79.4, 77.1, 74.4, 64.8, 50.5, 49.5, 47.4, 42.3, 41.4, 37.6, 35.0, 34.1, 33.1, 28.8, 21.9, 18.3, 16.8, 16.3, 15.9, 12.3, 12.2, 12.0, 7.7, 7.1, 7.1, 5.4, 5.3, 2.3.",,1836,,,,
+276,Triketone 189,IR,"(thin lm, max/cm-1): 2956, 1878,
+1737, 1726, 1713, 16941459, 1380, 1320, 1251, 1159, 1097, 1010, 976, 843, 737",,1837,,,,
+277,Triketone 189,MS,"(ES+):
+Calculated for C47H92O8Si3N [M+NH4]+: 882.6125, found 882.6124",,1838,,,,
+278,Triketone 214,Rf,"0.28 (PE:EtOAc, 1:1)",,1914,,,,
+279,Triketone 214,1H NMR,"1H NMR (400 MHz, CDCl3):  7.39
+(1H, s, Hc), 5.78 (1H, br s, NH), 5.23 (1H, ddd, J = 11.0, 3.9, 3.9 Hz, H11), 5.17 (1H, dd, J
+= 9.1, 6.4 Hz, H9), 4.91 (1H, d, J = 9.5 Hz, H17), 4.20 (2H, t, J = 7.0 Hz, Hd), 4.06 (1H, m,
+H4), 4.04 (2H, dd, J = 5.5, 2.6 Hz, Hj), 3.88 (1H, dd, J = 5.7, 5.7 Hz, H19), 3.57 (1H, d, J =
+17.9 Hz, H2A), 3.39 (1H, dd, J = 4.9, 4.9 Hz, H13), 3.23 (1H, d, J = 17.9 Hz, H2B), 2.74 (2H,
+t, J = 7.6 Hz, Ha), 2.67 (1H, d, J = 14.0 Hz, H7A), 2.62 (1H, m, H20), 2.55 (2H, t, J = 7.3
+Hz, H22), 2.38 (1H, m, H10A), 2.36 (1H, m, H18), 2.29 (1H, d, J = 14.0 Hz, H7B), 2.23 (1H, t,
+J = 2.6 Hz, Hl), 2.21 (1H, m, H15A), 2.10 (1H, m, H24A), 2.09 (1H, m, H10B), 2.02 (2H, t, J =
+7.0 Hz, He), 1.94 (2H, m, H23), 1.89 (2H, t, J = 7.3 Hz, Hh), 1.78 (1H, m, H14), 1.78 (1H, m,
+H12), 1.76 (1H, m, H24B), 1.75 (2H, m, Hg), 1.70 (3H, s, Me8), 1.59 (1H, m, H15B), 1.54 (3H, s, Me16), 1.45 (3H, s, Me6), 1.08 (3H, d, J = 7.0 Hz, Me20), 0.98 (3H, d, J = 6.8 Hz, Me12),
+0.93 (3H, d, J = 7.0 Hz, Me18), 0.96 (9H, t, J = 8.0 Hz, SiCH2CH3), 0.95 (9H, t, J = 8.0
+Hz, SiCH2CH3), 0.91 (3H, t, J = 7.4 Hz, H25), 0.75 (3H, d, J = 6.8 Hz, Me14), 0.60 (6H, q,
+J = 8.0 Hz, SiCH2CH3), 0.59 (6H, q, J = 8.0 Hz, SiCH2CH3), 0.19 (9H, s, TMS)",,1915,,,,
+280,Triketone 214,13C NMR,"(125 MHz, CDCl3):  213.7, 209.0, 198.0, 170.5, 167.3, 147.9, 134.8, 133.5, 130.5, 126.3, 121.2,
+85.5, 79.4, 79.3, 77.1, 74.4, 71.7, 64.8, 50.7, 49.6, 47.4, 44.6, 42.3, 41.5, 41.2, 37.3, 34.1, 34.1,
+33.1, 29.6, 29.3, 28.8, 27.9, 26.2, 25.0, 23.4, 22.0, 18.3, 16.5, 16.3, 15.9, 12.3, 12.2, 12.0, 7.1, 7.1,
+5.5, 5.4, 2.3",,1916,,,,
+281,Triketone 214,IR,"(thin lm, max/cm-1): 2956, 1733, 1694, 1521, 1457, 1004, 844, 731",,1917,,,,
+282,Triketone 214,MS,"(ES+): Calculated for C59H103N6O9Si3 [M+H]+: 1123.7095, found 1123.7112",,1918,,,,
+283,Trisubstituted alkene 154,Rf,"0.19 (PE:EtOAc, 6:1)",,1808,,,,
+284,Trisubstituted alkene 154,1H NMR,"(400 MHz, CDCl3):  8.05
+(2H, d, J = 7.9 Hz, HBz), 7.56 (1H, t, J = 7.4 Hz, HBz), 7.43 (2H, t, J = 7.7 Hz, HBz), 7.33
+(5H, m, HBn), 5.63 (1H, t, J = 7.2 Hz, He), 4.73 (2H, s, Hg), 4.53 (2H, s, HBn), 3.90 (1H, m,
+Hc), 3.73 (1H, m, HaA), 3.66 (1H, m, HaB), 2.94 (1H, d, J = 2.8 Hz, HOc), 2.29 (2H, m, Hd),
+1.78 (2H, m, Hb), 1.75 (3H, s, Mef)",,1809,,,,
+285,Trisubstituted alkene 154,13C NMR,"(125 MHz, CDCl3):  166.5, 137.9, 132.9,
+132.7, 130.4, 129.6, 128.5, 128.4, 127.8, 127.7, 125.3, 73.4, 71.1, 70.5, 69.2, 35.9, 35.8, 14.3. IR
+(thin lm, max/cm-1): 2893, 1718, 1272, 1111, 713",,1810,,,,
+286,Trisubstituted alkene 154,IR,"(thin lm, max/cm-1): 2893, 1718, 1272, 1111, 713",,1811,,,,
+287,Trisubstituted alkene 154,MS,"(ES+): Calculated for C22O27O4
+[M+H]+: 355.1904, found 355.1905",,1812,,,,
+288,Weinreb amide 106,Rf,"0.15 (PE:EtOAc, 4:1)",,1722,,,,
+289,Weinreb amide 106,1H NMR,"(400 MHz, CDCl3):  4.83
+(1H, s, H9A), 4.72 (1H, s, H9B), 4.28 (1H, s, HO6), 3.72 (3H, s, OMe), 3.25 (3H, s, NMe), 2.68
+(1H, d, J = 13.8 Hz, H7A), 2.38 (1H, d, J = 13.8 Hz, H7B), 1.75 (3H, s, Me8), 1.48 (3H, s,
+Me6)",,1723,0.0,1.0,1.0,1.0
+290,Weinreb amide 106,13C NMR,"(125 MHz, CDCl3):  176.8, 142.1, 114.1, 75.1, 60.8, 46.6, 33.8, 25.8, 24.2",,1724,0.1,1.0,1.0,1.0
+291,Weinreb amide 106,IR,"(thin lm, max/cm-1): 3416, 2971, 1638, 1460, 1353, 1175, 1100, 996, 894",,1725,,,,
+292,Weinreb amide 106,MS,"(ES+):
+Calculated for C9H18NO3 [M+H]+: 188.1281, found 188.1280",,1726,,,,
+293,Weinreb amide 61,Rf,"0.16 (PE:EtOAc, 6:1)",,1657,,,,
+294,Weinreb amide 61,1H NMR,"(400 MHz, CDCl3):  7.23 (2H, d, J = 8.7 Hz,
+HPMB Ar-H ), 6.86 (2H, d, J = 8.7 Hz, HPMB Ar-H ), 4.48 (1H, d, J = 11.6 Hz, HPMB ArCH2O),
+4.40 (1H, d, J = 11.6 Hz, HPMB ArCH2O), 3.80 (3H, s, MeOPMB), 3.69 (3H, s, MeO), 3.68 (1H,
+dd, J = 8.9, 8.3 Hz, H21A), 3.39 (1H, dd, J = 8.9, 5.9 Hz, H21B), 3.24 (1H, m, H20), 3.20 (3H,
+s, MeN), 1.10 (3H, d, J = 6.9 Hz, Me20)",,1658,,,,
+295,"para-Methoxybenzyl 2,2,2-trichloroacetimidate",Rf,"0.51 (PE:EtOAc, 6:1)",COc1ccc(COC(=N)C(Cl)(Cl)Cl)cc1,1648,,,,
+296,"para-Methoxybenzyl 2,2,2-trichloroacetimidate",1H NMR,"(400 MHz, CDCl3):  8.36 (1H, br, HN), 7.37 (2H, d, J
+= 8.8 Hz, HAr), 6.91 (2H, d, J = 8.8 Hz, HAr), 5.26 (2H, s, HCH2O), 3.82 (3H, s, MeO)",COc1ccc(COC(=N)C(Cl)(Cl)Cl)cc1,1649,0.04,1.0,1.0,1.0

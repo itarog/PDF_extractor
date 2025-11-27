@@ -1,0 +1,670 @@
+,molecule_name,test_type,test_text,opsin_smiles,line_idx,in_house_namescore,in_house_precision,in_house_recall,in_house_f1,in_house_smiles_sim
+0,methyl 2-((tert-butoxycarbonyl)amino)-2-methylpent-4-ynoate,Rf,"0.42 (petroleum ether/EtOAc, 3:1)",C#CCC(C)(NC(=O)OC(C)(C)C)C(=O)OC,2292,1.0,1.0,1.0,1.0,0.96875
+1,methyl 2-((tert-butoxycarbonyl)amino)-2-methylpent-4-ynoate,1H NMR,"(400 MHz, CDCl3) δ 5.24
+(1H, br s, NH), 3.76 (3H, s, H10), 2.95 – 2.86 (2H, m, H6), 2.02 (1H, t, J = 2.6 Hz, H4), 1.55
+(3H, s, H7), 1.44 (9H, s, H1)",C#CCC(C)(NC(=O)OC(C)(C)C)C(=O)OC,2293,1.0,1.0,1.0,1.0,0.96875
+2,methyl 2-((tert-butoxycarbonyl)amino)-2-methylpent-4-ynoate,13C NMR,"(101 MHz, CDCl3) δ 173.7 (C9), 154.5 (C3), 80.2 (C2), 79.5
+(C5), 71.3 (C4), 58.4 (C8), 52.9 (C10), 28.4 (C1), 27.1 (C6), 23.4 (C7)",C#CCC(C)(NC(=O)OC(C)(C)C)C(=O)OC,2294,1.0,0.91,1.0,0.95,0.96875
+3,methyl 2-((tert-butoxycarbonyl)amino)-2-methylpent-4-ynoate,MS,"(ESI) calcd for
+[C12H20NO4]+: 242.1392, found 242.1382",C#CCC(C)(NC(=O)OC(C)(C)C)C(=O)OC,2295,1.0,1.0,1.0,1.0,0.96875
+4,methyl 2-((tert-butoxycarbonyl)amino)-2-methylpent-4-ynoate,IR,"max = 3355 (w, C≡C-H) 2997 (w, C-H), 2123 (w,
+C≡C), 1733 (s, C=O), 1695 (s, C=O)",C#CCC(C)(NC(=O)OC(C)(C)C)C(=O)OC,2296,1.0,1.0,1.0,1.0,0.96875
+5,"methyl (Z)-2-((4-methoxyphenyl)imino)-2-
+phenylacetate",Rf,"0.55 (petroleum ether/EtOAc, 3:1)",COC(=O)/C(=N\c1ccc(OC)cc1)c1ccccc1,2302,0.38,1.0,1.0,1.0,
+6,"methyl (Z)-2-((4-methoxyphenyl)imino)-2-
+phenylacetate",1H NMR,"(400 MHz, CDCl3) δ 7.87
+– 7.84 (2H, m, H7), 7.53 – 7.43 (3H, m, H8 & H9), 6.99 – 6.95 (2H, m, H4), 6.90 – 6.87 (2H,
+m, H3), 3.81 (3H, s, H1), 3.70 (3H, s, H12)",COC(=O)/C(=N\c1ccc(OC)cc1)c1ccccc1,2303,0.38,1.0,1.0,1.0,
+7,"methyl (Z)-2-((4-methoxyphenyl)imino)-2-
+phenylacetate",13C NMR,"(101 MHz, CDCl3) δ 166.2 (C11), 159.3 (C10),
+157.5 (C2), 143.3 (C5), 134.3 (C6), 131.7 (C9), 128.8 (C8), 127.9 (C7), 121.3 (C4), 114.3 (C3),
+55.6 (C1), 52.1 (C12)",COC(=O)/C(=N\c1ccc(OC)cc1)c1ccccc1,2304,0.38,0.92,1.0,0.96,
+8,"methyl (Z)-2-((4-methoxyphenyl)imino)-2-
+phenylacetate",MS,"(ESI) calcd for [C16H16NO3]+: 270.1133, found 270.1130",COC(=O)/C(=N\c1ccc(OC)cc1)c1ccccc1,2305,0.38,1.0,1.0,1.0,
+9,"methyl (Z)-2-((4-methoxyphenyl)imino)-2-
+phenylacetate",IR,"2950 (w, C-H), 1733 (s, C=O), 1618 (m, C=N), 1576 (m, C=C), 1498 (s, C=C), 1226 (s, Ar-
+O-C)",COC(=O)/C(=N\c1ccc(OC)cc1)c1ccccc1,2306,0.38,1.0,1.0,1.0,
+10,"methyl 2-((4-methoxyphenyl)amino)-2-phenylpenta-3,4-dienoate",Rf,"0.58 (petroleum ether/EtOAc, 85:15)",C=C=CC(Nc1ccc(OC)cc1)(C(=O)OC)c1ccccc1,2312,1.0,1.0,1.0,1.0,1.0
+11,"methyl 2-((4-methoxyphenyl)amino)-2-phenylpenta-3,4-dienoate",1H NMR,"(400 MHz, CDCl3) δ 7.64 – 7.61 (2H, m,
+H11), 7.38 – 7.28 (3H, m, H12 & H13), 6.65 – 6.61 (2H, m, H3), 6.42 – 6.38 (2H, m, H4), 5.97
+(1H, t, J = 6.6 Hz, H7), 5.10 (1H, br s, NH), 4.88 – 4.78 (2H, m, H9), 3.69 (3H, s, H15) 3.69
+(3H, s, H1)",C=C=CC(Nc1ccc(OC)cc1)(C(=O)OC)c1ccccc1,2313,1.0,1.0,1.0,1.0,1.0
+12,"methyl 2-((4-methoxyphenyl)amino)-2-phenylpenta-3,4-dienoate",13C NMR,"(101 MHz, CDCl3) δ 208.2 (C8), 173.0 (C14), 152.4 (C2), 140.1 (C10), 138.5
+(C5), 128.7 (C12), 128.0 (C13), 127.6 (C11), 117.0 (C4), 114.2 (C3), 92.5 (C7), 78.8 (C9), 66.9
+(C6), 55.6 (C1), 53.1 (C15)",C=C=CC(Nc1ccc(OC)cc1)(C(=O)OC)c1ccccc1,2314,1.0,0.94,1.0,0.97,1.0
+13,"methyl 2-((4-methoxyphenyl)amino)-2-phenylpenta-3,4-dienoate",MS,"(ESI) calcd for [C19H20NO3]+: 310.1443, found 310.1434",C=C=CC(Nc1ccc(OC)cc1)(C(=O)OC)c1ccccc1,2315,1.0,1.0,1.0,1.0,1.0
+14,"methyl 2-((4-methoxyphenyl)amino)-2-phenylpenta-3,4-dienoate",IR,"2951 (w, C-H), 1735 (s, C=O), 1509 (C=C), 1236 (Ar-O-C)",C=C=CC(Nc1ccc(OC)cc1)(C(=O)OC)c1ccccc1,2316,1.0,1.0,1.0,1.0,1.0
+15,tert-butyl (1-hydroxy-2-phenylpent-4-yn-2-yl)carbamate,Rf,"0.10 (petroleum ether/EtOAc, 9:1)",C#CCC(CO)(NC(=O)OC(C)(C)C)c1ccccc1,2327,1.0,1.0,1.0,1.0,0.5294117647058824
+16,tert-butyl (1-hydroxy-2-phenylpent-4-yn-2-yl)carbamate,1H NMR,"(400 MHz, CDCl3) δ
+7.42 – 7.35 (4H, m, H9 & H10), 7.31 – 7.27 (1H, m, H11), 5.45 (1H, br s, NH), 4.04 (1H, m,
+H12a), 3.92 – 3.81 (1H, m, H12b & OH), 3.06 (1H, dd, J = 16.9, 2.6 Hz, H5a), 2.95 (1H, dd, J
+= 16.9, 2.8 Hz, H5b), 2.04 (1H, br s, H7), 1.45 (9H, br s, H1)",C#CCC(CO)(NC(=O)OC(C)(C)C)c1ccccc1,2328,1.0,1.0,1.0,1.0,0.5294117647058824
+17,tert-butyl (1-hydroxy-2-phenylpent-4-yn-2-yl)carbamate,13C NMR,"(101 MHz, CDCl3) δ 156.1
+(C3), 141.2 (C8), 128.7 (C10), 127.7 (C11), 126.0 (C9), 80.5 (C2), 79.9 (C6), 72.2 (C7), 69.7
+(C12), 62.1 (C4), 28.4 (C1), 27.3 (C5)",C#CCC(CO)(NC(=O)OC(C)(C)C)c1ccccc1,2329,1.0,0.92,1.0,0.96,0.5294117647058824
+18,tert-butyl (1-hydroxy-2-phenylpent-4-yn-2-yl)carbamate,MS,"(ESI) calcd for [C16H22NO3]+: 276.1600, found
+276.1595",C#CCC(CO)(NC(=O)OC(C)(C)C)c1ccccc1,2330,1.0,1.0,1.0,1.0,0.5294117647058824
+19,tert-butyl (1-hydroxy-2-phenylpent-4-yn-2-yl)carbamate,IR,"3306 (O-H), 3076 (m, C≡C-H), 2046 (w, C≡C), 1682 (s, C=O), 1557 (s,
+C=C), 1582 (s, C=C)",C#CCC(CO)(NC(=O)OC(C)(C)C)c1ccccc1,2331,1.0,1.0,1.0,1.0,0.5294117647058824
+20,"tert-butyl (3-methyl-3,4-dihydro-2H-pyran-3-yl)carbamate",Rf,0.39 (petroleum ether/EtOAc 19:1),CC1(NC(=O)OC(C)(C)C)CC=COC1,2332,0.05,1.0,1.0,1.0,0.9818181818181818
+21,"tert-butyl (3-methyl-3,4-dihydro-2H-pyran-3-yl)carbamate",1H NMR,"(400 MHz, CDCl3) δ 6.36 (1H, dt, J = 6.1, 1.8
+Hz, H7), 4.67 – 4.63 (2H, m, H6 & NH), 4.04 (1H, d, J = 10.2 Hz, H8a), 3.56 (1H, d, J = 11.0
+Hz, H8b), 2.28 (1H, d, J = 16.9 Hz, H5a), 1.97 (1H, d, J = 17.2 Hz, H5b), 1.43 (9H, s, H1), 1.37
+(3H, s, H9)",CC1(NC(=O)OC(C)(C)C)CC=COC1,2333,0.05,1.0,1.0,1.0,0.9818181818181818
+22,"tert-butyl (3-methyl-3,4-dihydro-2H-pyran-3-yl)carbamate",13C NMR,"(101 MHz, CDCl3) δ 155.0 (C3), 143.3 (C7), 98.8 (C6), 79.3 (C2), 71.0
+(C8), 48.7 (C4), 32.6 (C5), 28.6 (C1), 22.9 (C9)",CC1(NC(=O)OC(C)(C)C)CC=COC1,2334,0.05,0.9,1.0,0.95,0.9818181818181818
+23,"tert-butyl (3-methyl-3,4-dihydro-2H-pyran-3-yl)carbamate",MS,"(ESI) calcd for [C11H19NO3Na]+:
+236.1257, found 236.1250",CC1(NC(=O)OC(C)(C)C)CC=COC1,2335,0.05,1.0,1.0,1.0,0.9818181818181818
+24,"tert-butyl (3-methyl-3,4-dihydro-2H-pyran-3-yl)carbamate",IR,"2975 (m, C-H), 1715 (s, C=O), 1680 (m, C=C), 1136 (s,
+C-O)",CC1(NC(=O)OC(C)(C)C)CC=COC1,2336,0.05,1.0,1.0,1.0,0.9818181818181818
+25,"tert-butyl (3-phenyl-3,4-dihydro-2H-pyran-3-yl)carbamate",Rf,"0.44 (petroleum ether/EtOAc, 19:1)",CC(C)(C)OC(=O)NC1(c2ccccc2)CC=COC1,2337,1.0,1.0,1.0,1.0,
+26,"tert-butyl (3-phenyl-3,4-dihydro-2H-pyran-3-yl)carbamate",1H NMR,"(400 MHz, CDCl3) δ 7.38 – 7.33 (4H, m, H2
+& H3), 7.28 – 7.23 (1H, m, H1), 6.46 (1H, dt, J = 6.0, 1.7 Hz, H8), 5.09 (1H, s, NH), 4.84 – 4.80
+(1H, m, H7), 4.26 (1H, d, J = 10.1 Hz, H9a), 3.88 (1H, d, J = 10.9 Hz, H9b), 2.64 – 2.44 (2H,
+m, H6), 1.37 (9H, s, H12)",CC(C)(C)OC(=O)NC1(c2ccccc2)CC=COC1,2338,1.0,1.0,1.0,1.0,
+27,"tert-butyl (3-phenyl-3,4-dihydro-2H-pyran-3-yl)carbamate",13C NMR,"(101 MHz, CDCl3) δ 154.5 (C10), 143.5 (C8), 141.3 (C4), 128.6
+(C2), 127.3 (C1), 125.4 (C3), 99.3 (C7), 79.6 (C11), 70.6 (C9), 54.0 (C5), 32.3 (C6), 28.4 (C12)",CC(C)(C)OC(=O)NC1(c2ccccc2)CC=COC1,2339,1.0,0.92,1.0,0.96,
+28,"tert-butyl (3-phenyl-3,4-dihydro-2H-pyran-3-yl)carbamate",MS,"(ESI) cald for [C16H22NO3]+ 276.1607, found 276.1600",CC(C)(C)OC(=O)NC1(c2ccccc2)CC=COC1,2340,1.0,1.0,1.0,1.0,
+29,"tert-butyl (3-phenyl-3,4-dihydro-2H-pyran-3-yl)carbamate",IR,"2975 (w, C-H), 1698
+(s, C=O), 1655 (m, C=C), 1494 (m, C=C), 1164 (C-O-C)",CC(C)(C)OC(=O)NC1(c2ccccc2)CC=COC1,2341,1.0,1.0,1.0,1.0,
+30,methyl 2-(dibenzylamino)-2-methylpent-4-ynoate,Rf,"0.54 (petroleum ether/EtOAc, 9:1)",C#CCC(C)(C(=O)OC)N(Cc1ccccc1)Cc1ccccc1,2347,1.0,1.0,1.0,1.0,0.9743589743589743
+31,methyl 2-(dibenzylamino)-2-methylpent-4-ynoate,1H NMR,"(400 MHz, CDCl3) δ 7.32
+(4H, d, J = 7.4 Hz, H3), 7.20 (4H, t, J = 7.4 Hz, H2), 7.12 (2H, t, J = 7.3 Hz, H1), 3.85 (4H, s,
+H5), 3.72 (3H, s, H12), 2.77 (1H, dd, J = 16.8, 2.6 Hz, H7a), 2.69 (1H, dd, J = 16.8, 2.6 Hz,
+H7b), 2.09 (1H, t, J = 2.8 Hz, H9), 1.50 (3H, s, H10)",C#CCC(C)(C(=O)OC)N(Cc1ccccc1)Cc1ccccc1,2348,1.0,1.0,1.0,1.0,0.9743589743589743
+32,methyl 2-(dibenzylamino)-2-methylpent-4-ynoate,13C NMR,"(101 MHz, CDCl3) δ 174.4 (C11),
+141.1 (C4), 128.5 (C3), 128.1 (C2), 126.7 (C1), 81.0 (C8), 71.3 (C9), 66.7 (C6), 54.9 (C5), 51.8
+(C12), 28.2 (C7), 22.4 (C10)",C#CCC(C)(C(=O)OC)N(Cc1ccccc1)Cc1ccccc1,2349,1.0,0.92,1.0,0.96,0.9743589743589743
+33,methyl 2-(dibenzylamino)-2-methylpent-4-ynoate,MS,"(ESI) Calcd for [C21H24NO2]+ 322.1807, found 322.1818",C#CCC(C)(C(=O)OC)N(Cc1ccccc1)Cc1ccccc1,2350,1.0,1.0,1.0,1.0,0.9743589743589743
+34,methyl 2-(dibenzylamino)-2-methylpent-4-ynoate,IR,"3297 (w, C≡C-H), 2947 (w, C-H), 2119 (w, C≡C ), 1725 (s, C=O), 1602 (m, C=C),
+1205 (C-O-C)",C#CCC(C)(C(=O)OC)N(Cc1ccccc1)Cc1ccccc1,2351,1.0,0.83,0.83,0.83,0.9743589743589743
+35,"tert-butyl (2-methyl-1-(prop-2-yn-1-yloxy)pent-4-yn-2-
+yl)carbamate",Rf,"0.48 (petroleum ether/EtOAc, 9:1)",C#CCOCC(C)(CC#C)NC(=O)OC(C)(C)C,2387,0.3,1.0,1.0,1.0,
+36,"tert-butyl (2-methyl-1-(prop-2-yn-1-yloxy)pent-4-yn-2-
+yl)carbamate",1H NMR,"(400 MHz, CDCl3) δ 4.81 (1H, br s, NH), 4.21
+– 4.13 (2H, m, H10), 3.67 (1H, d, J = 9.0 Hz, H9a), 3.55 (1H, d, J = 9.0 Hz, H9b), 2.79 (1H, dd,
+J = 16.7, 2.0 Hz, H6a), 2.56 (1H, dd, J = 16.7, 2.6 Hz, H6b) 2.44 (1H, t, J = 2.4 Hz, H12), 1.09
+(1H, t, J = 2.7 Hz, H4), 1.43 (9H, s, H1) 1.39 (3H, s, H7)",C#CCOCC(C)(CC#C)NC(=O)OC(C)(C)C,2388,0.3,1.0,1.0,1.0,
+37,"tert-butyl (2-methyl-1-(prop-2-yn-1-yloxy)pent-4-yn-2-
+yl)carbamate",13C NMR,"(101 MHz, CDCl3) δ 154.8 (C3),
+80.6 (C5), 79.6 (C11), 79.4 (C2), 74.8 (C12), 73.9 (C9), 70.8 (C4), 58.7 (C10), 54.6 (C8), 28.5 (C1), 26.5 (C6), 21.6 (C7)",C#CCOCC(C)(CC#C)NC(=O)OC(C)(C)C,2389,0.3,0.85,0.92,0.88,
+38,"tert-butyl (2-methyl-1-(prop-2-yn-1-yloxy)pent-4-yn-2-
+yl)carbamate",MS,"(ESI) calcd for [C14H22NO3]+: 252.1600, found 252.1603",C#CCOCC(C)(CC#C)NC(=O)OC(C)(C)C,2390,0.3,1.0,1.0,1.0,
+39,"tert-butyl (2-methyl-1-(prop-2-yn-1-yloxy)pent-4-yn-2-
+yl)carbamate",IR,"3291 (w, C≡C-H), 2977 (w, C-H), 2122 (w, C≡C), 1697 (s, C=O)",C#CCOCC(C)(CC#C)NC(=O)OC(C)(C)C,2391,0.3,1.0,1.0,1.0,
+40,"N,N-dibenzyl-1-(but-2-yn-1-yloxy)-2-methylpent-4-yn-2-
+amine",Rf,"0.61 (petroleum ether/EtOAc, 19:1)",C#CCC(C)(COCC#CC)N(Cc1ccccc1)Cc1ccccc1,2397,0.83,1.0,1.0,1.0,0.9367088607594937
+41,"N,N-dibenzyl-1-(but-2-yn-1-yloxy)-2-methylpent-4-yn-2-
+amine",1H NMR,"(400 MHz, CDCl3) δ 7.31 (4H, d, J = 7.2 Hz,
+H3), 7.18 (4H, t, J = 4.4 Hz, H2), 7.11 – 7.08 (2H, m, H1), 4.04 (2H, m, H12), 3.91 (4H, s, H5),
+3.60 (1H, d, J = 9.5 Hz, H11a), 3.54 (1H, d, J = 9.5 Hz, H11b), 2.60 – 2.49 (2H, m, H8), 2.06
+(1H, t, J = 2.7 Hz, H10), 1.84 (3H, t, J = 2.3 Hz, H15), 1.25 (3H, s, H7)",C#CCC(C)(COCC#CC)N(Cc1ccccc1)Cc1ccccc1,2398,0.83,1.0,1.0,1.0,0.9367088607594937
+42,"N,N-dibenzyl-1-(but-2-yn-1-yloxy)-2-methylpent-4-yn-2-
+amine",13C NMR,"(101 MHz, CDCl3)
+δ 142.2 (C4), 128.5 (C3), 127.9 (C2), 126.3 (C1), 82.5 (C9), 82.3 (C13), 75.5 (C14), 74.5 (C11),
+70.6 (C10), 60.9 (C6), 59.1 (C12), 54.3 (C5), 26.5 (C8), 21.3 (C7), 3.8 (C15)",C#CCC(C)(COCC#CC)N(Cc1ccccc1)Cc1ccccc1,2399,0.83,0.94,1.0,0.97,0.9367088607594937
+43,"N,N-dibenzyl-1-(but-2-yn-1-yloxy)-2-methylpent-4-yn-2-
+amine",MS,"(ESI)
+calcd for [C24H28NO]+: 346.2171, found 346.2182",C#CCC(C)(COCC#CC)N(Cc1ccccc1)Cc1ccccc1,2400,0.83,1.0,1.0,1.0,0.9367088607594937
+44,"N,N-dibenzyl-1-(but-2-yn-1-yloxy)-2-methylpent-4-yn-2-
+amine",IR,"3281 (s, C≡C-H), 2199 (w, C≡C),
+1600 (w, C=C), 1492 (s,C=C) 1089 (s, C-O-C)",C#CCC(C)(COCC#CC)N(Cc1ccccc1)Cc1ccccc1,2401,0.83,1.0,1.0,1.0,0.9367088607594937
+45,methyl 2-acetamido-2-methylpent-4-ynoate,Rf,"0.19 (petroleum ether/EtOAc, 7:3)",C#CCC(C)(NC(C)=O)C(=O)OC,2407,1.0,1.0,1.0,1.0,
+46,methyl 2-acetamido-2-methylpent-4-ynoate,1H NMR,"(400MHz, CDCl3) δ 6.22
+(1H, bs, NH), 3.77 (3H, s, H9), 3.05 (1H, dd, J = 16.9, 2.6 Hz, H5a), 2.92 (1H, dd, J = 16.9, 2.6
+Hz, H5b), 2.00 (3H, s, H1), 1.99 (1H, t, J = 2.6 Hz, H7), 1.59 (3H, s, H4)",C#CCC(C)(NC(C)=O)C(=O)OC,2408,1.0,1.0,1.0,1.0,
+47,methyl 2-acetamido-2-methylpent-4-ynoate,13C NMR,"(101MHz,
+CDCl3) δ 173.6 (C8), 169.7 (C2), 79.7 (C6), 71.1 (C7), 58.8 (C3), 53.1 (C9), 26.4 (C5), 23.7
+(C1), 23.0 (C4)",C#CCC(C)(NC(C)=O)C(=O)OC,2409,1.0,0.9,1.0,0.95,
+48,methyl 2-acetamido-2-methylpent-4-ynoate,MS,"(ESI) cald for [C9H14NO3]+: 184.0968, found 184.0968",C#CCC(C)(NC(C)=O)C(=O)OC,2410,1.0,1.0,1.0,1.0,
+49,methyl 2-acetamido-2-methylpent-4-ynoate,IR,"3385
+(m, N-H), 3233 (m, C≡C-H), 2179 (w, C≡C), 1722 (s, C=O ester), 1663 (s, C=O amide), 1249
+(s, C-O-C)",C#CCC(C)(NC(C)=O)C(=O)OC,2411,1.0,1.0,1.0,1.0,
+50,N-(1-hydroxy-2-methylpent-4-yn-2-yl)acetamide,Rf,"0.22 (petroleum ether/EtOAc, 1:4)",C#CCC(C)(CO)NC(C)=O,2412,0.17,1.0,1.0,1.0,0.972972972972973
+51,N-(1-hydroxy-2-methylpent-4-yn-2-yl)acetamide,1H NMR,"(400MHz, CDCl3) δ
+5.74 (1H, bs, NH), 4.68 (1H, t, J = 5.9 Hz, OH), 3.71 – 3.63 (2H, m, H8), 2.80 (1H, dd, J = 16.9,
+2.6 Hz, H5a), 2.43 (1H, dd, J = 16.9, 2.6 Hz, H5b), 2.07 (1H, t, J = 2.7 Hz, H7), 2.02 (3H, s,
+H1), 1.33 (3H, s, H4)",C#CCC(C)(CO)NC(C)=O,2413,0.17,1.0,1.0,1.0,0.972972972972973
+52,N-(1-hydroxy-2-methylpent-4-yn-2-yl)acetamide,13C NMR,"(101MHz, CDCl3) δ 171.5 (C2), 80.1 (C6), 71.6 (C7), 69.2 (C8),
+57.8 (C3), 26.8 (C5), 24.2 (C1), 22.8 (C4)",C#CCC(C)(CO)NC(C)=O,2414,0.17,0.89,1.0,0.94,0.972972972972973
+53,N-(1-hydroxy-2-methylpent-4-yn-2-yl)acetamide,MS,"(ESI) cald for [C8H14NO2]+: 156.1019, found
+156.1019",C#CCC(C)(CO)NC(C)=O,2415,0.17,1.0,1.0,1.0,0.972972972972973
+54,N-(1-hydroxy-2-methylpent-4-yn-2-yl)acetamide,IR,"3308 (m, C≡C-H), 3246 (br m, O-H), 2876 (m, C-H), 1642 (s, C=O), 1378
+(s, C-O), 1052 (s, C-O)",C#CCC(C)(CO)NC(C)=O,2416,0.17,1.0,1.0,1.0,0.972972972972973
+55,N-(1-(allyloxy)-2-methylpent-4-yn-2-yl)acetamide,Rf,"0.25 (petroleum ether/EtOAc, 3:2)",C#CCC(C)(COCC=C)NC(C)=O,2417,0.13,1.0,1.0,1.0,0.8936170212765957
+56,N-(1-(allyloxy)-2-methylpent-4-yn-2-yl)acetamide,1H NMR,"(400MHz, CDCl3) δ 5.94 – 5.84 (1H, m, H10),
+5.67 (1H, bs, NH), 5.29 – 5.17 (1H, m, H11), 4.01 (2H, d, J = 5.6 Hz, H9), 3.63 (1H, d, J = 9.3,
+H8a), 3.44 (1H, d, J = 9.2 Hz, H8b), 2.89 (1H, dd, J = 16.7, 2.7 Hz, H5a), 2.62 (1H, dd, J =
+16.7, 2.7 Hz, H5b), 1.98 (1H, t, J = 2.7 Hz, H7), 1.94 (3H, s, H1), 1.43 (3H, s, H4)",C#CCC(C)(COCC=C)NC(C)=O,2418,0.13,1.0,1.0,1.0,0.8936170212765957
+57,N-(1-(allyloxy)-2-methylpent-4-yn-2-yl)acetamide,13C NMR,"(101MHz, CDCl3) δ 170.2 (C2), 134.6 (C10), 117.4 (C11), 80.7 (C6), 73.9 (C8), 72.4 (C9), 70.7
+(C7), 55.7 (C3), 26.1 (C5), 24.5 (C1), 21.3 (C4)",C#CCC(C)(COCC=C)NC(C)=O,2419,0.13,0.92,1.0,0.96,0.8936170212765957
+58,N-(1-(allyloxy)-2-methylpent-4-yn-2-yl)acetamide,MS,"(ESI) cald for [C11H18NO2]+: 196.1329,
+found 196.1332",C#CCC(C)(COCC=C)NC(C)=O,2420,0.13,1.0,1.0,1.0,0.8936170212765957
+59,N-(1-(allyloxy)-2-methylpent-4-yn-2-yl)acetamide,IR,"3281 (m, C≡C-H), 3079 (w, C-H), 2929 (w, C-H), 2351 (w, C≡C),
+1653 (s, C=C), 1543 s, (C=C)",C#CCC(C)(COCC=C)NC(C)=O,2421,0.13,1.0,1.0,1.0,0.8936170212765957
+60,N-(1-(but-2-yn-1-yloxy)-2-methylpent-4-yn-2-yl)acetamide,Rf,"0.22 (petroleum ether/EtOAc, 3:2)",C#CCC(C)(COCC#CC)NC(C)=O,2432,1.0,1.0,1.0,1.0,0.8888888888888888
+61,N-(1-(but-2-yn-1-yloxy)-2-methylpent-4-yn-2-yl)acetamide,1H NMR,"(400 MHz, CDCl3) δ 5.67 (1H, bs, NH), 4.13
+(2H, m, H9), 3.89 (1H, d, J = 9.2 Hz, H8a), 3.51 (1H, d, J = 9.2 Hz, H8b), 2.91 (1H, dd, J =
+16.8, 2.7 Hz, H5a), 2.61 (1H, dd, J = 16.7, 2.6 Hz, H5b), 1.99 (1H, t, J = 2.7 Hz, H7), 1.94 (3H,
+s, H1), 1.86 (3H, t, J = 2.3 Hz, H12), 1.44 (3H, s, H4)",C#CCC(C)(COCC#CC)NC(C)=O,2433,1.0,1.0,1.0,1.0,0.8888888888888888
+62,N-(1-(but-2-yn-1-yloxy)-2-methylpent-4-yn-2-yl)acetamide,13C NMR,"(101 MHz, CDCl3) δ 170.2
+(C2), 83.0 (C6), 80.7 (C10) 75.0 (C11) 73.6 (C8), 70.7 (C7), 59.4 (C9), 55.6 (C3), 26.0 (C5)
+24.5 (C1), 21.2 (C4) 3.8 (C12)",C#CCC(C)(COCC#CC)NC(C)=O,2434,1.0,0.89,1.0,0.94,0.8888888888888888
+63,N-(1-(but-2-yn-1-yloxy)-2-methylpent-4-yn-2-yl)acetamide,MS,"(ESI) cald for [C12H17NO2Na]+: 230.1152, found
+230.1146",C#CCC(C)(COCC#CC)NC(C)=O,2435,1.0,1.0,1.0,1.0,0.8888888888888888
+64,N-(1-(but-2-yn-1-yloxy)-2-methylpent-4-yn-2-yl)acetamide,IR,"3292 (m, C≡C-H) 2922 (w, C-H), 2364 (w, C≡C-R), 2242 (w, C≡C), 1650
+(s, C=O), 1090 (s, C-O)",C#CCC(C)(COCC#CC)NC(C)=O,2436,1.0,1.0,1.0,1.0,0.8888888888888888
+65,4-methyl-4-(prop-2-yn-1-yl)oxazolidin-2-one,Rf,"0.26 (petroleum ether/EtOAc, 1:1)",C#CCC1(C)COC(=O)N1,2442,1.0,1.0,1.0,1.0,0.6
+66,4-methyl-4-(prop-2-yn-1-yl)oxazolidin-2-one,1H NMR,"(400 MHz, CDCl3) δ 5.92
+(1H, br s, NH), 4.28 (1H, d, J = 8.7 Hz, H2a), 4.10 (1H, d, J = 8.7 Hz, H2b), 2.53 – 2.44 (2H,
+m, H5), 2.09 (1H, t, J = 2.6 Hz, H7), 1.46 (3H, s, H4)",C#CCC1(C)COC(=O)N1,2443,1.0,1.0,1.0,1.0,0.6
+67,4-methyl-4-(prop-2-yn-1-yl)oxazolidin-2-one,13C NMR,"(101 MHz, CDCl3) δ 158.7 (C1), 78.7
+(C6), 75.0 (C2), 72.0 (C7), 57.2 (C3), 31.1 (C5), 25.2 (C4)",C#CCC1(C)COC(=O)N1,2444,1.0,0.88,1.0,0.94,0.6
+68,4-methyl-4-(prop-2-yn-1-yl)oxazolidin-2-one,MS,"(ESI) calcd for [C7H10NO2]+:
+140.0706, found 140.0708",C#CCC1(C)COC(=O)N1,2445,1.0,1.0,1.0,1.0,0.6
+69,4-methyl-4-(prop-2-yn-1-yl)oxazolidin-2-one,IR,"3235 (s, C≡C-H), 2891 (w, C-H), 2030 (w, C≡C), 1729 (s,
+C=O)",C#CCC1(C)COC(=O)N1,2446,1.0,1.0,1.0,1.0,0.6
+70,tert-butyl 2-methyl-2-(prop-2-yn-1-yl)aziridine-1-carboxylate,Rf,"0.55 (petroleum ether/EtOAc, 9:1)",C#CCC1(C)CN1C(=O)OC(C)(C)C,2447,1.0,1.0,1.0,1.0,1.0
+71,tert-butyl 2-methyl-2-(prop-2-yn-1-yl)aziridine-1-carboxylate,1H NMR,"(400 MHz, CDCl3) δ 2.54 (1H, dd, J = 17.1,
+2.6 Hz, H7a), 2.35 (1H, dd, J = 17.1, 2.7 Hz, H7b), 2.23 (1H, s, H4a), 2.10 (1H, s, H4b), 2.06
+(1H, t, J = 2.8 Hz, H9), 1.46 (9H, s, H1), 1.37 (3H, s, H6)",C#CCC1(C)CN1C(=O)OC(C)(C)C,2448,1.0,1.0,1.0,1.0,1.0
+72,tert-butyl 2-methyl-2-(prop-2-yn-1-yl)aziridine-1-carboxylate,13C NMR,"(101 MHz, CDCl3) δ 160.7 (C3),
+81.2 (C2), 79.8 (C8), 71.2 (C9), 41.3 (C5), 36.5 (C4), 28.1 (C1), 27.2 (C7), 19.8 (C6)",C#CCC1(C)CN1C(=O)OC(C)(C)C,2449,1.0,0.9,1.0,0.95,1.0
+73,tert-butyl 2-methyl-2-(prop-2-yn-1-yl)aziridine-1-carboxylate,MS,"(ESI) calcd for [C11H18NO2]+: 196.1332, found 196.1333",C#CCC1(C)CN1C(=O)OC(C)(C)C,2450,1.0,1.0,1.0,1.0,1.0
+74,tert-butyl 2-methyl-2-(prop-2-yn-1-yl)aziridine-1-carboxylate,IR,"3290 (m, C≡C-H), 2975 (w,
+C-H), 2160 (m, C≡C), 1711 (s, C=O), 1159 (m, C-O)",C#CCC1(C)CN1C(=O)OC(C)(C)C,2451,1.0,1.0,1.0,1.0,1.0
+75,"4-methyl-4-((1-phenyl-1H-1,2,3-triazol-4-
+yl)methyl)oxazolidin-2-one",Rf,"0.12 (petroleum ether/EtOAc, 1:1)",CC1(Cc2cn(-c3ccccc3)nn2)COC(=O)N1,2452,0.18,1.0,1.0,1.0,1.0
+76,"4-methyl-4-((1-phenyl-1H-1,2,3-triazol-4-
+yl)methyl)oxazolidin-2-one",1H NMR,"(400 MHz, CDCl3) δ
+7.99 (1H, s, H7), 7.71 – 7.67 (2H, m, H9), 7.48 – 7.44 (2H, m, H10), 7.40 – 7.36 (1H, m, H11),
+6.97 (1H, s, NH), 4.40 (1H, d, J = 8.6 Hz, H2a), 4.11 (1H, d, J = 8.6 Hz, H2b), 3.10 – 3.02 (2H,
+m, H5), 1.41 (3H, s, H4)",CC1(Cc2cn(-c3ccccc3)nn2)COC(=O)N1,2453,0.18,1.0,1.0,1.0,1.0
+77,"4-methyl-4-((1-phenyl-1H-1,2,3-triazol-4-
+yl)methyl)oxazolidin-2-one",13C NMR,"(101 MHz, CDCl3) δ 159.3 (C1), 142.9 (C6), 136.9 (C8), 129.7
+(C10), 128.7 (C11), 121.1 (C7), 120.4 (C9), 75.2 (C2), 57.7 (C3), 36.3 (C5), 25.7 (C4)",CC1(Cc2cn(-c3ccccc3)nn2)COC(=O)N1,2454,0.18,0.92,1.0,0.96,1.0
+78,"4-methyl-4-((1-phenyl-1H-1,2,3-triazol-4-
+yl)methyl)oxazolidin-2-one",MS,"(ESI) calcd for [C13H15N4O2]+: 259.1190, found 259.1196",CC1(Cc2cn(-c3ccccc3)nn2)COC(=O)N1,2455,0.18,1.0,1.0,1.0,1.0
+79,"4-methyl-4-((1-phenyl-1H-1,2,3-triazol-4-
+yl)methyl)oxazolidin-2-one",IR,"2918 (m, C-H), 1737 (s,
+C=O), 1607 (m, C=C) 1453 (m, C=C), 1045 (C-O-C)",CC1(Cc2cn(-c3ccccc3)nn2)COC(=O)N1,2456,0.18,1.0,1.0,1.0,1.0
+80,"tert-butyl 2-((1-(2-ethoxy-2-oxoethyl)-1H-1,2,3-triazol-5-
+yl)methyl)-2-methylaziridine-1-carboxylate",Rf,"0.12 (petroleum ether/EtOAc, 1:1)",CCOC(=O)Cn1nncc1CC1(C)CN1C(=O)OC(C)(C)C,2466,0.58,1.0,1.0,1.0,0.9873417721518988
+81,"tert-butyl 2-((1-(2-ethoxy-2-oxoethyl)-1H-1,2,3-triazol-5-
+yl)methyl)-2-methylaziridine-1-carboxylate",1H NMR,"(400 MHz, CDCl3) δ 7.61 (1H, s, H9), 5.41
+(1H, d, J = 17.7 Hz, H10a), 5.26 (1H, d, J = 17.8 Hz, H10b) 4.26 – 4.19 (2H, m, H12), 3.01
+(1H, d, J = 15.5 Hz, H7a), 2.73 (1H, d, J = 15.5 Hz, H7b), 2.17, (1H, s, H4a), 2.01 (1H, s, H4b),
+1.41 (9H, s, H1), 1.28 (3H, t, J = 7.3 Hz, H13), 1.24 (3H, s, H6)",CCOC(=O)Cn1nncc1CC1(C)CN1C(=O)OC(C)(C)C,2467,0.58,1.0,1.0,1.0,0.9873417721518988
+82,"tert-butyl 2-((1-(2-ethoxy-2-oxoethyl)-1H-1,2,3-triazol-5-
+yl)methyl)-2-methylaziridine-1-carboxylate",13C NMR,"(101 MHz, CDCl3) δ 166.9
+(C11), 160.3 (C3), 134.1 (C9), 133.7 (C8), 81.8 (C2), 62.3 (C12), 49.5 (C10), 41.4 (C5), 36.1
+(C4), 31.2 (C7), 28.1 (C1), 19.1 (C6), 14.2 (C13)",CCOC(=O)Cn1nncc1CC1(C)CN1C(=O)OC(C)(C)C,2468,0.58,0.93,1.0,0.96,0.9873417721518988
+83,"tert-butyl 2-((1-(2-ethoxy-2-oxoethyl)-1H-1,2,3-triazol-5-
+yl)methyl)-2-methylaziridine-1-carboxylate",MS,"(ESI) calcd for [C15H25N4O4]+:
+325.1876, found 325.1871",CCOC(=O)Cn1nncc1CC1(C)CN1C(=O)OC(C)(C)C,2469,0.58,1.0,1.0,1.0,0.9873417721518988
+84,"tert-butyl 2-((1-(2-ethoxy-2-oxoethyl)-1H-1,2,3-triazol-5-
+yl)methyl)-2-methylaziridine-1-carboxylate",IR,"2978 (w, C-H), 1749 (S, C=O), 1712 (s, C=O), 1553 (w,
+C=C), 1457 (m, C=C)",CCOC(=O)Cn1nncc1CC1(C)CN1C(=O)OC(C)(C)C,2470,0.58,1.0,1.0,1.0,0.9873417721518988
+85,"2-((tert-butoxycarbonyl)amino)-2-methylpent-4-yn-1-yl 2-
+chloroacetate",Rf,"0.14 (petroleum ether/EtOAc, 85:15)",C#CCC(C)(COC(=O)CCl)NC(=O)OC(C)(C)C,2476,0.31,1.0,1.0,1.0,1.0
+86,"2-((tert-butoxycarbonyl)amino)-2-methylpent-4-yn-1-yl 2-
+chloroacetate",1H NMR,"(400 MHz, CDCl3) δ 4.68 (1H, br s, NH),
+4.41 (1H, d, J = 11.0 Hz H9a), 4.32 (1H, d, J = 11.0 Hz H9b), 4.08 (2H, s, H11), 2.74 (1H, dd,
+J = 16.7, 2.1 Hz, H5a), 2.54 (1H, dd, J = 16.7, 2.6 Hz, H5b), 2.04 (1H, t, J = 2.7 Hz, H7), 1.41
+(9H, s, H1), 1.38 (3H, s, H8)",C#CCC(C)(COC(=O)CCl)NC(=O)OC(C)(C)C,2477,0.31,1.0,1.0,1.0,1.0
+87,"2-((tert-butoxycarbonyl)amino)-2-methylpent-4-yn-1-yl 2-
+chloroacetate",13C NMR,"(101 MHz, CDCl3) δ 167.0 (C10), 154.4 (C3), 79.9 (C2), 79.4
+(C6), 71.7 (C7), 68.8 (C9), 54.0 (C4), 40.8 (C11), 28.4 (C1), 26.9 (C5), 22.0 (C8)",C#CCC(C)(COC(=O)CCl)NC(=O)OC(C)(C)C,2478,0.31,0.92,1.0,0.96,1.0
+88,"2-((tert-butoxycarbonyl)amino)-2-methylpent-4-yn-1-yl 2-
+chloroacetate",MS,"(ESI)
+calcd for [C13H21NO4Cl]+: 290.1159, found 290.1144;",C#CCC(C)(COC(=O)CCl)NC(=O)OC(C)(C)C,2479,0.31,1.0,1.0,1.0,1.0
+89,"2-((tert-butoxycarbonyl)amino)-2-methylpent-4-yn-1-yl 2-
+chloroacetate",IR,"3295 (w, C≡C-H), 2979 (w, CH),
+2002 (w, C≡C), 1755 (m, C=O), 1702 (s, C=O), 1243 (m, C-Cl)",C#CCC(C)(COC(=O)CCl)NC(=O)OC(C)(C)C,2480,0.31,1.0,1.0,1.0,1.0
+90,5-methyl-5-(prop-2-yn-1-yl)morpholin-2-one,Rf,"0.41 (petroleum ether/EtOAc, 1:1)",C#CCC1(C)COC(=O)CN1,2481,1.0,1.0,1.0,1.0,0.918918918918919
+91,5-methyl-5-(prop-2-yn-1-yl)morpholin-2-one,1H NMR,"400 MHz, CDCl3) δ 6.91 (1H, br s, NH), 4.03
+(2H, s, H2), 3.73 (2H, s, H8), 2.78 (1H, dd, J = 17.0, 2.8 Hz, H4a), 2.48 (1H, dd, J = 16.9, 2.7
+Hz, H4b), 2.11 (1H, t, J = 2.8 Hz, H6), 1.40 (3H, s, H7)",C#CCC1(C)COC(=O)CN1,2482,1.0,0.86,0.75,0.8,0.918918918918919
+92,5-methyl-5-(prop-2-yn-1-yl)morpholin-2-one,13C NMR,"(101 MHz, CDCl3) δ 166.7 (C1),
+79.5 (C5), 72.1 (C6), 68.3 (C8), 58.0 (C3), 43.0 (C2), 26.9 (C4), 22.2 (C7)",C#CCC1(C)COC(=O)CN1,2483,1.0,0.89,1.0,0.94,0.918918918918919
+93,5-methyl-5-(prop-2-yn-1-yl)morpholin-2-one,MS,"(ESI) cald
+for [C8H12NO2]+: 154.0863, found 154.0862",C#CCC1(C)COC(=O)CN1,2484,1.0,1.0,1.0,1.0,0.918918918918919
+94,5-methyl-5-(prop-2-yn-1-yl)morpholin-2-one,IR,"3305 (w, C≡C-H), 3057 (w, C-H), 1666
+(C=O), 1264 (s, C-O)",C#CCC1(C)COC(=O)CN1,2485,1.0,1.0,1.0,1.0,0.918918918918919
+95,2-chloro-N-(1-hydroxy-2-methylpent-4-yn-2-yl)acetamide,Rf,0.21 (petroleum ether/EtOAc 3:2),C#CCC(C)(CO)NC(=O)CCl,2486,1.0,1.0,1.0,1.0,
+96,2-chloro-N-(1-hydroxy-2-methylpent-4-yn-2-yl)acetamide,1H NMR,"(400 MHz, CDCl3) δ 6.91 (1H, br s, NH or OH),
+4.04 (2H, s, H8), 3.95 (1H, s, NH or OH), 3.73 (2H, s, H6), 2.78 (1H, dd, J = 16.9, 2.7 Hz, H3a),
+2.48 (1H, dd, J = 16.9, 2.6 Hz, H3b), 2.11 (1H, t, J = 2.7 Hz, H5), 1.40 (3H, s, H1)",C#CCC(C)(CO)NC(=O)CCl,2487,1.0,1.0,1.0,1.0,
+97,2-chloro-N-(1-hydroxy-2-methylpent-4-yn-2-yl)acetamide,13C NMR,"(101 MHz, CDCl3) δ 166.7 (C7), 79.4 (C4), 72.1 (C5), 68.4 (C6), 58.0 (C2), 43.0 (C8), 26.9
+(C3), 22.2 (C1)",C#CCC(C)(CO)NC(=O)CCl,2488,1.0,0.89,1.0,0.94,
+98,2-chloro-N-(1-hydroxy-2-methylpent-4-yn-2-yl)acetamide,MS,"(ESI) calcd for [C8H13NO2
+35Cl]+: 190.0629, found 190.0629",C#CCC(C)(CO)NC(=O)CCl,2489,1.0,1.0,1.0,1.0,
+99,2-chloro-N-(1-hydroxy-2-methylpent-4-yn-2-yl)acetamide,IR,"3294 (w, C≡C-H), 2937 (w, C-H), 1660 (s, C=O), 1262 (m, C-OH), 1057 (s, C-OH)",C#CCC(C)(CO)NC(=O)CCl,2490,1.0,1.0,1.0,1.0,
+100,5-methyl-5-(prop-2-yn-1-yl)morpholin-3-one,Rf,0.09 (petroleum ether/EtOAc 3:2),C#CCC1(C)COCC(=O)N1,2491,0.19,1.0,1.0,1.0,
+101,5-methyl-5-(prop-2-yn-1-yl)morpholin-3-one,1H NMR,"(400 MHz, CDCl3) δ 6.32
+(1H, s, NH), 4.18 (1H, d, J = 16.7 Hz, H7a), 4.11 (1H, d, J = 16.7 Hz, H7b), 3.75 (1H, d, J =
+11.8 Hz, H6a), 3.53 (1H, d, J = 11.8 Hz, H6b), 2.56 (1H, dd, J = 16.5, 2.6 Hz, H3a), 2.44 (1H,
+dd, J = 16.5, 2.6 Hz, H3b), 2.11 (1H, t, J = 2.6 Hz, H5), 1.34 (3H, s, H1)",C#CCC1(C)COCC(=O)N1,2492,0.19,1.0,1.0,1.0,
+102,5-methyl-5-(prop-2-yn-1-yl)morpholin-3-one,13C NMR,"(101 MHz,
+CDCl3) δ 168.4 (C8), 79.0 (C4), 72.2 (C5), 71.9 (C6), 67.7 (C7), 53.9 (C2), 30.0 (C3), 23.5
+(C1)",C#CCC1(C)COCC(=O)N1,2493,0.19,0.89,1.0,0.94,
+103,5-methyl-5-(prop-2-yn-1-yl)morpholin-3-one,MS,"(ESI) calcd for [C8H12NO2]+: 154.0863, found 154.0863",C#CCC1(C)COCC(=O)N1,2494,0.19,1.0,1.0,1.0,
+104,5-methyl-5-(prop-2-yn-1-yl)morpholin-3-one,IR,"3526 (w, N-H),
+3286 (m, C≡C-H), 3212 (w, C-H), 1655 (s, C=O)",C#CCC1(C)COCC(=O)N1,2495,0.19,1.0,1.0,1.0,
+105,"methyl 2-(3-ethoxy-3-oxopropanamido)-2-methylpent-4-
+ynoate",Rf,"0.23 (Petroleum ether/EtOAc, 3:2)",C#CCC(C)(NC(=O)CC(=O)OCC)C(=O)OC,2501,0.05,1.0,1.0,1.0,0.71875
+106,"methyl 2-(3-ethoxy-3-oxopropanamido)-2-methylpent-4-
+ynoate",1H NMR,"(400 MHz, CDCl3) δ 7.81 (1H, br s, NH), 4.20 (2H,
+q, J = 7.1 Hz, H2), 3.75 (3H, s, H8), 3.30 (2H, s, H4), 2.96 (2H, m, H9a & 9b), 1.99 (1H, t, J =
+2.7 Hz, H11), 1.60 (3H, s, H12), 1.28 (3H, t, J = 7.1 Hz, H1)",C#CCC(C)(NC(=O)CC(=O)OCC)C(=O)OC,2502,0.05,1.0,1.0,1.0,0.71875
+107,"methyl 2-(3-ethoxy-3-oxopropanamido)-2-methylpent-4-
+ynoate",13C NMR,"(101 MHz, CDCl3) δ 173.2
+(C7), 169.3 (C3), 164.6 (C5), 79.3 (C10), 71.3 (C11), 61.8 (C2), 58.8 (C6), 53.1 (C8), 41.5
+(C4), 26.5 (C9), 22.8 (C12), 14.2 (C1)",C#CCC(C)(NC(=O)CC(=O)OCC)C(=O)OC,2503,0.05,0.92,1.0,0.96,0.71875
+108,"methyl 2-(3-ethoxy-3-oxopropanamido)-2-methylpent-4-
+ynoate",MS,"(ESI) calcd for [C12H18NO5]+: 256.1185, found
+256.1189",C#CCC(C)(NC(=O)CC(=O)OCC)C(=O)OC,2504,0.05,1.0,1.0,1.0,0.71875
+109,"methyl 2-(3-ethoxy-3-oxopropanamido)-2-methylpent-4-
+ynoate",IR,"3272 (w, C≡C-H), 2984 (w, C-H), 1735 (s, C=O), 1656 (s, C=O), 1124 (s,
+C-O-C)",C#CCC(C)(NC(=O)CC(=O)OCC)C(=O)OC,2505,0.05,1.0,1.0,1.0,0.71875
+110,"methyl 2-(3-ethoxy-3-oxopropanamido)-2-methyl-3-(1-(2-
+(trifluoromethyl)phenyl)-1H-1,2,3-triazol-4-yl)propanoate",Rf,"0.32 (heptane/EtOAc, 7:3)",CCOC(=O)CC(=O)NC(C)(Cc1cn(-c2ccccc2C(F)(F)F)nn1)C(=O)OC,2506,0.67,1.0,1.0,1.0,
+111,"methyl 2-(3-ethoxy-3-oxopropanamido)-2-methyl-3-(1-(2-
+(trifluoromethyl)phenyl)-1H-1,2,3-triazol-4-yl)propanoate",1H NMR,"(400 MHz, CDCl3) δ 7.85 – 7.83 (1H, m, H17), 7.75 – 7.71
+(1H, m, H15), 7.68 – 7.66 (3H, m, H12, H16 & NH), 7.56 (1H, d, J = 8.0 Hz, H14), 4.16 (2H, q,
+J = 7.1 Hz, H2), 3.81 (3H, s, H9), 3.68 (1H, d, J = 14.7 Hz, H10a), 3.52 (1H, d, J = 14.6 Hz,
+H10b), 3.27 (2H, s, H4), 1.69 (3H, s, H7), 1.24 (3H, t, J = 7.2 Hz, H1)",CCOC(=O)CC(=O)NC(C)(Cc1cn(-c2ccccc2C(F)(F)F)nn1)C(=O)OC,2507,0.67,1.0,1.0,1.0,
+112,"methyl 2-(3-ethoxy-3-oxopropanamido)-2-methyl-3-(1-(2-
+(trifluoromethyl)phenyl)-1H-1,2,3-triazol-4-yl)propanoate",13C NMR,"(101 MHz, CDCl3) δ
+173.9 (C8), 168.8 (C3), 164.7 (C5), 142.8 (C11), 135.1 (q, J = 2.4 Hz, C13), 133.2 (C15),130.4
+(C16), 129.1 (C14), 127.4 (q, J = 3.2 Hz, C17), 125.6 (q, J = 38 Hz, C18), 125.4 (C12), 125.0
+(q, J = 220 Hz, C19), 61.7 (C2), 60.2 (C6), 53.1 (C9), 42.1 (C4), 32.0 (C10), 23.3 (C7), 14.1
+(C1)",CCOC(=O)CC(=O)NC(C)(Cc1cn(-c2ccccc2C(F)(F)F)nn1)C(=O)OC,2508,0.67,0.0,0.0,0.0,
+113,"methyl 2-(3-ethoxy-3-oxopropanamido)-2-methyl-3-(1-(2-
+(trifluoromethyl)phenyl)-1H-1,2,3-triazol-4-yl)propanoate",19F NMR,"(376 MHz, CDCl3) δ -59.24",CCOC(=O)CC(=O)NC(C)(Cc1cn(-c2ccccc2C(F)(F)F)nn1)C(=O)OC,2509,0.67,1.0,1.0,1.0,
+114,"methyl 2-(3-ethoxy-3-oxopropanamido)-2-methyl-3-(1-(2-
+(trifluoromethyl)phenyl)-1H-1,2,3-triazol-4-yl)propanoate",MS,"(ESI) calcd for [C19H22N4O5F3]+: 443.1537, found
+443.1523",CCOC(=O)CC(=O)NC(C)(Cc1cn(-c2ccccc2C(F)(F)F)nn1)C(=O)OC,2510,0.67,1.0,1.0,1.0,
+115,"methyl 2-(3-ethoxy-3-oxopropanamido)-2-methyl-3-(1-(2-
+(trifluoromethyl)phenyl)-1H-1,2,3-triazol-4-yl)propanoate",IR,"3315 (w, N-H), 2988 (w, C-H), 1736 (s, C=O), 1677 (s, C=O), 1608 (m,
+C=C), 1509 (s, C=C), 1316 (s, C-O-C)",CCOC(=O)CC(=O)NC(C)(Cc1cn(-c2ccccc2C(F)(F)F)nn1)C(=O)OC,2511,0.67,1.0,1.0,1.0,
+116,"methyl 2-(3-ethoxy-3-oxopropanamido)-2-methyl-3-(1-(otolyl)-
+1H-1,2,3-triazol-4-yl)propanoate",Rf,"0.36 (Petroleum ether/EtOAc, 7:13)",,2522,0.59,1.0,1.0,1.0,
+117,"methyl 2-(3-ethoxy-3-oxopropanamido)-2-methyl-3-(1-(otolyl)-
+1H-1,2,3-triazol-4-yl)propanoate",1H NMR,"(400 MHz, CDCl3) δ 7.64 (1H, br s, NH), 7.57 (1H,
+s, H12), 7.44 – 7.30 (4H, m, H14, H15, H16 & H17), 4.14 (2H, q, J = 7.1 Hz, H2), 3.81 (3H, s,
+H9), 3.66 (1H, d, J = 14.5 Hz, H10a), 3.48 (1H, d, J = 14.7 Hz, H10b), 3.28 (2H, s, H4), 2.19
+(3H, s, H19), 1.70 (3H, s, H7), 1.23 (3H, t, J = 7.2 Hz, H1)",,2523,0.59,1.0,1.0,1.0,
+118,"methyl 2-(3-ethoxy-3-oxopropanamido)-2-methyl-3-(1-(otolyl)-
+1H-1,2,3-triazol-4-yl)propanoate",13C NMR,"(101 MHz, CDCl3) δ 173.9 (C8),
+168.8 (C3), 164.6 (C5), 142.5 (C11), 136.7 (C13), 133.7 (C18), 131.6 (C17), 129.9 (C16),
+126.9 (C15), 126.1 (C14), 124.5 (C12), 61.7 (C2), 60.3 (C6), 53.1 (C9), 42.4 (C4), 32.3 (C10),
+23.2 (C7), 18.0 (C19), 14.2 (C1)",,2524,0.59,0.95,1.0,0.97,
+119,"methyl 2-(3-ethoxy-3-oxopropanamido)-2-methyl-3-(1-(otolyl)-
+1H-1,2,3-triazol-4-yl)propanoate",MS,"(ESI) calcd for [C19H25N4O5]+: 389.1825, found
+389.1832",,2525,0.59,1.0,1.0,1.0,
+120,"methyl 2-(3-ethoxy-3-oxopropanamido)-2-methyl-3-(1-(otolyl)-
+1H-1,2,3-triazol-4-yl)propanoate",IR,"3292 (w, N-H), 1738 (s, C=O), 1663 (s, C=O), 1540 (s, C=C), 1188 (m, C-O-
+C)",,2526,0.59,0.56,1.0,0.72,
+121,"methyl 2-(3-ethoxy-3-oxopropanamido)-3-(1-(4-
+fluorophenyl)-1H-1,2,3-triazol-4-yl)-2-methylpropanoate",Rf,"0.37 (petroleum ether/EtOAc, 2:3)",CCOC(=O)CC(=O)NC(C)(Cc1cn(-c2ccc(F)cc2)nn1)C(=O)OC,2543,0.7,1.0,1.0,1.0,
+122,"methyl 2-(3-ethoxy-3-oxopropanamido)-3-(1-(4-
+fluorophenyl)-1H-1,2,3-triazol-4-yl)-2-methylpropanoate",1H NMR,"(400 MHz, CDCl3) δ 7.90 (1H,
+s, H12), 7.77 – 7.72 (2H, m, H14), 7.37 (1H, br s, NH), 7.23 – 7.17 (2H, m, H15), 4.17 – 4.12
+(2H, m, H2), 3.83 (3H, s, H8), 3.72 (1H, d, J =14.7 Hz, H10a), 3.48 (1H, d, J = 14.8 Hz, H10b),
+3.28 (2H, s, H4), 1.70 (3H, s, H9), 1.24 (3H, t, J = 7.2 Hz, H1)",CCOC(=O)CC(=O)NC(C)(Cc1cn(-c2ccc(F)cc2)nn1)C(=O)OC,2544,0.7,1.0,1.0,1.0,
+123,"methyl 2-(3-ethoxy-3-oxopropanamido)-3-(1-(4-
+fluorophenyl)-1H-1,2,3-triazol-4-yl)-2-methylpropanoate",13C NMR,"(101 MHz, CDCl3) δ 174.0
+(C7), 168.8 (C3), 164.6 (C5), 162.3 (d, J = 234.4 Hz, C16), 143.6 (C11), 133.5 (C13), 122.3
+(d, J = 8.7 Hz, C14), 121.5 (C12), 116.8 (d, J = 23.0 Hz, C15), 61.8 (C2), 60.4 (C6), 53.2 (C8),
+42.8 (C4), 32.0 (C10), 23.3 (C9), 14.2 (C1)",CCOC(=O)CC(=O)NC(C)(Cc1cn(-c2ccc(F)cc2)nn1)C(=O)OC,2545,0.7,0.0,0.0,0.0,
+124,"methyl 2-(3-ethoxy-3-oxopropanamido)-3-(1-(4-
+fluorophenyl)-1H-1,2,3-triazol-4-yl)-2-methylpropanoate",19F NMR,"(376 MHz, CDCl3) δ -112.7",CCOC(=O)CC(=O)NC(C)(Cc1cn(-c2ccc(F)cc2)nn1)C(=O)OC,2546,0.7,1.0,1.0,1.0,
+125,"methyl 2-(3-ethoxy-3-oxopropanamido)-3-(1-(4-
+fluorophenyl)-1H-1,2,3-triazol-4-yl)-2-methylpropanoate",MS,"ESI) calcd
+for [C18H22N4O5F]+: 393.1574, found 393.1563",CCOC(=O)CC(=O)NC(C)(Cc1cn(-c2ccc(F)cc2)nn1)C(=O)OC,2547,0.7,1.0,1.0,1.0,
+126,"methyl 2-(3-ethoxy-3-oxopropanamido)-3-(1-(4-
+fluorophenyl)-1H-1,2,3-triazol-4-yl)-2-methylpropanoate",IR,"3356 (w, N-H), 2928 (w, C-H), 1736
+(s, C=O), 1665 (s, C=O), 1517 (s, C=C)",CCOC(=O)CC(=O)NC(C)(Cc1cn(-c2ccc(F)cc2)nn1)C(=O)OC,2548,0.7,1.0,1.0,1.0,
+127,"5-methyl-5-((1-(2-(trifluoromethyl)phenyl)-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",Rf,0.20 (EtOAc),CC1(Cc2cn(-c3ccccc3C(F)(F)F)nn2)NC(=O)CC1=O,2559,0.49,1.0,1.0,1.0,
+128,"5-methyl-5-((1-(2-(trifluoromethyl)phenyl)-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",1H NMR,"(400 MHz, CDCl3) δ 7.87 (1H, d, J = 7.8 Hz,
+H13), 7.78 – 7.74 (1H, m, H11), 7.70 (1H, t, J = 7.7 Hz H12), 7.66 (1H, s, H8), 7.55 (1H, d, J =
+7.7 Hz, H10), 6.72 (1H, br s, NH), 3.23 (1H, d, J = 15.0 Hz, H6a), 3.14 – 3.07 (2H, m, H4a &
+H6b), 2.95 (1H, d, J = 22.2 Hz, H4b), 1.43 (3H, s, H1)",CC1(Cc2cn(-c3ccccc3C(F)(F)F)nn2)NC(=O)CC1=O,2560,0.49,1.0,1.0,1.0,
+129,"5-methyl-5-((1-(2-(trifluoromethyl)phenyl)-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",13C NMR,"(101 MHz, d6-DMSO) δ 211.2
+(C3), 169. 2 (C5), 141.5 (C7), 134.3 (q, J = 1.7 Hz, H9), 133.9 (C11), 131.1 (C12), 130.0 (q, J
+= 191.1 Hz, C15), 129.2 (C10), 127.4 (q, J = 4.8 Hz, C13), 126.2 (C8), 124.8 (q, J = 31.2 Hz,
+C14), 66.6 (C2), 40.3 (C4), 33.6 (C6), 23.8 (C1)",CC1(Cc2cn(-c3ccccc3C(F)(F)F)nn2)NC(=O)CC1=O,2561,0.49,0.0,0.0,0.0,
+130,"5-methyl-5-((1-(2-(trifluoromethyl)phenyl)-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",19F NMR,"(376 MHz, d6-DMSO) δ 58.1",CC1(Cc2cn(-c3ccccc3C(F)(F)F)nn2)NC(=O)CC1=O,2562,0.49,1.0,1.0,1.0,
+131,"5-methyl-5-((1-(2-(trifluoromethyl)phenyl)-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",MS,"(ESI)
+calcd for [C15H14N4O2F3]+: 339.1069, found 339.1069",CC1(Cc2cn(-c3ccccc3C(F)(F)F)nn2)NC(=O)CC1=O,2563,0.49,1.0,1.0,1.0,
+132,"5-methyl-5-((1-(2-(trifluoromethyl)phenyl)-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",IR,"3241 (m, N-H), 1635 (s, C=O),
+1625 (m, C=O), 1503 (s, C=C), 1467 (s, C=C), 1405 (m, C=C)",CC1(Cc2cn(-c3ccccc3C(F)(F)F)nn2)NC(=O)CC1=O,2564,0.49,1.0,1.0,1.0,
+133,"5-((1-(2-chlorophenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",Rf,"0.22 (EtOAc/MeOH, 24:1)",CC1(Cc2cn(-c3ccccc3Cl)nn2)NC(=O)CC1=O,2565,0.49,1.0,1.0,1.0,1.0
+134,"5-((1-(2-chlorophenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",1H NMR,"(400 MHz, CDCl3) δ 7.81 (1H, s, H8), 7.60 – 7.56 (2H,
+m, H10 & H13), 7.48 – 7.42 (2H, m, H11 & H12), 7.11 (1H, br s, NH), 3.25 (1H, d, J = 15.0 Hz,
+H6a), 3.14 (1H, d, J = 15.0 Hz, H6b), 3.06 (1H, d, J = 22.2 Hz, H4a), 2.91 (1H, d, J = 22.2 Hz,
+H4b), 1.46 (3H, s, H1)",CC1(Cc2cn(-c3ccccc3Cl)nn2)NC(=O)CC1=O,2566,0.49,1.0,1.0,1.0,1.0
+135,"5-((1-(2-chlorophenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",13C NMR,"(101 MHz, CDCl3) δ 209.5 (C3), 169.4 (C5), 141.6 (C7), 134.8
+(C14), 131.1 (C13), 130.9 (C12), 128.7 (C9), 128.2 (C11), 127.8 (C10), 124.9 (C8), 67.6 (C2),
+40.2 (C4), 31.1 (C6), 24.0 (C1)",CC1(Cc2cn(-c3ccccc3Cl)nn2)NC(=O)CC1=O,2567,0.49,0.93,1.0,0.96,1.0
+136,"5-((1-(2-chlorophenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",MS,"calcd for [C14H13N4O2
+35ClNa]+: 327.0619, found
+327.0618",CC1(Cc2cn(-c3ccccc3Cl)nn2)NC(=O)CC1=O,2568,0.49,1.0,1.0,1.0,1.0
+137,"5-((1-(2-chlorophenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",IR,"3250 (m, N-H), 2931 (w, C-H), 1635 (m, C=O), 1620 (m, C=O), 1493 (s,
+C=C)",CC1(Cc2cn(-c3ccccc3Cl)nn2)NC(=O)CC1=O,2569,0.49,1.0,1.0,1.0,1.0
+138,"5-((1-(2-methoxyphenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",Rf,0.11 (EtOAc),COc1ccccc1-n1cc(CC2(C)NC(=O)CC2=O)nn1,2570,0.48,1.0,1.0,1.0,1.0
+139,"5-((1-(2-methoxyphenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",1H NMR,"(400 MHz, CDCl3) δ 7.92 (1H, s, H8), 7.74
+(1H, dd, J = 7.9, 1.5 Hz, H10), 7.45 – 7.40 (1H, m, H12), 7.12 – 7.06 (3H, m, H11, H13, NH),
+3.88 (3H, s, H15), 3.22 (1H, d, J = 15.0 Hz, H6a), 3.12 (1H, d, J = 15.0 Hz, H6b), 3.04 (1H, d,
+J = 22.2 Hz, H4a), 2.89 (1H, d, J = 22.2 Hz, H4b), 1.46 (3H, s, H1)",COc1ccccc1-n1cc(CC2(C)NC(=O)CC2=O)nn1,2571,0.48,1.0,1.0,1.0,1.0
+140,"5-((1-(2-methoxyphenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",13C NMR,"(101 MHz, CDCl3)
+δ 209.8 (C3), 169.5 (C5), 151.2 (C14), 141.1 (C7), 130.4 (C12), 126.2 (C9), 125.5 (C10), 125.0
+(C8), 121.4 (C11), 112.4 (C13), 67.9 (C2), 56.1 (C15), 40.3 (C4), 33.9 (C6), 24.0 (C1)",COc1ccccc1-n1cc(CC2(C)NC(=O)CC2=O)nn1,2572,0.48,0.94,1.0,0.97,1.0
+141,"5-((1-(2-methoxyphenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",MS,"[C15H17N4O3]+: 301.1301, found 301.1302",COc1ccccc1-n1cc(CC2(C)NC(=O)CC2=O)nn1,2573,0.48,1.0,1.0,1.0,1.0
+142,"5-((1-(2-methoxyphenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",IR,"3246 (w, N-H), 1634 (s, C=O), 1602 (s,
+C=O), 1508 (s, C=C), 1467 (m, C=C)",COc1ccccc1-n1cc(CC2(C)NC(=O)CC2=O)nn1,2574,0.48,1.0,1.0,1.0,1.0
+143,"5-methyl-5-((1-(3-(trifluoromethyl)phenyl)-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",Rf,0.26 (EtOAc),CC1(Cc2cn(-c3cccc(C(F)(F)F)c3)nn2)NC(=O)CC1=O,2580,0.49,1.0,1.0,1.0,1.0
+144,"5-methyl-5-((1-(3-(trifluoromethyl)phenyl)-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",1H NMR,"(400 MHz, CDCl3) δ 7.97 (1H, s, H8), 7.95 – 7.91 (2H, m, H10 & H14),
+7.82 (1H, br s, NH), 7.68 – 7.61 (2H, m, H11 & H12), 3.24 (1H, d, J = 14.9 Hz, H6a), 3.16 (1H,
+d, J = 14.9 Hz, H6b), 3.06, (1H, d, J = 22.2 Hz, H3a), 2.88 (1H, d, J = 22.1 Hz, H3b), 1.47 (3H,
+s, H1)",CC1(Cc2cn(-c3cccc(C(F)(F)F)c3)nn2)NC(=O)CC1=O,2581,0.49,1.0,1.0,1.0,1.0
+145,"5-methyl-5-((1-(3-(trifluoromethyl)phenyl)-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",13C NMR,"(101 MHz, CDCl3) δ 209.5 (C2), 170.2 (C4), 143.0 (C7), 137.2 (C9), 132.5 (q, J =
+33.4 Hz, C13), 130.7 (C11), 125.6 (q, J = 3.6 Hz, C12), 123.5 (q, J = 273.0 Hz, C15), 123.5
+(C10), 121.0 (C8), 117.3 (q, J = 3.9 Hz, C14), 67.8 (C5), 40.3 (C3), 33.9 (C6), 23.9 (C1)",CC1(Cc2cn(-c3cccc(C(F)(F)F)c3)nn2)NC(=O)CC1=O,2582,0.49,0.82,0.93,0.87,1.0
+146,"5-methyl-5-((1-(3-(trifluoromethyl)phenyl)-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",19F NMR,"(376 MHz, CDCl3) δ -62.9",CC1(Cc2cn(-c3cccc(C(F)(F)F)c3)nn2)NC(=O)CC1=O,2583,,,,,
+147,"5-methyl-5-((1-(3-(trifluoromethyl)phenyl)-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",MS,"(ESI) calcd for [C15H14N4O2F3]+: 339.1069, found 339.1064",CC1(Cc2cn(-c3cccc(C(F)(F)F)c3)nn2)NC(=O)CC1=O,2584,0.49,1.0,1.0,1.0,1.0
+148,"5-methyl-5-((1-(3-(trifluoromethyl)phenyl)-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",IR,"3139 (w, N-H) 3104 (w, C-H), 2941 (w, C-H), 1766 (s, C=O), 1697 (s, C=O), 1498
+(m, C=C), 1480 (m, C=C)",CC1(Cc2cn(-c3cccc(C(F)(F)F)c3)nn2)NC(=O)CC1=O,2585,0.49,0.83,0.83,0.83,1.0
+149,"5-((1-(3-chlorophenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",Rf,0.15 (EtOAc),CC1(Cc2cn(-c3cccc(Cl)c3)nn2)NC(=O)CC1=O,2586,0.16,1.0,1.0,1.0,1.0
+150,"5-((1-(3-chlorophenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",1H NMR,"(400 MHz, CDCl3) δ 7.86 (1H, s, H8), 7.70 (1H, t, J = 1.8 Hz, H14),
+7.60 (1H, dt, J = 7.6, 1.7 Hz, H10), 7.53 (1H, br s, NH), 7.45 – 7.37 (2H, m, H11 & H12), 3.21
+(1H, d, J = 15.0 Hz, H6a), 3.13 (1H, d, J = 15.0 Hz, H6b), 3.08 (1H, d J = 22.2 Hz, H2a), 2.91
+(1H, d, J = 22.2 Hz, H2b), 1.46 (3H, s, H5)",CC1(Cc2cn(-c3cccc(Cl)c3)nn2)NC(=O)CC1=O,2587,0.16,1.0,1.0,1.0,1.0
+151,"5-((1-(3-chlorophenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",13C NMR,"(101 MHz, CDCl3) δ 209.5 (C3), 170.0
+(C1), 142.8 (C7), 137.7 (C13), 135.7 (C9), 131.0 (C11), 129.0 (C10), 121.0 (C8), 120.7 (C14),
+118.4 (C12), 67.8 (C4), 40.3 (C2), 33.9 (C6), 23.8 (C5)",CC1(Cc2cn(-c3cccc(Cl)c3)nn2)NC(=O)CC1=O,2588,0.16,0.93,1.0,0.96,1.0
+152,"5-((1-(3-chlorophenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",MS,"(ESI) calcd for
+[C14H14N4O2
+35Cl]+: 305.0805, found 305.0814",CC1(Cc2cn(-c3cccc(Cl)c3)nn2)NC(=O)CC1=O,2589,0.16,1.0,1.0,1.0,1.0
+153,"5-((1-(3-chlorophenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",IR,"3136 (w, C-H) 3096 (w, C-H), 2924 (w,
+C-H), 1762 (m, C=O), 1693 (s, C=O), 1594 (s, C=C), 1491 (m, C=C), 1464 (m, C=C)",CC1(Cc2cn(-c3cccc(Cl)c3)nn2)NC(=O)CC1=O,2590,0.16,1.0,1.0,1.0,1.0
+154,"5-((1-(4-fluorophenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",Rf,0.14 (EtOAc),CC1(Cc2cn(-c3ccc(F)cc3)nn2)NC(=O)CC1=O,2591,0.16,1.0,1.0,1.0,
+155,"5-((1-(4-fluorophenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",1H NMR,"(400 MHz, CDCl3) δ 7.81 (1H, s, H8), 7.67 – 7.64 (2H, m, H10),
+7.59 (1H, br s, NH), 7.20 – 7.16 (2H, m, H11), 3.22 (1H, d, J = 15.0 Hz, H6a), 3.13 (1H, d, J =
+15.0 Hz, H6b), 3.05 (1H, d, J = 22.2 Hz, H2a), 2.87 (1H, d, J = 22.2 Hz, H2b), 1.46 (3H, s, H5)",CC1(Cc2cn(-c3ccc(F)cc3)nn2)NC(=O)CC1=O,2592,0.16,1.0,1.0,1.0,
+156,"5-((1-(4-fluorophenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",13C NMR,"(101 MHz, CDCl3) 209.6 (C3), 170.0 (C1), 162.6 (d, J = 249.4 Hz, C12), 142.7 (C7),
+133.2 (C9), 122. 5 (d, J = 8.6 Hz, C10), 121.2 (C8), 116.9 (d, J = 23.0 Hz, C11), 67.8 (C4),
+40.4 (C2), 33.9 (C6), 23.9 (C5)",CC1(Cc2cn(-c3ccc(F)cc3)nn2)NC(=O)CC1=O,2593,0.16,0.0,0.0,0.0,
+157,"5-((1-(4-fluorophenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",19F NMR,"(376 MHz, CDCl3) δ -111.8",CC1(Cc2cn(-c3ccc(F)cc3)nn2)NC(=O)CC1=O,2594,0.16,1.0,1.0,1.0,
+158,"5-((1-(4-fluorophenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",MS,"(ESI) calcd for
+[C14H14N4O2F]+: 289.1101, found 289.1107",CC1(Cc2cn(-c3ccc(F)cc3)nn2)NC(=O)CC1=O,2595,0.16,1.0,1.0,1.0,
+159,"5-((1-(4-fluorophenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",IR,"3094 (w, C-H), 2902 (w, C-H), 1762 (m,
+C=O), 1690 (s, C=O), 1517 (s, C=C)",CC1(Cc2cn(-c3ccc(F)cc3)nn2)NC(=O)CC1=O,2596,0.16,1.0,1.0,1.0,
+160,"5-((1-(4-chlorophenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",Rf,0.18 (EtOAc),CC1(Cc2cn(-c3ccc(Cl)cc3)nn2)NC(=O)CC1=O,2597,0.15,1.0,1.0,1.0,1.0
+161,"5-((1-(4-chlorophenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",1H NMR,"(400 MHz, CDCl3) δ 7.83 (1H, s, H8), 7.62 (2H, d, J = 8.8 Hz, H10), 7.53
+(1H, br s, NH), 7.46 (2H, d, J = 8.8 Hz, H11), 3.21 (1H, d, J = 15.0 Hz, H6a), 3.13 (1H, d, J =
+15.0 Hz, H6b), 3.06 (1H, d, J = 22.2 Hz, H2a), 2.89 (1H, d, J = 22.2 Hz, H2b), 1.46 (3H, s, H5)",CC1(Cc2cn(-c3ccc(Cl)cc3)nn2)NC(=O)CC1=O,2598,0.15,1.0,1.0,1.0,1.0
+162,"5-((1-(4-chlorophenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",13C NMR,"(101 MHz, CDCl3) δ 209.6 (C3), 169.9 (C1), 142.8 (C7), 135.3 (C12), 134.8 (C9), 130.1
+(C11), 121.6 (C10), 120.9 (C8), 67.8 (C4), 40.3 (C2), 33.9 (C6), 23.9 (C5)",CC1(Cc2cn(-c3ccc(Cl)cc3)nn2)NC(=O)CC1=O,2599,0.15,0.92,1.0,0.96,1.0
+163,"5-((1-(4-chlorophenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",MS,"(ESI) calcd
+for [C14H14N4O2
+35Cl]+: 305.0805, found 305.0811",CC1(Cc2cn(-c3ccc(Cl)cc3)nn2)NC(=O)CC1=O,2600,0.15,1.0,1.0,1.0,1.0
+164,"5-((1-(4-chlorophenyl)-1H-1,2,3-triazol-4-yl)methyl)-5-
+methylpyrrolidine-2,4-dione",IR,"3151 (w, C-H), 3080 2921 (w, CH),
+2852 (w, C-H), 1766 (m, C=O), 1690 (s, C=O), 1501 (s, C=C), 1425 (s, C=C)",CC1(Cc2cn(-c3ccc(Cl)cc3)nn2)NC(=O)CC1=O,2601,0.15,1.0,1.0,1.0,1.0
+165,"5-methyl-5-((1-(p-tolyl)-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",Rf,0.17 (EtOAc),Cc1ccc(-n2cc(CC3(C)NC(=O)CC3=O)nn2)cc1,2602,0.19,1.0,1.0,1.0,
+166,"5-methyl-5-((1-(p-tolyl)-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",1H NMR,"(400 MHz, CDCl3) δ 7.79 (1H, s, H8), 7.55 (2H, d, J = 8.4 Hz, H10),
+7.38 (1H, br s, NH), 7.28 (2H, d, J = 8.3 Hz, H11), 3.20 (1H, d, J = 15.0 Hz, H6a), 3.11 (1H, d,
+J = 15.0 Hz, H6b), 3.06 (1H, d, J = 22.2 Hz, H2a), 2.91 (1H, d, J = 22.2 Hz, H2b), 2.41 (3H, s,
+H13), 1.45 (3H, s, H5)",Cc1ccc(-n2cc(CC3(C)NC(=O)CC3=O)nn2)cc1,2603,0.19,1.0,1.0,1.0,
+167,"5-methyl-5-((1-(p-tolyl)-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",13C NMR,"(101 MHz, CDCl3) δ 209.7 (C3), 169.8 (C1), 142.4 (C7), 139.2 (C12), 134.6 (C9), 130.4 (C11), 121.0 (C8), 120.4 (C10), 67.8 (C4), 40.3 (C2), 33.8 (C6), 23.9
+(C5), 21.2 (C13)",Cc1ccc(-n2cc(CC3(C)NC(=O)CC3=O)nn2)cc1,2604,0.19,0.86,0.92,0.89,
+168,"5-methyl-5-((1-(p-tolyl)-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",MS,"(ESI) calcd for [C15H17N4O2]+: 285.1352, found 285.1359",Cc1ccc(-n2cc(CC3(C)NC(=O)CC3=O)nn2)cc1,2605,0.19,1.0,1.0,1.0,
+169,"5-methyl-5-((1-(p-tolyl)-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",IR,"3138 (w, C-H), 2975 (w, C-H), 2921 (w, C-H), 1760 (m, C=O), 1693 (s, C=O), 1519 (s, C=C)",Cc1ccc(-n2cc(CC3(C)NC(=O)CC3=O)nn2)cc1,2606,0.19,1.0,1.0,1.0,
+170,"methyl 2-(3-ethoxy-3-oxopropanamido)-2-methyl-3-(3-
+phenylisoxazol-5-yl)propanoate",Rf,"0.18 (petroleum ether/EtOAc, 3:2)",CCOC(=O)CC(=O)NC(C)(Cc1cc(-c2ccccc2)no1)C(=O)OC,2607,0.12,1.0,1.0,1.0,
+171,"methyl 2-(3-ethoxy-3-oxopropanamido)-2-methyl-3-(3-
+phenylisoxazol-5-yl)propanoate",1H NMR,"(400 MHz, CDCl3) δ 7.78 (2H, m, H15), 7.69
+(1H, br s, NH), 7.46 – 7.43 (3H, m, H16 & H17), 6.38 (1H, s, H12), 4.13 (2H, q, J = 7.2 Hz,
+H2), 3.84 (3H, s, H9), 3.81 (1H, d, J = 15.0 Hz, H10a), 3.58 (1H, d, J = 15.0 Hz, H10b), 3.30
+(2H, s, H4), 1.68 (3H, s, H7), 1.22 (3H, t, J = 7.2 Hz, H1)",CCOC(=O)CC(=O)NC(C)(Cc1cc(-c2ccccc2)no1)C(=O)OC,2608,0.12,1.0,1.0,1.0,
+172,"methyl 2-(3-ethoxy-3-oxopropanamido)-2-methyl-3-(3-
+phenylisoxazol-5-yl)propanoate",13C NMR,"101 MHz, CDCl3) δ 173.4
+(C8), 169.1 (C11), 168.9 (C3), 164.8 (C5), 162.4 (C13), 130.1 (C17), 129.1 (C16), 129.0 (C14),
+126.9 (C15), 101.9 (C12), 61.9 (C2), 59.4 (C6), 53.4 (C9), 42.1 (C4), 32.8 (C10), 23.6 (C7),
+14.1 (C1)",CCOC(=O)CC(=O)NC(C)(Cc1cc(-c2ccccc2)no1)C(=O)OC,2609,0.12,0.89,0.89,0.89,
+173,"methyl 2-(3-ethoxy-3-oxopropanamido)-2-methyl-3-(3-
+phenylisoxazol-5-yl)propanoate",MS,"(ESI) calcd for [C19H23N2O6]+: 375.1551, found 375.1548",CCOC(=O)CC(=O)NC(C)(Cc1cc(-c2ccccc2)no1)C(=O)OC,2610,0.12,1.0,1.0,1.0,
+174,"methyl 2-(3-ethoxy-3-oxopropanamido)-2-methyl-3-(3-
+phenylisoxazol-5-yl)propanoate",IR,"3303 (w,
+N-H), 2978 (w, C-H), 1737 (s, C=O), 1670 (m, C=O), 1657 (C=O), 1535 (m, C=C), 1444 (m,
+C=C)",CCOC(=O)CC(=O)NC(C)(Cc1cc(-c2ccccc2)no1)C(=O)OC,2611,0.12,1.0,1.0,1.0,
+175,"5-methyl-5-((3-phenylisoxazol-5-yl)methyl)pyrrolidine-2,4-
+dione",Rf,"0.16 (Petroleum ether/EtOAc, 7:13)",CC1(Cc2cc(-c3ccccc3)no2)NC(=O)CC1=O,2612,0.85,1.0,1.0,1.0,1.0
+176,"5-methyl-5-((3-phenylisoxazol-5-yl)methyl)pyrrolidine-2,4-
+dione",1H NMR,"(400 MHz, CDCl3) δ
+7.77 – 7.75 (2H, m, H11), 7.45 – 7.44 (3H, m, H12 & H13), 6.89 (1H, br s, NH), 6.42 (1H, s,
+H8), 3.23 (1H, d, J = 15.1 Hz, H6a), 3.16 (1H, d, J = 15.1 Hz, H6b), 3.08 (1H, d, J = 22.3 Hz,
+H2a), 2.98 (1H, d, J = 22.3 Hz, H2b), 1.45 (1H, s, H5)",CC1(Cc2cc(-c3ccccc3)no2)NC(=O)CC1=O,2613,0.85,1.0,1.0,1.0,1.0
+177,"5-methyl-5-((3-phenylisoxazol-5-yl)methyl)pyrrolidine-2,4-
+dione",13C NMR,"(101 MHz, CDCl3) δ 208.2
+(C3), 169.7 (C1), 167.5 (C7), 162.7 (C9), 130.4 (C13), 129.1 (C12), 128.6 (C10), 126.9 (C11),
+102.3 (C8), 67.0 (C4), 39.8 (C2), 35.4 (C6), 24.0 (C5)",CC1(Cc2cc(-c3ccccc3)no2)NC(=O)CC1=O,2614,0.85,0.93,1.0,0.96,1.0
+178,"5-methyl-5-((3-phenylisoxazol-5-yl)methyl)pyrrolidine-2,4-
+dione",MS,"(ESI) calcd for [C15H15N2O3]+:
+271.1083, found 271.1088",CC1(Cc2cc(-c3ccccc3)no2)NC(=O)CC1=O,2615,0.85,1.0,1.0,1.0,1.0
+179,"5-methyl-5-((3-phenylisoxazol-5-yl)methyl)pyrrolidine-2,4-
+dione",IR,"3088 (w, N-H), 1770 (m, N=N), 1698 (s, C=O), 1690 (S,
+C=O), 1607 (m, C=C), 1470 (m, C=C), 1443 (m, C=C)",CC1(Cc2cc(-c3ccccc3)no2)NC(=O)CC1=O,2616,0.85,1.0,1.0,1.0,1.0
+180,"5-methyl-5-((3-phenylisoxazol-4-yl)methyl)pyrrolidine-2,4-
+dione",Rf,0.27 (EtOAc),CC1(Cc2conc2-c2ccccc2)NC(=O)CC1=O,2622,0.85,1.0,1.0,1.0,0.9850746268656716
+181,"5-methyl-5-((3-phenylisoxazol-4-yl)methyl)pyrrolidine-2,4-
+dione",1H NMR,"(400 MHz, CDCl3) δ 8.31 (1H, s, H8), 7.51 (5H, br s,
+H11, H12 & H13), 6.16 (1H, br s, NH), 3.06 (1H, d, J = 15.0 Hz, H6a), 2.91 (1H, d, J = 22.2
+Hz, H4a), 2.84 (1H, d, J = 15.0 Hz, H6b), 2.60 (1H, d, J = 22.2 Hz, H4b), 1.30 (3H, s, H1)",CC1(Cc2conc2-c2ccccc2)NC(=O)CC1=O,2623,0.85,0.89,1.0,0.94,0.9850746268656716
+182,"5-methyl-5-((3-phenylisoxazol-4-yl)methyl)pyrrolidine-2,4-
+dione",13C NMR,"(101 MHz, CDCl3) δ; 209.0 (C3), 169.4 (C5), 162.5 (C8), 157.6 (C9), 130.1 (C13), 129.3
+(C10), 129.3 (C12), 128.6 (C11), 112.0 (C7), 68.4 (C2), 40.3 (C4), 30.5 (C6), 24.1 (C1)",CC1(Cc2conc2-c2ccccc2)NC(=O)CC1=O,2624,0.85,0.8,0.92,0.86,0.9850746268656716
+183,"5-methyl-5-((3-phenylisoxazol-4-yl)methyl)pyrrolidine-2,4-
+dione",MS,"(ESI) calcd for [C15H15N2O3]+: 271.1083, found 271.1092",CC1(Cc2conc2-c2ccccc2)NC(=O)CC1=O,2625,0.85,1.0,1.0,1.0,0.9850746268656716
+184,"5-methyl-5-((3-phenylisoxazol-4-yl)methyl)pyrrolidine-2,4-
+dione",IR,"3259 (w, N-H), 2932 (w, CH),
+1645 (s, C=O), 1551 (s, C=O), 1444 (s, C=C)",CC1(Cc2conc2-c2ccccc2)NC(=O)CC1=O,2626,0.85,1.0,1.0,1.0,0.9850746268656716
+185,"5-phenyl-5-((1-phenyl-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",Rf,0.49 (EtOAc),O=C1CC(=O)C(Cc2cn(-c3ccccc3)nn2)(c2ccccc2)N1,2637,0.59,1.0,1.0,1.0,1.0
+186,"5-phenyl-5-((1-phenyl-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",1H NMR,"(400 MHz, CDCl3) δ 7.76 (1H, br s, NH), 7.57 – 7.51 (4H, m, H6 &
+H13), 7.50 (1H, s, H11), 7.47 – 7.44 (2H, m, H14), 7.41 – 7.35 (3H, m, H7 & H15), 7.33 – 7.29
+(1H, m, H8), 3.66 – 3.58 (2H, m, H9a & 9b), 3.11 (1H, d, J = 21.8 Hz, H2a), 2.98 (1H, d, J =
+21.8 Hz, H2b)",O=C1CC(=O)C(Cc2cn(-c3ccccc3)nn2)(c2ccccc2)N1,2638,0.59,1.0,1.0,1.0,1.0
+187,"5-phenyl-5-((1-phenyl-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",13C NMR,"(101 MHz, CDCl3) δ 205.8 (C3), 169.8 (C1), 142.5 (C10), 137.4 (C5),
+136.8 (C12), 129.9 (C14), 129.1 (C7), 129.0 (C15), 128.7 (C8), 125.5 (C6), 120.8 (C11), 120.5
+(C13), 73.1 (C4), 40.0 (C2), 34.2 (C9)",O=C1CC(=O)C(Cc2cn(-c3ccccc3)nn2)(c2ccccc2)N1,2639,0.59,0.94,1.0,0.97,1.0
+188,"5-phenyl-5-((1-phenyl-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",MS,"(ESI) calcd for [C19H17N4O2]+: 333.1346, found
+333.1340",O=C1CC(=O)C(Cc2cn(-c3ccccc3)nn2)(c2ccccc2)N1,2640,0.59,1.0,1.0,1.0,1.0
+189,"5-phenyl-5-((1-phenyl-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidine-2,4-dione",IR,"3256 (w, N-H), 1773 (m, C=O), 1698 (m, N=N), 1667 (s, C=O), 1500 (m,
+C=C), 1412 (m, C=C)",O=C1CC(=O)C(Cc2cn(-c3ccccc3)nn2)(c2ccccc2)N1,2641,0.59,1.0,1.0,1.0,1.0
+190,"4-hydroxy-5-methyl-5-((1-phenyl-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidin-2-one",Rf,"0.45, 0.39 (10% MeOH in CH2Cl2)",CC1(Cc2cn(-c3ccccc3)nn2)NC(=O)CC1O,2652,0.5,1.0,1.0,1.0,0.9315068493150684
+191,"4-hydroxy-5-methyl-5-((1-phenyl-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidin-2-one",1H NMR,"(400 MHz, CDCl3) δ 7.87
+(1H, s, H8), 7.74 – 7.72 (2H, m, H10), 7.56 – 7.52 (2H, m, H11), 7.46 (1H, t, J = 7.4 Hz, H12),
+6.69 (1H, br s, NH), 5.11 (1H, m, OH), 4.59 (1H, t, J = 8.1 Hz, H3’), 4.30 (1H, br s, OH’), 4.19
+– 4.16 (1H, m, H3), 3.25 (1H, d, J = 14.4 Hz, H6a), 3.09 (3H,m, H6b, H6a’ & H6b’), 2.76 (1H,
+dd, J = 17.6, 7.0 Hz, H4a), 2.66 (1H, dd, J = 16.9, 7.9 Hz, H4a’), 2.51 (1H, dd, J = 16.8, 8.5
+Hz, H4b’), 2.28 (1H, dd, J = 17.6, 3.2 Hz, H4b), 1.22 (3H, s, H1)",CC1(Cc2cn(-c3ccccc3)nn2)NC(=O)CC1O,2653,0.5,0.0,0.0,0.0,0.9315068493150684
+192,"4-hydroxy-5-methyl-5-((1-phenyl-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidin-2-one",13C NMR,"(101 MHz, CDCl3)
+δ 175.5 (C5), 144.2 (C7), 136.9 (C9), 130.0 (C11), 129.2 (C12), 121.3 (C8), 120.6 (C10), 74.0
+(C3), 63.7 (C2), 39.3 (C4), 32.3, (C6), 25.7 (C1)",CC1(Cc2cn(-c3ccccc3)nn2)NC(=O)CC1O,2654,0.5,0.93,1.0,0.96,0.9315068493150684
+193,"4-hydroxy-5-methyl-5-((1-phenyl-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidin-2-one",MS,"(ESI) calcd for [C14H17N4O2]+:
+273.1352, found 273.1344",CC1(Cc2cn(-c3ccccc3)nn2)NC(=O)CC1O,2655,0.5,1.0,1.0,1.0,0.9315068493150684
+194,"4-hydroxy-5-methyl-5-((1-phenyl-1H-1,2,3-triazol-4-
+yl)methyl)pyrrolidin-2-one",IR,"3161 (br, OH), 2975 (w, C-H, 2917 (w, C-H), 1667 (s,
+C=O), 1597 (m, C=C), 1502 (m, C=C)",CC1(Cc2cn(-c3ccccc3)nn2)NC(=O)CC1O,2656,0.5,0.88,0.88,0.88,0.9315068493150684
+195,"(S)-3-methyl-5-phenyl-5,6-dihydro-2H-1,4-oxazin-2-one",Rf,"0.25 (petroleum ether/EtOAc, 4:1)",CC1=N[C@@H](c2ccccc2)COC1=O,2657,1.0,1.0,1.0,1.0,0.9818181818181818
+196,"(S)-3-methyl-5-phenyl-5,6-dihydro-2H-1,4-oxazin-2-one",1H NMR,"(400 MHz, CDCl3) δ 7.43 – 7.39 (2H, m, H8) 7.37
+– 7.33 (3H, m, H7 & H9), 4.87 – 4.82 (1H, m, H3), 4.56 (1H, dd, J = 11.6, 4.5 Hz, H4a), 4.26
+(1H, m, H4b), 2.41 (3H, d, J = 2.4 Hz, H1)",CC1=N[C@@H](c2ccccc2)COC1=O,2658,1.0,1.0,1.0,1.0,0.9818181818181818
+197,"(S)-3-methyl-5-phenyl-5,6-dihydro-2H-1,4-oxazin-2-one",13C NMR,"(101 MHz, CDCl3) δ 160.4 (C2), 155.6 (C5),
+136.9 (C6), 129.0 (C8), 128.4 (C9), 127.2 (C7), 71.6 (C4), 59.8 (C3), 21.9 (C1)",CC1=N[C@@H](c2ccccc2)COC1=O,2659,1.0,0.9,1.0,0.95,0.9818181818181818
+198,"(S)-3-methyl-5-phenyl-5,6-dihydro-2H-1,4-oxazin-2-one",MS,"(ESI)
+calcd for [C11H12NO2]+: 190.0868, found 190.0864",CC1=N[C@@H](c2ccccc2)COC1=O,2660,1.0,1.0,1.0,1.0,0.9818181818181818
+199,"(S)-3-methyl-5-phenyl-5,6-dihydro-2H-1,4-oxazin-2-one",IR,"3034 (w, C-H), 3007 (w, C-H),
+1721 (s, C=O), 1641 (s, C=N), 1455 (s, C=C)",CC1=N[C@@H](c2ccccc2)COC1=O,2661,1.0,0.8,0.8,0.8,0.9818181818181818
+200,"(3S,5S)-3-methyl-5-phenyl-3-(prop-2-yn-1-yl)morpholin-2-one",Rf,0.25 (petroleum ether/EtOAc 22:3),C#CC[C@]1(C)N[C@@H](c2ccccc2)COC1=O,2662,1.0,1.0,1.0,1.0,1.0
+201,"(3S,5S)-3-methyl-5-phenyl-3-(prop-2-yn-1-yl)morpholin-2-one",1H NMR,"(400 MHz, CDCl3) δ 7.46 – 7.44 (2H, m, H10), 7.41
+– 7.33 (3H, m, H11 & H12), 4.36 – 4.26 (3H, m, H7 & H8), 3.10 (1H, dd, J = 16.9, 2.4 Hz, H3a),
+2.64 (1H, dd, J = 16.9, 2.6 Hz, H3b), 2.34 (1H, br s, NH), 2.09 (1H, t, J = 2.6 Hz, H5), 1.57 (3H,
+s, H1)",C#CC[C@]1(C)N[C@@H](c2ccccc2)COC1=O,2663,1.0,1.0,1.0,1.0,1.0
+202,"(3S,5S)-3-methyl-5-phenyl-3-(prop-2-yn-1-yl)morpholin-2-one",13C NMR,"(101 MHz, CDCl3) δ 172.2 (C6), 137.7 (C9), 129.0 (C12), 128.9 (C11), 127.4 (C10),
+78.5 (C4), 75.4 (C7), 73.0 (C5), 59.0 (C2), 53.2 (C8), 28.7 (C3), 26.8 (C1)",C#CC[C@]1(C)N[C@@H](c2ccccc2)COC1=O,2664,1.0,0.92,1.0,0.96,1.0
+203,"(3S,5S)-3-methyl-5-phenyl-3-(prop-2-yn-1-yl)morpholin-2-one",MS,"(ESI) calcd
+for [C14H16NO2]+: 230.1181, found 230.1171",C#CC[C@]1(C)N[C@@H](c2ccccc2)COC1=O,2665,1.0,1.0,1.0,1.0,1.0
+204,"(3S,5S)-3-methyl-5-phenyl-3-(prop-2-yn-1-yl)morpholin-2-one",IR,"3239 (s, C≡C-H), 2916 (w, C-H), 2163
+(w, C≡C), 1730 (s, C=O), 1455 (s, C=C), 1430 (s, C=C), 1146 (s, C-O-C)",C#CC[C@]1(C)N[C@@H](c2ccccc2)COC1=O,2666,1.0,1.0,1.0,1.0,1.0
+205,methyl (S)-2-amino-2-methylpent-4-ynoate,Rf,0.15 (petroleum ether/EtOAc 5:3),C#CC[C@](C)(N)C(=O)OC,2672,1.0,1.0,1.0,1.0,0.975609756097561
+206,methyl (S)-2-amino-2-methylpent-4-ynoate,1H NMR,"(400 MHz, CDCl3) δ 3.72 (3H, s, H7), 2.64 (1H, dd,
+J = 2.6, 16.5 Hz, H3a), 2.44 (1H dd, J = 2.6, 16.5 Hz, H3b), 2.04 (1H, t, J = 2.6 Hz, H5), 1.87
+(2H, br s, NH), 1.36 (3H, s, H1)",C#CC[C@](C)(N)C(=O)OC,2673,1.0,1.0,1.0,1.0,0.975609756097561
+207,methyl (S)-2-amino-2-methylpent-4-ynoate,13C NMR,"(101 MHz, CDCl3) δ 176.6 (C6), 79.8 (C4), 71.5 (C5), 57.5
+(C2), 52.6 (C7), 31.0 (C3), 26.0 (C1)",C#CC[C@](C)(N)C(=O)OC,2674,1.0,0.88,1.0,0.94,0.975609756097561
+208,methyl (S)-2-amino-2-methylpent-4-ynoate,MS,"(ESI) calcd for [C7H12NO2]+:142.0868, found
+142.0862",C#CC[C@](C)(N)C(=O)OC,2675,1.0,1.0,1.0,1.0,0.975609756097561
+209,methyl (S)-2-amino-2-methylpent-4-ynoate,IR,"3295 (m, N-H), 2953 (w, C-H), 2358 (w, C≡C), 1732 (s, C=O), 1116 (s, CO-
+C)",C#CC[C@](C)(N)C(=O)OC,2676,1.0,0.83,1.0,0.91,0.975609756097561
+210,(S)-2-methyl-2-(2-nitrobenzamido)pent-4-ynoate,Rf,0.22 (petroleum ether/EtOAc 11:9),C#CC[C@](C)(NC(=O)c1ccccc1[N+](=O)[O-])C(=O)[O-],2677,0.07,1.0,1.0,1.0,0.946236559139785
+211,(S)-2-methyl-2-(2-nitrobenzamido)pent-4-ynoate,1H NMR,"(400 MHz, CDCl3) δ 8.09 – 8.06 (1H, m, H11), 7.70
+– 7.66 (1H, m, H13), 7.61 – 7.57 (2H, m, H12 & H14), 6.74 (1H, br s, NH), 3.85 (3H, s, H7),
+3.34 (1H, dd, J = 16.9, 2.6 Hz, H3a), 2.98 (1H, dd, J = 16.9, 2.6 Hz, H3b), 2.06 (1H, t, J = 2.6
+Hz, H5), 1.78 (3H, s, H1)",C#CC[C@](C)(NC(=O)c1ccccc1[N+](=O)[O-])C(=O)[O-],2678,0.07,1.0,1.0,1.0,0.946236559139785
+212,(S)-2-methyl-2-(2-nitrobenzamido)pent-4-ynoate,13C NMR,"(101 MHz, CDCl3) δ 173.3 (C6), 165.7 (C8), 146.5 (C10), 133.8
+(C13), 132.8 (C9), 130.7 (C14), 129.0 (C12), 124.7 (C11), 79.5 (C4), 71.4 (C5), 60.1 (C2), 53.4
+(C7), 26.6 (C3), 22.4 (C1)",C#CC[C@](C)(NC(=O)c1ccccc1[N+](=O)[O-])C(=O)[O-],2679,0.07,1.0,1.0,1.0,0.946236559139785
+213,(S)-2-methyl-2-(2-nitrobenzamido)pent-4-ynoate,MS,(ESI) calcd for [C14H15N2O5]+: 291.0981; found: 291.0993,C#CC[C@](C)(NC(=O)c1ccccc1[N+](=O)[O-])C(=O)[O-],2680,0.07,1.0,1.0,1.0,0.946236559139785
+214,(S)-2-methyl-2-(2-nitrobenzamido)pent-4-ynoate,IR,"3280 (w, C≡C-H), 3187 (w, C-H), 3005 (w, C-H), 2159 (w, C≡C) 1751 (s, C=O), 1640
+(s, C=O), 1563 (s, C=C), 1524 (s, C=C)",C#CC[C@](C)(NC(=O)c1ccccc1[N+](=O)[O-])C(=O)[O-],2681,0.07,0.6,0.43,0.5,0.946236559139785
+215,"methyl (S)-2-methyl-2-(N-methyl-2-nitrobenzamido)pent-4-
+ynoate",Rf,0.27 (petroleum ether/EtOAc 1:1),C#CC[C@@](C)(C(=O)OC)N(C)C(=O)c1ccccc1[N+](=O)[O-],2682,0.15,1.0,1.0,1.0,1.0
+216,"methyl (S)-2-methyl-2-(N-methyl-2-nitrobenzamido)pent-4-
+ynoate",1H NMR,"(400 MHz, CDCl3) δ 8.19 (1H, dd, J = 8.3, 0.7 Hz,
+H14), 7.72 (1H, td, J = 7.5, 1.6 Hz, H12), 7.59 – 7.55 (1H, m, H13), 7.43 (1H, d, J = 7.4 Hz,
+H11), 3.78 (3H, s, H7), 3.50 (1H, dd, J = 17.3, 2.2 Hz, H3a), 3.02 (3H, s, H8), 2.86 (1H, br s,
+H3b), 2.07 (1H, t J = 2.6 Hz, H5), 1.73 (3H, s, H1)",C#CC[C@@](C)(C(=O)OC)N(C)C(=O)c1ccccc1[N+](=O)[O-],2683,0.15,1.0,1.0,1.0,1.0
+217,"methyl (S)-2-methyl-2-(N-methyl-2-nitrobenzamido)pent-4-
+ynoate",13C NMR,"(101 MHz, CDCl3) δ 173.3 (C6), 168.1
+(C9), 145.0 (C15), 134.6 (C12), 133.3 (C10), 129.8 (C13), 128.0, (C11), 124.7 (C14), 80.3
+(C4), 70.9 (C5), 61.9 (C2), 52.6 (C7), 34.4 (C8), 25.0 (C3), 21.4 (C1)",C#CC[C@@](C)(C(=O)OC)N(C)C(=O)c1ccccc1[N+](=O)[O-],2684,0.15,0.94,1.0,0.97,1.0
+218,"methyl (S)-2-methyl-2-(N-methyl-2-nitrobenzamido)pent-4-
+ynoate",MS,"(ESI) calcd for
+[C15H17N2O5]+: 305.1137, found 305.1130",C#CC[C@@](C)(C(=O)OC)N(C)C(=O)c1ccccc1[N+](=O)[O-],2685,0.15,1.0,1.0,1.0,1.0
+219,"methyl (S)-2-methyl-2-(N-methyl-2-nitrobenzamido)pent-4-
+ynoate",IR,"3283 (w, N-H), 2923 (w, C-H), 1740 (s,
+C=O), 1640 (s, C=O), 1530 (s, C=C)",C#CC[C@@](C)(C(=O)OC)N(C)C(=O)c1ccccc1[N+](=O)[O-],2686,0.15,1.0,1.0,1.0,1.0
+220,"(S)-3,4-dimethyl-3-propyl-3,4-dihydro-1Hbenzo[
+e][1,4]diazepine-2,5-dione",Rf,"0.14 (petroleum ether/EtOAc, 3:2)",CCC[C@@]1(C)C(=O)Nc2ccccc2C(=O)N1C,2687,0.54,1.0,1.0,1.0,1.0
+221,"(S)-3,4-dimethyl-3-propyl-3,4-dihydro-1Hbenzo[
+e][1,4]diazepine-2,5-dione",1H NMR,"(400 MHz, CDCl3) δ 8.25 (1H, br s, NH), 7.97 (1H,
+dd, J = 1.4, 7.9 Hz, H11), 7.44 (1H, td, J = 1.5, 11.4 Hz, H9), 7.23 – 7.19 (1H, m, H10), 6.90
+(1H, d, J = 8.2 Hz, H8), 3.23 (3H, s, H14), 1.68 (3H, s, H1), 1.63 – 1.57 (1H, H3a), 1.49 – 1.41
+(1H, m, H3b), 1.26 – 1.19 (2H, m, H4), 0.65 (3H, t, J = 7.3 Hz, H5)",CCC[C@@]1(C)C(=O)Nc2ccccc2C(=O)N1C,2688,0.54,1.0,1.0,1.0,1.0
+222,"(S)-3,4-dimethyl-3-propyl-3,4-dihydro-1Hbenzo[
+e][1,4]diazepine-2,5-dione",13C NMR,"(101 MHz, CDCl3) δ
+173.3 (C6), 168.3 (C13), 134.9 (C7), 132.5 (C9), 131.4 (C11), 127.8 (C12), 124.8 (C10), 119.1
+(C8), 62.9 (C2), 38.4 (C3), 32.6 (C14), 23.1 (C1), 17.4 (C4), 14.1 (C5)",CCC[C@@]1(C)C(=O)Nc2ccccc2C(=O)N1C,2689,0.54,0.93,1.0,0.96,1.0
+223,"(S)-3,4-dimethyl-3-propyl-3,4-dihydro-1Hbenzo[
+e][1,4]diazepine-2,5-dione",MS,"(ESI) calcd for
+[C14H19N2O2]+: 247.1441, found 247.1430",CCC[C@@]1(C)C(=O)Nc2ccccc2C(=O)N1C,2690,0.54,1.0,1.0,1.0,1.0
+224,"(S)-3,4-dimethyl-3-propyl-3,4-dihydro-1Hbenzo[
+e][1,4]diazepine-2,5-dione",IR,"3151 (w, C-H), 2958 (w, C-H), 2873 (w, CH),
+1676 (s, C=O), 1603 (s, C=O), 1487 (s, C=C), 1432 (m, C=C)",CCC[C@@]1(C)C(=O)Nc2ccccc2C(=O)N1C,2691,0.54,0.88,1.0,0.94,1.0
+225,"5-methyl-5-(prop-2-yn-1-yl)pyrrolidine-2,4-dione",Rf,0.22 (petroleum ether/EtOAc; 1:2),C#CCC1(C)NC(=O)CC1=O,2692,1.0,1.0,1.0,1.0,0.85
+226,"5-methyl-5-(prop-2-yn-1-yl)pyrrolidine-2,4-dione",1H NMR,"(400 MHz, CDCl3) δ 7.26 (1H, br s, NH), 3.08
+(2H, d, J = 2.3 Hz, H4), 2.58 (1H, dd, J = Hz, H6a), 2.50 (1H, dd, J = HZ, H6a), 2.10 (1H, t, J
+= 2.6 Hz, H8), 1.42 (3H, s, H1)",C#CCC1(C)NC(=O)CC1=O,2693,1.0,1.0,1.0,1.0,0.85
+227,"5-methyl-5-(prop-2-yn-1-yl)pyrrolidine-2,4-dione",13C NMR,"(101 MHz, CDCl3) δ 208.3 (C5), 170.5 (C3) 78.0 (C7),
+72.5 (C8), 67.1 (C2), 40.6 (C4), 28.9 (C6), 23.1 (C1)",C#CCC1(C)NC(=O)CC1=O,2694,1.0,0.88,1.0,0.94,0.85
+228,"5-methyl-5-(prop-2-yn-1-yl)pyrrolidine-2,4-dione",MS,"(ESI) calcd for [C8H10NO2]+:
+152.0706, found 152.0704",C#CCC1(C)NC(=O)CC1=O,2695,1.0,1.0,1.0,1.0,0.85
+229,"5-methyl-5-(prop-2-yn-1-yl)pyrrolidine-2,4-dione",IR,"3243 (w, C≡C-H), 3155 (w, C-H), 2160 (w, C≡C), 1769
+(s, C=O), 1682 (s, C=O)",C#CCC1(C)NC(=O)CC1=O,2696,1.0,1.0,1.0,1.0,0.85
+230,methyl 2-(3-ethylureido)-2-methylpent-4-ynoate,Rf,"0.30 (Petroleum ether/EtOAc, 2:3)",C#CCC(C)(NC(=O)NCC)C(=O)OC,2697,1.0,1.0,1.0,1.0,1.0
+231,methyl 2-(3-ethylureido)-2-methylpent-4-ynoate,1H NMR,"(400 MHz, CDCl3) δ 5.39 (1H, br s, NH), 4.87 (1H,
+br t, J = 5.3 Hz, NH), 3.74 (3H, s, H10), 3.20 – 3.13 (2H, m H2), 3.00 (1H, dd, J = 16.9, 2.7 Hz,
+H6a), 2.90 (1H, dd, J = 16.9, 2.7 Hz, H6b), 1.99 (1H, t, J = 2.7 Hz, H8), 1.54 (3H, s, H5), 1.10
+(3H, t, J = 7.2 Hz, H1)",C#CCC(C)(NC(=O)NCC)C(=O)OC,2698,1.0,1.0,1.0,1.0,1.0
+232,methyl 2-(3-ethylureido)-2-methylpent-4-ynoate,13C NMR,"(101 MHz, CDCl3) δ 174.6 (C9), 157.1 (C3), 80.3 (C7), 71.0 (C8),
+58.2 (C4), 52.8 (C10), 35.3 (C2), 27.4 (C6), 23.7 (C5), 15.4 (C1)",C#CCC(C)(NC(=O)NCC)C(=O)OC,2699,1.0,0.91,1.0,0.95,1.0
+233,methyl 2-(3-ethylureido)-2-methylpent-4-ynoate,MS,"(ESI) calcd for
+[C10H17N2O3]+: 213.1239, found 213.1240",C#CCC(C)(NC(=O)NCC)C(=O)OC,2700,1.0,1.0,1.0,1.0,1.0
+234,methyl 2-(3-ethylureido)-2-methylpent-4-ynoate,IR,"3385 (m, N-H), 3324 (m, N-H), 3267 (m,
+C≡C-H), 2974 (w, C-H), 1719 (s, C=O), 1634 (s, C=O), 1557 (s, C=O), 1130 (s, C-O-C)",C#CCC(C)(NC(=O)NCC)C(=O)OC,2701,1.0,1.0,1.0,1.0,1.0
+235,methyl 2-methyl-2-(1H-pyrrol-1-yl)pent-4-ynoate,Rf,"0.56 (petroleum ether/EtOAc, 4:1)",C#CCC(C)(C(=O)OC)n1cccc1,2702,0.22,1.0,1.0,1.0,
+236,methyl 2-methyl-2-(1H-pyrrol-1-yl)pent-4-ynoate,1H NMR,"(400 MHz, CDCl3) δ 6.82 (2H, t, J = 2.2 Hz, H2),
+6.21 (2H, t, J = 2.2 Hz, H1), 3.74 (3H, s, H5), 3.07 (1H, dd, J = 16.8, 2.6 Hz, H7a), 2.99 (1H,
+dd, J = 16.8, 2.6 Hz, H7b), 2.04 (1H, t, J = 2.6 Hz, H9), 1.93 (3H, s, H6)",C#CCC(C)(C(=O)OC)n1cccc1,2703,0.22,1.0,1.0,1.0,
+237,methyl 2-methyl-2-(1H-pyrrol-1-yl)pent-4-ynoate,13C NMR,"(101 MHz, CDCl3)
+δ 172.0 (C4), 118.8 (C2), 108.8 (C1), 78.5 (C8), 72.3 (C9), 63.1 (C3), 53.2 (C5), 30.1 (C7), 22.9 (C6)",C#CCC(C)(C(=O)OC)n1cccc1,2704,0.22,0.8,0.89,0.84,
+238,methyl 2-methyl-2-(1H-pyrrol-1-yl)pent-4-ynoate,MS,"(ESI) cald for [C11H14NO2]+
+192.1019, found 192.1012",C#CCC(C)(C(=O)OC)n1cccc1,2705,0.22,1.0,1.0,1.0,
+239,methyl 2-methyl-2-(1H-pyrrol-1-yl)pent-4-ynoate,IR,"3254 (s,
+C≡C-H), 2952 (w, C-H), 2159 (w, C≡C),1788 (s, C=O), 1108 (s, C-O-C)",C#CCC(C)(C(=O)OC)n1cccc1,2706,0.22,1.0,1.0,1.0,
+240,"methyl 2-methyl-2-(2,2,2-trifluoroacetamido)pent-4-ynoate",Rf,"(0.44, petroleum ether/EtOAc, 4:1)",C#CCC(C)(NC(=O)C(F)(F)F)C(=O)OC,2707,1.0,1.0,1.0,1.0,
+241,"methyl 2-methyl-2-(2,2,2-trifluoroacetamido)pent-4-ynoate",1H NMR,"(400 MHz, CDCl3) δ 7.30 (1H, br s, NH), 3.84 (3H,
+s, H6), 3.23 (1H, dd, J = 17.0, 2.6 Hz, H7a), 2.85 (1H, dd, J = 17.0, 2.6 Hz, H7b), 2.04 (1H, t,
+J = 2.6 Hz, H9), 1.69 (3H, s, H1)",C#CCC(C)(NC(=O)C(F)(F)F)C(=O)OC,2708,1.0,1.0,1.0,1.0,
+242,"methyl 2-methyl-2-(2,2,2-trifluoroacetamido)pent-4-ynoate",13C NMR,"(101 MHz, CDCl3) δ 172.3 (C5), 156.3 (q, J = 37.4 Hz,
+C3), 115.5 (q, J = 288.4 Hz, C4), 77.8 (C8), 72.1 (C9), 60.2 (C2), 53.8 (C6), 26.2 (C7), 22.2
+(C1)",C#CCC(C)(NC(=O)C(F)(F)F)C(=O)OC,2709,1.0,0.0,0.0,0.0,
+243,"methyl 2-methyl-2-(2,2,2-trifluoroacetamido)pent-4-ynoate",19F NMR,"(376 MHz, CDCl3) δ -76.2",C#CCC(C)(NC(=O)C(F)(F)F)C(=O)OC,2710,1.0,1.0,1.0,1.0,
+244,"methyl 2-methyl-2-(2,2,2-trifluoroacetamido)pent-4-ynoate",MS,"(ESI) calcd for [C9H11NO3F3]+: 238.0686, found
+238.0676",C#CCC(C)(NC(=O)C(F)(F)F)C(=O)OC,2711,1.0,1.0,1.0,1.0,
+245,"methyl 2-methyl-2-(2,2,2-trifluoroacetamido)pent-4-ynoate",IR,"3296 (w, C≡C-H), 2956 (w, C-H), 1750 (s, C=O), 1717 (s, C=O), 1150 (s,
+C-O-C)",C#CCC(C)(NC(=O)C(F)(F)F)C(=O)OC,2712,1.0,1.0,1.0,1.0,
