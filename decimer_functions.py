@@ -1,6 +1,7 @@
 import numpy as np
 import cv2
 from PIL import Image
+import os
 
 ###############################################################
 ##################### DECIMER FUNCTIONS #######################
@@ -90,13 +91,23 @@ from pdf2image import convert_from_path
 import copy
 
 def get_page_image(pdf_path, page_num, dpi=300, poppler_path=None):
-    temp_pdf_path = 'my_small_pdf.pdf'
+
+    temp_dir = os.path.dirname(os.path.abspath(pdf_path))
+    temp_pdf_path = os.path.join(temp_dir, f'temp_page_{page_num}.pdf')
     minimize_pdf_to_relavent_pages(pdf_path, temp_pdf_path, [page_num])
-    if poppler_path:
-        images = convert_from_path(temp_pdf_path, dpi=dpi, poppler_path=poppler_path)
-    else:
-        images = convert_from_path(temp_pdf_path, dpi=dpi)
-    page_image = np.array(images[0])
+    try:
+        if poppler_path:
+            images = convert_from_path(temp_pdf_path, dpi=dpi, poppler_path=poppler_path)
+        else:
+            images = convert_from_path(temp_pdf_path, dpi=dpi)
+        page_image = np.array(images[0])
+    finally:
+        # Clean up temporary PDF file
+        try:
+            if os.path.exists(temp_pdf_path):
+                os.remove(temp_pdf_path)
+        except Exception:
+            pass
     return page_image
 
 def bbox_to_ranges(bbox, full_h, full_w):
@@ -113,8 +124,26 @@ def get_mask_from_bbox(image, bbox):
     # mask[h//3:2*h//3,w//3:2*w//3] = 1
     return mask
 
-def get_new_mol_pic(pdf_path, page_num, bbox):
-    page_image = get_page_image(pdf_path, page_num)
+def get_page_image_from_file(image_dir, page_num):
+    """Load page image from existing file if available"""
+    page_image_path = os.path.join(image_dir, f'page_{page_num}.png')
+    if os.path.exists(page_image_path):
+        img = Image.open(page_image_path)
+        return np.array(img)
+    return None
+
+def get_new_mol_pic(pdf_path, page_num, bbox, poppler_path=None, image_dir=None):
+    # Try to load from existing image file first
+    if image_dir:
+        page_image = get_page_image_from_file(image_dir, page_num)
+        if page_image is not None:
+            mask = get_mask_from_bbox(page_image, bbox)
+            new_mol_pic, _ = get_masked_image(page_image, mask)
+            new_mol_pic = get_square_image(new_mol_pic, 224)
+            return new_mol_pic
+    
+    # Fall back to PDF conversion if image not found
+    page_image = get_page_image(pdf_path, page_num, poppler_path=poppler_path)
     mask = get_mask_from_bbox(page_image, bbox)
     new_mol_pic, _ = get_masked_image(page_image, mask)
     new_mol_pic = get_square_image(new_mol_pic, 224)

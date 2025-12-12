@@ -97,6 +97,6 @@ def process_doc_pics_first(pdf_path, pre_taken_pics=None, save_pics=False, save_
     else:
         mol_pic_clusters = process_pic_doc(pdf_path, save_pics, save_dir, backend=backend)
     final_molecule_segments = optimize_text_grab_by_pic_matching(pdf_path, mol_pic_clusters, optimize_options, optimize_version)
-    # match_mol_pic_clusters_to_molecule_segments(molecule_segments, mol_pic_clusters, True)
+    match_mol_pic_clusters_to_molecule_segments(final_molecule_segments, mol_pic_clusters, True)
     
     return final_molecule_segments, mol_pic_clusters

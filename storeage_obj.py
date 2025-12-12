@@ -53,7 +53,10 @@ def organize_pkl_files(pickle_files):
     return organized_files
 
 def load_pickle_by_filename(pkl_filename):
-    loaded_data = list(pickle_loader(pkl_filename))[0]
+    loaded_list = list(pickle_loader(pkl_filename))
+    if not loaded_list:
+        raise ValueError(f"Pickle file is empty or corrupted: {pkl_filename}")
+    loaded_data = loaded_list[0]
     return loaded_data
 
 def load_pickle_by_dir(pkl_dir):

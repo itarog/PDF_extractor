@@ -4,6 +4,7 @@ from metadata import extract_metadata_from_raw_pdf
 from full_process import process_doc_text_first, process_doc_pics_first
 from storeage_obj import ProccessedPdf, ProccessedPdfPictures, ProccessedMoleculeSegments, save_object, load_mol_pic_clusters_dict, load_molecule_segments_dict
 from post_processing import get_filled_matched_molecule_segments
+from tqdm import tqdm
 
 from label_studio_wrappers.ls_setup import get_label_config, setup_label_studio_project, get_annot_value_from_task
 from label_studio_wrappers.molecule_segment_to_ls import molecule_segments_to_label_studio_dir
@@ -82,27 +83,66 @@ def load_or_process_data(pdf_dir=None, pkl_pic_dir=None, pkl_text_dir=None, verb
     return filled_matched_segments_dict
 
 def pdf_dir_to_label_studio(output_dir, pdf_dir, label_studio_config, pkl_pic_dir=None, pkl_text_dir=None, verbose=True):
+    import logging
+    import urllib3
+    for _name in ("urllib3", "requests", "httpx", "httpcore", "label_studio_sdk"):
+        logging.getLogger(_name).setLevel(logging.WARNING)
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+    
     task_id = 1
+    if verbose:
+        print("Loading or processing data...")
     filled_matched_segments_dict = load_or_process_data(pdf_dir, pkl_pic_dir, pkl_text_dir, verbose)
     all_database_entries = defaultdict(list)
     original_data_tracker = dict()
-    for filename, (f_segments, m_segments) in filled_matched_segments_dict.items():
+    
+    total_files = len(filled_matched_segments_dict)
+    if verbose:
+        print(f"\nProcessing {total_files} PDF file(s) for Label Studio...")
+        print("=" * 60)
+    
+    file_iter = filled_matched_segments_dict.items()
+    if verbose:
+        file_iter = tqdm(list(file_iter), desc="Projects", unit="proj")
+    for file_idx, (filename, (f_segments, m_segments)) in enumerate(file_iter, 1):
+        if verbose:
+            print(f"\nProcessing: {filename}")
+            print(f"  Found {len(f_segments)} molecule segments")
+        
         clean_filename = filename.rstrip('.pdf')
         segment_dir = os.path.join(output_dir, clean_filename)
+        segment_dir = os.path.abspath(segment_dir)
         os.makedirs(segment_dir, exist_ok=True)
+        
+        if verbose:
+            print(f"  Creating Label Studio project: {clean_filename}")
         label_studio_config['project_name'] = clean_filename
         label_studio_config['storage_config']['path'] = segment_dir
         label_studio_config['label_config'] = get_label_config(f_segments)
         ls, project_id, user_id, tasks_client, annot_client = setup_label_studio_project(**label_studio_config)
-        pdf_loc = os.path.join(pdf_dir, filename) # can only be done with pdf_dir
-        molecule_segment_labels = molecule_segments_to_label_studio_dir(pdf_loc, f_segments, segment_dir, task_id, project_id, user_id)
-        for label_dict in molecule_segment_labels:
+        
+        if verbose:
+            print(f"  Project created (ID: {project_id})")
+            print(f"  Preparing segments and images... (may take a few minutes)")
+        pdf_loc = os.path.join(pdf_dir, filename)
+        molecule_segment_labels = molecule_segments_to_label_studio_dir(pdf_loc, f_segments, segment_dir, task_id, project_id, user_id, use_tqdm=verbose)
+        
+        tasks_iter = molecule_segment_labels
+        if verbose and len(molecule_segment_labels) > 1:
+            tasks_iter = tqdm(molecule_segment_labels, desc="Tasks", unit="task")
+        for task_idx, label_dict in enumerate(tasks_iter, 1):
             predicted_annot = get_annot_value_from_task(label_dict)
             task_data = label_dict.get('data')
             task = tasks_client.create(project=project_id, data=task_data)
             task_id = task.id
-            # Update task id in annot!!
-            # predicted_annot
-            annot_client.create(id = task_id, result=predicted_annot, task = task_id, project = project_id)
+            annot_client.create(id=task_id, result=predicted_annot, task=task_id, project=project_id)
+        
         original_data_tracker[filename] = (project_id, f_segments)
+        if verbose:
+            print(f"  ✓ Completed: {filename}")
+    
+    if verbose:
+        print("\n" + "=" * 60)
+        print(f"All {total_files} file(s) processed successfully!")
+    
     return all_database_entries, original_data_tracker

@@ -110,7 +110,7 @@ def segment_chemical_structures_yode(
 
             crop = im0[y1:y2, x1:x2].copy()
             segments.append(crop)
-            bboxes.append((y1, x1, y2, x2))
+            bboxes.append((x1, y1, x2, y2))
 
     return [segments, bboxes]
 

@@ -1,36 +1,15 @@
-# PDF text extractor
+# PDF Chemical Analysis Extractor
 
 This repository contains the code and data accompanying the upcoming publication:
 
 > **Itamar Wallwater et al., "PDF text extractor"**  
 > https://doi.org/XXXX
 
-The scripts provided here demonstrate possible usage in the pdf data extractor.
+The package extracts chemical analysis text and molecule images from PDF files, with support for Label Studio annotation and Streamlit visualization.
 
 ---
 
-## 📄 Overview
-
-TBD
-
-- [Installation](#installation)
-- [Benchmark data](demo_data/README.md#benchmark-data)
-
-- PDF image extraction - how to extract molecule images from a PDF document
-- PDF text extraction - how to extract text from a PDF document
-- PDF full extraction - how to extract both image and text in a paired manned from a PDF document
-- PDF extraction visuallization - how to view extracted results using labal studio
-- label studio data retrival - how to update extracted data from label studio changes
-
----
-## 📂 Installation
-
-### Prerequisites
-
-- Python 3.8 or higher
-- Conda (recommended) or pip
-
-### Installation Steps
+## Installation
 
 1. **Clone the repository:**
 ```bash
@@ -53,211 +32,263 @@ python -m pip install .
 - YOLOv5 model files
 - Poppler binaries (for PDF processing on Windows)
 - All Python package dependencies listed in `setup.py`
-- 'best.pt' weights from .. (https://drive.google.com/file/d/1tXX_-RE2sL2U7lRvFfOBUBTIIIN_MhnN/view)
-### Create your own database with a click!
 
-After installation, set all the documents you want to process into one folder, use either the command line or python to run the extractor and produce your database.
 
-## from python
+## Typical Usage (concrete paths)
+### Step 2: Optional - Label Studio Annotation
 
+Process a folder of PDF files:
+
+```bash
+# Text extraction only
+python main.py --input demo_data/Exdata_1 --output results
+
+# With image extraction 
+python main.py --input demo_data/Exdata_1 --output results --pics
+
+# With image extraction using decimer backend (much slower)
+python main.py --input demo_data/Exdata_1 --output results --pics --backend decimer
 ```
+
+This will:
+- Process all PDF files in the input folder
+- Extract chemical analysis text (NMR, IR, MS, Rf)
+- Detect molecule segments
+- Save results to `results/` folder as pickle files (`.pkl`)
+
+### Step 2: Optional - Label Studio Annotation
+
+Fix annotations and image bounding boxes using Label Studio:
+
+1. Start Label Studio server
+2. Send pkl data to Label Studio
+3. Annotate in the web interface
+4. Update pkl files from annotations
+
+See [Label Studio Setup](#label-studio-setup) section below.
+
+1. **Start Label Studio:**
+```bash
+python main.py --input demo_data/Exdata_1 --output results --pics --backend yode
+```
+
+Send PKLs to Label Studio:
+```bash
+python send_to_label_studio.py --pkl-folder results --pdf-dir demo_data/Exdata_1 --api-key <api_key>
+```
+
+Update PKLs from Label Studio annotations:
+```bash
+python update_from_label_studio.py --pkl-folder results --pdf-dir demo_data/Exdata_1 --api-key <api_key>
+```
+
+
+### Step 3: Export and Visualize
+
+Export CSV and images, then visualize with Streamlit:
+
+```bash
+python main.py --output results --visualize-only
+```
+
+Process and visualize in one step:
+```bash
+python main.py --input demo_data/Exdata_1 --output results --pics --visualize
+```
+
+---
+
+## Label Studio Setup
+
+Label Studio must be allowed to serve your local PDFs and extracted images.
+
+### Set environment variables
+- Choose a root that contains your PDFs (e.g., `Z:\` on Windows, `/Users/<you>` or `/home/<you>` on macOS/Linux).
+
+**Windows (cmd):**
+```cmd
+set LOCAL_FILES_SERVING_ENABLED=true
+set LOCAL_FILES_DOCUMENT_ROOT=Z:\
+label-studio
+```
+
+**macOS/Linux (bash/zsh):**
+```bash
+export LOCAL_FILES_SERVING_ENABLED=true
+export LOCAL_FILES_DOCUMENT_ROOT=/path/to/root
+label-studio
+```
+
+Or use the helper (sets env vars and starts LS):
+```bash
+python start_label_studio.py
+```
+
+### After starting LS
+1. Open http://localhost:8080 and annotate.  
+2. Run `update_from_label_studio.py` to pull changes back into the PKLs.
+
+---
+
+## Workflow at a Glance
+- Extract PDFs → PKLs: `main.py --input demo_data/Exdata_1 --output results [--pics --backend yode]`
+- (Optional) Send to Label Studio, annotate, then update PKLs.
+- Visualize or export with `main.py --output results --visualize-only [--graph-sketch]`.
+
+---
+
+## Output Format (brief)
+
+- `.pkl` per PDF with molecule segments, bounding boxes, and optional molecule images.
+- Stage 3 export (`--visualize-only` or `--visualize`) writes a CSV of extracted data plus rendered molecule images into the `--output` folder.
+
+Example access:
+```python
+from storeage_obj import load_pickle_by_filename
+result = load_pickle_by_filename('results/example.pkl')
+for segment in result.molecule_segments:
+    print(segment.molecule_name)
+```
+
+---
+
+## Programmatic Usage
+
+### From Python
+
+```python
 from streamlit_wrappers import process_pdf_dir_end_to_end
 
 pdf_dir = './demo_data'
-verbose = True
-image_backend = 'yode' # can be 'decimer' as well
-database_name = 'Benchmark_2111'
-graph_sketch = False # if true, a graph sketch will be made from the text (no intesities) 
-cmd_process = process_pdf_dir_end_to_end(pdf_dir,
-                                         verbose=True,
-                                         backend=image_backend,
-                                         database_name=database_name,
-                                         graph_sketch=graph_sketch)
+database_name = 'my_database'
+cmd_process = process_pdf_dir_end_to_end(
+    pdf_dir,
+    verbose=True,
+    backend='yode',  # or 'decimer'
+    database_name=database_name,
+    graph_sketch=False
+)
 ```
 
 ---
 
-# PDF image extractor
-Image extraction is excuted using the python package DECIMER-Segmentation (https://github.com/Kohulan/DECIMER-Image-Segmentation). <br>
-Code is duplicated from their repository to ensure robust and independent work. The code duplicated can be found at main\decimer_functions.py
+## Technical Details
 
-## Code
+### PDF Image Extraction
 
-```
-from .mol_pic import extract_pics_from_pdf 
+Image extraction uses DECIMER-Segmentation or YOLOv5 (YoDe). Code is duplicated from DECIMER repository for robustness and can be found at `decimer_functions.py`.
+
+```python
+from mol_pic import extract_pics_from_pdf
 
 pdf_path = 'path_to_your_pdf.pdf'
-mol_pics = extract_pics_from_pdf(pdf_path)
-```
-The output is a list where every items is a MolPic object.
-
-## MolPic (back-end)
-MolPic is a container for an image, and is initialized using three parameters:
-- page_num - int, the page where the image located (used for later matching)
-- image - numpy array of the image
-- bbox - bbox of the location of the extracted image in the format of (x, y, width, height) where (x,y) is the upper left corner.
-
-```
-from .mol_pic import MolPic
-
-page_num = 3
-image = ... # Numpy array of the image
-bbox = (x, y, width, height)
-mol_pic = MolPic(page_num, image, bbox)
-```
-## MolPicCluster (back-end)
-MolPicCluster is container for multiple MolPic, where every MolPicCluster is assigned to a molecule segment, and one MolPic from the cluster is selected as the representative. \\
-MolPicCluster is initialized using onr parameter:
-- mol_pics - list where each item is MolPic
-
-```
-from .mol_pic_cluster import MolPicCluster
-
-list_of_mol_pic = [mol_pic_1, mol_pic_2, ...]
-mol_pic_cluster = MolPicCluster(list_of_mol_pic)
+mol_pics = extract_pics_from_pdf(pdf_path, backend='decimer')  # or 'yode'
 ```
 
----
+**MolPic** - Container for an image:
+- `page_num` - Page where image is located
+- `image` - Numpy array of the image
+- `bbox` - Bounding box (x, y, width, height)
 
-# PDF text extractor
-Text extraction is excuted using the python package PyMuPDF (https://pymupdf.readthedocs.io/en/latest/index.html). <br>
+**MolPicCluster** - Container for multiple MolPic objects, where one is selected as representative.
 
-```
-pip install pymupdf
-```
+### PDF Text Extraction
 
-## Basic text grab (PyMuPDF wrapper)
+Text extraction uses PyMuPDF. The function `extract_text_with_multi_idx` returns a list where each item is: `(multi_idx, text, bbox)`
 
-The function '' takes the path to pdf file and return list containing all of the text lines in the pdf.
-The output is a list where every item is of the form: (multi_idx, text, bbox)
-- multi_idx - contains the page and line number of the extracted text, i.e 3_12 will be page 3 line 12. 
-- text - the extracted text
-- bbox - the location in the page where the text was located in the form of (y_0, x_0, y_1, x_1), where (y_0, x_0) is the upper left corner and (y_1, x_1) is the bottom right corner. All values are normallized by the max width and height. 
+- `multi_idx` - Page and line number (e.g., `3_12` = page 3, line 12)
+- `text` - Extracted text
+- `bbox` - Location in page (y_0, x_0, y_1, x_1), normalized
 
-```
+```python
 from text_processing.init_processing import extract_text_with_multi_idx
 
 pdf_path = 'path_to_your_pdf.pdf'
 pdf_text_with_idx = extract_text_with_multi_idx(pdf_path)
-for multi_idx, line, bbox in pdf_text_with_idx:
-    print(multi_idx, line, bbox)
 ```
 
-## Locating molecule segments
-The extracted text is divided into *MoleculeSegement* objects, where the each segment is aimed at describing one molecule. <br>
-Molecule segments can initiallized manually but for text extraction, molecule segments will be created automatically. <br>
-The decision of on whice text line each molecule segment begins and ends depends on locating molecule names that serve as a title. <br>
-To that end, there are two free parameter that needs to be determined:
-- tokens_mark - The mininum percentile of molecule-name-tokens that the text line has compared to all other text lines in the document. In order for a line to be considered the beginning of a molecule segment, the line needs to have tokens percentile above this number. (default: 40)
-- spaces_mark - The maximum percentile of spaces that the text line has compared to all other text lines in the document. In order for a line to be considered the beginning of a molecule segment, the line needs to have spaces percentile below this number. (default: 20)
+### Locating Molecule Segments
 
-```
-from .molecule_segments.segments_creation import locate_molecule_segments
-tokens_mark = 40
-spaces_mark = 20
-molecule_segments = locate_molecule_segments(page_lines_with_multi_idx, tokens_mark=tokens_mark, spaces_mark=spaces_mark)
-```
+Text is divided into `MoleculeSegment` objects. Parameters:
+- `tokens_mark` - Minimum percentile of molecule-name-tokens (default: 40)
+- `spaces_mark` - Maximum percentile of spaces (default: 20)
 
-## Processing molecule segments
-After the inital molecule segments are created, each molecule segement is searched for *TestTextLine* and *TestTextSequence*
+```python
+from molecule_segment.segments_creation import locate_molecule_segments
 
-### TestTextLine (back-end)
-TestTextLine is a container for text lines pertaining to targeted data, and is initialized using three parameters:
-- start_multi_idx - string, the multi_idx of the start page and line where the text located
-- end_multi_idx - string, the multi_idx of the end page and line where the text located
-- bbox_list - a list where every item is a bbox of the location of the extracted text in the format of (y_0, x_0, y_1, x_1), where (y_0, x_0) is the upper left corner and (y_1, x_1) is the bottom right corner. All values are normallized by the max width and height.
-- test_type - string of the extracted test type, i.e '1H NMR', 'Rf', ...
-- test_text - string of the concatenated text pertaining to targeted data
-
-```
-start_multi_idx = '3_12'
-end_multi_idx = '3_14'
-bbox_list = [(0.24, 0.05, 0.31, 0.85)]
-test_type = '1H NMR'
-test_text = '1H NMR (600 MHz, DMSO-d6) δ/ppm = 9.04 (s, 1H, H-3), 8.69 (d, J = 4.8 Hz, 1H, H-4), 8.21 (d, J = 7.9 Hz, 1H, H-6), 8.18 (bs, 1H, NH2), 7.62 (bs, 1H, NH2), 7.48 (dd, J = 7.9, 4.8 Hz, 1H, H-5)'
-test_text_line = TestTextLine(start_multi_idx, end_multi_idx, bbox_list, test_type, test_text)
+molecule_segments = locate_molecule_segments(
+    page_lines_with_multi_idx,
+    tokens_mark=40,
+    spaces_mark=20
+)
 ```
 
-### TestTextSequence (back-end)
-TestTextSequence is a container for adjacent TestTextLines, according to their start/end multi_idx. This later helps determine if a molecule segement contains more than one molecule and divide into smaller molecule segments accordingly. TestTextSequence is initalized using one parameter:
+### Processing Molecule Segments
 
-- list_of_test_text_line - a list where every item is a TestTextLine
+Each molecule segment is searched for `TestTextLine` and `TestTextSequence`.
 
-```
-list_of_test_text_line = [test_text_line_1, test_text_line_2, ...]
-test_text_sequence = TestTextSequence(list_of_test_text_line)
-```
+**TestTextLine** - Container for text lines:
+- `start_multi_idx`, `end_multi_idx` - Start/end page and line
+- `bbox_list` - List of bounding boxes
+- `test_type` - Test type (e.g., '1H NMR', 'IR', 'MS')
+- `text` - Extracted text
 
-### code (front-end)
+**TestTextSequence** - Container for adjacent TestTextLines.
 
-```
-processed_molecule_segments = process_molecule_segment_text(molecule_segments)
-```
+```python
+from full_process import process_doc_text_first, process_doc_pics_first
 
-## Molecule segments final adjustment
-After all molecule segments have been processed, the molecule segments will be adjusted according to the most common test sequence. <br>
-The main target of this part is to combine molecule segments that have been wrongly seperated, deduced by the most common test sequence. <br>
-i.e, if the most common test sequence is ['Rf, 'IR', '1H NMR', '13C NMR'], and there are two adjacent molecule segments (and in physical proximity) that togather complete to the most common test sequence (like ['Rf'] and ['IR', '1H NMR', '13C NMR']), those segments will be united to one.
-
-```
-final_molecule_segments = adjust_molecule_segments_by_common_sequence(processed_molecule_segments)
-```
-
-### MoleculeSegment (back-end)
-The main attributes of MoleculeSegment object in it's post-extraction state are:
-- segment_lines - a list describing the text line in the molecule segment, where every item is of the form (multi_idx, text, bbox)
-- begin_multi_idx - string, the multi_idx of the start page and line where the molecule segment is located
-- end_multi_idx - string, the multi_idx of the end page and line where the molecule segment is located
-- nmr_text_line_list - a list of TestTextLine of all relevant NMR tests
-- ir_text_line_list - a list of TestTextLine of all relevant IR tests
-- rf_text_line_list - a list of TestTextLine of all relevant Rf tests
-- ms_text_line_list - a list of TestTextLine of all relevant MS tests
-- mol_pics - a list of all relevant MolPicCluster
-- molecule_name - the persumed name of the molecule
-- has_test_text_sequence - bool, True if the molecule segment has test_text
-- test_text_sequence - TestTextSequence of the relevant test text lines
-
-# PDF full extractor
-
-Full extraction can be done in two manners:
-- text first, then images
-- images first, then text
-
-The extraction process levreges the initial process to optimize the second extraction.
-
-## text first
-
-```
-from .full_process import process_doc_text_first
-
-pdf_path = 'path_to_your_pdf.pdf'
+# Text first, then images
 molecule_segments, mol_pic_clusters = process_doc_text_first(pdf_path)
-```
 
-## images first
-
-```
-from .full_process import process_doc_pics_first
-
-pdf_path = 'path_to_your_pdf.pdf'
+# Images first, then text
 molecule_segments, mol_pic_clusters = process_doc_pics_first(pdf_path)
 ```
 
-# PDF extraction visuallization
+### Molecule Segment Final Adjustment
 
-In order to verify the extraction results, our code interfaces with label-studio:
-Please follow the installation instructions in the following link ..
-set user in label-studio
-opens in a browser
-need to set stoage folder
+Segments are adjusted according to the most common test sequence to combine wrongly separated segments.
 
-To fully use label-studio, you need to also set-up access to your local-storage or link label-studio to a cloud service
-**currently**, only the local-storage option is supported. 
+```python
+from molecule_segment.segements_merging import adjust_molecule_segments_by_common_sequence
 
-# label studio data retrival
+final_molecule_segments = adjust_molecule_segments_by_common_sequence(processed_molecule_segments)
+```
 
-After the verification process via label-studio, changes made by the user using label-studio is updated and a database file can be create to ... format (csv + images?)
+### MoleculeSegment Attributes
 
-All images are re-extracted according to the final bbox drawn in label-studio
+- `segment_lines` - List of (multi_idx, text, bbox)
+- `begin_multi_idx`, `end_multi_idx` - Start/end locations
+- `nmr_text_line_list`, `ir_text_line_list`, `rf_text_line_list`, `ms_text_line_list` - Test text lines
+- `mol_pics` - List of MolPicCluster
+- `molecule_name` - Presumed name
+- `has_test_text_sequence` - Boolean
+- `test_text_sequence` - TestTextSequence object
 
-**Important**: Text isn't re-extracted, but rather all changes must be done using the text-box found in label-studio.
+---
+
+## Troubleshooting
+
+### "No PDF files found"
+- Check that your input folder contains `.pdf` files
+- Verify the path is correct
+
+### "ModuleNotFoundError"
+- Make sure you installed the package: `python -m pip install .`
+- Activate your conda environment if using one
+
+### Image extraction fails
+- Image extraction is optional and requires DECIMER or YOLOv5
+- The tool will automatically fall back to text-only mode if images fail
+
+### Label Studio errors
+- See [Label Studio Setup](#label-studio-setup) section above
+- Ensure environment variables are set correctly
+
+---
+
+## Benchmark Data
+See `demo_data/README.md`.
+
+## Support
+Open an issue on GitHub for questions or problems.

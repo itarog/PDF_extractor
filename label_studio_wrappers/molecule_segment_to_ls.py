@@ -4,9 +4,32 @@ import json
 from datetime import datetime
 
 from .create_labels import test_text_line_to_annot_dict, mol_pic_to_annot_dict
-from ..molecule_segment.molecule_segment_obj import get_relavent_pages
-from .image_transformers import pdf_to_np_images
-from ..general import minimize_pdf_to_relavent_pages
+from molecule_segment.molecule_segment_obj import get_relavent_pages
+
+import fitz
+import numpy as np
+from PIL import Image
+
+from tqdm import tqdm
+
+def page_pic_from_pdf(pdf_path, page_num, output_filename=None, scale: float = 300/72, ):
+
+    doc = fitz.open(pdf_path)
+    page = doc[page_num]
+
+    w, h = page.rect.width, page.rect.height
+    pix = page.get_pixmap(matrix=fitz.Matrix(scale, scale))
+
+    img_array = np.frombuffer(pix.samples, dtype=np.uint8).reshape(pix.height, pix.width, pix.n)
+
+    if output_filename != None:
+
+        img = Image.fromarray(img_array).resize((700,1000), resample=0) 
+        img.save(output_filename)
+
+    doc.close()
+
+    return 
 
 def get_local_storage_prefix():
     return '/data/local-files/?d='
@@ -61,11 +84,11 @@ def molecule_segment_to_label_studio_json(molecule_segment, image_path, task_id=
                         }
     return [label_studio_entry]
 
-def molecule_segments_to_label_studio_dir(pdf_loc, molecule_segments, label_studio_storage_dir, task_id=1, project_id=1, user_id=1):
+def molecule_segments_to_label_studio_dir(pdf_loc, molecule_segments, label_studio_storage_dir, task_id=1, project_id=1, user_id=1, use_tqdm=False):
     os.makedirs(label_studio_storage_dir, exist_ok=True)
     all_relavent_pages = []
     all_labels = []
-    for segment_idx, molecule_segment in enumerate(molecule_segments):
+    for segment_idx, molecule_segment in tqdm(enumerate(molecule_segments), total = len (molecule_segments), desc="Processing molecule segments", unit="segment"):
         all_relavent_pages.extend(get_relavent_pages(molecule_segment))
         label_studio_data = molecule_segment_to_label_studio_json(molecule_segment, label_studio_storage_dir,
                                                                   task_id, project_id, user_id)
@@ -73,9 +96,10 @@ def molecule_segments_to_label_studio_dir(pdf_loc, molecule_segments, label_stud
         final_path = os.path.join(label_studio_storage_dir, f"molecule_segment_{segment_idx}.json")
         with open(final_path, "w") as f:
             json.dump(label_studio_data, f, indent=4)
-    temp_pdf_filename = 'my_small_pdf.pdf'
-    minimize_pdf_to_relavent_pages(input_pdf_path=pdf_loc,
-                                    output_pdf_path=temp_pdf_filename,
-                                    page_numbers=all_relavent_pages)
-    pdf_to_np_images(temp_pdf_filename, all_relavent_pages, label_studio_storage_dir)
+
+    for page_num in tqdm(all_relavent_pages, desc="Generating images of pages", unit="page"):
+        output_filename = f'page_{page_num}.png'
+        output_path = os.path.join(label_studio_storage_dir, output_filename)
+        page_pic_from_pdf(pdf_loc, page_num, output_path)
+
     return all_labels #, all_database_entries, all_saved_filenames 

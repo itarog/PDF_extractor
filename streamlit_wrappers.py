@@ -1,3 +1,6 @@
+from typing import Any
+
+
 import os
 import pandas as pd
 import subprocess
@@ -9,6 +12,30 @@ from text_spectra_plotter import (
 )
 from wrappers import process_doc_list_pics_first, get_filled_matched_molecule_segments
 
+from decimer_functions import get_square_image
+import fitz
+import numpy as np
+
+from tqdm import tqdm
+
+def molecule_pic_from_pdf(pdf_path, page_num, bbox, scale: float = 300/72, image_dir=None):
+
+    doc = fitz.open(pdf_path)
+    page = doc[page_num]
+
+    w, h = page.rect.width, page.rect.height
+
+    bbox = fitz.Rect(bbox[0]*w/100, bbox[1]*h/100, (bbox[0]+bbox[2])*w/100, (bbox[1]+bbox[3])*h/100)  
+
+    pix = page.get_pixmap(matrix=fitz.Matrix(scale, scale), clip=bbox)
+
+    img_array = np.frombuffer(pix.samples, dtype=np.uint8).reshape(pix.height, pix.width, pix.n)
+    img_array = get_square_image(img_array, 224)
+
+    doc.close()
+
+    return img_array
+
 def export_ms_list(ms_list, export_dir=None, image_dir_name='images', graph_sketch=False):
     if export_dir is None:
         export_dir = os.getcwd()
@@ -16,17 +43,23 @@ def export_ms_list(ms_list, export_dir=None, image_dir_name='images', graph_sket
     os.makedirs(image_dir_path, exist_ok=True)
     
     ms_dict_list = []
-    for segment_idx, molecule_segment in enumerate(ms_list):
+
+    for segment_idx, molecule_segment in tqdm(enumerate(ms_list), total=len(ms_list), desc="segments", unit="segment"):
         ms_dict = dict()
         images = []
         ms_dict['molecule_name'] = molecule_segment.molecule_name
 
         if molecule_segment.mol_pics:
+
             mol_pic = molecule_segment.mol_pics[0]
-            img = Image.fromarray(mol_pic.pic)
+
             img_name = f'image_{segment_idx}.png'
             image_path = os.path.join(image_dir_path, img_name)
+
+            img = molecule_pic_from_pdf (mol_pic.pdf_path, mol_pic.page_num, mol_pic.bbox)
+            img = Image.fromarray(img)
             img.save(image_path)
+
             # Store relative path (just filename) for CSV
             images.append(img_name)
 
@@ -56,9 +89,11 @@ def export_ms_list(ms_list, export_dir=None, image_dir_name='images', graph_sket
                     parser = None
                     plotter = None
                 if parser:
-                    parsed_peaks  = parser(test_text)
                     plot_path = os.path.join(image_dir_path, plot_fname)
-                    plotter(parsed_peaks, title=f'mol_{segment_idx}', export_fname=plot_path)
+                    # Only generate plot if it doesn't already exist
+                    if not os.path.exists(plot_path):
+                        parsed_peaks  = parser(test_text)
+                        plotter(parsed_peaks, title=f'mol_{segment_idx}', export_fname=plot_path)
                     # Store relative path (just filename) for CSV
                     images.append(plot_fname)     
 

@@ -2,8 +2,6 @@ import os
 import numpy as np
 # import gzip
 from PIL import Image
-from text_processing.init_processing import get_norm_bbox
-from decimer_functions import get_square_image
 
 from decimer_segmentation import segment_chemical_structures
 from yode_backend import segment_chemical_structures_yode
@@ -64,11 +62,13 @@ def segment_chemical_structures_from_file(file_path: str, expand: bool = True, p
     return page_images, overall_segments
 
 class MolPic:
-    def __init__(self, page_num, pic, bbox):
+    def __init__(self, page_num, bbox, pdf_path = None):
         self.page_num = page_num
-        self.pic = pic
-        self.bbox = bbox # (y0, x0, y1, x1)
-        self.y0 = bbox[0]
+        self.bbox = bbox # bbox is stored as (x_percent, y_percent, width_percent, height_percent)
+        self.y0 = bbox[1]
+
+        if pdf_path != None:
+            self.pdf_path = pdf_path
 
     def __repr__(self):
         return f'Page: {self.page_num, self.bbox}'
@@ -86,9 +86,12 @@ def export_mol_pic(mol_pic, export_dir, molecule_name=None):
     image_pil.save(export_path)
     return export_path
 
-def bbox_xyxy_to_xywh(bbox):
+def bbox_xyxy_to_xywh(bbox, page_w, page_h):
     x0, y0, x1, y1 = bbox
-    new_bbox = (x0, y0, x1-x0, y1-y0)
+    new_bbox = (round(100*x0/page_w, 2),
+                round(100*y0/page_h, 2), 
+                round(100*(x1-x0)/page_w, 2), 
+                round(100*(y1-y0)/page_h, 2), )
     return new_bbox
 
 def extract_pics_from_pdf(pdf_file, save_pics=False, save_dir='', pages=None, backend='decimer'):
@@ -118,10 +121,8 @@ def extract_pics_from_pdf(pdf_file, save_pics=False, save_dir='', pages=None, ba
 
         if len(segment_images) > 0:
             for idx, im in enumerate(segment_images):
-                image = get_square_image(im, 224)
-                norm_bbox = get_norm_bbox(bboxes[idx], page_h, page_w)
-                xywh_bbox = bbox_xyxy_to_xywh(norm_bbox)
-                molecule_pic = MolPic(page_num, image, xywh_bbox)
+                xywh_bbox = bbox_xyxy_to_xywh(bboxes[idx], page_w, page_h)
+                molecule_pic = MolPic(page_num, xywh_bbox, pdf_file)
                 mol_pics.append(molecule_pic)
 
     return mol_pics

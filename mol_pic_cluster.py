@@ -16,9 +16,9 @@ class MolPicCluster:
         current_x = 0
         self.leading_pic = None
         for mol_pic in self.mol_pics:
-            if mol_pic.bbox[1]>current_x:
+            if mol_pic.bbox[0]>current_x:
                 self.leading_pic = mol_pic
-                current_x = mol_pic.bbox[1]
+                current_x = mol_pic.bbox[0]
 
 def check_matching_of_mol_pics(mol_pic_1, mol_pic_2):
     ATOL = 10

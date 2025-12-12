@@ -1,5 +1,12 @@
 import os
+import logging
+import urllib3
 from label_studio_sdk.client import LabelStudio
+
+# Suppress noisy HTTP logs from Label Studio SDK stack
+for _name in ("urllib3", "requests", "httpx", "httpcore", "label_studio_sdk"):
+    logging.getLogger(_name).setLevel(logging.WARNING)
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # label_config = """
 # <View>
