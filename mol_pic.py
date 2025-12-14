@@ -3,7 +3,7 @@ import numpy as np
 # import gzip
 from PIL import Image
 
-from decimer_segmentation import segment_chemical_structures
+# from decimer_segmentation import segment_chemical_structures
 from yode_backend import segment_chemical_structures_yode
 
 import pymupdf  # PyMuPDF
