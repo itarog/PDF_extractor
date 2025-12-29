@@ -9,9 +9,12 @@ The package extracts chemical analysis text and molecule images from PDF files, 
 
 # **Navigation menu**
 
-[Installation](#installation)
-[Setting up your database](#installationsetting-up-your-database)
-[Evaluate on benchmark](#benchmark-data)
+[Installation](#installation) <br>
+[Setting up your database](#installationsetting-up-your-database) <br>
+[Evaluate on benchmark](#benchmark-data) <br>
+[Troubleshooting](#troubleshooting) <br>
+[Support](#support) <br>
+[Label Studio Setup](#label-studio-setup) <br>
 ---
 
 # Installation
@@ -104,7 +107,7 @@ Update PKLs from Label Studio annotations:
 python update_from_label_studio.py --pkl-folder results --pdf-dir demo_data/Exdata_1 --api-key <api_key>
 ```
 
-### Step 3: Export and Visualize
+## Step 3: Export and Visualize
 Export CSV and images, then visualize with our graohical interface:
 
 
