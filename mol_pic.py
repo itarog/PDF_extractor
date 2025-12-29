@@ -3,8 +3,9 @@ import numpy as np
 # import gzip
 from PIL import Image
 
-# from decimer_segmentation import segment_chemical_structures
+from decimer_segmentation import segment_chemical_structures
 from yode_backend import segment_chemical_structures_yode
+from decimer_functions import get_square_image
 
 import pymupdf  # PyMuPDF
 from concurrent.futures import ThreadPoolExecutor
@@ -62,9 +63,10 @@ def segment_chemical_structures_from_file(file_path: str, expand: bool = True, p
     return page_images, overall_segments
 
 class MolPic:
-    def __init__(self, page_num, bbox, pdf_path = None):
+    def __init__(self, page_num, bbox, pic, pdf_path = None):
         self.page_num = page_num
         self.bbox = bbox # bbox is stored as (x_percent, y_percent, width_percent, height_percent)
+        self.pic = pic
         self.y0 = bbox[1]
 
         if pdf_path != None:
@@ -121,8 +123,9 @@ def extract_pics_from_pdf(pdf_file, save_pics=False, save_dir='', pages=None, ba
 
         if len(segment_images) > 0:
             for idx, im in enumerate(segment_images):
+                image = get_square_image(im, 224)
                 xywh_bbox = bbox_xyxy_to_xywh(bboxes[idx], page_w, page_h)
-                molecule_pic = MolPic(page_num, xywh_bbox, pdf_file)
+                molecule_pic = MolPic(page_num, xywh_bbox, image, pdf_file)
                 mol_pics.append(molecule_pic)
 
     return mol_pics

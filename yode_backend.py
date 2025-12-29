@@ -5,12 +5,13 @@ from yolov5.utils.augmentations import letterbox
 from yolov5.utils.general import non_max_suppression, scale_coords
 from yolov5.utils.torch_utils import select_device
 from yolov5.models.common import DetectMultiBackend
-
+from yolov5.models.yolo import Model
 # Singletons to avoid reloading the model on every call
 _YODE_MODEL = None
 _YODE_DEVICE = None
 _YODE_STRIDE = 32  # will be overwritten after model load
 
+torch.serialization.add_safe_globals([Model])
 
 def _get_yolo_model(weights, device_str="", dnn=False, half=False, data=None):
     """
@@ -22,6 +23,7 @@ def _get_yolo_model(weights, device_str="", dnn=False, half=False, data=None):
 
     device = select_device(device_str)  # '' -> auto CUDA/CPU
     model = DetectMultiBackend(weights, device=device, dnn=dnn, data=data, fp16=half)
+
     _YODE_STRIDE = int(model.stride)
     _YODE_MODEL = model
     _YODE_DEVICE = device
@@ -57,7 +59,6 @@ def segment_chemical_structures_yode(
         "image_np must be a HxWx3 BGR uint8 NumPy array"
 
     model, device_obj, stride = _get_yolo_model(weights=weights, device_str=device, dnn=False, half=use_half, data=data)
-
     # Keep a copy of the original for cropping/coordinate space
     im0 = np.ascontiguousarray(image_np)
     h0, w0 = im0.shape[:2]

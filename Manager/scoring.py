@@ -1,8 +1,10 @@
 import numpy as np
 import pandas as pd
-from scipy.optimize import linear_sum_assignment
 import os
 import subprocess
+
+from PIL import Image
+from scipy.optimize import linear_sum_assignment
 
 from demo_data.inner_validation import compare_values, string_similarity, peak_confusion_matrix
 from streamlit_wrappers import gen_database_from_ms_list
@@ -24,8 +26,8 @@ def get_smiles_score(gt_molecule, extracted_molecule):
 
 def get_molecule_name_score(gt_molecule, extracted_molecule):
     molecule_name_score = 0
-    mol_name = gt_molecule.molecule_name # gt_dictlist[0].get('molecule_name')
-    sus_mol_name = extracted_molecule.molecule_name # e_dictlist[0].get('molecule_name')
+    mol_name = gt_molecule.molecule_name 
+    sus_mol_name = extracted_molecule.molecule_name 
     molecule_name_score = compare_values(mol_name, sus_mol_name)
     return molecule_name_score
 
@@ -178,19 +180,49 @@ def process_gt_extracted_scoring(scoring_dict):
 
     return summary_details, all_scores_df
 
-def setup_database(molecule_segments_dict, database_name='my_database', graph_sketch=False):
-    m_ms_list_to_export = []
-    f_ms_list_to_export = []
-    for f_segments, m_segments in molecule_segments_dict.values():
-        f_ms_list_to_export+=f_segments
-        m_ms_list_to_export+=m_segments            
-    database_csv_path, image_dir_path = gen_database_from_ms_list(m_ms_list_to_export, database_name=database_name, graph_sketch=graph_sketch)
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    app_path = os.path.join(script_dir, "app.py")
-    run_str_command_1 = f'streamlit run {app_path} '
-    run_str_command_2 = f'-- --csv_fpath {database_csv_path} --images_fpath {image_dir_path}'
-    run_str_command = run_str_command_1 + run_str_command_2
+def gen_database_from_extracted_molecules(extracted_molecule_list, image_dir=None, graph_sketch=False):
+    mol_dict_list = []
 
-    cmd_process = subprocess.Popen(run_str_command.split(' '))
-    # subprocess.run(run_str_command.split(' '))
-    return cmd_process
+    for mol_idx, extracted_mol in enumerate(extracted_molecule_list):
+        mol_dict = dict()
+        images = []
+        mol_dict['molecule_name'] = extracted_mol.molecule_name
+        mol_dict['file_name'] = extracted_mol.file_name
+        mol_dict['molecule_smiles_by_images'] = extracted_mol.molecule_smiles_by_images
+
+        img = extracted_mol.molecule_image
+        mol_dict['molecule_np_array'] = img
+        if not img is None:
+            img_name = f'image_{mol_idx}.png'
+            image_path = os.path.join(image_dir, img_name)
+            
+            img = Image.fromarray(img)
+            img.save(image_path)
+
+            images.append(img_name)
+
+        for extracted_test in extracted_mol.molecule_tests:
+            test_type = extracted_test.test_type 
+            test_text = extracted_test.test_text
+            mol_dict[test_type] = test_text
+            if graph_sketch:
+                pass
+        mol_dict['image_path'] = '; '.join(images)
+        mol_dict_list.append(mol_dict)
+
+    results_df = pd.DataFrame(mol_dict_list)
+    return results_df
+
+
+def setup_database(extracted_molecule_list, database_name='my_database', export_dir=None, image_dir_name='images', graph_sketch=False):
+    if export_dir is None:
+        export_dir = os.getcwd()
+    database_dir_path = os.path.join(export_dir, database_name)
+    os.makedirs(database_dir_path, exist_ok=True)
+    image_dir_path = os.path.join(database_dir_path, image_dir_name)
+    os.makedirs(image_dir_path, exist_ok=True)
+    results_df = gen_database_from_extracted_molecules(extracted_molecule_list, image_dir=image_dir_path, graph_sketch=graph_sketch)
+    csv_fname = f'{database_name}.csv'
+    csv_path = os.path.join(database_dir_path, csv_fname)
+    results_df.to_csv(csv_path, index=False)          
+    return csv_path, image_dir_path

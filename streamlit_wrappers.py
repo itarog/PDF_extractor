@@ -56,7 +56,8 @@ def export_ms_list(ms_list, export_dir=None, image_dir_name='images', graph_sket
             img_name = f'image_{segment_idx}.png'
             image_path = os.path.join(image_dir_path, img_name)
 
-            img = molecule_pic_from_pdf (mol_pic.pdf_path, mol_pic.page_num, mol_pic.bbox)
+            img = mol_pic.pic
+            # img = molecule_pic_from_pdf (mol_pic.pdf_path, mol_pic.page_num, mol_pic.bbox)
             img = Image.fromarray(img)
             img.save(image_path)
 
@@ -111,7 +112,7 @@ def gen_database_from_ms_list(ms_list, export_dir=None, image_dir_name='images',
     results_df, image_dir_path = export_ms_list(ms_list, export_dir=database_dir_path, image_dir_name=image_dir_name, graph_sketch=graph_sketch)
     csv_fname = f'{database_name}.csv'
     csv_path = os.path.join(database_dir_path, csv_fname)
-    results_df.to_csv(csv_path)
+    results_df.to_csv(csv_path, index=False)
     return csv_path, image_dir_path
 
 
@@ -136,4 +137,3 @@ def process_pdf_dir_end_to_end(input_dir, verbose=True, backend='yode', database
     cmd_process = subprocess.Popen(run_str_command.split(' '))
     # subprocess.run(run_str_command.split(' '))
     return cmd_process
-

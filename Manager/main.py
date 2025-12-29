@@ -1,15 +1,63 @@
+import os
 from collections import defaultdict
 import numpy as np
 import pandas as pd
+from pathlib import Path
 
-from wrappers import get_filled_matched_molecule_segments, process_doc_list_pics_first
-from scoring import score_extracted_gt_data, setup_database, process_gt_extracted_scoring
-from molecules_tests import TestLogger, GTMolecule, ExtractedMolecule, ChemDataMolecule
+from wrappers import get_filled_matched_molecule_segments, process_doc_list_pics_first, process_doc_pics_first
+from Manager.scoring import score_extracted_gt_data, setup_database, process_gt_extracted_scoring
+from Manager.molecules_tests import TestLogger, GTMolecule, ExtractedMolecule, ChemDataMolecule
+
+def import_mol_list_from_database(
+    csv_path: str,
+    image_root_dir: str,
+    *,
+    name_col: str = "molecule_name",
+    image_col: str = "image_path",
+    ):
+
+    if not os.path.isfile(csv_path):
+        raise FileNotFoundError(f"CSV not found: {csv_path}")
+    if not os.path.isdir(image_root_dir):
+        raise FileNotFoundError(f"Image root dir not found: {image_root_dir}")
+
+    df = pd.read_csv(csv_path)
+
+    for col in ("Unnamed: 0", "index"):
+        if col in df.columns:
+            df = df.drop(columns=[col])
+
+    if name_col not in df.columns:
+        raise ValueError(f"Expected column '{name_col}'. Found columns: {list(df.columns)}")
+
+    if image_col not in df.columns:
+        # allow databases without images
+        df[image_col] = ""
+
+    ex_mol_list = [] 
+
+    for _, row in df.iterrows():
+        molecule_name = row.get(name_col, "")
+        molecule_name = "" if pd.isna(molecule_name) else str(molecule_name)
+
+        ex_mol = ExtractedMolecule(loaded_dict=row)
+        ex_mol_list.append(ex_mol)
+    return ex_mol_list
 
 class CHEMSIDB():
     def __init__(self):
+        self.molecule_segments_dict = dict()
         self.all_extracted_molecules = []
         self.all_gt_molecules = []
+        self.database_csv_path = '.csv' # csv_path
+        self.image_dir_path = 'dir' # image_dir
+
+
+    def has_data(self):
+        if len(self.all_extracted_molecules)==0:
+            return False
+        else:
+            return True
 
     def process_gt_data(self, gt_csv_fpath):
         self.gt_data_logger = TestLogger(['1H NMR', '13C NMR', 'MS', 'IR'])
@@ -29,27 +77,55 @@ class CHEMSIDB():
                 self.gt_molecules_by_fname[f_name].append(new_molecule)
                 self.all_gt_molecules.append(new_molecule)
 
+    def init_extraction_logs(self, force_init=False):
+        if not hasattr(self, 'all_extracted_fnames') or force_init:
+            self.all_extracted_fnames = []
+        if not hasattr(self, 'extracted_data_logger') or force_init:
+            self.extracted_data_logger = TestLogger(['1H NMR', '13C NMR', 'MS', 'IR'])
+        if not hasattr(self, 'all_extracted_molecules') or force_init:
+            self.all_extracted_molecules = []
+        if not hasattr(self, 'extracted_molecules_by_fname') or force_init:
+            self.extracted_molecules_by_fname = defaultdict(list)
+
+    def update_extracted_molecule(self, new_molecule):
+        self.all_extracted_molecules.append(new_molecule)
+        self.extracted_molecules_by_fname[new_molecule.file_name].append(new_molecule)
+        self.extracted_data_logger.log_extracted_molecule(new_molecule)  
+
+    def update_molecule_segments(self, molecule_segments, f_name):
+        self.init_extraction_logs()
+        self.all_extracted_fnames.append(f_name)
+        self.molecule_segments_dict[f_name] = get_filled_matched_molecule_segments(molecule_segments)
+        for molecule_segment in molecule_segments:
+            new_molecule = ExtractedMolecule(f_name, molecule_segment)
+            self.update_extracted_molecule(new_molecule)
+
+    def process_single_extracted_file(self, pdf_fpath, backend='yode'):
+        molecule_segments, mol_pic_clusters = process_doc_pics_first(pdf_fpath, backend=backend)
+        f_name = Path(pdf_fpath).name 
+        self.update_molecule_segments(molecule_segments, f_name)
+
     def process_extracted_data(self, pdf_fpath=None, molecule_segments_dict=None, verbose=False, backend='yode'):
         if molecule_segments_dict:
             self.molecule_segments_dict = molecule_segments_dict
-            self.all_extracted_fnames = list(molecule_segments_dict.keys())
-            self.extracted_data_logger = TestLogger(['1H NMR', '13C NMR', 'MS', 'IR'])
-            self.all_extracted_molecules = []
-            self.extracted_molecules_by_fname = defaultdict(list)
             for f_name, (f_segments, m_segments) in molecule_segments_dict.items():
-                for molecule_segment in f_segments:
-                    new_molecule = ExtractedMolecule(f_name, molecule_segment)
-                    self.all_extracted_molecules.append(new_molecule)
-                    self.extracted_molecules_by_fname[f_name].append(new_molecule)
-                    self.extracted_data_logger.log_extracted_molecule(new_molecule)                    
+                self.update_molecule_segments(f_segments, f_name)                 
         if not molecule_segments_dict and pdf_fpath:
             results_dict = process_doc_list_pics_first(input_dir=pdf_fpath, verbose=verbose, backend=backend) # pre_pics_dict=loaded_pics_dict,
             filled_matched_segments_dict = {filename: get_filled_matched_molecule_segments(molecule_segments) for filename, (molecule_segments, *_) in results_dict.items()}
             self.process_extracted_data(filled_matched_segments_dict)
 
     def setup_database(self, database_name='my_database', graph_sketch=False):
-        if hasattr(self, 'molecule_segments_dict'):
-            setup_database(self.molecule_segments_dict, database_name=database_name, graph_sketch=graph_sketch)
+        if hasattr(self, 'all_extracted_molecules'):
+            self.database_csv_path, self.image_dir_path = setup_database(self.all_extracted_molecules, database_name=database_name, graph_sketch=graph_sketch)
+
+    def load_database(self, csv_path, image_dir, force_init=True):
+        self.database_csv_path = csv_path
+        self.image_dir_path = image_dir
+        mol_list = import_mol_list_from_database(csv_path, image_dir)
+        self.init_extraction_logs(force_init=force_init)
+        for extracted_molecule in mol_list:
+            self.update_extracted_molecule(extracted_molecule)
 
     def score_extracted_gt_data(self, scores_thers=0.75, allow_unmatched=True, verbose=False):
         self.extracted_gt_scoring = dict() # defaultdict(list)

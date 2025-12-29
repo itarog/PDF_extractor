@@ -1,5 +1,9 @@
+import os
+import numpy as np
+import pandas as pd
 from demo_data.inner_validation import hrms_peak_patch, molecule_segment_to_dict_list, get_peaks_from_nmrspectrum_dict
 from Streamlit_apps.text_spectra_plotter import parse_carbon_nmr, parse_ms, parse_ir
+from copy import copy
 
 def parse_peaks(test_text, test_type):
     parser = None
@@ -56,20 +60,38 @@ class ExtractedTest():
         if '13C' in self.test_type and 'NMR' in self.test_type:
             self.test_type = '13C NMR'
         self.test_text = extracted_dict.get('test_text')
-
         self.peak_list = parse_peaks(self.test_text, self.test_type)
 
 class ExtractedMolecule():
     _counter = 0
 
-    def __init__(self, file_name, molecule_segment):
-        self.file_name = file_name
-        molecule_segment_dictlist = molecule_segment_to_dict_list(molecule_segment)
-        general_dict = molecule_segment_dictlist[0]
-        self.molecule_name = general_dict.get('molecule_name')
-        self.molecule_image = general_dict.get('mol_pic')
-        self.molecule_smiles_by_images = general_dict.get('mol_pic_smiles')
-        self.molecule_tests = [ExtractedTest(self.file_name, self._counter, inner_dict) for inner_dict in molecule_segment_dictlist]
+    def __init__(self, file_name = None, molecule_segment = None, loaded_dict = None):
+        if loaded_dict is None:
+            self.file_name = file_name
+            molecule_segment_dictlist = molecule_segment_to_dict_list(molecule_segment)
+            general_dict = molecule_segment_dictlist[0]
+            self.molecule_name = general_dict.get('molecule_name')
+            self.molecule_image = general_dict.get('mol_pic')
+            self.molecule_smiles_by_images = general_dict.get('mol_pic_smiles')
+            self.molecule_tests = [ExtractedTest(self.file_name, self._counter, inner_dict) for inner_dict in molecule_segment_dictlist]
+        else:
+            self.file_name = loaded_dict.get('file_name')
+            self.molecule_name = loaded_dict.get('molecule_name')
+            self.molecule_image = loaded_dict.get('molecule_np_array')
+            self.molecule_smiles_by_images = loaded_dict.get('molecule_smiles_by_images')
+            possible_tests = ['1H NMR', '13C NMR', 'MS', 'IR']
+            self.molecule_tests = []
+            for test_type in possible_tests:
+                test_text = loaded_dict.get(test_type)
+                if test_text:
+                    try:
+                        temp_dict = copy(loaded_dict)
+                        temp_dict['test_type'] = test_type
+                        temp_dict['test_text'] = test_text
+                        self.molecule_tests.append(ExtractedTest(self.file_name, self._counter, temp_dict))
+                    except:
+                        print('test_text:', test_text)
+                        print('test_type:', test_type)
 
 class ChemDataTest():
     def __init__(self, file_name, molecule_serial, spectrum_dict, test_type=None):
