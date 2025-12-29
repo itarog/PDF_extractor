@@ -5,6 +5,7 @@ import pandas as pd
 from wrappers import get_filled_matched_molecule_segments, process_doc_list_pics_first
 from scoring import score_extracted_gt_data, setup_database, process_gt_extracted_scoring
 from molecules_tests import TestLogger, GTMolecule, ExtractedMolecule, ChemDataMolecule
+
 class CHEMSIDB():
     def __init__(self):
         self.all_extracted_molecules = []
