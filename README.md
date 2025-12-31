@@ -2,7 +2,7 @@
 ![Figure_1](build/Chemsie_fig1.png)
 This repository contains the code and data accompanying the upcoming publication:
 
-> **Itamar Wallwater et al., "PDF text and image extractor"**  
+> **I. Wallwater, Y. Harnik et al., "PDF text and image extractor"**  
 > https://doi.org/XXXX
 
 The package extracts chemical analysis text and molecule images from PDF files, with support for Label Studio annotation and Streamlit visualization.
