@@ -1,5 +1,5 @@
 # **ChemSIE - PDF text and image extractor**
-![Figure_1](Chemsie_fig1.png)
+![Figure_1](build/Chemsie_fig1.png)
 This repository contains the code and data accompanying the upcoming publication:
 
 > **Itamar Wallwater et al., "PDF text and image extractor"**  
@@ -22,7 +22,7 @@ The package extracts chemical analysis text and molecule images from PDF files, 
 1. **Clone the repository:**
 ```bash
 git clone https://github.com/itarog/PDF_extractor.git
-cd PDF_extractor
+cd PDF_extractor/build
 ```
 
 2. **Create a conda environment (recommended):**
@@ -73,7 +73,7 @@ python main.py --input demo_data --output results
 ```
 ### Option 3: Using the python API
 ```python
-from streamlit_wrappers import process_pdf_dir_end_to_end
+from build.streamlit_wrappers import process_pdf_dir_end_to_end
 
 pdf_dir = './demo_data'
 database_name = 'my_database'
@@ -91,7 +91,7 @@ For this step, the user has two options to proceed with the process:
 ```bash
 
 conda activate pdf_extractor
-Streamlit run Streamlit_apps\streamlit_extraction_GUI.py
+Streamlit run build\Streamlit_apps\streamlit_extraction_GUI.py
 ```
 ### Option 2: Using Label Studio Annotation
 Fix annotations and image bounding boxes using Label Studio:
@@ -127,7 +127,7 @@ python main.py --output results --visualize-only
 ---
 
 ## Benchmark Data
-See `demo_data/README.md`.
+[See this readme.](build/demo_data/README.md) 
 
 ---
 
@@ -204,7 +204,7 @@ python start_label_studio.py
 
 Example access:
 ```python
-from storeage_obj import load_pickle_by_filename
+from build.storeage_obj import load_pickle_by_filename
 result = load_pickle_by_filename('results/example.pkl')
 for segment in result.molecule_segments:
     print(segment.molecule_name)
