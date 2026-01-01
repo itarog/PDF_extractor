@@ -3,9 +3,9 @@ import numpy as np
 # import gzip
 from PIL import Image
 
-from decimer_segmentation import segment_chemical_structures
-from yode_backend import segment_chemical_structures_yode
-from decimer_functions import get_square_image
+# from decimer_segmentation import segment_chemical_structures
+from build.yode_backend import segment_chemical_structures_yode
+from build.decimer_functions import get_square_image
 
 import pymupdf  # PyMuPDF
 from concurrent.futures import ThreadPoolExecutor

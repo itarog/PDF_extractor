@@ -1,6 +1,6 @@
-from general import get_page_num_and_line_num_from_multi_idx
-from mol_pic import export_mol_pic
-from test_text_sequence import export_test_sequence_as_pic
+from build.general import get_page_num_and_line_num_from_multi_idx
+from build.mol_pic import export_mol_pic
+from build.test_text_sequence import export_test_sequence_as_pic
 
 class MoleculeSegment:
     def __init__(self, segment_lines): # segement lines = [(multi_idx, text, bbox = (y0, x0, y1, x1))]

@@ -1,8 +1,8 @@
 import os
 import numpy as np
 import pandas as pd
-from demo_data.inner_validation import hrms_peak_patch, molecule_segment_to_dict_list, get_peaks_from_nmrspectrum_dict
-from Streamlit_apps.text_spectra_plotter import parse_carbon_nmr, parse_ms, parse_ir
+from build.demo_data.inner_validation import hrms_peak_patch, molecule_segment_to_dict_list, get_peaks_from_nmrspectrum_dict
+from build.Streamlit_apps.text_spectra_plotter import parse_carbon_nmr, parse_ms, parse_ir
 from copy import copy
 
 def parse_peaks(test_text, test_type):

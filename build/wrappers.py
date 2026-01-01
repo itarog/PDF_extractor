@@ -1,13 +1,14 @@
 import os
-from collections import defaultdict
-from metadata import extract_metadata_from_raw_pdf
-from full_process import process_doc_text_first, process_doc_pics_first
-from storeage_obj import ProccessedPdf, ProccessedPdfPictures, ProccessedMoleculeSegments, save_object, load_mol_pic_clusters_dict, load_molecule_segments_dict
-from post_processing import get_filled_matched_molecule_segments
 from tqdm import tqdm
 
-from label_studio_wrappers.ls_setup import get_label_config, setup_label_studio_project, get_annot_value_from_task
-from label_studio_wrappers.molecule_segment_to_ls import molecule_segments_to_label_studio_dir
+from collections import defaultdict
+from build.metadata import extract_metadata_from_raw_pdf
+from build.full_process import process_doc_text_first, process_doc_pics_first
+from build.storeage_obj import ProccessedPdf, ProccessedPdfPictures, ProccessedMoleculeSegments, save_object, load_mol_pic_clusters_dict, load_molecule_segments_dict
+from build.post_processing import get_filled_matched_molecule_segments
+
+from build.label_studio_wrappers.ls_setup import get_label_config, setup_label_studio_project, get_annot_value_from_task
+from build.label_studio_wrappers.molecule_segment_to_ls import molecule_segments_to_label_studio_dir
 
 def store_in_pkl(target_dir, part='full', pdf_file=None, metadata=None, molecule_segments=None, mol_pic_clusters=None):
     pkl_filename = pdf_file.replace('.pdf', '.pkl')

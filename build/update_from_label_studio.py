@@ -8,8 +8,8 @@ project_root = os.path.dirname(os.path.abspath(__file__))
 os.chdir(project_root)
 sys.path.insert(0, project_root)
 
-import storeage_obj
-from label_studio_wrappers.data_retrival import process_changes
+import build.storeage_obj
+from build.label_studio_wrappers.data_retrival import process_changes
 
 def update_pkl_from_label_studio(pkl_folder, label_studio_config, pdf_dir=None, ls_url=None, project_mapping_file=None, verbose=True):
     pkl_path = Path(pkl_folder)

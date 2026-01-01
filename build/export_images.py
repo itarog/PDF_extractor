@@ -10,8 +10,8 @@ Usage:
 import os
 import sys
 import glob
-from storeage_obj import load_pickle_by_filename
-from mol_pic import export_mol_pic
+from build.storeage_obj import load_pickle_by_filename
+from build.mol_pic import export_mol_pic
 
 
 def export_images_from_pkl(pkl_path, output_dir):

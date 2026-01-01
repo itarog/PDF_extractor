@@ -3,6 +3,11 @@ import cv2
 from PIL import Image
 import os
 
+from build.general import minimize_pdf_to_relavent_pages
+from pdf2image import convert_from_path
+import copy
+
+
 ###############################################################
 ##################### DECIMER FUNCTIONS #######################
 ###############################################################
@@ -85,10 +90,6 @@ def get_masked_image(image: np.array, mask: np.array) -> np.array:
     trans_mask = background[:, :, 3] == 0
     background[trans_mask] = [255, 255, 255, 255]
     return background, bbox
-
-from general import minimize_pdf_to_relavent_pages
-from pdf2image import convert_from_path
-import copy
 
 def get_page_image(pdf_path, page_num, dpi=300, poppler_path=None):
 

@@ -22,7 +22,7 @@ The package extracts chemical analysis text and molecule images from PDF files, 
 1. **Clone the repository:**
 ```bash
 git clone https://github.com/itarog/PDF_extractor.git
-cd PDF_extractor/build
+cd PDF_extractor
 ```
 
 2. **Create a conda environment (recommended):**
@@ -53,7 +53,7 @@ For this step, the user has three options to initiate the process:
 ```bash
 
 conda activate pdf_extractor
-Streamlit run Streamlit_apps\streamlit_extraction_GUI.py
+Streamlit run build\Streamlit_apps\streamlit_extraction_GUI.py
 ```
 ### Option 2: Using the command line
 Process images and text, then visualize:

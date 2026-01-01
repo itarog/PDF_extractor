@@ -6,13 +6,13 @@ import pandas as pd
 import subprocess
 
 from PIL import Image
-from text_spectra_plotter import (
+from build.text_spectra_plotter import (
     parse_proton_nmr, parse_carbon_nmr, parse_ir, parse_ms,
     plot_proton_nmr, plot_carbon_nmr, plot_ir, plot_ms
 )
-from wrappers import process_doc_list_pics_first, get_filled_matched_molecule_segments
+from build.wrappers import process_doc_list_pics_first, get_filled_matched_molecule_segments
 
-from decimer_functions import get_square_image
+from build.decimer_functions import get_square_image
 import fitz
 import numpy as np
 

@@ -9,7 +9,7 @@ Usage:
 import sys
 import os
 from collections import defaultdict
-from storeage_obj import load_pickle_by_filename
+from build.storeage_obj import load_pickle_by_filename
 
 
 def format_text(text, max_length=100):

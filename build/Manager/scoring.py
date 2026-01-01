@@ -6,8 +6,8 @@ import subprocess
 from PIL import Image
 from scipy.optimize import linear_sum_assignment
 
-from demo_data.inner_validation import compare_values, string_similarity, peak_confusion_matrix
-from streamlit_wrappers import gen_database_from_ms_list
+from build.demo_data.inner_validation import compare_values, string_similarity, peak_confusion_matrix
+from build.streamlit_wrappers import gen_database_from_ms_list
 
 def get_smiles_score(gt_molecule, extracted_molecule):
     smiles_sim, gt_smiles, sus_smiles = None, None, None

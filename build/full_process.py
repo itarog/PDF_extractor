@@ -1,11 +1,11 @@
-from matching import match_mol_pic_clusters_to_molecule_segments
-from text_processing.init_processing import extract_text_with_multi_idx
-from molecule_segment.segments_creation import locate_molecule_segments
-from molecule_segment.sequences2segments import process_molecule_segment_text
-from molecule_segment.segements_merging import adjust_molecule_segments_by_common_sequence
-from mol_pic import extract_pics_from_pdf
-from mol_pic_cluster import sort_mol_pics_to_clusters
-from storeage_obj import load_pickle_by_filename
+from build.matching import match_mol_pic_clusters_to_molecule_segments
+from build.text_processing.init_processing import extract_text_with_multi_idx
+from build.molecule_segment.segments_creation import locate_molecule_segments
+from build.molecule_segment.sequences2segments import process_molecule_segment_text
+from build.molecule_segment.segements_merging import adjust_molecule_segments_by_common_sequence
+from build.mol_pic import extract_pics_from_pdf
+from build.mol_pic_cluster import sort_mol_pics_to_clusters
+from build.storeage_obj import load_pickle_by_filename
 
 import timeit
 from functools import wraps

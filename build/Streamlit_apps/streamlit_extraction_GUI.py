@@ -12,9 +12,13 @@ from typing import List
 import pandas as pd
 from PIL import Image
 
-sys.path.append(r"C:\Users\itaro\PDF_extractor")
-from full_process import process_doc_pics_first
-from Manager.main import CHEMSIDB
+project_root = os.path.dirname(os.path.abspath(__file__))
+# os.chdir(project_root)
+# sys.path.insert(0, project_root)
+project_root = os.path.join(project_root, '..', '..')
+sys.path.append(project_root)
+# from build.full_process import process_doc_pics_first
+from build.Manager.main import CHEMSIDB
 
 chemsie_db = None
 
