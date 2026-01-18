@@ -17,7 +17,7 @@ This repository contains the code and data accompanying the publication:
 - **Text + figures**: parse analytical text and detect molecule segments in the same run.
 - **Two image backends**:
   - `yode` (recommended): fast YOLOv5-based detection
-  - `decimer`: image-to-structure (slower)
+  - `decimer`: image to structure (slower)
 - **Human-in-the-loop**: review results in Streamlit or annotate in Label Studio.
 - **Export-ready**: CSV output + rendered molecule images.
 
@@ -43,7 +43,7 @@ This repository contains the code and data accompanying the publication:
 
 ## Quick start (non‑coders)
 
-If you don’t code, you can still use ChemSIE end‑to‑end via the graphical interface.
+If you don’t code, you can still use ChemSIE end to end via the graphical interface.
 
 1. **Install once** (see [Installation](#installation)).
 2. **Start the GUI**:
@@ -56,8 +56,6 @@ If you don’t code, you can still use ChemSIE end‑to‑end via the graphical 
    - Pick an image backend (`yode` is the default recommendation)
    - Click **Run**
    - Review results and export
-
-> Tip: On Windows, you may need to use backslashes in paths (e.g., `build\Streamlit_apps\...`). The forward‑slash version above usually works in PowerShell and Git Bash.
 
 ---
 

@@ -1,7 +1,8 @@
 import os
 import numpy as np
 import pandas as pd
-from build.demo_data.inner_validation import hrms_peak_patch, molecule_segment_to_dict_list, get_peaks_from_nmrspectrum_dict
+# from build.demo_data.inner_validation import compare_values, string_similarity
+from build.demo_data.inner_validation import hrms_peak_patch, molecule_segment_to_dict_list, get_peaks_from_nmrspectrum_dict, string_similarity
 from build.Streamlit_apps.text_spectra_plotter import parse_carbon_nmr, parse_ms, parse_ir
 from copy import copy
 
@@ -73,12 +74,15 @@ class ExtractedMolecule():
             self.molecule_name = general_dict.get('molecule_name')
             self.molecule_image = general_dict.get('mol_pic')
             self.molecule_smiles_by_images = general_dict.get('mol_pic_smiles')
+            self.molecule_smiles_by_name = general_dict.get('molecule_name_smiles') # Smiles 2
+            self.molecule_smiles_confidence_score = 0 # Smiles score
             self.molecule_tests = [ExtractedTest(self.file_name, self._counter, inner_dict) for inner_dict in molecule_segment_dictlist]
         else:
             self.file_name = loaded_dict.get('file_name')
             self.molecule_name = loaded_dict.get('molecule_name')
             self.molecule_image = loaded_dict.get('molecule_np_array')
             self.molecule_smiles_by_images = loaded_dict.get('molecule_smiles_by_images')
+            self.molecule_smiles_by_name = loaded_dict.get('molecule_name_smiles')
             possible_tests = ['1H NMR', '13C NMR', 'MS', 'IR']
             self.molecule_tests = []
             for test_type in possible_tests:
@@ -92,6 +96,15 @@ class ExtractedMolecule():
                     except:
                         print('test_text:', test_text)
                         print('test_type:', test_type)
+
+        if self.molecule_smiles_by_name and self.molecule_smiles_by_images:
+            try:
+                # gt_smiles is sometimes np.nan for some reason..
+                self.molecule_smiles_confidence_score = string_similarity(self.molecule_smiles_by_name, self.molecule_smiles_by_images)
+            except:
+                self.molecule_smiles_confidence_score = None
+        else:
+            self.molecule_smiles_confidence_score = None
 
 class ChemDataTest():
     def __init__(self, file_name, molecule_serial, spectrum_dict, test_type=None):

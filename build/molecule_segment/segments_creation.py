@@ -1,7 +1,10 @@
 import numpy as np
 import re
+
+from molname_to_SMILES import opsin_query, pubchem_name_to_smiles
 from .molecule_segment_obj import MoleculeSegment
 from build.tokenizer.molecule_name import get_molecule_name_probability
+from DECIMER import predict_SMILES
 
 def get_line_statistics(page_lines_with_multi_idx, token_patterns=None, debugging=False):
     tokens_percentages, num_of_spaces_list, suspected_lines = [], [], []
@@ -109,3 +112,34 @@ def locate_molecule_segments(page_lines_with_multi_idx, token_patterns=None, deb
     molecule_segments = create_molecule_segments(page_lines_with_multi_idx, selected_lines)
     assign_molecule_segment_name(molecule_segments)
     return molecule_segments
+
+
+# gt_df = pd.read_csv(ground_truth_fname)
+# molecule_names = gt_df.molecule_name.unique()
+# smiles_dict = dict()
+# for nm in molecule_names:
+#     try:
+#         info = opsin_query(nm)
+#         smiles = info.get('smiles')
+#     except Exception as e:
+#         smiles = ''
+#     if smiles == '':
+#         smiles = pubchem_name_to_smiles(nm)
+#     smiles_dict[nm] = smiles
+
+
+def fill_smiles(molecule_segements):
+    for molecule_segment in molecule_segements:
+        molecule_name = molecule_segment.molecule_name
+        try:
+            info = opsin_query(molecule_name)
+            smiles = info.get('smiles')
+        except Exception as e:
+            smiles = ''
+        if smiles == '':
+            smiles = pubchem_name_to_smiles(molecule_name)
+        molecule_segment.molecule_name_smiles = smiles
+        if len(molecule_segment.mol_pics)>0:
+            mol_pic = molecule_segment.mol_pics[0]
+            molecule_segment.mol_pic_smiles = predict_SMILES(mol_pic.pic)
+    return molecule_segements

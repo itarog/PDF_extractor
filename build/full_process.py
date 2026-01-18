@@ -1,6 +1,6 @@
 from build.matching import match_mol_pic_clusters_to_molecule_segments
 from build.text_processing.init_processing import extract_text_with_multi_idx
-from build.molecule_segment.segments_creation import locate_molecule_segments
+from build.molecule_segment.segments_creation import locate_molecule_segments, fill_smiles
 from build.molecule_segment.sequences2segments import process_molecule_segment_text
 from build.molecule_segment.segements_merging import adjust_molecule_segments_by_common_sequence
 from build.mol_pic import extract_pics_from_pdf
@@ -91,12 +91,14 @@ def optimize_text_grab_by_pic_matching(pdf_path, mol_pic_clusters, optimize_opti
         match_mol_pic_clusters_to_molecule_segments(molecule_segments, mol_pic_clusters, False)
     return molecule_segments
 
-def process_doc_pics_first(pdf_path, pre_taken_pics=None, save_pics=False, save_dir='', optimize_options=None, optimize_version='short', backend='decimer'):
+def process_doc_pics_first(pdf_path, pre_taken_pics=None, save_pics=False, save_dir='', optimize_options=None, 
+                           optimize_version='short', backend='yode', get_smiles=False):
     if pre_taken_pics:
         mol_pic_clusters = pre_taken_pics
     else:
         mol_pic_clusters = process_pic_doc(pdf_path, save_pics, save_dir, backend=backend)
     final_molecule_segments = optimize_text_grab_by_pic_matching(pdf_path, mol_pic_clusters, optimize_options, optimize_version)
     match_mol_pic_clusters_to_molecule_segments(final_molecule_segments, mol_pic_clusters, True)
-    
+    if get_smiles:
+        final_molecule_segments = fill_smiles(final_molecule_segments)
     return final_molecule_segments, mol_pic_clusters

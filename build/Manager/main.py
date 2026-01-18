@@ -59,24 +59,6 @@ class CHEMSIDB():
         else:
             return True
 
-    def process_gt_data(self, gt_csv_fpath):
-        self.gt_data_logger = TestLogger(['1H NMR', '13C NMR', 'MS', 'IR'])
-        gt_df = pd.read_csv(gt_csv_fpath)
-        fname_groupby = gt_df.groupby('f_name')
-
-        self.all_gt_molecules = []
-        self.all_gt_fnames = []
-        self.gt_molecules_by_fname = defaultdict(list)
-        for f_name, fname_df in fname_groupby:
-            f_name = f_name+'.pdf'
-            self.all_gt_fnames.append(f_name)
-            names_groupby = fname_df.groupby('molecule_name')
-            for mol_name, mol_df in names_groupby:
-                new_molecule = GTMolecule(f_name, mol_name, mol_df)
-                self.gt_data_logger.log_gt_molecule(new_molecule)
-                self.gt_molecules_by_fname[f_name].append(new_molecule)
-                self.all_gt_molecules.append(new_molecule)
-
     def init_extraction_logs(self, force_init=False):
         if not hasattr(self, 'all_extracted_fnames') or force_init:
             self.all_extracted_fnames = []
@@ -105,13 +87,13 @@ class CHEMSIDB():
         f_name = Path(pdf_fpath).name 
         self.update_molecule_segments(molecule_segments, f_name)
 
-    def process_extracted_data(self, pdf_fpath=None, molecule_segments_dict=None, verbose=False, backend='yode'):
+    def process_extracted_data(self, pdf_fpath=None, molecule_segments_dict=None, verbose=False, backend='yode', get_smiles=False):
         if molecule_segments_dict:
             self.molecule_segments_dict = molecule_segments_dict
             for f_name, (f_segments, m_segments) in molecule_segments_dict.items():
                 self.update_molecule_segments(f_segments, f_name)                 
         if not molecule_segments_dict and pdf_fpath:
-            results_dict = process_doc_list_pics_first(input_dir=pdf_fpath, verbose=verbose, backend=backend) # pre_pics_dict=loaded_pics_dict,
+            results_dict = process_doc_list_pics_first(input_dir=pdf_fpath, verbose=verbose, backend=backend, get_smiles=get_smiles) # pre_pics_dict=loaded_pics_dict,
             filled_matched_segments_dict = {filename: get_filled_matched_molecule_segments(molecule_segments) for filename, (molecule_segments, *_) in results_dict.items()}
             self.process_extracted_data(filled_matched_segments_dict)
 
@@ -126,6 +108,24 @@ class CHEMSIDB():
         self.init_extraction_logs(force_init=force_init)
         for extracted_molecule in mol_list:
             self.update_extracted_molecule(extracted_molecule)
+
+    def process_gt_data(self, gt_csv_fpath):
+        self.gt_data_logger = TestLogger(['1H NMR', '13C NMR', 'MS', 'IR'])
+        gt_df = pd.read_csv(gt_csv_fpath)
+        fname_groupby = gt_df.groupby('f_name')
+
+        self.all_gt_molecules = []
+        self.all_gt_fnames = []
+        self.gt_molecules_by_fname = defaultdict(list)
+        for f_name, fname_df in fname_groupby:
+            f_name = f_name+'.pdf'
+            self.all_gt_fnames.append(f_name)
+            names_groupby = fname_df.groupby('molecule_name')
+            for mol_name, mol_df in names_groupby:
+                new_molecule = GTMolecule(f_name, mol_name, mol_df)
+                self.gt_data_logger.log_gt_molecule(new_molecule)
+                self.gt_molecules_by_fname[f_name].append(new_molecule)
+                self.all_gt_molecules.append(new_molecule)
 
     def score_extracted_gt_data(self, scores_thers=0.75, allow_unmatched=True, verbose=False):
         self.extracted_gt_scoring = dict() # defaultdict(list)

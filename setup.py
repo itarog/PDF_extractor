@@ -172,6 +172,8 @@ setup(
     ],
     python_requires=">=3.8",
     install_requires=[
+        "decimer>=2.8.0",
+        # "decimer @ git+https://github.com/Kohulan/DECIMER-Image_Transformer.git@v2.8.0",
         "decimer-segmentation>=1.0.0",
         "PyMuPDF>=1.23.0",
         "pypdf>=3.0.0",

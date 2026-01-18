@@ -189,6 +189,8 @@ def gen_database_from_extracted_molecules(extracted_molecule_list, image_dir=Non
         mol_dict['molecule_name'] = extracted_mol.molecule_name
         mol_dict['file_name'] = extracted_mol.file_name
         mol_dict['molecule_smiles_by_images'] = extracted_mol.molecule_smiles_by_images
+        mol_dict['molecule_smiles_by_name'] = extracted_mol.molecule_smiles_by_name
+        mol_dict['molecule_smiles_confidence_score'] = extracted_mol.molecule_smiles_confidence_score
 
         img = extracted_mol.molecule_image
         mol_dict['molecule_np_array'] = img
@@ -201,10 +203,14 @@ def gen_database_from_extracted_molecules(extracted_molecule_list, image_dir=Non
 
             images.append(img_name)
 
+        normalized_test_names = ['1H NMR', '13C NMR', 'IR', 'MS']
         for extracted_test in extracted_mol.molecule_tests:
             test_type = extracted_test.test_type 
             test_text = extracted_test.test_text
-            mol_dict[test_type] = test_text
+            for norm_test_name in normalized_test_names:
+                if norm_test_name in test_type:
+                    mol_dict[norm_test_name] = test_text
+            # mol_dict[test_type] = test_text
             if graph_sketch:
                 pass
         mol_dict['image_path'] = '; '.join(images)
@@ -212,7 +218,6 @@ def gen_database_from_extracted_molecules(extracted_molecule_list, image_dir=Non
 
     results_df = pd.DataFrame(mol_dict_list)
     return results_df
-
 
 def setup_database(extracted_molecule_list, database_name='my_database', export_dir=None, image_dir_name='images', graph_sketch=False):
     if export_dir is None:

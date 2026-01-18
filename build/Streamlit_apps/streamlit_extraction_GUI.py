@@ -134,13 +134,14 @@ with tab_database:
         page_size = st.number_input("Items per page", 1, 64, 12)
         thumb_size = st.number_input("Thumbnail max size (px)", 64, 1024, 320)
 
-        st.markdown("---")
-        st.subheader("Filter")
-        
         ###########
         ### EDIT ##
         ###########
-        query = st.text_input("Search in text (simple contains)", value="")
+
+        # st.markdown("---")
+        # st.subheader("Filter")
+        
+        # query = st.text_input("Search in text (simple contains)", value="")
 
         if csv_path and images_fpath:
             # -------- Load data --------
@@ -150,11 +151,17 @@ with tab_database:
                 st.stop()
 
             id_col = "molecule_name"
+            smiles_1_col = 'molecule_smiles_by_images'
+            smiles_2_col = 'molecule_smiles_by_name'
+            conf_score_col = 'molecule_smiles_confidence_score'
+
             hnmr_col = "1H NMR"
             cnmr_col = "13C NMR"
             ir_col = "IR"
             ms_col = "MS"
             img_col = "image_path"
+            
+
             all_cols = [id_col, hnmr_col, cnmr_col, ir_col, ms_col, img_col]
             all_cols = [col for col in all_cols if col in df.columns]
             # missing_cols = [c for c in all_cols if c and c not in df.columns]
@@ -167,8 +174,8 @@ with tab_database:
             ###############################
             # -------- Filtering --------
             work_df = df.copy()
-            if query and hnmr_col in work_df.columns:
-                work_df = work_df[work_df[hnmr_col].fillna("").str.contains(query, case=False, na=False)]
+            # if query and hnmr_col in work_df.columns:
+            #     work_df = work_df[work_df[hnmr_col].fillna("").str.contains(query, case=False, na=False)]
 
             # Reset index after filtering
             work_df = work_df.reset_index(drop=True)
@@ -195,7 +202,11 @@ with tab_database:
                 with col:
                     st.markdown("---")
                     st.caption(f"Row {i+1} / {N}")
-                    st.write(f"**{id_col}:** {row.get(id_col, '')}")
+                    st.text_area('Molecule name:', value=row.get(id_col))
+                    st.text_area('SMILES (from name):', value=row.get(smiles_2_col))
+                    st.text_area('SMILES (from image):', value=row.get(smiles_1_col))
+                    st.text_area('Confidence:', value=row.get(conf_score_col))
+                    # st.write(f"**{id_col}:** {row.get(id_col, '')}")
 
                     # Show images (can be multiple)
                     raw_paths = str(row.get(img_col, ""))
