@@ -1,7 +1,7 @@
 import numpy as np
 import re
 
-from molname_to_SMILES import opsin_query, pubchem_name_to_smiles
+from .molname_to_SMILES import opsin_query, pubchem_name_to_smiles
 from .molecule_segment_obj import MoleculeSegment
 from build.tokenizer.molecule_name import get_molecule_name_probability
 from DECIMER import predict_SMILES

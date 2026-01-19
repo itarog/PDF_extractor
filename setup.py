@@ -142,6 +142,41 @@ class CustomInstallCommand(install):
         else:
             safe_print("Poppler folder already exists — skipping download.")
 
+
+        # --- 4) Download & extract DECIMER locally ---
+        decimer_url = (
+            "https://github.com/Kohulan/DECIMER-Image_Transformer/"
+            "archive/refs/tags/v2.8.0.zip"
+        )
+
+        decimer_dir = project_root / "DECIMER"
+        decimer_zip = project_root / "_decimer_tmp.zip"
+        decimer_stage = project_root / "_decimer_stage"
+
+        if not decimer_dir.exists():
+            safe_print("Downloading DECIMER repository...")
+            try:
+                bio = _dl_bytes(decimer_url)
+                with open(decimer_zip, "wb") as f:
+                    f.write(bio.read())
+
+                with zipfile.ZipFile(decimer_zip, "r") as zf:
+                    zf.extractall(decimer_stage)
+
+                extracted_root = next(decimer_stage.iterdir())
+                shutil.move(str(extracted_root), str(decimer_dir))
+
+                safe_print(f"DECIMER installed locally at: {decimer_dir}")
+
+            except Exception as e:
+                safe_print(f"WARNING: DECIMER install failed: {e}")
+
+            finally:
+                shutil.rmtree(decimer_stage, ignore_errors=True)
+                if decimer_zip.exists():
+                    decimer_zip.unlink()
+        else:
+            safe_print("DECIMER folder already exists — skipping download.")
         # Continue normal installation
         install.run(self)
 
@@ -172,8 +207,6 @@ setup(
     ],
     python_requires=">=3.8",
     install_requires=[
-        "decimer>=2.8.0",
-        # "decimer @ git+https://github.com/Kohulan/DECIMER-Image_Transformer.git@v2.8.0",
         "decimer-segmentation>=1.0.0",
         "PyMuPDF>=1.23.0",
         "pypdf>=3.0.0",
