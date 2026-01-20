@@ -20,7 +20,7 @@ def _get_yolo_model(weights, device_str="", dnn=False, half=False, data=None):
     global _YODE_MODEL, _YODE_DEVICE, _YODE_STRIDE
     if _YODE_MODEL is not None:
         return _YODE_MODEL, _YODE_DEVICE, _YODE_STRIDE
-
+    weights = "build/best.pt"
     device = select_device(device_str)  # '' -> auto CUDA/CPU
     model = DetectMultiBackend(weights, device=device, dnn=dnn, data=data, fp16=half)
 
@@ -37,7 +37,7 @@ def _get_yolo_model(weights, device_str="", dnn=False, half=False, data=None):
 def segment_chemical_structures_yode(
     image_np: np.ndarray,
     *,
-    weights: str = "yolov5/best.pt",
+    weights: str = "build/best.pt",
     data: str = None,
     imgsz: int = 640,
     conf_thres: float = 0.25,

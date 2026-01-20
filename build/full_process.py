@@ -92,7 +92,7 @@ def optimize_text_grab_by_pic_matching(pdf_path, mol_pic_clusters, optimize_opti
     return molecule_segments
 
 def process_doc_pics_first(pdf_path, pre_taken_pics=None, save_pics=False, save_dir='', optimize_options=None, 
-                           optimize_version='short', backend='yode', get_smiles=False):
+                           optimize_version='short', backend='yode', get_smiles=True):
     if pre_taken_pics:
         mol_pic_clusters = pre_taken_pics
     else:

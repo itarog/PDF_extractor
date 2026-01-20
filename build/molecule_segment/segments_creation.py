@@ -46,26 +46,11 @@ def create_molecule_segments(page_lines_with_multi_idx, selected_lines):
         molecule_segments.append(MoleculeSegment(page_lines_with_multi_idx[selected_lines[-1]:]))
     return molecule_segments
 
-# def get_molecule_segment_name(molecule_segment):
-#     possible_lines = molecule_segment.segment_lines[:3]
-#     tokens_percentages, num_of_spaces_list, suspected_lines = get_line_statistics(possible_lines)
-#     selected_line_idx = get_line_based_on_first_over(tokens_percentages, suspected_lines, over_mark=30)
-#     if selected_line_idx:
-#         molecule_name = possible_lines[selected_line_idx[0]]
-#     else:
-#         molecule_name = None
-#     return molecule_name
-
 def clean_molecule_name(molecule_name, replacement=' '):
     invalid_chars = r'[<>:"/\\|?*\x00-\x1F]'
     cleaned_molecule_name = re.sub(invalid_chars, replacement, molecule_name)
     cleaned_molecule_name = cleaned_molecule_name.strip(" .")
     return cleaned_molecule_name
-
-# def get_molecule_segment_name(molecule_segment):
-#     molecule_name = molecule_segment.segment_lines[0][1]
-#     cleaned_molecule_name = clean_molecule_name(molecule_name)
-#     return cleaned_molecule_name
 
 def find_mol_tag(text):
     pattern = r'\((\d+[a-zA-Z]?)\)' # r'\((\d+)\)'
@@ -113,23 +98,9 @@ def locate_molecule_segments(page_lines_with_multi_idx, token_patterns=None, deb
     assign_molecule_segment_name(molecule_segments)
     return molecule_segments
 
-
-# gt_df = pd.read_csv(ground_truth_fname)
-# molecule_names = gt_df.molecule_name.unique()
-# smiles_dict = dict()
-# for nm in molecule_names:
-#     try:
-#         info = opsin_query(nm)
-#         smiles = info.get('smiles')
-#     except Exception as e:
-#         smiles = ''
-#     if smiles == '':
-#         smiles = pubchem_name_to_smiles(nm)
-#     smiles_dict[nm] = smiles
-
-
-def fill_smiles(molecule_segements):
-    for molecule_segment in molecule_segements:
+def fill_smiles(molecule_segments):
+    new_molecule_segments = []
+    for molecule_segment in molecule_segments:
         molecule_name = molecule_segment.molecule_name
         try:
             info = opsin_query(molecule_name)
@@ -142,4 +113,5 @@ def fill_smiles(molecule_segements):
         if len(molecule_segment.mol_pics)>0:
             mol_pic = molecule_segment.mol_pics[0]
             molecule_segment.mol_pic_smiles = predict_SMILES(mol_pic.pic)
-    return molecule_segements
+        new_molecule_segments.append(molecule_segment)
+    return new_molecule_segments

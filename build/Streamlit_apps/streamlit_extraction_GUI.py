@@ -13,11 +13,9 @@ import pandas as pd
 from PIL import Image
 
 project_root = os.path.dirname(os.path.abspath(__file__))
-# os.chdir(project_root)
-# sys.path.insert(0, project_root)
 project_root = os.path.join(project_root, '..', '..')
 sys.path.append(project_root)
-# from build.full_process import process_doc_pics_first
+
 from build.Manager.main import CHEMSIDB
 
 chemsie_db = None
@@ -62,7 +60,7 @@ with tab_process:
                 pdf_path = os.path.join(tmpdir, uploaded_file.name) # tmpdir + uploaded_file.name
                 with open(pdf_path, "wb") as f:
                     f.write(uploaded_file.getbuffer())
-                st.write(f"Mounted temp file, running extractor")
+                # st.write(f"Mounted temp file, running extractor")
 
                 process_pdf(pdf_path, chemsie_db)
 
@@ -113,35 +111,25 @@ with tab_database:
             except Exception:
                 return None
 
-        # def setup_st_text_area(row, col_name):
-        #     original_text = str(row.get(col_name, ""))
-        #     updated_text = st.text_area(col_name, value=original_text, key=f"{col_name}_text_{i}")
-        #     return original_text, updated_text
-        
-        # if chemsie_db.has_data():
-        #     csv_path = st.session_state.get("generated_csv_fpath") # , st.session_state.get("csv_path_input")
-        #     images_fpath = st.session_state.get("generated_images_fpath") #, st.session_state.get("images_path_input"))
-        # else:
-        
-        csv_path = st.text_input("CSV file path", value=chemsie_db.database_csv_path, help="Path to your local CSV file.", key="input_csv_path")
-        images_fpath = st.text_input("Images root folder", value=chemsie_db.image_dir_path, help="Base folder used to resolve relative image paths.", key="input_images_fpath")
+        if chemsie_db.has_data():
+            csv_path = st.session_state.get("generated_csv_fpath") # , st.session_state.get("csv_path_input")
+            images_fpath = st.session_state.get("generated_images_fpath") #, st.session_state.get("images_path_input"))
+        else:
+            csv_path = st.text_input("CSV file path", value=chemsie_db.database_csv_path, help="Path to your local CSV file.", key="input_csv_path")
+            images_fpath = st.text_input("Images root folder", value=chemsie_db.image_dir_path, help="Base folder used to resolve relative image paths.", key="input_images_fpath")
         
         if csv_path!='.csv' and images_fpath!='.dir':
             chemsie_db.load_database(csv_path, images_fpath)
 
         st.markdown("---")
         st.subheader("View setting")
-        page_size = st.number_input("Items per page", 1, 64, 12)
-        thumb_size = st.number_input("Thumbnail max size (px)", 64, 1024, 320)
+        page_size = st.number_input("Items per page", 1, 64, 24)
+        thumb_size = st.number_input("Thumbnail max size (px)", 64, 1024, 225)
 
-        ###########
-        ### EDIT ##
-        ###########
-
-        # st.markdown("---")
-        # st.subheader("Filter")
+        st.markdown("---")
+        st.subheader("Filter")
         
-        # query = st.text_input("Search in text (simple contains)", value="")
+        query = st.number_input("min confidence", 0.0, 1.0, 0.65) # st.number_input("min confidence", 0, 1.0, 0.65) 
 
         if csv_path and images_fpath:
             # -------- Load data --------
@@ -169,13 +157,11 @@ with tab_database:
             #     st.error(f"Missing columns in CSV: {missing_cols}. Available: {list(df.columns)}")
             #     st.stop()
 
-            ###############################
-            ########## EDIT ###############
-            ###############################
+
             # -------- Filtering --------
             work_df = df.copy()
-            # if query and hnmr_col in work_df.columns:
-            #     work_df = work_df[work_df[hnmr_col].fillna("").str.contains(query, case=False, na=False)]
+            if query:
+                work_df = work_df[work_df[conf_score_col]>query]
 
             # Reset index after filtering
             work_df = work_df.reset_index(drop=True)
@@ -202,11 +188,8 @@ with tab_database:
                 with col:
                     st.markdown("---")
                     st.caption(f"Row {i+1} / {N}")
-                    st.text_area('Molecule name:', value=row.get(id_col))
-                    st.text_area('SMILES (from name):', value=row.get(smiles_2_col))
-                    st.text_area('SMILES (from image):', value=row.get(smiles_1_col))
-                    st.text_area('Confidence:', value=row.get(conf_score_col))
-                    # st.write(f"**{id_col}:** {row.get(id_col, '')}")
+                    st.text_area('Molecule name:', value=row.get(id_col), key=f"{id_col}_text_{i}")
+                    st.text_area('Confidence:', value=row.get(conf_score_col), key=f"{conf_score_col}_text_{i}")
 
                     # Show images (can be multiple)
                     raw_paths = str(row.get(img_col, ""))
@@ -227,6 +210,9 @@ with tab_database:
                     st.text_area(cnmr_col, value=row.get(cnmr_col), key=f"{cnmr_col}_text_{i}") 
                     st.text_area(ir_col, value=row.get(ir_col), key=f"{ir_col}_text_{i}") 
                     st.text_area(ms_col, value=row.get(ms_col), key=f"{ms_col}_text_{i}") 
+                    st.text_area('SMILES (from name):', value=row.get(smiles_2_col), key=f"{smiles_2_col}_text_{i}")
+                    st.text_area('SMILES (from image):', value=row.get(smiles_1_col), key=f"{smiles_1_col}_text_{i}")
+
             # -------- Optional: table preview --------
             with st.expander("Data table preview"):
                 st.dataframe(work_df[[c for c in [id_col, hnmr_col] if c and c in work_df.columns]]) # img_col, labels_col

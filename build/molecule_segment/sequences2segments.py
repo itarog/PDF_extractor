@@ -151,7 +151,6 @@ def smooth_bbox_text_test_line(line_1, line_2):
     return line_1, line_2
 
 def smooth_bbox_molecule_segments(molecule_segments):
-    # bugged!!
     for molecule_segment in molecule_segments:
         test_text_lines = molecule_segment.test_text_sequence.test_text_lines
         new_test_text_lines = []
@@ -165,10 +164,7 @@ def smooth_bbox_molecule_segments(molecule_segments):
                 new_test_text_lines.append(new_prev_line)
             else:
                 new_test_text_lines.append(new_test_line)
-        # print(len(test_text_lines)==len(new_test_text_lines))
         molecule_segment.test_text_sequence.test_text_lines = new_test_text_lines
-
-# from copy import deepcopy
 
 def process_molecule_segment_text(molecule_segments, cut_init_segments=False):
     edited_molecule_segments = molecule_segments

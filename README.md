@@ -1,25 +1,36 @@
-# ChemSIE — PDF text & molecule-image extractor
+# ChemSIE - From document-based experimental records to machine-actionable experimental data
 
 ![ChemSIE overview](build/Chemsie_fig1.png)
 
-ChemSIE extracts **chemical analysis text** (e.g., NMR / IR / MS / TLC/Rf) and **molecule figures** from PDF documents, and helps you validate/correct results via a **friendly GUI (Streamlit)** or **Label Studio**.
+**ChemSIE** is a user-guided, automated pipeline for converting **PDF-based experimental records** (e.g., Supplementary Information, theses, internal reports) into **molecule-resolved, machine-actionable experimental datasets**.
 
-This repository contains the code and data accompanying the publication:
-
-> **I. Wallwater, Y. Harnik et al.** “PDF text and image extractor”  
-> DOI: https://doi.org/XXXX
+Many experimentally relevant observables in chemistry are reported in document-based formats where **molecular depictions and characterization measurements are presented together**, yet remain difficult to reuse in automated workflows. ChemSIE addresses this gap by combining layout-aware image detection, molecule-centric document segmentation, and modality-specific text parsing, with optional user validation.
 
 ---
 
-## Highlights
+## Paper
 
-- **One command / one click**: process a single PDF or a whole folder.
-- **Text + figures**: parse analytical text and detect molecule segments in the same run.
-- **Two image backends**:
-  - `yode` (recommended): fast YOLOv5-based detection
-  - `decimer`: image to structure (slower)
-- **Human-in-the-loop**: review results in Streamlit or annotate in Label Studio.
-- **Export-ready**: CSV output + rendered molecule images.
+This repository accompanies the manuscript:
+
+> *ChemSIE: From Document Based Records to Machine Actionable Experimental Data*  
+> Itamar Wallwater, Yonatan Harnik, Ari Pakman, Anat Milo  
+> (preprint)
+
+
+## How it works
+
+ChemSIE is designed around recurring structural patterns in SI documents and theses:
+
+1. **Select PDFs** via GUI, CLI, or Python API.
+2. **Automated extraction and association**:
+   - Detect molecular depictions using **YOLOv5** or **DECIMER Segmentation**.
+   - Preserve spatial metadata for each detected depiction.
+   - Segment the document into molecule-centric regions using reporting heuristics.
+   - Parse characterization text within each molecule segment.
+3. **Validation and curation (optional but recommended)**:
+   - Review/edit extracted text and associations in a **Streamlit GUI**.
+   - Inspect and correct associations in **Label Studio** while viewing the original PDF region.
+4. **Export** a structured database (CSV + linked images) suitable for downstream analysis and FAIR-aligned reuse.
 
 ---
 
@@ -37,97 +48,92 @@ This repository contains the code and data accompanying the publication:
 - [Outputs](#outputs)
 - [Troubleshooting](#troubleshooting)
 - [Citation](#citation)
+- [Acknowledgements](#acknowledgements-and-upstream-projects)
 - [Support](#support)
 
 ---
 
-## Quick start (non‑coders)
+## Quick start (GUI)
 
-If you don’t code, you can still use ChemSIE end to end via the graphical interface.
+If you prefer a point-and-click workflow, use the Streamlit GUI.
 
-1. **Install once** (see [Installation](#installation)).
-2. **Start the GUI**:
-   ```bash
-   conda activate pdf_extractor
-   streamlit run build/Streamlit_apps/streamlit_extraction_GUI.py
-   ```
-3. In the app:
-   - Choose a **single PDF** or a **folder of PDFs**
-   - Pick an image backend (`yode` is the default recommendation)
-   - Click **Run**
-   - Review results and export
+```bash
+conda activate pdf_extractor
+python -m streamlit run build/Streamlit_apps/streamlit_extraction_GUI.py
+```
 
 ---
 
 ## Installation
 
-### 1) Clone the repository
+### 1) Clone
+
 ```bash
 git clone https://github.com/itarog/PDF_extractor.git
 cd PDF_extractor
 ```
 
-### 2) Create a Conda environment (recommended)
+### 2) Create and activate a Conda environment (recommended)
+
 ```bash
 conda create -n pdf_extractor python=3.10
 conda activate pdf_extractor
 ```
 
-### 3) Install the package
+### 3) Install
+
 ```bash
 python -m pip install .
 ```
-
-### Model / binary downloads (first run)
-On first installation or first use, the project may download required assets such as:
-- YOLOv5 model files
-- Poppler binaries (for PDF processing on Windows, if needed)
-- Python dependencies specified by the package
-
-If the YOLOv5 weights file `best.pt` is missing, you can download it from:
-- https://drive.google.com/file/d/1tXX_-RE2sL2U7lRvFfOBUBTIIIN_MhnN/view?usp=sharing
-
-Place `best.pt` inside the YOLOv5 model files directory used by the project.
 
 ---
 
 ## Run ChemSIE
 
-ChemSIE supports three ways to run: **GUI**, **CLI**, and **Python API**.
+ChemSIE supports three entry points that invoke the same backend pipeline.
 
 ### Option A: GUI (Streamlit)
 
 ```bash
 conda activate pdf_extractor
-streamlit run build/Streamlit_apps/streamlit_extraction_GUI.py
+python -m streamlit run build/Streamlit_apps/streamlit_extraction_GUI.py
 ```
 
 ### Option B: Command line (CLI)
 
-Process **text + molecule images**, then open the visualizer:
+If `main.py` lives at repository root:
+
 ```bash
 python main.py --input demo_data --output results --pics --backend yode --visualize
 ```
 
-Process **text + molecule images** (no visualizer):
+If `main.py` lives under `build/` in your checkout:
+
 ```bash
-python main.py --input demo_data --output results --pics --backend yode
+python build/main.py --input demo_data --output results --pics --backend yode --visualize
 ```
 
-Process **text + molecule images** with DECIMER (slower):
-```bash
-python main.py --input demo_data --output results --pics --backend decimer
-```
+Common modes:
 
-Process **text only**:
-```bash
-python main.py --input demo_data --output results
-```
+- Text + molecule images (YOLOv5/YoDe backend):
+  ```bash
+  python main.py --input demo_data --output results --pics --backend yode
+  ```
 
-Open the visualizer for an **already extracted** database:
-```bash
-python main.py --output results --visualize-only
-```
+- Text + molecule images (DECIMER segmentation backend):
+  ```bash
+  python main.py --input demo_data --output results --pics --backend decimer
+  ```
+
+- Text only:
+  ```bash
+  python main.py --input demo_data --output results
+  ```
+
+- Visualize an existing database:
+  ```bash
+  python main.py --output results --visualize-only
+  ```
 
 ### Option C: Python API
 
@@ -148,56 +154,15 @@ cmd_process = process_pdf_dir_end_to_end(
 
 ---
 
-## Human validation
-
-ChemSIE is designed for practical workflows: you can **run automatic extraction**, then **quickly review and fix**.
-
-### Streamlit review
-The Streamlit GUI supports reviewing extracted text and detected images and exporting results.
-
-### Label Studio (annotation workflow)
-
-Fix annotations and image bounding boxes using Label Studio:
-
-1. Start a Label Studio server
-2. Send `.pkl` outputs to Label Studio
-3. Annotate in the web interface
-4. Pull annotations back into the local `.pkl` files
-
-Send PKLs to Label Studio:
-```bash
-python send_to_label_studio.py --pkl-folder results --pdf-dir demo_data/Exdata_1 --api-key <api_key>
-```
-
-Update PKLs from Label Studio annotations:
-```bash
-python update_from_label_studio.py --pkl-folder results --pdf-dir demo_data/Exdata_1 --api-key <api_key>
-```
-
----
-
-## Benchmark data
-
-Benchmark details live here: **build/demo_data/README.md**  
-(See that file for dataset structure, expected outputs, and evaluation notes.)
-
----
-
 ## Outputs
 
-ChemSIE produces outputs intended to be easy to inspect and easy to reuse.
+ChemSIE produces outputs intended to be inspectable and reusable:
 
-- **One `.pkl` per PDF** containing:
-  - molecule segments
-  - bounding boxes
-  - optional extracted molecule images
-  - extracted analytical text snippets
-- **Stage 3 export** (`--visualize` / `--visualize-only`) writes:
-  - a **CSV** with extracted records
-  - **rendered molecule images**
-  - all inside your `--output` directory
+- **One `.pkl` per PDF** containing detected molecule segments, bounding boxes, extracted text blocks, and positional metadata.
+- **Database export** (CSV + linked images directory): one row per molecule-resolved record.
 
-Example access:
+Example access pattern:
+
 ```python
 from build.storeage_obj import load_pickle_by_filename
 
@@ -208,101 +173,110 @@ for segment in result.molecule_segments:
 
 ---
 
-## Troubleshooting
+## Human validation and correction
 
-### “No PDF files found”
-- Ensure the input folder contains `.pdf` files
-- Double-check the path passed to `--input`
+ChemSIE emphasizes transparency and user-guided validation.
 
-### `ModuleNotFoundError`
-- Confirm you installed the package:
-  ```bash
-  python -m pip install .
-  ```
-- Make sure your environment is activated:
-  ```bash
-  conda activate pdf_extractor
-  ```
+- **Streamlit GUI**: unified interface for running extraction and reviewing/editing parsed experimental text.
+- **Label Studio**: cross-check associations by juxtaposing the processed record with the original PDF segment.
 
-### Image extraction fails
-- Image extraction is optional and requires either `yode` or `decimer`
-- If image extraction fails, try running **text-only** mode first:
-  ```bash
-  python main.py --input <pdf_dir> --output results
-  ```
+Send PKLs to Label Studio:
 
-### Label Studio cannot open local PDFs/images
-See the [Label Studio setup](#label-studio-setup) section below and ensure the relevant environment variables are set.
+```bash
+python send_to_label_studio.py --pkl-folder results --pdf-dir demo_data/Exdata_1 --api-key <api_key>
+```
 
----
+Update PKLs from Label Studio annotations:
 
-## Label Studio setup
+```bash
+python update_from_label_studio.py --pkl-folder results --pdf-dir demo_data/Exdata_1 --api-key <api_key>
+```
 
-Label Studio must be allowed to serve your **local PDFs** and **extracted images**.
+### Label Studio local file serving
 
-Choose a root folder that contains your PDFs (examples: `Z:\` on Windows, `/home/<you>` on Linux, `/Users/<you>` on macOS).
+Windows (cmd):
 
-**Windows (cmd):**
 ```cmd
 set LOCAL_FILES_SERVING_ENABLED=true
 set LOCAL_FILES_DOCUMENT_ROOT=Z:\
 label-studio
 ```
 
-**macOS/Linux (bash/zsh):**
+macOS/Linux (bash/zsh):
+
 ```bash
 export LOCAL_FILES_SERVING_ENABLED=true
 export LOCAL_FILES_DOCUMENT_ROOT=/path/to/root
 label-studio
 ```
 
-Or use the helper script (sets env vars and starts Label Studio):
+Or use the helper:
+
 ```bash
 python start_label_studio.py
 ```
 
-After starting Label Studio:
-1. Open http://localhost:8080 and annotate  
-2. Run `update_from_label_studio.py` to pull changes back into the PKLs
-
 ---
 
-## Workflow at a glance
+## Troubleshooting
 
-- Extract PDFs → PKLs  
-  ```bash
-  python main.py --input demo_data/Exdata_1 --output results --pics --backend yode
-  ```
-- (Optional) Send to Label Studio → annotate → update PKLs  
-- Visualize or export  
-  ```bash
-  python main.py --output results --visualize-only
-  ```
+### Streamlit runs in the wrong environment
+
+If `import DECIMER` works in `python` but fails in Streamlit, you are almost certainly running Streamlit from a different interpreter. Use:
+
+```bash
+conda activate pdf_extractor
+python -m streamlit run build/Streamlit_apps/streamlit_extraction_GUI.py
+```
+
+### "No PDF files found"
+
+- Ensure the input folder contains `.pdf` files.
+- Double-check the path passed to `--input`.
 
 ---
 
 ## Citation
 
-If you use ChemSIE in academic work, please cite the associated paper:
+If you use ChemSIE in academic work, please cite the associated paper (details to be added):
 
 ```bibtex
-@article{wallwater_chemsie_XXXX,
-  title   = {PDF text and image extractor},
-  author  = {Wallwater, I. and Harnik, Y. and others},
-  journal = {XXXX},
-  year    = {XXXX},
-  doi     = {XXXX},
+@article{wallwater_chemsie_2025,
+  title   = {ChemSIE: From Document Based Records to Machine Actionable Experimental Data},
+  author  = {Wallwater, Itamar and Harnik, Yonatan and Pakman, Ari and Milo, Anat},
+  year    = {2025},
 }
 ```
 
 ---
 
+## Acknowledgements and upstream projects
+
+ChemSIE builds on many open-source projects. If you use this repository, please also consider citing and acknowledging the upstream tools below.
+
+Core extraction and document processing:
+
+- YOLOv5 (Ultralytics): https://github.com/ultralytics/yolov5
+- DECIMER Transformer: https://github.com/Kohulan/DECIMER-Image_Transformer
+- DECIMER-Segmentation: https://github.com/Kohulan/DECIMER-Segmentation
+- OPSIN (name-to-structure): https://github.com/dan2097/opsin
+- PyMuPDF: https://github.com/pymupdf/PyMuPDF
+- pypdf: https://github.com/py-pdf/pypdf
+- pdf2image: https://github.com/Belval/pdf2image
+- Poppler: https://github.com/oschwartz10612/poppler-windows
+
+Human-in-the-loop tools:
+
+- Streamlit: https://github.com/streamlit/streamlit
+- Label Studio: https://github.com/HumanSignal/label-studio
+
+---
+
 ## Support
 
-- Please open a **GitHub Issue** for bugs, questions, or feature requests.
-- For reproducibility questions, include:
-  - your OS (Windows/macOS/Linux)
-  - Python version (`python --version`)
-  - the exact command you ran
-  - a minimal PDF example if possible
+Please open a GitHub Issue with:
 
+- OS (Windows/macOS/Linux)
+- Python version (`python --version`)
+- exact command you ran
+- a minimal PDF example if possible

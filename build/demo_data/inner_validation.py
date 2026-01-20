@@ -14,9 +14,10 @@ def molecule_segment_to_dict_list(molecule_segment):
         if molecule_segment.mol_pics:
             pic = molecule_segment.mol_pics[0].pic
             entry.update({'mol_pic': pic})
-        mol_pic_smiles = getattr(molecule_segment, 'mol_pic_smiles', None)
-        if mol_pic_smiles:
-            entry.update({'mol_pic_smiles': mol_pic_smiles})
+        if hasattr(molecule_segment, 'mol_pic_smiles'):
+            entry.update({'mol_pic_smiles': getattr(molecule_segment, 'mol_pic_smiles')})
+        if hasattr(molecule_segment, 'molecule_name_smiles'):
+            entry.update({'molecule_name_smiles': getattr(molecule_segment, 'molecule_name_smiles')})
         dict_list.append(entry)
     return dict_list
 

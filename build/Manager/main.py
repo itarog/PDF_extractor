@@ -82,8 +82,8 @@ class CHEMSIDB():
             new_molecule = ExtractedMolecule(f_name, molecule_segment)
             self.update_extracted_molecule(new_molecule)
 
-    def process_single_extracted_file(self, pdf_fpath, backend='yode'):
-        molecule_segments, mol_pic_clusters = process_doc_pics_first(pdf_fpath, backend=backend)
+    def process_single_extracted_file(self, pdf_fpath, backend='yode', get_smiles=True):
+        molecule_segments, mol_pic_clusters = process_doc_pics_first(pdf_fpath, backend=backend, get_smiles=get_smiles)
         f_name = Path(pdf_fpath).name 
         self.update_molecule_segments(molecule_segments, f_name)
 

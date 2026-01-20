@@ -94,8 +94,9 @@ class ExtractedMolecule():
                         temp_dict['test_text'] = test_text
                         self.molecule_tests.append(ExtractedTest(self.file_name, self._counter, temp_dict))
                     except:
-                        print('test_text:', test_text)
-                        print('test_type:', test_type)
+                        pass
+                        # print('test_text:', test_text)
+                        # print('test_type:', test_type)
 
         if self.molecule_smiles_by_name and self.molecule_smiles_by_images:
             try:

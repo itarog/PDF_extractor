@@ -208,6 +208,7 @@ setup(
     python_requires=">=3.8",
     install_requires=[
         "decimer-segmentation>=1.0.0",
+        "decimer>=2.8.0",
         "PyMuPDF>=1.23.0",
         "pypdf>=3.0.0",
         "numpy>=1.24.0",
@@ -222,6 +223,7 @@ setup(
         "python-dateutil>=2.8.0",
         "gdown>=5.1.0",
         "requests>=2.28.0",
+        "streamlit>=1.0.0",
     ],
     extras_require={
         "dev": [
