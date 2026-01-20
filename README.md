@@ -36,7 +36,6 @@ ChemSIE is designed around recurring structural patterns in SI documents and the
 
 ## Table of contents
 
-- [Quick start (non‑coders)](#quick-start-noncoders)
 - [Installation](#installation)
 - [Run ChemSIE](#run-chemsie)
   - [Option A: GUI (Streamlit)](#option-a-gui-streamlit)
@@ -50,17 +49,6 @@ ChemSIE is designed around recurring structural patterns in SI documents and the
 - [Citation](#citation)
 - [Acknowledgements](#acknowledgements-and-upstream-projects)
 - [Support](#support)
-
----
-
-## Quick start (GUI)
-
-If you prefer a point-and-click workflow, use the Streamlit GUI.
-
-```bash
-conda activate pdf_extractor
-python -m streamlit run build/Streamlit_apps/streamlit_extraction_GUI.py
-```
 
 ---
 
