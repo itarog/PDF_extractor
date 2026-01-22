@@ -26,16 +26,10 @@ st.set_page_config(
     layout="wide",
 )
 st.title("Chem Extraction Analysis")
-chemsie_db = CHEMSIDB()
 
-# # -------- Sidebar: Inputs --------
-# with st.sidebar:
-#     st.header("Base settings")
-#     output_path = st.text_input("Output dir", value=Path(os.getcwd()), help="Path to save your local files", key="output_fpath")
-#     st.markdown("---")
-#     st.header("DB settings")
-#     csv_path = st.text_input("CSV file path", value=".csv", help="Path to your local CSV file.", key="csv_path_input")
-#     images_root = st.text_input("Images root folder", value='.dir', help="Base folder used to resolve relative image paths.", key="images_path_input")
+if "chemsie_db" not in st.session_state:
+    st.session_state.chemsie_db = CHEMSIDB()
+chemsie_db = st.session_state.chemsie_db
 
 
 tab_process, tab_database, tab_output_ls, tab_input_ls = st.tabs(["File Processor", "View Results", "Send to Label-studio", "Update from Label-studio"])
@@ -48,29 +42,86 @@ def process_pdf(pdf_path: Path, chemsie_db):
     chemsie_db.process_single_extracted_file(str(pdf_path))
 
 with tab_process:
-    database_name = st.text_input("Database name:", value="My CHEMSIE database", help="Name that will be given to your db", key="db_name")
+    st.subheader("File Processing Dashboard")
+    
+    col1, col2 = st.columns([3, 1])
+    with col1:
+        database_name = st.text_input("Database name:", value="My CHEMSIE database", help="Name that will be given to your db", key="db_name")
+    with col2:
+        if st.button("Clear Queue/History"):
+            st.session_state.processing_queue = {}
+            st.rerun()
+
     uploaded_files = st.file_uploader("Drag and drop files here", accept_multiple_files=True)
 
-    if uploaded_files and st.button("Run processing"):
-        progress = st.progress(0)
-        with tempfile.TemporaryDirectory() as tmpdir:
-            for i, uploaded_file in enumerate(uploaded_files):
-                st.write(f"Processing {uploaded_file.name}")
+    # Initialize queue in session state
+    if "processing_queue" not in st.session_state:
+        st.session_state.processing_queue = {}
 
-                pdf_path = os.path.join(tmpdir, uploaded_file.name) # tmpdir + uploaded_file.name
-                with open(pdf_path, "wb") as f:
-                    f.write(uploaded_file.getbuffer())
-                # st.write(f"Mounted temp file, running extractor")
+    # Update queue with new uploads
+    if uploaded_files:
+        for uf in uploaded_files:
+            if uf.name not in st.session_state.processing_queue:
+                st.session_state.processing_queue[uf.name] = {
+                    "status": "Pending",
+                    "message": "Ready to process"
+                }
 
-                process_pdf(pdf_path, chemsie_db)
+    # Display Dashboard
+    if st.session_state.processing_queue:
+        # Create DataFrame for display
+        queue_data = [
+            {"File": fname, "Status": info["status"], "Message": info["message"]}
+            for fname, info in st.session_state.processing_queue.items()
+        ]
+        status_table = st.empty()
+        status_table.dataframe(pd.DataFrame(queue_data), use_container_width=True)
 
-                progress.progress((i + 1) / len(uploaded_files))
-        
-        st.write(f"Finished Extraction, setting db")
-        chemsie_db.setup_database(database_name = database_name)
-        st.session_state["generated_csv_fpath"] = chemsie_db.database_csv_path
-        st.session_state["generated_images_fpath"] = chemsie_db.image_dir_path
-        st.success("All files processed")
+        if st.button("Run processing"):
+            # Identify pending files
+            pending = [f for f in uploaded_files if st.session_state.processing_queue[f.name]["status"] in ["Pending", "Failed"]]
+            
+            if not pending:
+                st.info("No pending files to process.")
+            else:
+                progress_bar = st.progress(0)
+                
+                with tempfile.TemporaryDirectory() as tmpdir:
+                    for i, uploaded_file in enumerate(pending):
+                        fname = uploaded_file.name
+                        
+                        # Update status to Processing
+                        st.session_state.processing_queue[fname]["status"] = "Processing"
+                        st.session_state.processing_queue[fname]["message"] = "Extracting..."
+                        
+                        # Update table
+                        queue_data = [{"File": f, "Status": d["status"], "Message": d["message"]} for f, d in st.session_state.processing_queue.items()]
+                        status_table.dataframe(pd.DataFrame(queue_data), use_container_width=True)
+
+                        try:
+                            pdf_path = os.path.join(tmpdir, fname)
+                            with open(pdf_path, "wb") as f:
+                                f.write(uploaded_file.getbuffer())
+
+                            process_pdf(pdf_path, chemsie_db)
+
+                            st.session_state.processing_queue[fname]["status"] = "Completed"
+                            st.session_state.processing_queue[fname]["message"] = "Done"
+                        except Exception as e:
+                            st.session_state.processing_queue[fname]["status"] = "Failed"
+                            st.session_state.processing_queue[fname]["message"] = str(e)
+                        
+                        progress_bar.progress((i + 1) / len(pending))
+                
+                # Final update
+                queue_data = [{"File": f, "Status": d["status"], "Message": d["message"]} for f, d in st.session_state.processing_queue.items()]
+                status_table.dataframe(pd.DataFrame(queue_data), use_container_width=True)
+
+                st.write(f"Finished Extraction, setting db")
+                chemsie_db.setup_database(database_name = database_name)
+                st.session_state["generated_csv_fpath"] = chemsie_db.database_csv_path
+                st.session_state["generated_images_fpath"] = chemsie_db.image_dir_path
+                st.success("Processing cycle completed")
 
 ####
 #### Tab 2
