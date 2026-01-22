@@ -1,0 +1,46 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+env/
+.venv/
+.env
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# ChemSIE Processing State
+chemsie_processing_state.json
+
+# Generated Data and Results
+results/
+output/
+*.pkl
+*.log
+
+# Generated Database Files
+# Ignore generated CSVs but keep those in demo_data if they exist
+*.csv
+!demo_data/**/*.csv
+
+# Database directories (often named *_database_*)
+*_database_*/
+
+# Label Studio Exports and Configs
+label_studio_output/
+label_studio_projects.json
+chemsie_ls_export/
+
+# Streamlit / App specific outputs
+chemsie_updated.csv.json
+results_with_images.json
+results.json

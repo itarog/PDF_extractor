@@ -12,6 +12,7 @@ import os
 import sys
 import argparse
 from pathlib import Path
+import logging
 
 # Change to project directory to allow imports to work
 project_root = os.path.dirname(os.path.abspath(__file__))
@@ -26,6 +27,9 @@ from post_processing import get_filled_matched_molecule_segments
 from streamlit_wrappers import gen_database_from_ms_list
 import subprocess
 
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
 def process_single_pdf(pdf_path, output_dir, process_pics=True, save_images=False, img_backend="decimer", verbose=True):
         """
@@ -40,7 +44,7 @@ def process_single_pdf(pdf_path, output_dir, process_pics=True, save_images=Fals
         Returns:
             bool: True if successful, False otherwise
         """
-    # try:
+    try:
         pdf_file = os.path.basename(pdf_path)
         
         if verbose:
@@ -51,7 +55,7 @@ def process_single_pdf(pdf_path, output_dir, process_pics=True, save_images=Fals
         
         # Process document (text + optionally images)
         if process_pics:
-            # try:
+            try:
                 # For image extraction, use the pics-first approach with optimization
                 molecule_segments, mol_pic_clusters = full_process.process_doc_pics_first(
                     pdf_path,
@@ -70,17 +74,17 @@ def process_single_pdf(pdf_path, output_dir, process_pics=True, save_images=Fals
                     molecule_segments, mol_pic_clusters = full_process.process_doc_text_first(
                         pdf_path, 
                         process_pics=False
-                    )
-                    
-            # except Exception as e:
-            #     if verbose:
-            #         print(f"Image extraction failed for {pdf_file}: {e}")
-            #         print("  Falling back to text-only processing")
-            #     # Fall back to text-only
-            #     molecule_segments, mol_pic_clusters = full_process.process_doc_text_first(
-            #         pdf_path, 
-            #         process_pics=False
-            #    )
+                        ) 
+            except Exception as e:
+                if verbose:
+                    print(f"Image extraction failed for {pdf_file}: {e}")
+                    print("  Falling back to text-only processing")
+                logger.warning(f"Image extraction failed for {pdf_file}. Falling back to text-only.", exc_info=True)
+                # Fall back to text-only
+                molecule_segments, mol_pic_clusters = full_process.process_doc_text_first(
+                    pdf_path, 
+                    process_pics=False
+               )
         else:
             molecule_segments, mol_pic_clusters = full_process.process_doc_text_first(
                 pdf_path, 
@@ -106,10 +110,11 @@ def process_single_pdf(pdf_path, output_dir, process_pics=True, save_images=Fals
         
         return True
         
-    # except Exception as e:
-    #     if verbose:
-    #         print(f"✗ Failed to process {pdf_file}: {str(e)}")
-    #     return False
+    except Exception as e:
+        if verbose:
+            print(f"✗ Failed to process {pdf_file}: {str(e)}")
+        logger.error(f"Failed to process {pdf_file}", exc_info=True)
+        return False
 
 
 def launch_streamlit_visualization(pkl_folder, output_folder=None, database_name='molecule_database', graph_sketch=False, verbose=True):
@@ -422,4 +427,3 @@ Examples:
 
 if __name__ == "__main__":
     main()
-

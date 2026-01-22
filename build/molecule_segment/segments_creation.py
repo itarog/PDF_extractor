@@ -1,10 +1,13 @@
 import numpy as np
 import re
+import logging
 
 from .molname_to_SMILES import opsin_query, pubchem_name_to_smiles
 from .molecule_segment_obj import MoleculeSegment
 from build.tokenizer.molecule_name import get_molecule_name_probability
 from DECIMER import predict_SMILES
+
+logger = logging.getLogger(__name__)
 
 def get_line_statistics(page_lines_with_multi_idx, token_patterns=None, debugging=False):
     tokens_percentages, num_of_spaces_list, suspected_lines = [], [], []
@@ -106,6 +109,7 @@ def fill_smiles(molecule_segments):
             info = opsin_query(molecule_name)
             smiles = info.get('smiles')
         except Exception as e:
+            logger.debug(f"SMILES lookup failed for '{molecule_name}': {e}")
             smiles = ''
         if smiles == '':
             smiles = pubchem_name_to_smiles(molecule_name)
