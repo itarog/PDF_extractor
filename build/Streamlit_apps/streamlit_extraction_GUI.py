@@ -52,6 +52,21 @@ def load_queue_state():
         with open(STATE_FILE, 'r') as f:
             st.session_state.processing_queue = json.load(f)
 
+def get_status_icon(status: str) -> str:
+    """Return emoji icon for status."""
+    status_icons = {
+        "Completed": "✅",
+        "Processing": "⏳",
+        "Pending": "⏸️",
+        "Failed": "❌"
+    }
+    return status_icons.get(status, "❓")
+
+def format_status_display(status: str) -> str:
+    """Format status with icon."""
+    icon = get_status_icon(status)
+    return f"{icon} {status}"
+
 with tab_process:
     st.subheader("File Processing Dashboard")
     
@@ -85,9 +100,13 @@ with tab_process:
 
     # Display Dashboard
     if st.session_state.processing_queue:
-        # Create DataFrame for display
+        # Create DataFrame for display with visual indicators
         queue_data = [
-            {"File": fname, "Status": info["status"], "Message": info["message"]}
+            {
+                "File": fname, 
+                "Status": format_status_display(info["status"]), 
+                "Message": info["message"]
+            }
             for fname, info in st.session_state.processing_queue.items()
         ]
         status_table = st.empty()
@@ -101,7 +120,14 @@ with tab_process:
                     "message": "Waiting to start..."
                 }
                 # Refresh table
-                queue_data = [{"File": f, "Status": d["status"], "Message": d["message"]} for f, d in st.session_state.processing_queue.items()]
+                queue_data = [
+                    {
+                        "File": f, 
+                        "Status": format_status_display(d["status"]), 
+                        "Message": d["message"]
+                    } 
+                    for f, d in st.session_state.processing_queue.items()
+                ]
                 status_table.dataframe(pd.DataFrame(queue_data), use_container_width=True)
 
             # Identify pending files
@@ -117,7 +143,14 @@ with tab_process:
                     st.session_state.processing_queue["Backend Initialization"]["status"] = "Processing"
                     st.session_state.processing_queue["Backend Initialization"]["message"] = "Loading models..."
                     
-                    queue_data = [{"File": f, "Status": d["status"], "Message": d["message"]} for f, d in st.session_state.processing_queue.items()]
+                    queue_data = [
+                        {
+                            "File": f, 
+                            "Status": format_status_display(d["status"]), 
+                            "Message": d["message"]
+                        } 
+                        for f, d in st.session_state.processing_queue.items()
+                    ]
                     status_table.dataframe(pd.DataFrame(queue_data), use_container_width=True)
                     
                     try:
@@ -135,7 +168,14 @@ with tab_process:
                         st.stop()
                     
                     # Refresh table
-                    queue_data = [{"File": f, "Status": d["status"], "Message": d["message"]} for f, d in st.session_state.processing_queue.items()]
+                    queue_data = [
+                        {
+                            "File": f, 
+                            "Status": format_status_display(d["status"]), 
+                            "Message": d["message"]
+                        } 
+                        for f, d in st.session_state.processing_queue.items()
+                    ]
                     status_table.dataframe(pd.DataFrame(queue_data), use_container_width=True)
                 
                 with tempfile.TemporaryDirectory() as tmpdir:
@@ -148,7 +188,14 @@ with tab_process:
                         save_queue_state()
                         
                         # Update table
-                        queue_data = [{"File": f, "Status": d["status"], "Message": d["message"]} for f, d in st.session_state.processing_queue.items()]
+                        queue_data = [
+                            {
+                                "File": f, 
+                                "Status": format_status_display(d["status"]), 
+                                "Message": d["message"]
+                            } 
+                            for f, d in st.session_state.processing_queue.items()
+                        ]
                         status_table.dataframe(pd.DataFrame(queue_data), use_container_width=True)
 
                         try:
@@ -182,7 +229,14 @@ with tab_process:
                         progress_bar.progress((i + 1) / len(pending))
                 
                 # Final update
-                queue_data = [{"File": f, "Status": d["status"], "Message": d["message"]} for f, d in st.session_state.processing_queue.items()]
+                queue_data = [
+                    {
+                        "File": f, 
+                        "Status": format_status_display(d["status"]), 
+                        "Message": d["message"]
+                    } 
+                    for f, d in st.session_state.processing_queue.items()
+                ]
                 status_table.dataframe(pd.DataFrame(queue_data), use_container_width=True)
 
                 st.write(f"Finished Extraction, setting db")
