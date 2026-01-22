@@ -16,8 +16,6 @@ project_root = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.join(project_root, '..', '..')
 sys.path.append(project_root)
 
-from build.Manager.main import CHEMSIDB
-
 chemsie_db = None
 
 # ---------- Page config ----------
@@ -28,7 +26,7 @@ st.set_page_config(
 st.title("Chem Extraction Analysis")
 
 if "chemsie_db" not in st.session_state:
-    st.session_state.chemsie_db = CHEMSIDB()
+    st.session_state.chemsie_db = None
 chemsie_db = st.session_state.chemsie_db
 
 
@@ -78,13 +76,48 @@ with tab_process:
         status_table.dataframe(pd.DataFrame(queue_data), use_container_width=True)
 
         if st.button("Run processing"):
+            # Check if backend needs initialization
+            if st.session_state.chemsie_db is None:
+                st.session_state.processing_queue["Backend Initialization"] = {
+                    "status": "Pending",
+                    "message": "Waiting to start..."
+                }
+                # Refresh table
+                queue_data = [{"File": f, "Status": d["status"], "Message": d["message"]} for f, d in st.session_state.processing_queue.items()]
+                status_table.dataframe(pd.DataFrame(queue_data), use_container_width=True)
+
             # Identify pending files
             pending = [f for f in uploaded_files if st.session_state.processing_queue[f.name]["status"] in ["Pending", "Failed"]]
             
-            if not pending:
+            if not pending and st.session_state.chemsie_db is not None:
                 st.info("No pending files to process.")
             else:
                 progress_bar = st.progress(0)
+                
+                # Initialize backend if needed
+                if st.session_state.chemsie_db is None:
+                    st.session_state.processing_queue["Backend Initialization"]["status"] = "Processing"
+                    st.session_state.processing_queue["Backend Initialization"]["message"] = "Loading models..."
+                    
+                    queue_data = [{"File": f, "Status": d["status"], "Message": d["message"]} for f, d in st.session_state.processing_queue.items()]
+                    status_table.dataframe(pd.DataFrame(queue_data), use_container_width=True)
+                    
+                    try:
+                        from build.Manager.main import CHEMSIDB
+                        st.session_state.chemsie_db = CHEMSIDB()
+                        chemsie_db = st.session_state.chemsie_db
+                        
+                        st.session_state.processing_queue["Backend Initialization"]["status"] = "Completed"
+                        st.session_state.processing_queue["Backend Initialization"]["message"] = "Done"
+                    except Exception as e:
+                        st.session_state.processing_queue["Backend Initialization"]["status"] = "Failed"
+                        st.session_state.processing_queue["Backend Initialization"]["message"] = str(e)
+                        st.error(f"Backend initialization failed: {e}")
+                        st.stop()
+                    
+                    # Refresh table
+                    queue_data = [{"File": f, "Status": d["status"], "Message": d["message"]} for f, d in st.session_state.processing_queue.items()]
+                    status_table.dataframe(pd.DataFrame(queue_data), use_container_width=True)
                 
                 with tempfile.TemporaryDirectory() as tmpdir:
                     for i, uploaded_file in enumerate(pending):
@@ -162,7 +195,10 @@ with tab_database:
             except Exception:
                 return None
 
-        if chemsie_db.has_data():
+        if chemsie_db is None:
+            st.warning("Backend not initialized. Please run processing in 'File Processor' tab.")
+            st.stop()
+        elif chemsie_db.has_data():
             csv_path = st.session_state.get("generated_csv_fpath") # , st.session_state.get("csv_path_input")
             images_fpath = st.session_state.get("generated_images_fpath") #, st.session_state.get("images_path_input"))
         else:
@@ -311,7 +347,10 @@ with tab_output_ls:
     # Data Selection Section
     st.subheader("2. Select Data to Export")
     
-    if not chemsie_db.has_data():
+    if chemsie_db is None:
+        st.warning("Backend not initialized. Please run processing in 'File Processor' tab.")
+        st.stop()
+    elif not chemsie_db.has_data():
         # Load from CSV if available
         csv_path = st.text_input(
             "CSV file path for export",
@@ -333,7 +372,7 @@ with tab_output_ls:
                 except Exception as e:
                     st.error(f"Failed to load database: {e}")
     
-    if chemsie_db.has_data():
+    if chemsie_db is not None and chemsie_db.has_data():
         export_mode = st.radio(
             "Export mode",
             ["All molecules", "Filtered by confidence"],
@@ -487,7 +526,7 @@ with tab_output_ls:
                     st.error(f"❌ Export failed: {str(e)}")
                     import traceback
                     st.error(traceback.format_exc())
-    else:
+    elif chemsie_db is not None:
         st.info("ℹ️ No data loaded. Please process PDFs in Tab 1 or load an existing database.")
 
 
@@ -575,7 +614,10 @@ with tab_input_ls:
     # Import Destination
     st.subheader("3. Select Destination")
     
-    if chemsie_db.has_data():
+    if chemsie_db is None:
+        st.warning("Backend not initialized. Please run processing in 'File Processor' tab.")
+        st.stop()
+    elif chemsie_db.has_data():
         use_current_db = st.checkbox(
             "Update current database",
             value=True,
