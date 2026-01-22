@@ -141,8 +141,21 @@ with tab_process:
                             st.session_state.processing_queue[fname]["status"] = "Completed"
                             st.session_state.processing_queue[fname]["message"] = "Done"
                         except Exception as e:
+                            import traceback
+                            traceback.print_exc()
+                            
+                            error_msg = str(e)
+                            if "timeout" in error_msg.lower():
+                                error_type = "Timeout"
+                            elif "pdf" in error_msg.lower():
+                                error_type = "PDF Error"
+                            elif "image" in error_msg.lower():
+                                error_type = "Image Error"
+                            else:
+                                error_type = "Processing Error"
+                                
                             st.session_state.processing_queue[fname]["status"] = "Failed"
-                            st.session_state.processing_queue[fname]["message"] = str(e)
+                            st.session_state.processing_queue[fname]["message"] = f"{error_type}: {error_msg}"
                         
                         progress_bar.progress((i + 1) / len(pending))
                 

@@ -1,6 +1,9 @@
 import requests
 from urllib.parse import quote
 from rdkit import Chem
+import logging
+
+logger = logging.getLogger(__name__)
 
 OPSIN_BASE = "https://opsin.ch.cam.ac.uk/opsin/"
 
@@ -17,8 +20,15 @@ def opsin_query(name: str, out_format: str = "json", timeout: int = 10):
         raise ValueError("Empty name provided.")
     name_enc = quote(name, safe="")   # encode all special chars
     url = f"{OPSIN_BASE}{name_enc}.{out_format}"
-    resp = requests.get(url, timeout=timeout)
-    resp.raise_for_status()
+    try:
+        resp = requests.get(url, timeout=timeout)
+        resp.raise_for_status()
+    except requests.exceptions.Timeout:
+        logger.warning(f"OPSIN query timed out for '{name}'")
+        raise
+    except requests.exceptions.RequestException as e:
+        logger.warning(f"OPSIN query failed for '{name}': {e}")
+        raise
 
     if out_format.lower() == "json":
         data = resp.json()
