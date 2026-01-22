@@ -3,6 +3,7 @@ import os
 import streamlit as st
 import time
 import sys
+import json
 import tempfile
 import fitz
 from pathlib import Path
@@ -39,6 +40,18 @@ tab_process, tab_database, tab_output_ls, tab_input_ls = st.tabs(["File Processo
 def process_pdf(pdf_path: Path, chemsie_db):
     chemsie_db.process_single_extracted_file(str(pdf_path))
 
+STATE_FILE = "chemsie_processing_state.json"
+
+def save_queue_state():
+    if "processing_queue" in st.session_state:
+        with open(STATE_FILE, 'w') as f:
+            json.dump(st.session_state.processing_queue, f)
+
+def load_queue_state():
+    if os.path.exists(STATE_FILE):
+        with open(STATE_FILE, 'r') as f:
+            st.session_state.processing_queue = json.load(f)
+
 with tab_process:
     st.subheader("File Processing Dashboard")
     
@@ -48,6 +61,8 @@ with tab_process:
     with col2:
         if st.button("Clear Queue/History"):
             st.session_state.processing_queue = {}
+            if os.path.exists(STATE_FILE):
+                os.remove(STATE_FILE)
             st.rerun()
 
     uploaded_files = st.file_uploader("Drag and drop files here", accept_multiple_files=True)
@@ -55,6 +70,8 @@ with tab_process:
     # Initialize queue in session state
     if "processing_queue" not in st.session_state:
         st.session_state.processing_queue = {}
+        # Try loading from file if empty
+        load_queue_state()
 
     # Update queue with new uploads
     if uploaded_files:
@@ -64,6 +81,7 @@ with tab_process:
                     "status": "Pending",
                     "message": "Ready to process"
                 }
+        save_queue_state()
 
     # Display Dashboard
     if st.session_state.processing_queue:
@@ -109,6 +127,7 @@ with tab_process:
                         
                         st.session_state.processing_queue["Backend Initialization"]["status"] = "Completed"
                         st.session_state.processing_queue["Backend Initialization"]["message"] = "Done"
+                        save_queue_state()
                     except Exception as e:
                         st.session_state.processing_queue["Backend Initialization"]["status"] = "Failed"
                         st.session_state.processing_queue["Backend Initialization"]["message"] = str(e)
@@ -126,6 +145,7 @@ with tab_process:
                         # Update status to Processing
                         st.session_state.processing_queue[fname]["status"] = "Processing"
                         st.session_state.processing_queue[fname]["message"] = "Extracting..."
+                        save_queue_state()
                         
                         # Update table
                         queue_data = [{"File": f, "Status": d["status"], "Message": d["message"]} for f, d in st.session_state.processing_queue.items()]
@@ -140,6 +160,7 @@ with tab_process:
 
                             st.session_state.processing_queue[fname]["status"] = "Completed"
                             st.session_state.processing_queue[fname]["message"] = "Done"
+                            save_queue_state()
                         except Exception as e:
                             import traceback
                             traceback.print_exc()
@@ -156,6 +177,7 @@ with tab_process:
                                 
                             st.session_state.processing_queue[fname]["status"] = "Failed"
                             st.session_state.processing_queue[fname]["message"] = f"{error_type}: {error_msg}"
+                            save_queue_state()
                         
                         progress_bar.progress((i + 1) / len(pending))
                 
@@ -209,8 +231,20 @@ with tab_database:
                 return None
 
         if chemsie_db is None:
-            st.warning("Backend not initialized. Please run processing in 'File Processor' tab.")
-            st.stop()
+            st.warning("Backend not initialized.")
+            if st.button("Initialize Backend to Load Database"):
+                with st.spinner("Initializing backend..."):
+                    try:
+                        from build.Manager.main import CHEMSIDB
+                        st.session_state.chemsie_db = CHEMSIDB()
+                        chemsie_db = st.session_state.chemsie_db
+                        st.success("Backend initialized!")
+                        st.rerun()
+                    except Exception as e:
+                        st.error(f"Failed to initialize backend: {e}")
+                        st.stop()
+            else:
+                st.stop()
         elif chemsie_db.has_data():
             csv_path = st.session_state.get("generated_csv_fpath") # , st.session_state.get("csv_path_input")
             images_fpath = st.session_state.get("generated_images_fpath") #, st.session_state.get("images_path_input"))
@@ -219,7 +253,12 @@ with tab_database:
             images_fpath = st.text_input("Images root folder", value=chemsie_db.image_dir_path, help="Base folder used to resolve relative image paths.", key="input_images_fpath")
         
         if csv_path!='.csv' and images_fpath!='.dir':
-            chemsie_db.load_database(csv_path, images_fpath)
+            if st.button("Load Database"):
+                chemsie_db.load_database(csv_path, images_fpath)
+                st.session_state["generated_csv_fpath"] = csv_path
+                st.session_state["generated_images_fpath"] = images_fpath
+                st.success("Database loaded successfully!")
+                st.rerun()
 
         st.markdown("---")
         st.subheader("View setting")
