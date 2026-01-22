@@ -23,7 +23,7 @@ ChemSIE is designed around recurring structural patterns in SI documents and the
 
 1. **Select PDFs** via GUI, CLI, or Python API.
 2. **Automated extraction and association**:
-   - Detect molecular depictions using **YOLOv5** or **DECIMER Segmentation**.
+   - Detect molecular depictions using **YoDe** or **DECIMER Segmentation**.
    - Preserve spatial metadata for each detected depiction.
    - Segment the document into molecule-centric regions using reporting heuristics.
    - Parse characterization text within each molecule segment.
@@ -161,7 +161,7 @@ for segment in result.molecule_segments:
 
 ---
 
-## Human validation and correction
+## Manual validation and correction
 
 ChemSIE emphasizes transparency and user-guided validation.
 
@@ -244,6 +244,7 @@ ChemSIE builds on many open-source projects. If you use this repository, please 
 
 Core extraction and document processing:
 
+- Yode: https://github.com/OneChorm/YoDe-Segmentation
 - YOLOv5 (Ultralytics): https://github.com/ultralytics/yolov5
 - DECIMER Transformer: https://github.com/Kohulan/DECIMER-Image_Transformer
 - DECIMER-Segmentation: https://github.com/Kohulan/DECIMER-Segmentation
