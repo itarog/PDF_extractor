@@ -192,6 +192,30 @@ def gen_database_from_extracted_molecules(extracted_molecule_list, image_dir=Non
         mol_dict['molecule_smiles_by_name'] = extracted_mol.molecule_smiles_by_name
         mol_dict['molecule_smiles_confidence_score'] = extracted_mol.molecule_smiles_confidence_score
 
+        # --- Add Provenance Information ---
+        if extracted_mol.provenance_segment:
+            prov_seg = extracted_mol.provenance_segment
+            mol_dict['provenance_page'] = prov_seg.start_page
+            
+            # Calculate the union of all bounding boxes for the segment
+            min_x0, min_y0 = float('inf'), float('inf')
+            max_x1, max_y1 = 0, 0
+            if prov_seg.segment_lines:
+                for _, _, bbox in prov_seg.segment_lines:
+                    # Bbox is (y0, x0, y1, x1), convert to (x0, y0, x1, y1) for consistency
+                    y0, x0, y1, x1 = bbox
+                    min_x0 = min(min_x0, x0)
+                    min_y0 = min(min_y0, y0)
+                    max_x1 = max(max_x1, x1)
+                    max_y1 = max(max_y1, y1)
+                mol_dict['provenance_bbox'] = f"{min_x0},{min_y0},{max_x1},{max_y1}"
+            else:
+                mol_dict['provenance_bbox'] = ""
+        else:
+            mol_dict['provenance_page'] = ""
+            mol_dict['provenance_bbox'] = ""
+        # ------------------------------------
+
         img = extracted_mol.molecule_image
         mol_dict['molecule_np_array'] = img
         if not img is None:

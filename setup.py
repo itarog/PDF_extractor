@@ -146,7 +146,7 @@ class CustomInstallCommand(install):
         # --- 4) Download & extract DECIMER locally ---
         decimer_url = (
             "https://github.com/Kohulan/DECIMER-Image_Transformer/"
-            "archive/refs/tags/v2.8.0.zip"
+            "archive/main.zip"
         )
 
         decimer_dir = project_root / "DECIMER"

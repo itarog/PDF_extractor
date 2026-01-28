@@ -82,15 +82,23 @@ with tab_process:
 
     uploaded_files = st.file_uploader("Drag and drop files here", accept_multiple_files=True)
 
+    # Initialize PDF bytes cache in session state
+    if 'pdf_files_bytes' not in st.session_state:
+        st.session_state['pdf_files_bytes'] = {}
+
     # Initialize queue in session state
     if "processing_queue" not in st.session_state:
         st.session_state.processing_queue = {}
         # Try loading from file if empty
         load_queue_state()
 
-    # Update queue with new uploads
+    # Update queue and PDF bytes cache with new uploads
     if uploaded_files:
         for uf in uploaded_files:
+            # Store PDF bytes for later use
+            if uf.name not in st.session_state['pdf_files_bytes']:
+                st.session_state['pdf_files_bytes'][uf.name] = uf.getvalue()
+
             if uf.name not in st.session_state.processing_queue:
                 st.session_state.processing_queue[uf.name] = {
                     "status": "Pending",
@@ -249,7 +257,25 @@ with tab_process:
 #### Tab 2
 ####
 
-with tab_database:    
+with tab_database:
+        # -------- Provenance Helper --------
+        @st.cache_data(show_spinner=False)
+        def highlight_provenance_on_page(pdf_bytes: bytes, page_num: int, bbox_str: str, color: tuple = (1, 0, 0), width: int = 2) -> Image.Image | None:
+            if not pdf_bytes or not bbox_str:
+                return None
+            try:
+                bbox_coords = [float(c) for c in bbox_str.split(',')]
+                doc = fitz.open(stream=pdf_bytes, filetype="pdf")
+                page = doc.load_page(page_num)
+                rect = fitz.Rect(bbox_coords)
+                page.draw_rect(rect, color=color, width=width)
+                pix = page.get_pixmap(dpi=200)
+                doc.close()
+                return Image.open(io.BytesIO(pix.tobytes("png")))
+            except Exception as e:
+                st.error(f"Failed to render provenance highlight: {e}")
+                return None
+
         # -------- Helpers --------
         @st.cache_data(show_spinner=False)
         def load_df(path: str) -> pd.DataFrame:
@@ -257,10 +283,17 @@ with tab_database:
             if not p.exists():
                 st.warning(f"CSV not found: {p.resolve()}")
                 return pd.DataFrame()
+            if os.path.getsize(p) == 0:
+                st.warning(f"CSV file is empty: {path}")
+                return pd.DataFrame()
             try:
                 df = pd.read_csv(p)
             except Exception:
-                df = pd.read_csv(p, sep="\t")
+                try:
+                    df = pd.read_csv(p, sep="\t")
+                except Exception as e:
+                    st.error(f"Failed to read CSV {path}: {e}")
+                    return pd.DataFrame()
             return df
 
         @st.cache_data(show_spinner=False)
@@ -341,8 +374,12 @@ with tab_database:
                 ms_col = "MS"
                 img_col = "image_path"
                 
+                # --- New Provenance Columns ---
+                prov_page_col = 'provenance_page'
+                prov_bbox_col = 'provenance_bbox'
+                file_name_col = 'file_name'
 
-                all_cols = [id_col, hnmr_col, cnmr_col, ir_col, ms_col, img_col]
+                all_cols = [id_col, hnmr_col, cnmr_col, ir_col, ms_col, img_col, prov_page_col, prov_bbox_col, file_name_col]
                 all_cols = [col for col in all_cols if col in df.columns]
                 # missing_cols = [c for c in all_cols if c and c not in df.columns]
                 # if missing_cols:
@@ -381,6 +418,21 @@ with tab_database:
                             st.caption(f"Row {i+1} / {N}")
                             st.text_area('Molecule name:', value=row.get(id_col), key=f"{id_col}_text_{i}")
                             st.text_area('Confidence:', value=row.get(conf_score_col), key=f"{conf_score_col}_text_{i}")
+
+                            # --- Visual Provenance Button ---
+                            if prov_page_col in row and pd.notna(row[prov_page_col]) and prov_bbox_col in row and row[prov_bbox_col]:
+                                if st.button("Show in PDF", key=f"show_pdf_{i}"):
+                                    pdf_bytes = st.session_state.get('pdf_files_bytes', {}).get(row[file_name_col])
+                                    if pdf_bytes:
+                                        highlighted_img = highlight_provenance_on_page(
+                                            pdf_bytes, int(row[prov_page_col]), row[prov_bbox_col]
+                                        )
+                                        if highlighted_img:
+                                            with st.expander("Source Location in PDF", expanded=True):
+                                                st.image(highlighted_img, use_column_width=True)
+                                    else:
+                                        st.warning(f"Original PDF '{row[file_name_col]}' not found in session. Please upload it in the 'File Processor' tab.")
+                            # --------------------------------
 
                             # Show images (can be multiple)
                             raw_paths = str(row.get(img_col, ""))

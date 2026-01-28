@@ -1,4 +1,5 @@
 # --- Add near the top, with your other imports ---
+import os
 import numpy as np
 import torch
 from yolov5.utils.augmentations import letterbox
@@ -13,14 +14,17 @@ _YODE_STRIDE = 32  # will be overwritten after model load
 
 torch.serialization.add_safe_globals([Model])
 
-def _get_yolo_model(weights, device_str="", dnn=False, half=False, data=None):
+def _get_yolo_model(device_str="", dnn=False, half=False, data=None):
     """
     Load (or return cached) YOLOv5 model for inference.
     """
     global _YODE_MODEL, _YODE_DEVICE, _YODE_STRIDE
     if _YODE_MODEL is not None:
         return _YODE_MODEL, _YODE_DEVICE, _YODE_STRIDE
-    weights = "build/best.pt"
+    
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    weights = os.path.join(current_dir, 'best.pt')
+
     device = select_device(device_str)  # '' -> auto CUDA/CPU
     model = DetectMultiBackend(weights, device=device, dnn=dnn, data=data, fp16=half)
 
@@ -37,7 +41,6 @@ def _get_yolo_model(weights, device_str="", dnn=False, half=False, data=None):
 def segment_chemical_structures_yode(
     image_np: np.ndarray,
     *,
-    weights: str = "build/best.pt",
     data: str = None,
     imgsz: int = 640,
     conf_thres: float = 0.25,
@@ -58,7 +61,7 @@ def segment_chemical_structures_yode(
     assert isinstance(image_np, np.ndarray) and image_np.ndim == 3 and image_np.shape[2] == 3, \
         "image_np must be a HxWx3 BGR uint8 NumPy array"
 
-    model, device_obj, stride = _get_yolo_model(weights=weights, device_str=device, dnn=False, half=use_half, data=data)
+    model, device_obj, stride = _get_yolo_model(device_str=device, dnn=False, half=use_half, data=data)
     # Keep a copy of the original for cropping/coordinate space
     im0 = np.ascontiguousarray(image_np)
     h0, w0 = im0.shape[:2]

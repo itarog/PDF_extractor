@@ -4,22 +4,26 @@ from math import ceil
 from build.test_text_line import extract_test_text_lines
 from build.general import get_actual_idx_from_multi_idx
 from build.test_text_sequence import sort_test_lines_to_sequences
-from .molecule_segment_obj import MoleculeSegment
-from .segments_creation import assign_molecule_segment_name, locate_molecule_segments
+from .molecule_segment_obj import MoleculeSegment, Spectra
+from .segments_creation import locate_molecule_segments
 
 def sort_test_list(test_list):
     first_sort = sorted(test_list, key=lambda x: x.start_line)
     second_sort = sorted(first_sort, key=lambda x: x.start_page)
     return second_sort
 
-def get_all_test_list(molecule_segment):
-    return molecule_segment.nmr_text_line_list + molecule_segment.ir_text_line_list + molecule_segment.rf_text_line_list + molecule_segment.ms_text_line_list
-
 def search_molecule_segment_for_text_lines(molecule_segment):
-    molecule_segment.nmr_text_line_list = extract_test_text_lines(molecule_segment.segment_lines, test_names=[r'NMR']) #r'NMR'
-    molecule_segment.ir_text_line_list = extract_test_text_lines(molecule_segment.segment_lines, test_names=[r'IR'])
-    molecule_segment.rf_text_line_list = extract_test_text_lines(molecule_segment.segment_lines, test_names=[r'Rf'])
-    molecule_segment.ms_text_line_list = extract_test_text_lines(molecule_segment.segment_lines, test_names=[r'HRMS'])
+    test_names = {'NMR': [r'NMR'], 'IR': [r'IR'], 'Rf': [r'Rf'], 'HRMS': [r'HRMS']}
+    for test_type, test_patterns in test_names.items():
+        text_lines = extract_test_text_lines(molecule_segment.segment_lines, test_names=test_patterns)
+        if text_lines:
+            molecule_segment.spectra.append(Spectra(test_type, text_lines))
+
+def get_all_test_list(molecule_segment):
+    all_tests = []
+    for spectrum in molecule_segment.spectra:
+        all_tests.extend(spectrum.text_lines)
+    return all_tests
     #+ extract_test_text_lines(molecule_segment.segment_lines, test_names=[r'LCMS']) + extract_test_text_lines(molecule_segment.segment_lines, test_names=[r'LRMS']) 
 
 def get_molecule_segments_statsitics(molecule_segments):
@@ -160,7 +164,7 @@ def smooth_bbox_molecule_segments(molecule_segments):
                 continue
             elif line_idx<len(test_text_lines):
                 prev_test_line = new_test_line if new_test_line else test_text_lines[line_idx-1]
-                new_prev_line, new_test_line = smooth_bbox_text_test_line(prev_test_line, test_line)
+                new_prev_line, new_test_line = smooth_bbox_text_test_.line(prev_test_line, test_line)
                 new_test_text_lines.append(new_prev_line)
             else:
                 new_test_text_lines.append(new_test_line)
@@ -187,6 +191,5 @@ def process_molecule_segment_text(molecule_segments, cut_init_segments=False):
             final_molecule_segments = cut_init_molecule_segments(final_molecule_segments)
         mean_number_of_tests, sequence_counter = get_molecule_segments_statsitics(final_molecule_segments)
         most_common_sequence = sequence_counter.most_common(1)[0][0]
-        assign_molecule_segment_name(final_molecule_segments)
         assign_molecule_segment_size(final_molecule_segments, most_common_sequence)
     return final_molecule_segments

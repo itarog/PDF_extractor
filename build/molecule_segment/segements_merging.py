@@ -1,5 +1,5 @@
 from math import floor, ceil
-from .sequences2segments import count_occurences, search_molecule_segment_for_text_lines, process_all_test_list, get_molecule_segments_statsitics, assign_molecule_segment_name, assign_molecule_segment_size
+from .sequences2segments import count_occurences, search_molecule_segment_for_text_lines, process_all_test_list, get_molecule_segments_statsitics, assign_molecule_segment_size # , assign_molecule_segment_name
 from .molecule_segment_obj import MoleculeSegment
 
 def get_problematic_molecule_segment_idx_list(molecule_segments):
@@ -116,7 +116,7 @@ def adjust_molecule_segments_by_common_sequence(molecule_segments):
             new_molecule_segments = sort_molecule_segments(new_molecule_segments)
         else:
             new_molecule_segments = molecule_segments
-        assign_molecule_segment_name(new_molecule_segments)
+        # assign_molecule_segment_name(new_molecule_segments)
         assign_molecule_segment_size(new_molecule_segments, most_common_sequence)
     else:
         new_molecule_segments = molecule_segments
