@@ -10,9 +10,9 @@ from build.text_spectra_plotter import (
     parse_proton_nmr, parse_carbon_nmr, parse_ir, parse_ms,
     plot_proton_nmr, plot_carbon_nmr, plot_ir, plot_ms
 )
-from build.wrappers import process_doc_list_pics_first, get_filled_matched_molecule_segments
+from chemsie.internal.wrappers import process_doc_list_pics_first, get_filled_matched_molecule_segments
 
-from build.decimer_functions import get_square_image
+from models.decimer_functions import get_square_image
 import fitz
 import numpy as np
 

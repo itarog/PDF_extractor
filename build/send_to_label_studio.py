@@ -7,7 +7,7 @@ project_root = os.path.dirname(os.path.abspath(__file__))
 os.chdir(project_root)
 sys.path.insert(0, project_root)
 
-from build.wrappers import pdf_dir_to_label_studio
+from chemsie.internal.wrappers import pdf_dir_to_label_studio
 
 def send_to_label_studio(pkl_folder, pdf_dir, label_studio_config, output_dir=None, ls_url=None, verbose=True):
     if output_dir is None:

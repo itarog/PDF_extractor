@@ -11,7 +11,7 @@ import uuid
 project_root = Path(__file__).resolve().parent.parent.parent
 sys.path.append(str(project_root))
 
-from build.wrappers import process_doc_pics_first
+from chemsie.internal.wrappers import process_doc_pics_first
 from build.Manager.molecules_tests import ExtractedMolecule
 from src.chemsie.schemas import Molecule, Spectrum, Provenance, BoundingBox
 # --- End of Temporary Bridge ---
