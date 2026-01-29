@@ -146,7 +146,7 @@ class CustomInstallCommand(install):
         # --- 4) Download & extract DECIMER locally ---
         decimer_url = (
             "https://github.com/Kohulan/DECIMER-Image_Transformer/"
-            "archive/refs/tags/v2.8.0.zip"
+            "archive/main.zip"
         )
 
         decimer_dir = project_root / "DECIMER"
@@ -221,7 +221,8 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/yourusername/PDF_extractor",
     license="MIT",
-    packages=find_packages(),
+    package_dir={"": "src"},
+    packages=find_packages(where="src"),
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Science/Research",
@@ -234,15 +235,16 @@ setup(
     ],
     python_requires=">=3.8",
     install_requires=[
-        "decimer-segmentation>=1.0.0",
-        "decimer>=2.8.0",
+        "decimer-segmentation==1.4.0",
+        "decimer==2.8.0",
+        "tensorflow==2.12.0",
         "PyMuPDF>=1.23.0",
         "pypdf>=3.0.0",
         "numpy>=1.24.0",
         "opencv-python>=4.8.0",
         "Pillow>=10.0.0",
-        "torch==2.5.0",
-        "torchvision==0.20.0",
+        "torch",
+        "torchvision",
         "seaborn>=0.13.0",
         "pdf2image>=1.16.0",
         "label-studio>=1.21.0",

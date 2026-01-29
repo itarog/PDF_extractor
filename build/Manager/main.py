@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 
-from build.wrappers import get_filled_matched_molecule_segments, process_doc_list_pics_first, process_doc_pics_first
+from chemsie.internal.wrappers import get_filled_matched_molecule_segments, process_doc_list_pics_first, process_doc_pics_first
 from build.Manager.scoring import score_extracted_gt_data, setup_database, process_gt_extracted_scoring
 from build.Manager.molecules_tests import TestLogger, GTMolecule, ExtractedMolecule, ChemDataMolecule
 

@@ -1,26 +1,15 @@
 import os
 import numpy as np
 import pandas as pd
-# from build.demo_data.inner_validation import compare_values, string_similarity
-from build.demo_data.inner_validation import hrms_peak_patch, molecule_segment_to_dict_list, get_peaks_from_nmrspectrum_dict, string_similarity
-from build.Streamlit_apps.text_spectra_plotter import parse_carbon_nmr, parse_ms, parse_ir
 from copy import copy
+# from build.demo_data.inner_validation import compare_values, string_similarity
+from experiments.demo_data.inner_validation import hrms_peak_patch, molecule_segment_to_dict_list, get_peaks_from_nmrspectrum_dict, string_similarity
 
-def parse_peaks(test_text, test_type):
-    parser = None
-    parsed_peaks = []
-    if '1H NMR' in test_type:
-        parsed_peaks = hrms_peak_patch(test_text, test_type)
-    elif '13C NMR' in test_type:
-        parser = parse_carbon_nmr
-    elif test_type == 'MS':
-        parser = parse_ms
-        # parsed_peaks = run_hrms_checker_full_rot(test_text)
-    elif test_type =='IR':
-        parser = parse_ir
-    if parser:
-        parsed_peaks = parser(test_text)
-    return parsed_peaks
+# from build.Streamlit_apps.text_spectra_plotter import parse_carbon_nmr, parse_ms, parse_ir
+from build.text_spectra_plotter import (
+    plot_proton_nmr, plot_carbon_nmr, plot_ir, plot_ms
+)
+from src.parsing.spectra import parse_peaks
 
 
 class GTTest():
@@ -69,6 +58,7 @@ class ExtractedMolecule():
     def __init__(self, file_name = None, molecule_segment = None, loaded_dict = None):
         if loaded_dict is None:
             self.file_name = file_name
+            self.provenance_segment = molecule_segment
             molecule_segment_dictlist = molecule_segment_to_dict_list(molecule_segment)
             general_dict = molecule_segment_dictlist[0]
             self.molecule_name = general_dict.get('molecule_name')
@@ -78,6 +68,7 @@ class ExtractedMolecule():
             self.molecule_smiles_confidence_score = 0 # Smiles score
             self.molecule_tests = [ExtractedTest(self.file_name, self._counter, inner_dict) for inner_dict in molecule_segment_dictlist]
         else:
+            self.provenance_segment = None
             self.file_name = loaded_dict.get('file_name')
             self.molecule_name = loaded_dict.get('molecule_name')
             self.molecule_image = loaded_dict.get('molecule_np_array')
