@@ -4,7 +4,7 @@ import json
 from datetime import datetime
 
 from .create_labels import test_text_line_to_annot_dict, mol_pic_to_annot_dict
-from build.molecule_segment.molecule_segment_obj import get_relavent_pages
+from src.chemsie.internal.molecule_segment_obj import get_relavent_pages
 
 import fitz
 import numpy as np

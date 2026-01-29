@@ -1,8 +1,8 @@
 from build.matching import match_mol_pic_clusters_to_molecule_segments
 from build.text_processing.init_processing import extract_text_with_multi_idx
-from build.molecule_segment.segments_creation import locate_molecule_segments, fill_smiles
-from build.molecule_segment.sequences2segments import process_molecule_segment_text
-from build.molecule_segment.segements_merging import adjust_molecule_segments_by_common_sequence
+from src.chemsie.internal.segments_creation import locate_molecule_segments, fill_smiles
+from src.chemsie.internal.sequences2segments import process_molecule_segment_text
+from src.chemsie.internal.segements_merging import adjust_molecule_segments_by_common_sequence
 from build.mol_pic import extract_pics_from_pdf
 from build.mol_pic_cluster import sort_mol_pics_to_clusters
 from build.storeage_obj import load_pickle_by_filename

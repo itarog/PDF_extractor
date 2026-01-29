@@ -4,8 +4,8 @@ import numpy as np
 from PIL import Image
 
 # from decimer_segmentation import segment_chemical_structures
-from models.yode_backend import segment_chemical_structures_yode
-from models.decimer_functions import get_square_image
+from src.models.yode_backend import segment_chemical_structures_yode
+from src.models.decimer_functions import get_square_image
 
 import pymupdf  # PyMuPDF
 from concurrent.futures import ThreadPoolExecutor

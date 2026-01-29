@@ -1,7 +1,7 @@
 # src/chemsie/pipeline.py
 import sys
 from pathlib import Path
-from typing import List, Any
+from typing import List, Any, Tuple
 import uuid
 
 # --- Temporary Bridge to Old Logic ---
@@ -11,17 +11,19 @@ import uuid
 project_root = Path(__file__).resolve().parent.parent.parent
 sys.path.append(str(project_root))
 
-from chemsie.internal.wrappers import process_doc_pics_first
+from src.chemsie.internal.wrappers import process_doc_pics_first
 from build.Manager.molecules_tests import ExtractedMolecule
-from src.chemsie.schemas import Molecule, Spectrum, Provenance, BoundingBox
+from src.chemsie.schemas import Molecule, Spectrum, Provenance, BoundingBox, ExtractedData
 # --- End of Temporary Bridge ---
 
 
-def _map_old_to_new(old_molecule: ExtractedMolecule) -> Molecule:
+def _map_old_to_new(old_molecule: ExtractedMolecule) -> Tuple[Molecule, List[Spectrum]]:
     """
-    Maps a single legacy ExtractedMolecule object to the new Pydantic Molecule schema.
+    Maps a single legacy ExtractedMolecule object to the new Pydantic Molecule schema
+    and associated Spectra.
     This is a temporary adapter layer.
     """
+    mol_id = f"mol-{uuid.uuid4()}"
     
     # Create Spectra from the old 'molecule_tests'
     spectra = []
@@ -29,6 +31,7 @@ def _map_old_to_new(old_molecule: ExtractedMolecule) -> Molecule:
         spectra.append(
             Spectrum(
                 type=test.test_type,
+                molecule_id=mol_id,
                 text_representation=test.test_text,
                 peaks=test.peak_list
             )
@@ -53,30 +56,30 @@ def _map_old_to_new(old_molecule: ExtractedMolecule) -> Molecule:
             # If provenance structure is not as expected, skip it.
             pass
 
-    return Molecule(
-        id=f"mol-{uuid.uuid4()}", # Generate a new unique ID
+    molecule = Molecule(
+        id=mol_id,
         smiles=old_molecule.molecule_smiles_by_images, # Prioritizing image-based smiles
         label=old_molecule.molecule_name,
         provenance=provenance_list,
         # The following fields from the new schema are not present in the old model:
         inchi=None, 
     )
+    
+    return molecule, spectra
 
 
-def run_extraction(pdf_path: Path) -> List[Molecule]:
+def run_extraction(pdf_path: Path) -> ExtractedData:
     """
     The canonical entry point for the ChemSIE extraction pipeline.
 
     This function takes the path to a PDF file, orchestrates the full
-    extraction process, and returns a list of validated Pydantic `Molecule`
-    objects.
+    extraction process, and returns a comprehensive `ExtractedData` object.
 
     Args:
         pdf_path: The absolute path to the source PDF document.
 
     Returns:
-        A list of `chemsie.schemas.Molecule` objects, each representing a
-        chemical entity found in the document.
+        A `chemsie.schemas.ExtractedData` object containing all extracted information.
     """
     if not pdf_path.exists():
         raise FileNotFoundError(f"PDF file not found at: {pdf_path}")
@@ -92,6 +95,18 @@ def run_extraction(pdf_path: Path) -> List[Molecule]:
     
     # 3. Map the old objects to the new, validated Pydantic schemas.
     # This is the critical translation step.
-    validated_molecules = [_map_old_to_new(mol) for mol in old_molecules]
+    all_molecules = []
+    all_spectra = []
+    
+    for old_mol in old_molecules:
+        mol, specs = _map_old_to_new(old_mol)
+        all_molecules.append(mol)
+        all_spectra.extend(specs)
 
-    return validated_molecules
+    return ExtractedData(
+        source_filename=pdf_path.name,
+        molecules=all_molecules,
+        reactions=[], # Not yet extracted by legacy pipeline
+        spectra=all_spectra,
+        errors=[]
+    )

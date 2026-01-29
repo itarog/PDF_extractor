@@ -16,7 +16,7 @@ The schema is designed with the following principles:
     Molecules, Reactions, and Spectra, which can be linked by unique IDs rather
     than being nested in a monolithic object.
 """
-from typing import List, Tuple, Optional, Union, Literal
+from typing import List, Tuple, Optional, Union, Literal, Any
 from pydantic import BaseModel, Field
 
 # ==============================================================================
@@ -83,6 +83,16 @@ class NMRData(BaseModel):
     raw_text: str = Field(..., description="The raw text from which the NMR data was parsed.")
     provenance: Provenance
 
+class Spectrum(BaseModel):
+    """
+    Generic spectrum model to bridge legacy data.
+    """
+    type: str = Field(..., description="The type of spectrum (e.g., '1H NMR', 'IR').")
+    molecule_id: Optional[str] = Field(None, description="The ID of the molecule this data characterizes.")
+    text_representation: Optional[str] = Field(None, description="Raw text representation.")
+    peaks: Optional[List[Any]] = Field(None, description="List of peaks.")
+    provenance: Optional[Provenance] = None
+
 # Add other spectral data models here as needed (e.g., IRData, MSData) following
 # the NMRData pattern.
 
@@ -125,7 +135,7 @@ class ExtractedData(BaseModel):
     source_filename: str
     molecules: List[Molecule]
     reactions: List[Reaction]
-    spectra: List[Union[NMRData]] # This can be expanded with IRData, MSData, etc.
+    spectra: List[Union[NMRData, Spectrum]] # This can be expanded with IRData, MSData, etc.
     errors: List[str] = Field([], description="A list of errors encountered during processing.")
 
     class Config:
