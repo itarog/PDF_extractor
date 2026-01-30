@@ -33,6 +33,23 @@ class BoundingBox(BaseModel):
     x1: float
     y1: float
 
+class Span(BaseModel):
+    """
+    Represents an exact character span in the source text.
+    Used for fine-grained provenance of extracted values.
+    """
+    start: int = Field(..., description="Start character index in the source text block.")
+    end: int = Field(..., description="End character index in the source text block.")
+    text: str = Field(..., description="The exact text snippet extracted from the document.")
+
+class ExtractionMethod(BaseModel):
+    """
+    Metadata describing how a piece of information was extracted.
+    """
+    algorithm: str = Field(..., description="The name of the algorithm or model (e.g., 'decimer', 'yolo', 'regex').")
+    version: Optional[str] = Field(None, description="The version of the algorithm/model.")
+    confidence: Optional[float] = Field(None, ge=0.0, le=1.0, description="Confidence score specific to this method.")
+
 class Provenance(BaseModel):
     """
     A mandatory record tracking the source of an extracted piece of data.
@@ -41,7 +58,15 @@ class Provenance(BaseModel):
     page_number: int = Field(..., description="The page number in the source PDF.")
     bbox: BoundingBox = Field(..., description="The bounding box of the data on the page.")
     source: Literal["text", "image", "table"] = Field(..., description="The modality the data was extracted from.")
-    confidence: Optional[float] = Field(None, ge=0.0, le=1.0, description="The confidence score of the extractor for this item.")
+    span: Optional[Span] = Field(None, description="The exact text span source, if applicable.")
+    method: Optional[ExtractionMethod] = Field(None, description="The method used to extract this item.")
+    confidence: Optional[float] = Field(None, ge=0.0, le=1.0, description="Aggregated confidence score.")
+
+class MoleculeProvenance(Provenance):
+    """
+    Specialized provenance for molecules to distinguish between image source and text label source.
+    """
+    role: Literal["structure_image", "label_text", "caption_text"] = Field(..., description="The role of this evidence in defining the molecule.")
 
 # ==============================================================================
 # 2. Chemical Entity Models
@@ -56,7 +81,7 @@ class Molecule(BaseModel):
     smiles: Optional[str] = Field(None, description="The SMILES string for the molecule.")
     inchi: Optional[str] = Field(None, description="The InChI string for the molecule.")
     label: Optional[str] = Field(None, description="The textual label used in the document (e.g., '3a', 'Compound 2').")
-    provenance: List[Provenance] = Field(..., description="A list of source locations for this molecule's representation and label.")
+    provenance: List[Union[MoleculeProvenance, Provenance]] = Field(..., description="A list of source locations for this molecule's representation and label.")
 
 # ==============================================================================
 # 3. Analytical Data Models
@@ -152,10 +177,12 @@ class ExtractedData(BaseModel):
                         "label": "1",
                         "provenance": [
                             {
+                                "role": "structure_image",
                                 "page_number": 2,
                                 "bbox": {"x0": 100.0, "y0": 200.0, "x1": 150.0, "y1": 250.0},
                                 "source": "image",
-                                "confidence": 0.98
+                                "confidence": 0.98,
+                                "method": {"algorithm": "decimer", "version": "2.4", "confidence": 0.98}
                             }
                         ]
                     }
