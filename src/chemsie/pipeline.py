@@ -4,17 +4,9 @@ from pathlib import Path
 from typing import List, Any, Tuple
 import uuid
 
-# --- Temporary Bridge to Old Logic ---
-# This sys.path modification is a temporary measure to allow the new pipeline
-# to call the old, misplaced logic. It will be removed once the logic is
-# fully migrated into the 'chemsie' package.
-project_root = Path(__file__).resolve().parent.parent.parent
-sys.path.append(str(project_root))
-
 from src.chemsie.internal.wrappers import process_doc_pics_first
-from build.Manager.molecules_tests import ExtractedMolecule
+from src.chemsie.legacy.molecules_tests import ExtractedMolecule
 from src.chemsie.schemas import Molecule, Spectrum, Provenance, BoundingBox, ExtractedData
-# --- End of Temporary Bridge ---
 
 
 def _map_old_to_new(old_molecule: ExtractedMolecule) -> Tuple[Molecule, List[Spectrum]]:
