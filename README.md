@@ -1,6 +1,6 @@
 # ChemSIE - From document-based experimental records to machine-actionable experimental data
 
-![ChemSIE overview](build/Chemsie_fig1.png)
+![ChemSIE overview](Chemsie_fig1.png)
 
 **ChemSIE** is a user-guided, automated pipeline for converting **PDF-based experimental records** (e.g., Supplementary Information, theses, internal reports) into **molecule-resolved, machine-actionable experimental datasets**.
 
