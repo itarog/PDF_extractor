@@ -84,7 +84,7 @@ ChemSIE supports three entry points that invoke the same backend pipeline.
 
 ```bash
 conda activate pdf_extractor
-python -m streamlit run build/Streamlit_apps/streamlit_extraction_GUI.py
+python -m streamlit run apps/streamlit/streamlit_extraction_GUI.py
 ```
 
 ### Option B: Command line (CLI)
