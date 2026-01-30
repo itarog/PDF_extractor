@@ -14,7 +14,7 @@ This repository accompanies the manuscript:
 
 > *ChemSIE: From Document Based Records to Machine Actionable Experimental Data*  
 > Itamar Wallwater, Yonatan Harnik, Ari Pakman, Anat Milo  
-> (preprint)
+> ([preprint](https://doi.org/10.26434/chemrxiv.10001481/v1))
 
 
 ## How it works
