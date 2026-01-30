@@ -1,0 +1,47 @@
+{
+  "source_filename": "Benchmark_data_01.pdf",
+  "molecules": [
+    {
+      "id": "mol_1",
+      "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+      "inchi": "InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)",
+      "label": "1",
+      "provenance": [
+        {
+          "page_number": 1,
+          "bbox": { "x0": 100.0, "y0": 500.0, "x1": 200.0, "y1": 600.0 },
+          "source": "image",
+          "role": "structure_image"
+        }
+      ]
+    },
+    {
+      "id": "mol_2",
+      "smiles": "CC(=O)O",
+      "inchi": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)",
+      "label": "2",
+      "provenance": [
+        {
+          "page_number": 1,
+          "bbox": { "x0": 300.0, "y0": 500.0, "x1": 350.0, "y1": 550.0 },
+          "source": "image",
+          "role": "structure_image"
+        }
+      ]
+    }
+  ],
+  "reactions": [],
+  "spectra": [
+    {
+      "type": "1H NMR",
+      "molecule_id": "mol_1",
+      "text_representation": "1H NMR (400 MHz, CDCl3) δ 8.12 (dd, J = 7.8, 1.7 Hz, 1H), 7.64 (td, J = 7.7, 1.7 Hz, 1H), 7.36 (td, J = 7.6, 1.2 Hz, 1H), 7.14 (dd, J = 8.3, 1.1 Hz, 1H), 2.37 (s, 3H).",
+      "provenance": {
+        "page_number": 2,
+        "bbox": { "x0": 50.0, "y0": 100.0, "x1": 500.0, "y1": 120.0 },
+        "source": "text"
+      }
+    }
+  ],
+  "errors": []
+}
