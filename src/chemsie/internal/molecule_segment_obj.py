@@ -1,7 +1,7 @@
 from typing import List, Tuple
-from build.general import get_page_num_and_line_num_from_multi_idx
-from build.mol_pic import export_mol_pic, MolPic
-from build.test_text_sequence import export_test_sequence_as_pic, TestTextSequence
+from src.chemsie.utils.general import get_page_num_and_line_num_from_multi_idx
+from src.chemsie.internal.mol_pic import export_mol_pic, MolPic
+from src.chemsie.internal.test_text_sequence import export_test_sequence_as_pic, TestTextSequence
 import re
 from .molname_to_SMILES import opsin_query, pubchem_name_to_smiles
 from DECIMER import predict_SMILES
