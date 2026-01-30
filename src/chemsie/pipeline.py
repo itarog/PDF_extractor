@@ -4,17 +4,9 @@ from pathlib import Path
 from typing import List, Any, Tuple
 import uuid
 
-# --- Temporary Bridge to Old Logic ---
-# This sys.path modification is a temporary measure to allow the new pipeline
-# to call the old, misplaced logic. It will be removed once the logic is
-# fully migrated into the 'chemsie' package.
-project_root = Path(__file__).resolve().parent.parent.parent
-sys.path.append(str(project_root))
-
 from src.chemsie.internal.wrappers import process_doc_pics_first
-from build.Manager.molecules_tests import ExtractedMolecule
-from src.chemsie.schemas import Molecule, Spectrum, Provenance, BoundingBox, ExtractedData
-# --- End of Temporary Bridge ---
+from src.chemsie.legacy.molecules_tests import ExtractedMolecule
+from src.chemsie.schemas import Molecule, Spectrum, Provenance, BoundingBox, ExtractedData, MoleculeProvenance, ExtractionMethod
 
 
 def _map_old_to_new(old_molecule: ExtractedMolecule) -> Tuple[Molecule, List[Spectrum]]:
@@ -33,7 +25,13 @@ def _map_old_to_new(old_molecule: ExtractedMolecule) -> Tuple[Molecule, List[Spe
                 type=test.test_type,
                 molecule_id=mol_id,
                 text_representation=test.test_text,
-                peaks=test.peak_list
+                peaks=test.peak_list,
+                provenance=Provenance(
+                    page_number=test.start_page if hasattr(test, 'start_page') else 0, # Fallback
+                    bbox=BoundingBox(x0=0, y0=0, x1=0, y1=0), # Placeholder bbox
+                    source="text",
+                    method=ExtractionMethod(algorithm="legacy_parser", version="1.0", confidence=0.8)
+                )
             )
         )
 
@@ -46,10 +44,13 @@ def _map_old_to_new(old_molecule: ExtractedMolecule) -> Tuple[Molecule, List[Spe
             seg_bbox = old_molecule.provenance_segment.bbox 
             p_bbox = BoundingBox(x0=seg_bbox[0], y0=seg_bbox[1], x1=seg_bbox[2], y1=seg_bbox[3])
             
-            provenance = Provenance(
+            provenance = MoleculeProvenance(
+                role="structure_image",
                 page_number=old_molecule.provenance_segment.page_num,
                 bbox=p_bbox,
-                source="image" # Assumption
+                source="image",
+                confidence=0.9, # Placeholder confidence
+                method=ExtractionMethod(algorithm="yode", version="1.0", confidence=0.9)
             )
             provenance_list.append(provenance)
         except (AttributeError, IndexError):

@@ -1,9 +1,9 @@
 import numpy as np
 from collections import Counter
 from math import ceil
-from build.test_text_line import extract_test_text_lines
-from build.general import get_actual_idx_from_multi_idx
-from build.test_text_sequence import sort_test_lines_to_sequences
+from src.chemsie.internal.test_text_line import extract_test_text_lines
+from src.chemsie.utils.general import get_actual_idx_from_multi_idx
+from src.chemsie.internal.test_text_sequence import sort_test_lines_to_sequences
 from .molecule_segment_obj import MoleculeSegment, Spectra
 from .segments_creation import locate_molecule_segments
 

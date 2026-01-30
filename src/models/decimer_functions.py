@@ -3,7 +3,7 @@ import cv2
 from PIL import Image
 import os
 
-from build.general import minimize_pdf_to_relavent_pages
+from src.chemsie.utils.general import minimize_pdf_to_relavent_pages
 from pdf2image import convert_from_path
 import copy
 

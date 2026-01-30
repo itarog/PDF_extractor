@@ -2,7 +2,7 @@ import numpy as np
 import logging
 
 from .molecule_segment_obj import MoleculeSegment
-from build.tokenizer.molecule_name import get_molecule_name_probability
+from src.chemsie.internal.tokenizer.molecule_name import get_molecule_name_probability
 
 logger = logging.getLogger(__name__)
 
